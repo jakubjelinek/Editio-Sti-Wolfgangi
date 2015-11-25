@@ -78,7 +78,7 @@ LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,benedictus magnificat nuncdimittis
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 	 $(addprefix versus-,nativitasest custodi orapronobis specie adjuvabit elegit) \
-	 $(addprefix hym-,AveMarisStella OGloriosaDomina TeLucis NuncSancte RectorPotens RerumDeus) \
+	 $(addprefix hym-,AveMarisStella OGloriosaDomina TeLucis NuncSancte RectorPotens RerumDeus QuemTerra) \
 	 benedicamus-duplex-laudes benedicamus-duplex-vesperae \
 	 deusinadiutorium-communis supplicatiolitaniae oratiodominica resp1v \
 	 dominusvobiscum-solemnis domineexaudi magnificat-initium-i-D2 \
@@ -91,9 +91,16 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 	 alleluia-SolemnitasGloriosae offertorium-BeataEs \
 	 communio-BeatamMeDicent communio-versus-Magnificat \
 	 ix-agnusdei ix-gloria ix-kyrie ix-sanctus credo-iii \
-	 oratiodominica-mat benedicamus-minor
+	 oratiodominica-mat benedicamus-minor \
+	 $(addprefix absolutio-,exaudi ipsius avinculis) dominelabiamea \
+	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus deus christus ignem evangelica cujus adsocietatem) \
+	 $(addprefix matant,1 2 3 4 5 6 7 8 9) $(addprefix matresp,1 2 3 4 5 6 7 8) \
+	 tedecetlaus tonus-evangelii-b tonus-lectionis-solemnis \
+	 $(addprefix venite2,a b c d e f) matinv-NativitatemVirginis \
+	 benedicamus-solemnis-laud tedeum-solemnis tuautem
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = $(addprefix cantus/amon33/hym-,$(addsuffix -bohtext.tex,AveMarisStella OGloriosaDomina TeLucis NuncSancte RectorPotens RerumDeus))
+OTHERDEPS = $(addprefix cantus/amon33/hym-,$(addsuffix -bohtext.tex,AveMarisStella OGloriosaDomina TeLucis NuncSancte RectorPotens RerumDeus)) \
+	    cantus/nrom02/hym-QuemTerra-bohtext.tex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3 benedictus nuncdimittis,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
@@ -109,7 +116,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix cantus/,amon33 triplex76) \
+iter-left := . $(TMP_DIR) $(addprefix cantus/,amon33 triplex76 nrom02) \
 	     $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) \
 	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 triplex76)
 include $(iter)
