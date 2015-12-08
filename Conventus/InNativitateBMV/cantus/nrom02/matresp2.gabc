@@ -5,13 +5,14 @@ book: Nocturnale Romanum, 2002, pg. 278*;
 mode: 4;
 transcriber: Jakub Jelínek;
 initial-style: 1;
+nabc-lines: 1;
 %%
 
 (c4)
-BE(f)a(de)tís(e)si(e)mæ(egfss/ded) *()
-Vír(e)gi(f)nis(bxdc/dccOb) Ma(d!efEDefe)rí(deccs)æ(deOf) (;)
-Na(d!ewf!gh)ti(hi)vi(h)tá(hi)tem(h) de(hggOf)vo(gh)tís(egffs)si(fvDFgvFEf)me(fe) ce(eg/hg)le(f)bré(fvEDewf)mus,(ed/efe) +(:)
-Ut(c) ip(df)sa(f) pro(f) no(dgf!gwhgh)bis(hg) in(c)ter(df>)cé(e!fo)dat(e) ad(e) Dó(e)mi(e)num(fvED) Je(fo<!gv)sum(gvFGhvighg) Chri(egffs)sum.(fe) <sp>V/</sp>.(::)
+BE(f|vi)a(de|pe)tís(e|vi)si(e|vi)mæ(egfss/ded|pe-ds-hhtohh) *()
+Vír(e|vi)gi(f|vihi)nis(bxdc/dccOb|///cl-hgcl-hhprhi) Ma(d!efEDefe|vi-pehjsu2tohl)rí(deccs|to/sthg)æ(deOf|sa) (;)
+Na(d!ewf!gh|````qlppt1pehj)ti(hi|pe)vi(h|ta)tá(hi|pe)tem(h|ta) de(hggOf|cl!pi)vo(gh|pe)tís(egffs|clppt1/sthg)si(fvDFgvFEf|vi-vi-hippt2su2vihj)me(fe|cl-) ce(eg/hg|sflsc3)le(f|vi)bré(fvEDewf|ci-qivihi)mus,(ed/efe|cltohg) +(:)
+Ut(c|gr) ip(df|pe)sa(f|vi) pro(f|vi) no(dgf!gwhgh|toSqlhh!pohh)bis(hg|cl-) in(c|ta)ter(df>|pe>)cé(e!fo|vs)dat(e|ta) ad(e|ta) Dó(e|ta)mi(e|ta)num(fvED|ci-) Je(fo<!gv|pq-)sum(gvFGhvighg|vi-vi-hhpp2pf-hi) Chri(egffs|to/sthg)sum.(fe|cl-) <sp>V/</sp>.(::)
 Cum(h) ju(h)cun(h)di(gh)tá(gf!gwhghvGEfe)te(e) Na(gf)ti(gh)vi(gf)tá(e!fwgf)tem(fe) (;)
 be(f)á(de)tæ(e) Ma(e)rí(e)æ(e!fwgFE) ce(g)le(g!hghGF)bré(ef/gffs)mus.(ed/efe) +(::)
 Ut.(c) (::)
