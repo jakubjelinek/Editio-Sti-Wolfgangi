@@ -5,19 +5,20 @@ book: Nocturnale Romanum, 2002, pg. 281*;
 mode: 1;
 transcriber: Jakub Jelínek;
 initial-style: 1;
+nabc-lines: 1;
 %%
 
 (c4)
-NA(d)tí(fgf)vi(gh)tas(g) tu(gf/gfg)a,(fg/ffOED) *(,)
-De(fg)i(f) Gé(fg)ni(f)trix(fg/hffe) Vir(DEfvEDe)go,(ed) (;)
-gáu(d)di(fgf)um(gh) an(g<)nun(g)ti(g)á(gf/gfg)vit(fg/ffOED) (,)
-u(f)ni(fvEC)vér(d)so(d!ewf/gffOe) mun(DEfvEDe)do;(ed) +(:)
-Ex(d) te(f) e(hg)nim(ghd) or(f!gwhg)tus(fd!ewfef) est(ed) (,)
-sol(d!ewf!gvFE>) jus(fgOh)tí(gf/gfg)ti(d!ewfef)æ,(ed) (;)
-Chris(ghf)tus,(fe~) De(f)us(ghf/fe) nos(DEfvEDe)ter:(ed) <v>\ddag</v>(:)
-Qui(d) sol(fgf)vens(gh) ma(g)le(gd)dic(f)ti(g!hgh)ó(hggOfgwhg)nem,(ghGFg) (,)
-de(f!gwhgh)dit(hggfg) be(d)ne(dc)dic(d)ti(FGhffOe)ó(DEfvEDe)nem;(ed) (;)
-et(d) con(e)fún(fe/gf)dens(f) mor(fddOc/fddc~)tem,(co<!dv) do(cd)ná(df/gfg)vit(g) no(DFgfg)bis(g) vi(CDewf)tam(f) sem(f)pi(FGhffOe)tér(DEfvEDe)nam.(ed) <sp>V/</sp>.(::)
+NA(d|ta)tí(fgf|to)vi(gh|pe)tas(g|ta) tu(gf/gfg|cl!po)a,(fg/ffOED|peSpihhpu) *(,)
+De(fg|pe)i(f|ta) Gé(fg|pe)ni(f|ta)trix(fg/hffe|clppt2cl-hh) Vir(DEfvEDe|vi-pp2su2vihh)go,(ed|cl-) (;)
+gáu(d|ta)di(fgf|to)um(gh|pe) an(g<|ta>)nun(g|ta)ti(g|ta)á(gf/gfg|cl!po)vit(fg/ffOED|peSpihhpu) (,)
+u(f|vi)ni(fvEC|vi-su1sut1)vér(d|vi)so(d!ewf/gffOe|viqlhiclhlpihl) mun(DEfvEDe|vi-pp2su2vihh)do;(ed|cl-) +(:)
+Ex(d|ta) te(f|vi) e(hg|cl-)nim(ghd|toM1) or(f!gwhg|viqlhh!clhh)tus(fd!ewfef|cl-qlhg!pohg) est(ed|cl-) (,)
+sol(d!ewf!gvFE>|qlppt1vihisut1sux1) jus(fgOh|sa)tí(gf/gfg|cl!po)ti(d!ewfef|cl-qlhh!pohh)æ,(ed|cl-) (;)
+Chris(ghf|to)tus,(fe~|vi>) De(f|vi)us(ghf/fe|toS2cl-) nos(DEfvEDe|vi-pp2su2vihh)ter:(ed|cl-) <v>\ddag</v>(:)
+Qui(d|gr) sol(fgf|to)vens(gh|pe) ma(g|vi)le(gd|clM)dic(f|vi)ti(g!hgh|tr)ó(hggOfgwhg|cl!prqlhg!clhg)nem,(ghGFg|pe-1su2vi) (,)
+de(f!gwhgh|viqlhh!pohh)dit(hggfg|cl!po) be(d|ta)ne(dc|``clMlse4)dic(d|vi)ti(FGhffOe|clppt2pihh)ó(DEfvEDe|vi-pp2su2vihh)nem;(ed|cl-) (;)
+et(d|``talse4) con(e|``talsl1lsp1)fún(fe/gf|pflsc2lss2)dens(f|ta) mor(fddOc/fddc~|cl!prclhhorhh)tem,(co<!dv|pq-) do(cd|peS)ná(df/gfg|poppt2)vit(g|vi-) no(DFgfg|poppt2)bis(g|vi-) vi(CDewf|qlppt2)tam(f|vi) sem(f|vi)pi(FGhffOe|clpp2pihh)tér(DEfvEDe|vi-pp2su2vihh)nam.(ed|cl-) <sp>V/</sp>.(::)
 Be(h)ne(h)díc(h)ta(hg/hg/gf) tu(g) in(hf) mu(gh)li(h)é(gh)ri(ixh/iiOh)bus,(h) (;)
 et(gf) be(gh)ne(h)díc(ixhi)tus(h) fruc(h)tus(hg/hg) ven(gf)tris(ixf!gwhg/hih) tu(hvGFEfw!gh)i.(gf) +(::)
 Ex.(d) <sp>V/</sp>.(::)
