@@ -4,9 +4,10 @@ occasion: In festis B.M.V. per annum;
 book: Nocturnale Romanum, 2002, pg. [168];
 mode: 4;
 initial-style: 1;
+nabc-lines: 1;
 %%
 
 (c3)
-DI(f)gná(e)re(f) me(h) lau(h)dá(h)re(hi) te,(iiO) *()
-Vir(hi)go(j) sa(ih)crá(i)ta:(i) (;)
-da(i) mi(fi)hi(g) vir(h)tú(fe)tem(fe) con(d)tra(e) hos(f)tes(h) tu(f)os.(f) (::)
+DI(f|vi)gná(e|ta)re(f|vi) me(h|vihg) lau(h|vihh)dá(h|vihh)re(hi|pehh) te,(iiO|vshh) *()
+Vir(hi|peS)go(j|vihh) sa(ih|clhglsc3)crá(i|vi-)ta:(i|vi-hg) (;)
+da(i|vihi) mi(fi|peS)hi(g|vi) vir(h|vi)tú(fe|cl-)tem(fe|cl-) con(d|ta)tra(e|vi) hos(f|vi)tes(h|vihh) tu(f|ta)os.(f|ta) (::)
