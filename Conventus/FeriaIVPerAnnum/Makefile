@@ -1,6 +1,7 @@
 RUBY_COMMAND = ruby
 GREGORIO = gregorio
 LUALATEX = lualatex
+LILYPOND = lilypond
 SED = sed
 AWK = awk
 GREP = grep
@@ -56,6 +57,8 @@ SCORES = ant1 ant2 ant3 ant4 ant5 ant-ben respbr \
 	 $(addprefix deprecatio,1 2 3 4)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = hym-NoxEtTenebrae-bohtext.tex
+LILYPONDSCORES = benedicamus-tropus
+LILYPONDPDFS = $(patsubst %,$(TMP_DIR)/%.pdf,$(LILYPONDSCORES))
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,benedictus anna,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
@@ -74,6 +77,8 @@ iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 aro
 include $(iter)
 
 all: feriaiv.pdf
+$(LILYPONDPDFS): $(TMP_DIR)/%.pdf: %.ly
+	$(LILYPOND) --pdf -o $(patsubst %.pdf,%,$@) $<
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149): PSALMOPTS = $(LAPSALMOPTS)
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
@@ -86,7 +91,7 @@ $(LAPSALMSEXTRA): $(TMP_DIR)/%.tex: $(PSALMS_DIR)/%.pslm
 $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
 	$(GENPSCOMB)
 feriaiv.pdf: feriaiv.tex conventuscommune.tex translationes_cs.tex \
-	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
+	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS) $(LILYPONDPDFS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
 clean:
