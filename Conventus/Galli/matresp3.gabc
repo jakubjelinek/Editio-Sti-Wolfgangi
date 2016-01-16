@@ -5,15 +5,15 @@ mode: 8;
 book: D-KA Aug. LX, 190r; CH-E611, 233v; A-Gu 30 273r; H322;
 transcriber: Jakub Jelínek;
 initial-style: 1;
-%nabc-lines: 1;
+nabc-lines: 1;
 %%
 (c4)
-CO(d)lum(d)bá(fgf)nus(g) í(ghGF)ta(fg/hg/hi)que(h) *()
-be(f)á(gh)to(h) Gal(h)lo(h) id(h) in(h)jún(h)xit(hggf) of(fg)fí(fg)ci(efEDe)i(fd) (;)
-ut(d) pó(fgh)pu(g)lum(g) ab(g) er(g)ró(gh)re(g) i(f)do(h)lá(jj)tri(hjHGh)æ(hg) re(hg)vo(fg)cá(gh/jhi)ret.(hg) *(:)
-Qui(jjk)a(j) ip(jsss)se(hjh) hanc(h) a(hg) Dó(hj)mi(ghGFg)no(gf) grá(fg)ti(g)am(ghiHFg) mé(g)ru(ghjHGh)it(gh/ih) (;)
-ut(f) la(ghg)tí(h)næ(g) at(g)que(f) bar(g>)bá(gh)ri(fe)cæ(d) lo(d)cu(dfe)ti(fg)ó(gd/fvDCd)nis(dc) no(cd)tí(fgh)ti(g)am(gh/jg/hggf) (,)
-non(gh) par(gijj)vam(j) há(jkJIH)be(ijIHghjHGh)ret.(hg) <sp>V/</sp>.(::)
-Cum(j) ad(j) ho(ji)ram(jkj/ijhhg) o(hj)ra(j)ti(j)ó(jh)nis(ij) ve(hj)ní(gh/ih)ret(hg) Gal(g)lus(fg) (,)
-cœ(g)pit(g) pó(gh)pu(g)lo(g) vi(g)am(g) ve(g)ri(g)tá(g)tis(hjHGhih) os(ghf)tén(gh)de(hji/jkJIH)re.(hjHGhg) *(::)
+CO(d|ta)lum(d|ta)bá(fgf|to)nus(g|vi) í(ghGF|``pe-1su2lse4)ta(fghghi|tr-vihi)que(h|vi) *()
+be(f|ta)á(gh|pe)to(h|ta) Gal(h|ta>)lo(h|ta) id(h|ta) in(h|ta)jún(h|ta)xit(hggf|cl!pi) of(fg|pe)fí(fg|peS)ci(efEDe|pe-1su2)i(fd|pr) (;)
+ut(d|ta) pó(fgh|vi-pehi)pu(g|vihg)lum(g|vi) ab(g|vi) er(g>|vi>)ró(gh|pe)re(g|ta) i(f|ta)do(h|vi)lá(jj|bv-)tri(hjHGh|pe-1su2vihg)æ(hg|cl-) re(hg|cllsc3)vo(fg|pe)cá(g!hwjhi|ql!poppt1)ret.(hg|cl-) *(:)
+Qui(jjk|vi-``pe)a(j|vi) ip(jsss|ts-)se(hjh|to) hanc(h|vi) a(hg|cllsc3) Dó(hj|peS)mi(ghGFg|pe-1su2vihg)no(gf|cl-) grá(fg|pe)ti(g|ta)am(ghivHFg|vi-ppt2su2vihg) mé(g|vi)ru(ghjvHGh|vi-pp2su2vihg)it(gh/ih|cl-ppt2) (;)
+ut(f|ta) la(ghg|to)tí(h|vi)næ(g|ta) at(g|pe)que(f|ta) bar(g>|vi>)bá(gh|peS)ri(fe|cl)cæ(d|ta) lo(d|ta)cu(dfe|to)ti(fg|pe)ó(gd/fvDCd|cl-ci-vihg)nis(dc|cl-) no(cd)tí(fgh|vi-pehi)ti(g|ta)am(gh/jg/hggf|ta-to-1vipr) (,)
+non(gh|``pelse4) par(gijj|pe-ta>hh)vam(j|ta) há(jkJIH|pe-1sut3)be(iwjIHghjHGh|ql-su2vi-pp2su2vihg)ret.(hg|cl-) <sp>V/</sp>.(::)
+Cum(j|vi) ad(j|vi) ho(ji|cl)ram(jkj/ijh/hgo|to-1hgto-1hgprhg) o(hj|pe)ra(j|vihg)ti(j|vihg)ó(jh|cllsc3)nis(ij|pe) ve(hj|pe)ní(g!hwih|qi!clppt1)ret(hg|cl-) Gal(g|vi)lus(fg|pe) (,)
+cœ(g|ta)pit(g|ta) pó(gh|pe)pu(g|ta)lo(g|ta) vi(g|ta)am(g|ta) ve(g|ta)ri(g|ta)tá(g|ta)tis(hjHGhih|pe-su2to) os(ghf|to)tén(gh|peS)de(h!jwijkJIH|ql!clppt1to-1hhsu2)re.(hjHGhg|pe-1su2cl-) *(::)
 Qui(jjk)a.(j) (::)
