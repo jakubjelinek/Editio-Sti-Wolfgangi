@@ -5,10 +5,11 @@ book: Nocturnale Romanum, 2002, pg. XXVIII;
 mode: 3;
 transcriber: Jakub Jelínek;
 initial-style: 1;
+nabc-lines: 1;
 %%
 
 (c3)
-VE(ggohf)ní(fg)te,(gvFE) ex(f)sul(g)té(h)mus(g) Dó(fg)mi(f)no,(f) (,)
-ju(f)bi(f)lé(f)mus(f) De(gh)o,(g) sa(f)lu(fe)tá(f)ri(h) nos(gho)tro:(g) (;)
-præ(g)oc(g)cu(h)pé(ij)mus(i) fá(i)ci(h)em(g) e(hi>)jus(g) in(g>) con(fe~)fes(f)si(h)ó(gh)ne,(hg) (;)
-et(gvFE) in(fgf~) psal(gh~)mis(g) ju(g)bi(hghf/ghg)lé(fe)mus(EFgwh) e(hf!gwhgFE)i.(e/fge/cdOe) <sp>R/</sp>.(::)
+VE(ggohf|sa!cl)ní(fg|pe)te,(gvFE|ci-) ex(f|vi)sul(g|vihg)té(h|vihj)mus(g|vi) Dó(fg|pe)mi(f|ta)no,(f|ta-) (,)
+ju(f|ta)bi(f|ta)lé(f|ta)mus(f|ta) De(gh|pe)o,(g|ta) sa(f|ta)lu(fe|cl)tá(f|vi)ri(h|vihg) nos(gho|vs-)tro:(g|ta) (;)
+præ(g|tahg)oc(g|ta)cu(h|vi)pé(ij|pe)mus(i|ta) fá(i|vi)ci(h|vihe)em(g|ta) e(hi>|pe>)jus(g|ta) in(g>|vi>) con(fe~|vi>)fes(f|vi)si(h|vihh)ó(gh|peS)ne,(hg|cl-) (;)
+et(gvFE|ci-) in(fgf~|pe>) psal(gh~|ta>)mis(g|ta) ju(g|ta)bi(hghf/ghg|pftohi)lé(fe|cl)mus(EFgwh|qlppt2) e(hf!gwhgFE|cl-qlhi!vshisu3)i.(e/fge/cdOe|toppt1sa-hg) <sp>R/</sp>.(::)
