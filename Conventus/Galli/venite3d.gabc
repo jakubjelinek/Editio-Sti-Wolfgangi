@@ -5,12 +5,13 @@ book: Nocturnale Romanum, 2002, pg. XXVIII;
 mode: 3;
 transcriber: Jakub Jelínek;
 initial-style: 1;
+nabc-lines: 1;
 %%
 
 (c3)
-Hó(ggohf)di(fg)e,(gvFE) si(f) vo(g)cem(h) e(h>)jus(g) au(g>)di(f)é(fg)ri(f)tis,(f) (,)
-no(f)lí(fg)te(f) ob(f)du(g)rá(g)re(fe) cor(f)da(h) ves(gho)tra,(g) (;)
-si(g)cut(g) in(g) ex(g)a(g)cer(g)ba(h)ti(i)ó(ij)ne(i) se(i)cún(i)dum(hg~) di(hi)em(g) ten(g)ta(h)ti(g)ó(h)nis(g) in(g>) de(f)sér(fg>)to:(f) (,)
-u(fg)bi(f) ten(f)ta(f)vé(fg)runt(f) me(fe) pat(f)res(h) ves(gh)tri,(hg) (;)
-pro(gvFE)ba(fgf)vé(gho)runt(g) (,)
-et(g) vi(g)dé(gho)runt(g) ó(hghf/ghg)pe(fe)ra(EFgwh) me(hf!gwhgFE)a.(e/fge/cdOe) *(::)
+Hó(ggohf|sa!cl)di(fg|pe)e,(gvFE|ci-) si(f|vi) vo(g|vihh)cem(h|vihh) e(h>|vi>)jus(g|ta) au(g>|vi>)di(f|ta)é(fg|pe)ri(f|ta)tis,(f|ta) (,)
+no(f|ta)lí(fg|pe)te(f|ta) ob(f|ta)du(g|vihg)rá(g|ta)re(fe|cllsc2) cor(f|vi)da(h|vihi) ves(gho|vs-)tra,(g|ta) (;)
+si(g|tahg)cut(g|tahg) in(g|ta) ex(g|ta)a(g|ta)cer(g|ta)ba(h|vi)ti(i|vihg)ó(ij|pelss3)ne(i|ta) se(i|ta)cún(i|vi>)dum(hg~|vi>hg) di(hi|pe)em(g|ta) ten(g|ta)ta(h|vihg)ti(g|ta)ó(h|vihg)nis(g|ta) in(g>|vi>) de(f|ta)sér(fg>|pe>)to:(f|ta) (,)
+u(fg|pe)bi(f|ta) ten(f|ta)ta(f|ta)vé(fg|pe)runt(f|ta) me(fe|cl) pat(f|vi)res(h|vi) ves(gh|peS)tri,(hg|cl-) (;)
+pro(gvFE|ci-)ba(fgf|to)vé(gho|vs-)runt(g|ta) (,)
+et(g|ta) vi(g|ta)dé(gho|vs-)runt(g|ta) ó(hghf/ghg|pftohi)pe(fe|cl)ra(EFgwh|qlppt2) me(hf!gwhgFE|cl-qlhi!vshisu2)a.(e/fge/cdOe|tatohgsahi) *(::)
