@@ -5,11 +5,12 @@ book: Nocturnale Romanum, 2002, pg. XXVIII;
 mode: 3;
 transcriber: Jakub Jelínek;
 initial-style: 1;
+nabc-lines: 1;
 %%
 
 (c3)
-Quó(ggohf)ni(fg)am(gvFE) De(f)us(g) mag(h)nus(g) Dó(fg)mi(f)nus,(f) (,)
-et(f) Rex(f) mag(fg>)nus(f) su(f)per(fe) om(f)nes(h) de(gho)os:(g) (;)
-quó(g)ni(g)am(g) non(g) re(g)pél(g)let(h) Dó(ij)mi(i)nus(i) ple(i)bem(hg~) su(hi)am:(g) (,)
-qui(h)a(h) in(g) ma(h)nu(f) e(g>)jus(f) sunt(hi>) om(g)nes(fe) fi(f)nes(h) ter(gh)ræ,(hg) (;)
-et(gvFE) al(fgf~)ti(g)tú(gho)di(g)nes(g) món(gh~)ti(g)um(g) ip(hghf/ghg)se(fe) cón(EFgwh)spi(hf!gwhgFE)cit.(e/fge/cdoe) *(::)
+Quó(ggohf|sa!cl)ni(fg|pe)am(gvFE|ci-) De(f|vi)us(g|vihh) mag(h|vihh)nus(g|vihh) Dó(fg|pe)mi(f|ta)nus,(f|ta) (,)
+et(f|ta) Rex(f|ta) mag(fg>|pe>)nus(f|ta) su(f|ta)per(fe|cllsc2) om(f|vi)nes(h|vihi) de(gho|vs-)os:(g|ta) (;)
+quó(g|ta)ni(g|ta)am(g|ta) non(g|ta) re(g|ta)pél(g|ta)let(h|vi) Dó(ij|pelss3)mi(i|ta)nus(i|ta) ple(i|vi)bem(hg~|vi>) su(hi|pe)am:(g|ta) (,)
+qui(h|vi)a(h|vihj) in(g|ta) ma(h|vihh)nu(f|ta) e(g>|vi>)jus(f|ta) sunt(hi>|pe>) om(g|ta)nes(fe|cl) fi(f|ta)nes(h|vi) ter(gh|peS)ræ,(hg|cl-) (;)
+et(gvFE|ci-) al(fgf~|pe>)ti(g|vi)tú(gho|vs-)di(g|ta)nes(g|ta) món(gh~|ta>)ti(g|ta)um(g|ta) ip(hghf/ghg|pfto-1hh)se(fe|cllsc2) cón(EFgwh|qlppt2)spi(hf!gwhgFE|cl-hgqlhj!vshjsu2)cit.(e/fge/cdoe|vi-to-1hisahi) *(::)
