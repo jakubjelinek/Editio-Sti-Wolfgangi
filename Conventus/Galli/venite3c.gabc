@@ -5,14 +5,15 @@ book: Nocturnale Romanum, 2002, pg. XXVIII;
 mode: 3;
 transcriber: Jakub Jelínek;
 initial-style: 1;
+nabc-lines: 1;
 %%
 
 (c3)
-Quó(ggohf)ni(fg)am(gvFE) ip(f)sí(g)us(h) est(g) ma(fg)re,(f) (,)
-et(g) ip(h)se(i) fe(h)cit(gh) il(g>)lud,(f) (,)
-et(f) á(fg)ri(f)dam(f) fun(f)da(g)vé(f)runt(e>) ma(f)nus(h) e(gh>)jus:(g) (;)
-<sc>ve</sc>(g)<sc>ní</sc>(g)<sc>te,</sc>(g) <sc>a</sc>(h)<sc>do</sc>(i)<sc>ré</sc>(ij)<sc>mus,</sc>(i) <sc>et</sc>(i) <sc>pro</sc>(i)<sc>ci-</sc>(g)<sc>dá</sc>(hi)<sc>mus</sc>(g) <sc>an</sc>(h)<sc>te</sc>(g) <sc>De</sc>(h)<sc>um:</sc>(g) (,)
-plo(g)ré(h)mus(g) co(g)ram(g) Dó(gh)mi(g)no,(g) qui(g) fe(fg)cit(f) nos,(f) (,)
-qui(f)a(f) ip(fg)se(f) est(f) Dó(g)mi(f)nus,(fe) De(f)us(h) nos(gh)ter;(hg) (;)
-nos(gvFE) au(fgf~)tem(g) pó(gho)pu(g)lus(g) e(gh~)jus,(g) (,)
-et(g) o(gh)ves(g) pás(hghf/ghg)cu(fe)æ(EFgwh) e(hf!gwhgFE)jus.(e/fge/cdOe) <sp>R/</sp>.(::)
+Quó(ggohf|sa!cl)ni(fg|pe)am(gvFE|ci-) ip(f|vi)sí(g|vihg)us(h|vihi) est(g|vi) ma(fg|pe)re,(f|ta) (,)
+et(g|vi) ip(h|vihg)se(i|vi) fe(h|vihg)cit(gh|pe) il(g>|vi>)lud,(f|ta) (,)
+et(f|ta) á(fg|pe)ri(f|ta)dam(f|ta) fun(f|ta)da(g|vi)vé(f|ta)runt(e>|vi>) ma(f|ta)nus(h|vi) e(gh>|pe>1)jus:(g|ta) (;)
+<sc>ve</sc>(g|ta)<sc>ní</sc>(g|ta)<sc>te,</sc>(g|ta) <sc>a</sc>(h|vi)<sc>do</sc>(i|vihg)<sc>ré</sc>(ij|pelss1)<sc>mus,</sc>(i|ta) <sc>et</sc>(i|ta) <sc>pro</sc>(i|vihh)<sc>ci-</sc>(g|ta)<sc>dá</sc>(hi|pe)<sc>mus</sc>(g|ta) <sc>an</sc>(h|vihh)<sc>te</sc>(g|ta) <sc>De</sc>(h|vi)<sc>um:</sc>(g|ta) (,)
+plo(g|ta)ré(h|vihi)mus(g|ta) co(g|tahg)ram(g|tahg) Dó(gh|pe)mi(g|ta)no,(g|tahg) qui(g|ta) fe(fg|pe)cit(f|ta) nos,(f|ta) (,)
+qui(f|ta)a(f|ta) ip(fg|pe)se(f|ta) est(f|ta) Dó(g|vi)mi(f|ta)nus,(fe|cllsc2) De(f|ta)us(h|vihg) nos(gh|peS)ter;(hg|cl-) (;)
+nos(gvFE|ci-) au(fgf~|pe>)tem(g|vi) pó(gho|vs)pu(g|ta)lus(g|ta) e(gh~|ta>)jus,(g|ta) (,)
+et(g|ta) o(gh|vs)ves(g|ta) pás(hghf/ghg|pftohi)cu(fe|cl)æ(EFgwh|qlppt2) e(hf!gwhgFE|cl-qlhi!vshisu2)jus.(e/fge/cdOe|ta-to-1hgsahh) <sp>R/</sp>.(::)
