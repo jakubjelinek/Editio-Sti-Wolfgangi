@@ -5,11 +5,12 @@ book: Nocturnale Romanum, 2002, pg. XXVIII;
 mode: 3;
 transcriber: Jakub Jelínek;
 initial-style: 1;
+nabc-lines: 1;
 %%
 
 (c3)
-Gló(ggohf)ri(fg)a(gvFE) Pat(f)ri,(g) et(h) Fí(g)li(f)o,(f) (,)
-et(g) Spi(f)rí(ed)tu(f)i(h) Sanc(gh>)to,(g) (;)
-sic(g)ut(h) e(ij)rat(i) in(i) prin(g>)cí(hi)pi(h)o,(hg) et(fe) nunc,(f) et(h) sem(gh)per,(hg) (;)
-et(gvFE) in(fgf~) sǽ(gho)cu(g)la(g) sæ(g)cu(hghf/ghg)ló(fe)rum.(EFgwh) A(hf!gwhgFE)men.(e/fge/cdOe) *(::)
+Gló(ggohf|sa!cl)ri(fg|pe)a(gvFE|ci-) Pat(f|vi)ri,(g|vihi) et(h|vihj) Fí(g|vihi)li(f|tahh)o,(f|ta) (,)
+et(g|vihh) Spi(f|ta)rí(ed|cl)tu(f|vi)i(h|vihi) Sanc(gh>|pe>1)to,(g|ta) (;)
+sic(g|ta)ut(h|vi) e(ij|pe)rat(i|ta) in(i|vi) prin(g>|vi>)cí(hi|pehg)pi(h|vi)o,(hg|cl) et(fe|vi>) nunc,(f|vihg) et(h|vi) sem(gh|peS)per,(hg|cl-) (;)
+et(gvFE|ci-) in(fgf~|pe>) sǽ(gho|vs-)cu(g|ta)la(g|ta) sæ(g|ta)cu(hghf/ghg|pftohi)ló(fe|cl)rum.(EFgwh|qlppt2) A(hf!gwhgFE|cl-qlhi!vshisu2)men.(e/fge/cdOe|tato-1hg//sahg) *(::)
 <sp>R/</sp>.(::)
