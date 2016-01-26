@@ -5,11 +5,12 @@ book: Nocturnale Romanum, 2002, pg. XXVIII;
 mode: 3;
 transcriber: Jakub Jelínek;
 initial-style: 1;
+nabc-lines: 1;
 %%
 
 (c3)
-Quad(g)ra(g)gín(ggohf~)ta(ffOe) an(f)nis(g) pró(h)xi(g)mus(f) fu(fg)i(f) (,)
-ge(f)ne(f)ra(f)ti(f)ó(f)ni(fg) hu(g)ic,(f) et(f) di(f)xi:(f) Sem(fg)per(f) hi(fe) er(f)rant(h) cor(gh>)de.(g) (;)
-Ip(g)si(h) ve(ij)ro(i) non(i) co(hg~)gno(g)vé(hi)runt(g) vi(h)as(g) me(h)as:(g) (,)
-qui(g)bus(fg) ju(f)rá(fe)vi(f) in(fe) i(f)ra(h) me(gh)a:(hg) (;)
-Si(gvFE) in(fgf~)tro(g)í(gho)bunt(g) in(g) ré(hghf/ghg)qui(fe)em(EFgwh) me(hf!gwhgFE)am.(e/fge/cdOe) <sp>R/</sp>.(::)
+Quad(g|ta)ra(g|ta)gín(ggohf~|sa>)ta(ffOe|pr-) an(f|vi)nis(g|vihj) pró(h|vihi)xi(g|vihk)mus(f|ta) fu(fg|pe)i(f|ta) (,)
+ge(f|ta)ne(f|ta)ra(f|ta)ti(f|ta)ó(f|ta)ni(fg|pe) hu(g|vi)ic,(f|ta) et(f|ta) di(f|tahg)xi:(f|tahg) Sem(fg|pe)per(f|ta) hi(fe|cllsc2) er(f|vi)rant(h|vihi) cor(gh>|pe>1)de.(g|ta) (;)
+Ip(g|ta)si(h|vi) ve(ij|pelss3)ro(i|ta) non(i|ta) co(hg~|vi>)gno(g|ta)vé(hi|pe)runt(g|ta) vi(h|vihg)as(g|ta) me(h|vihg)as:(g|ta) (,)
+qui(g|vihg)bus(fg|ta) ju(f|ta)rá(fe|pe)vi(f|ta) in(fe|cl) i(f|vi)ra(h|vihj) me(gh|peS)a:(hg|cl-) (;)
+Si(gvFE|ci-) in(fgf~|pe>)tro(g|vi)í(gho|vs-)bunt(g|vi) in(g|vi) ré(hghf/ghg|pftohh)qui(fe|cl)em(EFgwh|qippt2) me(hf!gwhgFE|cl-qlhi!vshisu2)am.(e/fge/cdOe|vi-tohi//sahi) <sp>R/</sp>.(::)
