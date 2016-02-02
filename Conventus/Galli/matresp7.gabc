@@ -5,7 +5,7 @@ mode: 8;
 book: D-KA Aug. LX, 191r; CH-E611, 234v; A-Gu 30 275v; H323;
 transcriber: Jakub Jelínek;
 initial-style: 1;
-%nabc-lines: 1;
+nabc-lines: 1;
 %%
 (c3)
 E(e|ta)léc(fef|po)tus(ed|cllsc3) De(d|vi)i(fh|vi-ql) Gal(hg!hwihi|cl-qlhh!pohh)lus(ih|cl-) *()
