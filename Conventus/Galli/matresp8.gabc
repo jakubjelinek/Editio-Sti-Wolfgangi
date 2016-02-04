@@ -5,14 +5,15 @@ mode: 2;
 book: D-KA Aug. LX, 191r; CH-E611, 234v; A-Gu 30 275v; H324;
 transcriber: Jakub Jelínek;
 initial-style: 1;
-%nabc-lines: 1;
+nabc-lines: 1;
 %%
 (f3)
-VIr(f>) De(f)o(hg) ple(highGFg)nus(hf) *()
-qua(fh)dam(f) di(f)e(hg) pri(h)mo(f) di(fhg)lú(h)cu(fhFEf)lo(fe) vo(fh)cans(f>) (;)
-ad(fhef) se(efd/ec) Mag(e)no(f)ál(fi>)dum(h) di(hg)á(fh)co(fe)num(fh) di(hef)xit(hf) (;)
-post(f) hu(hij)jus(i) vi(h)gí(j)li(i)as(hij) noc(ijhi)tis(f) dó(i)mi(hg)num(f) et(h) pa(h)trem(g) me(f)um(f>) Co(fhg)lum(hi>)bá(fhFEf)num(fe) *(;)
-ad(f>) cæ(efh)los(f) mi(hg)grás(hf/ghf/fef)se(fe) cog(ef~)nó(fig/hig/hiHGFfe/fghGFg)vi.(hf) <sp>V/</sp>.(::)
-Pro(f) e(ef/hhi)jus(h) er(i<)go(i) ré(hi)qui(h)e(h) sa(h)lú(h)tis(h) hós(hi)ti(h)am(h) dé(hi)be(h)o(hg) im(hi)mo(gh)lá(fghg)re(hf) (;)
-quem(f) de(ef) hu(f)jus(f) vi(f)tæ(fghvGFE) an(f)gús(hghig)ti(fvEDe)is.(dc) *(::)
+VIr(f>|vi>) De(f|vi)o(hg|cllsc3) ple(highvGFg|toSci-hhvihh)nus(hf|cl-) *()
+qua(fh|pe)dam(f|ta) di(f|ta)e(hg|cllsc3) pri(h|vihg)mo(f|ta) di(fhg|to)lú(h|vi)cu(fhFEf|pe-1su2vi)lo(fe|cl-) vo(fh|pe)cans(f>|vi>) (;)
+ad(fhef>|tr>) se(efd/eco|peSpi) Mag(e|vi)no(f|vi)ál(fi>|pe>1)dum(h|ta) di(hg|cllsc3)á(fh|pe)co(fe|cllsc3)num(f!hw|vi-qlhi) di(hef|po)xit(hf|cl-) (;)
+post(f|gr) hu(hij>|vipe>hi)jus(i|tahh) vi(h|tahh)gí(j|vi)li(i|cllsc3)as(hiOj|sa) noc(ijhi|trG)tis(f|gr) dó(i|vi-)mi(hg|cllsc3)num(f|ta) (,)
+et(h>|vi>) pa(h|vi)trem(g>|pe>) me(f|vi)um(f>|vi>hg) Co(fhg|to)lum(hi>|to>)bá(fhFEf|pe-1su2vi)num(fe|cl-) *(;)
+ad(f>|vi>) cæ(efh|vi-pehi)los(f|ta) mi(hg|cllsc3)grás(hf/ghf/fef|clS1to!prvihg)se(fe|cl-) cog(ef~|``pe>2lse4)nó(fig/hig/hiHGFfe/fghGFg|toS1vi-hgclhitoS2hisuu1su2pr-qi-hhppt1ci-hivihi)vi.(hf|cl-) <sp>V/</sp>.(::)
+Pro(f|vi) e(ef!hwhi|qlppt2pe>hh)jus(h|ta) er(i<|ta>)go(i|vi) ré(hi|pe)qui(h|ta)e(h|ta) sa(h|ta)lú(h|ta)tis(h|ta) hós(hi|pe)ti(h|ta)am(h|ta) dé(hi|pe)be(h|vi)o(hg|cllsc3) im(hi|pe>)mo(gh|pe)lá(fghg|qlhg!clhgppt1)re(hf|cl-) (;)
+quem(f|vi) de(ef|pe) hu(f|ta)jus(f|ta) vi(f|ta)tæ(f!gwhGFE|ql-ppt1su3) an(f|vi)gús(hg/hig|cltohg)ti(fvEDe|ci-vi)is.(dco|pr-) *(::)
 Ad.(f>) (::)
