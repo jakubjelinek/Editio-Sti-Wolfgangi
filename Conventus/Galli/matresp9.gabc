@@ -1,0 +1,16 @@
+name: Pater sanctus dum infirmitate;
+office-part: matutinum, 9. responsorium;
+occasion: St. Galli;
+mode: 1;
+book: D-KA Aug. LX, 191v; CH-E611, 235r; A-Gu 30 276r; H324;
+transcriber: Jakub Jelínek;
+initial-style: 1;
+%nabc-lines: 1;
+%%
+(c4)
+PA(d)ter(cdCB) san(cdcdf>)ctus(d) *()
+dum(d) in(d)fir(df>)mi(fg)tá(gf/fe)te(dc/dfDCd) gra(dfef)vi(ed) per(d) di(df/f)es(dfDCdc) quat(cfe)tu(fg)or(gh>)dé(fe)cim(d) la(fg)bo(gvFDfvECefd)rás(dfef)set(ed) (,)
+in(d>) se(f)nec(ghg)tú(h)te(g) bo(fg/hghj)na(h) hu(f)jus(gh) vi(hj)tæ(h) li(h)be(hg)rá(h)tus(gf) er(g>)gás(fgh)tu(fefEDe)lo(fd) *(;)
+á(d)ni(f)mam(g) mé(h)ri(gfg)tis(g) ple(hgh)nam(fgf) fe(g)lí(gvFEDfd)ci(cdfEDe)bus(ed) bo(f)nis(gh) réd(hgh)di(fg/hg/hj)dit(h) in(f)hæ(ghg)sú(hvGFEfgfg)ram(gf) pe(ef/ghf/fe)rén(d)ni(defEDe)bus.(fd) <sp>V/</sp>.(::)
+Ex(h)plé(h)tis(hghg/gf) no(g)na(g)gín(g)ta(hf) quin(gh)que(gh) an(ixhih)nis(h) san(h>)ctís(gh)si(h)mæ(h) su(hghg)æ(hf) æ(ixfg/hg/hih)tá(hvGFEgh)tis.(gf) *(::)
+A(d)ni(f)mam.(g) (::)
