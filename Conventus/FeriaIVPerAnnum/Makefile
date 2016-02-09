@@ -90,7 +90,7 @@ $(LAPSALMSEXTRA): $(TMP_DIR)/%.tex: $(PSALMS_DIR)/%.pslm
 	$(GENPSALM)
 $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
 	$(GENPSCOMB)
-feriaiv.pdf: feriaiv.tex conventuscommune.tex translationes_cs.tex \
+feriaiv.pdf: feriaiv.tex conventuscommune.tex translationes_cs.tex feriaiv.jpg \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS) $(LILYPONDPDFS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
