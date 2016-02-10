@@ -8,9 +8,9 @@ initial-style: 1;
 %nabc-lines: 1;
 %%
 (c4)
-PA(d)ter(cdCB) san(cdcdf>)ctus(d) *()
-dum(d) in(d)fir(df>)mi(fg)tá(gf/fe)te(dc/dfDCd) gra(dfef)vi(ed) per(d) di(df/f)es(dfDCdc) quat(cfe)tu(fg)or(gh>)dé(fe)cim(d) la(fg)bo(gvFDfvECefd)rás(dfef)set(ed) (,)
-in(d>) se(f)nec(ghg)tú(h)te(g) bo(fg/hghj)na(h) hu(f)jus(gh) vi(hj)tæ(h) li(h)be(hg)rá(h)tus(gf) er(g>)gás(fgh)tu(fefEDe)lo(fd) *(;)
-á(d)ni(f)mam(g) mé(h)ri(gfg)tis(g) ple(hgh)nam(fgf) fe(g)lí(gvFEDfd)ci(cdfEDe)bus(ed) bo(f)nis(gh) réd(hgh)di(fg/hg/hj)dit(h) in(f)hæ(ghg)sú(hvGFEfgfg)ram(gf) pe(ef/ghf/fe)rén(d)ni(defEDe)bus.(fd) <sp>V/</sp>.(::)
-Ex(h)plé(h)tis(hghg/gf) no(g)na(g)gín(g)ta(hf) quin(gh)que(gh) an(ixhih)nis(h) san(h>)ctís(gh)si(h)mæ(h) su(hghg)æ(hf) æ(ixfg/hg/hih)tá(hvGFEgh)tis.(gf) *(::)
+PA(d|vi-)ter(cdCB|pe-1su2) san(cdcdf>|tr-vi>hi)ctus(d|ta) *()
+dum(d|ta) in(d|ta)fir(df>|pe>)mi(fg|pe)tá(gf/fe|clS-cl-lsco2)te(dc!dwfDCd|cl-qi-hgsu2vi-hg) gra(d!fwef|ql!poppt1)vi(ed|cl-) per(d|vi) di(df/f|tsM)es(dfDCdc|pe-1su2cl-) quat(cfe|to)tu(fg|pe)or(gh>|sa>)dé(fe|cllsc3)cim(d|ta) la(fg|sa)bo(gvFDfvECefd|ci-ci-hitohi)rás(d!fwef|ql!poppt1)set(ed|cl-) (,)
+in(d>|``vi>lse4) se(f|vi)nec(ghg|tolsl2)tú(h|vihg)te(g|vihg) bo(f!gwhghj|ql!po-1ppt1vihi)na(h|vi) hu(f|ta)jus(gh|pe) vi(hj|pe)tæ(h|ta) li(h|tahg)be(hg|cllsc3)rá(h|vi)tus(gf|cllsc3) er(g|vi)gás(fgOh|sa)tu(fefEDe|cl-ci-vihg)lo(fd|cl-) *(;)
+á(d|ta)ni(f|vihg)mam(g|vihg) mé(h|vi)ri(gfg|polse6)tis(g|vi) ple(hgh|po)nam(fgf|to) fe(g|vi)lí(gvFEDfd|vi-suu1su2cl-)ci(c!dwfEDe|ql-ppt1su2vihg)bus(ed|cl-) bo(f|vihg)nis(gh|pehglss2lse3) réd(hgh|po)di(f!gwhghj|ql!po-1ppt1vihi)dit(h|vi) in(f|ta)hæ(ghg|to)sú(hvGFEfwgfg|vi-sut3ql!po)ram(gf|cl-) pe(ef/ghf/feo|dsto-1pihh)rén(d|ta)ni(defvEDe|vi-pp2su2vihh)bus.(fd|cl-) <sp>V/</sp>.(::)
+Ex(h|vi)plé(h|vi)tis(hghg/gfo|clcl!pr) no(g|vi)na(g|vi)gín(g|vi)ta(hf|cllsc3) quin(gh|pe)que(gh|pehg) an(ixhiho|vi-prhh)nis(h|ta) san(h>|vi>)ctís(gh|pe)si(h|ta)mæ(h|ta) su(hghg|pf)æ(hf|cllsal1lsc3) æ(ixf!gwhg/hih|ql!clppt1tohh)tá(hvGFEgwh|vi-su1sut2qi-vihi)tis.(gf|cl-vi-) *(::)
 A(d)ni(f)mam.(g) (::)
