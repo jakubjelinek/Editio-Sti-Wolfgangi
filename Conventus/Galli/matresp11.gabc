@@ -5,13 +5,12 @@ mode: 4;
 book: D-KA Aug. LX, 191v; CH-E611, 235v; A-Gu 30 277r; H325;
 transcriber: Jakub Jelínek;
 initial-style: 1;
-%nabc-lines: 1;
+nabc-lines: 1;
 %%
 (c4)
-QUi(c)dam(dcf) men(fsss)dí(dfgFEf)cus(ef) *()
-qui(ed) in(df)ter(f) ce(gh)té(gf/ghgh)ras(hg) in(g)fir(g)mi(g)tá(gh)tis(g) mo(hg/gf/ghg)lés(e)ti(egef)as(fe) in(f)cés(gef)su(d) pe(defvEDC)dum(e) ca(f)ré(egef)bat(ef) (;)
-ut(dg) vi(hghj)ri(h) De(h)i(hg) ca(hjj)lí(hjHGh)gas(hg) cum(h) cal(h>)ce(h)a(h)mén(hgg>)tis(fgh) ín(hggf/ghg)du(egef)it(ef) *(;)
-per(ed) om(df>)nes(fg) ár(gh)tu(gf/ghgh)um(hg) com(h)pá(h)ges(gfgFD) so(fgh/jg/hg)lú(e)tus(egef) est.(fe) <sp>V/</sp>.(::)
-Et(h) ex(h)sí(h)li(gh)ens(gf/ghghGFfe) grá(g)ti(g)as(g) e(g)git(g) De(gh)o(g) ac(g) be(gf)á(gh)to(gf) Gal(ef/gf)lo(fe) ob(f) cu(efgFE)jus(g) me(ghghGF)ri(efgef)ta.(fef) *(::)
+QUi(c|ta)dam(dcf|tr) men(fsss|ts>)dí(dfgvFEf|vi-pp2su2vihg)cus(ef|sa) *()
+qui(ed|cllsc3) in(df|pe>hg)ter(f|vihg) ce(gh|peS)té(gf!gwhgh|cl-qlhg!pohg)ras(hg|cl-) in(g|vi)fir(g>|ta>)mi(g|ta)tá(gh|pe)tis(g|ta) mo(hg/gf/ghg|cl!prtohh)lés(e|ta)ti(egef|to/sthg)as(fe|cl-) in(f|ta)cés(gef|po)su(d|ta) pe(d!ewfEDC|qlhg!vshgppt1su2)dum(e|vi) ca(f|vi)ré(egef|to/sthg)bat(ef|toS2ds-) (;)
+ut(dg|``peSlsi7) vi(hghj|povihi)ri(h|vi) De(h|vihg)i(hg|cllsc3) ca(hjj|tsM-)lí(hjHGh|pe-1su2vihg)gas(hg|cl-) cum(h|tahg) cal(h>|ta>)ce(h|ta)a(h|ta)mén(hgg>|clor>)tis(fgOh|sa) ín(hggf/ghg>|clclhhto>hj)du(egef|to/sthg)it(ef|sa) *(;)
+per(ed|clMlsc3) om(df>|pe>)nes(fg|pehg) ár(gh|pe>1)tu(gf/ghgh|cl-hgqlhh!clhh)um(hgO|pr-) com(h>|ta>)pá(h|vi>)ges(gfgFD|cl-hgci-hg) so(fgh/jg/hg|vi-pp2pfShi)lú(e|vi)tus(egef|tohh/sthi) est.(fe|cl-hg) <sp>V/</sp>.(::)
+Et(h|vihg) ex(h|vihg)sí(h|vi)li(gh|pehg)ens(gf/ghghGFfe|cl-hhqihh!cl-hhci-hhcl-hh) grá(g|vi)ti(g|vi)as(g|vi) e(g|vi)git(g|vihg) De(gh|pe)o(g|ta) ac(g|ta) be(gf|cllsc3)á(gh|pehg)to(gf|cllsc3) Gal(e!fwgf|qihh!clhhppt1)lo(fe|cl-) ob(f|ta) cu(efgFE|qi-ppt1su2)jus(g|vi) me(ghghGF|tr-1su2)ri(efgef|popp2)ta.(fef|sa) *(::)
 Per.(ed) (::)
-
