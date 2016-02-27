@@ -1,14 +1,14 @@
 name: Corpus autem inspicientes;
 office-part: laudes, 4. antiphona;
 occasion: St. Galli;
-mode: 1;
+mode: 3;
 book: D-KA Aug. LX, 192r; CH-E611, 236r; A-Gu 30 278r; H326;
 transcriber: Jakub Jelínek;
 initial-style: 1;
 nabc-lines: 1;
 %%
 (c4)
-COr(f|vi)pus(gh|pe) au(h|po>)tem(h|ta) *()
-in(i>|vi>)spi(g|vi)ci(f|ta)én(g>|po>)tes(g|vi) ma(gh|pe>)gís(f|ta)tri,(f|ta) (,)
-in(f|ta)ve(g|vi)né(i>|vihg)runt(ho|vihi) car(h|vi>)nem(fg|pehh) ip(g|vi-)sam(g|vi-hg) (;)
-in(h|``vi>lse4) lo(g|vi)cis(fe|cllsc3) quát(d|ta)tu(f|pe)or(f|vi-) pro(ed|cl)fún(f>|vi>)di(dc|cllsc3)us(c|ta) ca(ef|peS)té(gf|cl-)na(gh|pq) sul(fo|vi>)cá(d|ta)tam.(d|ta) (::)
+COr(g|vi)pus(hj|pe) au(j|po>)tem(j|ta) *()
+in(j>|vi>)spi(h|vi)ci(g|ta)én(hg~|po>)tes(h|vi) ma(hi>|pe>)gís(g|ta)tri,(g|ta) (,)
+in(g|ta)ve(h|vi)né(j|vihg)runt(j|vihi) car(ji~|vi>)nem(gh|pehh) ip(h|vi-)sam(h|vi-hg) (;)
+in(hf~|``vi>lse4) lo(h|vi)cis(gf|cllsc3) quát(e|ta)tu(fg|pe)or(g|vi-) pro(gf|cl)fún(g>|vi>)di(fe|cllsc3)us(d|ta) ca(ef|peS)té(gf|cl-)na(gh|pq) sul(gf~|vi>)cá(e|ta)tam.(e|ta) (::)
