@@ -4,12 +4,14 @@ occasion: St. Galli;
 mode: 6;
 book: Graduale Romanum, 1961, p. [42] & Graduale Romanum, 1961, p. [48];
 transcriber: Andrew Hinkley, Jakub Jelínek;
+nabc-lines: 1;
 %%
 (c4)
-OS(ff) ju(fgff)sti(c.) *(,)
-me(c)di(dcd)tá(fd/fffg)bi(f)tur(ffe) sa(g)pi(hghf)én(f)ti(fgf___)am,(f.) (:)
-et(f) lin(gh~)gua(h) e(ixhiH'G)jus(h_g) (,) lo(fg)qué(f)tur(fe) ju(df)dí(fe/f_g)ci(d!ew!fvEDCd)um:(cd/ed..) (:)
-lex(c) De(df)i(f) e(e/gh~)jus(h.) (,)
-in(g) cor(f)de(ghghg) i(f)psí(fgf___)us.(f.) <i><c>Ps.</c></i>(::)
-No(fg)li(gf) æ(gh)mu(h)lá(h)ri(h) in(g) ma(ixi)li(h)gnán(g)ti(f)bus:(f.) (:)
-ne(f)que(gh) ze(h)lá(hj)ve(g)ris(f_') fa(f)ci(f)én(f)tes(f') i(g)ni(fd)qui(f')tá(g)tem.(f.) (::)
+OS(ff|bv) ju(fgff|tr)sti(c.|ta) *(,)
+me(c|ta)di(dcd|po)tá(fd|cl|/ff|dshg|fg|pehh)bi(f|ta)tur(ffe|vi-lss2cl-) sa(g|vi)pi(hghf|pf)én(f|ta)ti(fgf___|toS)am,(f.|ta) (:)
+et(f|```talse4) lin(gh~|ta>lss1)gua(h|vi) e(ixhiH'G|//to>lse7lss9)jus(h_g|cl-) (,)
+lo(fg|ta)qué(f|ta)tur(fe|cllsc2) ju(df|qlppt1)dí(fe/f_g|clpq)ci(d!ew!fvEDCd|ql!vsppt1su2vihh)um:(cd/ed..|cl-ppt2lst2) (:)
+lex(c|talsi9) De(df|pelse7)i(f|vi) e(e/gh~|pe>2)jus(h.|vi) (,)
+in(g|ta>) cor(f|ta)de(ghghg|to!cllss7lst2) i(f|ta)psí(fgf___|toS)us.(f.|ta) <i><c>Ps.</c></i>(::)
+No(fg|``peSlse4)li(gf|cl) æ(gh|pe)mu(h|vi)lá(h|vi)ri(h|vi) in(g|vi) ma(ixi|//vi)li(h|vi)gnán(g|ta)ti(f|vi)bus:(f.|ta) (:)
+ne(f|ta)que(gh|talse1) ze(h|vilss2)lá(hj|pe)ve(g|vi)ris(f_'|ta) fa(f)ci(f)én(f)tes(f') i(g)ni(fd)qui(f')tá(g)tem.(f.) (::)
