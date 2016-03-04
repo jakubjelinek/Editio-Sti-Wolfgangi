@@ -4,9 +4,10 @@ occasion: St. Galli;
 mode: 1;
 book: Graduale Romanum, 1961, p. 389;
 transcriber: Andrew Hinkley, Jakub Jelínek;
+nabc-lines: 1;
 %%
 (c4)
-A-(cd)men(ixdh'!iv) di(h)co(g) vo(jijh)bis,(h.) *(,)
-quid(h)quid(g) o(f)rán(h)tes(f) pé(ghg)ti(fg)tis,(g.) (;)
-cré(ixhih)di(g)te(f) qui(fg)a(f) ac(f)ci(f)pi(f)é(ixfg!hiHF'g)tis,(f.) (;)
-et(hhgh~) fi(f!g'h)et(ffe) vo(de!fvED'e)bis.(ed..) (::)
+A-(cd|ta)men(ixdh'!iv|pelse7vi>hg) di(h|vi)co(g|ta) vo(jijh|clcl)bis,(h.|ta) *(,)
+quid(h|vi)quid(g|vi) o(f|ta)rán(h|vi>)tes(f|ta) pé(ghg|to)ti(fg|pe)tis,(g.|vi) (;)
+cré(ixhih|///to)di(g|vi)te(f|ta) qui(fg|ta)a(f|ta) ac(f|ta)ci(f|ta)pi(f|ta)é(ixfg!hiHF'g|//peppt2su2vihh)tis,(f.|ta) (;)
+et(hhgh~|vi-po~) fi(f!g'h|``qlppt1vihm)et(ffe|vicl-) vo(de!fvED'e|vi-pp2su2vihh)bis.(ed..|cl-) (::)
