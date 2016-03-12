@@ -417,7 +417,6 @@ else
   of = File.open(outputfile, 'w')
 end
   
-of.puts "initial-style: 0;"
 of.puts "%%"
 of.puts psalmody.key
 
