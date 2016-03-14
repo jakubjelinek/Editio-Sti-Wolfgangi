@@ -61,7 +61,7 @@ LILYPONDPDFS = $(patsubst %,$(TMP_DIR)/%.pdf,$(LILYPONDSCORES))
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(4)/$(2)-auto.gabc; \
-	     cd ..; $(if $(findstring .,$(4)),,$(SED) -i -e 's/ (::)/ <sp>A\/<\/sp>.(::)/' $(3))
+	     cd ..; $$(if $$(filter .,$(4)),,$(SED) -i -e 's/ (::)/ <sp>A\/<\/sp>.(::)/' $(3))
 iter = $(patsubst %,iterator.mk,$(iter-left))
 define iter-doit
 $(TMP_DIR)/%-initium-$(i)-auto.gabc: %.pslm $(PSALMTONES_DIR)/$(i)-auto.gabc; $(call GENINITIUM,$$<,$(i),$$@,$$(PSALMTONES_DIR_$$*))
