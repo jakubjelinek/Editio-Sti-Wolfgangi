@@ -44,18 +44,19 @@ LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
 LAPSALMSEXTRA = 
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
-SCORES = $(addprefix ant,1 2 3 4 5 6 7) \
-	 $(addprefix hym-,AdoroTe PangeLingua) introitus-NosAutem \
+SCORES = $(addprefix ant,1 2 3 4 5 6 7 2p 5p 6p 7p) \
+	 $(addprefix hym-,AdoroTe PangeLingua) $(addprefix introitus-,NosAutem NosAutemp) \
 	 $(addprefix viii-,kyrie gloria sanctus agnusdei) \
 	 $(addprefix offertorium-,UbiCaritas DexteraDomini) \
 	 $(addprefix communio-,HocCorpus Calicem) \
 	 mysterium-fidei oratio-dominica resp-quia
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = #attende-comb.tex ps121-comb.tex
+OTHERDEPS = 
 ALLCOMBTEXTS = $(patsubst %,$(TMP_DIR)/%-comb.tex,collecta \
 		 praefatio epiclesis post-mysterium liberanos ante-oratiodominica \
 		 pax post-communionem)
-LILYPONDSCORES = #ant-bozemuj vers-posmivaji graduale-kristus ant-otce \
+LILYPONDSCORES = ant-kalich vers-cim graduale-prikazani
+#ant-bozemuj vers-posmivaji graduale-kristus ant-otce \
 #		 $(addprefix offertorium-kbozicti,1 234 5 678 9)
 LILYPONDPDFS = $(patsubst %,$(TMP_DIR)/%.pdf,$(LILYPONDSCORES))
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc)
