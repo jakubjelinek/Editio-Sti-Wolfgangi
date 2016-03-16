@@ -75,7 +75,7 @@ endef
 iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR)
 include $(iter)
 
-all: cenadominischola.pdf
+all: cenadomini.pdf cenadominischola.pdf
 $(LILYPONDPDFS): $(TMP_DIR)/%.pdf: %.ly
 	$(LILYPOND) --pdf -o $(patsubst %.pdf,%,$@) $<
 $(TMP_DIR)/%.tex: PSALMOPTS = $(LAPSALMOPTS)
@@ -89,7 +89,7 @@ $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
 $(ALLCOMBTEXTS): PSSKIP = 0
 $(ALLCOMBTEXTS): $(TMP_DIR)/%-comb.tex: %.tex %-boh.tex
 	$(GENPSCOMB)
-cenadominischola.pdf: cenadominischola.tex conventuscommune.tex translationes_cs.tex \
+cenadomini.pdf cenadominischola.pdf: %.pdf: %.tex conventuscommune.tex translationes_cs.tex \
 	$(LILYPONDPDFS) $(ALLCOMBTEXTS) \
 	$(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
