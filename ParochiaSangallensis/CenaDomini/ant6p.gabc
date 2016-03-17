@@ -1,0 +1,12 @@
+name: Mandatum novum;
+office-part: Antiphona;
+ocassion: Missa vespertina in cena Domini;
+mode: 3;
+book: Graduale Romanum, 1961, p. 203 & The Liber Usualis, 1961, p. 671;
+transcriber: Andrew Hinkley, Jakub Jelínek;
+nabc-lines: 1;
+%%
+(c4)
+MAn(g|vi)dá(g|vihg)tum(h|vihi) no(j|vihi)vum(jh~|vi>hi) do(j|vihi) vo(j|orhh)bis:(i.|vihi) *(,)
+ut(h|vihg) di(g|ta)li(h|pe)gá(h|ta)tis(h|ta) ín(i|pe>)vi(h|vi)cem,(g.|ta) (;)
+sic(i|vi-hglsl3)ut(j|vihh) di(i|vihg)lé(h|vi)xi(g|ta) vos,(h_i|pq) di(g|ta)cit(gf|cllsc3) Dó(e|vi)mi(e|pe)nus.(e.|ta) (::)
