@@ -44,7 +44,7 @@ LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
 LAPSALMSEXTRA = 
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
-SCORES = $(addprefix ant,1 2 3 4 5 6 7 2p 5p 6p 7p) \
+SCORES = $(addprefix ant,1 2 3 4 5 6 7 2p 5p 6p 7p -paxincaelo) \
 	 $(addprefix hym-,AdoroTe PangeLingua) $(addprefix introitus-,NosAutem NosAutemp) \
 	 $(addprefix viii-,kyrie gloria sanctus agnusdei) \
 	 $(addprefix offertorium-,UbiCaritas DexteraDomini) \
