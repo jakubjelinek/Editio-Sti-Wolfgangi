@@ -52,7 +52,8 @@ SCORES = $(addprefix ant,1 2 3 4 5 6 7 2p 5p 6p 7p) \
 	 mysterium-fidei oratio-dominica resp-quia
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
-ALLCOMBTEXTS = $(patsubst %,$(TMP_DIR)/%-comb.tex,salutatio-populum collecta \
+ALLCOMBTEXTS = $(patsubst %,$(TMP_DIR)/%-comb.tex,salutatio-populum \
+		 actus-penitentiales collecta \
 		 praefatio epiclesis post-mysterium liberanos ante-oratiodominica \
 		 pax post-communionem)
 LILYPONDSCORES = ant-kalich vers-cim graduale-prikazani
