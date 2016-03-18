@@ -29,7 +29,7 @@
 }
 }
     \new Lyrics \lyricsto "one" {
-      \markup { { \with-color #red \italic 1. } "Čím odplatím                          " } \markup { \bold Hos- } po- di- nu,
+      \markup { { \with-color #red \italic 1. } "Čím odplatím                          " } \markup { \bold Hos- } po- di- nu
       \once \override LyricText.self-alignment-X = #LEFT
       "za všechno             " \markup { \bold co } mi \markup { pro- ká- } zal?
   }
