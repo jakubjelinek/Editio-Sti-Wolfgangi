@@ -1,0 +1,271 @@
+% LuaLaTeX
+
+\documentclass[a4paper, twoside, 12pt]{article}
+\usepackage[latin]{babel}
+%\usepackage[landscape, left=3cm, right=1.5cm, top=2cm, bottom=1cm]{geometry} % okraje stranky
+\usepackage[landscape, a4paper, mag=1166, truedimen, left=2cm, right=1.5cm, top=1.6cm, bottom=0.95cm]{geometry} % okraje stranky
+
+\usepackage{fontspec}
+\setmainfont[FeatureFile={junicode.fea}, Ligatures={Common, TeX}, RawFeature=+fixi]{Junicode}
+%\setmainfont{Junicode}
+
+% shortcut for Junicode without ligatures (for the Czech texts)
+\newfontfamily\nlfont[FeatureFile={junicode.fea}, Ligatures={Common, TeX}, RawFeature=+fixi]{Junicode}
+
+% Hebrew font: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=SILHebrUnic2
+\newfontfamily\hebfont[Scale=1]{Ezra SIL}
+
+\usepackage{multicol}
+\usepackage{color}
+\usepackage{lettrine}
+\usepackage{fancyhdr}
+
+% usual packages loading:
+\usepackage{luatextra}
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{gregoriotex} % for gregorio score inclusion
+\usepackage{gregoriosyms}
+\usepackage{wrapfig} % figures wrapped by the text
+\usepackage{parcolumns}
+\usepackage[contents={},opacity=1,scale=1,color=black]{background}
+\usepackage{tikzpagenodes}
+\usepackage{calc}
+\usepackage{longtable}
+\usetikzlibrary{calc}
+
+\setlength{\headheight}{14.5pt}
+
+\input{conventuscommune.tex} % Often used macros
+\input{translationes_cs.tex} % Czech translations of the proper texts
+
+\newcommand{\annusEditionis}{2016}
+
+\def\hebinitial#1{%
+\leavevmode{\newbox\hebbox\setbox\hebbox\hbox{\hebfont{#1}\hskip 1mm}\kern -\wd\hebbox\hbox{\hebfont{#1}\hskip 1mm}}%
+}
+
+%%%% Vicekrat opakovane kousky
+
+\newcommand{\anteOrationem}{
+  \rubrica{Ante Orationem, cantatur a Superiore:}
+
+  \pars{Supplicatio Litaniæ.}
+
+  \gregorioscore{temporalia/supplicatiolitaniae.gtex}
+
+  \pars{Oratio Dominica.}
+
+  \gregorioscore{temporalia/oratiodominica.gtex}
+
+  \rubrica{Deinde dicitur ab Hebdomadario:}
+
+  \gregorioscore{temporalia/dominusvobiscum-solemnis.gtex}
+
+  \rubrica{In choro monialium loco Dominus vobiscum dicitur:}
+
+  \gregorioscore{temporalia/domineexaudi.gtex}
+}
+
+\newcommand{\tuAutem}{
+  \vfill
+
+  \gregorioscore{temporalia/tuautem.gtex}
+}
+
+\setlength{\columnsep}{30pt} % prostor mezi sloupci
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Here we set the space around the initial.
+% Please report to http://home.gna.org/gregorio/gregoriotex/details for more details and options
+\grechangedim{afterinitialshift}{2.2mm}{scalable}
+\grechangedim{beforeinitialshift}{2.2mm}{scalable}
+\grechangedim{interwordspacetext}{0.32 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\grechangedim{annotationraise}{-0.2cm}{scalable}
+
+% Here we set the initial font. Change 38 if you want a bigger initial.
+% Emit the initials in red.
+\grechangestyle{initial}{\color{red}\fontsize{38}{38}\selectfont}
+
+\pagestyle{empty}
+
+\begin{titulusOfficii}
+\nomenFesti{Feria V in Cœna Domini.}
+\celebratio{Duplex 1. classis.}
+\end{titulusOfficii}
+
+%\hora{Ad Matutinum.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sideThumbs{Matutinum}
+
+\vfill
+
+% Incipit Lamentátio Ieremíæ Prophétæ.
+\pars{Lectio I.} \scriptura{Lam. 1, 1-5}
+
+\noindent Incípit Lamentátio Ieremíæ Prophétæ.
+
+\textusEtTranslatio{
+\hebinitial{א} Quómodo sedet sola cívitas plena pópulo! Facta est quasi vídua Dómina géntium; Princeps provinciárum facta est sub tribúto.\\
+\hebinitial{ב} Plorans plorávit in nocte, et lácrimæ eius in maxíllis eius: non est qui consolétur eam ex ómnibus caris eius; Omnes amíci eius sprevérunt eam, et facti sunt ei inimíci.\\
+\hebinitial{ג} Migrávit Iudas propter afflictiónem, et multitúdinem servitútis; habitávit inter gentes, nec invénit réquiem: Omnes persecutóres eius apprehendérunt eam inter angústias.\\
+\hebinitial{ד} Viæ Sion lugent, eo quod non sint qui véniant ad solemnitátem: omnes portæ eius destrúctæ, sacerdótes eius geméntes; vírgines eius squálidæ, et ipsa oppréssa amaritúdine.\\
+\hebinitial{ה} Facti sunt hostes eius in cápite; inimíci eius locupletáti sunt: quia Dóminus locútus est super eam propter multitúdinem iniquitátum eius. Párvuli eius ducti sunt in captivitátem ante fáciem tribulántis.
+Ierúsalem, Ierúsalem, convértere ad Dóminum Deum tuum.
+}{\trMatLecI}{10cm}
+
+\vfill
+
+\pars{Lectio II.} \scriptura{Lam. 1, 6-9}
+
+\textusEtTranslatio{
+\hebinitial{ו} Et egréssus est a fília Sion omnis decor eius; facti sunt princípes eius velut aríetes non inveniéntes páscua, et abiérunt absque fortitúdine ante fáciem subsequéntis.\\
+\hebinitial{ז} Recordáta est Ierúsalem diérum afflictiónis suæ, et prævaricatiónis, ómnium desiderabílium suórum, quæ habúerat a diébus antíquis, cum cáderet pópulus eius in manu hostíli, et non esset auxiliátor: vidérunt eam hostes, et derisérunt sábbata eius.\\
+\hebinitial{ח} Peccátum peccávit Ierúsalem, proptérea instábilis facta est; omnes qui glorificábant eam sprevérunt illam, quia vidérunt ignomíniam eius: ipsa autem gemens convérsa est retrórsum.\\
+\hebinitial{ט} Sordes eius in pédibus eius, nec recordáta est finis sui; depósita est veheménter, non habens consolatórem. Vide, Dómine, afflictiónem meam, quóniam eréctus est inimícus.
+Ierúsalem, Ierúsalem, convértere ad Dóminum Deum tuum.
+}{\trMatLecII}{10cm}
+
+\vfill
+
+\pars{Lectio III.} \scriptura{Lam. 1, 10-14}
+
+\textusEtTranslatio{
+\hebinitial{י} Manum suam misit hostis ad ómnia desiderabília eius, quia vidit gentes ingréssas sanctuárium suum, de quibus præcéperas ne intrárent in ecclésiam tuam.\\
+\hebinitial{כ} Omnis pópulus eius gemens, et quærens panem; dedérunt pretiósa quæque pro cibo ad refocillándam ánimam. Vide, Dómine, et consídera quóniam facta sum vilis!\\
+\hebinitial{ל} O vos omnes qui transítis per viam, atténdite, et vidéte si est dolor sicut dolor meus! Quóniam vindemiávit me, ut locútus est Dóminus, in die iræ furóris sui.\\
+\hebinitial{מ} De excelso misit ignem in óssibus meis, et erudívit me: expándit rete pédibus meis, convértit me retrórsum; pósuit me desolátam, tota die mœróre conféctam.\\
+\hebinitial{נ} Vigilávit iugum iniquitátum meárum; in manu eius convolútæ sunt, et impósitæ collo meo. Infirmáta est virtus mea: dedit me Dóminus in manu de qua non pótero súrgere.
+Ierúsalem, Ierúsalem, convértere ad Dóminum Deum tuum.
+}{\trMatLecIII}{10cm}
+
+\vfill
+
+\sineinitiali{temporalia/tonus-lectionis-solemnis.gtex}
+
+\vspace{-0.4cm}
+
+\vfill
+
+\pars{Lectio IV.} \scriptura{In Psalmum 54. ad 1. versum}
+
+\noindent Ex Tractátu sancti Augustíni Epíscopi super Psalmos.
+
+\textusEtTranslatio{
+Exáudi, Deus, oratiónem meam, et ne despéxeris deprecatiónem meam:
+inténde mihi, et exáudi me.
+Satagéntis, sollíciti, in tribulatióne pósiti, verba sunt ista.
+Orat multa pátiens, de malo liberári desíderans.
+Súperest ut videámus in quo malo sit: et cum dícere cœperit:
+agnoscámus ibi nos esse:
+ut communicáta tribulatióne, coniungámus oratiónem.
+Contristátus sum, inquit, in exercitatióne mea, et conturbátus sum.
+Ubi contristátus?
+Ubi conturbátus?
+In exercitatióne mea, inquit.
+Hómines malos, quos pátitur, commemorátus est:
+eamdémque passiónem malórum hóminum, exercitatiónem suam dixit.
+Ne putétis gratis esse malos in hoc mundo,
+et nihil boni de illis ágere Deum.
+Omnis malus aut ídeo vivit, ut corrigátur;
+aut ídeo vivit, ut per illum bonus exerceátur.
+}{\trMatLecIV}{10cm}
+
+\pars{Lectio V.}
+
+\textusEtTranslatio{
+Utínam ergo qui nos modo exércent, convertántur, et nobíscum exerceántur:
+tamen quámdiu ita sunt ut exérceant, non eos odérimus:
+quia in eo quod malus est quis eórum, utrum usque in inem perseveratúrus sit, ignorámus.
+Et plerúmque cum tibi vidéris odísse inimícum, fratrem odísti, et nescis.
+Diábolus, et ángeli eius in Scriptúris sanctis manifestáti sunt nobis,
+quod ad ignem ætérnum sint destináti.
+Ipsórum tantum desperánda est corréctio, contra quos habémus occúltam luctam:
+ad quam luctam nos armat Apóstolus, dicens:
+Non est nobis colluctátio advérsus carnem et sánguinem:
+id est, non advérsus hómines, quos vidétis,
+sed advérsus príncipes, et potestátes, et rectóres mundi, tenebrárum harum.
+Ne forte cum dixísset, mundi, intellígeres dǽmones esse rectóres cæli et terræ,
+mundi dixit, tenebrárum harum: mundi dixit amatórum mundi:
+mundi dixit, impiórum et iniquórum: mundi dixit, de quo dicit Evangélium:
+Et mundus eum non cognóvit.
+}{\trMatLecV}{10cm}
+
+\pars{Lectio VI.}
+
+\textusEtTranslatio{
+Quóniam vidi iniquitátem, et contradictiónem in civitáte.
+Atténde glóriam crucis ipsíus.
+Iam in fronte regum crux illa ixa est,
+cui inimíci insultavérunt.
+Eféctus probávit virtútem: dómuit orbem non ferro, sed ligno.
+Lignum crucis contuméliis dignum visum est inimícis,
+et ante ipsum lignum stantes caput agitábant, et dicébant:
+Si Fílius Dei est, descéndat de cruce.
+Extendébat ille manus suas ad pópulum non credéntem et contradicéntem.
+Si enim iustus est, qui ex ide vivit;
+iníquus est, qui non habet idem.
+Quod ergo hic ait, iniquitátem: perfídiam intéllige.
+Vidébat ergo Dóminus in civitáte iniquitátem et contradictiónem,
+et extendébat manus suas ad pópulum non credéntem, et contradicéntem:
+et tamen et ipsos exspéctans dicébat:
+Pater, ignósce illis, quia nésciunt quid fáciunt.
+}{\trMatLecVI}{10cm}
+
+\pars{Lectio VII.} \scriptura{I Cor. 11, 17-22}
+
+\noindent De Epístola prima beáti Pauli Apóstoli ad Corínthios.
+
+\textusEtTranslatio{
+Hoc autem præcípio: non laudans quod non in mélius,
+sed in detérius convenítis.
+Primum quidem conveniéntibus vobis in Ecclésiam,
+áudio scissúras esse inter vos, et ex parte credo.
+Nam opórtet et hǽreses esse, ut et qui probáti sunt,
+manifésti iant in vobis.
+Conveniéntibus ergo vobis in unum,
+iam non est Domínicam cenam manducáre.
+Unusquísque enim suam cenam præsúmit ad manducándum,
+Et álius quidem ésurit, álius autem ébrius est.
+Numquid domos non habétis ad manducándum, et bibéndum?
+Aut Ecclésiam Dei contémnitis, et confúnditis eos, qui non habent?
+Quid dicam vobis?
+Laudo vos?
+In hoc non laudo.
+}{\trMatLecVII}{10cm}
+
+\pars{Lectio VIII.} \scriptura{I Cor. 11, 23-26}
+
+\textusEtTranslatio{
+Ego enim accépi a Dómino quod et trádidi vobis,
+quóniam Dóminus Iesus, in qua nocte tradebátur, accépit panem,
+et grátias agens fregit, et dixit:
+«\textsc{Accípite et manducáte: hoc est corpus meum, quod pro vobis tradétur:
+hoc fácite in meam commemoratiónem}».
+Simíliter et cálicem, post\-quam cenávit, dicens:
+«\textsc{Hic calix novum testaméntum est in meo sánguine:
+hoc fácite, quotiescúmque bibétis, in meam commemoratiónem}».
+Quotiescúmque enim manducábitis panem hunc, et cálicem bibétis:
+mortem Dómini annuntiábitis, donec véniat.
+}{\trMatLecVIII}{10cm}
+
+\pars{Lectio IX.} \scriptura{I Cor. 11, 27-34}
+
+\textusEtTranslatio{
+Itaque quicúmque manducáverit panem hunc vel bíberit cálicem Dómini indígne,
+reus erit córporis et sánguinis Dómini.
+Probet autem seípsum homo: et sic de pane illo edat et de cálice bibat.
+Qui enim mandúcat et bibit indígne, iudícium sibi mandúcat et bibit;
+non diiúdicans corpus Dómini.
+Ideo inter vos multi infírmi et imbecílles,
+et dórmiunt multi.
+Quod si nosmetípsos diiudicarémus, non útique iudicarémur.
+Dum iudicámur autem, a Dómino corrípimur,
+ut non cum hoc mundo damnémur.
+Itaque, fratres mei, cum convenítis ad manducándum, ínvicem exspectáte.
+Si quis ésurit, domi mandúcet: ut non in iudícium conveniátis.
+Cétera autem, cum vénero dispónam.
+}{\trMatLecIX}{10cm}
+
+\end{document}
