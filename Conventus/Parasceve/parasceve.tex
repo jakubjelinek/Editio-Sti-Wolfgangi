@@ -1,0 +1,278 @@
+% LuaLaTeX
+
+\documentclass[a4paper, twoside, 12pt]{article}
+\usepackage[latin]{babel}
+%\usepackage[landscape, left=3cm, right=1.5cm, top=2cm, bottom=1cm]{geometry} % okraje stranky
+\usepackage[landscape, a4paper, mag=1166, truedimen, left=2cm, right=1.5cm, top=1.6cm, bottom=0.95cm]{geometry} % okraje stranky
+
+\usepackage{fontspec}
+\setmainfont[FeatureFile={junicode.fea}, Ligatures={Common, TeX}, RawFeature=+fixi]{Junicode}
+%\setmainfont{Junicode}
+
+% shortcut for Junicode without ligatures (for the Czech texts)
+\newfontfamily\nlfont[FeatureFile={junicode.fea}, Ligatures={Common, TeX}, RawFeature=+fixi]{Junicode}
+
+% Hebrew font: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=SILHebrUnic2
+\newfontfamily\hebfont[Scale=1]{Ezra SIL}
+
+\usepackage{multicol}
+\usepackage{color}
+\usepackage{lettrine}
+\usepackage{fancyhdr}
+
+% usual packages loading:
+\usepackage{luatextra}
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{gregoriotex} % for gregorio score inclusion
+\usepackage{gregoriosyms}
+\usepackage{wrapfig} % figures wrapped by the text
+\usepackage{parcolumns}
+\usepackage[contents={},opacity=1,scale=1,color=black]{background}
+\usepackage{tikzpagenodes}
+\usepackage{calc}
+\usepackage{longtable}
+\usetikzlibrary{calc}
+
+\setlength{\headheight}{14.5pt}
+
+\input{conventuscommune.tex} % Often used macros
+\input{translationes_cs.tex} % Czech translations of the proper texts
+
+\newcommand{\annusEditionis}{2016}
+
+\def\hebinitial#1{%
+\leavevmode{\newbox\hebbox\setbox\hebbox\hbox{\hebfont{#1}\hskip 1mm}\kern -\wd\hebbox\hbox{\hebfont{#1}\hskip 1mm}}%
+}
+
+%%%% Vicekrat opakovane kousky
+
+\newcommand{\anteOrationem}{
+  \rubrica{Ante Orationem, cantatur a Superiore:}
+
+  \pars{Supplicatio Litaniæ.}
+
+  \gregorioscore{temporalia/supplicatiolitaniae.gtex}
+
+  \pars{Oratio Dominica.}
+
+  \gregorioscore{temporalia/oratiodominica.gtex}
+
+  \rubrica{Deinde dicitur ab Hebdomadario:}
+
+  \gregorioscore{temporalia/dominusvobiscum-solemnis.gtex}
+
+  \rubrica{In choro monialium loco Dominus vobiscum dicitur:}
+
+  \gregorioscore{temporalia/domineexaudi.gtex}
+}
+
+\newcommand{\tuAutem}{
+  \vfill
+
+  \gregorioscore{temporalia/tuautem.gtex}
+}
+
+\setlength{\columnsep}{30pt} % prostor mezi sloupci
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Here we set the space around the initial.
+% Please report to http://home.gna.org/gregorio/gregoriotex/details for more details and options
+\grechangedim{afterinitialshift}{2.2mm}{scalable}
+\grechangedim{beforeinitialshift}{2.2mm}{scalable}
+\grechangedim{interwordspacetext}{0.32 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\grechangedim{annotationraise}{-0.2cm}{scalable}
+
+% Here we set the initial font. Change 38 if you want a bigger initial.
+% Emit the initials in red.
+\grechangestyle{initial}{\color{red}\fontsize{38}{38}\selectfont}
+
+\pagestyle{empty}
+
+\begin{titulusOfficii}
+\nomenFesti{Feria VI in Parasceve.}
+\celebratio{Duplex 1. classis.}
+\end{titulusOfficii}
+
+%\hora{Ad Matutinum.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sideThumbs{Matutinum}
+
+\vfill
+
+% Incipit Lamentátio Ieremíæ Prophétæ.
+\pars{Lectio I.} \scriptura{Lam. 2, 8-11}
+
+\noindent De Lamentátio Ieremíæ Prophétæ.
+
+\textusEtTranslatio{
+\hebinitial{ח} Cogitávit Dóminus dissipáre murum fíliæ Sion; teténdit funículum suum, et non avértit manum suam a perditióne: luxítque antemurále, et murus páriter dissipátus est.\\
+\hebinitial{ט} Defíxæ sunt in terra portæ eius, pérdidit et contrívit vectes eius; regem eius et princípes eius in géntibus: Non est lex, et Prophétæ eius non invenérunt visiónem a Dómino.\\
+\hebinitial{י} Sedérunt in terra, conticuérunt senes fíliæ Sion; conspersérunt cínere cápita sua, accíncti sunt cilíciis: abiecérunt in terram cápita sua vírgines Ierúsalem.\\
+\hebinitial{כ} Defecérunt præ lácrimis óculi mei, conturbáta sunt víscera mea; effúsum est in terra iecur meum super contritióne fíliæ pópuli mei, cum defíceret párvulus et lactens in platéis óppidi.
+Ierúsalem, Ierúsalem, convértere ad Dóminum Deum tuum.
+}{\trMatLecI}{10cm}
+
+\vfill
+
+\pars{Lectio II.} \scriptura{Lam. 2, 12-15}
+
+\textusEtTranslatio{
+\hebinitial{ל} Mátribus suis dixérunt: Ubi est tríticum et vinum? Cum defícerent quasi vulneráti in platéis civitátis, cum exhalárent ánimas suas in sinu matrum suárum.\\
+\hebinitial{מ} Cui comparábo te, vel cui assimilábo te, fília Ierúsalem? Cui exæquábo te, et consolábor te, virgo, fília Sion? Magna est enim velut mare contrítio tua: quis medébitur tui?\\
+\hebinitial{נ} Prophétæ tui vidérunt tibi falsa et stulta; nec aperiébant iniquitátem tuam, ut te ad pœniténtiam provocárent; vidérunt autem tibi assumptiónes falsas, et eiectiónes.\\
+\hebinitial{ס} Plausérunt super te mánibus omnes transeúntes per viam; sibilavérunt et movérunt caput suum super fíliam Ierúsalem: Hǽccine est urbs, dicéntes, perfécti decóris, gáudium univérsæ terræ?
+Ierúsalem, Ierúsalem, convértere ad Dóminum Deum tuum.
+}{\trMatLecII}{10cm}
+
+\vfill
+
+\pars{Lectio III.} \scriptura{Lam. 3, 1-9}
+
+\textusEtTranslatio{
+\hebinitial{א} Ego vir videns paupertátem meam in virga indignatiónis eius. Me minávit, et addúxit in ténebras, et non in lucem. Tantum in me vertit et convértit manum suam tota die.\\
+\hebinitial{ב} Vetústam fecit pellem meam et carnem meam; contrívit ossa mea. Ædificávit in gyro meo, et circúmdedit me felle et labóre. In tenebrósis collocávit me, quasi mórtuos sempitérnos.\\
+\hebinitial{ג} Circumædificávit advérsum me, ut non egrédiar; aggravávit cómpedem meum. Sed et cum clamávero, et rogávero, exclúsit oratiónem meam. Conclúsit vias meas lapídibus quadris; sémitas meas subvértit.
+Ierúsalem, Ie\-rú\-sa\-lem, convértere ad Dóminum Deum tuum.
+}{\trMatLecIII}{10cm}
+
+\vfill
+
+\sineinitiali{temporalia/tonus-lectionis-solemnis.gtex}
+
+\vspace{-0.4cm}
+
+\vfill
+
+\pars{Lectio IV.} \scriptura{In Psalmum 63. ad 2. versum}
+
+\noindent Ex Tractátu sancti Augustíni Epíscopi super Psalmos.
+
+\textusEtTranslatio{
+Protexísti me, Deus, a convéntu malignántium,
+a multitúdine operántium iniquitátem.
+Iam ipsum caput nostrum intueámur.
+Multi mártyres tália passi sunt, sed nihil sic elúcet, quómodo caput mártyrum:
+ibi mélius intuémur, quod illi expérti sunt.
+Protéctus est a multitúdine malignántium,
+protegénte se Deo, protegénte carnem suam ipso Fílio, et hómine, quem gerébat:
+quia fílius hóminis est, et Fílius Dei est:
+Fílius Dei, propter formam Dei:
+fílius hóminis, propter formam servi,
+habens in potestáte pónere ánimam suam, et recípere eam.
+Quid ei potuérunt fácere inimíci?
+Occidérunt corpus, ánimam non occidérunt.
+Inténdite.
+Parum ergo erat, Dóminum hortári mártyres verbo,
+nisi firmáret exémplo.
+}{\trMatLecIV}{10cm}
+
+\pars{Lectio V.}
+
+\textusEtTranslatio{
+Nostis qui convéntus erat malignántium Iudæórum,
+et quæ multitúdo erat operántium iniquitátem.
+Quam iniquitátem?
+Quia voluérunt occídere Dóminum Iesum Christum.
+Tanta ópera bona, inquit, osténdi vobis:
+propter quod horum me vultis occídere?
+Pértulit omnes infírmos eórum, curávit omnes lánguidos eórum,
+prædicávit regnum cælórum, non tácuit vítia eórum,
+ut ipsa pótius eis displicérent, non médicus, a quo sanabántur.
+His ómnibus curatiónibus eius ingráti,
+tamquam multa febre phrenétici, insaniéntes
+in médicum qui vénerat curáre eos, excogitavérunt consílium perdéndi eum:
+tamquam ibi voléntes probáre, utrum vere homo sit,
+qui mori possit, an áliquid super hómines sit, et mori se non permíttat.
+Verbum ipsórum agnóscimus in Sapiéntia Salomónis:
+Morte turpíssima, ínquiunt, condemnémus eum.
+Interrogémus eum: erit enim respéctus in sermónibus illíus.
+Si enim vere Fílius Dei est, líberet eum.
+}{\trMatLecV}{10cm}
+
+\pars{Lectio VI.}
+
+\textusEtTranslatio{
+Exacuérunt tamquam gládium linguas suas.
+Non dicant Iudǽi: Non occídimus Christum.
+Etenim proptérea eum dedérunt iúdici Piláto,
+ut quasi ipsi a morte eius videréntur immúnes.
+Nam cum dixísset eis Pilátus:
+Vos eum occídite, respondérunt:
+Nobis non licet occídere quemquam.
+Iniquitátem facínoris sui in iúdicem hóminem refúndere volébant:
+sed numquid Deum iúdicem fallébant?
+Quod fecit Pilátus, in eo ipso quod fecit, aliquántum párticeps fuit:
+sed in comparatióne illórum, multo ipse innocéntior.
+Institit enim quantum pótuit, ut illum ex eórum mánibus liberáret:
+nam proptérea lagellátum prodúxit ad eos.
+Non persequéndo Dóminum lagellávit, sed eórum furóri satisfácere volens:
+ut vel sic iam mitéscerent,
+et desínerent velle occídere, cum lagellátum vidérent.
+Fecit et hoc.
+At ubi perseveravérunt, nostis illum lavísse manus, et dixísse,
+quod ipse non fecísset, mundum se esse a morte illíus.
+Fecit tamen.
+Sed si reus, quia fecit vel invítus:
+illi innocéntes, qui coëgérunt ut fáceret?
+Nullo modo.
+Sed ille dixit in eum senténtiam,
+et iussit eum crucifígi, et quasi ipse occídit:
+et vos, o Iudǽi, occidístis.
+Unde occidístis?
+Gládio línguæ: acuístis enim linguas vestras.
+Et quando percussístis, nisi quando clamástis: Crucifíge, crucifíge?
+}{\trMatLecVI}{10cm}
+
+\pars{Lectio VII.} \scriptura{Heb. 4, 11-15}
+
+\noindent De Epístola beáti Pauli Apóstoli ad Hebrǽos.
+
+\textusEtTranslatio{
+Festinémus íngredi in illam réquiem:
+ut ne in idípsum quis íncidat incredulitátis exémplum.
+Vivus est enim sermo Dei, et éicax, et penetrabílior omni gládio ancípiti:
+et pertíngens usque ad divisiónem ánimæ ac spíritus,
+compágum quoque ac medullárum, et discrétor cogitatiónum et intentiónum cordis.
+Et non est ulla creatúra invisíbilis in conspéctu eius:
+ómnia autem nuda et apérta sunt óculis eius, ad quem nobis sermo.
+Habéntes ergo Pontíicem magnum, qui penetrávit cælos,
+Iesum Fílium Dei: teneámus confessiónem.
+Non enim habémus Pontíicem qui non possit cómpati inirmitátibus nostris:
+tentátum autem per ómnia pro similitúdine absque peccáto.
+}{\trMatLecVII}{10cm}
+
+\pars{Lectio VIII.} \scriptura{Heb. 4, 16; ibid. 5, 1-3}
+
+\textusEtTranslatio{
+Adeámus ergo cum idúcia ad thronum grátiæ:
+ut misericórdiam consequámur, et grátiam inveniámus in auxílio opportúno.
+Omnis namque Póntifex, ex homínibus assúmptus, pro
+homínibus constitúitur in iis, quæ sunt ad Deum,
+ut óferat dona et sacrifícia pro peccátis:
+qui condolére possit iis qui ignórant et errant:
+quóniam et ipse circúmdatus est inirmitáte:
+et proptérea debet, quemádmodum pro pópulo,
+ita étiam pro semetípso oférre pro peccátis.
+}{\trMatLecVIII}{10cm}
+
+\pars{Lectio IX.} \scriptura{Heb. 5, 4-10}
+
+\textusEtTranslatio{
+Nec quisquam sumit sibi honórem,
+sed qui vocátur a Deo, tamquam Aaron.
+Sic et Christus non semetípsum clariicávit ut Póntifex fíeret:
+sed qui locútus est ad eum:
+Fílius meus es tu, ego hódie génui te.
+Quemádmodum et in álio loco dicit:
+Tu es sacérdos in ætérnum secúndum órdinem Melchísedech.
+Qui in diébus carnis suæ, preces supplicationésque ad eum,
+qui possit illum salvum fácere a morte,
+cum clamóre válido et lácrimis, ófferens, exaudítus est pro sua reveréntia.
+Et quidem cum esset Fílius Dei, dídicit ex iis quæ passus est, obediéntiam:
+et consummátus, factus est ómnibus obtemperántibus sibi causa salútis ætérnæ,
+appellátus a Deo Póntifex iuxta órdinem Melchísedech.
+}{\trMatLecIX}{10cm}
+
+\end{document}
