@@ -1,0 +1,241 @@
+% LuaLaTeX
+
+\documentclass[a4paper, twoside, 12pt]{article}
+\usepackage[latin]{babel}
+%\usepackage[landscape, left=3cm, right=1.5cm, top=2cm, bottom=1cm]{geometry} % okraje stranky
+\usepackage[landscape, a4paper, mag=1166, truedimen, left=2cm, right=1.5cm, top=1.6cm, bottom=0.95cm]{geometry} % okraje stranky
+
+\usepackage{fontspec}
+\setmainfont[FeatureFile={junicode.fea}, Ligatures={Common, TeX}, RawFeature=+fixi]{Junicode}
+%\setmainfont{Junicode}
+
+% shortcut for Junicode without ligatures (for the Czech texts)
+\newfontfamily\nlfont[FeatureFile={junicode.fea}, Ligatures={Common, TeX}, RawFeature=+fixi]{Junicode}
+
+% Hebrew font: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=SILHebrUnic2
+\newfontfamily\hebfont[Scale=1]{Ezra SIL}
+
+\usepackage{multicol}
+\usepackage{color}
+\usepackage{lettrine}
+\usepackage{fancyhdr}
+
+% usual packages loading:
+\usepackage{luatextra}
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{gregoriotex} % for gregorio score inclusion
+\usepackage{gregoriosyms}
+\usepackage{wrapfig} % figures wrapped by the text
+\usepackage{parcolumns}
+\usepackage[contents={},opacity=1,scale=1,color=black]{background}
+\usepackage{tikzpagenodes}
+\usepackage{calc}
+\usepackage{longtable}
+\usetikzlibrary{calc}
+
+\setlength{\headheight}{14.5pt}
+
+\input{conventuscommune.tex} % Often used macros
+\input{translationes_cs.tex} % Czech translations of the proper texts
+
+\newcommand{\annusEditionis}{2016}
+
+\def\hebinitial#1{%
+\leavevmode{\newbox\hebbox\setbox\hebbox\hbox{\hebfont{#1}\hskip 1mm}\kern -\wd\hebbox\hbox{\hebfont{#1}\hskip 1mm}}%
+}
+
+%%%% Vicekrat opakovane kousky
+
+\newcommand{\anteOrationem}{
+  \rubrica{Ante Orationem, cantatur a Superiore:}
+
+  \pars{Supplicatio Litaniæ.}
+
+  \gregorioscore{temporalia/supplicatiolitaniae.gtex}
+
+  \pars{Oratio Dominica.}
+
+  \gregorioscore{temporalia/oratiodominica.gtex}
+
+  \rubrica{Deinde dicitur ab Hebdomadario:}
+
+  \gregorioscore{temporalia/dominusvobiscum-solemnis.gtex}
+
+  \rubrica{In choro monialium loco Dominus vobiscum dicitur:}
+
+  \gregorioscore{temporalia/domineexaudi.gtex}
+}
+
+\newcommand{\tuAutem}{
+  \vfill
+
+  \gregorioscore{temporalia/tuautem.gtex}
+}
+
+\setlength{\columnsep}{30pt} % prostor mezi sloupci
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Here we set the space around the initial.
+% Please report to http://home.gna.org/gregorio/gregoriotex/details for more details and options
+\grechangedim{afterinitialshift}{2.2mm}{scalable}
+\grechangedim{beforeinitialshift}{2.2mm}{scalable}
+\grechangedim{interwordspacetext}{0.32 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\grechangedim{annotationraise}{-0.2cm}{scalable}
+
+% Here we set the initial font. Change 38 if you want a bigger initial.
+% Emit the initials in red.
+\grechangestyle{initial}{\color{red}\fontsize{38}{38}\selectfont}
+
+\pagestyle{empty}
+
+\begin{titulusOfficii}
+\nomenFesti{Sabbato Sancto.}
+\celebratio{Duplex 1. classis.}
+\end{titulusOfficii}
+
+%\hora{Ad Matutinum.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sideThumbs{Matutinum}
+
+\vfill
+
+% Incipit Lamentátio Ieremíæ Prophétæ.
+\pars{Lectio I.} \scriptura{Lam. 3, 22-30}
+
+\noindent De Lamentátio Ieremíæ Prophétæ.
+
+\textusEtTranslatio{
+\hebinitial{ח} Misericórdiæ Dómini quia non sumus consúmpti: quia non defecérunt miseratiónes eius. Novi dilúculo, multa est fides tua. Pars mea Dóminus, dixit ánima mea: proptérea exspectábo eum.
+\hebinitial{ט} Bonus est Dóminus sperántibus in eum, ánimæ quærénti illum. Bonum est præstolári cum siléntio salutáre Dei. Bonum est viro, cum portáverit iugum ab adolescéntia sua.
+\hebinitial{י} Sedébit solitárius, et tacébit: quia levávit super se. Ponet in púlvere os suum, si forte sit spes. Dabit percutiénti se maxíllam, saturábitur oppróbriis.
+Ierúsalem, Ierúsalem, convértere ad Dóminum Deum tuum.
+}{\trMatLecI}{10cm}
+
+\vfill
+
+\pars{Lectio II.} \scriptura{Lam. 4, 1-6}
+
+\textusEtTranslatio{
+\hebinitial{א} Quómodo obscurátum est aurum, mutátus est color óptimus, dispérsi sunt lápides sanctuárii in cápite ómnium plateárum?\\
+\hebinitial{ב} Fílii Sion ínclyti, et amícti áuro prímo: quómodo reputáta sunt in vasa téstea, opus mánuum fíguli?\\
+\hebinitial{ג} Sed et lámiæ nudavérunt mammam, lactavérunt cátulos suos: fília pópuli mei crudélis quasi strúthio in desérto.\\
+\hebinitial{ד} Adhǽsit lingua lacténtis ad palátum eius in siti: párvuli petiérunt panem: et non erat qui frángeret eis.\\
+\hebinitial{ה} Qui vescebántur voluptuóse, interiérunt in viis: qui nutriebántur in cróceis, amplexáti sunt stércora.\\
+\hebinitial{ו} Et maior effécta est iníquitas fíliæ pópuli mei peccáto Sodomórum, quæ subvérsa est in moménto, et non cepérunt in ea manus.
+Ierúsalem, Ierúsalem, convértere ad Dóminum Deum tuum.
+}{\trMatLecII}{10cm}
+
+\vfill
+
+\pars{Lectio III.} \scriptura{Lam. 5, 1-11}
+
+\noindent Incípit Orátio Ieremíæ Prophétæ.
+
+\textusEtTranslatio{
+Recordáre, Dómine, quid accíderit nobis: intuére et réspice oppróbrium nostrum.
+Hæréditas nostra versa est ad aliénos: domus nostræ ad extráneos.
+Pupílli facti sumus absque patre, matres nostræ quasi víduæ.
+Aquam nostram pecúnia bíbimus: ligna nostra prétio comparávimus.
+Cervícibus nostris minabámur, lassis non dabátur réquies.
+Ægýpto dédimus manum, et Assýriis, ut saturarémur pane.
+Patres nostri peccavérunt, et non sunt: et nos iniquitátes eórum portávimus.
+Servi domináti sunt nostri: non fuit qui redímeret de manu eórum.
+In animábus nostris afferebámus panem nobis, a fácie gládii in desérto.
+Pellis nostra quasi clíbanus exústa est a facie tempestátum famis.
+Mulíeres in Sion humiliavérunt, et vírgines in civitátibus Iuda.
+Ierúsalem, Ierúsalem, convértere ad Dóminum Deum tuum.
+}{\trMatLecIII}{10cm}
+
+\vfill
+
+\sineinitiali{temporalia/tonus-lectionis-solemnis.gtex}
+
+\vspace{-0.4cm}
+
+\vfill
+
+\pars{Lectio IV.} \scriptura{In Psalmum 63. ad 7. versum}
+
+\noindent Ex Tractátu sancti Augustíni Epíscopi su\textit{per} Psalmos.
+
+\textusEtTranslatio{
+Accédet homo ad cor altum, et exaltábitur Deus.
+Illi dixérunt: Quis nos vidébit?
+Defecérunt scrutántes scrutatiónes, consília mala.
+Accéssit homo ad ipsa consília, passus est se tenéri ut homo.
+Non enim tenerétur nisi homo, aut viderétur nisi homo,
+aut cæderétur nisi homo, aut crucifigerétur, aut morerétur nisi homo.
+Accéssit ergo homo ad illas omnes passiónes, quæ in illo nihil valérent, nisi esset homo.
+Sed si ille non esset homo, non liberarétur homo.
+Accéssit homo ad cor altum, id est, cor secrétum, obiíciens aspéctibus humánis hóminem, servans intus Deum:
+celans formam Dei, in qua æquális est Patri, et ófferens formam servi, qua minor est Patre.
+}{\trMatLecIV}{10cm}
+
+\pars{Lectio V.}
+
+\textusEtTranslatio{
+Quo perduxérunt illas scrutatiónes suas, quas perscrutántes defecérunt,
+ut étiam mórtuo Dómino et sepúlto, custódes pónerent ad sepúlcrum?
+Dixérunt enim Piláto: Sedúctor ille: hoc appellabátur nómine Dóminus Iesus Christus,
+ad solátium servórum suórum, quando dicúntur seductóres:
+ergo illi Piláto: Sedúctor ille, ínquiunt, dixit adhuc vivens: Post tres dies resúrgam.
+Iube ítaque custodíri sepúlcrum usque in diem tértium,
+ne forte véniant discípuli eius, et furéntur eum, et dicant plebi:
+Surréxit a mórtuis: et erit novíssimus error peior prióre.
+Ait illis Pilátus: Habétis custódiam, ite, custodíte sicut scitis.
+Illi autem abeúntes, muniérunt sepúlcrum, signántes lápidem cum custodibus.
+}{\trMatLecV}{10cm}
+
+\pars{Lectio VI.}
+
+\textusEtTranslatio{
+Posuérunt custódes mílites ad sepúlcrum.
+Concússa terra Dóminus resurréxit: mirácula facta sunt tália circa sepúlcrum,
+ut et ipsi mílites, qui custódes advénerant, testes fíerent, si vellent vera nuntiáre.
+Sed avarítia illa, quæ captivávit discípulum cómitem Christi,
+captivávit et mílitem custódem sepúlcri.
+Damus, ínquiunt, vobis pecúniam: et dícite,
+quia vobis dormiéntibus venérunt discípuli eius, et abstulérunt eum.
+Vere defecérunt scrutántes scrutatiónes.
+Quid est quod dixísti, o infélix a stútia?
+Tantúmne déseris lucem consílii pietátis, et in profúnda versútiæ demérgeris, ut hoc dicas:
+Dícite, quia vobis dormiéntibus venérunt discípuli eius, et abstulérunt eum?
+Dormiéntes testes ádhibes: vere tu ipse obdormísti, qui scrutándo tália defecísti.
+}{\trMatLecVI}{10cm}
+
+\pars{Lectio VII.} \scriptura{Heb. 9, 11-14}
+
+\noindent De Epístola beáti Pauli Apóstoli ad \textit{Heb}rǽos.
+
+\textusEtTranslatio{
+Christus assístens póntifex futurórum bonórum, per ámplius et perféctius tabernáculum, non manufáctum, id est non huius creatiónis:
+Neque per sánguinem hircórum aut vitulórum, sed per próprium sánguinem introívit semel in Sancta, ætérna redemptióne invénta.
+Si enim sanguis hircórum et taurórum, et cinis vítulæ aspérsus inquinátos sanctíficat ad emundatiónem carnis:
+Quanto magis sanguis Christi, qui per Spíritum Sanctum semetípsum óbtulit immaculátum Deo,
+emundábit consciéntiam nostram ab opéribus mórtuis ad serviéndum Deo vivénti?
+}{\trMatLecVII}{10cm}
+
+\pars{Lectio VIII.} \scriptura{Heb. 9, 15-18}
+
+\textusEtTranslatio{
+Et ídeo novi testaménti mediátor est: ut, morte intercedénte, in redemptiónem eárum prævaricatiónum,
+quæ erant sub prióri testaménto, repromissiónem accípiant qui vocáti sunt ætérnæ hereditátis.
+Ubi enim testaméntum est, mors necésse est intercédat testatóris.
+Testaméntum enim in mórtuis confirmátum est:
+alióquin nondum valet dum vivit qui testátus est.
+Unde nec primum quidem sine sánguine dedicátum est.
+}{\trMatLecVIII}{10cm}
+
+\pars{Lectio IX.} \scriptura{Heb. 9, 19-22}
+
+\textusEtTranslatio{
+Lecto enim omni mandáto legis a Móyse univérso pópulo, accípiens sánguinem vitulórum et hircórum cum aqua et lana coccínea et hyssópo,
+ipsum quoque librum et omnem pópulum aspérsit,
+dicens: ,,Hic sanguis testaménti quod mandávit ad vos Deus``.
+Etiam tabernáculum et ómnia vasa ministérii sánguine simíliter aspérsit;
+et ómnia pene in sánguine secúndum legem mundántur, et sine sánguinis effusióne non fit remíssio.
+}{\trMatLecIX}{10cm}
+
+\end{document}
