@@ -1,7 +1,7 @@
 #!/bin/awk -f
 function romtonum(txt,   rom, num)
 {
-  rom=gensub(/^.*\/ps118([ivx]*)_.*$/,"\\1","",txt);
+  rom=gensub(/^.*\/ps118([ivx]*)[_.].*$/,"\\1","",txt);
   num=0;
   while (length(rom)>0) {
     if (substr(rom,1,2) == "iv") {num+=4;rom=substr(rom,3)}
