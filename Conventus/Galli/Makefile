@@ -85,9 +85,9 @@ LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
 LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,benedictus magnificat dan3 beatitudosapientis jeremiae ecclesiasticus31)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
-SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
-	 $(addprefix versus-,amavit justum magna os custodi orapronobis) \
-	 $(addprefix hym-,IsteConfessor VitaSanctorum TeLucis) \
+SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud terant \
+	 $(addprefix versus-,amavit justum magna os custodi orapronobis amavit-simplex os-simplex lex) \
+	 $(addprefix hym-,IsteConfessor VitaSanctorum TeLucis NuncSancte RectorPotens RerumDeus) \
 	 benedicamus-duplex-laudes benedicamus-duplex-vesperae \
 	 deusinadiutorium-communis supplicatiolitaniae oratiodominica respl respv \
 	 dominusvobiscum-solemnis domineexaudi magnificat-initium-viii-G \
@@ -108,7 +108,7 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 	 benedicamus-solemnis-laud tedeum-solemnis tuautem
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(TMP_DIR)/ps4dir-comb.tex $(TMP_DIR)/ps4-initium-dir-auto.gtex \
-	    $(addprefix hym-,$(addsuffix -bohtext.tex,TeLucis))
+	    $(addprefix hym-,$(addsuffix -bohtext.tex,TeLucis NuncSancte RectorPotens RerumDeus))
 LAPSALMSINITGABC = $(foreach P,$(filter-out 118vi 118vii 118ix 118x 118xii 118xiii,$(PSALMS)),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3 benedictus beatitudosapientis jeremiae ecclesiasticus31,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
@@ -157,7 +157,7 @@ $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
 $(TMP_DIR)/ps4dir-comb.tex: $(TMP_DIR)/ps4dir.tex $(TMP_DIR)/ps4-boh.tex
 	$(GENPSCOMB)
 $(TMP_DIR)/magnificat-comb.tex: PSSKIP = 2
-$(patsubst %,$(TMP_DIR)/%-comb.tex,$(addprefix ps,90 118vii_viii 118ix_x 118xiii_xiv 118xv_xvi 118xix_xx 118xxi_xxii 133 149 150) jeremiae ecclesiasticus31): PSSKIP = 0
+$(patsubst %,$(TMP_DIR)/%-comb.tex,$(addprefix ps,90 118vi 118vii 118ix 118x 118xii 118xiii 133 149 150) jeremiae ecclesiasticus31): PSSKIP = 0
 galli.pdf: galli.tex conventuscommune.tex translationes_cs.tex \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
