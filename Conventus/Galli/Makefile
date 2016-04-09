@@ -131,10 +131,10 @@ include $(iter)
 
 all: galli.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
-$(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3 ps4dir): PSALMOPTS = $(LAPSALMOPTS)
+$(patsubst %,$(TMP_DIR)/%.tex,ps148 dan3 ps4dir): PSALMOPTS = $(LAPSALMOPTS)
 $(TMP_DIR)/magnificat.tex: PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
-$(TMP_DIR)/ps90.tex: PSALMOPTS = --accents-style bold $(LAPSALMOPTSACC)
-$(patsubst %,$(TMP_DIR)/%.tex,%(addprefix ps,118vi 118vii 118ix 118x 118xii 118xiii 133) jeremiae ecclesiasticus31): PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold $(LAPSALMOPTSACC)
+$(patsubst %,$(TMP_DIR)/ps%.tex,90 149): PSALMOPTS = --accents-style bold $(LAPSALMOPTSACC)
+$(patsubst %,$(TMP_DIR)/%.tex,$(addprefix ps,118vi 118vii 118ix 118x 118xii 118xiii 133 150) jeremiae ecclesiasticus31): PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold $(LAPSALMOPTSACC)
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
 $(CZPSALMS) $(patsubst %,$(TMP_DIR)/%-boh.tex,benedictus beatitudosapientis jeremiae ecclesiasticus31): $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/%.pslm
 	$(GENPSALM)
@@ -157,7 +157,7 @@ $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
 $(TMP_DIR)/ps4dir-comb.tex: $(TMP_DIR)/ps4dir.tex $(TMP_DIR)/ps4-boh.tex
 	$(GENPSCOMB)
 $(TMP_DIR)/magnificat-comb.tex: PSSKIP = 2
-$(patsubst %,$(TMP_DIR)/%-comb.tex,$(addprefix ps,90 118vii_viii 118ix_x 118xiii_xiv 118xv_xvi 118xix_xx 118xxi_xxii 133) jeremiae ecclesiasticus31): PSSKIP = 0
+$(patsubst %,$(TMP_DIR)/%-comb.tex,$(addprefix ps,90 118vii_viii 118ix_x 118xiii_xiv 118xv_xvi 118xix_xx 118xxi_xxii 133 149 150) jeremiae ecclesiasticus31): PSSKIP = 0
 galli.pdf: galli.tex conventuscommune.tex translationes_cs.tex \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
