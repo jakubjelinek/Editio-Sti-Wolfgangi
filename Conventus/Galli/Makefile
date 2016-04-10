@@ -91,7 +91,7 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud t
 	 benedicamus-duplex-laudes benedicamus-duplex-vesperae \
 	 deusinadiutorium-communis supplicatiolitaniae oratiodominica respl respv \
 	 dominusvobiscum-solemnis domineexaudi magnificat-initium-viii-G \
-	 $(addprefix capitulum-,DilectusDeo tuautem) \
+	 $(addprefix capitulum-,DilectusDeo tuautem JustusCor JustumDeduxit) \
 	 benedictio-noctemquietam jubedomnebenedicere lectiobrevis-fratressobrii \
 	 convertenosdeus deusinadiutorium-communis \
 	 oratio-visita benedicamus-minor ant-salveregina-simplex \
