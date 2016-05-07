@@ -7,10 +7,12 @@ transcriber: Jakub Jelínek;
 nabc-lines: 1;
 %%
 (c4)
-PA(d|vi-)ter(cdCB|pe-1su2) san(cdcdfe~|tr-vi>hi)ctus(d|ta) *()
+% FIXME: Add another variant glyph for tr-1
+PA(d|vi-)ter(cdCB|pe-1su2) san(cdcdfe~|tr-1vi>hi)ctus(d|ta) *()
 dum(d|ta) in(d|ta)fir(dfe~|pe>)mi(fg|pe)tá(gf/fe|clS-cl-lsco2)te(dc!dwfDCd|cl-qi-hgsu2vi-hg) gra(d!fwef|ql!poppt1)vi(ed|cl-) per(d|vi) di(df/f|tsM)es(dfDC|pe-1su2|dc|cl-) quat(cfe|to)tu(fg|pe)or(ghg~|sa>)dé(fe|cllsc3)cim(d|ta) la(fg|sa)bo(gvFD|ci-|fvEC|ci-hi|efd|tohi)rás(d!fwef|ql!poppt1)set,(ed|cl-) (;)
-in(dc~|``vi>lse4) se(f|vi)nec(ghg|tolsl2)tú(h|vihg)te(g|vihg) bo(f!gwhghj|ql!po-1ppt1vihi)na,(h|vi) (,)
+in(dc~|````vi>lse4) se(f|vi)nec(ghg|tolsl2)tú(h|vihg)te(g|vihg) bo(f!gwhghj|ql!po-1ppt1vihm)na,(h|vi) (,)
 hu(f|ta)jus(gh|pe) vi(hj|pe)tæ(h|ta) li(h|tahg)be(hg|cllsc3)rá(h|vi)tus(gf|cllsc3) er(ge~|vi)gás(fgOh|sa)tu(fefEDe|cl-ci-vihg)lo,(fd|cl-) *(;)
-á(d|ta)ni(f|vihg)mam(g|vihg) mé(h|vi)ri(gfg|polse6)tis(g|vi) ple(hgh|po)nam(fgf|to) fe(g|vi)lí(gvFED|vi-suu1su2|fd|cl-)ci(c!dwfEDe|ql-ppt1su2vihg)bus(ed|cl-) bo(f|vihg)nis(gh|pehglss2lse3) réd(hgh|po)di(f!gwhghj|ql!po-1ppt1vihi)dit(h|vi) in(f|ta)hæ(ghg|to)sú(hvGFE|vi-sut3|fwgfg|ql!po)ram(gf|cl-) pe(ef/ghf/|dsto-1|fOe|pihh)rén(d|ta)ni(DEfvEDe|vi-pp2su2vihh)bus.(fd|cl-) <sp>V/</sp>.(::)
-Ex(h|vi)plé(h|vi)tis(hghg/gOf|clcl!pr) no(g|vi)na(g|vi)gín(g|vi)ta(hf|cllsc3) quin(gh|pe)que(gh|pehg) an(ixhiho|vi-prhh)nis(h|ta) san(hf~|vi>)ctís(gh|pe)si(h|ta)mæ(h|ta) su(hghg|pf)æ(hf|``````cllsal1lsc3) æ(ixf!gwhg/|ql!clppt1|hih|tohh)tá(hvGFEgwh|vi-su1sut2qi-vihi)tis.(gf|cl-vi-) *(::)
+á(d|ta)ni(f|vihg)mam(g|vihg) mé(h|vi)ri(gfg|polse6)tis(g|vi) ple(hgh|po)nam(fgf|to) fe(g|vi)lí(gvFED|vi-suu1su2|fd|cl-)ci(c!dwfEDe|ql-ppt1su2vihg)bus(ed|cl-) bo(f|vihg)nis(gh|pehglss2lse3) réd(hgh|po)di(f!gwhghj|ql!po-1ppt1vihm)dit(h|vi) in(f|ta)hæ(ghg|to)sú(hvGFE|vi-sut3|fwgfg|ql!po)ram(gf|cl-) pe(ef/ghf/|dsto-1|fOe|pihh)rén(d|ta)ni(DEfvEDe|vi-pp2su2vihh)bus.(fd|cl-) <sp>V/</sp>.(::)
+% FIXME: Add glyph for vi-su1sut2
+Ex(h|vi)plé(h|vi)tis(hghg/gOf|clcl!pr) no(g|vi)na(g|vi)gín(g|vi)ta(hf|cllsc3) quin(gh|pe)que(gh|pehg) an(ixhiho|vi-prhh)nis(h|ta) san(hf~|vi>)ctís(gh|pe)si(h|ta)mæ(h|ta) su(hghg|pf)æ(hf|``````cllsal1lsc3) æ(ixf!gwhg/|ql!clppt1|hih|tohh)tá(hvGFEgwh|vi-su1sut2qi-vihk)tis.(gf|cl-vi-) *(::)
 A(d)ni(f)mam.(g) (::)
