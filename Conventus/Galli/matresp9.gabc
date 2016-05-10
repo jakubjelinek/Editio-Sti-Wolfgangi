@@ -8,11 +8,14 @@ nabc-lines: 1;
 %%
 (c4)
 % FIXME: Add another variant glyph for tr-1
-PA(d|vi-)ter(cdCA|pe-1su2) san(-adcd/e>|tr-1vi>hi)ctus(d|ta) *()
-dum(d|ta) in(d|ta)fir(-dfe~|pe>)mi(fg|pe)tá(gf/fe|clS-cl-lsco2)te(dc!dweDCd|cl-qi-hgsu2vi-hg) gra(d!ewfef|ql!poppt1)vi(ed|cl-) per(d|vi) di(dsfss|tsM)es(deDC|pe-1su2|dc|cl-) quat(-dfe|to)tu(fg|pe)or(ggoh>|sa>)dé(fe|cllsc3)cim(d|ta) la(ffOg|sa)bo(fvED|ci-|fvEC|ci-hi|efd|tohi)rás(d!ewfef|ql!poppt1)set,(ed|cl-) (;)
-in(dc~|````vi>lse4) se(f|vi)nec(-ghg|tolsl2)tú(h|vihg)te(g|vihg) bo(ixf!gwhghi|///ql!po-1ppt1vihm)na,(h|vi) (,)
-hu(f|ta)jus(gh|pe) vi(ixhi|///pe)tæ(h|ta) li(h|tahg)be(hg|cllsc3)rá(h|vi)tus(gf|cllsc3) er(f|vi)gás(fgOh|sa)tu(fefvEDe|cl-ci-vihg)lo,(ed|cl-) *(;)
-á(d|ta)ni(f|vihg)mam(g|vihg) mé(g|vi)ri(gfg|polse6)tis(g|vi) ple(hgh|po)nam(-fgf|to) fe(f|vi)lí(gvFED|vi-suu1su2|ed|cl-)ci(c!dwfEDe|ql-ppt1su2vihg)bus(ed|cl-) bo(f|vihg)nis(gh|pehglss2lse3) réd(hgh|po)di(ixf!gwhghi|ql!po-1ppt1vihm)dit(h|vi) in(f|ta)hæ(-ghg|to)sú(hvGFE|vi-sut3|fwgfg|ql!po)ram(gf|cl-) pe(fss/ghf/|dsto-1|fOe|pihh)rén(d|ta)ni(DEfvEDe|vi-pp2su2vihh)bus.(ed|cl-) <sp>V/</sp>.(::)
+PA(d|vi-)ter(cdCA|pe-1su2) san(-adcd/e>|tr-1vi>hi)ctus(d|ta) *(,)
+dum(d|ta) in(d|ta)fir(-dfe~|pe>)mi(fg|pe)tá(gf/fe|clS-cl-lsco2)te(dc!dweDCd|cl-qi-hgsu2vi-hg) gra(d!ewfef|ql!poppt1)vi(ed|cl-) (;)
+per(d|vi) di(dsfss|tsM)es(deDC|pe-1su2|dc|cl-) quat(-dfe|to)tu(fg|pe)ór(ggoh>|sa>)de(fe|cllsc3)cim(d|ta) la(ffOg|sa)bo(fvED|ci-|fvEC|ci-hi|efd|tohi)rás(d!ewfef|ql!poppt1)set,(ed|cl-) (:)
+In(dc~|````vi>lse4) se(f|vi)nec(-ghg|tolsl2)tú(h|vihg)te(g|vihg) bo(ixf!gwhghi|///ql!po-1ppt1vihm)na(h|vi) (,)
+hu(f|ta)jus(gh|pe) vi(ixhi|///pe)tæ(h|ta) li(h|tahg)be(hg|cllsc3)rá(h|vi)tus(gf|cllsc3) er(f|vi)gás(fgOh|sa)tu(fefvEDe|cl-ci-vihg)lo,(ed|cl-) *(:)
+A(d|ta)ni(f|vihg)mam(g|vihg) mé(g|vi)ri(gfg|polse6)tis(g|vi) ple(hgh|po)nam(-fgf|to) fe(f|vi)lí(gvFED|vi-suu1su2|ed|cl-)ci(c!dwfEDe|ql-ppt1su2vihg)bus(ed|cl-) (;)
+bo(f|vihg)nis(gh|pehglss2lse3) réd(hgh|po)di(ixf!gwhghi|ql!po-1ppt1vihm)dit(h|vi) in(f|ta)hæ(-ghg|to)sú(hvGFE|vi-sut3|fwgfg|ql!po)ram(gf|cl-) per(fss/ghf/|dsto-1|fOe|pihh)én(d|ta)ni(DEfvEDe|vi-pp2su2vihh)bus.(ed|cl-) <sp>V/</sp>.(::)
 % FIXME: Add glyph for vi-su1sut2
-Ex(h|vi)plé(h|vi)tis(hg/hg/gOf|clcl!pr) no(g|vi)na(g|vi)gín(g|vi)ta(hf|cllsc3) quin(gh|pe)que(gh|pehg) an(ixh/iiOh|//vi-prhh)nis(h|ta) san(hf~|vi>)ctís(gh|pe)si(h|ta)mæ(h|ta) su(hg/hg|pf)æ(hf|``````cllsal1lsc3) æ(ixf!gwhg/|ql!clppt1|hih|tohh)tá(hvGFEfwg/h|vi-su1sut2qi-vihk)tis.(gfg|cl-vi-) *(::)
+Ex(h|vi)plé(h|vi)tis(hg/hg/gOf|clcl!pr) no(g|vi)na(g|vi)gín(g|vi)ta(hf|cllsc3) quin(gh|pe)que(gh|pehg) an(ixh/iiOh|//vi-prhh)nis(h|ta) (;)
+san(hf~|vi>)ctís(gh|pe)si(h|ta)mæ(h|ta) su(hg/hg|pf)æ(hf|``````cllsal1lsc3) æ(ixf!gwhg/|ql!clppt1|hih|tohh)tá(hvGFEfwg/h|vi-su1sut2qi-vihk)tis.(gfg|cl-vi-) *(::)
 A(d)ni(f)mam.(g) (::)
