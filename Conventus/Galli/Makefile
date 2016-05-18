@@ -162,7 +162,7 @@ $(TMP_DIR)/magnificat-comb.tex: PSSKIP = 2
 $(patsubst %,$(TMP_DIR)/%-comb.tex,$(addprefix ps,90 118vi 118vii 118ix 118x 118xii 118xiii 133 149 150) jeremiae ecclesiasticus31): PSSKIP = 0
 $(TMP_DIR)/communio-versus-Exaudi-comb.tex: $(patsubst %,communio-versus-Exaudi%tex,. -boh.)
 	$(GENPSCOMB)
-galli.pdf: galli.tex conventuscommune.tex translationes_cs.tex \
+galli.pdf: galli.tex conventuscommune.tex translationes_cs.tex gallus.jpg \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
