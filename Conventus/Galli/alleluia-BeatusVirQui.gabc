@@ -4,16 +4,19 @@ occasion: St. Galli;
 mode: 1;
 book: Graduale Romanum, 1961, p. [43]; Graduale Triplex, 1979, p. 511;
 transcriber: Andrew Hinkley, Jakub Jelínek;
+nabc-lines: 1;
 %%
 (c4)
-AL(df)le(e/ghfgvFED)lú(gh)ia.(gh..) (;)
-(gih/giHG'gd//efEDdc/e/ggh.) (,)
-(gih/giHG'gd/efEDdc/de/feed.) <sp>V/</sp>.(::)
-Be(c!e'g)á(ghGEfvED.cd/fde)tus(e/fvfe) vir,(e.) (;)
-qui(e_c) suf(eg/fhggvFE)fert(e.) (,)
-ten(g.h!iwjjvIH)ta(gigh)ti(ghe)ó(fv.efd)nem:(ed..) (:)
-quó(e_g!hi)ni(h)am(h) cum(h) pro(h)bá(h)tus(hg) fú(hj)e(ghggvFEf)rit,(fe..) (;)
-ac(ec)cí(eg)pi(fhggvFE)et(e.) (,)
-co(c!d'e)ró(e_0fvE'Cd_e)nam(e.) vi(e/ghfgvFEDgh)tæ.(gh..) (;)
+AL(df|peS)le(e/ghf|ta-tohg|gvFED|visu3lsc2)lú(gh|pe>1)ia.(gh..|peS) (;)
+(gih/giHG'|toS2sut1|gd//efEDdc/|ta-pesu2lsc2pilst2|e/ggh.|vipq-hi) (,)
+% FIXME: add pisut1
+(gih/|to-1|giHG'|toS2hgsut1|gd/|pihhsut1lst2|efED|pehisu2lsc2|dc/|pilst2|de/feed.|clppu2lst2pi) <sp>V/</sp>.(::)
+Be(c!e'g|sa)á(ghGE|ta-visu1suu1lsc2|fvED.|visu1suu1|cd/fde|pohhpp2)tus(e/fvfe|ta-pr) vir,(e.|ta) (;)
+qui(e_c|cllst2) suf(eg/|pe-1|fhggvFE|//peSpr)fert(e.|ta) (,)
+ten(g.h!iwjjvIH|````qlppt2vi-hhsu1sux1)ta(gigh|poppu1lsc2)ti(ghe|to)ó(fv.efd|vi-toS2hi)nem:(ed..|cllst2) (:)
+% FIXME: Add glyph for peSsut1su2
+quó(e_g!hi|``viqihiorhj)ni(h|ta)am(h|ta) cum(h|ta) pro(h|ta)bá(h|tahg)tus(hg|cllsc2) fú(hj|peS)e(ghggvFEf|peSsut1su2vihi)rit,(fe..|cl) (;)
+ac(ec|cllsc3)cí(eg|peS)pi(fhggvFE|peSpr)et(e.|ta) (,)
+co(c!d'e|sa)ró(e_0fvE'Cd_e|ta-cilsc2pqhg)nam(e.|vi) vi(e/ghfgvFED|vi-to-1hjvihksu3lsc2|gh|peShk)tæ.(gh..|peS) (;)
 (gih/giHG'gd//efED'dcevggh.) (,)
 (gih/giHG'gd//efED'dc/de/feed.) (::)
