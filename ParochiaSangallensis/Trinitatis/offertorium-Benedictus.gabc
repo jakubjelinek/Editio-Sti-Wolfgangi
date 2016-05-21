@@ -2,15 +2,16 @@ name: Benedictus sit;
 office-part: Offertorium;
 mode: 3;
 book: Graduale Romanum, 1961, p. 310;
-transcriber: Andrew Hinkley;
+transcriber: Andrew Hinkley, Jakub Jelínek;
+nabc-lines: 1;
 %%
 (c4)
-BE(dg)ne(g./hji)díc(jkj)tus(jvIH) sit(h.) *(,)
-De(hj!kvJH)us(hjhhg.) Pa(ikjjvIH)ter,(h_g//ih/igh.) (;)
-u(ef)ni(g)ge(h_g/jki'/jvH'G)ni(g_fh)tús(ghfg)que(f.) (;)
-De(ffff_d!gih)i(g) Fí(g./hjh)li(f_d/fhg)us,(e!fg..) (:)
-San(gh/jij)ctus(gjj'jj_g/jv) quo(ixjjjvH'GF'/gwh!ivHG'h)que(h_g) (,)
-Spí(hji)ri(jkj/ijh)tus:(ih..) (:)
-qui(dg)a(gj) fe(jjjvH'G)cit(g_f) no(hji)bís(jkj/ijH'G)cum(gf..) (;)
-mi(e!f'g)se(fh/jgh)ri(ef)cór(g)di(g.h!iw!jvIH)am(h.) (,)
-su(hjH'G)am.(gvFE/f_e//g_f/gffe.) (::)
+BE(dg|ta)ne(g./hji|ql!cl-ppt2)díc(jkj|`tolse7)tus(jvIH|ci-) sit(h.|ta) *(,)
+De(hj!kvJH|qlppt1clhhlsc2cihjlsc2)us(hjh|toS2|hg.|cl-) Pa(ikj|tohg|jvIH|cihglsc2)ter,(h_g//|cl-|ih/igh.|cl!po-1lsc1lss8) (;)
+u(ef|peSlsi4)ni(g|vi)ge(h_g/|clhh|jki'/jvH'G|tohj!ciGhj)ni(g_fh|cl-lss9vihhlss2)tús(ghfg|po-1ppt1)que(f.|ta) (;)
+De(fff|ts|f_d!gih|clMlsi8tohhlsl2lss8)i(g|ta) Fí(g./hjh|tatohhlsl2)li(f_d/|cl-|fhg|tohi)us,(e!fg..|sa-) (:)
+San(gh/jij|po>pp2lse7lsi6)ctus(gjj'jj_g/jv|peSlsi7lsl2dshh/clM-hilsi9vi-hj) quo(ixjj|///ds-|jvH'GF'/|vi-sut3|gwh!ivHG'h|qlhhci-hivihj)que(h_g|cl-) (,)
+Spí(hji|``tolss4)ri(jkj/|to|ijh|tohh)tus:(ih..|cl-) (:)
+qui(dg|peSlsi2lsi8)a(gj|``peSlse7lss3) fe(jjjvH'G|//dsvihhsut2lsi1lsm2)cit(g_f|cl-) no(hji|``tolss4)bís(jkj/ijH'G|trsut2lsc3lsi3)cum(gf..|cl-) (;)
+mi(e!f'g|```salse7)se(fh/jgh|poppt2)ri(ef|peS)cór(g|ta)di(g.h!iw!jvIH|ql-ppt2su2)am(h.|ta) (,)
+su(hjH'G|```toS2lss2lse7)am.(gvFE/|visut2|f_e//|cl-|g_f/|cl-|gffe.|vi-pr) (::)
