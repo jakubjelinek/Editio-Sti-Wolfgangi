@@ -106,7 +106,7 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud t
 	 tedecetlaus tonus-evangelii-b tonus-lectionis-solemnis \
 	 $(addprefix venite3,a b c d e f) matinv-RegemConfessorum \
 	 benedicamus-solemnis-laud tedeum-solemnis tuautem \
-	 communio-versus-Exaudi-initium seq-DilecteDeo
+	 communio-versus-Exaudi-initium seq-DilecteDeo alleluia-BeatusVirQui
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(TMP_DIR)/ps4dir-comb.tex $(TMP_DIR)/ps4-initium-dir-auto.gtex \
 	    $(addprefix hym-,$(addsuffix -bohtext.tex,TeLucis NuncSancte RectorPotens RerumDeus)) \
