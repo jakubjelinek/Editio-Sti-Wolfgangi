@@ -2,15 +2,16 @@ name: Benedicta sit;
 office-part: Introitus;
 mode: 8;
 book: Graduale Romanum, 1961, p. 308;
-transcriber: Andrew Hinkley;
+transcriber: Andrew Hinkley, Jakub Jelínek;
+nabc-lines: 1;
 %%
 (c3)
-BE(e)NE(e)DIC(ehgh)TA(fvED) sit(e.) *(,)
-sanc(ef/hgh)ta(h) Trí(hhhf)ni(fe)tas,(e.f!gwh.) (;)
-at(hfge)que(e) in(e)di(fde)ví(ehh)sa(f) U(fdf)ni(fgFE'f)tas:(fe..) (:)
-con(e)fi(ef/hg)té(g)bi(gi/jhhf)mur(h_g) e(hghf)i,(f.) (;)
-qui(hg)a(h) fe(i)cit(h) no(g.f!gwh)bí(fgFE'f)scum(fe..) (;)
-mi(e!f'g)se(g_f)ri(fgE'C)cór(c!e'f)di(f)am(f) su(fgFE'f)am.(fe..) <i><c>Ps.</c></i>(::)
+BE(e|ta)NE(e|ta)DIC(ehgh|``trlse7)TA(fvED|ci-) sit(e.|vi) *(,)
+san(ef/hgh|sforhk)cta(h|ta) Trí(hhhf|ds//cllsc2lss9)ni(fe|cllsc2)tas,(e.f!gwh.|qlppt2) (;)
+at(hfge|pflsc2)que(e|ta) in(e|ta)di(fde|po)ví(ehh|pevi-hh)sa(f|ta) U(fdf|po)ni(fgFE'f|pe-1su2vihi)tas:(fe..|cl-) (:)
+con(e|```talse4)fi(ef/hg|tatohglss9)té(g|talse4)bi(gi/jhhf|peclhhlsc2//cl-hi)mur(h_g|cl-lss9) e(hghf|pflsc2)i,(f.|ta) (;)
+qui(hg|``tolse7)a(h|vihg) fe(i|vihh)cit(h|vihg) no(g.f!gwh|clqlhh)bís(fgFE'f|peSsu2vihh)cum(fe..|cl-) (;)
+mi(e!f'g|sa)se(g_f|cl)ri(fgE'C|pesu2lsc2)cór(c!e'f|sa)di(f|vi)am(f|ta) su(fgFE'f|peSsu2vihi)am.(fe..|cl-) <i><c>Ps.</c></i>(::)
 Dó(e)mi(fe)ne(eh) Dó(hg)mi(hi)nus(i) nos(hi)ter:(h.) *(:)
 quam(hf~) ad(fh)mi(h)rá(h)bi(h)le(h) est(h) no(h)men(h) tu(h)um(h.) (,)
 in(h) u(h)ni(hhg)vér(ef)sa(hg) ter(f)ra!(e.) (::)
