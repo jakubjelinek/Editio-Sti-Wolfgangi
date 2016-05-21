@@ -2,12 +2,13 @@ name: Benedicimus Deum;
 office-part: Communio;
 mode: 4;
 book: Graduale Romanum, 1961, p. 310;
-transcriber: Andrew Hinkley;
+transcriber: Andrew Hinkley, Jakub Jelínek;
+nabc-lines: 1;
 %%
 (c4)
-BE(h)ne(gf)dí(gh)ci(g)mus(e.) *(,)
-De(gef)um(ed/fg!hvGF/ghg) cæ(egff)li,(fe..) (:)
-et(h) co(g)ram(h) óm(g_f)ni(gh)bus(h) vi(h)vén(gh)ti(gh)bus(g_e) (,)
-con(e)fi(gef)té(dgf)bi(df)mur(fgF'D) e(f!gw!hgh)i:(hg..) (:)
-qui(gef)a(e_d) fe(fgef)cit(e_d) no(ixh)bís(jh/hgi)cum(h_g/hih.___) (;)
-mi(h)se(ghfg)ri(f_e)cór(e!f'g)di(g)am(hg/gf/ghg) su(egff)am.(fe..) (::)
+BE(h|vi)ne(gf|cllsc2)dí(gh|peS)ci(g|vi)mus(e.|ta) *(,)
+De(gef|po)um(ed/|cllsc2|fg!hvGF/ghg|`vipp2su2lsi4vihi) cæ(egff|to/sthh)li,(fe..|cl-) (:)
+et(h|vi) co(g|ta)ram(h|vi) óm(g_f|cl-)ni(gh|peS)bus(h|vi) vi(h|vi)vén(gh|pe>1)ti(gh|peS)bus(g_e|cl-) (,)
+con(e|ta)fi(gef|polsc2)té(dgf|to)bi(df|ta>lsi8)mur(fgF'D|toSsu2) e(f!gw!hgh|ql!poppt1lss7)i:(hg..|cl-) (:)
+qui(gef|polsc2)a(e_d|cl-) fe(fgef|tr)cit(e_d|cl-) no(ixh|///vilsl2)bís(jh/hgi|cl!pilsc1vihh)cum(h_g/|cl-|hih.___|toS) (;)
+mi(h|vi)se(ghfg|poppt1)ri(f_e|cl-)cór(e!f'g|sa)di(g|vi)am(hg/gf/ghg|cl!pitohg) su(egff|to//sthh)am.(fe..|cl-) (::)
