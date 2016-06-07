@@ -3,7 +3,6 @@ office-part: vesperae, responsorium breve;
 occasion: ordinarium de tempore Adventus;
 book: Antiphonale Monasticum 1933, pg. 182;
 mode: 4;
-initial-style: 1;
 nabc-lines: 1;
 %%
 
