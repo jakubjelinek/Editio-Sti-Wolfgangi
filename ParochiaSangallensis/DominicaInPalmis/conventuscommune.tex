@@ -243,12 +243,29 @@ contents={\tikz\node[fill=gray!30,anchor=west,text width=\ThumbSize,
 
 % mode, score, translation
 \newcommand{\antiphona}[3]{%
-\hicSuntNeumae
-\superInitialam{#1}
-\gregorioscore{#2}
+  \hicSuntNeumae%
+  \superInitialam{#1}%
+  \gresetinitiallines{1}%
+  \gregorioscore{#2}%
 
 #3
 }
 
 % a semantic alias of the previous
 \newcommand{\responsorium}[3]{\antiphona{#1}{#2}{#3}}
+
+\newcommand{\initiumpsalmi}[1]{%
+  \gresetinitiallines{0}%
+  \gregorioscore{#1}%
+}
+
+\newcommand{\cuminitiali}[2]{%
+  \superInitialam{#1}%
+  \gresetinitiallines{1}%
+  \gregorioscore{#2}%
+}
+
+\newcommand{\sineinitiali}[1]{%
+  \gresetinitiallines{0}%
+  \gregorioscore{#1}%
+}
