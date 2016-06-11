@@ -3,7 +3,7 @@
 \documentclass[a4paper, twoside, 12pt]{article}
 \usepackage[latin]{babel}
 %\usepackage[landscape, left=3cm, right=1.5cm, top=2cm, bottom=1cm]{geometry} % okraje stranky
-\usepackage[portrait, a4paper, mag=1300, truedimen, left=0.8cm, right=0.8cm, top=0.8cm, bottom=0.8cm]{geometry} % okraje stranky
+\usepackage[portrait, a4paper, mag=1300, truedimen, left=8mm, right=8mm, top=8mm, bottom=8mm]{geometry} % okraje stranky
 
 \usepackage{fontspec}
 \setmainfont[FeatureFile={junicode.fea}, Ligatures={Common, TeX}, RawFeature=+fixi]{Junicode}
@@ -44,7 +44,7 @@
 \grechangedim{afterinitialshift}{2.2mm}{scalable}
 \grechangedim{beforeinitialshift}{2.2mm}{scalable}
 \grechangedim{interwordspacetext}{0.32 cm plus 0.15 cm minus 0.05 cm}{scalable}%
-\grechangedim{annotationraise}{-0.2cm}{scalable}
+\grechangedim{annotationraise}{-2mm}{scalable}
 
 % Here we set the initial font. Change 38 if you want a bigger initial.
 % Emit the initials in red.
@@ -53,7 +53,7 @@
 \renewcommand{\headrulewidth}{0pt} % no horiz. rule at the header
 \pagestyle{empty}
 
-\grechangedim{spaceabovelines}{0.2cm}{scalable}%
+\grechangedim{spaceabovelines}{2mm}{scalable}%
 
 \begin{center}
 {\large DOMINICA IN PALMIS DE PASSIONE DOMINI}
@@ -65,6 +65,8 @@ Commemoratio ingressus Domini in Ierusalem
 
 \pars{Antiphona} \scriptura{Cf. Mt. 21, 9; Mc. 11, 10; \textbf{H175}}
 
+\vspace{-5mm}
+
 \antiphona{VII a}{temporalia/ant-hosanna.gtex}
 
 \trHosanna
@@ -72,6 +74,8 @@ Commemoratio ingressus Domini in Ierusalem
 \rubrica{Post antiphonam ab omnibus decantatam, cantor, vel cantores,
 versum integrum canunt. Intonatio rursus cantatur initio cuiusque
 versiculi.}
+
+\vspace{3mm}
 
 \pars{Psalmus 117.} \scriptura{Ps. 117, 1.22.23.27.28}
 
@@ -97,9 +101,13 @@ versiculi.}
 
 \pars{Antiphona} \scriptura{\textbf{H175}}
 
+\vspace{-5mm}
+
 \antiphona{I f}{temporalia/ant-pueriportantes.gtex}
 
 \trPueriPortantes
+
+\vspace{3mm}
 
 \pars{Psalmus 23.} \scriptura{Ps. 23, 1-10}
 
@@ -111,11 +119,15 @@ versiculi.}
 
 \pars{Antiphona} \scriptura{\textbf{H175}}
 
+\vspace{-5mm}
+
 \grechangedim{interwordspacetext}{0.20 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \antiphona{I f}{temporalia/ant-puerivestimenta.gtex}
 \grechangedim{interwordspacetext}{0.32 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 
 \trPueriVestimenta
+
+\vspace{3mm}
 
 \pars{Psalmus 46.} \scriptura{Ps. 46, 2-10}
 
@@ -125,11 +137,13 @@ versiculi.}
 
 \psalmusEtTranslatioT{temporalia/ps46-comb.tex}{6cm}
 
-\vspace{4mm}
+\vspace{2mm}
 
 \pars{Hymnus ad Christum Regem}
 
 \rubrica{Chorus:} \scriptura{Theodulphus, episcopus Aurelianensis \olddag{} 821; \textbf{E381}}
+
+\vspace{-5mm}
 
 \antiphona{I}{temporalia/hym-glorialaus.gtex}
 
@@ -184,6 +198,8 @@ versiculi.}
 
 \pars{Responsorium} \scriptura{\textbf{H172}}
 
+\vspace{-5mm}
+
 \antiphona{II}{temporalia/resp-ingrediente.gtex}
 
 \trIngrediente
@@ -229,6 +245,8 @@ versiculi.}
 
 \scriptura{Phil. 2, 8 \Vbardot{} ibid. 9; \textbf{C96}}
 
+\vspace{-5mm}
+
 \antiphona{GR. V}{temporalia/graduale-christus.gtex}
 
 \trChristus
@@ -260,6 +278,8 @@ versiculi.}
 
 \pars{Antiphona} \scriptura{Cf. Ps. 73, 22; \textbf{H174}}
 
+\vspace{-5mm}
+
 \antiphona{{\scriptsize{VIII G}}}{temporalia/ant-iudica.gtex}
 
 \trIudica
@@ -273,13 +293,13 @@ versiculi.}
 
 \psalmusEtTranslatioT{temporalia/ps21-comb.tex}{6cm}
 
-\vspace{-0.3cm}
+\vspace{-3mm}
 
 \pars{Liturgia eucharistica}
 
 \psalmusEtTranslatioT{temporalia/praefatio-comb.tex}{6cm}
 
-\vspace{-0.5cm}
+\vspace{-5mm}
 
 \pars{Sanctus XVII.} \scriptura{XI. s.}
 
@@ -299,7 +319,7 @@ versiculi.}
 
 \psalmusEtTranslatioT{temporalia/ante-oratiodominica-comb.tex}{6cm}
 
-\vspace{-0.5cm}
+\vspace{-5mm}
 
 \pars{Oratio Dominica}
 
@@ -307,7 +327,7 @@ versiculi.}
 
 \trOratioDominica
 
-\vspace{-0.3cm}
+\vspace{-3mm}
 
 \psalmusEtTranslatioT{temporalia/liberanos-comb.tex}{6cm}
 
@@ -319,7 +339,7 @@ versiculi.}
 
 \trQuia
 
-\vspace{-0.5cm}
+\vspace{-5mm}
 
 \psalmusEtTranslatioT{temporalia/pax-comb.tex}{6cm}
 
@@ -331,11 +351,9 @@ versiculi.}
 
 \initiumpsalmi{temporalia/ps121-initium.gtex}
 
-\vspace{-0.5cm}
+\vspace{-5mm}
 
 \psalmusEtTranslatioT{ps121-comb.tex}{6.5cm}
-
-\vspace{-0.4cm}
 
 \pars{Agnus Dei XVII.} \scriptura{XIII. s.}
 
@@ -343,8 +361,11 @@ versiculi.}
 
 \trAgnus
 
-\vspace{2mm}
+\vspace{4mm}
+
 \pars{Antiphona ad Communio} \scriptura{Mt. 26, 42; \textbf{E186}}
+
+\vspace{-5mm}
 
 \antiphona{VIII G}{temporalia/communio-pater.gtex}
 
@@ -373,7 +394,7 @@ versiculi.}
 
 \psalmusEtTranslatioT{attende-comb.tex}{6cm}
 
-\vspace{-0.5cm}
+\vspace{-5mm}
 
 \psalmusEtTranslatioT{temporalia/post-communionem-comb.tex}{6cm}
 
