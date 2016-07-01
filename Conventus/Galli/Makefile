@@ -109,7 +109,8 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud t
 	 communio-versus-Exaudi-initium seq-DilecteDeo alleluia-BeatusVirQui
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(TMP_DIR)/ps4dir-comb.tex $(TMP_DIR)/ps4-initium-dir-auto.gtex \
-	    $(addprefix hym-,$(addsuffix -bohtext.tex,TeLucis NuncSancte RectorPotens RerumDeus)) \
+	    $(addprefix hym-,$(addsuffix -bohtext.tex,TeLucis NuncSancte RectorPotens RerumDeus \
+						      VitaSanctorum IsteConfessor)) \
 	    $(TMP_DIR)/communio-versus-Exaudi-comb.tex
 LAPSALMSINITGABC = $(foreach P,$(filter-out 118vi 118vii 118ix 118x 118xii 118xiii,$(PSALMS)),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3 benedictus beatitudosapientis jeremiae ecclesiasticus31,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
