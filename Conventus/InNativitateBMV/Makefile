@@ -93,7 +93,7 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 	 ix-agnusdei ix-gloria ix-kyrie ix-sanctus credo-iii \
 	 oratiodominica-mat benedicamus-minor \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) dominelabiamea \
-	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus deus christus ignem evangelica cujus adsocietatem) \
+	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus deus christus ignem evangelica cujus-virgo-virginum adsocietatem) \
 	 $(addprefix matant,1 2 3 4 5 6 7 8 9) $(addprefix matresp,1 2 3 4 5 6 7 8) \
 	 tedecetlaus tonus-evangelii-b tonus-lectionis-solemnis \
 	 $(addprefix venite2,a b c d e f) matinv-NativitatemVirginis \
