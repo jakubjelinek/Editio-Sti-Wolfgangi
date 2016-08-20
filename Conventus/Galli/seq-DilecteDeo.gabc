@@ -5,12 +5,11 @@ transcriber: Jakub Jelínek;
 nabc-lines: 1;
 %%
 (c4)
-% FIXME: should be tr-3
-DI(c|ta)léc(dfd|tr-1)te(f) De(e|vi-ppu2suu2)o,(f) Gal(g)le,(f) per(e)én(fe>|cl->)ni(d|ta) (;)
+DI(c|ta)léc(dfd|tr-3)te(f) De(e|vi-ppu2suu2)o,(f) Gal(g)le,(f) per(e)én(fe>|cl->)ni(d|ta) (;)
 Ho(h|```vi-lsl1)mi(h|pfS)ni(g)bús(h)que,(f) et(h|vi-) cœ́(j|visu1suu1lss2)ti(h)bus(g) an(e|toS2sut1)ge(f)ló(e)rum,(d) (;)
 Qui(h|vi-) Je(h|pfS)su(g) Chris(h)ti(f) o(h|vi-)bœ́(j|visu1sut1lss3)di(h)ens(g) ár(j|visu1sut1lss3)du(h)æ(g) sua(e|toS2sut1lsi7)si(f)ó(e)ni(d) (::)
-Prǽ(h|```po-1lsl1)di(g)a(h) pa(k|cl-lss2)tris,(h) gré(j|cl)mi(i)um(g|pt) mat(h)ris,(h) (;)
-Con(h|```po-1lsl1)jú(g)gis(h) cu(k|cl-lss2)ram,(h) lú(j|cl)di(i)cra(g|pt) na(h)ti(h) (;)
+Prǽ(h|```po-1lsl1)di(g)a(h) pa(k|cl-hhlss2)tris,(h) gré(j|cl)mi(i)um(g|pt) mat(h)ris,(h) (;)
+Con(h|```po-1lsl1)jú(g)gis(h) cu(k|cl-hhlss2)ram,(h) lú(j|cl)di(i)cra(g|pt) na(h)ti(h) (;)
 Spre(h|```vi-lse1)vís(i|clSsu2)ti,(h) páu(g)pe(f)rem(g|vi-) pau(f|clS-ppt2su2)per(g) Dó(h)mi(f)num(e) se(d)quens,(e|vi-) (::)
 Et(h|vi-) cru(i|clS-pp2)cem(h) gáu(g)di(f)is(g|vi-hg) præ(f|clS-ppt2su2)tu(g)lís(h)ti(f) lú(e)bri(d)cis.(e|vi-hh) (;)
 Sed(h|```vi-lsl1) Chris(h|cl-hg)tus(g) prǽ(h|ci-)ti(g)o(f) cen(g|vi-)tu(f|toS2sut1)pli(g)cá(f)to(d) (;)
