@@ -69,7 +69,8 @@ SCORES = $(filter-out antIV-magn-vesp2,$(foreach D,$(DOMINICIS),$(addprefix ant$
 	 $(addprefix ant-magn-o-,sapientia adonai radix clavis oriens rex emmanuel) \
 	 versus-rorate hym-ConditorAlme benedicamus-dominica-advequad \
 	 deusinadiutorium-alter supplicatiolitaniae oratiodominica resp-vesp \
-	 dominusvobiscum-solemnis domineexaudi oratio capitulum-FratresQuaecumque \
+	 dominusvobiscum-solemnis domineexaudi $(addprefix oratio,$(DOMINICIS)) \
+	 $(addprefix capitulum-Fratres,Hora Quaecumque Gaudete Sic) \
 	 magnificat-initium-viii-G magnificat-initium-viii-G2 magnificat-initium-ii-D
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = ../AdventusDominicaII/cantus/amon33/hym-ConditorAlme-bohtext.tex
@@ -87,8 +88,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) ../AdventusDominicaII/cantus/amon33 \
-	     ../AdventusDominicaIV/cantus/amon33 \
+iter-left := . $(TMP_DIR) $(foreach D,$(DOMINICIS),../AdventusDominica$(D)/cantus/amon33) \
 	     $(addprefix $(COMMON_CHANTS_DIR)/,amon33 arom12 lcantualis78) $(PSALMTONES_DIR)
 include $(iter)
 define iter-doit
@@ -106,6 +106,7 @@ $(TMP_DIR)/%-$(i)-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $$< $$@
 endef
 iter-left := $(DOMINICIS)
 include $(iter)
+$(TMP_DIR)/oratio%.gabc: ../AdventusDominica%/cantus/amon33/oratio.gabc ; $(CP) -a $< $@
 
 all: adventusdominicis.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
