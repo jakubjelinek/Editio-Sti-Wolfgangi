@@ -108,7 +108,7 @@ iter-left := $(DOMINICIS)
 include $(iter)
 $(TMP_DIR)/oratio%.gabc: ../AdventusDominica%/cantus/amon33/oratio.gabc ; $(CP) -a $< $@
 
-all: adventusdominicis.pdf
+all: adventusdominicis.pdf adventusdominicaivesp.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(TMP_DIR)/magnificat.tex: PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
@@ -128,6 +128,10 @@ $(TMP_DIR)/magnificat-comb.tex: PSSKIP = 2
 adventusdominicis.pdf: adventusdominicis.tex conventuscommune.tex translationes_cs.tex \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS) \
 	       ../AdventusDominicaII/imagines/imago_Sion.jpg ../AdventusDominicaII/imagines/angelus.jpg
+	$(LUALATEX) -interaction=nonstopmode $<
+	$(LUALATEX) -interaction=nonstopmode $<
+adventusdominica%vesp.pdf: adventusdominica%vesp.tex conventuscommune.tex translationes_cs.tex \
+	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
 clean:
