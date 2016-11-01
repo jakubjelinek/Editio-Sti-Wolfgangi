@@ -111,7 +111,7 @@ $(TMP_DIR)/oratio%.gabc: ../AdventusDominica%/cantus/amon33/oratio.gabc ; $(CP) 
 
 all: adventusdominicis.pdf adventusdominicaivesp.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
-$(TMP_DIR)/magnificat.tex: PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
+$(foreach D,$(DOMINICIS),$(TMP_DIR)/magnificat-$(D).tex): PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
 $(CZPSALMS): $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/%.pslm
 	$(GENPSALM)
