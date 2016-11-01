@@ -71,7 +71,8 @@ SCORES = $(filter-out antIV-magn-vesp2,$(foreach D,$(DOMINICIS),$(addprefix ant$
 	 deusinadiutorium-alter supplicatiolitaniae oratiodominica resp-vesp \
 	 dominusvobiscum-solemnis domineexaudi $(addprefix oratio,$(DOMINICIS)) \
 	 $(addprefix capitulum-Fratres,Hora Quaecumque Gaudete Sic) \
-	 magnificat-initium-viii-G magnificat-initium-viii-G2 magnificat-initium-ii-D
+	 magnificat-initium-viii-G magnificat-initium-viii-G2 magnificat-initium-ii-D \
+	 an_alma_redemptoris_mater ant-rorate
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = ../AdventusDominicaII/cantus/amon33/hym-ConditorAlme-bohtext.tex
 LAPSALMSINITGABC = $(foreach D,$(DOMINICIS),$(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P)-$(D))-auto.gabc))
@@ -124,7 +125,7 @@ $(LAPSALMSEXTRA): $(TMP_DIR)/%.tex: $(TMP_DIR)/%.pslm
 	$(SED) -i -e 'y/Jj/Ii/' $@
 $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
 	$(GENPSCOMB)
-$(TMP_DIR)/magnificat-comb.tex: PSSKIP = 2
+$(foreach D,$(DOMINICIS),$(TMP_DIR)/magnificat-$(D)-comb.tex): PSSKIP = 2
 adventusdominicis.pdf: adventusdominicis.tex conventuscommune.tex translationes_cs.tex \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS) \
 	       ../AdventusDominicaII/imagines/imago_Sion.jpg ../AdventusDominicaII/imagines/angelus.jpg
