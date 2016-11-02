@@ -37,27 +37,24 @@
 %%%% Vicekrat opakovane kousky
 
 \newcommand{\anteOrationem}{
-  \rubrica{Ante Orationem, cantatur a Superiore:}
-
   \pars{Supplicatio Litaniæ.}
 
   \cuminitiali{}{temporalia/supplicatiolitaniae.gtex}
 
-  \vspace{5mm}
-
   \pars{Oratio Dominica.}
 
-  \cuminitiali{}{temporalia/oratiodominica.gtex}
+%  \cuminitiali{}{temporalia/oratiodominica.gtex}
 
-  \vspace{5mm}
-
-  \rubrica{Deinde dicitur ab Hebdomadario:}
-
-  \cuminitiali{}{temporalia/dominusvobiscum-solemnis.gtex}
-
-  \rubrica{In choro monialium loco Dominus vobiscum dicitur:}
-
-  \sineinitiali{temporalia/domineexaudi.gtex}
+  \noindent Pater noster, qui es in cælis: 
+sanctificétur nomen tuum: 
+advéniat regnum tuum: 
+fiat volúntas tua, 
+sicut in cælo et in terra: 
+panem nostrum quotidiánum da nobis hódie: 
+et dimítte nobis débita nostra, 
+sicut et nos dimíttimus debitóribus nostris: 
+et ne nos indúcas in tentatiónem. 
+\Rbardot{} Sed líbera nos a malo. 
 }
 
 \setlength{\columnsep}{15pt} % prostor mezi sloupci
@@ -83,15 +80,17 @@
 
 \begin{titulusOfficii}
 \nomenFesti{Dominica I Adventus.}
-\celebratio{I Classis. Semiduplex.}
 \textbf{Ad Vesperas}
 \end{titulusOfficii}
 
 % Psalmi festivi (AM33, pg. 721):
 % 66 // 92, 99, 62, Dan3, 148+149+150
 
+\vspace{-0.5cm}
+
 \cantusSineNeumas
 
+\scriptura{\mbox{}}
 {
 \grechangedim{interwordspacetext}{0.16 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \cuminitiali{}{temporalia/deusinadiutorium-alter.gtex}
@@ -190,25 +189,42 @@
 
 \initiumpsalmi{temporalia/ps113-initium-iv-A-auto.gtex}
 
+\vspace{-0.6cm}
+
 \psalmusEtTranslatioT{temporalia/ps113-I-comb.tex}{6.5cm}
+
+\vspace{-0.8cm}
 
 \antiphona{}{temporalia/antI5.gtex} % repeat the antiphon - new page
 
 \vfill
-\pagebreak
+%\pagebreak
+
+\vspace{0.2cm}
 
 \pars{Capitulum.} \scriptura{Rom. 13, 11}
 
-\cuminitiali{}{temporalia/capitulum-FratresHora.gtex}
+\noindent Fratres: Hora est jam nos de somno súrgere: \dag{}
+nunc enim própior est nostra salus, \grestar{}
+quam cum credídimus. \Rbardot{} Deo grátias.
+
+%\vspace{0.2cm}
+
+%\sineinitiali{temporalia/capitulum-DeoGratias.gtex}
 
 % preklad Jeruz. bible
 \trCapituliI
 
 \vfill
+%\pagebreak
 
 \pars{Responsorium breve.} \scriptura{Ps. 84, 8; \textbf{H20}}
 
-\cuminitiali{IV}{temporalia/resp-vesp.gtex}
+{
+\grechangedim{interwordspacetext}{0.08 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{IV}{temporalia/resp-vesp-1.gtex}
+\grechangedim{interwordspacetext}{0.20 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
 
 \trRespVesp
 
@@ -218,7 +234,11 @@
 % Hymnus. %%%
 \pars{Hymnus.}
 
-\cuminitiali{IV}{temporalia/hym-ConditorAlme.gtex}
+\cuminitiali{IV}{temporalia/hym-ConditorAlme-1.gtex}
+
+\vspace{-0.2cm}
+
+\input{hym-ConditorAlme-latext.tex}
 
 \input{../AdventusDominicaII/cantus/amon33/hym-ConditorAlme-bohtext.tex}
 
@@ -227,11 +247,14 @@
 \pars{Versus.} \scriptura{Is. 45, 8}
 
 % Versus. %%%
-\sineinitiali{temporalia/versus-rorate.gtex}
+\noindent \Vbardot{} Roráte cæli désuper, et nubes pluant justum.
+\Rbardot{} Aperiátur terra, et gérminet Salvatórem.
+
+%\sineinitiali{temporalia/versus-rorate.gtex}
 \noindent \trVersusVesp
 
 \vfill
-\pagebreak
+%\pagebreak
 
 \cantusCumNeumis
 
@@ -243,34 +266,47 @@
 
 \trAntIDMagnificat
 
+\vfill
+\pagebreak
+
 \scriptura{Lc. 1, 46-55}
 
 \cantusSineNeumas
 \initiumpsalmi{temporalia/magnificat-initium-viii-G.gtex}
 
-\vspace{-1cm}
+\vspace{-0.5cm}
 
 \psalmusEtTranslatioT{temporalia/magnificat-I-comb.tex}{6.5cm}
 
-\vspace{-1cm}
+\vspace{-0.4cm}
+
+\vfill
 
 \cantusSineNeumas
 
 \anteOrationem
 
-\vspace{5mm}
-
 % Oratio. %%%
 \pars{Oratio.}
 
-\cuminitiali{}{temporalia/oratioI.gtex}
+\noindent Orémus.
+Excita, quǽsumus, Dómine, poténtiam tuam, et veni: \dag{}
+ut ab imminéntibus peccatórum nostrórum perículis,
+te mereámur protegénte éripi, \grestar{}
+te liberánte salvári. 
+Qui vivis et regnas cum Deo Patre in unitáte
+Spíritus Sancti Deus: \grestar{}
+per ómnia sǽcula sæculórum.  \Rbardot{} Amen.
+
+%\sineinitiali{temporalia/oratio-amen.gtex}
+
 \trOrationisI
 
-\vspace{1cm}
-\rubrica{Hebdomadarius dicit iterum Dominus vobiscum. Postea cantatur a cantore:}
-\vspace{2mm}
-
-\cuminitiali{IV}{temporalia/benedicamus-dominica-advequad.gtex}
+%\vspace{1cm}
+%\rubrica{Hebdomadarius dicit iterum Dominus vobiscum. Postea cantatur a cantore:}
+%\vspace{2mm}
+%
+%\cuminitiali{IV}{temporalia/benedicamus-dominica-advequad.gtex}
 
 \vfill
 

@@ -67,14 +67,14 @@ LAPSALMSEXTRA = $(foreach D,$(DOMINICIS),$(patsubst %,$(TMP_DIR)/%.tex,magnifica
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(filter-out antIV-magn-vesp2,$(foreach D,$(DOMINICIS),$(addprefix ant$(D),1 2 3 4 5 -magn-vesp2))) \
 	 $(addprefix ant-magn-o-,sapientia adonai radix clavis oriens rex emmanuel) \
-	 versus-rorate hym-ConditorAlme benedicamus-dominica-advequad \
+	 versus-rorate hym-ConditorAlme hym-ConditorAlme-1 benedicamus-dominica-advequad \
 	 deusinadiutorium-alter supplicatiolitaniae oratiodominica resp-vesp \
 	 dominusvobiscum-solemnis domineexaudi $(addprefix oratio,$(DOMINICIS)) \
 	 $(addprefix capitulum-Fratres,Hora Quaecumque Gaudete Sic) \
 	 magnificat-initium-viii-G magnificat-initium-viii-G2 magnificat-initium-ii-D \
-	 an_alma_redemptoris_mater ant-rorate
+	 an_alma_redemptoris_mater ant-rorate resp-vesp-1
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = ../AdventusDominicaII/cantus/amon33/hym-ConditorAlme-bohtext.tex
+OTHERDEPS = ../AdventusDominicaII/cantus/amon33/hym-ConditorAlme-bohtext.tex hym-ConditorAlme-latext.tex
 LAPSALMSINITGABC = $(foreach D,$(DOMINICIS),$(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P)-$(D))-auto.gabc))
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PSALMTONES_DIR)/$(2)-auto.gabc; \
