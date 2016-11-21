@@ -72,9 +72,10 @@ SCORES = $(filter-out antIV-magn-vesp2,$(foreach D,$(DOMINICIS),$(addprefix ant$
 	 dominusvobiscum-solemnis domineexaudi $(addprefix oratio,$(DOMINICIS)) \
 	 $(addprefix capitulum-Fratres,Hora Quaecumque Gaudete Sic) \
 	 magnificat-initium-viii-G magnificat-initium-viii-G2 magnificat-initium-ii-D \
-	 an_alma_redemptoris_mater ant-rorate resp-vesp-1
+	 an_alma_redemptoris_mater-simplex ant-rorate resp-vesp-1 ant-rorate-ant
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = ../AdventusDominicaII/cantus/amon33/hym-ConditorAlme-bohtext.tex hym-ConditorAlme-latext.tex
+OTHERDEPS = ../AdventusDominicaII/cantus/amon33/hym-ConditorAlme-bohtext.tex hym-ConditorAlme-latext.tex \
+	    ant-rorate-latext.tex
 LAPSALMSINITGABC = $(foreach D,$(DOMINICIS),$(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P)-$(D))-auto.gabc))
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PSALMTONES_DIR)/$(2)-auto.gabc; \
@@ -109,7 +110,7 @@ iter-left := $(DOMINICIS)
 include $(iter)
 $(TMP_DIR)/oratio%.gabc: ../AdventusDominica%/cantus/amon33/oratio.gabc ; $(CP) -a $< $@
 
-all: adventusdominicis.pdf adventusdominicaivesp.pdf
+all: adventusdominicis.pdf adventusdominicaivesp.pdf adventusdominicissup.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(foreach D,$(DOMINICIS),$(TMP_DIR)/magnificat-$(D).tex): PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
@@ -132,6 +133,10 @@ adventusdominicis.pdf: adventusdominicis.tex conventuscommune.tex translationes_
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
 adventusdominica%vesp.pdf: adventusdominica%vesp.tex conventuscommune.tex translationes_cs.tex \
+	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
+	$(LUALATEX) -interaction=nonstopmode $<
+	$(LUALATEX) -interaction=nonstopmode $<
+adventusdominicissup.pdf: adventusdominicissup.tex conventuscommune.tex translationes_cs.tex \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
