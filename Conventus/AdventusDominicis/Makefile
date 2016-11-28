@@ -22,6 +22,7 @@ INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
 DOMINICIS = I II III IV
+dominicis = i ii iii iv
 PSALMS = 109 110 111 112 113
 include tonus.mk
 MODUS-109-I = viii-G
@@ -110,7 +111,7 @@ iter-left := $(DOMINICIS)
 include $(iter)
 $(TMP_DIR)/oratio%.gabc: ../AdventusDominica%/cantus/amon33/oratio.gabc ; $(CP) -a $< $@
 
-all: adventusdominicis.pdf adventusdominicaivesp.pdf adventusdominicissup.pdf
+all: adventusdominicis.pdf $(foreach D,$(dominicis),adventusdominica$(D)vesp.pdf) adventusdominicissup.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(foreach D,$(DOMINICIS),$(TMP_DIR)/magnificat-$(D).tex): PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
