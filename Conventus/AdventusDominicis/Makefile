@@ -111,7 +111,8 @@ iter-left := $(DOMINICIS)
 include $(iter)
 $(TMP_DIR)/oratio%.gabc: ../AdventusDominica%/cantus/amon33/oratio.gabc ; $(CP) -a $< $@
 
-all: adventusdominicis.pdf $(foreach D,$(dominicis),adventusdominica$(D)vesp.pdf) adventusdominicissup.pdf
+all: adventusdominicis.pdf $(foreach D,$(dominicis),adventusdominica$(D)vesp.pdf) \
+     adventusdominicissup.pdf adventusdominicisoant.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(foreach D,$(DOMINICIS),$(TMP_DIR)/magnificat-$(D).tex): PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
@@ -138,6 +139,10 @@ adventusdominica%vesp.pdf: adventusdominica%vesp.tex conventuscommune.tex transl
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
 adventusdominicissup.pdf: adventusdominicissup.tex conventuscommune.tex translationes_cs.tex \
+	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
+	$(LUALATEX) -interaction=nonstopmode $<
+	$(LUALATEX) -interaction=nonstopmode $<
+adventusdominicisoant.pdf: adventusdominicisoant.tex conventuscommune.tex translationes_cs.tex \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
