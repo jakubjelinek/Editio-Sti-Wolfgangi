@@ -41,9 +41,10 @@ LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
 LAPSALMSEXTRA = 
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
-SCORES = litaniae introitus-Sitientes communio-OmnesQui
+SCORES = litaniae introitus-Sitientes communio-OmnesQui alleluia \
+	 communio-versus-Confitemini-initium
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = 
+OTHERDEPS = $(TMP_DIR)/communio-versus-Confitemini-comb.tex
 ALLCOMBTEXTS = $(patsubst %,$(TMP_DIR)/%-comb.tex,ritusrecipiendi \
 		 oratiofidelium exorcismus celebratio-baptismi \
 		 ritus-explanativi conclusio-ritus)
@@ -63,7 +64,7 @@ endef
 iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR)
 include $(iter)
 
-all: ordobaptismi.pdf ordobaptismi-celebrans.pdf
+all: ordobaptismi.pdf ordobaptismi-celebrans.pdf ordobaptismi-litaniae.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(LAPSALMOPTS)
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
 $(CZPSALMS): $(TMP_DIR)/%-boh.tex: %-boh.pslm
@@ -75,7 +76,10 @@ $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
 $(ALLCOMBTEXTS): PSSKIP = 0
 $(ALLCOMBTEXTS): $(TMP_DIR)/%-comb.tex: %.tex %-boh.tex
 	$(GENPSCOMB)
-ordobaptismi.pdf ordobaptismi-celebrans.pdf: %.pdf: %.tex conventuscommune.tex translationes_cs.tex $(ALLCOMBTEXTS) \
+$(TMP_DIR)/communio-versus-Confitemini-comb.tex: $(patsubst %,communio-versus-Confitemini%tex,. -boh.)
+	$(GENPSCOMB)
+ordobaptismi.pdf ordobaptismi-celebrans.pdf ordobaptismi-litaniae.pdf: %.pdf: %.tex conventuscommune.tex translationes_cs.tex \
+	ordobaptismi.jpg $(ALLCOMBTEXTS) \
 	$(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
