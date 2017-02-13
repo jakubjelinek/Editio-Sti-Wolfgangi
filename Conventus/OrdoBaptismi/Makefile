@@ -44,10 +44,11 @@ ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = litaniae introitus-Sitientes communio-OmnesQui alleluia \
 	 communio-versus-Confitemini-initium
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = $(TMP_DIR)/communio-versus-Confitemini-comb.tex
+OTHERDEPS = $(patsubst %,$(TMP_DIR)/communio-versus-Confitemini-%.tex,comb combfr)
 ALLCOMBTEXTS = $(patsubst %,$(TMP_DIR)/%-comb.tex,ritusrecipiendi \
 		 oratiofidelium exorcismus celebratio-baptismi \
 		 ritus-explanativi conclusio-ritus)
+ALLFRCOMBTEXTS = $(patsubst %-comb.tex,%-combfr.tex,$(ALLCOMBTEXTS))
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(4)/$(2)-auto.gabc; \
@@ -64,7 +65,7 @@ endef
 iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR)
 include $(iter)
 
-all: ordobaptismi.pdf ordobaptismi-celebrans.pdf ordobaptismi-litaniae.pdf
+all: $(patsubst %,ordobaptismi%pdf,. -celebrans. fr. -litaniae.)
 $(TMP_DIR)/%.tex: PSALMOPTS = $(LAPSALMOPTS)
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
 $(CZPSALMS): $(TMP_DIR)/%-boh.tex: %-boh.pslm
@@ -76,10 +77,16 @@ $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
 $(ALLCOMBTEXTS): PSSKIP = 0
 $(ALLCOMBTEXTS): $(TMP_DIR)/%-comb.tex: %.tex %-boh.tex
 	$(GENPSCOMB)
+$(ALLFRCOMBTEXTS): PSSKIP = 0
+$(ALLFRCOMBTEXTS): $(TMP_DIR)/%-combfr.tex: %.tex %-fra.tex
+	$(GENPSCOMB)
 $(TMP_DIR)/communio-versus-Confitemini-comb.tex: $(patsubst %,communio-versus-Confitemini%tex,. -boh.)
 	$(GENPSCOMB)
-ordobaptismi.pdf ordobaptismi-celebrans.pdf ordobaptismi-litaniae.pdf: %.pdf: %.tex conventuscommune.tex translationes_cs.tex \
-	ordobaptismi.jpg $(ALLCOMBTEXTS) \
+$(TMP_DIR)/communio-versus-Confitemini-combfr.tex: $(patsubst %,communio-versus-Confitemini%tex,. -fra.)
+	$(GENPSCOMB)
+$(patsubst %,ordobaptismi%pdf,. -celebrans. fr. -litaniae.): %.pdf: %.tex conventuscommune.tex \
+	translationes_cs.tex translationes_fr.tex \
+	ordobaptismi.jpg $(ALLCOMBTEXTS) $(ALLFRCOMBTEXTS) \
 	$(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
