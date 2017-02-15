@@ -41,13 +41,13 @@ LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
 LAPSALMSEXTRA = 
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
-SCORES = litaniae introitus-Sitientes communio-OmnesQui alleluia \
-	 communio-versus-Confitemini-initium
+SCORES = litaniae introitus-Sitientes alleluia-DominusInSina communio-OmnesQui \
+	 alleluia communio-versus-Confitemini-initium terogamus
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(patsubst %,$(TMP_DIR)/communio-versus-Confitemini-%.tex,comb combfr)
 ALLCOMBTEXTS = $(patsubst %,$(TMP_DIR)/%-comb.tex,ritusrecipiendi \
-		 oratiofidelium exorcismus celebratio-baptismi \
-		 ritus-explanativi conclusio-ritus)
+		 oratiofidelium oratiofidelium-2 exorcismus celebratio-baptismi \
+		 ritus-explanativi conclusio-ritus evangelium)
 ALLFRCOMBTEXTS = $(patsubst %-comb.tex,%-combfr.tex,$(ALLCOMBTEXTS))
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
