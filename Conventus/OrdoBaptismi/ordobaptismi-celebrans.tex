@@ -26,6 +26,7 @@
 \usepackage{parcolumns}
 \usepackage[contents={},opacity=1,scale=1,color=black]{background}
 \usepackage{tikzpagenodes}
+\usepackage[savepos]{zref}
 \usepackage{calc}
 \usepackage{longtable}
 
@@ -35,6 +36,46 @@
 \input{translationes_cs.tex} % Czech translations of the proper texts
 
 \setlength{\columnsep}{15pt} % prostor mezi sloupci
+
+\makeatletter
+\newcounter{litscore}
+\newcounter{littabstop}[litscore]
+\newcommand{\grealign}{%
+	\@bsphack%
+	\ifgre@boxing\else%
+		\kern\gre@dimen@begindifference%
+		\stepcounter{littabstop}%
+		\expandafter\zsavepos{stop-\thelitscore-\thelittabstop}%
+		\kern-\gre@dimen@begindifference%
+	\fi%
+	\@esphack%
+}
+
+\newcommand{\litsetstops}{%
+  \gdef\nstabbing@stops{%
+    \hspace*{-\oddsidemargin}\hspace{-1in}%
+    \hspace*{\zposx{stop-\thelitscore-1} sp}\=%
+  }%
+  \count@=\@ne
+  \loop\ifnum\count@<\value{littabstop}%
+    \begingroup\edef\x{\endgroup
+      \noexpand\g@addto@macro\noexpand\nstabbing@stops{%
+        \noexpand\hspace{-\noexpand\zposx{stop-\thelitscore-\the\count@} sp}%
+        \noexpand\hspace{\noexpand\zposx{stop-\thelitscore-\the\numexpr\count@+1} sp}\noexpand\=%
+      }%
+    }\x
+    \advance\count@\@ne
+  \repeat
+  \nstabbing@stops\kill
+}
+\makeatother
+
+\newenvironment{nstabbing}
+  {\setlength{\topsep}{0pt}%
+   \setlength{\partopsep}{0pt}%
+   \tabbing%
+   \litsetstops}
+  {\endtabbing\stepcounter{litscore}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
@@ -70,37 +111,68 @@
 \vfill
 
 \setlength{\parindent}{0pt}
-\renewcommand{\pars}[1]{{\large\textsc{#1}}}
+\renewcommand{\pars}[1]{{\bfseries\large\textsc{#1}}}
 \renewcommand{\rubricatum}[1]{\textnormal{\color{red}\textit{#1}}}
 
-\bfseries
+\gresetnabcfont{grelaon}{8}
+
+\pars{Antiphona ad introitum} \scriptura{Cf. Is. 55, 1; Ps. 77, 1; \textbf{L75}}
+
+\vspace{-0.6cm}
+
+\antiphona{II}{temporalia/introitus-Sitientes.gtex}
+
+\vfill
 
 \pars{Ritus recipiendi parvulum}
 
-\input{ritusrecipiendi.tex}
+{\bfseries \input{ritusrecipiendi.tex} }
+
+\vfill
+\pagebreak
 
 \pars{Sacra verbi Dei celebratio}
 
+\gresetnabcfont{gregall}{8}
+
+\pars{Alleluia} \scriptura{Ps. 67, 18.19; \textbf{C116}}
+
+\vspace{-0.6cm}
+
+\antiphona{VIII}{temporalia/alleluia-DominusInSina.gtex}
+
+\gresetnabcfont{grelaon}{8}
+
+{\bfseries \input{evangelium-initium.tex}}
+
 \noindent\pars{Léctio sancti Evángelii secúndum Ioánnem.} \scriptura{Io. 19, 38-42}
 
-\input{evangelium.tex}
+{\bfseries \input{evangelium.tex}
 
 \vfill
 
 \noindent\pars{Oratio fidelium}
 
-\input{oratiofidelium.tex}
+\input{oratiofidelium.tex}}
 
-\Rbardot{} Te rogámus, audi nos.
+\sineinitiali{temporalia/terogamus.gtex}
 
-\input{oratiofidelium-2.tex}
+{\bfseries \input{oratiofidelium-2.tex}}
 
-\vfill
-\pagebreak
+\vspace{0.5cm}
+
+\sineinitiali{temporalia/litaniae.gtex}
+
+\begin{nstabbing}
+\>Sancte Ioánnes \>\>\>Ba-\textbf{ptí}-\>\>\>sta, \>\>o-\>\textit{ra} \>\textit{pro} \textbf{no}bis.\\
+\>Sancte \>\>\>\>\textbf{Io}-\>seph, \>\>\>o-\>\textit{ra} \>\textit{pro} \textbf{no}bis.\\
+\>Sancti Petre et \>\>\>\>\textbf{Pau}-\>\>le, \>orá-\>\>\textit{te} \>\textit{pro} \textbf{no}bis.\\
+\textellipsis
+\end{nstabbing}
 
 \pars{Oratio exorcismi et uncio præbaptismalis}
 
-\input{exorcismus.tex}
+{\bfseries \input{exorcismus.tex}
 
 \vspace{0.7cm}
 
@@ -112,11 +184,27 @@
 
 \pars{Ritus explanativi}
 
-\input{ritus-explanativi.tex}
+\input{ritus-explanativi.tex}}
 
 \pars{Conclusio ritus}
 
-\input{conclusio-ritus.tex}
+\scriptura{Gal. 3, 27; \textbf{L112}}
+
+\vspace{-0.6cm}
+
+\antiphona{II}{temporalia/communio-OmnesQui.gtex}
+
+{\bfseries \input{conclusio-ritus.tex}}
+
+\vfill
+
+\antiphona{VI}{temporalia/alleluia.gtex}
+
+\scriptura{Ps. 117, 1-6}
+
+\initiumpsalmi{temporalia/communio-versus-Confitemini-initium.gtex}
+
+\input{communio-versus-Confitemini.tex}
 
 \vfill
 

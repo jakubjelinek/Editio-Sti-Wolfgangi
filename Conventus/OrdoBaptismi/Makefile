@@ -47,7 +47,7 @@ OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(patsubst %,$(TMP_DIR)/communio-versus-Confitemini-%.tex,comb combfr)
 ALLCOMBTEXTS = $(patsubst %,$(TMP_DIR)/%-comb.tex,ritusrecipiendi \
 		 oratiofidelium oratiofidelium-2 exorcismus celebratio-baptismi \
-		 ritus-explanativi conclusio-ritus evangelium)
+		 ritus-explanativi conclusio-ritus evangelium evangelium-initium)
 ALLFRCOMBTEXTS = $(patsubst %-comb.tex,%-combfr.tex,$(ALLCOMBTEXTS))
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
