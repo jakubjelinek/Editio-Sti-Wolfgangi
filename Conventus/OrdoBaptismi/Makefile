@@ -82,7 +82,7 @@ $(ALLFRCOMBTEXTS): PSSKIP = 0
 $(ALLFRCOMBTEXTS): $(TMP_DIR)/%-combfr.tex: %.tex %-fra.tex
 	$(GENPSCOMB)
 $(ALLLATEXTS): $(TMP_DIR)/%-parvula.tex: %.tex
-	$(SED) -e 's/{\\color{red}N\.}/Myrrha Liesse/' $< > $@
+	$(SED) -e 's/{\\color{red}N\.}/Myrrha Liesse/g;s/Liesse$$/Liesse./' $< > $@
 $(TMP_DIR)/communio-versus-Confitemini-comb.tex: $(patsubst %,communio-versus-Confitemini%tex,. -boh.)
 	$(GENPSCOMB)
 $(TMP_DIR)/communio-versus-Confitemini-combfr.tex: $(patsubst %,communio-versus-Confitemini%tex,. -fra.)
