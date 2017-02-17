@@ -49,6 +49,7 @@ ALLCOMBTEXTS = $(patsubst %,$(TMP_DIR)/%-comb.tex,ritusrecipiendi \
 		 oratiofidelium oratiofidelium-2 exorcismus celebratio-baptismi \
 		 ritus-explanativi conclusio-ritus evangelium evangelium-initium)
 ALLFRCOMBTEXTS = $(patsubst %-comb.tex,%-combfr.tex,$(ALLCOMBTEXTS))
+ALLLATEXTS = $(patsubst %-comb.tex,%-parvula.tex,$(ALLCOMBTEXTS))
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(4)/$(2)-auto.gabc; \
@@ -80,13 +81,15 @@ $(ALLCOMBTEXTS): $(TMP_DIR)/%-comb.tex: %.tex %-boh.tex
 $(ALLFRCOMBTEXTS): PSSKIP = 0
 $(ALLFRCOMBTEXTS): $(TMP_DIR)/%-combfr.tex: %.tex %-fra.tex
 	$(GENPSCOMB)
+$(ALLLATEXTS): $(TMP_DIR)/%-parvula.tex: %.tex
+	$(SED) -e 's/{\\color{red}N\.}/Myrrha Liesse/' $< > $@
 $(TMP_DIR)/communio-versus-Confitemini-comb.tex: $(patsubst %,communio-versus-Confitemini%tex,. -boh.)
 	$(GENPSCOMB)
 $(TMP_DIR)/communio-versus-Confitemini-combfr.tex: $(patsubst %,communio-versus-Confitemini%tex,. -fra.)
 	$(GENPSCOMB)
 $(patsubst %,ordobaptismi%pdf,. -celebrans. fr. -litaniae.): %.pdf: %.tex conventuscommune.tex \
 	translationes_cs.tex translationes_fr.tex \
-	ordobaptismi.jpg $(ALLCOMBTEXTS) $(ALLFRCOMBTEXTS) \
+	ordobaptismi.jpg $(ALLCOMBTEXTS) $(ALLFRCOMBTEXTS) $(ALLLATEXTS) \
 	$(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
