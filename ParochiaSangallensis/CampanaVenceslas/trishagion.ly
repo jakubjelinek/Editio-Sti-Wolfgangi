@@ -14,8 +14,9 @@
 }
 
 \header {
-  title = "Te Deum laudamus"
-  composer = "T: sv. Ambrož († 397)"
+  title = "Trishagion"
+%  title = "τρίςἅγιον"
+  composer = "T: 5. stol."
   tagline = ""
 }
 
@@ -31,29 +32,22 @@
 }
 
 global = {
-  \key g \major
+  \key as \major
 }
 choralMusic = \relative c'' {
-  \key g \major
-  \time 3/4
-  g2 g4 g ( fis ) g a ( g ) a h2 r4 h2 h4
-  h ( c ) d d ( c ) h h a r4 \bar ":|." a ( h ) c c ( h ) a
-  h2 c4 d2 r4 e2 e4 d ( c ) h d ( c ) a g2. \bar "|."
+  \key as \major
+  \time 2/4
+  as4 as g g as as b b \breathe as as des c b2 as \breathe c4 b as b as ( g ) f2 \bar "|."
 }
-czechWordsi = \lyricmode {
-Bo- že, chvá- lí- me te- be, Pa- ne, moc tvou ve- le- bí- me,
-když se vše v_svě- tě mě- ní, ty sám jsi bez pro- mě- ny.
-}
-czechWordsii = \lyricmode {
-kte- rou zná zem i ne- be, všem tvým skut- kům se di- ví- me;
+czechWords = \lyricmode {
+Sva- tý Bo- že, sva- tý Sil- ný, sva- tý Ne- smr- tel- ný, smi- luj se nad ná- mi!
 }
 \score {
   \new ChoirStaff <<
     \new Staff {
        \new Voice = "tenores" { \choralMusic }
     }
-    \new Lyrics \with { alignBelowContext = men } \lyricsto tenores \czechWordsi
-    \new Lyrics \with { alignBelowContext = men } \lyricsto tenores \czechWordsii
+    \new Lyrics \with { alignBelowContext = men } \lyricsto tenores \czechWords
   >>
   \layout {
     \context {

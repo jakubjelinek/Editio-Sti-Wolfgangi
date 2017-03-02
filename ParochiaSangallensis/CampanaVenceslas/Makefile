@@ -44,7 +44,7 @@ SCORES = tractus-QuiHabitat
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = ps90-bohtext.tex tedeum-bohtext.tex
 ALLCOMBTEXTS = 
-LILYPONDSCORES = dekovnapiseni svatyvaclave tedeum
+LILYPONDSCORES = dekovnapiseni svatyvaclave tedeum trishagion
 LILYPONDPDFS = $(patsubst %,$(TMP_DIR)/%.pdf,$(LILYPONDSCORES))
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
@@ -76,7 +76,7 @@ $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
 $(ALLCOMBTEXTS): PSSKIP = 0
 $(ALLCOMBTEXTS): $(TMP_DIR)/%-comb.tex: %.tex %-boh.tex
 	$(GENPSCOMB)
-campanavenceslas.pdf: campanavenceslas.tex conventuscommune.tex svhavel.jpg \
+campanavenceslas.pdf: campanavenceslas.tex conventuscommune.tex svhavel.jpg campana.jpg \
 	$(LILYPONDPDFS) $(ALLCOMBTEXTS) \
 	$(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
