@@ -41,7 +41,7 @@ choralMusic = \relative c'' {
   h2 c4 d2 r4 e2 e4 d ( c ) h d ( c ) a g2. \bar "|."
 }
 czechWordsi = \lyricmode {
-Bo- že, chvá- lí- me te- be, Pa- ne, moc tvou ve- le- bí- me,
+\markup { { \with-color #red 1. } Bo- } že, chvá- lí- me te- be, Pa- ne, moc tvou ve- le- bí- me,
 když se vše v_svě- tě mě- ní, ty sám jsi bez pro- mě- ny.
 }
 czechWordsii = \lyricmode {

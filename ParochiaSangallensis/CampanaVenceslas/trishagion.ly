@@ -16,7 +16,7 @@
 \header {
   title = "Trishagion"
 %  title = "τρίςἅγιον"
-  composer = "T: 5. stol."
+%  composer = "T: 5. stol."
   tagline = ""
 }
 

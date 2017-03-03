@@ -51,22 +51,22 @@ altoMusic = \relative c' {
   d fis g8 [ e ] d [ a ] a4 d8 [ cis ] d4 \bar "|."
 }
 czechWordsi = \lyricmode {
-V_den o- slav v_chví- lích ra- dost- ných, kdy zpí- vat chce se a kdy smích se ne- se ja- ko von- ný dým, buď nej- prv chvá- _ len _ Hos- po- din.
+\markup { { \with-color #red 1. } V den } o- slav v_chví- lích ra- dost- ných, kdy zpí- vat chce se a kdy smích se ne- se ja- ko von- ný dým, buď nej- prv chvá- _ len _ Hos- po- din.
 }
 czechWordsii = \lyricmode {
-Když šle- há, bi- je, dr- tí nás a ží- há hně- vem svým v_ten čas, kdy z_na- dě- jí už ne- zbyl stín, buď zno- vu chvá- _ len _ Hos- po- din.
+\markup { { \with-color #red 2. } Když } šle- há, bi- je, dr- tí nás a ží- há hně- vem svým v_ten čas, kdy z_na- dě- jí už ne- zbyl stín, buď zno- vu chvá- _ len _ Hos- po- din.
 }
 czechWordsiii = \lyricmode {
-Křik, ná- si- lí a zá- pla- va když pus- tých slov se roz- lé- vá, kdy chva- lo- zpěv zní lid- ských vin, buď od nás chvá- _ len _ Hos- po- din.
+\markup { { \with-color #red 3. } Křik, } ná- si- lí a zá- pla- va když pus- tých slov se roz- lé- vá, kdy chva- lo- zpěv zní lid- ských vin, buď od nás chvá- _ len _ Hos- po- din.
 }
 czechWordsiv = \lyricmode {
-Když lid- ské pý- chy pá- pě- ří už je- ho slo- vu ne- vě- ří a slou- ží stí- nům blá- ho- vým: Buď od nás chvá- _ len _ Hos- po- din.
+\markup { { \with-color #red 4. } Když } lid- ské pý- chy pá- pě- ří už je- ho slo- vu ne- vě- ří a slou- ží stí- nům blá- ho- vým: Buď od nás chvá- _ len _ Hos- po- din.
 }
 czechWordsv = \lyricmode {
-Vší prázd- no- tě slov na- vzdo- ry chce vyz- nat křes- ťan po- kor- ný svou ví- ru sli- bům žu- lo- vým: Buď po- vždy chvá- _ len _ Hos- po- din.
+\markup { { \with-color #red 5. } Vší " " } prázd- no- tě slov na- vzdo- ry chce vyz- nat křes- ťan po- kor- ný svou ví- ru sli- bům žu- lo- vým: Buď po- vždy chvá- _ len _ Hos- po- din.
 }
 czechWordsvi = \lyricmode {
-Chce o- pa- ko- vat Jo- bův vzdech v_svých ra- dos- tech a ú- zkos- tech: Buď Hos- po- din vždy po- chvá- len, jen je- mu slá- _ va, _ dík. A- men.
+\markup { { \with-color #red 6. } Chce } o- pa- ko- vat Jo- bův vzdech v_svých ra- dos- tech a ú- zkos- tech: Buď Hos- po- din vždy po- chvá- len, jen je- mu slá- _ va, _ dík. A- men.
 }
 tenorMusic = \relative c' {
   \key d \major

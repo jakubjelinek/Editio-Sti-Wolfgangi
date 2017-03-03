@@ -80,14 +80,14 @@ choralMusic = \relative c'' {
   es4 d c g' ( b ) a2 \bar "||"
 }
 czechWords = \lyricmode {
-Sva- tý Vá- cla- ve, vé- vo- do čes- ké ze- mě, kní- že náš, pros za nás Bo- ha, sva- té- ho Du- cha! Kris- te, e- lei- son.
-Ty jsi dě- dic čes- ké ze- mě, roz- po- meň se na své plé- mě, ne- dej za- hy- nou- ti nám ni bu- dou- cím, sva- tý Vá- cla- ve! Kris- te, e- lei- son.
-Po- mo- ci my tvé žá- dá- me, smi- luj se nad ná- mi, u- těš smut- né, za- žeň vše zlé, sva- tý Vá- cla- ve! Kris- te, e- lei- son.
-Ne- bes- ké jest dvor- stvo krá- sné, bla- ze to- mu, kdo tam doj- de, v_ži- vot věč- ný, o- heň jas- ný sva- té- ho Du- cha. Kris- te, e- lei- son.
-Ma- ri- a, Mat- ko žá- dou- cí, tys Krá- lov- na vše- mo- hou- cí, pro- siž za nás, za křes- ťa- ny, své- ho Sy- na, Hos- po- di- na! Kris- te, e- lei- son.
-An- dě- lé sva- tí, ne- beš- tí, rač- te nás k_so- bě při- vés- ti, tam, kde chvá- la ne- pře- stá- vá věč- né- ho Bo- ha. Kris- te, e- lei- son.
-Všich- ni sva- tí, za nás pros- te, za- hy- nou- ti nám ne- dej- te, sva- tý Ví- te, sva- tý Nor- ber- te, sva- tý Zik- mun- de, sva- tý Pro- ko- pe, sva- tý Voj- tě- še, sva- tý Je- ne Ne- po- muc- ký, sva- tá Lud- mi- lo, sva- tá A- než- ko, sva- tý Vác- la- ve! Kris- te, e- lei- son.
-Bo- hu Ot- ci chvá- lu vzdej- me, sva- tým kří- žem se žeh- nej- me: Ve jmé- nu Ot- ce i Sy- na je- ho i Du- cha sva- té- ho. Kris- te, e- lei- son. 
+\markup { { \with-color #red 1. } Sva- } tý Vá- cla- ve, vé- vo- do čes- ké ze- mě, kní- že náš, pros za nás Bo- ha, sva- té- ho Du- cha! Kris- te, e- lei- son.
+\markup { { \with-color #red 2. } Ty } jsi dě- dic čes- ké ze- mě, roz- po- meň se na své plé- mě, ne- dej za- hy- nou- ti nám ni bu- dou- cím, sva- tý Vá- cla- ve! Kris- te, e- lei- son.
+\markup { { \with-color #red 3. } Po- } mo- ci my tvé žá- dá- me, smi- luj se nad ná- mi, u- těš smut- né, za- žeň vše zlé, sva- tý Vá- cla- ve! Kris- te, e- lei- son.
+\markup { { \with-color #red 4. } Ne- } bes- ké jest dvor- stvo krá- sné, bla- ze to- mu, kdo tam doj- de, v_ži- vot věč- ný, o- heň jas- ný sva- té- ho Du- cha. Kris- te, e- lei- son.
+\markup { { \with-color #red 5. } Ma- } ri- a, Mat- ko žá- dou- cí, tys Krá- lov- na vše- mo- hou- cí, pro- siž za nás, za křes- ťa- ny, své- ho Sy- na, Hos- po- di- na! Kris- te, e- lei- son.
+\markup { { \with-color #red 6. } An- } dě- lé sva- tí, ne- beš- tí, rač- te nás k_so- bě při- vés- ti, tam, kde chvá- la ne- pře- stá- vá věč- né- ho Bo- ha. Kris- te, e- lei- son.
+\markup { { \with-color #red 7. } Všich- } ni sva- tí, za nás pros- te, za- hy- nou- ti nám ne- dej- te, sva- tý Ví- te, sva- tý Nor- ber- te, sva- tý Zik- mun- de, sva- tý Pro- ko- pe, sva- tý Voj- tě- še, sva- tý Je- ne Ne- po- muc- ký, sva- tá Lud- mi- lo, sva- tá A- než- ko, sva- tý Vác- la- ve! Kris- te, e- lei- son.
+\markup { { \with-color #red 8. } Bo- } hu Ot- ci chvá- lu vzdej- me, sva- tým kří- žem se žeh- nej- me: Ve jmé- nu Ot- ce i Sy- na je- ho i Du- cha sva- té- ho. Kris- te, e- lei- son. 
 }
 \score {
   \new ChoirStaff <<
