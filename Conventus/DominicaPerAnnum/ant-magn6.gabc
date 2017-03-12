@@ -3,11 +3,12 @@ office-part: Antiphona;
 mode: 7;
 book: Antiphonale Monasticum, 1934, p. 163;
 transcriber: Sr. Maria Ruth;
+nabc-lines: 1;
 %%
 (c3)
-SUs(e_f)cé(hg)pit(hi~) De(i_0/j/ji)us(i.) *(,)
-Is(j')ra(k)el(j) pú(ih)e(ij)rum(j>) su(i.)um,(i.) (;)
-sic(e)ut(ehg~) lo(h)cú(ij)tus(j) est(i'_) (,)
-ad(h) A(j)bra(k')ham(j) et(ih) se(ij)men(j) e(i.)ius:(i.) (;)
-ex(i)al(g)tá(ij)re(i) hú(h')mi(h)les(gih.) (,)
-us(f_e)que(f!gwh_f) in(g>) sǽ(e)cu(de)lum.(e.) (::)
+SUs(e_f|peS)cé(hg|to)pit(hi~|ta>) De(i_0/j/ji|vi-hgpr-hg)us(i.|vi) *(,)
+Is(j'|vi)ra(k|vihi)el(j|vi) pú(ih|cllsc3)e(ij|pehg)rum(j>|vi>) su(i.|vi)um,(i.|vihh) (;)
+sic(e|vi)ut(ehg~|pe>hg) lo(h|vihg)cú(ij|pehg)tus(j|vihg) est(i'_|tahglsx6) (,)
+ad(h) A(j|vi)bra(k'|vihi)ham(j|vi) et(ih|clhhlsc3) se(ij|pehi)men(j|vi) e(i.|tahg)ius:(i.|tahglse6) (;)
+ex(i|ta)al(g|vihg)tá(ij|ta)re(i|pe) hú(h'|vi)mi(h|vi)les(gih.|tolsi7) (,)
+us(f_e|cl-)que(f!gwh_f|viqlhi!clhi) in(g>|vi>) sǽ(e|vihg)cu(de|pehg)lum.(e.|vi) (::)

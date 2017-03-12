@@ -3,10 +3,10 @@ office-part: Antiphona;
 mode: 5;
 book: Antiphonale Monasticum, 1934, p. 142;
 transcriber: Jakub Jelínek;
+nabc-lines: 1;
 %%
 (c3)
-EX(f)súl(d)tet(f') *()
-spí(h)ri(hg)tus(f') me(h)us(h'_) (,)
-in(i>) Dó(h')mi(g)no(f) De(f_e)o(f'_) (,)
-sa(f)lu(h)tá(e')ri(e) me(d.)o.(d.) (::)
-
+EX(f|vihg)súl(d|tahg)tet(f'|vi) *()
+spí(h|vihg)ri(hg|cllsc3)tus(f'|tahg) me(h|vihg)us(h'_|vi-hhlsx6) (,)
+in(i>|vi>he) Dó(h'|vi-hg)mi(g|vi)no(f|ta) De(f_e|cl-)o(f'_|vi-) (,)
+sa(f|vi)lu(h|clhglss2lsc2)tá(e'|vihe)ri(e|vihh) me(d.|tahg)o.(d.|ta) (::)

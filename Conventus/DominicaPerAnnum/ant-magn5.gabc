@@ -3,9 +3,10 @@ office-part: Antiphona;
 mode: 1;
 book: Antiphonale Monasticum, 1934, p. 158;
 transcriber: Jakub Jelínek;
+nabc-lines: 1;
 %%
 (c4)
-De(d)pó(d)su(dc)it(f) po(g)tén(f!gwh)tes,(h.) *(,)
-san(ixh.g!hwi)ctos(h') per(g)se(f)quén(ixg!hwiHG)tes:(hg..) (;)
-et(g) ex(g)al(g')tá(e)vit(g') hú(h)mi(gf)les,(f_g) (,)
-Chris(e)tum(dc~) con(d)fi(fe)tén(d.)tes.(d.) (::)
+De(d|tahe)pó(d|ta)su(dc|cllsc3)it(f|vi) po(g|vi)tén(f!gwh|`qi>ppt1)tes,(h.|vihg) *(,)
+san(ixh.g!hwi|//cl-qlhg)ctos(h'|vi) per(g|vihe)se(f|vi)quén(ixg!hwiHG|//ql!cl>ppt2lsi6)tes:(hg..|/cl-) (;)
+et(g|``talse1) ex(g|ta)al(g'|pe>)tá(e|vi)vit(g'|cllsc3) hú(h|ta)mi(gf|pehg)les,(f_g|vi-hg) (,)
+Chris(e|vihg)tum(dc~|vi>) con(d|vi)fi(fe|clhg)tén(d.|tahg)tes.(d.|tahg) (::)
