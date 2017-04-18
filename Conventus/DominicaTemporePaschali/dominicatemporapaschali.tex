@@ -1,0 +1,664 @@
+% LuaLaTeX
+
+\documentclass[a4paper, twoside, 12pt]{article}
+\usepackage[latin]{babel}
+%\usepackage[landscape, left=3cm, right=1.5cm, top=2cm, bottom=1cm]{geometry} % okraje stranky
+\usepackage[landscape, a4paper, mag=1166, truedimen, left=2cm, right=1.5cm, top=1.6cm, bottom=0.95cm]{geometry} % okraje stranky
+
+\usepackage{fontspec}
+\setmainfont[FeatureFile={junicode.fea}, Ligatures={Common, TeX}, RawFeature=+fixi]{Junicode}
+%\setmainfont{Junicode}
+
+% shortcut for Junicode without ligatures (for the Czech texts)
+\newfontfamily\nlfont[FeatureFile={junicode.fea}, Ligatures={Common, TeX}, RawFeature=+fixi]{Junicode}
+
+\usepackage{multicol}
+\usepackage{color}
+\usepackage{lettrine}
+\usepackage{fancyhdr}
+
+% usual packages loading:
+\usepackage{luatextra}
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{gregoriotex} % for gregorio score inclusion
+\usepackage{gregoriosyms}
+\usepackage{wrapfig} % figures wrapped by the text
+\usepackage{parcolumns}
+\usepackage[contents={},opacity=1,scale=1,color=black]{background}
+\usepackage{tikzpagenodes}
+\usepackage{calc}
+\usepackage{longtable}
+\usetikzlibrary{calc}
+
+\setlength{\headheight}{14.5pt}
+
+\input{conventuscommune.tex} % Often used macros
+\input{translationes_cs.tex} % Czech translations of the proper texts
+
+\newcommand{\annusEditionis}{2017}
+
+%%%% Vicekrat opakovane kousky
+
+\newcommand{\anteOrationem}{
+  \rubrica{Ante Orationem, cantatur a Superiore:}
+
+  \pars{Supplicatio Litaniæ.}
+
+  \cuminitiali{}{temporalia/supplicatiolitaniae.gtex}
+
+  \pars{Oratio Dominica.}
+
+  \cuminitiali{}{temporalia/oratiodominica.gtex}
+
+  \rubrica{Deinde dicitur ab Hebdomadario:}
+
+  \cuminitiali{}{temporalia/dominusvobiscum-solemnis.gtex}
+
+  \rubrica{In choro monialium loco Dominus vobiscum dicitur:}
+
+  \sineinitiali{temporalia/domineexaudi.gtex}
+}
+
+\setlength{\columnsep}{30pt} % prostor mezi sloupci
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Here we set the space around the initial.
+% Please report to http://home.gna.org/gregorio/gregoriotex/details for more details and options
+\grechangedim{afterinitialshift}{2.2mm}{scalable}
+\grechangedim{beforeinitialshift}{2.2mm}{scalable}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\grechangedim{annotationraise}{-0.2cm}{scalable}
+
+% Here we set the initial font. Change 38 if you want a bigger initial.
+% Emit the initials in red.
+\grechangestyle{initial}{\color{red}\fontsize{38}{38}\selectfont}
+
+\pagestyle{empty}
+
+%%%% Titulni stranka
+\begin{titulusOfficii}
+\nomenFesti{Dominica in Tempore Paschali.}
+\end{titulusOfficii}
+
+% graphic
+\vspace{1.5cm}
+\begin{center}
+%\includegraphics[width=10cm]{dominicaperannum.jpg}
+\end{center}
+
+\vfill
+
+\begin{center}
+Ad usum et secundum consuetudines chori \guillemotright{}Conventus Choralis\guillemotleft.
+
+Editio Sancti Wolfgangi \annusEditionis
+\end{center}
+
+\pagebreak
+
+\renewcommand{\headrulewidth}{0pt} % no horiz. rule at the header
+\fancyhf{}
+\pagestyle{fancy}
+
+\pars{Oratio ante divinum Officium.}
+
+\lettrine{{\color{red}A}}{peri,} Dómine, os meum ad benedicéndum nomen sanctum tuum:
+munda quoque cor meum ab ómnibus vanis, pervérsis, et aliénis
+cogitatiónibus:
+intelléctum illúmina, afféctum inflámma,
+ut digne, atténte ac devóte hoc Offícium recitáre váleam,
+et exaudíri mérear ante conspéctum Divínæ Majestátis tuæ.
+Per Christum, Dominum nostrum.
+\Rbardot{} Amen.
+
+Dómine, in unióne illíus divínæ intentiónis,
+qua ipse in terris laudes Deo persolvísti,
+has tibi Horas \rubricatum{(vel \textnormal{hanc tibi Horam})} persólvo.
+
+\trOratioAnteOfficium
+
+\vfill
+
+\pars{Oratio post divinum Officium.}
+
+\rubrica{
+  Orationem sequentem devote post Officium recitantibus
+  Leo Papa X. defectus, et culpas in eo persolvendo ex humana
+  fragilitate contractas, indulsit, et dicitur flexis genibus.
+}
+
+\lettrine{{\color{red}S}}{acrosánctæ} et indivíduæ Trinitáti,
+crucifíxi Dómini nostri Jesu Christi humanitáti,
+beatíssimæ et gloriosíssimæ sempérque Vírginis Maríæ
+fecúndæ integritáti, 
+et ómnium Sanctórum universitáti
+sit sempitérna laus, honor, virtus et glória
+ab omni creatúra,
+nobísque remíssio ómnium peccatórum,
+per infiníta sǽcula sæculórum.
+\Rbardot{} Amen.
+
+\noindent \Vbardot{} Beáta víscera Maríæ Virginis, quæ portavérunt
+ætérni Patris Fílium.\\
+\Rbardot{} Et beáta úbera, quæ lactavérunt Christum Dominum.
+
+\rubrica{Et dicitur secreto \textnormal{Pater noster.} et \textnormal{Ave María.}}
+
+\trOratioPostOfficium
+
+\vfill
+
+\hora{Ad Vesperas.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sideThumbs{Vesperas}
+
+\cantusSineNeumas
+
+\vspace{0.5cm}
+\grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{}{temporalia/deusinadiutorium-alter.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 1.} \scriptura{}
+
+\vspace{-0.4cm}
+
+\antiphona{VII c\textsuperscript{2}}{temporalia/ant1.gtex}
+
+\scriptura{Psalmus 109.}
+
+\initiumpsalmi{temporalia/ps109-initium-vii-c2-auto.gtex}
+
+\psalmusEtTranslatioT{temporalia/ps109-comb.tex}{10cm}
+
+\vspace{-1cm}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 2.} \scriptura{Psalmus 110.}
+
+\initiumpsalmi{temporalia/ps110-initium-vii-c2-auto.gtex}
+
+\psalmusEtTranslatioT{temporalia/ps110-comb.tex}{10cm}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 3.} \scriptura{Psalmus 111.}
+
+\initiumpsalmi{temporalia/ps111-initium-vii-c2-auto.gtex}
+
+\psalmusEtTranslatioT{temporalia/ps111-comb.tex}{10cm}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 4.} \scriptura{Psalmus 112.}
+
+\initiumpsalmi{temporalia/ps112-initium-vii-c2-auto.gtex}
+
+\vspace{-5mm}
+
+\psalmusEtTranslatioT{temporalia/ps112-comb.tex}{10cm}
+
+\vfill
+%\pagebreak
+
+\pars{Psalmus 5.} \scriptura{Psalmus 113.}
+
+\initiumpsalmi{temporalia/ps113-initium-vii-c2-auto.gtex}
+
+\vspace{-5mm}
+
+\psalmusEtTranslatioT{temporalia/ps113-comb.tex}{10cm}
+
+\vspace{-6mm}
+
+\antiphona{}{temporalia/ant1.gtex} % repeat the antiphon - new page
+
+\vfill
+\pagebreak
+
+\pars{Capitulum de Dominica in Albis.} \scriptura{1 Io. 5, 4}
+
+\grechangedim{interwordspacetext}{0.12 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{}{temporalia/capitulum-CarissimiOmneQuod.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+
+% preklad Jeruz. bible
+\trCapituliI
+
+\vfill
+
+\pars{Capitulum de Dominica II post Pascha.} \scriptura{1 Ptr. 2, 21-22}
+
+\grechangedim{interwordspacetext}{0.12 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{}{temporalia/capitulum-CarissimiChristus.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+
+% preklad Jeruz. bible
+\trCapituliII
+
+\vfill
+
+\pars{Capitulum de Dominica III post Pascha.} \scriptura{1 Ptr. 2, 11}
+
+\grechangedim{interwordspacetext}{0.12 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{}{temporalia/capitulum-CarissimiObsecro.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+
+% preklad Jeruz. bible
+\trCapituliIII
+
+\vfill
+\pagebreak
+
+\pars{Capitulum de Dominica IV post Pascha.} \scriptura{Iac. 1, 17}
+
+\grechangedim{interwordspacetext}{0.12 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{}{temporalia/capitulum-CarissimiOmneDatum.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+
+% preklad Jeruz. bible
+\trCapituliIV
+
+\vfill
+
+\pars{Capitulum de Dominica V post Pascha.} \scriptura{Iac. 1, 22-24}
+
+\grechangedim{interwordspacetext}{0.12 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{}{temporalia/capitulum-CarissimiEstoteFactores.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+
+% preklad Jeruz. bible
+\trCapituliV
+
+\vfill
+
+\pars{Responsorium breve.} \scriptura{Lc. 24, 34}
+
+\cuminitiali{VI}{temporalia/respbr.gtex}
+
+\trResp
+
+\vfill
+\pagebreak
+
+\pars{Hymnus}
+
+\cuminitiali{VIII}{temporalia/hym-AdCoenam.gtex}
+\input{hym-AdCoenam-bohtext.tex}
+
+\vfill
+\pagebreak
+
+\pars{Versus.} \scriptura{Lc. 24, 29}
+
+% Versus. %%%
+\sineinitiali{temporalia/versus-mane.gtex}
+
+\noindent \trVersus
+
+\vfill
+%\pagebreak
+
+\pars{Dominica in Albis}
+
+\pars{Canticum B. Mariæ V.} \scriptura{Io. 20, 26; \textbf{H239}}
+
+\vspace{-4mm}
+
+{
+\grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{VIII G}{temporalia/ant-magn1.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+
+\trAntIMagnificat
+
+\vspace{-3mm}
+
+\scriptura{Lc. 1, 46-55}
+
+\cantusSineNeumas
+\initiumpsalmi{temporalia/magnificat-initium-viii-C.gtex}
+
+\vspace{-7mm}
+
+\psalmusEtTranslatioT{temporalia/magnificat-I-comb.tex}{10.2cm}
+
+\vspace{-1cm}
+
+\vfill
+\pagebreak
+
+\pars{Dominica II post Pascha}
+
+\pars{Canticum B. Mariæ V., Antiphona 2.} \scriptura{Io. 10, 14.15; \textbf{H242}}
+
+{
+\grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{III a}{temporalia/ant-magn2.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+
+\trAntIIMagnificat
+
+\scriptura{Lc. 1, 46-55}
+
+\cantusSineNeumas
+\initiumpsalmi{temporalia/magnificat-initium-iii-a.gtex}
+
+\vspace{-0.2cm}
+
+\psalmusEtTranslatioT{temporalia/magnificat-II-comb.tex}{10.2cm}
+
+\vspace{-1cm}
+
+\vfill
+\pagebreak
+
+\pars{Dominica III post Pascha}
+
+\pars{Canticum B. Mariæ V.} \scriptura{Io. 16, 20; \textbf{H243}}
+
+{
+\grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{VIII G}{temporalia/ant-magn3.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+
+\trAntIIIMagnificat
+
+\scriptura{Lc. 1, 46-55}
+
+\cantusSineNeumas
+\initiumpsalmi{temporalia/magnificat-initium-viii-G.gtex}
+
+\vspace{-6mm}
+
+\psalmusEtTranslatioT{temporalia/magnificat-III-comb.tex}{10.2cm}
+
+\vspace{-1cm}
+
+\vfill
+\pagebreak
+
+\pars{Dominica IV post Pascha}
+
+\pars{Canticum B. Mariæ V.} \scriptura{Io. 16, 5.6; \textbf{H244}}
+
+{
+\grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{I g}{temporalia/ant-magn4.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+
+\trAntIVMagnificat
+
+\scriptura{Lc. 1, 46-55}
+
+\cantusSineNeumas
+\initiumpsalmi{temporalia/magnificat-initium-i-g.gtex}
+
+\vspace{-0.2cm}
+
+\psalmusEtTranslatioT{temporalia/magnificat-IV-comb.tex}{10.2cm}
+
+\vspace{-1cm}
+
+\vfill
+\pagebreak
+
+\pars{Dominica V post Pascha}
+
+\pars{Canticum B. Mariæ V.} \scriptura{Io. 16, 24.27; \textbf{H244}}
+
+{
+\grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{VIII G\textsuperscript{2}}{temporalia/ant-magn5.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+
+\trAntVMagnificat
+
+\scriptura{Lc. 1, 46-55}
+
+\cantusSineNeumas
+\initiumpsalmi{temporalia/magnificat-initium-viii-G2.gtex}
+
+\vspace{-0.2cm}
+
+\psalmusEtTranslatioT{temporalia/magnificat-V-comb.tex}{10.2cm}
+
+\vspace{-1cm}
+
+\vfill
+\pagebreak
+
+\pars{Dominica infra Octavam Ascensionis}
+
+\pars{Capitulum.} \scriptura{1 Ptr. 4, 7-8}
+
+\grechangedim{interwordspacetext}{0.12 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{}{temporalia/capitulum-CarissimiEstotePrudentes.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+
+% preklad Jeruz. bible
+\trCapituliVI
+
+\vfill
+
+\pars{Responsorium breve.} \scriptura{Cf. Ps. 67, 19}
+
+\cuminitiali{VI}{temporalia/respbras.gtex}
+
+\trRespAscensionis
+
+\vfill
+\pagebreak
+
+\pars{Hymnus}
+
+\cuminitiali{IV}{temporalia/hym-JesuNostraRedemptio.gtex}
+\input{hym-JesuNostraRedemptio-bohtext.tex}
+
+\vfill
+%\pagebreak
+
+\pars{Versus.} \scriptura{Ps. 102, 19}
+
+% Versus. %%%
+\sineinitiali{temporalia/versus-dominus.gtex}
+
+\noindent \trVersusAscensionis
+
+\vfill
+\pagebreak
+
+\pars{Canticum B. Mariæ V.} \scriptura{Io. 16, 4}
+
+{
+\grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{VII a}{temporalia/ant-magn6.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+
+\trAntVIMagnificat
+
+\scriptura{Lc. 1, 46-55}
+
+\cantusSineNeumas
+\initiumpsalmi{temporalia/magnificat-initium-viii-G.gtex}
+
+\vspace{-0.2cm}
+
+\psalmusEtTranslatioT{temporalia/magnificat-VI-comb.tex}{10.2cm}
+
+\vspace{-1cm}
+
+\vfill
+\pagebreak
+
+\pars{Deprecatio Gelasii I}
+
+\vspace{-5mm}
+
+\grechangedim{interwordspacetext}{0.06 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{D\textsuperscript{1}}{temporalia/deprecatio1.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+
+\vspace{-1mm}
+
+\trDeprecatioI \scriptura{\gredagger Vide pagina \pageref{deprecatio}.}
+
+\vfill
+\pagebreak
+
+\vspace{-2mm}
+
+\pars{Deprecatio Gelasii II}
+
+\vspace{-6mm}
+
+\grechangedim{interwordspacetext}{0.06 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{D\textsuperscript{4}}{temporalia/deprecatio2.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+
+\vspace{-2.5mm}
+
+\trDeprecatioII \scriptura{\gredagger Vide pagina \pageref{deprecatio}.}
+
+\vfill
+\pagebreak
+
+\pars{Deprecatio Gelasii III}
+
+\grechangedim{interwordspacetext}{0.06 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{D\textsuperscript{3}}{temporalia/deprecatio3.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+
+\trDeprecatioIII
+
+\vfill
+
+\label{deprecatio}
+
+\noindent \rubrica{\gredagger}
+
+\trDeprecatioConclusio
+
+\vfill
+\pagebreak
+
+\pars{Deprecatio Gelasii IV}
+
+\vspace{-5mm}
+
+\grechangedim{interwordspacetext}{0.06 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{D\textsuperscript{1}}{temporalia/deprecatio4.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+
+\vspace{-1mm}
+
+\trDeprecatioIV \scriptura{\gredagger Vide pagina \pageref{deprecatio}.}
+
+\vfill
+\pagebreak
+
+\anteOrationem
+
+\pagebreak
+
+% Oratio. %%%
+\pars{Oratio.}
+
+\cuminitiali{}{temporalia/oratio.gtex}
+
+\vspace{-1mm}
+\trOrationisI
+
+\vspace{1mm}
+
+\rubrica{Hebdomadarius dicit iterum Dominus vobiscum. Postea cantatur a cantore:}
+\vspace{2mm}
+
+\cuminitiali{IV}{temporalia/benedicamus-feria-laudes.gtex}
+
+\vspace{1mm}
+
+\vfill
+\pagebreak
+
+\pars{Antiphona finalis B. M. V. pro tempore paschali.}
+
+\cuminitiali{VI}{temporalia/an_regina_caeli_simplex.gtex}
+\trReginaCaeli
+
+\vfill
+\pagebreak
+
+\newpage
+\RemoveSideThumbs
+\pagestyle{empty}
+
+%%% COLOPHON
+\vfill
+
+Fontes.
+Textus et cantus officii divini secundum
+Antiphonale Sacrosanctæ Romanæ Eclesiæ Pro Diurnis Horis, Romæ 1912, præter: psalmi 149 et 150 post
+psalmum 148 in Laudibus additi secundum Antiphonale Monasticum pro Diurnis Horis,
+Solesmis 1934; responsorium breve in Laudibus additum secundum Antiphonale Monasticum. /
+Translatio capituli sumpta est ex: Jeruzalémská bible, Praha-Kostelní Vydří 2009. /
+Translationes psalmorum ex Hejčl Jan: Žaltář čili Kniha žalmů, Praha 1922. /
+Neumæ super canto officii divini de codice Hartker, Stiftsbibl. 390.
+
+Collaborantes.
+Textus latinos cantusque transcripsit et omnem laborem typographicum peregit
+Jakub Jelínek. /
+Psalmos in lingua bohemica de libro transcripsit Barbora Maturová et idem Jakub Jelínek. /
+Václav Ondráček textus hymnorum, antiphonarum, etc. in linguam bohemicam transtulit. /
+Mons. Jiří Reinsberg \olddag{} et Jana Kuběnová textus deprecationum in linguam bohemicam transtulit. /
+Filip Srovnal librum istum præparare mandavit et laborem exprobrationibus
+utilissimis comitabatur. /
+Štěpán Němec librum istum diligentissime examinavit, errores multos
+inveniens. /
+Terezie Regnerová imaginem titulum libri ornantem pinxit.
+
+Instrumenta adhibita.
+LuaTeX, %http://www.luatex.org /
+Gregorio, %http://home.gna.org/gregorio /
+typi Junicode. %http://junicode.sourceforge.net
+
+\begin{center}
+Liber hic imprimis ad usum chori
+\guillemotright Conventus Choralis\guillemotleft\
+paratus est
+et secundum eius consuetudines.
+http://www.introitus.cz
+
+\vfill
+
+{\large Editio Sancti Wolfgangi \annusEditionis.}
+
+\vfill
+
+Series \guillemotright Conventus\guillemotleft, vol. X.
+
+\vfill
+
+http://stiwolfgangi.xf.cz
+
+\vfill
+
+\today
+
+\end{center}
+
+\end{document}
