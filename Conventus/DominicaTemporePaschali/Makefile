@@ -54,9 +54,9 @@ LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT))
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = ant1 $(addprefix ant-magn,1 2 3 4 5 6) respbr respbras \
 	 hym-AdCoenam hym-JesuNostraRedemptio deusinadiutorium-alter supplicatiolitaniae oratiodominica \
-	 dominusvobiscum-solemnis domineexaudi benedicamus-feria-laudes \
+	 dominusvobiscum-solemnis domineexaudi benedicamus-tempore-paschali \
 	 $(addprefix capitulum-Carissimi,OmneQuod Christus Obsecro OmneDatum EstoteFactores EstotePrudentes) \
-	 $(addprefix versus-,mane dominus) oratio an_regina_caeli_simplex \
+	 $(addprefix versus-,mane dominus) $(addprefix oratio,I II III IV V VI) an_regina_caeli_simplex \
 	 $(foreach M,viii-C iii-a viii-G i-g viii-G2,magnificat-initium-$(M)) \
 	 $(addprefix deprecatio,1 2 3 4)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))

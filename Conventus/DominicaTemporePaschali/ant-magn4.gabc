@@ -3,9 +3,10 @@ office-part: Antiphona;
 mode: 1;
 book: Antiphonale Monasticum, 1934, p. 495;
 transcriber: Andrew Hinkley; Jakub Jelínek;
+nabc-lines: 1;
 %%
 (c4)
-VA(f_)do(fe) ad(d) e(e)um(d') *()
-qui(c) mi(d)sit(fe) me:(ddc.) (;)
-sed(f) qui(h')a(g) hæc(hih___) lo(f_g)cú(h')tus(g) sum(f>') vo(g)bis,(d.) (;)
-tri(g)stí(f)ti(fe)a(dc) im(d)plé(c')vit(d) cor(f) ve(f)strum,(e_f) al(gh)le(fe)lú(d.)ia.(d.) (::)
+VA(f_|vi-hg)do(fe|clhg) ad(d|tahg) e(e|vihg)um(d'|vi-hh) *()
+qui(c|tahh) mi(d|vihg)sit(fe|cl) me:(ddc.|pr-) (;)
+sed(f|vihg) qui(h'|vi-hg)a(g|tahg) hæc(hih___|toS) lo(f_g|pe-1hh)cú(h'|vihg)tus(g|vihh) sum(f>'|vi>) vo(g|vi-)bis,(d.|tahg) (;)
+tri(g|vi-)stí(f|vi-)ti(fe|cl)a(dc|pr-) im(d|vi-)plé(c'|ta)vit(d|tahg) cor(f|vi-) ve(f|vihg)strum,(e_f|vi-) al(gh|pe>hh)le(fe|cl)lú(d.|tahg)ia.(d.|tahg) (::)
