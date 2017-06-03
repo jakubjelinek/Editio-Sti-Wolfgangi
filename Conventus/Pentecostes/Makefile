@@ -87,7 +87,7 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 	 introitus-SpiritusDomini alleluia-EmitteSpiritum seq-VeniSancte \
 	 alleluia-VeniSancte offertorium-ConfirmaHoc communio-FactusEst \
 	 viii-agnusdei viii-gloria viii-kyrie viii-sanctus credo-iii \
-	 $(addprefix venite5,a b c d e f) \
+	 $(addprefix venite5,a b c d e f) seq-SanctiSpiritus \
 	 oratiodominica-mat absolutio-exaudi tedeum-solemnis \
 	 $(addprefix benedictio-solemn-,evangelica divinum adsocietatem) \
 	 $(addprefix benedicamus-solemnis-,laud 1vesp 2vesp) tonus-lectionis-solemnis tuautem \
