@@ -1,0 +1,232 @@
+% LuaLaTeX
+
+\documentclass[a4paper, twoside, 12pt]{article}
+\usepackage[latin]{babel}
+%\usepackage[landscape, left=3cm, right=1.5cm, top=2cm, bottom=1cm]{geometry} % okraje stranky
+\usepackage[portrait, a4paper, mag=1414, truedimen, left=0.8cm, right=0.8cm, top=0.8cm, bottom=0.8cm]{geometry} % okraje stranky
+
+\usepackage{fontspec}
+\setmainfont[FeatureFile={junicode.fea}, Ligatures={Common, TeX}, RawFeature=+fixi]{Junicode}
+%\setmainfont{Junicode}
+
+% shortcut for Junicode without ligatures (for the Czech texts)
+\newfontfamily\nlfont[FeatureFile={junicode.fea}, Ligatures={Common, TeX}, RawFeature=+fixi]{Junicode}
+
+\usepackage{multicol}
+\usepackage{color}
+\usepackage{lettrine}
+\usepackage{fancyhdr}
+
+% usual packages loading:
+\usepackage{luatextra}
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{gregoriotex} % for gregorio score inclusion
+\usepackage{gregoriosyms}
+\usepackage{wrapfig} % figures wrapped by the text
+\usepackage{parcolumns}
+\usepackage[contents={},opacity=1,scale=1,color=black]{background}
+\usepackage{tikzpagenodes}
+\usepackage{calc}
+\usepackage{longtable}
+
+\setlength{\headheight}{12pt}
+
+\input{conventuscommune.tex} % Often used macros
+
+\setlength{\columnsep}{15pt} % prostor mezi sloupci
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Here we set the space around the initial.
+% Please report to http://home.gna.org/gregorio/gregoriotex/details for more details and options
+\grechangedim{afterinitialshift}{2.2mm}{scalable}
+\grechangedim{beforeinitialshift}{2.2mm}{scalable}
+\grechangedim{interwordspacetext}{0.38 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\grechangedim{annotationraise}{-0.2cm}{scalable}
+
+% Here we set the initial font. Change 38 if you want a bigger initial.
+% Emit the initials in red.
+\grechangestyle{initial}{\color{red}\fontsize{36}{36}\selectfont}
+
+\renewcommand{\headrulewidth}{0pt} % no horiz. rule at the header
+\pagestyle{empty}
+
+\grechangedim{spaceabovelines}{0.2cm}{scalable}%
+
+\vfill
+
+\hbox{}
+
+\vspace{5cm}
+
+\begin{center}
+{\large \textit{DIE XX IULII}}
+
+\vspace{0.5cm}
+
+{\huge S. MARGARITÆ}
+
+{\large VIRGINIS ET MART.}
+
+\vspace{0.5cm}
+
+% graphic
+\vspace{1.5cm}
+\begin{center}
+\includegraphics[width=4cm]{margarita.jpg}
+\end{center}
+
+\vspace{0.5cm}
+
+%\textsc{Secundum Antiphonale Breunowiensis}
+\textsc{Secundum Antiphonale Raygradensis}
+\end{center}
+
+\vfill
+\pagebreak
+
+\cantusSineNeumas
+
+\pars{Introductio}
+
+\gregorioscore{temporalia/deusinadiutorium-communis.gtex}
+
+\vspace{0.5cm}
+
+\pars{Antiphona I}
+
+\vspace{-0.2cm}
+
+\antiphona{II D}{temporalia/ant1.gtex}
+
+\scriptura{Ps. 109}
+
+\gregorioscore{temporalia/ps109-initium-ii-D-auto.gtex}
+
+{\setlength{\parindent}{0pt}\input{temporalia/ps109.tex}}
+
+\vfill
+\pagebreak
+
+\pars{Antiphona II}
+
+\vspace{-0.2cm}
+
+\antiphona{III g}{temporalia/ant2.gtex}
+
+\scriptura{Ps. 110}
+
+%\grechangedim{interwordspacetext}{0.25 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\gregorioscore{temporalia/ps110-initium-iii-g-auto.gtex}
+%\grechangedim{interwordspacetext}{0.38 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+
+{\setlength{\parindent}{0pt}\input{temporalia/ps110.tex}}
+
+\vfill
+\pagebreak
+
+\pars{Antiphona III}
+
+\vspace{-0.2cm}
+
+\antiphona{IV E}{temporalia/ant3.gtex}
+
+\scriptura{Ps. 111}
+
+%\grechangedim{interwordspacetext}{0.25 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\gregorioscore{temporalia/ps111-initium-iv-E-auto.gtex}
+%\grechangedim{interwordspacetext}{0.38 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+
+{\setlength{\parindent}{0pt}\input{temporalia/ps111.tex}}
+
+\vfill
+\pagebreak
+
+\pars{Antiphona IV}
+
+\vspace{-0.2cm}
+
+\antiphona{V a}{temporalia/ant4.gtex}
+
+\scriptura{Ps. 112}
+
+%\grechangedim{interwordspacetext}{0.25 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\gregorioscore{temporalia/ps112-initium-v-a-auto.gtex}
+%\grechangedim{interwordspacetext}{0.38 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+
+{\setlength{\parindent}{0pt}\input{temporalia/ps112.tex}}
+
+\vfill
+\pagebreak
+
+\pars{Antiphona V}
+
+\vspace{-0.2cm}
+
+\antiphona{VI C}{temporalia/ant5.gtex}
+
+\scriptura{Ps. 113}
+
+%\grechangedim{interwordspacetext}{0.25 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\gregorioscore{temporalia/ps113-initium-vi-C-auto.gtex}
+%\grechangedim{interwordspacetext}{0.38 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+
+{\setlength{\parindent}{0pt}\input{temporalia/ps113.tex}}
+
+\vfill
+\pagebreak
+
+\pars{Capitulum} \scriptura{2 Cor. 10, 17-18}
+
+Fratres: Qui gloriátur, in Dómino gloriétur.~\gredagger{}
+Non enim qui seípsum comméndat, ille probátus est:~\grestar{}
+sed quem Deus comm0ndat.
+
+\vspace{0.5cm}
+
+\pars{Responsorium breve}
+
+\vspace{-0.2cm}
+
+\antiphona{\oldrbar.~ br.}{temporalia/resp.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Hymnus}
+
+\vspace{-0.5cm}
+
+\antiphona{I}{temporalia/hym-VirginisProles.gtex}
+
+\vspace{0.5cm}
+
+\Vbardot{} Diffúsa est grátia in lábiis tuis.
+\Rbardot{} Proptérea benedíxit te Deus in ætérnum.
+
+\vfill
+\pagebreak
+
+\pars{Antiphona ad Magnificat}
+
+\vspace{-0.2cm}
+
+\antiphona{I g}{temporalia/ant-magn-vesp.gtex}
+
+\scriptura{Lc. 1, 46-55}
+
+\gregorioscore{temporalia/magnificat-initium-i-g.gtex}
+
+{\setlength{\parindent}{0pt}\input{temporalia/magnificat.tex}}
+
+\vfill
+\pagebreak
+
+\vspace{0.5cm}
+
+\pars{Oratio conclusiva}
+
+\gregorioscore{temporalia/oratio.gtex}
+
+\end{document}
