@@ -46,9 +46,10 @@ LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
 LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,magnificat)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant,1 2 3 4 5 -magn-vesp) hym-VirginisProles resp \
-	 magnificat-initium-i-g deusinadiutorium-communis oratio
+	 magnificat-initium-i-g deusinadiutorium-communis oratio \
+	 capitulum-FratresQui versus-diffusa
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS =
+OTHERDEPS = hym-VirginisProles-bohtext.tex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PSALMTONES_DIR)/$(2)-auto.gabc; \
