@@ -2,16 +2,17 @@ name: Adiuvabit eam;
 office-part: vesperae, responsorium breve;
 occasion: St. Margarita;
 mode: 6;
-book: Antiphonale Monasticum, 1934, p. 676;
+book: Antiphonale Monasticum, 1934, p. 676; H190;
 transcriber: Jakub Jelínek;
+nabc-lines: 1;
 %%
 (c4)
-AD(f)IU(f)VA(g')BIT(f) e(g_h)am(hg..) *(;)
-De(f)us(gh) vul(g_f)tu(g) su(g.)o.(f.) (::)
-Ad(f)iu(f)vá(g')bit.(f) <sp>V/</sp>.(::)
-De(ixhi)us(h) in(h) mé(h')di(h)o(g) e(gh)ius,(g'_) (,)
-non(g) com(g)mo(f')vé(g)bi(gh)tur.(hg..) (::)
-De(f)us.(gh) <sp>V/</sp>.(::)
+AD(f|ta)IU(f|ta)VA(g'|vi)BIT(f|ta) e(g_h|peS)am(hg..|cl-) *(;)
+De(f|ta)us(gh|pe) vul(g_f|vi>)tu(g|vi) su(g.|vihi)o.(f.|ta) (::)
+Ad(f|ta)iu(f|ta)vá(g'|vi)bit.(f|ta) <sp>V/</sp>.(::)
+De(ixhi|//vi)us(h|vi) in(h|vihg) mé(h'|vihh)di(h|vihi)o(g|vihj) e(gh|vihi)ius,(g'_|vihk) (,)
+non(g|vihl) com(g|vihl)mo(f'|tahh)vé(g|vihk)bi(gh|pehk)tur.(hg..|cl-hk) (::)
+De(f|ta)us.(gh|pe) <sp>V/</sp>.(::)
 Gló(h)ri(h)a(h) Pa(ixhi)tri,(h'_) et(g) Fí(gh)li(g)o,(g'_) (,)
 et(g) Spi(g)rí(h')tu(g)i(f') Sanc(g)to.(gh..) (::)
-Ad(f)iu(f)vá(g')bit.(f) (::)
+Ad(f|ta)iu(f|ta)vá(g'|vi)bit.(f|ta) (::)

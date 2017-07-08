@@ -2,9 +2,10 @@ name: Martyr insignis Margarita;
 office-part: laudes, 1. antiphona;
 occasion: St. Margarita;
 mode: 2;
-book: A-Gu 30 p. 180v; CZ-R R 17 p. 144v;
+book: A-Gu 30 p. 180v; CZ-R R 17 p. 144v; Cod. Sang. 389, p. 410;
 transcriber: Jakub Jelínek;
+nabc-lines: 1;
 %%
 (f3)
-MAr(fe~)tyr(e) in(h)sí(i)gnis(f) *()
-Mar(ed~)ga(c)ré(ef)ta(f) iux(fi)ta(h) præ(i)féc(hg)ti(f) de(ef)cré(f)ta(f) ó(f)ci(e)us(f) cár(hg~)ce(ef)ris(f) sub(e)trá(c)hi(ef)tur(f) e(fi)iús(i)que(h) con(i)spéc(i)ti(hg)bus(f) as(f)sís(EFhv)ti(ef)tur.(f) (::)
+MAr(fe~|vi-)tyr(e|ta) in(h|vi-)sí(i|vi-)gnis(f|ta) *()
+Mar(ed~|vi>)ga(c|ta)ré(ef|pe)ta(f|ta) iux(fi|pe)ta(h|ta) præ(i|vi-)féc(hg|cl)ti(f|vi-) de(ef|pe)cré(f|ta)ta(f|ta) ó(f|vi-)ci(e|ta)us(f|vi-) cár(hg~|vi-hg)ce(ef|ta)ris(f|vi-) sub(e|ta)trá(c|vi-)hi(ef|pehg)tur(f|vi-) e(fi|pe)iús(i|vi-)que(h|ta) con(i|vi-)spéc(i|vi-hg)ti(hg|clhg)bus(f|tahg) as(f|vi-)sís(EFhv|sa-)ti(ef|pe)tur.(f|ta) (::)

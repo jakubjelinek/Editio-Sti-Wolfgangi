@@ -2,10 +2,11 @@ name: Ministri statim tenellae;
 office-part: laudes, 3. antiphona;
 occasion: St. Margarita;
 mode: 4;
-book: A-Gu 30 p. 180v; CZ-R R 17 p. 144v;
+book: A-Gu 30 p. 180v; CZ-R R 17 p. 144v; Cod. Sang. 389, p. 410;
 transcriber: Jakub Jelínek;
+nabc-lines: 1;
 %%
 (c4)
-MI(fe)nís(de)tri(e) *()
-sta(e)tim(g) te(hg)nél(h)læ(h) cor(d)pus(h) com(g)bu(h)ré(gf)bant(gh) pu(gf)él(e)læ,(e) (;)
-sed(EFgvFef) hæc(f) o(d)ra(g)ti(f)ó(gh)ne(gvFE) fac(de)ta(e) i(GHij)gne(hg) per(f)mán(hg~)sit(fe) in(d)tác(e)ta.(e) (::)
+MI(fe|cl)nís(de|pe)tri(e|vi-) *()
+sta(e|tahg)tim(g|vi-) te(hg|cl)nél(h|ta>)læ(h|ta) cor(d|vi-)pus(h|vi-) com(g|vi-)bu(h|ta)ré(gf|vi-su3)bant(gh|vi>) pu(gf|cl)él(e|ta>)læ,(e|vi-) (;)
+sed(EFgvFef|sa-1) hæc(f|vi-) o(d|ta)ra(g|vi-)ti(f|pu)ó(gh|vi-)ne(gvFE|ci-) fac(de|pe)ta(e|ta) i(GHij|pqsu2hh)gne(hg|vi-) per(f|gr)mán(hg~|vi>)sit(fe|cl) in(d|ta)tác(e|vi-)ta.(e|tahh) (::)
