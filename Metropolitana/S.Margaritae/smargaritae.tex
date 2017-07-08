@@ -32,6 +32,7 @@
 \setlength{\headheight}{12pt}
 
 \input{conventuscommune.tex} % Often used macros
+\input{translationes_cs.tex} % Czech translations of the proper texts
 
 \setlength{\columnsep}{15pt} % prostor mezi sloupci
 
@@ -100,11 +101,14 @@
 
 \antiphona{II D}{temporalia/ant1.gtex}
 
+\trAntI
+
 \scriptura{Ps. 109}
 
 \gregorioscore{temporalia/ps109-initium-ii-D-auto.gtex}
 
-{\setlength{\parindent}{0pt}\input{temporalia/ps109.tex}}
+%{\setlength{\parindent}{0pt}\input{temporalia/ps109.tex}}
+\psalmusEtTranslatioT{temporalia/ps109-comb.tex}{6cm}
 
 \vfill
 \pagebreak
@@ -115,13 +119,16 @@
 
 \antiphona{III g}{temporalia/ant2.gtex}
 
+\trAntII
+
 \scriptura{Ps. 110}
 
 %\grechangedim{interwordspacetext}{0.25 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \gregorioscore{temporalia/ps110-initium-iii-g-auto.gtex}
 %\grechangedim{interwordspacetext}{0.38 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 
-{\setlength{\parindent}{0pt}\input{temporalia/ps110.tex}}
+%{\setlength{\parindent}{0pt}\input{temporalia/ps110.tex}}
+\psalmusEtTranslatioT{temporalia/ps110-comb.tex}{6cm}
 
 \vfill
 \pagebreak
@@ -132,13 +139,16 @@
 
 \antiphona{IV E}{temporalia/ant3.gtex}
 
+\trAntIII
+
 \scriptura{Ps. 111}
 
 %\grechangedim{interwordspacetext}{0.25 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \gregorioscore{temporalia/ps111-initium-iv-E-auto.gtex}
 %\grechangedim{interwordspacetext}{0.38 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 
-{\setlength{\parindent}{0pt}\input{temporalia/ps111.tex}}
+%{\setlength{\parindent}{0pt}\input{temporalia/ps111.tex}}
+\psalmusEtTranslatioT{temporalia/ps111-comb.tex}{6cm}
 
 \vfill
 \pagebreak
@@ -149,13 +159,16 @@
 
 \antiphona{V a}{temporalia/ant4.gtex}
 
+\trAntIV
+
 \scriptura{Ps. 112}
 
 %\grechangedim{interwordspacetext}{0.25 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \gregorioscore{temporalia/ps112-initium-v-a-auto.gtex}
 %\grechangedim{interwordspacetext}{0.38 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 
-{\setlength{\parindent}{0pt}\input{temporalia/ps112.tex}}
+%{\setlength{\parindent}{0pt}\input{temporalia/ps112.tex}}
+\psalmusEtTranslatioT{temporalia/ps112-comb.tex}{6cm}
 
 \vfill
 \pagebreak
@@ -166,13 +179,16 @@
 
 \antiphona{VI C}{temporalia/ant5.gtex}
 
+\trAntV
+
 \scriptura{Ps. 113}
 
 %\grechangedim{interwordspacetext}{0.25 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \gregorioscore{temporalia/ps113-initium-vi-C-auto.gtex}
 %\grechangedim{interwordspacetext}{0.38 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 
-{\setlength{\parindent}{0pt}\input{temporalia/ps113.tex}}
+%{\setlength{\parindent}{0pt}\input{temporalia/ps113.tex}}
+\psalmusEtTranslatioT{temporalia/ps113-comb.tex}{6cm}
 
 \vfill
 \pagebreak
@@ -183,6 +199,8 @@ Fratres: Qui gloriátur, in Dómino gloriétur.~\gredagger{}
 Non enim qui seípsum comméndat, ille probátus est:~\grestar{}
 sed quem Deus comméndat.
 
+\trCapituli
+
 \vspace{0.5cm}
 
 \pars{Responsorium breve}
@@ -190,6 +208,8 @@ sed quem Deus comméndat.
 \vspace{-0.2cm}
 
 \antiphona{\oldrbar.~ br.}{temporalia/resp.gtex}
+
+\trResp
 
 \vfill
 \pagebreak
@@ -200,10 +220,14 @@ sed quem Deus comméndat.
 
 \antiphona{I}{temporalia/hym-VirginisProles.gtex}
 
+\input{hym-VirginisProles-bohtext.tex}
+
 \vspace{0.5cm}
 
 \Vbardot{} Diffúsa est grátia in lábiis tuis.
 \Rbardot{} Proptérea benedíxit te Deus in ætérnum.
+
+\trVersiculi
 
 \vfill
 \pagebreak
@@ -214,11 +238,14 @@ sed quem Deus comméndat.
 
 \antiphona{I g}{temporalia/ant-magn-vesp.gtex}
 
+\trAntMagnificat
+
 \scriptura{Lc. 1, 46-55}
 
 \gregorioscore{temporalia/magnificat-initium-i-g.gtex}
 
-{\setlength{\parindent}{0pt}\input{temporalia/magnificat.tex}}
+%{\setlength{\parindent}{0pt}\input{temporalia/magnificat.tex}}
+\psalmusEtTranslatioT{temporalia/magnificat-comb.tex}{6cm}
 
 \vfill
 \pagebreak
@@ -228,5 +255,7 @@ sed quem Deus comméndat.
 \pars{Oratio conclusiva}
 
 \gregorioscore{temporalia/oratio.gtex}
+
+\trOratio
 
 \end{document}

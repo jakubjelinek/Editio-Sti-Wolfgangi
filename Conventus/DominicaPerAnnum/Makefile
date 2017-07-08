@@ -52,15 +52,16 @@ LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
 LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT))
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
-SCORES = $(addprefix ant,1 1a 2 3 4 5) $(addprefix ant-magn,1 2 3 4 5 6) respbr \
-	 hym-LucisCreatorAEstate hym-LucisCreatorHieme \
+SCORES = $(addprefix ant,1 1a 2 3 4 5) $(addprefix ant-magn,1 2 3 4 5 6) \
+	 respbr respbrtq \
+	 hym-LucisCreatorAEstate hym-LucisCreatorHieme hym-AudiBenigne \
 	 deusinadiutorium-alter supplicatiolitaniae oratiodominica \
 	 dominusvobiscum-solemnis domineexaudi benedicamus-feria-laudes \
 	 capitulum-Benedictus versus-dirigatur oratio ant-salveregina-simplex \
 	 $(foreach M,viii-G v-a viii-G2 vii-c i-f vii-a,magnificat-initium-$(M)) \
 	 $(addprefix deprecatio,1 2 3 4)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = #hym-LucisCreator-bohtext.tex
+OTHERDEPS = oratio.tex #hym-LucisCreator-bohtext.tex hym-AudiBenigne-bohtext.tex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PSALMTONES_DIR)/$(2)-auto.gabc; \
@@ -101,6 +102,7 @@ $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
 $(patsubst %,$(TMP_DIR)/%-boh.tex,$(MAGNIFICAT)): $(TMP_DIR)/%-boh.tex: $(TMP_DIR)/magnificat-boh.tex
 	$(CP) -a $< $@
 $(TMP_DIR)/ps109-comb.tex: PSSKIP = 2
+$(patsubst %,$(TMP_DIR)/%-comb.tex,$(MAGNIFICAT)): PSSKIP = 2
 dominicaperannum.pdf: dominicaperannum.tex conventuscommune.tex translationes_cs.tex \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
