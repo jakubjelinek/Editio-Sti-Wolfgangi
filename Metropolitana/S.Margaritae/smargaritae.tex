@@ -34,6 +34,22 @@
 \input{conventuscommune.tex} % Often used macros
 \input{translationes_cs.tex} % Czech translations of the proper texts
 
+%%%% Vicekrat opakovane kousky
+
+\newcommand{\anteOrationem}{
+  \pars{Oratio Dominica.}
+
+  \cuminitiali{}{temporalia/oratiodominica.gtex}
+
+  \rubrica{Deinde dicitur ab Hebdomadario:}
+
+  \cuminitiali{}{temporalia/dominusvobiscum-solemnis.gtex}
+
+  \rubrica{In choro monialium loco Dominus vobiscum dicitur:}
+
+  \sineinitiali{temporalia/domineexaudi.gtex}
+}
+
 \setlength{\columnsep}{15pt} % prostor mezi sloupci
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -43,7 +59,7 @@
 % Please report to http://home.gna.org/gregorio/gregoriotex/details for more details and options
 \grechangedim{afterinitialshift}{2.2mm}{scalable}
 \grechangedim{beforeinitialshift}{2.2mm}{scalable}
-\grechangedim{interwordspacetext}{0.38 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\grechangedim{interwordspacetext}{0.28 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \grechangedim{annotationraise}{-0.2cm}{scalable}
 
 % Here we set the initial font. Change 38 if you want a bigger initial.
@@ -123,11 +139,8 @@
 
 \scriptura{Ps. 110}
 
-%\grechangedim{interwordspacetext}{0.25 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \gregorioscore{temporalia/ps110-initium-iii-g-auto.gtex}
-%\grechangedim{interwordspacetext}{0.38 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 
-%{\setlength{\parindent}{0pt}\input{temporalia/ps110.tex}}
 \psalmusEtTranslatioT{temporalia/ps110-comb.tex}{6cm}
 
 \vfill
@@ -143,11 +156,8 @@
 
 \scriptura{Ps. 111}
 
-%\grechangedim{interwordspacetext}{0.25 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \gregorioscore{temporalia/ps111-initium-iv-E-auto.gtex}
-%\grechangedim{interwordspacetext}{0.38 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 
-%{\setlength{\parindent}{0pt}\input{temporalia/ps111.tex}}
 \psalmusEtTranslatioT{temporalia/ps111-comb.tex}{6cm}
 
 \vfill
@@ -163,11 +173,8 @@
 
 \scriptura{Ps. 112}
 
-%\grechangedim{interwordspacetext}{0.25 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \gregorioscore{temporalia/ps112-initium-v-a-auto.gtex}
-%\grechangedim{interwordspacetext}{0.38 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 
-%{\setlength{\parindent}{0pt}\input{temporalia/ps112.tex}}
 \psalmusEtTranslatioT{temporalia/ps112-comb.tex}{6cm}
 
 \vfill
@@ -183,11 +190,8 @@
 
 \scriptura{Ps. 113}
 
-%\grechangedim{interwordspacetext}{0.25 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \gregorioscore{temporalia/ps113-initium-vi-C-auto.gtex}
-%\grechangedim{interwordspacetext}{0.38 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 
-%{\setlength{\parindent}{0pt}\input{temporalia/ps113.tex}}
 \psalmusEtTranslatioT{temporalia/ps113-comb.tex}{6cm}
 
 \vfill
@@ -249,6 +253,25 @@
 \vfill
 \pagebreak
 
+%\pars{Deprecatio Gelasii II}
+
+%\vspace{-6mm}
+
+\scriptura{Deprecatio Gelasii II}
+
+\vspace{-7mm}
+
+\grechangedim{interwordspacetext}{0.10 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{D\textsuperscript{4}}{temporalia/deprecatio2.gtex}
+\grechangedim{interwordspacetext}{0.28 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+
+\trDeprecatioII
+
+\anteOrationem
+
+\vfill
+\pagebreak
+
 \vspace{0.5cm}
 
 \pars{Oratio conclusiva}
@@ -256,5 +279,11 @@
 \gregorioscore{temporalia/oratio.gtex}
 
 \trOratio
+
+\rubrica{Hebdomadarius dicit iterum Dominus vobiscum. Postea cantatur a cantore:}
+
+\vspace{2mm}
+
+\cuminitiali{V}{temporalia/benedicamus-festis-sanctorum.gtex}
 
 \end{document}
