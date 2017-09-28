@@ -33,7 +33,11 @@ MODUS-magnificat-III = viiisoll-G2
 MODUS-magnificat-IV = viisoll-c
 MODUS-magnificat-V = isoll-f
 MODUS-magnificat-VI = viisoll-a
-MAGNIFICAT = $(foreach M,I II III IV V VI,magnificat-$(M))
+MODUS-magnificat-tqI = viiisoll-G2
+MODUS-magnificat-tqII = isoll-f
+MODUS-magnificat-tqIII = viiisoll-G
+MODUS-magnificat-tqIV = isoll-g
+MAGNIFICAT = $(foreach M,I II III IV V VI tqI tqII tqIII tqIV,magnificat-$(M))
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(MAGNIFICAT),$(MODUS-$(P))))
 CZPSALMOPTS = --accents 0:0 --title-pattern " " --no-paragraph
 CZPSALMS = $(patsubst %,$(TMP_DIR)/ps%-boh.tex,$(PSALMS))
@@ -52,16 +56,18 @@ LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
 LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT))
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
-SCORES = $(addprefix ant,1 1a 2 3 4 5) $(addprefix ant-magn,1 2 3 4 5 6) \
+SCORES = $(addprefix ant,1 1a 2 3 4 5) $(addprefix ant-magn,1 2 3 4 5 6 tq1 tq2 tq3 tq4) \
 	 respbr respbrtq \
 	 hym-LucisCreatorAEstate hym-LucisCreatorHieme hym-AudiBenigne \
 	 deusinadiutorium-alter supplicatiolitaniae oratiodominica \
 	 dominusvobiscum-solemnis domineexaudi benedicamus-feria-laudes \
-	 capitulum-Benedictus versus-dirigatur oratio ant-salveregina-simplex \
-	 $(foreach M,viii-G v-a viii-G2 vii-c i-f vii-a,magnificat-initium-$(M)) \
+	 $(addprefix capitulum-,Benedictus Hortamur Rogamus Estote Scriptum) \
+	 versus-dirigatur versus-angelis oratio ant-salveregina-simplex \
+	 an_ave_regina_caelorum \
+	 $(foreach M,viii-G v-a viii-G2 vii-c i-f vii-a i-g,magnificat-initium-$(M)) \
 	 $(addprefix deprecatio,1 2 3 4)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = oratio.tex #hym-LucisCreator-bohtext.tex hym-AudiBenigne-bohtext.tex
+OTHERDEPS = oratio.tex hym-LucisCreator-bohtext.tex hym-AudiBenigne-bohtext.tex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PSALMTONES_DIR)/$(2)-auto.gabc; \
