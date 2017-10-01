@@ -1,12 +1,13 @@
 name: Visionem;
 office-part: Antiphona;
 mode: 1;
-book: Antiphonale Monastium, 1933, p. 351;
-transcriber: Andrew Hinkley;
+book: Antiphonale Monastium, 1933, p. 351; H149;
+transcriber: Andrew Hinkley; Jakub Jelínek;
+nabc-lines: 1;
 %%
 (c4)
-VI(d)si(e_f)ó(g)nem(e) *()
-quam(gh) vi(fe)dí(d)stis,(dfd___dc.) (,)
-né(h)mi(g)ni(g') dí(h)xé(gf)ri(g)tis,(f.) (;)
-do(fd)nec(f) a(g) mór(h')tu(g)is(f') re(e)súr(fg~)gat(g.) (,)
-Fí(e_f)li(g)us(fe) hó(d)mi(cd)nis.(d.) (::)
+VI(d|ta)si(e_f|peS)ó(g|vi)nem(e|ta) *()
+quam(gh|pe>) vi(fe|cl)dí(d|ta)stis,(dfd___|toS2|dc.|cl-) (,)
+né(h|vihglsl2)mi(g|ta)ni(g'|ta) dí(h|vi)xé(gf|cl)ri(g|vi)tis,(f.|ta) (;)
+do(fd|cllsc3)nec(f|vihg) a(g|vihi) mór(h'|vihl)tu(g|vihj)is(f'|vihg) re(e|ta)súr(fg~|ta>hg)gat(g.|vihh) (,)
+Fí(e_f|peShh)li(g|cl)us(fe|cl) hó(d|vihg)mi(cd|pehg)nis.(d.|ta) (::)
