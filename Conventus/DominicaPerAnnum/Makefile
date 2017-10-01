@@ -60,7 +60,8 @@ SCORES = $(addprefix ant,1 1a 2 3 4 5) $(addprefix ant-magn,1 2 3 4 5 6 tq1 tq2 
 	 respbr respbrtq \
 	 hym-LucisCreatorAEstate hym-LucisCreatorHieme hym-AudiBenigne \
 	 deusinadiutorium-alter supplicatiolitaniae oratiodominica \
-	 dominusvobiscum-solemnis domineexaudi benedicamus-feria-laudes \
+	 dominusvobiscum-solemnis domineexaudi benedicamus-dominica-perannum \
+	 benedicamus-dominica-advequad \
 	 $(addprefix capitulum-,Benedictus Hortamur Rogamus Estote Scriptum) \
 	 versus-dirigatur versus-angelis oratio ant-salveregina-simplex \
 	 an_ave_regina_caelorum \
