@@ -3,10 +3,11 @@ office-part: Antiphona;
 mode: 7;
 book: The Liber Usualis, 1961, p. 1776; Antiphonale Monasticum, 1934, p. 1154;
 transcriber: Andrew Hinkley; Jakub Jelínek;
+nabc-lines: 1;
 %%
 (c3)
-O(ig/ij)mne(i'_) *()
-quod(i) dat(i_j) mi(i)hi(h) Pa(hih)ter,(hgh_) (,)
-ad(h>) me(f') vé(g/h'i)ni(g)et:(e.) (;)
-et(e) e(g)um(g') qui(g) ve(g)nit(hf) ad(hh) me,(g.) (,)
-non(i) e(i)ií(h_f)ci(g')am(f>) fo(e.)ras.(e.) (::)
+O(ig/ij|clpe>hg)mne(i'_|ta) *()
+quod(i|ta) dat(i_j|peS) mi(i|vi)hi(h|ta) Pa(hih|to)ter,(hgh_|po) (,)
+ad(h>|vi>) me(f'|ta) vé(g/h'i|sa)ni(g|vi)et:(e.|ta) (;)
+et(e|ta) e(g|vi)um(g'|vi) qui(g|vi) ve(g|vi)nit(hf|clhg) ad(hh|vshg) me,(g.|ta) (,)
+non(i|vi) e(i|vi)ií(h_f|cl)ci(g'|vi)am(f>|vi>) fo(e.|tahg)ras.(e.|ta) (::)

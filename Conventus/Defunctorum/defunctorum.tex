@@ -67,12 +67,6 @@
   \sineinitiali{temporalia/domineexaudi.gtex}
 }
 
-\newcommand{\tuAutem}{
-  \vfill
-
-  \sineinitiali{temporalia/tuautem.gtex}
-}
-
 \setlength{\columnsep}{30pt} % prostor mezi sloupci
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -168,14 +162,23 @@ per infiníta sǽcula sæculórum.
 
 \vfill
 
-\hora{Ad I. Vesperas.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\sideThumbs{I. Vesperæ}
+\rubrica{In die depositionis, in die post acceptum mortis nuntium, et tertio,
+septimo, trigesimo, et anniversario, etiam late sumpto, et quoties
+solemniter celebratur Officium, duplicantur Antiphonæ.  In fine vero omnium
+Psalmorum semper dicitur: \textnormal{Réquiem ætérnam \grestar{} dona eis
+Dómine. Et lux perpétua \grestar{} lůceat eis}; etiam si pro uno tantum fiat
+Officium. (Psalmi incipiuntur ut infra notatur, etiam quando non duplicantur
+Antiphonæ).}
 
-{
-\grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
-\cuminitiali{}{temporalia/deusinadiutorium-communis.gtex}
-\grechangedim{interwordspacetext}{0.32 cm plus 0.15 cm minus 0.05 cm}{scalable}%
-}
+\vfill
+
+\hora{Ad Vesperas.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sideThumbs{Vesperæ}
+
+\rubrica{Quoties Vesperæ vel delationem cadaveris ad ecclesiam ac
+Responsorium \textnormal{Subveníte}, vel Officium diei currentis immediate
+non sequantur, dicitur secreto \textnormal{Pater} et \textnormal{Ave}; secus
+absolute incipitur ab Antiphona.}
 
 \vfill
 \pagebreak
@@ -188,7 +191,7 @@ per infiníta sǽcula sæculórum.
 
 \antiphona{III b}{temporalia/vesp-ant1.gtex}
 
-%\trAntI
+\trVespAntI
 
 \scriptura{Ps. 114}
 
@@ -207,7 +210,7 @@ per infiníta sǽcula sæculórum.
 
 \antiphona{II D}{temporalia/vesp-ant2.gtex}
 
-%\trAntII
+\trVespAntII
 
 \vspace{-2mm}
 
@@ -230,7 +233,7 @@ per infiníta sǽcula sæculórum.
 
 \antiphona{VIII G\textsuperscript{2}}{temporalia/vesp-ant3.gtex}
 
-%\trAntIII
+\trVespAntIII
 
 \scriptura{Ps. 120}
 
@@ -248,7 +251,7 @@ per infiníta sǽcula sæculórum.
 
 \antiphona{VIII G}{temporalia/vesp-ant4.gtex}
 
-%\trAntIV
+\trVespAntIV
 
 \scriptura{Ps. 129}
 
@@ -258,19 +261,39 @@ per infiníta sǽcula sæculórum.
 %\antiphona{}{temporalia/vesp-ant4.gtex} % repeat the antiphon - new page
 
 \vfill
+\pagebreak
+
+\pars{Psalmus 5.} \scriptura{Ps. 137, 8; \textbf{H394}}
+
+\vspace{-5mm}
+
+\antiphona{II D}{temporalia/vesp-ant5.gtex}
+
+\trVespAntV
+
+\scriptura{Ps. 137}
+
+\initiumpsalmi{temporalia/ps137-initium-ii-D-auto.gtex}
+\psalmusEtTranslatioT{temporalia/ps137-comb.tex}{10cm}
+
+%\antiphona{}{temporalia/vesp-ant5.gtex} % repeat the antiphon - new page
+
+\vfill
+\pagebreak
 
 % Capitulum. %%%
 \cantusSineNeumas
 
-\pars{Versus (in loco Capituli).} \scriptura{}
+\pars{Versus (in loco Capituli).} \scriptura{Ap. 14, 13}
 
 % Versus. %%%
 \sineinitiali{temporalia/versus-audivi.gtex}
 
-%\noindent \trVersus
+\noindent \trVersusAudivi
 
 \vfill
-\pagebreak
+\vspace{2mm}
+%\pagebreak
 
 \cantusCumNeumis
 
@@ -280,14 +303,16 @@ per infiníta sǽcula sæculórum.
 
 \antiphona{VII c}{temporalia/vesp-ant-magn.gtex}
 
-%\trAntMagnificatI
+\trAntMagnificat
+
+\vspace{-5mm}
 
 \scriptura{Lc. 1, 46-55}
 
 \cantusSineNeumas
 \initiumpsalmi{temporalia/magnificat-initium-vii-c.gtex}
 
-\vspace{-4mm}
+\vspace{-6mm}
 
 \psalmusEtTranslatioT{temporalia/magnificat-comb.tex}{10.3cm}
 
@@ -296,21 +321,227 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
-\anteOrationem
+\rubrica{Preces infrascriptæ dicuntur flexis genibus, similiter et ad Laudes.}
 
-\pagebreak
-
-%% Oratio. %%%
-\pars{Oratio.}
-
-%\cuminitiali{}{temporalia/oratio.gtex}
-%\trOrationis
-
-\vspace{1cm}
-\rubrica{Hebdomadarius dicit iterum Dominus vobiscum. Postea cantatur a cantore:}
 \vspace{2mm}
 
-\cuminitiali{II}{temporalia/benedicamus-duplex-vesperae.gtex}
+\pars{Supplicatio Litaniæ.}
+
+\cuminitiali{}{temporalia/supplicatiolitaniae.gtex}
+
+\vspace{2mm}
+
+\pars{Oratio Dominica.}
+
+\cuminitiali{}{temporalia/oratiodominica.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 6.}
+
+\rubrica{Sequens Psalmus \textnormal{Lauda ánima mea.} non dicitur in die
+obitus seu depositionis defuncti, neque quandocumque Officium recitatur ritu
+duplici.}
+
+\scriptura{Ps. 145}
+
+\initiumpsalmi{temporalia/ps145-initium-dir-auto.gtex}
+\psalmusEtTranslatioT{temporalia/ps145-comb.tex}{10cm}
+
+\vfill
+\pagebreak
+
+\rubrica{Deinde:}
+
+\noindent \Vbardot{} A porta ínferi. \Rbardot{} Erue ánimam eius {\color{red}(}ánimas eórum{\color{red})}.
+
+\noindent \Vbardot{} Requiéscat in pace {\color{red}(}Requiéscant in pace{\color{red})}. \Rbardot{} Amen.
+
+\noindent \Vbardot{} Dómine exáudi oratiónem meam. \Rbardot{} Et clamor meus ad te véniat.
+
+\noindent \Vbardot{} Dóminus vobíscum. \Rbardot{} Et cum spíritu tuo.
+
+\vspace{2mm}
+
+\pars{Oratio}
+
+\grechangedim{spaceabovelines}{2mm}{scalable}
+\cuminitiali{}{temporalia/oratio.gtex}
+\grechangedim{spaceabovelines}{0cm}{scalable}
+
+\rubrica{Dicitur Oratio conveniens ex iis quæ sequuntus; deinde \Vbardot{}
+\textnormal{Réquiem ætérnam.} cum reliquis, ut infra.}
+
+\vspace{2mm}
+
+\pars{In die Commemorationis Omnium Fidelium Defunctorum.}
+
+\rubrica{Oratio.}
+
+\lettrine{{\color{red}F}}{idélium} Deus ómnium Cónditor et Redémptor, animábus famulórum famularúmque tuárum remissiónem cunctórum tríbue pecca\textbf{tó}rum:~\gredagger{}
+ut indulgéntiam, quam semper \textit{opta}\textbf{vé}runt,~\grestar{}
+piis supplicatiónibus conse\textbf{quán}tur. Qui vivis.
+
+\vspace{2mm}
+
+\pars{In die depositionis Defuncti.}
+
+\rubrica{Oratio.}
+
+\lettrine{{\color{red}A}}{bsólve}, quǽsumus Dómine, ánimam fámuli tui {\color{red}N.} {\color{red}(}fámulæ tuæ {\color{red}N.}{\color{red})} ut defúnctus{\color{red}(}a{\color{red})} sǽculo tibi \textbf{vi}vat:~\gredagger{}
+et quæ per fragilitátem carnis humána conversatió\textit{ne} \textit{com}\textbf{mí}sit, tu~\grestar{}
+vénia misericordíssimæ pietátis abs\textbf{tér}ge. Per Dóminum.
+
+\rubrica{Si autem sit præsens Defuncti cadaver, dicitur sequens Oratio:}
+
+\lettrine{{\color{red}D}}{eus}, cui próprium est miseréri semper et párcere, te súpplices exorámus pro ánima fámuli tui {\color{red}N.} {\color{red}(}fámulæ tuæ {\color{red}N.}{\color{red})} quam hódie de hoc sǽculo migráre ius\textbf{sís}ti:~\gredagger{}
+ut non tradas eam in manus inimíci, neque obliviscáris in finem, se iúbeas eam a sansctis Angelis súscipi, et ad pátriam paradí\textit{si} \textit{per}\textbf{dú}ci;~\grestar{}
+ut quia in te sperávit et crédidit, non pœ́nas inférni sustíneat, sed gáudia ætérna pos\textbf{sí}deat. Per Dóminum.
+
+%\vspace{2mm}
+\vfill
+\pagebreak
+
+\pars{In die tertio, septimo et trigesimo depositionis Defuncti.}
+
+\rubrica{Oratio.}
+
+\lettrine{{\color{red}Q}}{uǽsumus} Dómine, ut ánimæ fámuli tui {\color{red}N.} {\color{red}(}fámulæ tuæ {\color{red}N.}{\color{red})} cuius depositiónis diem tértium {\color{red}(\textit{vel}} séptimum, {\color{red}\textit{vel}} trigésimum{\color{red})}, commemo\textbf{rá}mus,~\gredagger{}
+Sanctórum atque electórum tuórum largíri digné\textit{ris} \textit{con}\textbf{sór}tium;~\grestar{}
+et rorem misericórdiæ tuæ perénnem in\textbf{fún}das. Per Dóminum.
+
+\vspace{2mm}
+
+\pars{In Anniversario.}
+
+\rubrica{Oratio.}
+
+\lettrine{{\color{red}D}}{eus} indulgentiárum \textbf{Dó}mine:~\gredagger{}
+da ánimæ fámuli tui {\color{red}N.} {\color{red}(}fámulæ tuæ {\color{red}N. \textit{vel}} animábus famulórum famularúmque tuárum{\color{red})}, cuius {\color{red}(}quorum{\color{red})} anniversárium depositiónis diem com\textit{memo}\textbf{rá}mus,~\grestar{}
+refrigérii sedem, quiétis beatitúdinem, et lúminis clari\textbf{tá}tem. Per Dóminum.
+
+\vspace{2mm}
+
+\pars{Pro Summo Pontifice defuncto.}
+
+\rubrica{Oratio.}
+
+\lettrine{{\color{red}D}}{eus}, qui inter summos sacerdótes fámulum tuum {\color{red}N.} ineffábili tua dispositióne connumerári volu\textbf{ís}ti:~\gredagger{}
+præsta, quǽsumus; ut qui unigéniti Fílii tui vices in ter\textit{ris} \textit{ge}\textbf{ré}bat,~\grestar{}
+sanctórum tuórum pontíficum consórtio perpétuo aggre\textbf{gé}tur. Per eúmdem Dóminum.
+
+\vspace{2mm}
+
+\pars{Pro defuncto Episcopo.}
+
+\rubrica{Oratio.}
+
+\lettrine{{\color{red}D}}{eus}, qui inter apostólicos sacerdótes fámulum tuum {\color{red}N.} {\color{red}(}fámulos tuos tuos {\color{red}N.} et {\color{red}N.}{\color{red})} pontificáli fecísti dignitáte vi\textbf{gé}re:~\gredagger{}
+\textit{præsta}, \textbf{quǽ}sumus;~\grestar{}
+ut eórum quoque perpétuo aggregé{\color{red}(}n{\color{red})}tur con\textbf{sór}tio. Per Dóminum.
+
+\noindent \textit{Pro Episcopo Cardinali defuncto dicatur:} fámulum tuum {\color{red}N.} Epíscopum Cardinálem pontificáli fecísti dignitáte.
+
+\noindent \textit{Pro Presbytero Cardinali (Episcopo) defuncto:} fámulum tuum {\color{red}N.} Presbýterum Cardinálem pontificáli fecísti.
+
+\noindent \textit{Pro Presbytero (vel Diacono) Cardinali (Sacerdote) defuncto:} fámulum tuum {\color{red}N.} Presbýterum {\color{red}(}Diáconum{\color{red})} Cardinálem sacerdotáli fecísti.
+
+\noindent \textit{Pro Diacono autem Cardinali, qui in ordine Presbyteratus no fuerit constitutus, dicatur Oratio} Inclína Dómine. \textit{quæ habetur paulo infra hoc modo:} ut ánimam fámuli tui {\color{red}N.} Diáconi Cardinális, quam de hoc sǽculo. \textit{etc.}
+
+%\vspace{2mm}
+\vfill
+\pagebreak
+
+\pars{Pro defuncto Sacerdote.}
+
+\rubrica{Oratio.}
+
+\lettrine{{\color{red}D}}{eus}, qui inter apostólicos sacerdótes fámulum tuum {\color{red}N.} {\color{red}(}fámulos tuos {\color{red}N.} et {\color{red}N.}{\color{red})} sacerdotáli fecísti dignitáte vi\textbf{gé}re:~\gredagger{}
+\textit{præsta}, \textbf{quǽ}sumus;~\grestar{}
+ut eórum quoque perpétuo aggregé{\color{red}(}n{\color{red})}tur con\textbf{sór}tio. Per Dóminum.
+
+\rubrica{Vel alia Oratio.}
+
+\lettrine{{\color{red}P}}{ræsta}, quǽsumus \textbf{Dó}mine:~\gredagger{}
+ut ánima fámuli tui {\color{red}N.} Sacerdótis, quem in hoc sǽculo commorántem, sacris munéribus \textit{deco}\textbf{rás}ti,~\grestar{}
+in cælésti sede gloriósa semper ex\textbf{súl}tet. Per Dóminum.
+
+\vspace{2mm}
+
+\pars{Pro uno Defuncto.}
+
+\rubrica{Oratio.}
+
+\lettrine{{\color{red}I}}{nclína} Dómine aurem tuam ad preces nostras, quibus misericórdiam tuam súpplices depre\textbf{cá}mur:~\gredagger{}
+ut ánimam fámuli tui {\color{red}N.}, quam de hoc sǽculo migráre iussísti, in pacis ac lucis regió\textit{ne} \textit{con}stítuas,~\grestar{}
+et Sanctórum tuórum iúbeas esse con\textbf{sór}tem. Per Dóminum.
+
+\vspace{2mm}
+
+\pars{Pro una Defuncta.}
+
+\rubrica{Oratio.}
+
+\lettrine{{\color{red}Q}}{uǽsumus} Dómine, pro tua pietáte miserére ánimæ fámulæ tuæ {\color{red}N.}:~\gredagger{}
+et a contágiis mortalitá\textit{tis} \textit{ex}\textbf{ú}tam,~\grestar{}
+in ætérnæ salvatiónis partem re\textbf{stí}tuæ. Per Dóminum.
+
+\vspace{2mm}
+
+\pars{Pro defunctis Fratribus, Propinquis et Benefactoribus.}
+
+\rubrica{Oratio.}
+
+\lettrine{{\color{red}D}}{eus} véniæ largítor et humánæ salútis a\textbf{má}tor:~\gredagger{}
+quǽsumus cleméntiam tuam; ut nostræ congregatiónis fratres, propínquos et benefactóres, qui ex hoc sǽculo \textit{transi}\textbf{é}runt,~\grestar{}
+beáta María semper Vírgine intercedénte cum ómnibus Sanctis tuis, ad perpétuæ beatitúdinis consórtium perveníre con\textbf{cé}das. Per Dóminum.
+
+%\vspace{2mm}
+\vfill
+\pagebreak
+
+\pars{Pro pluribus Defunctis.}
+
+\rubrica{Oratio.}
+
+\lettrine{{\color{red}D}}{eus}, cui próprium est miseréri semper et \textbf{pár}cere:~\gredagger{}
+propitiáre animábus famulórum famularúmque tuárum, et ómnia eórum peccá\textit{ta} \textit{di}\textbf{mít}te;~\grestar{}
+ut mortalitátis vínculis absolútæ, transíre mereántur ad \textbf{vi}tam. Per Dóminum.
+
+\rubrica{Vel alia Oratio.}
+
+\lettrine{{\color{red}A}}{nimábus}, quǽsumus Dómine, famulórum famularúmque tuárum misericórdiam concéde per\textbf{pé}tuam:~\gredagger{}
+ut eis profíciat \textit{in} \textit{æ}\textbf{tér}num,~\grestar{}
+quod in te speravérunt et credi\textbf{dé}runt. Per Dóminum.
+
+\vspace{2mm}
+
+\pars{Pro patre et matre.}
+
+\pars{Oratio.}
+
+\lettrine{{\color{red}D}}{eus}, qui nos patrem et matrem honoráre præce\textbf{pís}ti:~\gredagger{}
+miserére cleménter animábus patris et matris meæ, eorúmque peccá\textit{ta} \textit{di}\textbf{mít}te;~\grestar{}
+meque eos in ætérnæ claritátis gáudio fac vi\textbf{dé}re. Per Dóminum.
+
+\noindent \textit{Si fit pro pluribus, dicatur} animábus paréntum nostrórum, \textit{et ubi dicitur} meque, \textit{dicatur} nosque.
+
+\noindent \textit{Si pro patre tantum, dicatur} ánimæ patris mei, \textit{vel} nostri.
+
+\noindent \textit{Si pro matre tantum, dicatur} ánimæ matris meæ, \textit{vel} nostræ.
+
+\vspace{2mm}
+
+\rubrica{Post Orationem dicitur (semper plurali numero):}
+
+\noindent \Vbardot{} Réquiem ætérnam dona eis Dómine. \Rbardot{} Et lux perpétua lúceat eis.
+
+\vspace{1cm}
+\rubrica{Deinde Cantores:}
+\vspace{2mm}
+
+\sineinitiali{temporalia/requiescant.gtex}
 
 \vfill
 \pagebreak
@@ -498,15 +729,17 @@ secundus, et Feria IV et Sabbato tertius.}
 
 \vspace{2mm}
 
-\cuminitiali{}{temporalia/dominelabiamea.gtex}
+\pars{Invitatorium.}
 
-\vspace{2mm}
-
-\pars{Invitatorium.} \scriptura{Cantor; Holger Peter Sandhofe}
-
-\vspace{-6mm}
+\rubrica{In Officiis novem Lectionum.} \scriptura{Cantor; Holger Peter Sandhofe}
 
 \antiphona{VI}{temporalia/matinv-RegemCui.gtex}
+
+%\trMatInvitatorium
+
+\rubrica{In Officiis trium Lectionum.} \scriptura{Cantor; Antiphonale Romanum}
+
+\antiphona{VI}{temporalia/matinv-RegemCui3.gtex}
 
 %\trMatInvitatorium
 
@@ -565,6 +798,8 @@ secundus, et Feria IV et Sabbato tertius.}
 
 \subhora{In I. Nocturno}
 
+\vspace{-5mm}
+
 \rubrica{Pro Dominica, Feria II et V}
 
 \pars{Psalmus 1.} \scriptura{Ps. 5, 9; \textbf{H390}}
@@ -573,13 +808,13 @@ secundus, et Feria IV et Sabbato tertius.}
 
 \antiphona{VII c}{temporalia/matant1.gtex}
 
-%\trMatAntI
+\trMatAntI
 
 \scriptura{Psalmus 5.}
 
 \initiumpsalmi{temporalia/ps5-initium-vii-c-auto.gtex}
 
-\vspace{-8mm}
+%\vspace{-4mm}
 
 \psalmusEtTranslatioT{temporalia/ps5-comb.tex}{10cm}
 
@@ -594,7 +829,7 @@ secundus, et Feria IV et Sabbato tertius.}
 
 \antiphona{VIII G}{temporalia/matant2.gtex}
 
-%\trMatAntII
+\trMatAntII
 
 \vspace{-4mm}
 
@@ -617,7 +852,7 @@ secundus, et Feria IV et Sabbato tertius.}
 
 \antiphona{VIII G}{temporalia/matant3.gtex}
 
-%\trMatAntIII
+\trMatAntIII
 
 \scriptura{Psalmus 7.}
 
@@ -634,51 +869,36 @@ secundus, et Feria IV et Sabbato tertius.}
 
 \sineinitiali{temporalia/versus-aporta.gtex}
 
-%\noindent \trMatVersusI
+\noindent \trMatVersusI
+
+\noindent Pater noster \rubricatum{quod dicitur totum secreto.}
 
 \vfill
 
-\sineinitiali{temporalia/oratiodominica-mat.gtex}
+\rubrica{Lectiones leguntur sine Absolutione, Benedictione et Titulo in tono Prophetiæ.}
 
-\vfill
-
-\pars{Absolutio.}
-
-\cuminitiali{}{temporalia/absolutio-exaudi.gtex}
-
-\trMatAbsolutioI
-
-\vfill
-\pagebreak
-
-\cuminitiali{}{temporalia/benedictio-solemn-benedictione.gtex}
-
-\trMatBenedictioI
-
-\vfill
-
-\cuminitiali{}{temporalia/tonus-lectionis-solemnis.gtex}
+\cuminitiali{}{temporalia/tonus-lectionis-prophetiae.gtex}
 
 \vfill
 
 \pars{Lectio I.} \scriptura{Iob 7, 16-21}
 
 \textusEtTranslatio{
-  Parce \textit{mihi}, \textbf{Dó}mine;~\grestar{}
-  nihil enim sunt di\textit{es} \textbf{me}i.
+  Parce mihi, \textbf{Dó}mine;~\gredagger{}
+  nihil enim sunt dies \textbf{me}i.
   Quid est homo, \textit{qui}a magnífi\textit{cas} \textbf{e}um?
   aut quid appónis \textit{er}ga eum \textit{cor} \textbf{tu}um?
-  Vísitas e\textit{um} \textit{di}\textbf{lú}culo,~\grestar{}
-  et súbito pro\textit{bas} \textbf{il}lum.
+  Vísitas eum di\textbf{lú}culo,~\gredagger{}
+  et súbito probas \textbf{il}lum.
   Usquequo non parcis mihi, nec dimíttis me, \textit{ut} glútiam salí\textit{vam} \textbf{me}am?
   Peccávi, quid fáciam tibi, \textit{o} custos \textit{hó}\textbf{mi}num?
   quare posuísti me contrárium tibi, \textit{et} factus sum mihimetíp\textit{si} \textbf{gra}vis?
   Cur non tollis peccátum meum, \textit{et} quare non aufers iniquitá\textit{tem} \textbf{me}am?
-  Ecce nunc in púl\textit{vere} \textbf{dór}miam:~\grestar{}
-  et, si mane me quæsíeris, non \textit{sub}\textbf{sís}tam.
-}{}{10cm}
+  Ecce nunc in púlvere \textbf{dór}miam:~\gredagger{}
+  et, si mane me quæsíeris, \textbf{non} sub\textbf{sís}tam.
+}{\trMatLecI}{10cm}
 
-\tuAutem
+\rubrica{Lectiones terminantur sine \textnormal{Tu autem.} vel alia conclusione.}
 
 \vfill
 \pagebreak
@@ -687,37 +907,40 @@ secundus, et Feria IV et Sabbato tertius.}
 
 \vspace{-5mm}
 
-\responsorium{VIII}{temporalia/matresp1.gtex}{}
+\responsorium{VIII}{temporalia/matresp1.gtex}{\trMatRespI}
 
 \vfill
 \pagebreak
 
-\cuminitiali{}{temporalia/benedictio-solemn-unigenitus.gtex}
+\pars{Lectio II.} \scriptura{Iob 10, 1-3}
 
-\trMatBenedictioII
+\textusEtTranslatio{
+  Tædet ánimam meam vitæ \textbf{me}æ;~\gredagger{}
+  dimíttam advérsum me elóquium \textbf{me}um:~\gredagger{}
+  loquar in amaritúdine ánimæ \textbf{me}æ.
+  Dicam Deo: Noli me condem\textbf{ná}re;~\gredagger{}
+  índica mihi cur me ita \textbf{iú}dices.
+  Numquid bonum tibi vidétur, si calumniéris me, \textit{et} ópprimas me opus mánuum tuárum, et consílium impiórum \textit{ád}\textbf{iu}ves?
+}{\trMatLecII}{10cm}
 
-\vfill
+\rubrica{In die Commemorationis Omnium Fidelium Defunctorum:}
 
 \pars{Lectio II.} \scriptura{Iob 14, 1-6}
 
 \textusEtTranslatio{
-  Homo natus de mu\textbf{lí}ere,~\gredagger{}
-  brevi \textit{vivens} \textbf{tém}pore,~\grestar{}
-  replétur multis \textit{mi}\textbf{sé}riis.
-  Qui quasi flos egréditur et con\textbf{té}ritur,~\gredagger{}
-  et fugit \textit{velut} \textbf{um}bra,~\grestar{}
-  et numquam in eódem sta\textit{tu} \textbf{pér}manet.
+  Homo natus de mulíere, brevi vivens \textbf{tém}pore,~\gredagger{}
+  replétur multis mi\textbf{sé}riis.
+  Qui quasi flos egréditur et contéritur, et fugit velut \textbf{um}bra,~\gredagger{}
+  et numquam in eódem statu \textbf{pér}manet.
   Et dignum ducis super huiuscémodi aperíre óculos tuos, \textit{et} addúcere eum tecum in iu\textit{dí}\textbf{ci}um?
   Quis potest fácere mundum \textit{de} immúndo concéptum \textit{sé}\textbf{mi}ne?
   Nonne \textit{tu} qui \textit{so}\textbf{lus} es?
   Breves dies hómi\textbf{nis} sunt:~\gredagger{}
-  númerus ménsium eius apud te est: constituísti tér\textit{minos} \textbf{e}ius,~\grestar{}
-  qui præteríri \textit{non} \textbf{pó}terunt.
-  Recéde páululum ab eo, \textit{ut} \textit{qui}\textbf{és}cat,~\grestar{}
-  donec optáta véniat, sicut mercenárii, di\textit{es} \textbf{e}ius.
-}{}{10cm}
-
-\tuAutem
+  númerus ménsium eius apud te est: constituísti términos \textbf{e}ius,~\gredagger{}
+  qui præteríri non \textbf{pó}terunt.
+  Recéde páululum ab eo, ut qui\textbf{és}cat,~\gredagger{}
+  donec optáta véniat, sicut mercenárii, \textbf{di}es \textbf{e}ius.
+}{\trMatLecIIa}{10cm}
 
 \vfill
 %\pagebreak
@@ -726,47 +949,54 @@ secundus, et Feria IV et Sabbato tertius.}
 
 \vspace{-5mm}
 
-\responsorium{IV}{temporalia/matresp2.gtex}{}
+\responsorium{IV}{temporalia/matresp2.gtex}{\trMatRespII}
 
 %\vfill
 \pagebreak
 
-\cuminitiali{}{temporalia/benedictio-solemn-spiritus.gtex}
+\pars{Lectio III.} \scriptura{Iob 10, 8-12}
 
-\trMatBenedictioIII
+\textusEtTranslatio{
+  Manus tuæ fecérunt me, et plasmavérunt me totum in circúitu: \textit{et} sic repénte præcí\textit{pi}\textbf{tas} me?
+  Meménto, quæso, quod sicut lutum féce\textbf{ris} me,~\gredagger{}
+  et in púlverem re\textbf{dú}ces me.
+  Nonne sicut lac mulsísti me, \textit{et} sicut cáseum me coa\textit{gu}\textbf{lás}ti?
+  Pelle et cárnibus ves\textbf{tís}ti me:~\gredagger{}
+  óssibus et nervis compe\textbf{gís}ti me.
+  Vitam et misericórdiam tribuísti \textbf{mi}hi,~\gredagger{}
+  et visitátio tua custodívit spíritum \textbf{me}um.
+}{\trMatLecIII}{10cm}
 
-\vfill
+\rubrica{In die Commemorationis Omnium Fidelium Defunctorum:}
 
 \pars{Lectio III.} \scriptura{Iob 19, 20-27}
 
 \textusEtTranslatio{
-  Pelli meæ, consúmptis cárnibus, adhǽ\textit{sit} \textit{os} \textbf{me}um,~\grestar{}
-  et derelícta sunt tantúmmodo lábia circa den\textit{tes} \textbf{me}os.
-  Miserémini mei, miserémini \textit{mei} \textbf{sal}tem vos,~\grestar{}
-  amíci mei, quia manus Dómini té\textit{ti}\textbf{git} me.
+  Pelli meæ, consúmptis cárnibus, adhǽsit os \textbf{me}um,~\gredagger{}
+  et derelícta sunt tantúmmodo lábia circa dentes \textbf{me}os.
+  Miserémini mei, miserémini mei \textbf{sal}tem vos,~\gredagger{}
+  amíci mei, quia manus Dómini téti\textbf{git} me.
   Quáre persequímini me sicut Deus, \textit{et} cárnibus meis satu\textit{rá}\textbf{mi}ni?
   Quis mihi tríbuat \textit{ut} scribántur sermó\textit{nes} \textbf{me}i?
   quis mihi det \textit{ut} exaréntur \textit{in} \textbf{lib}ro?
   Stylo férreo et plumbi lámina, \textit{vel} celte sculpántur in \textit{sí}\textbf{li}ce?
   Scio enim quod redémptor meus \textbf{vi}vit,~\gredagger{}
-  et in novíssimo die de terra \textit{surrec}\textbf{tú}rus sum:~\grestar{}
+  et in novíssimo die de terra surrec\textbf{tú}rus sum:~\gredagger{}
   Et rursum circúmdabor pelle mea, et in carne mea vidébo Deum \textbf{me}um:~\gredagger{}
-  Quem visúrus sum ego ipse, et óculi mei conspectúri sunt, \textit{et} \textit{non} \textbf{á}lius:~\grestar{}
-  repósita est hæc spes mea in si\textit{nu} \textbf{me}o.
-}{}{10cm}
-
-\tuAutem
+  Quem visúrus sum ego ipse, et óculi mei conspectúri sunt, et non \textbf{á}lius:~\gredagger{}
+  repósita est hæc spes mea in \textbf{si}nu \textbf{me}o.
+}{\trMatLecIIIa}{10cm}
 
 \vfill
-%\pagebreak
+\pagebreak
 
 \pars{Responsorium 3.} \scriptura{\Rbardot{} Cantor; \Vbardot{} ibidem; \textbf{H390}}
 
 \vspace{-5mm}
 
-\responsorium{I}{temporalia/matresp3.gtex}{}
+\responsorium{I}{temporalia/matresp3.gtex}{\trMatRespIII}
 
-%\vfill
+\vfill
 \pagebreak
 
 \subhora{In II. Nocturno}
@@ -779,7 +1009,7 @@ secundus, et Feria IV et Sabbato tertius.}
 
 \antiphona{VIII G}{temporalia/matant4.gtex}
 
-%\trMatAntIV
+\trMatAntIV
 
 \scriptura{Psalmus 22.}
 
@@ -798,7 +1028,7 @@ secundus, et Feria IV et Sabbato tertius.}
 
 \antiphona{VIII G}{temporalia/matant5.gtex}
 
-%\trMatAntV
+\trMatAntV
 
 \scriptura{Psalmus 24.}
 
@@ -817,11 +1047,12 @@ secundus, et Feria IV et Sabbato tertius.}
 
 \antiphona{IV E}{temporalia/matant6.gtex}
 
-%\trMatAntVI
+\trMatAntVI
 
 \scriptura{Psalmus 26.}
 
-\initiumpsalmi{temporalia/ps26-initium-iv-E-auto.gtex}
+%\initiumpsalmi{temporalia/ps26-initium-iv-E-auto.gtex}
+\initiumpsalmi{temporalia/ps26-initium-iv-E.gtex}
 
 \psalmusEtTranslatioT{temporalia/ps26-comb.tex}{10cm}
 
@@ -834,142 +1065,156 @@ secundus, et Feria IV et Sabbato tertius.}
 
 \sineinitiali{temporalia/versus-collocet.gtex}
 
-%\noindent \trMatVersusII
+\noindent \trMatVersusII
+
+\noindent Pater noster \rubricatum{quod dicitur totum secreto.}
 
 \vfill
 
-\sineinitiali{temporalia/oratiodominica-mat.gtex}
+\pars{Lectio IV.} \scriptura{Iob 13, 22-28}
 
-\vfill
+\textusEtTranslatio{
+  Respónde mihi: Quántas hábeo iniqui\textbf{tá}tes~\gredagger{}
+  et peccáta scélera mea et delícta osténde \textbf{mi}hi.
+  Cur fáciem tuam abscóndis, \textit{et} arbitráris me inimí\textit{cum} \textbf{tu}um?
+  Contra fólium, quod vento \textbf{rá}pitur,~\gredagger{}
+  osténdis poténtiam tuam, et stípulam siccam per\textbf{sé}queris.
+  Scribis enim contra me amari\textbf{tú}dines,~\gredagger{}
+  et consúmere me vis peccátis adolescéntiæ \textbf{me}æ.
+  Posuísti in nervo pedem meum, et observásti omnes sémitas \textbf{me}as,~\gredagger{}
+  et vestígia pedum meórum considerásti: qui quasi putredo consu\textbf{mén}dus sum,~\gredagger{}
+  et quasi vestiméntum quod comédi\textbf{tur} a \textbf{tí}nea.
+}{\trMatLecIV}{10cm}
 
-\pars{Absolutio.}
-
-\cuminitiali{}{temporalia/absolutio-ipsius.gtex}
-
-\trMatAbsolutioII
-
-\vfill
-\pagebreak
-
-\cuminitiali{}{temporalia/benedictio-solemn-deus.gtex}
-
-\trMatBenedictioV
-
-\vfill
+\rubrica{In die Commemorationis Omnium Fidelium Defunctorum:}
 
 \pars{Lectio IV.} \scriptura{Cap. 2 et 3}
 
-\noindent Ex Libro Sancti Augustí\textit{ni} \textit{E}\textbf{pís}copi~grestar{} de cura pro mórtuis \textit{ge}\textbf{rén}da.
+\noindent Ex Libro Sancti Augustíni E\textbf{pís}copi~gredagger{} de cura pro mórtuis ge\textbf{rén}da.
 
 \textusEtTranslatio{
-  Curátio fúneris, condítio \textit{sepul}\textbf{tú}ræ,~\grestar{}
-  pompa exsequiárum magis sunt vivórum solátia quam subsídia mor\textit{tu}\textbf{ó}rum.
+  Curátio fúneris, condítio sepul\textbf{tú}ræ,~\gredagger{}
+  pompa exsequiárum magis sunt vivórum solátia quam subsídia mortu\textbf{ó}rum.
   Nec ídeo tamen contemnénda et abiiciénda sunt córpora defunc\textbf{tó}rum,~\gredagger{}
-  maximéque iustórum \textit{ac} \textit{fi}\textbf{dé}lium,~\grestar{}
-  quibus tamquam órganis et vasis ad ómnia bona ópera sancte usus \textit{est} \textbf{spí}ritus.
+  maximéque iustórum ac fi\textbf{dé}lium,~\gredagger{}
+  quibus tamquam órganis et vasis ad ómnia bona ópera sancte usus est \textbf{spí}ritus.
   Si enim patérna vestis et ánulus, ac si quid hu\textbf{iús}modi,~\gredagger{}
-  tanto cárius est pósteris, quanto erga paréntes ma\textit{ior} \textit{af}\textbf{féc}tus;~\grestar{}
-  nullo modo ipsa spernénda sunt córpora, quæ útique multo familiárius atque coniúnctius quam quælíbet induménta \textit{ges}\textbf{tá}mus.
+  tanto cárius est pósteris, quanto erga paréntes maior af\textbf{féc}tus;~\gredagger{}
+  nullo modo ipsa spernénda sunt córpora, quæ útique multo familiárius atque coniúnctius quam quælíbet induménta ges\textbf{tá}mus.
   Hæc enim non ad ornaméntum vel adiu\textbf{tó}rium,~\gredagger{}
-  quod adhibé\textit{tur} \textit{ex}\textbf{trín}secus,~\grestar{}
-  sed ad ipsam natúram hómi\textit{nis} \textbf{pér}tinent.
+  quod adhibétur ex\textbf{trín}secus,~\gredagger{}
+  sed ad ipsam natúram hóminis \textbf{pér}tinent.
   Unde et antiquórum iustórum fúnera officiósa pietáte cu\textbf{rá}ta sunt,~\gredagger{}
-  et exséquiæ celebrátæ, et sepultú\textit{ra} \textit{pro}vísa;~\grestar{}
-  ipsíque, cum víverent, de sepeliéndis vel étiam transferéndis suis corpóribus fíliis man\textit{da}\textbf{vé}runt.
-}{}{10cm}
-
-\tuAutem
+  et exséquiæ celebrátæ, et sepultúra \textbf{pro}vísa;~\gredagger{}
+  ipsíque, cum víverent, de sepeliéndis vel étiam transferéndis suis corpóribus fíliis \textbf{man}da\textbf{vé}runt.
+}{\trMatLecIVa}{10cm}
 
 \vfill
-%\pagebreak
+\pagebreak
 
 \pars{Responsorium 4.} \scriptura{\Rbardot{} Iob 7, 7.8; \Vbardot{} Ps. 129, 1.2; \textbf{H403}}
 
 \vspace{-5mm}
 
-\responsorium{II}{temporalia/matresp4.gtex}{}
-
-%\vfill
-\pagebreak
-
-\cuminitiali{}{temporalia/benedictio-solemn-christus.gtex}
-
-\trMatBenedictioVI
+\responsorium{II}{temporalia/matresp4.gtex}{\trMatRespIV}
 
 \vfill
+\pagebreak
+
+\pars{Lectio V.} \scriptura{Iob 14, 1-6}
+
+\textusEtTranslatio{
+  Homo natus de mu\textbf{lí}ere,~\gredagger{}
+  brevi vivens témpore, replétur multis mi\textbf{sé}riis.
+  Qui quasi flos egréditur et con\textbf{té}ritur,~\gredagger{}
+  et fugit velut umbra, et numquam in eódem statu \textbf{pér}manet.
+  Et dignum ducis super huiuscémodi aperíre óculos tuos, \textit{et} addúcere eum tecum in iu\textit{dí}\textbf{ci}um?
+  Quis potest fácere mundum \textit{de} immúndo concéptum \textit{sé}\textbf{mi}ne?
+  \textit{non}ne tu qui \textit{so}\textbf{lus} es?
+  Breves dies hóminis sunt: númerus ménsium eius apud \textbf{te} est:~\gredagger{}
+  constituísti términos eius, qui præteríri non \textbf{pót}erunt.
+  Recéde páululum ab eo, ut qui\textbf{és}cat,~\gredagger{}
+  donec optáta véniat, sicut mercenárii, \textbf{di}es \textbf{e}ius.
+}{\trMatLecV}{10cm}
+
+\rubrica{In die Commemorationis Omnium Fidelium Defunctorum:}
 
 \pars{Lectio V.} \scriptura{Cap. 4}
 
 \textusEtTranslatio{
   Recordántis et precántis afféctus cum defúnctis a fidélibus caríssimis exhi\textbf{bé}tur,~\gredagger{}
-  eum prodésse non dúbium est iis, qui cum in cór\textit{pore} \textbf{ví}verent,~\grestar{}
-  tália sibi post hanc vitam prodésse me\textit{ru}\textbf{é}runt.
+  eum prodésse non dúbium est iis, qui cum in córpore \textbf{ví}verent,~\gredagger{}
+  tália sibi post hanc vitam prodésse meru\textbf{é}runt.
   Verum, etsi áliqua necéssitas vel humári córpora, vel in sacris locis humári nulla data facultáte per\textbf{mít}tat,~\gredagger{}
-  non sunt prætermitténdæ supplicatiónes pro spirítibus \textit{mortu}\textbf{ó}rum:~\grestar{}
+  non sunt prætermitténdæ supplicatiónes pro spirítibus mortu\textbf{ó}rum:~\gredagger{}
   quas faciéndas pro ómnibus in christiána et cathólica societáte de\textbf{fúnc}tis,~\gredagger{}
-  étiam tácitis eórum nomínibus, sub generáli commemoratióne suscé\textit{pit} \textit{Ec}\textbf{clé}sia;~\grestar{}
-  ut quibus ad ista desunt paréntes, aut fílii, aut quicúmque cognáti vel amíci, ab una eis exhibeántur pia matre \textit{com}\textbf{mú}ni.
+  étiam tácitis eórum nomínibus, sub generáli commemoratióne suscépit Ec\textbf{clé}sia;~\gredagger{}
+  ut quibus ad ista desunt paréntes, aut fílii, aut quicúmque cognáti vel amíci, ab una eis exhibeántur pia matre com\textbf{mú}ni.
   Si autem deéssent istæ supplicati\textbf{ó}nes,~\gredagger{}
-  quæ fiunt recta fide ac pietá\textit{te} \textit{pro} \textbf{mór}tuis,~\grestar{}
-  puto quod nihil prodésset spirítibus eórum, quámlibet in locis sanctis exánima córpora po\textit{ne}\textbf{rén}tur.
-}{}{10cm}
-
-\tuAutem
+  quæ fiunt recta fide ac pietáte pro \textbf{mór}tuis,~\gredagger{}
+  puto quod nihil prodésset spirítibus eórum, quámlibet in locis sanctis exánima córpora \textbf{po}ne\textbf{rén}tur.
+}{\trMatLecVa}{10cm}
 
 \vfill
-%\pagebreak
+\pagebreak
 
 \pars{Responsorium 5.} \scriptura{\Rbardot{} Cantor; \Vbardot{} Ps. 6, 4.5; \textbf{H391}}
 
 \vspace{-5mm}
 
-\responsorium{II}{temporalia/matresp5.gtex}{}
-
-%\vfill
-\pagebreak
-
-\cuminitiali{}{temporalia/benedictio-solemn-ignem.gtex}
-
-\trMatBenedictioVII
+\responsorium{II}{temporalia/matresp5.gtex}{\trMatRespV}
 
 \vfill
+\pagebreak
+
+\pars{Lectio VI.} \scriptura{Iob 14, 13-16}
+
+\textusEtTranslatio{
+  Quis mihi hoc tríbuat, ut in inférno próte\textbf{gas} me,~\gredagger{}
+  et abscóndas me donec pertránseat furor tuus, \textit{et} constítuas mihi tempus in quo recordé\textit{ris} \textbf{me}i?
+  \textit{Pu}tásne mórtuus homo rur\textit{sum} \textbf{vi}vat?
+  cunctis diébus quibus nunc mílito, expécto donec véniat immutátio \textbf{me}a.
+  Vocábis me, et ego respondébo \textbf{ti}bi:~\gredagger{}
+  óperi mánuum tuárum porríges \textbf{déx}teram.
+  Tu quidem gressus meos dinumerásti: sed parce pec\textbf{cá}tis \textbf{me}is.
+}{\trMatLecVI}{10cm}
+
+\rubrica{In die Commemorationis Omnium Fidelium Defunctorum:}
 
 \pars{Lectio VI.} \scriptura{Cap. 18}
 
 \textusEtTranslatio{
   Quæ cum ita sint, non existimémus ad \textbf{mór}tuos,~\gredagger{}
-  pro quibus curam gérimus, \textit{perve}\textbf{ní}re,~\grestar{}
+  pro quibus curam gérimus, perve\textbf{ní}re,~\gredagger{}
   nisi quod pro eis sive altáris, sive oratiónum, sive eleemosynárum sacrifíciis solémniter suppli\textbf{cá}mus:~\gredagger{}
-  quamvis non pro quibus fiunt, óm\textit{nibus} \textbf{pro}sint;~\grestar{}
-  sed iis tantum pro quibus, dum vivunt, comparátur, \textit{ut} \textbf{pro}sint.
+  quamvis non pro quibus fiunt, ómnibus \textbf{pro}sint;~\gredagger{}
+  sed iis tantum pro quibus, dum vivunt, comparátur, ut \textbf{pro}sint.
   Sed quia non discérnimus \textbf{qui} sunt,~\gredagger{}
-  opórtet ea pro regenerátis ómnibus fácere, ut nullus eórum præ\textit{termit}\textbf{tá}tur,~\grestar{}
-  ad quos hæc benefícia possint et débeant per\textit{ve}\textbf{ní}re.
-  Mélius enim supérerunt ista eis, quibus nec ob\textit{sunt} \textit{nec} \textbf{pro}sunt;~\grestar{}
-  quam eis deérunt, qui\textit{bus} \textbf{pro}sunt.
-  Diligéntius tamen facit hæc quisque pro necessá\textit{riis} \textbf{su}is,~\grestar{}
-  quo pro illo fiat simíliter \textit{a} \textbf{su}is.
-  Córpori autem humándo quidquid impénditur, non est præsídi\textit{um} \textit{sa}\textbf{lú}tis,~\grestar{}
-  sed humanitátis offícium, secúndum afféctum quo nemo unquam carnem suam ódi\textit{o} \textbf{ha}bet.
-  Unde opórtet ut quam potest pro carne próximi \textit{curam} \textbf{ge}rat,~\grestar{}
-  cum ille inde recésserit, qui \textit{ge}\textbf{ré}bat.
+  opórtet ea pro regenerátis ómnibus fácere, ut nullus eórum prætermit\textbf{tá}tur,~\gredagger{}
+  ad quos hæc benefícia possint et débeant perve\textbf{ní}re.
+  Mélius enim supérerunt ista eis, quibus nec obsunt nec \textbf{pro}sunt;~\gredagger{}
+  quam eis deérunt, quibus \textbf{pro}sunt.
+  Diligéntius tamen facit hæc quisque pro necessáriis \textbf{su}is,~\gredagger{}
+  quo pro illo fiat simíliter a \textbf{su}is.
+  Córpori autem humándo quidquid impénditur, non est præsídium sa\textbf{lú}tis,~\gredagger{}
+  sed humanitátis offícium, secúndum afféctum quo nemo unquam carnem suam ódio \textbf{ha}bet.
+  Unde opórtet ut quam potest pro carne próximi curam \textbf{ge}rat,~\gredagger{}
+  cum ille inde recésserit, qui ge\textbf{ré}bat.
   Et si hæc fáciunt, qui carnis resurrectiónem non credunt, quanto magis debent fácere qui \textbf{cre}dunt;~\gredagger{}
-  ut córpori mórtuo, sed tamen resurrectúro et in æternitá\textit{te} \textit{man}\textbf{sú}ro,~\grestar{}
-  impénsum ejúsmodi offícium sit étiam quodámmodo ejúsdem fídei tes\textit{ti}\textbf{mó}nium!
-}{}{10cm}
-
-\tuAutem
+  ut córpori mórtuo, sed tamen resurrectúro et in æternitáte man\textbf{sú}ro,~\gredagger{}
+  impénsum eiúsmodi offícium sit étiam quodámmodo eiúsdem fídei \textbf{tes}ti\textbf{mó}nium!
+}{\trMatLecVIa}{10cm}
 
 \vfill
-%\pagebreak
+\pagebreak
 
 \pars{Responsorium 6.} \scriptura{\Rbardot{} Cantor; \Vbardot{} Ps. 5, 9; \textbf{H391}}
 
 \vspace{-5mm}
 
-\responsorium{VI}{temporalia/matresp6.gtex}{}
+\responsorium{VI}{temporalia/matresp6.gtex}{\trMatRespVI}
 
-%\vfill
+\vfill
 \pagebreak
 
 \subhora{In III. Nocturno}
@@ -982,7 +1227,7 @@ secundus, et Feria IV et Sabbato tertius.}
 
 \antiphona{II D}{temporalia/matant7.gtex}
 
-%\trMatAntVII
+\trMatAntVII
 
 \scriptura{Psalmus 39.}
 
@@ -1001,7 +1246,7 @@ secundus, et Feria IV et Sabbato tertius.}
 
 \antiphona{II D}{temporalia/matant8.gtex}
 
-%\trMatAntVIII
+\trMatAntVIII
 
 \scriptura{Psalmus 40.}
 
@@ -1020,7 +1265,7 @@ secundus, et Feria IV et Sabbato tertius.}
 
 \antiphona{II D}{temporalia/matant9.gtex}
 
-%\trMatAntIX
+\trMatAntIX
 
 \scriptura{Psalmus 41.}
 
@@ -1031,62 +1276,64 @@ secundus, et Feria IV et Sabbato tertius.}
 \antiphona{}{temporalia/matant9.gtex} % repeat the antiphon - new page
 
 \vfill
-\pagebreak
+%\pagebreak
 
 \pars{Versus.} \scriptura{Ps. 73, 19}
 
 \sineinitiali{temporalia/versus-netradas.gtex}
 
-%\noindent \trMatVersusIII
+\noindent \trMatVersusIII
 
-\vfill
-
-\sineinitiali{temporalia/oratiodominica-mat.gtex}
-
-\vfill
-
-\pars{Absolutio.}
-
-\cuminitiali{}{temporalia/absolutio-avinculis.gtex}
-
-\trMatAbsolutioIII
+\noindent Pater noster \rubricatum{quod dicitur totum secreto.}
 
 \vfill
 \pagebreak
 
-\cuminitiali{}{temporalia/benedictio-solemn-evangelica.gtex}
+\pars{Lectio VII.} \scriptura{Iob 17, 1-3.11-15}
 
-\trMatBenedictioIX
+\textusEtTranslatio{
+  Spíritus meus attenuábitur; dies mei brevia\textbf{bún}tur:~\gredagger{}
+  et solum mihi súperest se\textbf{púl}chrum.
+  Non peccávi, et in amaritudínibus morátur óculus \textbf{me}us.
+  Líbera me, Dómine, et pone me \textbf{iux}ta te,~\gredagger{}
+  et cuiúsvis manus pugnet \textbf{con}tra me.
+  Dies mei transi\textbf{é}runt;~\gredagger{}
+  cogitatiónes meæ dissipátæ sunt, torquéntes cor \textbf{me}um.
+  Noctem vertérunt in diem, et rursum post ténebras spero \textbf{lu}cem.
+  Si sustinúero, inférnus domus \textbf{me}a est,~\gredagger{}
+  et in ténebris stravi léctulum \textbf{me}um.
+  Putrédini dixi: Pater meus es; Mater mea, et soror mea, \textbf{vér}mibus.
+  \textit{U}bi est ergo nunc praestoláti\textit{o} \textbf{me}a?
+  \textit{et} patiéntiam meam quis con\textit{sí}\textbf{de}rat?
+}{\trMatLecVII}{10cm}
 
-\vfill
+\rubrica{In die Commemorationis Omnium Fidelium Defunctorum:}
 
 % De Epístola prima beáti Pauli Apóstoli ad Corínthios.
 \pars{Lectio VII.} \scriptura{1 Cor. 15, 12-22}
 
-\noindent De Epístola prima beáti Pau\textit{li} \textit{A}\textbf{pós}toli~\grestar{} ad \textit{Co}\textbf{rín}thios.
+\noindent De Epístola prima beáti Pauli A\textbf{pós}toli~\gredagger{} ad Co\textbf{rín}thios.
 
 \textusEtTranslatio{
   Si Christus prædicátur quod resurréxit a mórtuis, \textit{quó}modo quidam dicunt in vobis quóniam resurréctio mortuó\textit{rum} \textbf{non} est?
-  Si autem resurréctio mortuórum non est, neque Christus re\textit{sur}\textbf{ré}xit.
-  Si autem Christus non \textit{resur}\textbf{ré}xit,~\grestar{}
-  inánis est ergo prædicátio nostra, inánis est et fi\textit{des} \textbf{ves}tra.
+  Si autem resurréctio mortuórum non est, neque Christus resur\textbf{ré}xit.
+  Si autem Christus non \textit{resur}\textbf{ré}xit,~\gredagger{}
+  inánis est ergo prædicátio nostra, inánis est et fides \textbf{ves}tra.
   Invenímur autem et falsi testes \textbf{De}i,~\gredagger{}
-  quóniam testimónium díximus advérsus Deum quod suscitá\textit{verit} \textbf{Chris}tum;~\grestar{}
-  quem non suscitávit, si mórtui non \textit{re}\textbf{súr}gunt.
-  Nam, si mórtui non resúrgunt, neque Christus re\textit{sur}\textbf{ré}xit.
+  quóniam testimónium díximus advérsus Deum quod suscitáverit \textbf{Chris}tum;~\gredagger{}
+  quem non suscitávit, si mórtui non re\textbf{súr}gunt.
+  Nam, si mórtui non resúrgunt, neque Christus resur\textbf{ré}xit.
   Quod si Christus non resur\textbf{ré}xit,~\gredagger{}
-  vana est fides vestra, adhuc enim estis in pec\textit{cátis} \textbf{ves}tris;~\grestar{}
-  Ergo et qui dormiérunt in Christo pe\textit{ri}\textbf{é}runt.
-  Si in hac vita tantum in Christo spe\textit{rántes} \textbf{su}mus,~\grestar{}
-  miserabilióres sumus ómnibus \textit{ho}\textbf{mí}nibus.
+  vana est fides vestra, adhuc enim estis in peccátis \textbf{ves}tris;~\gredagger{}
+  Ergo et qui dormiérunt in Christo peri\textbf{é}runt.
+  Si in hac vita tantum in Christo sperántes \textbf{su}mus,~\gredagger{}
+  miserabilióres sumus ómnibus ho\textbf{mí}nibus.
   Nunc autem Christus resurréxit a mórtuis, primítiæ dormi\textbf{én}tium;~\gredagger{}
-  Quóniam quidem per \textit{hómi}\textbf{nem} mors,~\grestar{}
-  et per hóminem resurréctio mor\textit{tu}\textbf{ó}rum.
-  Et sicut in Adam omnes \textit{mori}\textbf{ún}tur,~\grestar{}
-  ita et in Christo omnes vivifi\textit{ca}\textbf{bún}tur.
-}{}{10cm}
-
-\tuAutem
+  Quóniam quidem per hómi\textbf{nem} mors,~\gredagger{}
+  et per hóminem resurréctio mortu\textbf{ó}rum.
+  Et sicut in Adam omnes mori\textbf{ún}tur,~\gredagger{}
+  ita et in Christo omnes vivi\textbf{fi}ca\textbf{bún}tur.
+}{\trMatLecVIIa}{10cm}
 
 \vfill
 \pagebreak
@@ -1095,229 +1342,114 @@ secundus, et Feria IV et Sabbato tertius.}
 
 \vspace{-5mm}
 
-\responsorium{I}{temporalia/matresp7.gtex}{}
+\responsorium{I}{temporalia/matresp7.gtex}{\trMatRespVII}
 
 \vfill
 \pagebreak
 
-\cuminitiali{}{temporalia/benedictio-solemn-ille.gtex}
+\pars{Lectio VIII.} \scriptura{Iob 19, 20-27}
 
-\trMatBenedictioX
+\textusEtTranslatio{
+  Pelli meæ, consúmptis cárnibus, adhǽsit os \textbf{me}um,~\gredagger{}
+  et derelícta sunt tantúmmodo lábia circa dentes \textbf{me}os.
+  Miserémini mei, miserémini mei \textbf{sal}tem vos,~\gredagger{}
+  amíci mei, quia manus Dómini téti\textbf{git} me.
+  Quáre persequímini me sicut Deus, \textit{et} cárnibus meis satu\textit{rá}\textbf{mi}ni?
+  Quis mihi tríbuat \textit{ut} scribántur sermó\textit{nes} \textbf{me}i?
+  quis mihi det ut exaréntur in libro stylo férreo \textit{et} plumbi lámina, vel celte sculpántur in \textit{sí}\textbf{li}ce?
+  Scio enim quod redémptor meus vivit, et in novíssimo die de terra surrec\textbf{tú}rus sum:~\gredagger{}
+  et rursum circúmdabor pelle mea, et in carne mea vidébo Deum meum: quem visúrus sum ego \textbf{ip}se,~\gredagger{}
+  et óculi mei conspectúri sunt, et non álius: repósita est hæc spes mea in \textbf{si}nu \textbf{me}o.
+}{\trMatLecVIII}{10cm}
 
-\vfill
+\rubrica{In die Commemorationis Omnium Fidelium Defunctorum:}
 
 \pars{Lectio VIII.} \scriptura{1 Cor. 15, 35-44}
 
 \textusEtTranslatio{
   Sed dicet áliquis: \textit{Quó}modo resúrgunt \textit{mór}\textbf{tu}i?
   qualíve \textit{cór}pore \textit{vé}\textbf{ni}ent?
-  Insípiens, tu quod séminas non vivificátur, nisi prius mo\textit{ri}\textbf{á}tur.
+  Insípiens, tu quod séminas non vivificátur, nisi prius mori\textbf{á}tur.
   Et quod séminas, non corpus quod futúrum est \textbf{sé}minas,~\gredagger{}
-  sed nudum granum, ut puta, trítici aut alicújus \textit{cete}\textbf{ró}rum;~\grestar{}
-  Deus autem dat illi corpus sicut vult, et unicuíque séminum própri\textit{um} \textbf{cor}pus.
+  sed nudum granum, ut puta, trítici aut alicúius cete\textbf{ró}rum;~\gredagger{}
+  Deus autem dat illi corpus sicut vult, et unicuíque séminum próprium \textbf{cor}pus.
   Non omnis caro éadem caro, sed ália quidem hóminum, ália vero pécorum, ália vólucrum, ália autem \textbf{pís}cium:~\gredagger{}
-  Et córpora cæléstia, et córpo\textit{ra} \textit{ter}\textbf{rés}tria;~\grestar{}
-  sed ália quidem cæléstium glória, ália autem \textit{ter}\textbf{rés}trium.
-  Alia cláritas solis, ália cláritas lunæ, et ália clári\textit{tas} \textit{stel}\textbf{lá}rum;~\grestar{}
-  stella enim a stella differt in cla\textit{ri}\textbf{tá}te.
-  Sic et resurréctio mor\textit{tu}\textbf{ó}rum.
+  Et córpora cæléstia, et córpora ter\textbf{rés}tria;~\gredagger{}
+  sed ália quidem cæléstium glória, ália autem ter\textbf{rés}trium.
+  Alia cláritas solis, ália cláritas lunæ, et ália cláritas stel\textbf{lá}rum;~\gredagger{}
+  stella enim a stella differt in clari\textbf{tá}te.
+  Sic et resurréctio mortu\textbf{ó}rum.
   Seminátur in corruptióne, surget in incorrupti\textbf{ó}ne;~\gredagger{}
-  Seminátur in ignobilitáte, surget in glória; seminátur in infirmitáte, surget \textit{in} \textit{vir}\textbf{tú}te;~\grestar{}
-  Seminátur corpus animále, surget corpus spi\textit{ri}\textbf{tá}le.
-}{}{10cm}
-
-\tuAutem
+  Seminátur in ignobilitáte, surget in glória; seminátur in infirmitáte, surget in vir\textbf{tú}te;~\gredagger{}
+  Seminátur corpus animále, surget corpus \textbf{spi}ri\textbf{tá}le.
+}{\trMatLecVIIIa}{10cm}
 
 \vfill
-%\pagebreak
+\pagebreak
 
 \pars{Responsorium 8.} \scriptura{\Rbardot{} Cantor; \Vbardot{} Ps. 50, 4; \textbf{H392}}
 
 \vspace{-5mm}
 
-\responsorium{VIII}{temporalia/matresp8.gtex}{}
+\responsorium{VIII}{temporalia/matresp8.gtex}{\trMatRespVIII}
 
-%\vfill
+\vfill
 \pagebreak
 
-\cuminitiali{}{temporalia/benedictio-solemn-cujus-ipse.gtex}
+\pars{Lectio IX.} \scriptura{Iob 10, 18-22}
 
-\trMatBenedictioXI
+\textusEtTranslatio{
+  Quáre \textit{de} vulva edu\textit{xís}\textbf{ti} me?
+  qui útinam consúmptus essem, ne óculus me vi\textbf{dé}ret.
+  Fuíssem quasi non essem, de útero translátus ad \textbf{tú}mulum.
+  Numquid non páucitas \textit{di}érum meórum finié\textit{tur} \textbf{bre}vi?
+  dimítte ergo me, ut plangam páululum dolórem meum, ántequam \textbf{va}dam,~\gredagger{}
+  et non revértar, ad terram tenebrósam, et opértam mortis ca\textbf{lí}gine:~\gredagger{}
+  terram misériæ et tenebrárum, ubi umbra mortis et nullus ordo, sed sempitérnus \textbf{hor}ror in\textbf{há}bitat.
+}{\trMatLecIX}{10cm}
 
-\vfill
+\rubrica{In die Commemorationis Omnium Fidelium Defunctorum:}
 
-\pars{Lectio IX.} \scriptura{}
+\pars{Lectio IX.} \scriptura{1 Cor. 15, 51-58}
 
-%\textusEtTranslatio{
-%  Sed quid si servi in prima vigília \textit{neg}ligéntes \textit{ex}\textbf{ís}tunt?
-%  Prima quippe vigília primæ ætátis custó\textit{di}\textbf{a} est.
-%  Sed neque sic desperándum est, et a bono ópere \textit{ces}\textbf{sán}dum.
-%  Nam longanimitátis suæ patiéntiam insínuans Dóminus, \textbf{sub}dit:~\gredagger{}
-%  Et si vénerit in secúnda vigília, et si in tértia vigí\textit{lia} \textbf{vé}nerit,~\grestar{}
-%  et ita in\-vé\-ne\-rit, beáti sunt ser\textit{vi} \textbf{il}li.
-%  Prima quippe vigília primǽvum tempus est, id est pu\textit{e}\textbf{rí}tia.
-%  Secúnda, adolescéntia vel iuvéntus, quæ auctoritáte sacri eló\textit{quii} \textbf{u}num sunt,~\grestar{}
-%  dicénte Salomóne: Lætáre iúvenis in adolescénti\textit{a} \textbf{tu}a.
-%  Tértia autem, senéctus \textit{ac}\textbf{cí}pitur.
-%  Qui ergo vigiláre in prima vigília nóluit custódiat \textit{vel} \textit{se}\textbf{cún}dam,~\grestar{}
-%  ut qui convérti a pravitátibus suis in puerítia negléxit ad vias vitæ saltem in témpore iuventútis \textit{e}\textbf{ví}gilet.
-%  Et qui evigiláre in secúnda vigília nóluit tértiæ vigíliæ remédia \textit{non} \textit{a}\textbf{mít}tat,~\grestar{}
-%  ut qui in iuventúte ad vias vitæ non evígilat saltem in senectúte re\textit{si}\textbf{pís}cat.
-%  Pensáte, fratres charíssimi, quia conclúsit Dei píetas duríti\textit{am} \textbf{nos}tram.
-%  Non est iam quid homo excusatiónis \textit{in}\textbf{vé}niat.
-%  Deus despícitur, et exspéctat; contémni se vi\textit{det,} \textit{et} \textbf{ré}vocat;~\grestar{}
-%  iniúriam de contémptu suo súscipit, et tamen quandóque reverténtibus étiam prǽmia \textit{pro}\textbf{mít}tit.
-%  Sed nemo hanc eius longanimitátem négligat, quia tanto districtiórem iustítiam in iudí\textit{cio} \textbf{éx}iget,~\grestar{}
-%  quanto longiórem patiéntiam ante iudícium præ\textit{ro}\textbf{gá}vit.
-%  Hinc étenim Paulus dicit: \textit{Ig}nóras quóniam benígnitas Dei ad pœniténtiam te \textit{ad}\textbf{dú}cit?
-%  Tu autem secúndum durítiam tuam et cor impœ́nitens thesáurizas tibi iram in die iræ et revelatiónis iusti iudíci\textit{i} \textbf{De}i.
-%  Hinc Psalmísta ait: Deus iudex iustus, fortis, et \textit{lon}\textbf{gá}nimis.
-%  Dictúrus quippe longánimem, præ\textit{mísit} \textbf{ius}tum,~\grestar{}
-%  ut quem vides peccáta delinquéntium diu patiénter ferre, scias hunc étiam quandóque distrícte iu\textit{di}\textbf{cá}re.
-%  Hinc per quemdam sapiéntem dícitur: Altíssimus enim est páti\textit{ens} \textbf{réd}ditor.
-%  Pátiens enim rédditor dícitur, quia peccáta hóminum et pátitur \textit{et} \textbf{red}dit.
-%  Nam quos diu, ut convertántur, tólerat, non convérsos dúri\textit{us} \textbf{dam}nat.
-%  Ad excutiéndam vero mentis nostræ desídiam, étiam exterióra damna per similitúdinem ad médium \textit{dedu}\textbf{cún}tur,~\grestar{}
-%  ut per hæc ánimus ad sui custódiam sus\textit{ci}\textbf{té}tur.
-%  Nam dícitur: Hoc autem scitóte, quia si sciret paterfamílias qua hora fur veníret, vigi\textit{láret} \textbf{ú}tique,~\grestar{}
-%  et non síneret pérfodi do\textit{mum} \textbf{su}am.
-%  Ex qua præmíssa similitúdine étiam exhortátio subinfér\textit{tur,} \textit{cum} \textbf{dí}citur:~\grestar{}
-%  Et vos estóte paráti, quia qua hora non putátis Fílius hómi\textit{nis} \textbf{vé}niet.
-%  Nesciénte enim pat\-re\-fa\-mí\-li\-as fur domum pérfodit, quia dum a sui custódia spíritus \textbf{dor}mit,~\gredagger{}
-%  improvísa mors véniens carnis nostræ habitáculum irrúmpit, et eum quem dóminum domus invénerit dormi\textit{éntem} \textbf{ne}cat,~\grestar{}
-%  quia cum ventúra damna spíritus mínime prǽvidet, hunc mors ad supplícium nescién\textit{tem} \textbf{ra}pit.
-%  Furi autem resísteret, si vigiláret, quia ad\textit{véntum} \textbf{iú}dicis,~\grestar{}
-%  qui occúlte ánimam rapit, prǽcavens, ei pœniténdo occúrreret, ne impœ́nitens \textit{pe}\textbf{rí}ret.
-%}{\trMatLecXI}{10cm}
-
-\tuAutem
+\textusEtTranslatio{
+  Ecce mystérium vobis \textbf{di}co:~\gredagger{}
+  omnes quidem resurgémus, sed non omnes immu\textbf{tá}bimur.
+  In moménto, in ictu óculi, in novíssima tuba: canet enim \textbf{tu}ba,~\gredagger{}
+  et mórtui resúrgent incorrúpti: et nos immu\textbf{tá}bimur.
+  Opórtet enim corruptíbile hoc indúere incorrupti\textbf{ó}nem:~\gredagger{}
+  et mortále hoc indúere immortali\textbf{tá}tem.
+  Cum autem mortále hoc indúerit immortalitátem, tunc fiet sermo, qui \textbf{scrip}tus est:~\gredagger{}
+  Absórpta est mors in vic\textbf{tó}ria.
+  \textit{U}bi est mors victóri\textit{a} \textbf{tu}a?
+  \textit{u}bi est mors stímu\textit{lus} \textbf{tu}us?
+  Stímulus autem mortis peccátum est: virtus vero pec\textbf{cá}ti lex.
+  Deo autem \textbf{grá}tias,~\gredagger{}
+  qui dedit nobis victóriam per Dóminum nostrum Iesum \textbf{Chris}tum.
+  Itaque fratres mei dilécti, stábiles estóte, et im\textbf{mó}biles:~\gredagger{}
+  abundántes in ópere Dómini semper, sciéntes quod labor vester non est in\textbf{á}nis in \textbf{Dó}mino.
+}{\trMatLecIXa}{10cm}
 
 \vfill
-%\pagebreak
+\pagebreak
 
-\pars{Responsorium 9.} \scriptura{\textbf{H392}}
+\rubrica{Sequens Responsorium tunc ponitur, quando tertius tantum Nocturnus dictus fuerit pro Defunctis.}
+
+\pars{Responsorium 9.} \scriptura{\Rbardot{} Ioel 3, 16; \Vbardot{} Cantor; \textbf{H392}}
 
 \vspace{-5mm}
 
-\responsorium{I}{temporalia/matresp9.gtex}{}
-
-%\vfill
-\pagebreak
-
-\cuminitiali{}{temporalia/benedictio-solemn-adsocietatem.gtex}
-
-\trMatBenedictioXII
+\responsorium{I}{temporalia/matresp10.gtex}{\trMatRespX}
 
 \vfill
 
-\pars{Lectio IX.} \scriptura{}
+\rubrica{Sequens Responsorium ponitur loco præcedentis, quando dicti fuerint pro Defunctis tres Nocturni.}
 
-%\textusEtTranslatio{
-%  Horam vero últimam Dóminus noster idcírco vóluit nobis esse in\textbf{cóg}nitam,~\gredagger{}
-%  ut semper possit esse suspécta, ut dum illam prævidé\textit{re} \textit{non} \textbf{pós}sumus,~\grestar{}
-%  ad illam sine intermissióne præ\textit{pa}\textbf{ré}mur.
-%  Proínde, fratres mei, in conditióne mortalitátis vestræ mentis ó\textit{culos} \textbf{fí}gite,~\grestar{}
-%  veniénti vos iúdici per fletus quotídie et laménta præ\textit{pa}\textbf{rá}te.
-%  Et cum certa mors máneat ómnibus, nolíte de temporális vitæ providéntia incérta co\textit{gi}\textbf{tá}re.
-%  Terrenárum rerum vos cura \textit{non} \textbf{ág}gravet.
-%  Quantislíbet enim auri et argénti mólibus \textit{circum}\textbf{dé}tur,~\grestar{}
-%  quibuslíbet pretiósis véstibus induátur caro, \textit{quid} est áliud \textit{quam} \textbf{ca}ro?
-%  Nolíte ergo atténdere quid habétis, sed \textit{quid} \textbf{es}tis.
-%  \textit{Vul}tis audíre \textit{quid} \textbf{es}tis?
-%  Prophéta índicat, dicens: Vere fenum \textit{est} \textbf{pó}pulus.
-%  Si enim fenum pópulus non est, \textit{u}bi sunt illi qui ea quæ hódie cólimus nobíscum transácto anno beáti Galli natalítia ce\-leb\-\textit{ra}\textbf{vé}runt?
-%  O quanta et quália de præséntis vitæ provisióne cogitábant, sed, subripiénte mortis ar\textbf{tí}culo,~\gredagger{}
-%  repénte in his quæ prævidére nolé\textit{bant} \textit{in}\textbf{vén}ti sunt,~\grestar{}
-%  et cuncta simul temporália quæ congregáta quasi stabíliter ténere videbántur a\textit{mi}\textbf{sé}runt.
-%  Si ergo transácta multitúdo géneris humáni per nativitátem víru\textit{it} \textit{in} \textbf{car}ne,~\grestar{}
-%  per mortem áruit in púlvere, vidélicet fe\textit{num} \textbf{fu}it.
-%  Quia ígitur moméntis suis horæ fúgiunt, ágite, frat\textit{res} \textit{cha}\textbf{rís}simi,~\grestar{}
-%  ut in boni óperis mercéde te\textit{ne}\textbf{án}tur.
-%  Audíte quid sápiens Sálomon dicat: Quodcúnque potest manus tua fácere, instánter \textit{ope}\textbf{rá}re,~\grestar{}
-%  quia nec opus, nec sciéntia, nec rátio, nec sapiéntia erunt apud ínferos, quo \textit{tu} \textbf{pró}peras.
-%  Quia ergo et ventúræ mortis tempus ignorámus, et post mortem operá\textit{ri} \textit{non} \textbf{pós}sumus,~\grestar{}
-%  súperest ut ante mortem témpora indúlta ra\textit{pi}\textbf{á}mus.
-%  Sic enim sic mors ipsa cum vénerit vincétur, si priúsquam véniat semper ti\textit{me}\textbf{á}tur.
-%}{\trMatLecXII}{10cm}
+\pars{Responsorium 9.} \scriptura{\Rbardot{} Ioel 3, 16; \Vbardot{} Cantor; \textbf{H392}}
 
-\tuAutem
+\vspace{-5mm}
 
-\vfill
-\pagebreak
-
-% Te Deum
-
-\pars{Hymnus Ambrosianus}
-
-{
-\grechangedim{interwordspacetext}{0.28 cm plus 0.15 cm minus 0.05 cm}{scalable}%
-\cuminitiali{III}{temporalia/tedeum-solemnis.gtex}
-\grechangedim{interwordspacetext}{0.32 cm plus 0.15 cm minus 0.05 cm}{scalable}%
-}
-
-\trTeDeum
-
-\vfill
-\pagebreak
-
-% Evangelium
-
-\cuminitiali{}{temporalia/tonus-evangelii-b.gtex}
-
-\vfill
-
-%\scriptura{Lc. 12, 35-40}
-
-%\noindent Léctio san\textit{cti} \textbf{E}van\textbf{gé}lii~\grestar{} secúndum \textbf{Lu}cam.
-
-%\textusEtTranslatio{
-%  \textit{In} \textbf{il}lo \textbf{tém}pore:~\grestar{}
-%  Dixit Jesus discípulis suis: Sint lumbi vestri præcíncti, et lucérnæ ardéntes \textit{in} \textbf{má}nibus \textbf{ves}tris,~\grestar{}
-%  et vos símiles homínibus exspectántibus dóminum suum, quando revertátur a núptiis: ut, cum vénerit, et pulsáverit, conféstim apériant \textbf{e}i.
-%  Beáti servi illi, quos cum vénerit dóminus, invéne\textit{rit} \textbf{vi}gi\textbf{lán}tes:~\grestar{}
-%  amen dico vobis, quod præcínget se, et fáciet illos discúmbere, et tránsiens ministrábit \textbf{il}lis.
-%  Et si vénerit in secúnda vigília, et si in tértia \textit{vi}\textbf{gí}lia \textbf{vé}nerit,~\grestar{}
-%  et ita invénerit, beáti sunt, beáti sunt servi \textbf{il}li.
-%  Hoc autem scitóte, quóniam si sciret \textit{pa}\textbf{ter}fa\textbf{mí}lias,~\grestar{}
-%  quia hora fur vénerit, vigiláret útique, et non síneret pérfodi domum \textbf{su}am.
-%  Et vos estúte paráti, quis qua hora non pu\textbf{tá}tis.
-%  \textbf{Fí}lius \textit{hó}minis \textbf{vé}niet.
-%}{\trMatEvangelium}{10cm}
-
-\vfill
-\cuminitiali{I}{temporalia/tedecetlaus.gtex}
-
-\trTeDecetLaus
-
-\vfill
-\pagebreak
-
-\sineinitiali{temporalia/domineexaudi.gtex}
-
-\vfill
-
-\pars{Oratio.}
-
-%\cuminitiali{}{temporalia/oratio.gtex}
-%\trOrationis
-
-\vfill
-
-\noindent \Vbardot{} Dómine, exáudi oratiónem meam.
-\Rbardot{} Et clamor meus ad te véniat.
-
-\vfill
-
-% Nocturnale Romanum 2002, p. LXXVI Benedicamus Domino seems to match
-% the one from Solemn Laudes.
-\cuminitiali{V}{temporalia/benedicamus-solemnis-laud.gtex}
-
-\vfill
-
-\noindent \Vbardot{} Fidélium ánimæ per misericórdiam Dei requiéscant in pace.
-\Rbardot{} Amen.
-
-\trFideliumAnimae
+\responsorium{I}{temporalia/matresp9.gtex}{\trMatRespIX}
 
 \vfill
 \pagebreak

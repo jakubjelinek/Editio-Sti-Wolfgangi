@@ -3,8 +3,9 @@ office-part: Antiphona;
 mode: 2;
 book: Nocturnale Romanum 2002, pg. [195]; H391;
 transcriber: Jakub Jelínek;
+nabc-lines: 1;
 %%
 (f3)
-COm(f)plá(f!gwh)ce(f)at(f) *()
-ti(f)bi,(f) Dó(fg)mi(f)ne,(f) ut(f) e(f)rí(f)pi(h)as(g) me:(f) (;)
-ad(g) ad(i)iu(hf)ván(hho)dum(gh) me(i) ré(hg)spi(f)ce.(f) (::)
+COm(f|vi)plá(f!gwh|viqlhi)ce(f|ta)at(f|ta) *()
+ti(f|ta)bi,(f|ta) Dó(fg|pe)mi(f|vi)ne,(f|vi) ut(f|vi) e(f|vi)rí(f|vi)pi(h|vihg)as(g|vihh) me:(f|ta) (;)
+ad(g|vihg) ad(i|vihh)iu(hf|clhg)ván(hho|vshg)dum(gh|peShg) me(i|vihg) ré(hg|cl)spi(f|ta)ce.(f|ta) (::)

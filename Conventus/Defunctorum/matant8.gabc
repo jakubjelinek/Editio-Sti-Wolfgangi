@@ -3,8 +3,9 @@ office-part: Antiphona;
 mode: 2;
 book: Nocturnale Romanum 2002, pg. [196]; H93;
 transcriber: Jakub Jelínek;
+nabc-lines: 1;
 %%
 (f3)
-SA(h)na,(g) Dó(h)mi(g)ne,(f) *()
-á(h)ni(h)mam(g) me(f)am,(f) (;)
-qui(f)a(e) pec(f)cá(h)vi(g) ti(f)bi.(f) (::)
+SA(h|vi)na,(g|ta) Dó(h|vihg)mi(g|vi)ne,(f|ta) *()
+á(h|vi)ni(h|vihg)mam(g|vi) me(f|ta)am,(f|ta) (;)
+qui(f|vi)a(e|ta) pec(f|vi)cá(h|vihg)vi(g|vi) ti(f|ta)bi.(f|ta) (::)

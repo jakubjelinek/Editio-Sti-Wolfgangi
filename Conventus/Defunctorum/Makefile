@@ -21,7 +21,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 5 6 7 22 24 26 39 40 41 50 62 64 114 119 120 129 137 148 149 150
+PSALMS = 5 6 7 22 24 26 39 40 41 50 62 64 114 119 120 129 137 145 148 149 150
 include tonus.mk
 MODUS-5 = vii-c
 MODUS-6 = viii-G
@@ -40,6 +40,7 @@ MODUS-119 = ii-D
 MODUS-120 = viii-G2
 MODUS-129 = viii-G
 MODUS-137 = ii-D
+MODUS-145 = dir
 MODUS-148 = vii-a
 MODUS-149 = vii-a
 MODUS-150 = vii-a
@@ -72,14 +73,14 @@ SCORES = $(addprefix vesp-ant,1 2 3 4 5) vesp-ant-magn \
 	 benedictio-noctemquietam jubedomnebenedicere lectiobrevis-fratressobrii \
 	 convertenosdeus deusinadiutorium-communis \
 	 oratio-visita benedicamus-minor ant-salveregina-simplex \
-	 oratiodominica-mat benedicamus-minor \
+	 oratiodominica-mat oratio requiescant benedicamus-minor \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) dominelabiamea \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus inunitate deus christus ignem acunctis \
 					evangelica ille cujus-ipse adsocietatem) \
-	 $(addprefix matant,1 2 3 4 5 6 7 8 9) $(addprefix matresp,1 2 3 4 5 6 7 8 9) \
-	 tedecetlaus tonus-evangelii-b tonus-lectionis-solemnis \
-	 $(addprefix venite6,a b c d e f) matinv-RegemCui \
-	 benedicamus-solemnis-laud tedeum-solemnis tuautem
+	 $(addprefix matant,1 2 3 4 5 6 7 8 9) $(addprefix matresp,1 2 3 4 5 6 7 8 9 10) \
+	 tedecetlaus tonus-evangelii-b tonus-lectionis-prophetiae \
+	 $(addprefix venite6,a b c d e f) $(addprefix matinv-RegemCu,i i3) \
+	 benedicamus-solemnis-laud ps26-initium-iv-E
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = #$(addprefix hym-,$(addsuffix -bohtext.tex,TeLucis NuncSancte RectorPotens RerumDeus \
 #						      VitaSanctorum IsteConfessor)) \
