@@ -1,10 +1,11 @@
 name: Exaudi Domine;
 office-part: Antiphona;
 mode: 8;
-book: The Liber Usualis, 1961, p. 1801; Antiphonale Monasticum, 1934, p. 1162;
+book: The Liber Usualis, 1961, p. 1801; Antiphonale Monasticum, 1934, p. 1162; H393;
 transcriber: Andrew Hinkley; Jakub Jelínek;
+nabc-lines: 1;
 %%
 (c4)
-EX(h)áu(g')di(f) Dó(g')mi(h)ne(g'_) *(,)
-o(h)ra(g')ti(f)ó(g')nem(h) me(j_k)am:(ji/jkj.) (;)
-ad(j) te(j) o(ji~)mnis(h) ca(j_h)ro(i') vé(g)ni(fg)et.(g.) (::)
+EX(h|vi)áu(g'|vi)di(f|ta) Dó(g'|vi)mi(h|vihh)ne(g'_|tahg) *(,)
+o(h|vihg)ra(g'|vihg)ti(f|ta)ó(g'|vi)nem(h|vihi) me(j_k|peS)am:(ji/jkj.|cltoS2hg) (;)
+ad(j|vi) te(j|vi) o(ji~|vi>)mnis(h|ta) ca(j_h|cl-)ro(i'|vihg) vé(g|vi)ni(fg|pe)et.(g.|ta) (::)

@@ -1,9 +1,14 @@
 name: Ego sum resurrectio;
 office-part: Antiphona;
 mode: 2;
-book: Graduale Romanum, 1961, p. 110* & Graduale Romanum, 1961, p. 111* & The Liber Usualis, 1961, p. 1770 & The Liber Usualis, 1961, p. 1804 & Chants of the Church, 1956, p. 75; Antiphonale Monasticum, 1934, p. 1166;
+book: Graduale Romanum, 1961, p. 110* & Graduale Romanum, 1961, p. 111* & The Liber Usualis, 1961, p. 1770 & The Liber Usualis, 1961, p. 1804 & Chants of the Church, 1956, p. 75; Antiphonale Monasticum, 1934, p. 1166; H393;
 transcriber: Andrew Hinkley; Jakub Jelínek;
+nabc-lines: 1;
 %%
 (f3)
-E(h)go(g_h) sum(f.) *()
-re(f)sur(f)ré(f')cti(e)o(f') et(h) vi(f_g)ta:(ffe.) (;) qui(h) cre(i_j)dit(i) in(h_i) me,(h.) (,) é(i')ti(h)am(h') si(h) mór(i')tu(h)us(g') fú(e)e(f)rit,(hg) vi(f.)vet:(f.) (:) et(h) o(ihi)mnis(f') qui(f) vi(h)vit(g') et(f) cre(h)dit(g') in(f) me,(e.) (;) non(f) mo(e)ri(f')é(h)tur(g_h) in(i) æ(hg)tér(f.)num.(f.) (::)
+E(h|vi)go(g_h|peS) sum(f.|ta) *()
+re(f|vi)sur(f|ta)ré(f'|vi)cti(e|ta)o(f'|vi) et(h|vi) vi(f_g|peS)ta:(ffe.|pr) (;)
+qui(h|ta) cre(i_j|peS)dit(i|peS) in(h_i|pe>1) me,(h.|ta) (,)
+é(i'|vi)ti(h|ta)am(h'|ta) si(h|tahe) mór(i'|vihg)tu(h|vi)us(g'|ta) fú(e|clhg)e(f|vihg)rit,(hg|clhg) vi(f.|ta)vet:(f.|ta) (:)
+et(h|ta) o(ihi|vs>)mnis(f'|ta) qui(f|ta) vi(h)vit(g') et(f) cre(h|vi-)dit(g'|cl) in(f|pe>1) me,(e.|ta) (;)
+non(f|vi) mo(e|ta)ri(f'|vi)é(h|vi-hhpehi)tur(g_h|cl) in(i|vi) æ(hg|cl)tér(f.|ta)num.(f.|ta) (::)

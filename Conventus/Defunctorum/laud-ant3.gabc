@@ -1,9 +1,10 @@
 name: Me suscepit;
 office-part: Antiphona;
 mode: 7;
-book: The Liber Usualis, 1961, p. 1802; Antiphonale Monasticum, 1934, p. 1163;
+book: The Liber Usualis, 1961, p. 1802; Antiphonale Monasticum, 1934, p. 1163; H393;
 transcriber: Andrew Hinkley; Jakub Jelínek;
+nabc-lines: 1;
 %%
-(c3)
-ME(i') su(g)scé(i_/jki)pit(i.) *(,)
-déx(i)te(i)ra(g) tu(h')a,(f) Dó(g)mi(f)ne.(e.) (::)
+(c4)
+ME(g'|vi) su(e|ta)scé(g_/hig|vito-1hi)pit(g.|ta) *(,)
+déx(g|ta)te(g|vi)ra(e|ta) tu(f'|vihg)a,(d|vi) Dó(e|ta)mi(d|ta)ne.(c.|ta) (::)
