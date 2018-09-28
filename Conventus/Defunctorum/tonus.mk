@@ -62,3 +62,4 @@ TONUS-viiisoll-G2 = 1 3 1 2
 TONUS-viiisoll-C = 1 3 1 2
 TONUS-per = 1 3 1 1
 TONUS-dir = 1 2 0 0
+TONUS-defunct = 1 0 1 1

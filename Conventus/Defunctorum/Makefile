@@ -21,7 +21,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 5 6 7 22 24 26 39 40 41 50 62 64 114 119 120 129 129d 137 145 148 149 150
+PSALMS = 5 6 7 22 24 26 37i 37ii 39 40 41 50 55 62 64 69 84 85 101i 101ii 101iii 114 119 120 122 129 129d 137 141 142 145 148 149 150
 include tonus.mk
 MODUS-5 = vii-c
 MODUS-6 = viii-G
@@ -29,29 +29,42 @@ MODUS-7 = viii-G
 MODUS-22 = viii-G
 MODUS-24 = viii-G
 MODUS-26 = iv-E
+MODUS-37i = defunct
+MODUS-37ii = defunct
 MODUS-39 = ii-D
 MODUS-40 = ii-D
 MODUS-41 = ii-D
 MODUS-50 = i-f
+MODUS-55 = defunct
 MODUS-62 = vii-C
 MODUS-64 = viii-G
+MODUS-69 = defunct
+MODUS-84 = defunct
+MODUS-85 = defunct
+MODUS-101i = defunct
+MODUS-101ii = defunct
+MODUS-101iii = defunct
 MODUS-114 = iii-b
 MODUS-119 = ii-D
 MODUS-120 = viii-G2
+MODUS-122 = defunct
 MODUS-129 = viii-G
 MODUS-129d = dir
 MODUS-137 = ii-D
+MODUS-141 = defunct
+MODUS-142 = defunct
 MODUS-145 = dir
 MODUS-148 = vii-a
 MODUS-149 = vii-a
 MODUS-150 = vii-a
 MODUS-benedictus = iisoll-D
 MODUS-magnificat = viisoll-c
+MODUS-nuncdimittis = defunct
 MODUS-ezechiae = ii-D
-MODUSLIST = $(sort $(foreach P,$(PSALMS) benedictus magnificat ezechiae,$(MODUS-$(P))))
+MODUSLIST = $(sort $(foreach P,$(PSALMS) benedictus magnificat nuncdimittis ezechiae,$(MODUS-$(P))))
 CZPSALMOPTS = --accents 0:0 --title-pattern " " --no-paragraph
 CZPSALMS = $(patsubst %,$(TMP_DIR)/ps%-boh.tex,$(filter-out 129d,$(PSALMS)))
-ALLCZPSALMS = $(CZPSALMS) $(patsubst %,$(TMP_DIR)/%-boh.tex,benedictus magnificat ezechiae ps129d)
+ALLCZPSALMS = $(CZPSALMS) $(patsubst %,$(TMP_DIR)/%-boh.tex,benedictus magnificat nuncdimittis ezechiae ps129d)
 ALLCOMBPSALMS = $(patsubst $(TMP_DIR)/%-boh.tex,$(TMP_DIR)/%-comb.tex,$(ALLCZPSALMS))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
 	   && $(SED) -i -e 's/\*/\\grestar{}/g' $@
@@ -63,7 +76,7 @@ LAPSALMOPTSACC = --accents $(word 1,$(TONUS)):$(word 3,$(TONUS)) \
 		 --preparatory-syllables $(word 2,$(TONUS)):$(word 4,$(TONUS))
 LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(filter-out 129d,$(PSALMS)))
-LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,benedictus magnificat ezechiae)
+LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,benedictus magnificat nuncdimittis ezechiae)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA) $(patsubst %,$(TMP_DIR)/%.tex,ps129d)
 SCORES = $(addprefix vesp-ant,1 2 3 4 5) vesp-ant-magn \
 	 $(addprefix laud-ant,1 2 3 4 5) laud-ant-ben \
@@ -115,7 +128,7 @@ $(TMP_DIR)/ps129d-boh.tex: $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/p
 	$(GENPSALM)
 $(CZPSALMS) $(patsubst %,$(TMP_DIR)/%-boh.tex,benedictus ezechiae): $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/%.pslm
 	$(GENPSALM)
-$(patsubst %,$(TMP_DIR)/%-boh.tex, magnificat): $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/DMC199x/%.pslm
+$(patsubst %,$(TMP_DIR)/%-boh.tex, magnificat nuncdimittis): $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/DMC199x/%.pslm
 	$(GENPSALM)
 $(LAPSALMS): $(TMP_DIR)/ps%.tex: $(PSALMS_DIR)/ps%.pslm
 	$(GENPSALM)
