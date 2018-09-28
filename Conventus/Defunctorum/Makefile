@@ -87,7 +87,7 @@ SCORES = $(addprefix vesp-ant,1 2 3 4 5) vesp-ant-magn \
 	 benedictio-noctemquietam jubedomnebenedicere lectiobrevis-fratressobrii \
 	 convertenosdeus deusinadiutorium-communis \
 	 oratio-visita benedicamus-minor ant-salveregina-simplex \
-	 oratiodominica-mat oratio oratio-compl requiescant benedicamus-minor \
+	 oratiodominica-mat oratio oratio-compl oratio-fidelium requiescant benedicamus-minor \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) dominelabiamea \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus inunitate deus christus ignem acunctis \
 					evangelica ille cujus-ipse adsocietatem) \
