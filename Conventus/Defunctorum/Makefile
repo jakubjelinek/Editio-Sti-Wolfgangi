@@ -87,7 +87,7 @@ SCORES = $(addprefix vesp-ant,1 2 3 4 5) vesp-ant-magn \
 	 benedictio-noctemquietam jubedomnebenedicere lectiobrevis-fratressobrii \
 	 convertenosdeus deusinadiutorium-communis \
 	 oratio-visita benedicamus-minor ant-salveregina-simplex \
-	 oratiodominica-mat oratio requiescant benedicamus-minor \
+	 oratiodominica-mat oratio oratio-compl requiescant benedicamus-minor \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) dominelabiamea \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus inunitate deus christus ignem acunctis \
 					evangelica ille cujus-ipse adsocietatem) \
@@ -100,7 +100,7 @@ OTHERDEPS = #$(addprefix hym-,$(addsuffix -bohtext.tex,TeLucis NuncSancte Rector
 #						      VitaSanctorum IsteConfessor)) \
 #	    $(TMP_DIR)/communio-versus-Exaudi-comb.tex
 LAPSALMSINITGABC = $(foreach P,$(filter-out 129d 118vi 118vii 118ix 118x 118xii 118xiii,$(PSALMS)),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
-		   $(foreach P,benedictus ezechiae,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc) \
+		   $(foreach P,benedictus nuncdimittis ezechiae,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(TMP_DIR)/ps129-initium-$(MODUS-129d)-auto.gabc
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PSALMTONES_DIR)/$(2)-auto.gabc; \
