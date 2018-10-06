@@ -3,16 +3,17 @@ office-part: Responsorium;
 mode: 6;
 book: Nocturnale Romanum 2002, p. [194]; H391;
 transcriber: Jakub Jelínek;
+nabc-lines: 1;
 %%
 (c4)
-NE(dc) re(f)cor(fgohv)dé(hg/gof/g)ris(gf) *(,)
-pec(fd)cá(f)ta(ixgi) me(ixhiHG)a,(i)
-Dó(ixhvjvIG)mi(f)ne,(ixg/hiHGffoe/fhg/gof) +(:)
-Dum(fh~) vé(h)ne(gh)ris(f) iu(h)di(gh)cá(f)re(fd/fvvge/fgFDed/doc) (;)
-sǽ(CDewf!gv)cu(ixg!hgh!iv/ioh)lum(h) per(ixhjHGhwiHG) i(FGhvGFg)gnem.(gf) <sp>V/</sp>.(::)
-Dí(fgOhv)ri(h)ge,(ixihivHGhg) Dó(ixh!iwj!kv)mi(j)ne(jh) De(ixi)us(gh) me(f!gwhg)us,(gf) (;)
-in(f) con(df)spéc(fg)tu(f) tu(f)o(f) vi(fe)am(fgOhv) me(ixig!hwiHG)am.(ghGFgf) +(::)
-Dum.(fh~) <sp>V/</sp>.(::)
+NE(dc|cl) re(f|vi)cor(fgohv|sa)dé(hg/gof/g|clpihgvihi)ris(gf|cl) *(,)
+pec(fd|clM)cá(f|vi)ta(ixgi|/pe) me(ixhiHG|/pe-1su2)a,(i|vi)
+Dó(ixhvjvIG|vi-cihi)mi(f|ta)ne,(ixg/hiHGffoe/fhg/gof|/tapesu2pihgtoShhpihj) +(:)
+Dum(fh~|ta) vé(h|vi)ne(gh|pehg)ris(f|ta) iu(h|vi)di(gh|pe)cá(f|cl)re(fd/fvvge/fgFDed/doc|bv-clhhpeShhsu2clhhpihi) (;)
+sǽ(CDewf!gv|ql-ppt2vi-hh)cu(ixg!hgh!iv/ioh|/trvshh)lum(h|ta) per(ixhjHGhwiHG|/pe-1sut2ql-hhpp2) i(FGhvGFg|vi-ppt2su2vihh)gnem.(gf|cl-) <sp>V/</sp>.(::)
+Dí(fgOhv|sa)ri(h|vi)ge,(ixihivHGhg|/cl-ci-cl) Dó(ixh!iwj!kv|/viqihivihl)mi(j|vi)ne(jh|cl) De(ixi|/vi)us(gh|pe) me(f!gwhg|qi!clppt1)us,(gf|cl) (;)
+in(f|vi) con(df|pe)spéc(fg|pe)tu(f|ta) tu(f|ta)o(f|to) vi(fe|cl)am(fgOhv|sa) me(ixig!hwiHG|/clql-hgsu2)am.(ghGFgf|peSsu2cl) +(::)
+Dum.(fh~|ta) <sp>V/</sp>.(::)
 Ré(fgOhv)qui(h)em(ixihivHGhg) æ(ixi)tér(h!iwj!k>)nam(j) do(ixj)na(jIH) e(ixi)is,(ghg) Dó(fe)mi(gh)ne:(gf) (;)
 et(f) lux(df) per(f)pé(fg)tu(f)a(f) lú(f)ce(fe)at(fgOhv) e(ixig!hwiHG)is.(ghGFgf) +(::)
 Dum.(fh~) (::)

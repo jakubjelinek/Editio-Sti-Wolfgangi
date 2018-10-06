@@ -3,14 +3,16 @@ office-part: Responsorium;
 mode: 8;
 book: Nocturnale Romanum 2002, p. [186]; H390;
 transcriber: Jakub Jelínek;
+nabc-lines: 1;
 %%
 (c4)
-CRe(gj)do(j) *()
-quod(j) Red(j)émp(j)tor(hj~) me(jh)us(i!jwkJIHiwjIH) vi(GHivHGh)vit,(hg) (;)
-et(hf) in(g) no(h)vís(-hjij)si(h)mo(hfh) di(h!iwjiHGh)e(hg) (,)
-de(f) ter(ghg/hi~)ra(h) sur(j)rec(jk)tú(ki/kjIHG)rus(h/jg/hg) sum,(f) +(:)
-Et(f) in(h) car(jjk~)ne(j) me(ki~jwkjk)a(kj) vi(j)dé(ji/jh)bo(j) De(ji/jkh/hO1g)um(GHiwjg/h/ggO1f) (;)
-Sal(h>)va(jk)tó(jijvIHijo)rem(i!jwkJIHiwjIH>) me(GHivHGh)um.(hg) <sp>V/</sp>.(::)
-Quem(j) vi(j)sú(j)rus(ji) sum(jkj/iji/hhO1g) e(hi)go(ih) ip(ij)se,(ih) et(ij) non(hi) á(g)li(g!hwih)us(hg); (;)
-et(g) ó(fg)cu(g)li(g) me(gh)i(g) con(hiHGhih)spec(ghf)tú(gh)ri(h!iwji/jkjIH) sunt.(ghGFgf) +(::)
-Et.(f) (::)
+CRe(gj|peS)do(j|vi) *()
+quod(j|vi) Red(j|vi)émp(j|vi)tor(hj~|ta>) me(jh|cl-)us(i!jwkJIHiwjIH|qi-ppt1sut3qi-hhsu2) vi(GHivHGh|vi-pp2su2vihh)vit,(hg|cl-) (;)
+et(hf|cllsc3) in(g|vi) no(h|vi)vís(-hjij|tr)si(h|ta)mo(hfh|po) di(h!iwjiHGh|ql!vsppt1su2vihh)e(hg|ql-) (,)
+% FIXME: add clSsuu1su2 glyph
+de(f|ta) ter(ghg/hi~|ta>)ra(h|vi-hg) sur(j|vi)rec(jk|pe)tú(ki/kjIHG|clhgclShhsuu1su2)rus(h/jg/hg|vi-pf-hh) sum,(f|ta) +(:)
+Et(f|ta) in(h|vi) car(jjk~|vi-ta>hg)ne(j|vi) me(ki~jwkjk|clql!po)a(kj|cl-) vi(j|vi)dé(ji/jh|pf1lsc2)bo(j|vi) De(ji/jkh/hO1g|cltoS2hgpihh)um(GHiwjg/h/ggO1f|qi!clppt2vihhprhh) (;)
+Sal(h>|vi>)va(jk|pe)tó(jijvIHijo|cl-ci-vs-)rem(i!jwkJIHiwjIH>|qi-ppt1sut3qi-hgsu1sux1) me(GHivHGh|vi-pp2su2vihh)um.(hg|cl-) <sp>V/</sp>.(::)
+Quem(j|vi) vi(j|vi)sú(j|vi)rus(ji|cl) sum(jkj/iji/hhO1g|to-1to-1pi) e(hi|pe)go(ih|cl) ip(ij|pe)se,(ih|cl) et(ij|pq) non(hi|pe) á(g|ta)li(g!hwih|qihg!clhgppt1)us(hg|cl-); (;)
+et(g|vi) ó(fg|pe)cu(g|ta)li(g|ta) me(gh|pe)i(g|ta) con(hiHGhih|pe-su2to)spec(ghf|to)tú(gh|peS)ri(h!iwji/jkjIH|ql!clppt1toS3su2) sunt.(ghGFgf|pe-1su2cl-) +(::)
+Et.(f|ta) (::)

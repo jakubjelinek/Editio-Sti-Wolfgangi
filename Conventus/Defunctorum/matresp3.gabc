@@ -3,19 +3,20 @@ office-part: Responsorium;
 mode: 1;
 book: Nocturnale Romanum 2002, p. [188]; H390;
 transcriber: Jakub Jelínek;
+nabc-lines: 1;
 %%
 (c4)
-DO(g)mi(fe!fwgfg)ne,(gf) *()
-quan(g>)do(fe!fwg) vé(f)ne(dfEC)ris(c) (;)
-iu(ghf)di(h)cá(hjIH)re(ih) ter(ghg)ram,(g) (:)
-u(jk)bi(ji!jwkj/ji>) me(h) abs(jk)cón(ki/jkh/ihg~)dam(hg) a(f) vul(hih)tu(hg)
-i(jvv)ræ(kjijvIHG) tu(hghvGFg)æ(gf)? +(;)
-Qui(f)a(g!hgh) pec(hjhio!jv)cá(g)vi(ge/fe/fgf/eeod/e) in(ghggf~) vi(g)ta(GHiwjIHiwjIH)
-me(GHivHGh)a.(hg) <sp>V/</sp>.(::)
-Com(j)mís(j)sa(j) me(ji)a,(jkj/iji/hhog) Dó(hi)mi(i)ne,(i)
-pa(ih)vés(ij)co,(i) et(i) an(ij~)te(i) te(ih) e(ij)ru(hi)bés(g!hwih)co:(hg) (;)
-dum(g) vé(fg)ne(g)ris(g) iu(g)di(g)cá(gh)re,(g) no(g)li(g) me(hiHGhih)
-con(ghf)dem(gh)ná(h!iwji/jkjIH)re.(hiHGhg) +(::)
+DO(g|vi)mi(fe!fwgfg|clqihg!pohg)ne,(gf|cl-) *()
+quan(g>|vi>)do(fe!fwg|cl-qi) vé(f|vi)ne(dfEC|pe-1su2)ris(c|ta) (;)
+iu(ghf|to)di(h|vi)cá(hjIH|pe-1sut2)re(ih|cl-) ter(ghg|toS)ram,(g|ta) (:)
+u(jk|peS)bi(ji!jwkj/ji>|cl-ql!cl!cl>) me(h|ta) abs(jk|peS)cón(ki/jkh/ihg~|clto-1hgcl>hg)dam(hg|cl-) a(f|ta) vul(hih|to>)tu(hg|ta)
+i(jvv|bv-)ræ(kjijvIHG|clSsut1vi-hgsuu1su2) tu(hghvGFg|clci-hg)æ?(gf|cl-) +(;)
+Qui(f|`talse4)a(g!hgh|tr) pec(hjhio!jv|topq)cá(g|vi)vi(ge/fe/fgf/eeod/e|pftoShhpihivihj) in(ghggf~|`toSlsl4toShh) vi(g|vi)ta(GHiwjIHiwjIH|ql-ppt2su1sut1ql-hhsu2)
+me(GHivHGh|vi-pp2su2vihh)a.(hg|cl-) <sp>V/</sp>.(::)
+Com(j|vi)mís(j|vi)sa(j|vi) me(ji|cl)a,(jkj/iji/hhog|totopr) Dó(hi|pe)mi(i|vi)ne,(i|vi)
+pa(ih|cl)vés(ij|pe)co,(i|ta) et(i|tahg) an(ij~|ta>)te(i|cl) te(ih|cl) e(ij|pe)ru(hi|pe)bés(g!hwih|qi!clppt1)co:(hg|cl-) (;)
+dum(g|vi) vé(fg|pe)ne(g|ta)ris(g|ta) iu(g|ta)di(g|ta)cá(gh|peS)re,(g|ta) no(g|ta)li(g|ta) me(hiHGhih|pe-1su2tohg)
+con(ghf|pe>)dem(gh|peS)ná(h!iwji/jkjIH|ql!clppt1toS2hhsu2)re.(hiHGhg|pe-1su2clS) +(::)
 Qui(f)a.(g!hgh) <sp>V/</sp>.(::)
 Ré(j)qui(ji)em(jkj/iji/hhog) æ(ih)tér(ij)nam(i) do(i)na(ih) e(ij)is,(hi)
 Dó(g)mi(g!hwih)ne:(hg) (;)

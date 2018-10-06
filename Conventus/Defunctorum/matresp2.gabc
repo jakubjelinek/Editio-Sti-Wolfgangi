@@ -3,14 +3,15 @@ office-part: Responsorium;
 mode: 4;
 book: Nocturnale Romanum 2002, p. [187]; H390;
 transcriber: Jakub Jelínek;
+nabc-lines: 1;
 %%
 (c4)
-QUi(d) Lá(fvEDefo)za(e)rum(egfss) *()
-re(fd)su(ef)sci(g)tás(hghiv)ti(h) a(dh~) mo(g)nu(hg)mén(hhgh>)to(EFhvGFghg)
-fœ́(e)ti(egffv)dum,(fe) +(:)
-Tu(h) e(ge)is,(fg) Dó(g/hgh)mi(f/foe/f)ne,(fe) (,)
-do(g)na(f) ré(fsss)qui(DFhvFEf)em,(eeof>) (;)
-et(c!df~) lo(eeofv)cum(ed) in(f)dul(FGhvig/hg>)gén(e)ti(egffv)æ.(fe) <sp>V/</sp>.(::)
+QUi(d|ta) Lá(fvEDefo|ci-vs-)za(e|ta)rum(egfss|pe-ds-to) *()
+re(fd|cllsc3)su(ef|peS)sci(g|vi)tás(hghiv|povihi)ti(h|vi) a(dh~|ta>) mo(g|ta)nu(hg|cllsc3)mén(hhgh>|vipo>)to(EFhvGFghg|vipp2su2tohh)
+fœ́(e|ta)ti(egffv|tosthg)dum,(fe|cl-) +(:)
+Tu(h|vi) e(ge|cllsc3)is,(fg|pehg) Dó(g/hgh|trG)mi(f/foe/f|pr-vihh)ne,(fe|cl-) (,)
+do(g|vi)na(f|ta) ré(fsss|ts)qui(DFhvFEf|vi-pp2su2vihh)em,(eeof>|sa!cl) (;)
+et(c!df~|ta>) lo(eeofv|sa)cum(ed|cl-) in(f|vi)dul(FGhvig/hg>|sa-1clhhcl>hh)gén(e|ta)ti(egffv|tosthg)æ.(fe|cl-) <sp>V/</sp>.(::)
 Qui(h) ven(h)tú(h)rus(gf!gwhghvGEfe) es(g) iu(g)di(g)cá(gh)re(g)
 vi(gf)vos(gh) et(gf) mór(e)tu(e!fwgf)os,(fe) (;)
 et(f) sǽ(de)cu(e!fwgFE)lum(g) per(ghghvGF) i(EFgef)gnem.(ed) +(:)
