@@ -3,19 +3,20 @@ office-part: Responsorium;
 mode: 1;
 book: Nocturnale Romanum 2002, p. [201]; H392;
 transcriber: Jakub Jelínek;
+nabc-lines: 1;
 %%
 (c4)
-LI(d)be(dc)ra(d) me,(f) Dó(ed/ffod)mi(cd)ne,(d) *()
-de(efOgv) mor(hg)t<e>e</e> æ(df)tér(ed/ffod)na,(d) (;)
-in(dec~) di(d)e(dg) il(gh>)lo(gffe) tre(dc)mén(dfec~)do:(dc) +(:)
-Quan(cd~)do(d) cœ(DEfogv)li(gffe) mo(ixeg/hig)vén(f)di(ef) sunt(d) et(fvvEDdo>) ter(CDfe~)ra:(d) <v>\ddag</v>(:)
+LI(d|vi-)be(dc|cl)ra(d|vi) me,(f|vi) Dó(ed/ffod|cl-hgprhh)mi(cd|pe)ne,(d|vi) *()
+de(efOgv|sapp1) mor(hg|vi>)t<e>e</e> æ(df|peS)tér(ed/ffod|cl-prhg)na,(d|ta) (;)
+in(dec~|pe>1) di(d|vi)e(dg|vi) il(gh>|pe>1)lo(gffe|pf) tre(dc|cl)mén(dfec~|to>2)do:(dc|cl) +(:)
+Quan(cd~|ta>)do(d|vi-) cœ(DEfogv|sapp1)li(gffe|pf-) mo(ixeg/hig|/peStohi)vén(f|vi)di(ef|pe) sunt(d|ta) et(fvvEDdo>|vi-`ci-or) ter(CDfe~|vi>pp2)ra:(d|ta) <v>\ddag</v>(:)
 Dum(h>) vé(ixhg/hf/g~hwigfvED)ne(ed)ris(d) iu(h)di(hg)cá(hvjvIG)re(ghGFED) sǽ(EFgefe)cu(cd)lum(d) per(cfe/fg~) i(gc/d~!ewf)gnem.(ed) <sp>V/</sp>.(::)
-Tre(f)mens(f) fac(f)tus(e) sum(d) e(e)go,(d) et(dc~) tí(d~ewfe)me(dc)o,(c) (;)
-dum(cfe~) dis(f)cús(g)si(f)o(f) vé(f)ne(ed)rit,(d) at(de/do>)que(c) ven(eg~)tú(ge)ra(fe) i(cd)ra.(d) +(::)
-Quan(cd~)do.(d) <sp>V/</sp>.(::)
-Di(f)es(f) il(f>)la,(d) di(e)es(dc) i(de)ræ,(d) ca(d)la(e)mi(f)tá(g)tis(gh)
-et(gf~) mi(d)sé(f)ri(gf)æ,(f) di(f)es(f) ma(f>)gna(d) et(fe) a(dc)má(d)ra(f) val(edc~)de.(d) <v>\ddag</v>(::)
+Tre(f|vi-)mens(f|vi-hh) fac(f|vihh)tus(e|vihi) sum(d|ta) e(e|vihg)go,(d|ta) et(dc~|vi>) tí(d~ewfe|ql!clppt1)me(dc|cl)o,(c|vi) (;)
+dum(cfe~|pe>) dis(f|vi)cús(g|vihg)si(f|vihh)o(f|vihh) vé(f|vi)ne(ed|cl)rit,(d|ta) at(de/do>|peSorhh)que(c|ta) ven(eg~|ta>)tú(ge|cl)ra(fe|cl) i(cd|peS)ra.(d|ta) +(::)
+Quan(cd~|ta>)do.(d|vi-) <sp>V/</sp>.(::)
+Di(f|vi)es(f|vihg) il(f>|vi>)la,(d|ta) di(e|vihh)es(dc|clhg) i(de|peS)ræ,(d|ta) ca(d|ta)la(e|vi)mi(f|vi)tá(g|vi)tis(gh|pe)
+et(gf~|vi>) mi(d|ta)sé(f|vihg)ri(gf|cl)æ,(f|ta) di(f|vi)es(f|vi) ma(f>|vi>)gna(d|ta) et(fe|cl) a(dc|cl)má(d|ta)ra(f|vi) val(edc~|cl>)de.(d|ta) <v>\ddag</v>(::)
 Dum.(h>) <sp>V/</sp>.(::)
 Ré(f)qui(f)em(f) æ(d)tér(e)nam(d) do(d)na(e) e(f)is,(g) Dó(gf)mi(dc)ne:(c) (;)
 et(eg~) lux(hg) per(f)pé(g)tu(fe)a(d) lú(dc)ce(e)at(fe) e(d)is.(d) (::)
-Lí(d)be(dc)ra.(d) (::)
+Lí(d|vi-)be(dc|cl)ra.(d|vi) (::)
