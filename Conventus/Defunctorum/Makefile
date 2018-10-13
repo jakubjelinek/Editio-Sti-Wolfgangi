@@ -94,11 +94,9 @@ SCORES = $(addprefix vesp-ant,1 2 3 4 5) vesp-ant-magn \
 	 $(addprefix matant,1 2 3 4 5 6 7 8 9) $(addprefix matresp,1 2 3 4 5 6 7 8 9 10) \
 	 tedecetlaus tonus-evangelii-b tonus-lectionis-prophetiae \
 	 $(addprefix venite6,a b c d e f) $(addprefix matinv-RegemCu,i i3) \
-	 benedicamus-solemnis-laud ps26-initium-iv-E
+	 benedicamus-solemnis-laud ps26-initium-iv-E seq-DiesIrae
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = #$(addprefix hym-,$(addsuffix -bohtext.tex,TeLucis NuncSancte RectorPotens RerumDeus \
-#						      VitaSanctorum IsteConfessor)) \
-#	    $(TMP_DIR)/communio-versus-Exaudi-comb.tex
+OTHERDEPS = seq-DiesIrae-bohtext.tex
 LAPSALMSINITGABC = $(foreach P,$(filter-out 129d 118vi 118vii 118ix 118x 118xii 118xiii,$(PSALMS)),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,benedictus nuncdimittis ezechiae,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(TMP_DIR)/ps129-initium-$(MODUS-129d)-auto.gabc
