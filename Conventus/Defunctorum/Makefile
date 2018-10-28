@@ -141,7 +141,7 @@ $(TMP_DIR)/ps129d.tex: $(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps129.pslm
 $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
 	$(GENPSCOMB)
 $(TMP_DIR)/magnificat-comb.tex: PSSKIP = 2
-defunctorum.pdf: defunctorum.tex conventuscommune.tex translationes_cs.tex \
+defunctorum.pdf: defunctorum.tex conventuscommune.tex translationes_cs.tex defunctorum.png torcello.jpg \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
