@@ -135,7 +135,9 @@ $(LAPSALMS): $(TMP_DIR)/ps%.tex: $(PSALMS_DIR)/ps%.pslm
 $(LAPSALMSEXTRA): $(TMP_DIR)/%.tex: $(PSALMS_DIR)/%.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
-$(TMP_DIR)/ps129d.tex: $(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps129.pslm
+$(TMP_DIR)/ps129d.pslm: $(PSALMS_DIR)/ps129.pslm
+	$(CP) -a $< $@
+$(TMP_DIR)/ps129d.tex: $(TMP_DIR)/ps%.tex: $(TMP_DIR)/ps%.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
 $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
