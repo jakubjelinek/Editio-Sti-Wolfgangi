@@ -49,7 +49,9 @@ ALLCOMBTEXTS = $(patsubst %,$(TMP_DIR)/%-comb.tex,ritusrecipiendi \
 		 oratiofidelium oratiofidelium-2 exorcismus celebratio-baptismi \
 		 ritus-explanativi conclusio-ritus evangelium evangelium-initium)
 ALLFRCOMBTEXTS = $(patsubst %-comb.tex,%-combfr.tex,$(ALLCOMBTEXTS))
-ALLLATEXTS = $(patsubst %-comb.tex,%-parvula.tex,$(ALLCOMBTEXTS))
+ALLLAPARVULUSTEXTS = $(patsubst %-comb.tex,%-parvulus.tex,$(ALLCOMBTEXTS))
+ALLLAPARVULATEXTS = $(patsubst %-comb.tex,%-parvula.tex,$(ALLCOMBTEXTS))
+ALLLATEXTS = $(ALLLAPARVULUSTEXTS) $(ALLLAPARVULATEXTS)
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(4)/$(2)-auto.gabc; \
@@ -81,7 +83,9 @@ $(ALLCOMBTEXTS): $(TMP_DIR)/%-comb.tex: %.tex %-boh.tex
 $(ALLFRCOMBTEXTS): PSSKIP = 0
 $(ALLFRCOMBTEXTS): $(TMP_DIR)/%-combfr.tex: %.tex %-fra.tex
 	$(GENPSCOMB)
-$(ALLLATEXTS): $(TMP_DIR)/%-parvula.tex: %.tex
+$(ALLLAPARVULUSTEXTS): $(TMP_DIR)/%-parvulus.tex: %.tex
+	$(SED) -e 's/pro {\\color{red}N\.}/pro Angelo Benedícto-Ioseph/g;s/{\\color{red}N\.},/Angele Benedícte-Ioseph,/g;s/{\\color{red}N\.}/Angelus Benedíctus-Ioseph/g;s/Ioseph$$/Ioseph./' $< > $@
+$(ALLLAPARVULATEXTS): $(TMP_DIR)/%-parvula.tex: %.tex
 	$(SED) -e 's/{\\color{red}N\.}/Myrrha Liesse/g;s/Liesse$$/Liesse./' $< > $@
 $(TMP_DIR)/communio-versus-Confitemini-comb.tex: $(patsubst %,communio-versus-Confitemini%tex,. -boh.)
 	$(GENPSCOMB)

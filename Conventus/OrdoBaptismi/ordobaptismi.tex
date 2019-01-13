@@ -29,6 +29,8 @@
 \usepackage[savepos]{zref}
 \usepackage{calc}
 \usepackage{longtable}
+\newif\ifparvulus
+\parvulustrue
 
 \setlength{\headheight}{12pt}
 
@@ -103,8 +105,13 @@
 
 \vspace{0.5cm}
 
+\ifparvulus
+{\Large Angelus Benedictus-Ioseph Srovnal\\
+19. Ianuarii MMXIX}
+\else
 {\Large Myrrha Liesse Srovnalová\\
 18. Februarii MMXVII}
+\fi
 
 \vspace{1cm}
 
