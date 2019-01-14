@@ -32,6 +32,12 @@
 \newif\ifparvulus
 \parvulustrue
 
+\ifparvulus
+\newcommand{\parvulum}{parvulus}%
+\else
+\newcommand{\parvulum}{parvula}%
+\fi
+
 \setlength{\headheight}{12pt}
 
 \input{conventuscommune.tex} % Often used macros
@@ -128,11 +134,7 @@
 
 \pars{Ritus recipiendi parvulum}
 
-\ifparvulus
-{\bfseries \input{temporalia/ritusrecipiendi-parvulus.tex} }
-\else
-{\bfseries \input{temporalia/ritusrecipiendi-parvula.tex} }
-\fi
+{\bfseries \input{temporalia/ritusrecipiendi-\parvulum.tex} }
 
 \vfill
 \pagebreak
@@ -149,37 +151,21 @@
 
 \gresetnabcfont{grelaon}{8}
 
-\ifparvulus
-{\bfseries \input{temporalia/evangelium-initium-parvulus.tex}}
-\else
-{\bfseries \input{temporalia/evangelium-initium-parvula.tex}}
-\fi
+{\bfseries \input{temporalia/evangelium-initium-\parvulum.tex}}
 
 \noindent\pars{Léctio sancti Evángelii secúndum Ioánnem.} \scriptura{Io. 19, 38-42}
 
-\ifparvulus
-{\bfseries \input{temporalia/evangelium-parvulus.tex}
-\else
-{\bfseries \input{temporalia/evangelium-parvula.tex}
-\fi
+{\bfseries \input{temporalia/evangelium-\parvulum.tex}
 
 \vfill
 
 \noindent\pars{Oratio fidelium}
 
-\ifparvulus
-\input{temporalia/oratiofidelium-parvulus.tex}}
-\else
-\input{temporalia/oratiofidelium-parvula.tex}}
-\fi
+\input{temporalia/oratiofidelium-\parvulum.tex}}
 
 \sineinitiali{temporalia/terogamus.gtex}
 
-\ifparvulus
-{\bfseries \input{temporalia/oratiofidelium-2-parvulus.tex}}
-\else
-{\bfseries \input{temporalia/oratiofidelium-2-parvula.tex}}
-\fi
+{\bfseries \input{temporalia/oratiofidelium-2-\parvulum.tex}}
 
 \vspace{0.5cm}
 
@@ -194,31 +180,19 @@
 
 \pars{Oratio exorcismi et uncio præbaptismalis}
 
-\ifparvulus
-{\bfseries \input{temporalia/exorcismus-parvulus.tex}
-\else
-{\bfseries \input{temporalia/exorcismus-parvula.tex}
-\fi
+{\bfseries \input{temporalia/exorcismus-\parvulum.tex}
 
 \vspace{0.7cm}
 
 \pars{Celebratio baptismi}
 
-\ifparvulus
-\input{temporalia/celebratio-baptismi-parvulus.tex}
-\else
-\input{temporalia/celebratio-baptismi-parvula.tex}
-\fi
+\input{temporalia/celebratio-baptismi-\parvulum.tex}
 
 \vfill
 
 \pars{Ritus explanativi}
 
-\ifparvulus
-\input{temporalia/ritus-explanativi-parvulus.tex}}
-\else
-\input{temporalia/ritus-explanativi-parvula.tex}}
-\fi
+\input{temporalia/ritus-explanativi-\parvulum.tex}}
 
 \pars{Conclusio ritus}
 
@@ -228,11 +202,7 @@
 
 \antiphona{II}{temporalia/communio-OmnesQui.gtex}
 
-\ifparvulus
-{\bfseries \input{temporalia/conclusio-ritus-parvulus.tex}}
-\else
-{\bfseries \input{temporalia/conclusio-ritus-parvula.tex}}
-\fi
+{\bfseries \input{temporalia/conclusio-ritus-\parvulum.tex}}
 
 \vfill
 
