@@ -108,14 +108,6 @@
 {\LARGE ORDO BAPTISMI PARVULORUM}
 \end{center}
 
-%\pars{Antiphona ad introitum} \scriptura{Cf. Gal. 6, 14; Ps. 66, 2.3.4; \textbf{E188}}
-%
-%\vspace{-0.6cm}
-%
-%\antiphona{IV}{temporalia/introitus-NosAutemp.gtex}
-%
-%\trIntroitus
-
 \vfill
 
 \setlength{\parindent}{0pt}
@@ -151,11 +143,19 @@
 
 \gresetnabcfont{grelaon}{8}
 
-{\bfseries \input{temporalia/evangelium-initium-\parvulum.tex}}
+\ifparvulus
+{\bfseries \input{evangelium-initium-boh.tex}}
+
+\noindent\pars{Slova svatého Evangelia podle Marka.} \scriptura{Mk. 10, 13-16}
+
+{\bfseries \input{evangelium2-boh.tex}
+\else
+{\bfseries \input{evangelium-initium.tex}}
 
 \noindent\pars{Léctio sancti Evángelii secúndum Ioánnem.} \scriptura{Io. 19, 38-42}
 
-{\bfseries \input{temporalia/evangelium-\parvulum.tex}
+{\bfseries \input{evangelium.tex}
+\fi
 
 \vfill
 
@@ -172,6 +172,9 @@
 \sineinitiali{temporalia/litaniae.gtex}
 
 \begin{nstabbing}
+\ifparvulus
+\>Sancti Angeli \>\>\>\>\textbf{De}-\>\>i, \>orá-\>\>\textit{te} \>\textit{pro} \textbf{no}bis.\\
+\fi
 \>Sancte Ioánnes \>\>\>Ba-\textbf{ptí}-\>\>\>sta, \>\>o-\>\textit{ra} \>\textit{pro} \textbf{no}bis.\\
 \>Sancte \>\>\>\>\textbf{Io}-\>seph, \>\>\>o-\>\textit{ra} \>\textit{pro} \textbf{no}bis.\\
 \>Sancti Petre et \>\>\>\>\textbf{Pau}-\>\>le, \>orá-\>\>\textit{te} \>\textit{pro} \textbf{no}bis.\\
@@ -202,10 +205,19 @@
 
 \antiphona{II}{temporalia/communio-OmnesQui.gtex}
 
+\ifparvulus
+\scriptura{Ps. 28, 3}
+
+\initiumpsalmi{temporalia/communio-versus-Vox-initium.gtex}
+\fi
+
 {\bfseries \input{temporalia/conclusio-ritus-\parvulum.tex}}
 
 \vfill
 
+\ifparvulus
+\antiphona{}{temporalia/svatyvaclave.gtex}
+\else
 \antiphona{VI}{temporalia/alleluia.gtex}
 
 \scriptura{Ps. 117, 1-6}
@@ -213,6 +225,7 @@
 \initiumpsalmi{temporalia/communio-versus-Confitemini-initium.gtex}
 
 \input{communio-versus-Confitemini.tex}
+\fi
 
 \vfill
 

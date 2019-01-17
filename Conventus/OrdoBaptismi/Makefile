@@ -42,12 +42,13 @@ LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
 LAPSALMSEXTRA = 
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = litaniae introitus-Sitientes alleluia-DominusInSina communio-OmnesQui \
-	 alleluia communio-versus-Confitemini-initium terogamus
+	 alleluia communio-versus-Confitemini-initium terogamus svatyvaclave \
+	 communio-versus-Vox-initium
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(patsubst %,$(TMP_DIR)/communio-versus-Confitemini-%.tex,comb combfr)
 ALLCOMBTEXTS = $(patsubst %,$(TMP_DIR)/%-comb.tex,ritusrecipiendi \
 		 oratiofidelium oratiofidelium-2 exorcismus celebratio-baptismi \
-		 ritus-explanativi conclusio-ritus evangelium evangelium-initium)
+		 ritus-explanativi conclusio-ritus evangelium evangelium2 evangelium-initium)
 ALLFRCOMBTEXTS = $(patsubst %-comb.tex,%-combfr.tex,$(ALLCOMBTEXTS))
 ALLLAPARVULUSTEXTS = $(patsubst %-comb.tex,%-parvulus.tex,$(ALLCOMBTEXTS))
 ALLLAPARVULATEXTS = $(patsubst %-comb.tex,%-parvula.tex,$(ALLCOMBTEXTS))
@@ -63,7 +64,7 @@ endef
 iter-left := $(MODUSLIST)
 include $(iter)
 define iter-doit
-$(TMP_DIR)/%.gtex: $(i)/%.gabc ; $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' $$< | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
+$(TMP_DIR)/%.gtex: $(i)/%.gabc ; $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' $$< | $$(if $$(findstring svatyvaclave,$$@),cat,$(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td') | $(GREGORIO) -s -o $$@
 endef
 iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR)
 include $(iter)

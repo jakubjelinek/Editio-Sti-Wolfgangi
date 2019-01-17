@@ -168,11 +168,19 @@
 
 \vspace{-0.2cm}
 
+\ifparvulus
+\pars{Léctio sancti Evángelii secúndum Marcum.} \scriptura{Mc. 10, 13-16}
+
+\vspace{-0.2cm}
+
+\psalmusEtTranslatioT{temporalia/evangelium2-combfr.tex}{6cm}
+\else
 \pars{Léctio sancti Evángelii secúndum Ioánnem.} \scriptura{Io. 19, 38-42}
 
 \vspace{-0.2cm}
 
 \psalmusEtTranslatioT{temporalia/evangelium-combfr.tex}{6cm}
+\fi
 
 \vspace{-0.2cm}
 
@@ -189,6 +197,9 @@
 \sineinitiali{temporalia/litaniae.gtex}
 
 \begin{nstabbing}
+\ifparvulus
+\>Sancti Angeli \>\>\>\>\textbf{De}-\>\>i, \>orá-\>\>\textit{te} \>\textit{pro} \textbf{no}bis.\\
+\fi
 \>Sancte Ioánnes \>\>\>Ba-\textbf{ptí}-\>\>\>sta, \>\>o-\>\textit{ra} \>\textit{pro} \textbf{no}bis.\\
 \>Sancte \>\>\>\>\textbf{Io}-\>seph, \>\>\>o-\>\textit{ra} \>\textit{pro} \textbf{no}bis.\\
 \>Sancti Petre et \>\>\>\>\textbf{Pau}-\>\>le, \>orá-\>\>\textit{te} \>\textit{pro} \textbf{no}bis.\\
@@ -215,11 +226,19 @@
 
 \pars{\textsc{Conclusio ritus}}
 
+\vspace{-0.5cm}
+
 \scriptura{Gal. 3, 27; \textbf{L112}}
 
 \vspace{-0.6cm}
 
 \antiphona{II}{temporalia/communio-OmnesQui.gtex}
+
+\ifparvulus
+\scriptura{Ps. 28, 3}
+
+\initiumpsalmi{temporalia/communio-versus-Vox-initium.gtex}
+\fi
 
 \trCommunio
 
@@ -231,6 +250,10 @@
 
 \vspace{-0.3cm}
 
+\ifparvulus
+\vspace{-0.3cm}
+\antiphona{}{temporalia/svatyvaclave.gtex}
+\else
 \antiphona{VI}{temporalia/alleluia.gtex}
 
 \scriptura{Ps. 117, 1-6}
@@ -240,6 +263,7 @@
 \vspace{-1cm}
 
 \psalmusEtTranslatioTS{temporalia/communio-versus-Confitemini-combfr.tex}{6cm}
+\fi
 
 \vfill
 

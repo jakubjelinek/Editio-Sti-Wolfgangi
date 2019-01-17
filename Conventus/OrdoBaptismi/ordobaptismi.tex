@@ -166,9 +166,15 @@
 
 \psalmusEtTranslatioT{temporalia/evangelium-initium-comb.tex}{6cm}
 
+\ifparvulus
+\pars{Léctio sancti Evángelii secúndum Marcum.} \scriptura{Mc. 10, 13-16}
+
+\psalmusEtTranslatioT{temporalia/evangelium2-comb.tex}{6cm}
+\else
 \pars{Léctio sancti Evángelii secúndum Ioánnem.} \scriptura{Io. 19, 38-42}
 
 \psalmusEtTranslatioT{temporalia/evangelium-comb.tex}{6cm}
+\fi
 
 \vfill
 
@@ -185,6 +191,9 @@
 \sineinitiali{temporalia/litaniae.gtex}
 
 \begin{nstabbing}
+\ifparvulus
+\>Sancti Angeli \>\>\>\>\textbf{De}-\>\>i, \>orá-\>\>\textit{te} \>\textit{pro} \textbf{no}bis.\\
+\fi
 \>Sancte Ioánnes \>\>\>Ba-\textbf{ptí}-\>\>\>sta, \>\>o-\>\textit{ra} \>\textit{pro} \textbf{no}bis.\\
 \>Sancte \>\>\>\>\textbf{Io}-\>seph, \>\>\>o-\>\textit{ra} \>\textit{pro} \textbf{no}bis.\\
 \>Sancti Petre et \>\>\>\>\textbf{Pau}-\>\>le, \>orá-\>\>\textit{te} \>\textit{pro} \textbf{no}bis.\\
@@ -220,6 +229,12 @@
 
 \antiphona{II}{temporalia/communio-OmnesQui.gtex}
 
+\ifparvulus
+\scriptura{Ps. 28, 3}
+
+\initiumpsalmi{temporalia/communio-versus-Vox-initium.gtex}
+\fi
+
 \trCommunio
 
 \vspace{-0.3cm}
@@ -231,6 +246,9 @@
 
 %\vspace{-0.3cm}
 
+\ifparvulus
+\antiphona{}{temporalia/svatyvaclave.gtex}
+\else
 \antiphona{VI}{temporalia/alleluia.gtex}
 
 \scriptura{Ps. 117, 1-6}
@@ -240,6 +258,7 @@
 \vspace{-1cm}
 
 \psalmusEtTranslatioTS{temporalia/communio-versus-Confitemini-comb.tex}{6cm}
+\fi
 
 \vfill
 

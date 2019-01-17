@@ -29,6 +29,14 @@
 \usepackage[savepos]{zref}
 \usepackage{calc}
 \usepackage{longtable}
+\newif\ifparvulus
+\parvulustrue
+
+\ifparvulus
+\newcommand{\parvulum}{parvulus}%
+\else
+\newcommand{\parvulum}{parvula}%
+\fi
 
 \setlength{\headheight}{12pt}
 
@@ -101,6 +109,9 @@
 \sineinitiali{temporalia/litaniae.gtex}
 
 \begin{nstabbing}
+\ifparvulus
+\>Sancti Angeli \>\>\>\>\textbf{De}-\>\>i, \>orá-\>\>\textit{te} \>\textit{pro} \textbf{no}bis.\\
+\fi
 \>Sancte Ioánnes \>\>\>Ba-\textbf{ptí}-\>\>\>sta, \>\>o-\>\textit{ra} \>\textit{pro} \textbf{no}bis.\\
 \>Sancte \>\>\>\>\textbf{Io}-\>seph, \>\>\>o-\>\textit{ra} \>\textit{pro} \textbf{no}bis.\\
 \>Sancti Petre et \>\>\>\>\textbf{Pau}-\>\>le, \>orá-\>\>\textit{te} \>\textit{pro} \textbf{no}bis.\\
