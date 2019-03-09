@@ -1,0 +1,301 @@
+% LuaLaTeX
+
+\documentclass[a4paper, twoside, 12pt]{article}
+\usepackage[latin]{babel}
+%\usepackage[landscape, left=3cm, right=1.5cm, top=2cm, bottom=1cm]{geometry} % okraje stranky
+\usepackage[landscape, a4paper, mag=1166, truedimen, left=2cm, right=1.5cm, top=1.6cm, bottom=0.95cm]{geometry} % okraje stranky
+
+\usepackage{fontspec}
+\setmainfont[FeatureFile={junicode.fea}, Ligatures={Common, TeX}, RawFeature=+fixi]{Junicode}
+%\setmainfont{Junicode}
+
+% shortcut for Junicode without ligatures (for the Czech texts)
+\newfontfamily\nlfont[FeatureFile={junicode.fea}, Ligatures={Common, TeX}, RawFeature=+fixi]{Junicode}
+
+% Hebrew font: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=SILHebrUnic2
+\newfontfamily\hebfont[Scale=1]{Ezra SIL}
+
+\usepackage{multicol}
+\usepackage{color}
+\usepackage{lettrine}
+\usepackage{fancyhdr}
+
+% usual packages loading:
+\usepackage{luatextra}
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{gregoriotex} % for gregorio score inclusion
+\usepackage{gregoriosyms}
+\usepackage{wrapfig} % figures wrapped by the text
+\usepackage{parcolumns}
+\usepackage[contents={},opacity=1,scale=1,color=black]{background}
+\usepackage{tikzpagenodes}
+\usepackage{calc}
+\usepackage{longtable}
+\usetikzlibrary{calc}
+
+\setlength{\headheight}{14.5pt}
+
+\input{conventuscommune.tex} % Often used macros
+\input{translationes_cs.tex} % Czech translations of the proper texts
+
+\newcommand{\annusEditionis}{2019}
+
+\def\hebinitial#1{%
+\leavevmode{\newbox\hebbox\setbox\hebbox\hbox{\hebfont{#1}\hskip 1mm}\kern -\wd\hebbox\hbox{\hebfont{#1}\hskip 1mm}}%
+}
+
+%%%% Vicekrat opakovane kousky
+
+\newcommand{\anteOrationem}{
+  \rubrica{Ante Orationem, cantatur a Superiore:}
+
+  \pars{Supplicatio Litaniæ.}
+
+  \gregorioscore{temporalia/supplicatiolitaniae.gtex}
+
+  \pars{Oratio Dominica.}
+
+  \gregorioscore{temporalia/oratiodominica.gtex}
+
+  \rubrica{Deinde dicitur ab Hebdomadario:}
+
+  \gregorioscore{temporalia/dominusvobiscum-solemnis.gtex}
+
+  \rubrica{In choro monialium loco Dominus vobiscum dicitur:}
+
+  \gregorioscore{temporalia/domineexaudi.gtex}
+}
+
+\newcommand{\tuAutem}{
+  \vfill
+
+  \gregorioscore{temporalia/tuautem.gtex}
+}
+
+\setlength{\columnsep}{30pt} % prostor mezi sloupci
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Here we set the space around the initial.
+% Please report to http://home.gna.org/gregorio/gregoriotex/details for more details and options
+\grechangedim{afterinitialshift}{2.2mm}{scalable}
+\grechangedim{beforeinitialshift}{2.2mm}{scalable}
+\grechangedim{interwordspacetext}{0.32 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\grechangedim{annotationraise}{-0.2cm}{scalable}
+
+% Here we set the initial font. Change 38 if you want a bigger initial.
+% Emit the initials in red.
+\grechangestyle{initial}{\color{red}\fontsize{38}{38}\selectfont}
+
+\pagestyle{empty}
+
+\begin{titulusOfficii}
+\nomenFesti{Dominica I in Quadragesima.}
+\celebratio{Semiduplex 1. classis.}
+\end{titulusOfficii}
+
+%\hora{Ad Matutinum.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sideThumbs{Matutinum}
+
+\vfill
+
+\sineinitiali{temporalia/tonus-lectionis-solemnis.gtex}
+
+\vspace{-0.4cm}
+
+\vfill
+
+\pars{Lectio I.} \scriptura{II Cor. 6, 1-10}
+
+\noindent De epístola secúnda beáti Pauli Apóstoli ad \textit{Co}\textbf{rín}thios.
+
+\textusEtTranslatio{
+Adiuvántes autem exhortámur ne in vácuum grátiam Dei reci\textit{pi}\textbf{á}tis.
+Ait enim: Témpore accépto exaudívi te, et in die salútis \textit{ad}\textbf{iú}vi te.
+Ecce nunc tempus acceptábile, ecce nunc dies \textit{sa}\textbf{lú}tis.
+Némini dantes ullam offensiónem, ut non vituperétur ministérium \textbf{nos}trum:~\gredagger{}
+sed in ómnibus exhibeámus nosmetípsos sicut Dei minístros in multa \textit{pati}\textbf{én}tia,~\grestar{}
+in tribulatiónibus, in necessitátibus, in angústiis, in plagis, in car\textbf{cé}ribus,~\gredagger{}
+in seditiónibus, in labóribus, in vigíliis, in ieiúniis, in castitáte, \textit{in} \textit{sci}\textbf{én}tia,~\grestar{}
+in longanimitáte, in suavitáte, in Spíritu Sancto, in caritáte non ficta, in verbo veri\textbf{tá}tis,~\gredagger{}
+in virtúte Dei, per arma iustítiæ a dextris et a sinís\textit{tris,} \textit{per} \textbf{gló}riam,~\grestar{}
+et ignobilitátem, per infámiam, et bonam \textbf{fa}mam:~\gredagger{}
+ut seductóres, et veráces, sicut qui ignó\textit{ti,} \textit{et} \textbf{có}gniti:~\grestar{}
+quasi moriéntes, et ecce \textbf{ví}vimus:~\gredagger{}
+ut castigáti, et non mor\textit{tifi}\textbf{cá}ti:~\grestar{}
+quasi tristes, semper autem gau\textbf{dén}tes:~\gredagger{}
+sicut egéntes, multos autem lo\textit{cuple}\textbf{tán}tes:~\grestar{}
+tamquam nihil habéntes, et ómnia pos\textit{si}\textbf{dén}tes.
+}{\trMatLecI}{10cm}
+
+\vfill
+
+\pars{Lectio II.} \scriptura{II Cor. 6, 11-16}
+
+\textusEtTranslatio{
+Os nostrum patet ad vos, o Corínthii; cor nostrum di\textit{la}\textbf{tá}tum est.
+Non angustiámini in nobis: angustiámini autem in viscé\textit{ribus} \textbf{ves}tris:~\grestar{}
+eámdem autem habéntes remuneratiónem, tamquam fíliis dico, dilatámi\textit{ni}  \textbf{et} vos.
+Nolíte iugum dúcere cum in\textit{fi}\textbf{dé}libus.
+Quæ enim participátio \textit{ius}títiæ cum ini\textit{qui}\textbf{tá}te?
+Aut quæ socíetas \textit{lu}ci ad \textit{té}\textbf{ne}bras?
+Quæ autem convéntio \textit{Chris}ti ad \textit{Bé}\textbf{li}al?
+Aut quæ pars fidéli \textit{cum} in\textit{fi}\textbf{dé}li?
+Qui autem consénsus \textit{tem}plo Dei cum \textit{i}\textbf{dó}lis?
+Vos enim estis templum Dei vivi, sicut dicit \textbf{De}us:~\gredagger{}
+quóniam inhabitábo in illis, et inambulábo \textit{inter} \textbf{e}os,~\grestar{}
+et ero illórum Deus, et ipsi erunt mi\textit{hi} \textbf{pó}pulus.
+}{\trMatLecII}{10cm}
+
+\vfill
+
+\pars{Lectio III.} \scriptura{II Cor. 7, 4-9}
+
+\textusEtTranslatio{
+Replétus sum consolatióne; superabúndo gáudio in omni tribulatió\textit{ne} \textbf{nos}tra.
+Nam et cum venissémus in Macedóniam, nullam réquiem hábuit \textit{caro} \textbf{nos}tra,~\grestar{}
+sed omnem tribulatiónem passi sumus: foris pugnæ, intus \textit{ti}\textbf{mó}res.
+Sed qui consolátur húmiles, consolátus est nos Deus in advén\textit{tu} \textbf{Ti}ti.
+Non solum autem in advéntu eius, sed étiam in consolati\textbf{ó}ne,~\gredagger{}
+qua consolátus est in vobis, réferens nobis vestrum desidérium, \textit{vestrum} \textbf{fle}tum,~\grestar{}
+vestram æmulatiónem pro me, ita ut magis \textit{gau}\textbf{dé}rem.
+Quóniam etsi contristávi vos in epístola, non me \textbf{pœ}nitet:~\gredagger{}
+etsi pœnitéret, videns quod epístola illa (etsi ad horam) vos \textit{contris}\textbf{tá}vit,~\grestar{}
+nunc gáudeo: non quia contristáti estis, sed quia contristáti estis ad pœ\textit{ni}\textbf{tén}tiam.
+}{\trMatLecIII}{10cm}
+
+\vfill
+
+\pars{Lectio IV.} \scriptura{Sermo XLII; De Quadragesima IV}
+
+\noindent Ser-mo sanc-ti Le-ó\textit{nis} \textbf{Pa}pæ.
+
+\textusEtTranslatio{
+Prædicatúrus vobis, dilectíssimi, a sacratíssimum maximúmque ieiúnium, quo áptius utar ex\textbf{ór}dio,~\gredagger{}
+quam ut verbis Apóstoli, in quo Christus loquebátur, incípiam, dicám\textit{que,} \textit{quod} \textbf{lec}tum est:~\grestar{}
+Ecce nunc tempus acceptábile, \textit{ec}ce nunc dies \textit{sa}\textbf{lú}tis?
+Quamvis enim nulla sint témpora quæ divínis non sint plena mu\textbf{né}ribus,~\gredagger{}
+et semper nobis ad misericórdiam Dei per ipsíus grátiam præsté\textit{tur} \textit{ac}\textbf{cés}sus,~\grestar{}
+nunc tamen ómnium mentes maióri stúdio ad spiritáles proféctus movéri, et amplióri fidúcia opórtet ani\textbf{má}ri,~\gredagger{}
+quando ad univérsa pietátis offícia, illíus nos diéi, in quo redémpti sumus, recúr\textit{sus} \textit{in}\textbf{ví}tat:~\grestar{}
+ut excéllens super ómnia passiónis Domínicæ sacraméntum purificátis et corpóribus et ánimis ce\textit{le}\textbf{bré}mus.
+}{\trMatLecIV}{10cm}
+
+\vfill
+\pagebreak
+
+\pars{Lectio V.}
+
+\textusEtTranslatio{
+Debebátur quidem tantis mystériis ita incessábilis devótio et continuáta \textit{reve}\textbf{rén}tia,~\grestar{}
+ut tales permanerémus in conspéctu Dei, quales nos in ipso Pascháli festo dignum est in\textit{ve}\textbf{ní}ri.
+Sed quia hæc fortitúdo paucórum est, et dum carnis fragilitáti austérior observántia rela\textbf{xá}tur,~\gredagger{}
+dumque per várias actiónes vitæ huius sollicitúdo disténditur, necésse est de mundáno púlvere étiam religiósa cor\textit{da} \textit{sor}\textbf{dé}scere;~\grestar{}
+magna divínæ institutiónis salubritáte pro\textbf{ví}sum est,~\gredagger{}
+ut ad reparándam méntium puritátem quadragínta nobis diérum exercitátio \textit{mede}\textbf{ré}tur,~\grestar{}
+in quibus aliórum témporum culpas et pia ópera redímerent, et ieiúnia casta \textit{de}\textbf{có}querent.
+}{\trMatLecV}{10cm}
+
+\vfill
+
+\pars{Lectio VI.}
+
+\textusEtTranslatio{
+Ingressúri ígitur, dilectíssimi, dies mýsticos, et purificándis ánimis atque corpóribus sacrátius insti\textbf{tú}tos,~\gredagger{}
+præcéptis apostólicis obedíre curémus, emundántes nos ab omni inquinaménto car\textit{nis ac} \textbf{spí}ritus:~\grestar{}
+ut castigátis colluctatiónibus quæ sunt inter utrámque substántiam, \textbf{á}nimus,~\gredagger{}
+quem sub Dei gubernáculis constitútum córporis sui decet esse rectórem, dominatiónis suæ obtíneat \textit{digni}\textbf{tá}tem:~\grestar{}
+ut némini dantes ulIam offensiónem, vituperatiónibus obloquéntium non simus \textit{ob}\textbf{nó}xii.
+Digna enim ab infidélibus reprehensióne carpémur, et nostro vítio linguæ ímpiæ in iniúriam se religió\textit{nis} \textit{ar}\textbf{má}bunt,~\grestar{}
+si ieiunántium mores a puritáte perféctæ continéntiæ dis\textit{cre}\textbf{pá}rint.
+Non enim in sola abstinéntia cibi stat nostri sum\textit{ma} \textit{ie}\textbf{iú}nii,~\grestar{}
+aut fructuóse córpori esca subtráhitur, nisi mens ab iniquitáte re\textit{vo}\textbf{cé}tur.
+}{\trMatLecVI}{10cm}
+
+\vfill
+
+\pars{Lectio VII.} \scriptura{Mt. 4, 1-10}
+
+\noindent Léctio Sancti Evangélii secúndum \textit{Mat}\textbf{thǽ}um.
+
+\textusEtTranslatio{
+In illo témpore: ductus est Iesus in desértum a Spíritu, ut tentarétur a \textit{di}\textbf{á}bolo.
+Et cum ieiunásset quadragínta diébus, et quadragínta nóctibus, póstea \textit{e}\textbf{sú}riit.
+\textit{Et} \textbf{ré}liqua.
+}{\trMatLecVIIa}{10cm}
+
+\scriptura{Homilia XVI in Evangelia n. 1}
+
+\noindent Homília Sancti Gregóri\textit{i} \textbf{Pa}pæ.
+
+\rubrica{Habita ad populum in basilica sancti Ioannis, quæ dicitur Constantiniana, Dominica prima in Quadragesima.}
+
+\textusEtTranslatio{
+Dubitári a quibúsdam solet a quo spíritu sit Iesus ductus \textit{in} \textit{de}\textbf{sér}tum,~\grestar{}
+propter hoc quod súbditur: Assúmpsit eum diábolus in sanctam ci\textit{vi}\textbf{tá}tem.
+Et rursum: Assúmpsit eum in montem excél\textit{sum} \textbf{val}de.
+Sed vere et absque ulla quæstióne conveniénter accípitur ut a Sancto Spíritu in desértum duc\textit{tus} \textit{cre}\textbf{dá}tur,~\grestar{}
+ut illuc eum suus Spíritus dúceret, ubi nunc ad tentándum malígnus spíritus in\textit{ve}\textbf{ní}ret.
+Sed ecce cum dícitur Deus homo vel in excélsum montem, vel in sanctam civitátem a diábo\textit{lo} \textit{as}\textbf{súmp}tus,~\grestar{}
+mens réfugit, humánæ hoc audíre aures ex\textit{pa}\textbf{vés}cunt.
+Qui tamen non esse incredibília ista cognóscimus, si in illo et ália facta \textit{pen}\textbf{sá}mus.
+}{\trMatLecVIIb}{10cm}
+
+\vfill
+
+\pars{Lectio VIII.}
+
+\textusEtTranslatio{
+Certe iniquórum ómnium caput diábolus est, et huius cápitis membra sunt omnes \textit{in}\textbf{í}qui.
+An non diáboli \textit{mem}brum fuit \textit{Pi}\textbf{lá}tus?
+An non diáboli membra Iudǽi persequéntes, \textit{et} mílites crucifigéntes Christum \textit{fu}\textbf{é}runt?
+Quid ergo mirum si se ab illo permísit in montem duci, \textit{qui} se pértulit étiam a membris illíus cru\textit{ci}\textbf{fí}gi?
+Non est ergo indígnum Redemptóri nostro quod tentári vóluit, qui vénerat \textit{oc}\textbf{cí}di.
+Iustum quippe erat ut sic tentatiónes nostras suis tentatió\textit{nibus} \textbf{vín}ceret,~\grestar{}
+sicut mortem nostram vénerat sua morte su\textit{pe}\textbf{rá}re.
+}{\trMatLecVIII}{10cm}
+
+\vfill
+
+\pars{Lectio IX.}
+
+\textusEtTranslatio{
+Sed sciéndum nobis est quia tribus modis tentá\textit{tio} \textbf{á}gitur,~\grestar{}
+suggestióne, delectatióne et \textit{con}\textbf{sén}su.
+Et nos cum tentámur, plerúmque in delectatiónem, aut étiam in con\textit{sénsum} \textbf{lá}bimur,~\grestar{}
+quia de carnis peccáto propagáti, in nobis ipsis étiam gérimus unde certámina to\textit{le}\textbf{ré}mus.
+Deus vero qui, in útero Vírginis incarnátus, in mundum sine pec\textit{cáto} \textbf{vé}nerat,~\grestar{}
+nihil contradictiónis in semetípso to\textit{le}\textbf{rá}bat.
+Tentári ergo per suggestiónem pótuit, sed eius mentem peccáti delectátio non \textit{mo}\textbf{mór}dit.
+Atque ídeo omnis diabólica illa tentátio foris non in\textit{tus} \textbf{fu}it.
+}{\trMatLecIX}{10cm}
+
+\vfill
+\pagebreak
+
+\sineinitiali{temporalia/tonus-evangelii-b.gtex}
+
+\scriptura{Mt. 4, 1-10}
+
+\noindent Léctio Sanc\textit{ti} \textbf{E}van\textbf{gé}lii~\grestar{} secúndum Mat\textbf{thǽ}um.
+
+\textusEtTranslatio{
+\textit{In} \textbf{il}lo \textbf{tém}pore:~\grestar{}
+ductus est Iesus in desértum a Spíritu, ut tentarétur a di\textbf{á}bolo.
+Et cum ieiunásset quadragínta diébus, et quadragínta nóctibus, póstea e\textbf{sú}riit.
+Et accédens tentátor, dixit ei: Si Fílius Dei es, dic ut lápides isti panes \textbf{fi}ant.
+Qui respóndens, dixit: Scriptum est: Non in solo pa\textit{ne} \textbf{vi}vit \textbf{ho}mo,~\grestar{}
+sed in omni verbo, quod procédit de ore \textbf{De}i.
+Tunc assúmpsit eum diábolus in sanctam civitátem, et státuit eum super \textit{pin}\textbf{ná}culum \textbf{tem}pli,~\grestar{}
+et dixit ei: Si Fílius Dei es, mitte te de\textbf{ór}sum.
+Scriptum est enim: Quia ángelis suis \textit{man}\textbf{dá}vit \textbf{de} te,~\grestar{}
+et in mánibus tollent te, ne forte offéndas ad lápidem pedem \textbf{tu}um.
+Ait illi Iesus: Rursum scriptum est: Non tentábis Dóminum Deum \textbf{tu}um.
+Iterum assúmpsit eum diábolus in montem excélsum valde: et osténdit ei ómnia regna mundi, et gló\textit{ri}\textbf{am} e\textbf{ó}rum,~\grestar{}
+et dixit ei: Hæc ómnia tibi dabo, si cadens adoráve\textbf{ris} me.
+Tunc dicit ei Iesus: Vade Sátana: Scriptum est \textbf{e}nim: \textit{Dó}minum Deum tuum adorábis, et illi soli \textbf{sér}vies.
+}{\trMatEvangelium}{10cm}
+
+\end{document}
