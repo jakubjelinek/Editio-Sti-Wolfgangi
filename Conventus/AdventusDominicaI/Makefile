@@ -26,7 +26,7 @@ include tonus.mk
 MODUS-144ii = viii-G
 MODUS-145 = viii-G2
 MODUS-146 = v-a
-MODUS-147 = iv-A_
+MODUS-147 = iv-A
 MODUS-magnificat = isoll-f
 MODUSLIST = $(sort $(foreach P,$(PSALMS) magnificat,$(MODUS-$(P))))
 CZPSALMOPTS = --accents 0:0 --title-pattern " " --no-paragraph
@@ -91,13 +91,10 @@ $(LAPSALMSEXTRA): $(TMP_DIR)/%.tex: $(PSALMS_DIR)/%.pslm
 	$(SED) -i -e 'y/Jj/Ii/' $@
 $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
 	$(GENPSCOMB)
-$(TMP_DIR)/ps147-comb-smaller.tex: $(TMP_DIR)/ps147-comb.tex
-	grep -v '^\(Qui annúntiat\|Non fecit\)' $< > $@
 $(TMP_DIR)/magnificat-comb.tex: PSSKIP = 2
 adventusdominicai.pdf: adventusdominicai.tex conventuscommune.tex translationes_cs.tex \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS) \
-	       ../AdventusDominicaII/imagines/imago_Sion.jpg ../AdventusDominicaII/imagines/angelus.jpg \
-	       $(TMP_DIR)/ps147-comb-smaller.tex
+	       ../AdventusDominicaII/imagines/imago_Sion.jpg ../AdventusDominicaII/imagines/angelus.jpg
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
 clean:
