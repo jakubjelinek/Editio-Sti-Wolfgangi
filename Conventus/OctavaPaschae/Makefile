@@ -25,7 +25,7 @@ PSALMS = 1 2 3
 include tonus.mk
 MODUS-1 = i-F
 MODUS-2 = i-f
-MODUS-3 = viii-C
+MODUS-3 = viii-c
 MODUS-magnificat = viii-G2
 MODUS-benedictus = viii-G
 MODUS-magnificat2 = vii-d
