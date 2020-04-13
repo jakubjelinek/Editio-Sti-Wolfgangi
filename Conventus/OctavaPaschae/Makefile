@@ -49,7 +49,7 @@ ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(patsubst %,ant-%,jesusjunxit quisunt stetitjesus videte mittite dixit \
 			    maria tulerunt undecim dataest currebant) \
 	 magnificat-initium-viii-G magnificat-initium-viii-G2 \
-	 magnificat-initium-vii-d
+	 magnificat-initium-viii-g magnificat-initium-vii-d
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(TMP_DIR)/magnificat2-comb.tex \
 	    $(TMP_DIR)/benedictus2-comb.tex \
