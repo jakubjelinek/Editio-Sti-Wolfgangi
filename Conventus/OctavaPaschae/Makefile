@@ -21,8 +21,11 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS =
+PSALMS = 1 2 3
 include tonus.mk
+MODUS-1 = i-f
+MODUS-2 = i-f
+MODUS-3 = viii-C
 MODUS-magnificat = viii-G2
 MODUS-benedictus = viii-G
 MODUS-magnificat2 = vii-d
@@ -49,7 +52,12 @@ ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(patsubst %,ant-%,jesusjunxit quisunt stetitjesus videte mittite dixit \
 			    maria tulerunt undecim dataest currebant) \
 	 magnificat-initium-viii-G magnificat-initium-viii-G2 \
-	 magnificat-initium-viii-g magnificat-initium-vii-d
+	 magnificat-initium-viii-g magnificat-initium-vii-d \
+	 $(patsubst %,an-%,egosumquisum postulavi egodormivi) \
+	 dominelabiamea inv-surrexitdominusvere absolutio-ipsius \
+	 $(patsubst %,resp-%,virtutemagna deoreprudentis) \
+	 $(patsubst %,benedictio-solemn-%,evangelica divinum adsocietatem) \
+	 tedeum-solemnis
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(TMP_DIR)/magnificat2-comb.tex \
 	    $(TMP_DIR)/benedictus2-comb.tex \
@@ -78,7 +86,7 @@ iter-left := . $(TMP_DIR) cantus/amon33 ../AdventusDominicaII/cantus/amon33 \
 	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 nrom02 triplex76)
 include $(iter)
 
-all: octavapaschae.pdf
+all: octavapaschae.pdf feriaiii.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(TMP_DIR)/magnificat.tex: PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
 $(TMP_DIR)/magnificat2.tex: PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
@@ -117,6 +125,10 @@ $(TMP_DIR)/benedictus2-comb.tex: $(TMP_DIR)/benedictus2.tex $(TMP_DIR)/benedictu
 $(TMP_DIR)/benedictus3-comb.tex: $(TMP_DIR)/benedictus3.tex $(TMP_DIR)/benedictus-boh.tex
 	$(GENPSCOMB)
 octavapaschae.pdf: octavapaschae.tex conventuscommune.tex translationes_cs.tex \
+	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
+	$(LUALATEX) -interaction=nonstopmode $<
+	$(LUALATEX) -interaction=nonstopmode $<
+feriaiii.pdf: feriaiii.tex conventuscommune.tex translationes_cs.tex \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
