@@ -6,8 +6,12 @@ transcriber:Andrew Hinkley;
 nabc-lines: 1;
 %%
 (c3)
-MA(e|)rí(g'|)a(h|) sta(i'_|)bat(i_|) *()
-ad(i_j|) mo(h|)nu(f'|)mén(h|)tum(g_f|) plo(e.|)rans:(e.|) (;)
-vi(e|)dit(f|) du(d'|)os(f|) An(h'|)ge(h|)los(g'|) in(f|) al(hh|)bis,(g'|) se(f|)dén(hh|)tes,(g.|) (;)
-et(g|) su(h|)dá(ij|)ri(i|)um(h'_|) quod(G|) fú(h'|)e(h|)rat(gihi____|) (;)
-su(f|)per(ed~|) ca(e_f|)put(g|) Je(f|)su,(g_h|) al(ih~|)le(f|)lú(e.|)ia.(e.|) (::)
+MA(e|tahg)rí(g'|vi-hg)a(h|vi-) sta(i'_|vihg)bat(i_|tahg) *()
+ad(i_j|peShi) mo(h|vi-)nu(f'|tahh)mén(h|vi)tum(g_f|cl->1)
+plo(e.|tahi)rans:(e.|tahh) (;)
+vi(e|ta)dit(f|vi) du(d')os(f) An(h'|vi-hg)ge(h|vihg)los(g'|vi) in(f|ta)
+al(hh|vs-)bis,(g'|vi) se(f|tahh)dén(hh|vs-)tes,(g.|tahg) (;)
+et(g|ta) su(h|vi)dá(ij|pehi)ri(i|vihg)um(h'_|vihh) quod(G|tahi)
+fú(h'|vi-hh)e(h|vi)rat(gihi____|tr) (;)
+su(f|vi)per(ed~|vi>) ca(e_f|peS)put(g|vi) Je(f|ta)su,(g_h|peS)
+al(ih~|vi>)le(f|vihd)lú(e.|ta)ia.(e.|ta) (::)

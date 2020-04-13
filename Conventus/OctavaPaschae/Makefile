@@ -27,7 +27,9 @@ MODUS-magnificat = viii-G2
 MODUS-benedictus = viii-G
 MODUS-magnificat2 = vii-d
 MODUS-benedictus2 = vii-c
-MODUSLIST = $(sort $(foreach P,$(PSALMS) magnificat benedictus magnificat2 benedictus2,$(MODUS-$(P))))
+MODUS-benedictus3 = i-f
+MODUS-benedictus4 = vii-a
+MODUSLIST = $(sort $(foreach P,$(PSALMS) magnificat benedictus magnificat2 benedictus2 benedictus3 benedictus4,$(MODUS-$(P))))
 CZPSALMOPTS = --accents 0:0 --title-pattern " " --no-paragraph
 CZPSALMS = $(patsubst %,$(TMP_DIR)/ps%-boh.tex,$(PSALMS))
 ALLCZPSALMS = $(CZPSALMS) $(patsubst %,$(TMP_DIR)/%-boh.tex,magnificat benedictus)
@@ -44,11 +46,18 @@ LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
 LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,benedictus magnificat nuncdimittis dan3)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
-SCORES = $(patsubst %,ant-%,jesusjunxit quisunt stetitjesus videte mittite dixit) \
-	 magnificat-initium-viii-G magnificat-initium-viii-G2
+SCORES = $(patsubst %,ant-%,jesusjunxit quisunt stetitjesus videte mittite dixit \
+			    maria tulerunt undecim dataest currebant) \
+	 magnificat-initium-viii-G magnificat-initium-viii-G2 \
+	 magnificat-initium-vii-d
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = $(TMP_DIR)/magnificat2-comb.tex $(TMP_DIR)/benedictus2-comb.tex \
-	    $(TMP_DIR)/benedictus-initium-vii-c-auto.gtex
+OTHERDEPS = $(TMP_DIR)/magnificat2-comb.tex \
+	    $(TMP_DIR)/benedictus2-comb.tex \
+	    $(TMP_DIR)/benedictus3-comb.tex \
+	    $(TMP_DIR)/benedictus-initium-vii-c-auto.gtex \
+	    $(TMP_DIR)/benedictus-initium-vii-a-auto.gtex \
+	    $(TMP_DIR)/benedictus-initium-i-f-auto.gtex \
+	    $(TMP_DIR)/magnificat-initium-vii-d.gtex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,benedictus,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
@@ -86,10 +95,16 @@ $(LAPSALMS): $(TMP_DIR)/ps%.tex: $(PSALMS_DIR)/ps%.pslm
 $(LAPSALMSEXTRA): $(TMP_DIR)/%.tex: $(PSALMS_DIR)/%.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
+$(TMP_DIR)/magnificat2.tex: TONUS=$(TONUS-$(MODUS-magnificat2))
 $(TMP_DIR)/magnificat2.tex: $(PSALMS_DIR)/magnificat.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
+$(TMP_DIR)/benedictus2.tex: TONUS=$(TONUS-$(MODUS-benedictus2))
 $(TMP_DIR)/benedictus2.tex: $(PSALMS_DIR)/benedictus.pslm
+	$(GENPSALM)
+	$(SED) -i -e 'y/Jj/Ii/' $@
+$(TMP_DIR)/benedictus3.tex: TONUS=$(TONUS-$(MODUS-benedictus3))
+$(TMP_DIR)/benedictus3.tex: $(PSALMS_DIR)/benedictus.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
 $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
@@ -98,6 +113,8 @@ $(TMP_DIR)/magnificat-comb.tex: PSSKIP = 2
 $(TMP_DIR)/magnificat2-comb.tex: $(TMP_DIR)/magnificat2.tex $(TMP_DIR)/magnificat-boh.tex
 	$(GENPSCOMB)
 $(TMP_DIR)/benedictus2-comb.tex: $(TMP_DIR)/benedictus2.tex $(TMP_DIR)/benedictus-boh.tex
+	$(GENPSCOMB)
+$(TMP_DIR)/benedictus3-comb.tex: $(TMP_DIR)/benedictus3.tex $(TMP_DIR)/benedictus-boh.tex
 	$(GENPSCOMB)
 octavapaschae.pdf: octavapaschae.tex conventuscommune.tex translationes_cs.tex \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
