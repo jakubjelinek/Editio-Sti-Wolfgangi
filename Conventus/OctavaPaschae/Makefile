@@ -54,8 +54,9 @@ SCORES = $(patsubst %,ant-%,jesusjunxit quisunt stetitjesus videte mittite dixit
 	 magnificat-initium-viii-G magnificat-initium-viii-G2 \
 	 magnificat-initium-viii-g magnificat-initium-vii-d \
 	 $(patsubst %,an-%,egosumquisum postulavi egodormivi) \
-	 dominelabiamea inv-surrexitdominusvere absolutio-ipsius \
-	 $(patsubst %,resp-%,virtutemagna deoreprudentis) \
+	 dominelabiamea inv-surrexitdominusvere \
+	 $(patsubst %,absolutio-%,ipsius avinculis) \
+	 $(patsubst %,resp-%,virtutemagna deoreprudentis eccevicitleo egosumvitisvera) \
 	 $(patsubst %,benedictio-solemn-%,evangelica divinum adsocietatem) \
 	 tedeum-solemnis
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
@@ -86,7 +87,7 @@ iter-left := . $(TMP_DIR) cantus/amon33 ../AdventusDominicaII/cantus/amon33 \
 	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 nrom02 triplex76)
 include $(iter)
 
-all: octavapaschae.pdf feriaiii.pdf
+all: octavapaschae.pdf feriaiii.pdf feriaiv.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(TMP_DIR)/magnificat.tex: PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
 $(TMP_DIR)/magnificat2.tex: PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
@@ -128,7 +129,7 @@ octavapaschae.pdf: octavapaschae.tex conventuscommune.tex translationes_cs.tex \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
-feriaiii.pdf: feriaiii.tex conventuscommune.tex translationes_cs.tex \
+feriaiii.pdf feriaiv.pdf: %.pdf: %.tex conventuscommune.tex translationes_cs.tex \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
