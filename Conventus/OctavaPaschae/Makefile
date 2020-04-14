@@ -56,7 +56,8 @@ SCORES = $(patsubst %,ant-%,jesusjunxit quisunt stetitjesus videte mittite dixit
 	 $(patsubst %,an-%,egosumquisum postulavi egodormivi) \
 	 dominelabiamea inv-surrexitdominusvere \
 	 $(patsubst %,absolutio-%,ipsius avinculis exaudi) \
-	 $(patsubst %,resp-%,virtutemagna deoreprudentis eccevicitleo egosumvitisvera) \
+	 $(patsubst %,resp-%,virtutemagna deoreprudentis eccevicitleo egosumvitisvera \
+			     tulleruntdominum congratulamini) \
 	 $(patsubst %,benedictio-solemn-%,evangelica divinum adsocietatem) \
 	 tedeum-solemnis
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
