@@ -57,7 +57,8 @@ SCORES = $(patsubst %,ant-%,jesusjunxit quisunt stetitjesus videte mittite dixit
 	 dominelabiamea inv-surrexitdominusvere \
 	 $(patsubst %,absolutio-%,ipsius avinculis exaudi) \
 	 $(patsubst %,resp-%,virtutemagna deoreprudentis eccevicitleo egosumvitisvera \
-			     tulleruntdominum congratulamini surgensjesus expurgate) \
+			     tulleruntdominum congratulamini surgensjesus expurgate \
+			     christusresurgens istisuntagni) \
 	 $(patsubst %,benedictio-solemn-%,evangelica divinum adsocietatem) \
 	 tedeum-solemnis
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
@@ -88,7 +89,7 @@ iter-left := . $(TMP_DIR) cantus/amon33 ../AdventusDominicaII/cantus/amon33 \
 	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 nrom02 triplex76)
 include $(iter)
 
-all: octavapaschae.pdf $(patsubst %,feria%.pdf,iii iv v vi)
+all: octavapaschae.pdf $(patsubst %,feria%.pdf,iii iv v vi) sabbato.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(TMP_DIR)/magnificat.tex: PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
 $(TMP_DIR)/magnificat2.tex: PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
@@ -126,11 +127,8 @@ $(TMP_DIR)/benedictus2-comb.tex: $(TMP_DIR)/benedictus2.tex $(TMP_DIR)/benedictu
 	$(GENPSCOMB)
 $(TMP_DIR)/benedictus3-comb.tex: $(TMP_DIR)/benedictus3.tex $(TMP_DIR)/benedictus-boh.tex
 	$(GENPSCOMB)
-octavapaschae.pdf: octavapaschae.tex conventuscommune.tex translationes_cs.tex \
-	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
-	$(LUALATEX) -interaction=nonstopmode $<
-	$(LUALATEX) -interaction=nonstopmode $<
-$(patsubst %,feria%.pdf,iii iv v vi): %.pdf: %.tex conventuscommune.tex translationes_cs.tex \
+octavapaschae.pdf $(patsubst %,feria%.pdf,iii iv v vi) sabbato.pdf: \
+%.pdf: %.tex conventuscommune.tex translationes_cs.tex \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
