@@ -20,8 +20,17 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 62 92 99 109 110 111 112 144ii 145 146 147 148 149 150
+PSALMS = 1 2 3 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 10 62 92 99 109 110 111 112 144ii 145 146 147 148 149 150
 include tonus.mk
+MODUS-1 = v-a
+MODUS-2 = v-a
+MODUS-3 = v-a
+MODUS-8 = v-a
+MODUS-9ii_xi = v-a
+MODUS-9xii_xxi = v-a
+MODUS-9xxii_xxxii = v-a
+MODUS-9xxxiii_xxxix = v-a
+MODUS-10 = v-a
 MODUS-62 = viii-g
 MODUS-92 = viii-g
 MODUS-99 = viii-g
@@ -66,7 +75,17 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 alleluia4 cumesset \
 	 capitulum-CarissimiOmneQuod $(addprefix versus-,mane inresurrectione) \
 	 oratio supplicatiolitaniae oratiodominica \
 	 dominusvobiscum-solemnis domineexaudi \
-	 benedicamus-tempore-paschali an_regina_caeli_simplex
+	 benedicamus-tempore-paschali an_regina_caeli_simplex \
+	 dominelabiamea inv-surrexitdominusvere \
+	 $(addprefix absolutio-,exaudi ipsius avinculis) \
+	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
+					deus christus ignem \
+					evangelica divinum adsocietatem) \
+	 $(addprefix resp-,virtutemagna deoreprudentis surgensjesus) \
+	 tedeum-solemnis
+#	angelusdominidescendit angelusdominilocutus dumtransisset mariamagdalene surrexitpastorbonus
+#	hym-RexSempiterne
+#	$(addprefix an-alleluia,lapis quem noli)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
@@ -83,7 +102,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali
+iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61
 include $(iter)
 
 all: dominicainalbis.pdf
