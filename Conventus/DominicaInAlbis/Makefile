@@ -69,7 +69,7 @@ LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT) benedictus dan3)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 alleluia4 cumesset \
 			  postdiesocto surrexitchristus) \
-	 $(addprefix hym-,AuroraLucis AdCoenam) respbr-laud respbr-vesp \
+	 $(addprefix hym-,AuroraLucis AdCoenam RexSempiterne) respbr-laud respbr-vesp \
 	 $(addprefix deusinadiutorium-,solemnis alter) \
 	 $(foreach M,viii-C i-D,magnificat-initium-$(M)) \
 	 capitulum-CarissimiOmneQuod $(addprefix versus-,mane inresurrectione) \
@@ -81,11 +81,11 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 alleluia4 cumesset \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
 					evangelica divinum adsocietatem) \
-	 $(addprefix resp-,virtutemagna deoreprudentis surgensjesus) \
-	 tedeum-solemnis
-#	angelusdominidescendit angelusdominilocutus dumtransisset mariamagdalene surrexitpastorbonus
-#	hym-RexSempiterne
-#	$(addprefix an-alleluia,lapis quem noli)
+	 $(addprefix resp-,angelusdominidescendit angelusdominilocutus \
+			   dumtransisset mariamagdalene surrexitpastor \
+			   virtutemagna deoreprudentis surgensjesus) \
+	 tedeum-solemnis \
+	 $(addprefix ant-alleluia,lapis quem noli)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
