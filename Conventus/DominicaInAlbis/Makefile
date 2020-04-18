@@ -22,9 +22,9 @@ PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
 PSALMS = 62 92 99 109 110 111 112 144ii 145 146 147 148 149 150
 include tonus.mk
-MODUS-62 = viii-G
-MODUS-92 = viii-G
-MODUS-99 = viii-G
+MODUS-62 = viii-g
+MODUS-92 = viii-g
+MODUS-99 = viii-g
 MODUS-109 = vii-c2
 MODUS-110 = vii-c2
 MODUS-111 = vii-c2
@@ -63,8 +63,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 alleluia4 cumesset \
 	 $(addprefix hym-,AuroraLucis AdCoenam) respbr-laud respbr-vesp \
 	 $(addprefix deusinadiutorium-,solemnis alter) \
 	 $(foreach M,viii-C i-D,magnificat-initium-$(M)) \
-	 capitulum-CarissimiOmneQuod versus-mane oratio \
-	 supplicatiolitaniae oratiodominica \
+	 capitulum-CarissimiOmneQuod $(addprefix versus-,mane inresurrectione) \
+	 oratio supplicatiolitaniae oratiodominica \
 	 dominusvobiscum-solemnis domineexaudi \
 	 benedicamus-tempore-paschali an_regina_caeli_simplex
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
@@ -85,13 +85,10 @@ $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e 
 endef
 iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali
 include $(iter)
-#$(TMP_DIR)/%-I.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-#$(TMP_DIR)/%-II.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-#$(TMP_DIR)/%-I-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-#$(TMP_DIR)/%-II-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 
 all: dominicainalbis.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
+$(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
 $(CZPSALMS) $(TMP_DIR)/benedictus-boh.tex: $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/%.pslm
 	$(GENPSALM)
@@ -103,7 +100,12 @@ $(TMP_DIR)/magnificat-boh.tex: $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/DMC199x
 $(LAPSALMS): $(TMP_DIR)/ps%.tex: $(PSALMS_DIR)/ps%.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
-$(LAPSALMSEXTRA): $(TMP_DIR)/%.tex: $(PSALMS_DIR)/magnificat.pslm
+$(patsubst %,$(TMP_DIR)/%.tex,benedictus dan3): \
+$(TMP_DIR)/%.tex: $(PSALMS_DIR)/%.pslm
+	$(GENPSALM)
+	$(SED) -i -e 'y/Jj/Ii/' $@
+$(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT)): \
+$(TMP_DIR)/%.tex: $(PSALMS_DIR)/magnificat.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
 $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
