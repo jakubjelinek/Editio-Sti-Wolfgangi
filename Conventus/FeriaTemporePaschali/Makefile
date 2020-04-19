@@ -38,9 +38,9 @@ MODUS-148 = i-a
 MODUS-149 = i-a
 MODUS-150 = i-a
 MODUS-isaiae = viii-G
-MODUS-magnificat-I = isoll-D
+MODUS-magnificat-I = vi-F
 MODUS-magnificat-II = viiisoll-C
-MODUS-benedictus = isoll-D
+MODUS-benedictus = viii-G
 MAGNIFICAT = $(foreach M,I II,magnificat-$(M))
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(MAGNIFICAT) isaiae benedictus,$(MODUS-$(P))))
 CZPSALMOPTS = --accents 0:0 --title-pattern " " --no-paragraph
@@ -66,9 +66,10 @@ SCORES = $(patsubst %,ant-alleluia-%-laudes-1,$(FERIIS)) \
 	 $(patsubst %,ant-alleluia-%-vesperas,fii fiii fiv fvi) \
 	 $(patsubst %,ant-%-tp,cantemusdomino conversusest cunctisdiebus \
 			       datemagnitudinem domineaudivi dominusjudicabit) \
+	 $(addprefix ant-,surgensjesus paxvobis) \
 	 $(addprefix hym-,AuroraLucis AdCoenam RexSempiterne) respbr-laud respbr-vesp \
 	 deusinadiutorium-communis \
-	 $(foreach M,viii-C i-D,magnificat-initium-$(M)) \
+	 $(foreach M,vi-F i-D,magnificat-initium-$(M)) \
 	 capitulum-ChristusResurgens $(addprefix versus-,mane inresurrectione) \
 	 oratio supplicatiolitaniae oratiodominica \
 	 dominusvobiscum-solemnis domineexaudi \
