@@ -48,6 +48,26 @@
 
 %%%% Vicekrat opakovane kousky
 
+\newcommand{\anteOrationem}{
+  \rubrica{Ante Orationem, cantatur a Superiore:}
+
+  \pars{Supplicatio Litaniæ.}
+
+  \cuminitiali{}{temporalia/supplicatiolitaniae.gtex}
+
+  \pars{Oratio Dominica.}
+
+  \cuminitiali{}{temporalia/oratiodominica.gtex}
+
+  \rubrica{Deinde dicitur ab Hebdomadario:}
+
+  \cuminitiali{}{temporalia/dominusvobiscum-solemnis.gtex}
+
+  \rubrica{In choro monialium loco Dominus vobiscum dicitur:}
+
+  \sineinitiali{temporalia/domineexaudi.gtex}
+}
+
 \setlength{\columnsep}{30pt} % prostor mezi sloupci
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -121,15 +141,15 @@
 
 \pars{Psalmus 1.}
 
-\vspace{-5mm}
+%\vspace{-5mm}
 
 \antiphona{I f}{temporalia/ant-alleluia-fii-matutinum.gtex}
 
-\vspace{-5mm}
+%\vspace{-5mm}
 
 \scriptura{Ps. 13}
 
-\vspace{-2mm}
+%\vspace{-2mm}
 
 \initiumpsalmi{temporalia/ps13-initium-ii-D-auto.gtex}
 
@@ -153,9 +173,9 @@
 \vfill
 \pagebreak
 
-\pars{Psalmus 3.}
+\pars{Psalmus 3.} \scriptura{Ps. 16}
 
-\scriptura{Ps. 16}
+\vspace{-1mm}
 
 \initiumpsalmi{temporalia/ps16-initium-ii-D-auto.gtex}
 
@@ -164,11 +184,12 @@
 \input{temporalia/ps16.tex}
 
 \vfill
+\pagebreak
 
 \antiphona{}{temporalia/ant-alleluia-fii-matutinum.gtex}
 
 \vfill
-\pagebreak
+%\pagebreak
 
 \noindent \Vbardot{} Surréxit Dóminus de sepúlcro, allelúia.
 \noindent \Rbardot{} Qui pro nobis pepéndit in ligno, allelúia.
@@ -186,7 +207,7 @@
 
 \pars{Lectio I.} \scriptura{Ac. 1, 1-8}
 
-\noindent Incipit liber Actuum Apostolórum
+\noindent Incípit liber Actuum Apostolórum.
 
 \noindent Primum quidem sermónem feci de ómnibus, o Theóphile, quæ cœpit Iesus fácere et docére usque in diem qua præcípiens Apóstolis per Spíritum Sanctum, quos elégit, assúmptus est: Quibus et prǽbuit seípsum vivum post passiónem suam in multis arguméntis, per dies quadragínta appárens eis, et loquens de regno Dei. Et convéscens, præcépit eis ab Ierosólymis ne discéderent, sed exspectárent promissiónem Patris, quam audístis (inquit) per os meum: Quia Ioánnes quidem baptizávit aqua, vos autem baptizabímini Spíritu Sancto non post multos hos dies. Igitur qui convénerant, interrogábant eum, dicéntes: Dómine, si in témpore hoc restítues regnum Israël? Dixit autem eis: Non est vestrum nosse témpora vel moménta quæ Pater pósuit in sua potestáte: Sed accipiétis virtútem superveniéntis Spíritus Sancti in vos, et éritis mihi testes in Ierúsalem, et in omni Iudǽa, et Samaría, et usque ad últimum terræ.
 
@@ -291,6 +312,9 @@ Orémus:
 
 \noindent \Rbardot{} Amen.
 
+\vfill
+\pagebreak
+
 \hora{Ad Laudes.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\sideThumbs{Laudes}
 
@@ -308,7 +332,7 @@ Orémus:
 
 \vspace{-0.4cm}
 
-\antiphona{VIII a}{temporalia/ant-alleluia-fii-laudes1.gtex}
+\antiphona{VIII a}{temporalia/ant-alleluia-fii-laudes-1.gtex}
 
 \scriptura{Psalmus 50.}
 
@@ -347,12 +371,12 @@ Orémus:
 
 \vspace{-6mm}
 
-\antiphona{}{temporalia/ant-alleluia-fii-laudes1.gtex} % repeat the antiphon - new page
+\antiphona{}{temporalia/ant-alleluia-fii-laudes-1.gtex} % repeat the antiphon - new page
 
 \vfill
 \pagebreak
 
-\pars{Psalmus 4.}
+\pars{Psalmus 4.} \scriptura{Is. 12, 1; \textbf{H93}}
 
 \vspace{-0.4cm}
 
@@ -372,7 +396,7 @@ Orémus:
 
 \vspace{-0.4cm}
 
-\antiphona{I a}{temporalia/ant-alleluia-fii-laudes2.gtex}
+\antiphona{I a}{temporalia/ant-alleluia-fii-laudes-2.gtex}
 
 \scriptura{Psalmus 148.}
 
@@ -411,7 +435,7 @@ Orémus:
 
 \vspace{-6mm}
 
-\antiphona{}{temporalia/ant-alleluia-fii-laudes2.gtex} % repeat the antiphon - new page
+\antiphona{}{temporalia/ant-alleluia-fii-laudes-2.gtex} % repeat the antiphon - new page
 
 \vfill
 \pagebreak
@@ -521,7 +545,7 @@ Orémus:
 \vfill
 %\pagebreak
 
-\vspace{-2mm}
+\vspace{8mm}
 
 \pars{Psalmus 1.}
 
@@ -565,6 +589,8 @@ Orémus:
 \input{temporalia/ps115.tex}
 
 \rubrica{Hic non dicitur Gloria Patri.}
+
+\vfill
 
 \pars{Psalmus 4.}
 

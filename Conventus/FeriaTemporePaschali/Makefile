@@ -57,10 +57,12 @@ LAPSALMOPTSACC = --accents $(word 1,$(TONUS)):$(word 3,$(TONUS)) \
 		 --preparatory-syllables $(word 2,$(TONUS)):$(word 4,$(TONUS))
 LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
-LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT) benedictus dan3)
+LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT) benedictus isaiae)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
-SCORES = $(patsubst %,ant-alleluia-%-laudes-1 ant-alleluia-%-laudes-2 \
-		      ant-alleluia-%-matutinum,fii fiii fiv fv fvi sabbato) \
+FERIIS = fii fiii fiv fv fvi sabbato
+SCORES = $(patsubst %,ant-alleluia-%-laudes-1,$(FERIIS)) \
+	 $(patsubst %,ant-alleluia-%-laudes-2,$(FERIIS))  \
+	 $(patsubst %,ant-alleluia-%-matutinum,$(FERIIS)) \
 	 $(patsubst %,ant-alleluia-%-vesperas,fii fiii fiv fvi) \
 	 $(patsubst %,ant-%-tp,cantemusdomino conversusest cunctisdiebus \
 			       datemagnitudinem domineaudivi dominusjudicabit) \
@@ -99,11 +101,11 @@ endef
 iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../DominicaInAlbis ../Epiphania/cantus/grom61
 include $(iter)
 
-all: dominicainalbis.pdf
+all: feriaii.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps115 ps148 ps149): PSALMOPTS = $(LAPSALMOPTS)
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
-$(CZPSALMS) $(TMP_DIR)/benedictus-boh.tex: $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/%.pslm
+$(CZPSALMS) $(TMP_DIR)/benedictus-boh.tex $(TMP_DIR)/isaiae-boh.tex: $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/%.pslm
 	$(GENPSALM)
 $(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT)): PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
 $(TMP_DIR)/magnificat-boh.tex: $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/DMC199x/%.pslm
