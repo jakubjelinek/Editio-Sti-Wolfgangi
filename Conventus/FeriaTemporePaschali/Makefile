@@ -20,33 +20,50 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 1 2 3 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 10 62 92 99 109 110 111 112 144ii 145 146 147 148 149 150
-PSALMS = 5 13 14 16 35 50 113 114 115 116 128 148 149 150
+PSALMS = 5 13 14 16 34 35 42 50 56 113 114 115 116 128 129 130 131 132 148 149 150
 include tonus.mk
-MODUS-5 = vi-F
-MODUS-13 = ii-D
-MODUS-14 = ii-D
-MODUS-16 = ii-D
-MODUS-35 = vi-F
-MODUS-50 = vi-F
-MODUS-113 = i-g2
-MODUS-114 = i-g2
-MODUS-115 = i-g2
-MODUS-116 = i-g2
-MODUS-128 = i-g2
-MODUS-148 = i-a
-MODUS-149 = i-a
-MODUS-150 = i-a
+MODUS-5-I = vi-F
+MODUS-13-I = ii-D
+MODUS-14-I = ii-D
+MODUS-16-I = ii-D
+MODUS-35-I = vi-F
+MODUS-50-I = vi-F
+MODUS-113-I = i-g2
+MODUS-114-I = i-g2
+MODUS-115-I = i-g2
+MODUS-116-I = i-g2
+MODUS-128-I = i-g2
+MODUS-148-I = i-a
+MODUS-149-I = i-a
+MODUS-150-I = i-a
 MODUS-isaiae = viii-G
 MODUS-magnificat-I = vi-F
+MODUS-benedictus-I = viii-G
+MODUS-34-II = iv-g
+MODUS-42-II = iv-E
+MODUS-50-II = iv-E
+MODUS-56-II = iv-E
+MODUS-129-II = viii-A
+MODUS-130-II = viii-A
+MODUS-131-II = viii-A
+MODUS-132-II = viii-A
+MODUS-148-II = v-g
+MODUS-149-II = v-g
+MODUS-150-II = v-g
+MODUS-ezechiae = irreg
 MODUS-magnificat-II = viiisoll-C
-MODUS-benedictus = viii-G
-MAGNIFICAT = $(foreach M,I II,magnificat-$(M))
-MODUSLIST = $(sort $(foreach P,$(PSALMS) $(MAGNIFICAT) isaiae benedictus,$(MODUS-$(P))))
+MODUS-benedictus-II = viii-G
+CANTICIS = isaiae ezechiae
+NUMS = I II
+PSALMSALT = $(foreach V,$(NUMS),$(addsuffix -$(V),$(PSALMS)))
+MAGNIFICAT = $(foreach M,$(NUMS),magnificat-$(M))
+BENEDICTUS = $(foreach B,$(NUMS),benedictus-$(B))
+MODUSLIST = $(sort $(foreach P,$(PSALMSALT) $(MAGNIFICAT) $(CANTICIS) $(BENEDICTUS),$(MODUS-$(P))))
 CZPSALMOPTS = --accents 0:0 --title-pattern " " --no-paragraph
 CZPSALMS = $(patsubst %,$(TMP_DIR)/ps%-boh.tex,$(PSALMS))
-ALLCZPSALMS = $(CZPSALMS) $(patsubst %,$(TMP_DIR)/%-boh.tex,magnificat benedictus isaiae)
-ALLCOMBPSALMS = $(patsubst %,$(TMP_DIR)/%-comb.tex,$(addprefix ps,$(PSALMS)) $(MAGNIFICAT))
+ALLCZPSALMS = $(CZPSALMS) $(patsubst %,$(TMP_DIR)/%-boh.tex,magnificat benedictus $(CANTICIS))
+ALLCOMBPSALMS = $(patsubst %,$(TMP_DIR)/%-comb.tex,$(addprefix ps,$(PSALMSALT)) $(MAGNIFICAT) \
+						   $(CANTICIS) $(BENEDICTUS))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
 	   && $(SED) -i -e 's/\*/\\grestar{}/g' $@
 TONUS = $(TONUS-$(MODUS-$*))
@@ -56,8 +73,8 @@ LAPSALMOPTS_COMMON = --accents-style bold --skip-verses 1
 LAPSALMOPTSACC = --accents $(word 1,$(TONUS)):$(word 3,$(TONUS)) \
 		 --preparatory-syllables $(word 2,$(TONUS)):$(word 4,$(TONUS))
 LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
-LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
-LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT) benedictus isaiae)
+LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMSALT))
+LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT) $(BENEDICTUS) $(CANTICIS))
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 FERIIS = fii fiii fiv fv fvi sabbato
 SCORES = $(patsubst %,ant-alleluia-%-laudes-1,$(FERIIS)) \
@@ -85,8 +102,9 @@ SCORES = $(patsubst %,ant-alleluia-%-laudes-1,$(FERIIS)) \
 	 tedeum-solemnis
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
-LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
-		   $(foreach P,isaiae benedictus,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
+LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach V,$(NUMS),$(TMP_DIR)/ps$(P)-initium-$(if $(MODUS-$(P)-$(V)),$(MODUS-$(P)-$(V)),ii-D)-auto.gabc)) \
+		   $(foreach V,$(NUMS),$(TMP_DIR)/benedictus-initium-$(if $(MODUS-benedictus-$(V)),$(MODUS-benedictus-$(V)),ii-D)-auto.gabc) \
+		   $(foreach P,$(CANTICIS),$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PSALMTONES_DIR)/$(2)-auto.gabc; \
 	     [ $(2) = "dir" ] && cd .. && $(SED) -i -e '/(::)$$$$/{/(,) (::)$$$$/!{s/<b>//g;s/<\/b>//g}}' $(3) || :
@@ -101,25 +119,33 @@ $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e 
 endef
 iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../DominicaInAlbis ../Epiphania/cantus/grom61
 include $(iter)
+$(TMP_DIR)/%-I.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
+$(TMP_DIR)/%-II.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
+$(TMP_DIR)/%-I-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
+$(TMP_DIR)/%-II-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 
 all: feriaii.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
-$(patsubst %,$(TMP_DIR)/%.tex,ps115 ps148 ps149): PSALMOPTS = $(LAPSALMOPTS)
+$(foreach V,$(NUMS),$(patsubst %,$(TMP_DIR)/%-$(V).tex,ps115 ps148 ps149)): PSALMOPTS = $(LAPSALMOPTS)
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
-$(CZPSALMS) $(TMP_DIR)/benedictus-boh.tex $(TMP_DIR)/isaiae-boh.tex: $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/%.pslm
+$(CZPSALMS) $(patsubst %,$(TMP_DIR)/%-boh.tex,benedictus $(CANTICIS)): $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/%.pslm
 	$(GENPSALM)
 $(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT)): PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
 $(TMP_DIR)/magnificat-boh.tex: $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/DMC199x/%.pslm
 	$(GENPSALM)
-$(LAPSALMS): $(TMP_DIR)/ps%.tex: $(PSALMS_DIR)/ps%.pslm
+$(LAPSALMS): $(TMP_DIR)/ps%.tex: $(TMP_DIR)/ps%.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
-$(patsubst %,$(TMP_DIR)/%.tex,benedictus isaiae): \
+$(patsubst %,$(TMP_DIR)/%.tex,$(CANTICIS)): \
 $(TMP_DIR)/%.tex: $(PSALMS_DIR)/%.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
 $(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT)): \
 $(TMP_DIR)/%.tex: $(PSALMS_DIR)/magnificat.pslm
+	$(GENPSALM)
+	$(SED) -i -e 'y/Jj/Ii/' $@
+$(patsubst %,$(TMP_DIR)/%.tex,$(BENEDICTUS)): \
+$(TMP_DIR)/%.tex: $(PSALMS_DIR)/benedictus.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
 $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
