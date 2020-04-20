@@ -51,8 +51,8 @@ MODUS-148-II = v-g
 MODUS-149-II = v-g
 MODUS-150-II = v-g
 MODUS-ezechiae = irreg
-MODUS-magnificat-II = viiisoll-C
-MODUS-benedictus-II = viii-G
+MODUS-magnificat-II = viii-G2
+MODUS-benedictus-II = vii-c
 CANTICIS = isaiae ezechiae
 NUMS = I II
 PSALMSALT = $(foreach V,$(NUMS),$(addsuffix -$(V),$(PSALMS)))
@@ -83,10 +83,10 @@ SCORES = $(patsubst %,ant-alleluia-%-laudes-1,$(FERIIS)) \
 	 $(patsubst %,ant-alleluia-%-vesperas,fii fiii fiv fvi) \
 	 $(patsubst %,ant-%-tp,cantemusdomino conversusest cunctisdiebus \
 			       datemagnitudinem domineaudivi dominusjudicabit) \
-	 $(addprefix ant-,surgensjesus paxvobis) \
+	 $(addprefix ant-,surgensjesus paxvobis praecedamvos mittemanum) \
 	 $(addprefix hym-,AuroraLucis AdCoenam RexSempiterne) respbr-laud respbr-vesp \
 	 deusinadiutorium-communis \
-	 $(foreach M,vi-F i-D,magnificat-initium-$(M)) \
+	 $(foreach M,vi-F viii-G2,magnificat-initium-$(M)) \
 	 capitulum-ChristusResurgens $(addprefix versus-,mane inresurrectione) \
 	 oratio supplicatiolitaniae oratiodominica \
 	 dominusvobiscum-solemnis domineexaudi \
