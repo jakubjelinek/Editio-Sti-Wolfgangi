@@ -1,12 +1,14 @@
 name: Mitte manum tuam;
 office-part: Antiphona;
 mode: 8;
-book: Antiphonale monasticum 1934, p. 478;
+book: Antiphonale monasticum 1934, p. 478; H240;
 transcriber: Jakub Jelínek;
+nabc-lines: 1;
+% Cf. Io. 20, 27
 %%
 (c4)
-MIt(f_g)te(g') *()
-ma(h)num(g') tu(h)am,(g'_) (,)
-et(f) co(hj~)gnó(ji)sce(g') lo(g)ca(g') cla(g)vó(g)rum,(h'_) al(g>)le(f)lú(gh~)ia:(h.) (;)
-et(h) no(j)li(g') es(h)se(g') in(f)cré(g)du(fe)lus,(d'_) (,)
-sed(g) fi(h')dé(i)lis,(j_h) al(i>)le(hi)lú(g.)ia.(g.) (::)
+MIt(f_g|peS)te(g'|vi-) *()
+ma(h|vi-)num(g'|pu) tu(h|vihh)am,(g'_|pu) (,)
+et(f|ta-hh) co(hj~|ta>hh)gnó(ji|clShh)sce(g'|pu) lo(g|vihh)ca(g'|vihg) cla(g|vi-)vó(g|vi-)rum,(h'_|vi) al(g>|vi>hh)le(f|tahg)lú(gh~|ta>hg)ia:(h.|vi-hg) (;)
+et(h|vi-hi) no(j|pehi)li(g'|puhh) es(h|vihi)se(g'|vihh) in(f|vihg)cré(g|ta)du(fe|vi-)lus,(d'_|ta-) (,)
+sed(g|vi-) fi(h'|vi-)dé(i|vi-)lis,(j_h|cl-hi) al(i>|vi>)le(hi|pe)lú(g.|ta)ia.(g.|puhf) (::)
