@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 5 13 14 16 34 35 42 50 56 113 114 115 116 128 129 130 131 132 148 149 150
+PSALMS = 5 13 14 16 34 35 42 44 45 50 56 63 64 113 114 115 116 128 129 130 131 132 134 135 136 137 148 149 150
 include tonus.mk
 MODUS-5-I = vi-F
 MODUS-13-I = ii-D
@@ -37,8 +37,8 @@ MODUS-148-I = i-a
 MODUS-149-I = i-a
 MODUS-150-I = i-a
 MODUS-isaiae = viii-G
-MODUS-magnificat-I = vi-F
 MODUS-benedictus-I = viii-G
+MODUS-magnificat-I = vi-F
 MODUS-34-II = iv-g
 MODUS-42-II = iv-E
 MODUS-50-II = iv-E
@@ -51,10 +51,25 @@ MODUS-148-II = v-g
 MODUS-149-II = v-g
 MODUS-150-II = v-g
 MODUS-ezechiae = irreg
-MODUS-magnificat-II = viii-G2
 MODUS-benedictus-II = vii-c
-CANTICIS = isaiae ezechiae
-NUMS = I II
+MODUS-magnificat-II = viii-G2
+MODUS-44-III = i-g
+MODUS-45-III = i-g
+MODUS-50-III = vii-a
+MODUS-63-III = vii-a
+MODUS-64-III = vii-a
+MODUS-148-III = ii-D
+MODUS-149-III = ii-D
+MODUS-150-III = ii-D
+MODUS-134-III = iii-g
+MODUS-135-III = iii-g
+MODUS-136-III = iii-g
+MODUS-137-III = iii-g
+MODUS-anna = i-g2
+MODUS-benedictus-III = vi-F
+MODUS-magnificat-III = viii-G
+CANTICIS = isaiae ezechiae anna
+NUMS = I II III
 PSALMSALT = $(foreach V,$(NUMS),$(addsuffix -$(V),$(PSALMS)))
 MAGNIFICAT = $(foreach M,$(NUMS),magnificat-$(M))
 BENEDICTUS = $(foreach B,$(NUMS),benedictus-$(B))
@@ -86,7 +101,7 @@ SCORES = $(patsubst %,ant-alleluia-%-laudes-1,$(FERIIS)) \
 	 $(addprefix ant-,surgensjesus paxvobis praecedamvos mittemanum) \
 	 $(addprefix hym-,AuroraLucis AdCoenam RexSempiterne) respbr-laud respbr-vesp \
 	 deusinadiutorium-communis \
-	 $(foreach M,vi-F viii-G2,magnificat-initium-$(M)) \
+	 $(foreach M,vi-F viii-G2 viii-G,magnificat-initium-$(M)) \
 	 capitulum-ChristusResurgens $(addprefix versus-,mane inresurrectione) \
 	 oratio supplicatiolitaniae oratiodominica \
 	 dominusvobiscum-solemnis domineexaudi \
@@ -94,12 +109,12 @@ SCORES = $(patsubst %,ant-alleluia-%-laudes-1,$(FERIIS)) \
 	 dominelabiamea inv-surrexitdominusvere \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
-					deus christus ignem \
+					deus christus ignem ille \
 					evangelica divinum adsocietatem) \
 	 $(addprefix resp-,angelusdominidescendit angelusdominilocutus \
 			   dumtransisset mariamagdalene surrexitpastor \
 			   virtutemagna deoreprudentis surgensjesus \
-			   egosumvitisvera) \
+			   egosumvitisvera christusresurgens) \
 	 tedeum-solemnis ezechiae-initium-irreg
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
@@ -122,10 +137,12 @@ iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 aro
 include $(iter)
 $(TMP_DIR)/%-I.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
 $(TMP_DIR)/%-II.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
+$(TMP_DIR)/%-III.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
 $(TMP_DIR)/%-I-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-II-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
+$(TMP_DIR)/%-III-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 
-FERIAS = ii iii
+FERIAS = ii iii iv
 all: $(patsubst %,feria%.pdf,$(FERIAS))
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(foreach V,$(NUMS),$(patsubst %,$(TMP_DIR)/%-$(V).tex,ps115 ps148 ps149)): PSALMOPTS = $(LAPSALMOPTS)
