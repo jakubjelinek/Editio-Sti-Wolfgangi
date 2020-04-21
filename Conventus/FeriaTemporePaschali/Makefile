@@ -98,7 +98,8 @@ SCORES = $(patsubst %,ant-alleluia-%-laudes-1,$(FERIIS)) \
 	 $(patsubst %,ant-alleluia-%-vesperas,fii fiii fiv fvi) \
 	 $(patsubst %,ant-%-tp,cantemusdomino conversusest cunctisdiebus \
 			       datemagnitudinem domineaudivi dominusjudicabit) \
-	 $(addprefix ant-,surgensjesus paxvobis praecedamvos mittemanum) \
+	 $(addprefix ant-,surgensjesus paxvobis praecedamvos mittemanum \
+			  egosumvitis quiavidistime) \
 	 $(addprefix hym-,AuroraLucis AdCoenam RexSempiterne) respbr-laud respbr-vesp \
 	 deusinadiutorium-communis \
 	 $(foreach M,vi-F viii-G2 viii-G,magnificat-initium-$(M)) \
