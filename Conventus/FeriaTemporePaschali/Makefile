@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 5 13 14 16 34 35 42 44 45 50 56 63 64 113 114 115 116 128 129 130 131 132 134 135 136 137 148 149 150
+PSALMS = 5 13 14 16 34 35 42 44 45 50 56 61 63 64 65 87 89 113 114 115 116 128 129 130 131 132 134 135 136 137 138 139 140 148 149 150
 include tonus.mk
 MODUS-5-I = vi-F
 MODUS-13-I = ii-D
@@ -68,8 +68,22 @@ MODUS-137-III = iii-g
 MODUS-anna = i-g2
 MODUS-benedictus-III = vi-F
 MODUS-magnificat-III = viii-G
-CANTICIS = isaiae ezechiae anna
-NUMS = I II III
+MODUS-50-IV = viii-G2
+MODUS-61-IV = iv-E
+MODUS-65-IV = iv-E
+MODUS-87-IV = viii-G2
+MODUS-89-IV = viii-G2
+MODUS-138-IV = iii-g
+MODUS-139-IV = iii-g
+MODUS-140-IV = iii-g
+MODUS-148-IV = vi-F
+MODUS-149-IV = vi-F
+MODUS-150-IV = vi-F
+MODUS-moysis = irreg
+MODUS-benedictus-IV = viii-G2
+MODUS-magnificat-IV = viii-G2
+CANTICIS = isaiae ezechiae anna moysis
+NUMS = I II III IV
 PSALMSALT = $(foreach V,$(NUMS),$(addsuffix -$(V),$(PSALMS)))
 MAGNIFICAT = $(foreach M,$(NUMS),magnificat-$(M))
 BENEDICTUS = $(foreach B,$(NUMS),benedictus-$(B))
@@ -99,7 +113,7 @@ SCORES = $(patsubst %,ant-alleluia-%-laudes-1,$(FERIIS)) \
 	 $(patsubst %,ant-%-tp,cantemusdomino conversusest cunctisdiebus \
 			       datemagnitudinem domineaudivi dominusjudicabit) \
 	 $(addprefix ant-,surgensjesus paxvobis praecedamvos mittemanum \
-			  egosumvitis quiavidistime) \
+			  egosumvitis quiavidistime ardensestcormeum misidigitummeum) \
 	 $(addprefix hym-,AuroraLucis AdCoenam RexSempiterne) respbr-laud respbr-vesp \
 	 deusinadiutorium-communis \
 	 $(foreach M,vi-F viii-G2 viii-G,magnificat-initium-$(M)) \
@@ -116,7 +130,7 @@ SCORES = $(patsubst %,ant-alleluia-%-laudes-1,$(FERIIS)) \
 			   dumtransisset mariamagdalene surrexitpastor \
 			   virtutemagna deoreprudentis surgensjesus \
 			   egosumvitisvera christusresurgens) \
-	 tedeum-solemnis ezechiae-initium-irreg
+	 tedeum-solemnis ezechiae-initium-irreg moysis-initium-irreg
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach V,$(NUMS),$(TMP_DIR)/ps$(P)-initium-$(if $(MODUS-$(P)-$(V)),$(MODUS-$(P)-$(V)),ii-D)-auto.gabc)) \
@@ -139,11 +153,13 @@ include $(iter)
 $(TMP_DIR)/%-I.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
 $(TMP_DIR)/%-II.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
 $(TMP_DIR)/%-III.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
+$(TMP_DIR)/%-IV.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
 $(TMP_DIR)/%-I-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-II-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-III-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
+$(TMP_DIR)/%-IV-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 
-FERIAS = ii iii iv
+FERIAS = ii iii iv v
 all: $(patsubst %,feria%.pdf,$(FERIAS))
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(foreach V,$(NUMS),$(patsubst %,$(TMP_DIR)/%-$(V).tex,ps115 ps148 ps149)): PSALMOPTS = $(LAPSALMOPTS)
