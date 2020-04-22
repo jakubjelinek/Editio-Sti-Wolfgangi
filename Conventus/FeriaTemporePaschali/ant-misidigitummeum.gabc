@@ -1,14 +1,17 @@
 name:Misi digitum meum;
 office-part:Antiphona;
 mode:8;
-book:Antiphonale Monasticum, 1934, p. 480;
+book:Antiphonale Monasticum, 1934, p. 480; H240;
 transcriber:Marek Klein;
 cantusindex:003782;
+nabc-lines: 1;
 %%
-(c4)Mi(f_g)si(g.) <v>\greheightstar</v>() dí(hj)gi(j)tum(i) me(j)um(h_) (,) in(g) fi(hi)xú(g)ras(h) cla(g)vó(f_e)rum,(f.) (;)
-et(d>) ma(e)num(f>) me(g)am(g) in(h>) la(j)tus(i) e(j>)ius,(h_) (,) et(i) di(g.)xi:(g.) (;)
-Dó(g_e)mi(g)nus(g) me(f_e)us,(f_) (,) et(d>) De(e)us(f>) me(g)us,(f)
-al(gh)le(h)lú(g.)ia.(g.) (::g+)
-
-
-
+(c4)
+Mi(f_g|peS)si(g.|vi-) *()
+dí(hj|pe)gi(j|vi)tum(i|ta) me(j|vihg)um(h_|vihg) (,)
+in(g|tahh) fi(hi|pehh)xú(g|tahh)ras(h|vi-hh) cla(g|vihg)vó(f_e|cl-)rum,(f.|vi-) (;)
+et(d>|vi>) ma(e|vi-hg)num(f>|ta>hg) me(g|vi-)am(g|vi-) in(h>|ta>hg) la(j|vi-hg)tus(i|tahg) e(j>|vi>hg)ius,(h_|tahg) (,)
+et(i) di(g.|ta)xi:(g.|ta) (;)
+Dó(g_e|cl-)mi(g|vi-hg)nus(g|vi-hg) me(f_e|cl-hg)us,(f_|vi-hg) (,)
+et(d>|vi>) De(e|vi-)us(f>|ta>) me(g|vi-)us,(f|ta)
+al(gh|pehh)le(h|vihg)lú(g.|ta)ia.(g.|ta) (::g+)
