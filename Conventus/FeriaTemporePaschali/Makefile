@@ -99,7 +99,7 @@ MODUS-77ii-V = vii-a
 MODUS-77iii-V = vii-a
 MODUS-habacuc = iv-E
 MODUS-benedictus-V = i-f
-MODUS-magnificat-V = viii-G2
+MODUS-magnificat-V = i-D
 CANTICIS = isaiae ezechiae anna moysis habacuc
 NUMS = I II III IV V
 PSALMSALT = $(foreach V,$(NUMS),$(addsuffix -$(V),$(PSALMS)))
@@ -132,10 +132,10 @@ SCORES = $(patsubst %,ant-alleluia-%-laudes-1,$(FERIIS)) \
 			       datemagnitudinem domineaudivi dominusjudicabit) \
 	 $(addprefix ant-,surgensjesus paxvobis praecedamvos mittemanum \
 			  egosumvitis quiavidistime ardensestcormeum misidigitummeum \
-			  veneruntadmonumentum) \
-	 $(addprefix hym-,AuroraLucis AdCoenam RexSempiterne) respbr-laud respbr-vesp \
-	 deusinadiutorium-communis \
-	 $(foreach M,vi-F viii-G2 viii-G,magnificat-initium-$(M)) \
+			  veneruntadmonumentum reginacaelilaetarealleluia) \
+	 $(addprefix hym-,AuroraLucis AdCoenam RexSempiterne AveMarisStella) \
+	 respbr-laud respbr-vesp deusinadiutorium-communis \
+	 $(foreach M,vi-F viii-G2 viii-G i-D,magnificat-initium-$(M)) \
 	 capitulum-ChristusResurgens $(addprefix versus-,mane inresurrectione) \
 	 oratio supplicatiolitaniae oratiodominica \
 	 dominusvobiscum-solemnis domineexaudi \
@@ -168,7 +168,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../DominicaInAlbis ../Epiphania/cantus/grom61
+iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../DominicaInAlbis ../Epiphania/cantus/grom61 ../InNativitateBMV/cantus/amon33
 include $(iter)
 $(TMP_DIR)/%-I.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
 $(TMP_DIR)/%-II.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
