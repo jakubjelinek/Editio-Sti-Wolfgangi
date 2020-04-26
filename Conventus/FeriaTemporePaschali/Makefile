@@ -149,7 +149,7 @@ SCORES = $(patsubst %,ant-alleluia-%-laudes-1,$(FERIIS)) \
 	 respbr-laud respbr-vesp deusinadiutorium-communis \
 	 $(foreach M,vi-F viii-G2 viii-G i-D iii-a,magnificat-initium-$(M)) \
 	 capitulum-ChristusResurgens $(addprefix versus-,mane inresurrectione) \
-	 oratio supplicatiolitaniae oratiodominica \
+	 oratio oratio2 supplicatiolitaniae oratiodominica \
 	 dominusvobiscum-solemnis domineexaudi \
 	 benedicamus-tempore-paschali \
 	 dominelabiamea inv-surrexitdominusvere \
