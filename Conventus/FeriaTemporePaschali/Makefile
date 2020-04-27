@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 5 13 14 16 17i 17ii 17iii 19 20 29 34 35 42 44 45 50 56 61 63 64 65i 65ii 75 77i 77ii 77iii 87 89 91 113 114 115 116 128 129 130 131 132 134 135 136 137 138i 138ii 139 140 141 143i 143ii 144i 148 149 150
+PSALMS = 5 13 14 16 17i 17ii 17iii 19 20 29 34i 34ii 34iii 35 36i 36ii 36iii 37i 37ii 38 42 44 45 50 56 61 63 64 65i 65ii 75 77i 77ii 77iii 87 89 91 113 114 115 116 128 129 130 131 132 134 135 136 137 138i 138ii 139 140 141 143i 143ii 144i 148 149 150
 include tonus.mk
 MODUS-5-I = vi-F
 MODUS-13-I = ii-D
@@ -45,7 +45,15 @@ MODUS-150-I = i-a
 MODUS-isaiae = viii-G
 MODUS-benedictus-I = viii-G
 MODUS-magnificat-I = vi-F
-MODUS-34-II = iv-g
+MODUS-34i-II = iv-g
+MODUS-34ii-II = iv-g
+MODUS-34iii-II = iv-g
+MODUS-36i-II = iv-g
+MODUS-36ii-II = iv-g
+MODUS-36iii-II = iv-g
+MODUS-37i-II = iv-g
+MODUS-37ii-II = iv-g
+MODUS-38-II = iv-g
 MODUS-42-II = iv-E
 MODUS-50-II = iv-E
 MODUS-56-II = iv-E
@@ -195,8 +203,17 @@ $(TMP_DIR)/%-IV-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-V-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-VII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 
-FERIAS = ii iii iv v vi
-all: $(patsubst %,feria%.pdf,$(FERIAS))
+FERIAE = ii iii iv v vi
+HEBDOMADAE = i ii
+PDF = $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE)))
+all: $(PDF)
+feria%-i.pdf: feria%.tex
+feria%-ii.pdf: feria%.tex
+feriaii-%.pdf: hebdomada%.tex
+feriaiii-%.pdf: hebdomada%.tex
+feriaiv-%.pdf: hebdomada%.tex
+feriav-%.pdf: hebdomada%.tex
+feriavi-%.pdf: hebdomada%.tex
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(foreach V,$(NUMSI),$(patsubst %,$(TMP_DIR)/%-$(V).tex,ps115 ps148 ps149)): PSALMOPTS = $(LAPSALMOPTS)
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
@@ -225,8 +242,7 @@ $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
 $(patsubst %,$(TMP_DIR)/%-boh.tex,$(MAGNIFICAT)): $(TMP_DIR)/%-boh.tex: $(TMP_DIR)/magnificat-boh.tex
 	$(CP) -a $< $@
 $(patsubst %,$(TMP_DIR)/%-comb.tex,$(MAGNIFICAT)): PSSKIP = 2
-$(patsubst %,feria%.pdf,$(FERIAS)): \
-%.pdf: %.tex conventuscommune.tex translationes_cs.tex \
+$(PDF): %.pdf: %.tex conventuscommune.tex translationes_cs.tex \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
