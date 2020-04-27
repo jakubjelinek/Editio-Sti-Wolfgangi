@@ -48,6 +48,26 @@
 
 %%%% Vicekrat opakovane kousky
 
+\newcommand{\anteOrationem}{
+  \rubrica{Ante Orationem, cantatur a Superiore:}
+
+  \pars{Supplicatio Litaniæ.}
+
+  \cuminitiali{}{temporalia/supplicatiolitaniae.gtex}
+
+  \pars{Oratio Dominica.}
+
+  \cuminitiali{}{temporalia/oratiodominica.gtex}
+
+  \rubrica{Deinde dicitur ab Hebdomadario:}
+
+  \cuminitiali{}{temporalia/dominusvobiscum-solemnis.gtex}
+
+  \rubrica{In choro monialium loco Dominus vobiscum dicitur:}
+
+  \sineinitiali{temporalia/domineexaudi.gtex}
+}
+
 \setlength{\columnsep}{30pt} % prostor mezi sloupci
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -69,7 +89,11 @@
 
 %%%% Titulni stranka
 \begin{titulusOfficii}
+\iffalse
 \nomenFesti{Feria II infra Hebdom. I post Oct. Paschæ.}
+\else
+\nomenFesti{Feria II infra Hebdom. II post Oct. Paschæ.}
+\fi
 \end{titulusOfficii}
 
 \pagebreak
@@ -121,21 +145,21 @@
 
 \pars{Psalmus 1.}
 
-\vspace{-5mm}
+%\vspace{-5mm}
 
-\antiphona{I f}{temporalia/ant-alleluia-fii-matutinum.gtex}
+\antiphona{II D}{temporalia/ant-alleluia-fii-matutinum.gtex}
 
-\vspace{-5mm}
+%\vspace{-5mm}
 
 \scriptura{Ps. 13}
 
-\vspace{-2mm}
+%\vspace{-2mm}
 
 \initiumpsalmi{temporalia/ps13-initium-ii-D-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps13-comb.tex}{10cm}
+%\psalmusEtTranslatioT{temporalia/ps13-I-comb.tex}{10cm}
 
-\input{temporalia/ps13.tex}
+\input{temporalia/ps13-I.tex}
 
 \vfill
 \pagebreak
@@ -146,29 +170,108 @@
 
 \initiumpsalmi{temporalia/ps14-initium-ii-D-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps14-comb.tex}{10cm}
+%\psalmusEtTranslatioT{temporalia/ps14-I-comb.tex}{10cm}
 
-\input{temporalia/ps14.tex}
+\input{temporalia/ps14-I.tex}
 
 \vfill
 \pagebreak
 
-\pars{Psalmus 3.}
+\pars{Psalmus 3.} \scriptura{Ps. 16}
 
-\scriptura{Ps. 16}
+\vspace{-1mm}
 
 \initiumpsalmi{temporalia/ps16-initium-ii-D-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps16-comb.tex}{10cm}
+%\psalmusEtTranslatioT{temporalia/ps16-I-comb.tex}{10cm}
 
-\input{temporalia/ps16.tex}
+\input{temporalia/ps16-I.tex}
 
 \vfill
+\pagebreak
+
+\pars{Psalmus 4.} \scriptura{Ps. 17, 2-16}
+
+\vspace{-1mm}
+
+\initiumpsalmi{temporalia/ps17i-initium-ii-D-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps17i-I-comb.tex}{10cm}
+
+\input{temporalia/ps17i-I.tex}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 5.} \scriptura{Ps. 17, 17-35}
+
+\vspace{-1mm}
+
+\initiumpsalmi{temporalia/ps17ii-initium-ii-D-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps17ii-I-comb.tex}{10cm}
+
+\input{temporalia/ps17ii-I.tex}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 6.} \scriptura{Ps. 17, 36-51}
+
+\vspace{-1mm}
+
+\initiumpsalmi{temporalia/ps17iii-initium-ii-D-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps17iii-I-comb.tex}{10cm}
+
+\input{temporalia/ps17iii-I.tex}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 7.} \scriptura{Ps. 19}
+
+\vspace{-1mm}
+
+\initiumpsalmi{temporalia/ps19-initium-ii-D-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps19-I-comb.tex}{10cm}
+
+\input{temporalia/ps19-I.tex}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 8.} \scriptura{Ps. 20}
+
+\vspace{-1mm}
+
+\initiumpsalmi{temporalia/ps20-initium-ii-D-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps20-I-comb.tex}{10cm}
+
+\input{temporalia/ps20-I.tex}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 9.} \scriptura{Ps. 29}
+
+\vspace{-1mm}
+
+\initiumpsalmi{temporalia/ps29-initium-ii-D-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps29-I-comb.tex}{10cm}
+
+\input{temporalia/ps29-I.tex}
+
+\vfill
+\pagebreak
 
 \antiphona{}{temporalia/ant-alleluia-fii-matutinum.gtex}
 
 \vfill
-\pagebreak
+%\pagebreak
 
 \noindent \Vbardot{} Surréxit Dóminus de sepúlcro, allelúia.
 \noindent \Rbardot{} Qui pro nobis pepéndit in ligno, allelúia.
@@ -179,16 +282,26 @@
 
 \cuminitiali{}{temporalia/absolutio-exaudi.gtex}
 
-\cuminitiali{}{temporalia/benedictio-solemn-benedictione.gtex}
-
 \vfill
 \pagebreak
 
+\cuminitiali{}{temporalia/benedictio-solemn-benedictione.gtex}
+
+\vspace{7mm}
+
+\iffalse
 \pars{Lectio I.} \scriptura{Ac. 1, 1-8}
 
-\noindent Incipit liber Actuum Apostolórum
+\noindent Incípit liber Actuum Apostolórum.
 
 \noindent Primum quidem sermónem feci de ómnibus, o Theóphile, quæ cœpit Iesus fácere et docére usque in diem qua præcípiens Apóstolis per Spíritum Sanctum, quos elégit, assúmptus est: Quibus et prǽbuit seípsum vivum post passiónem suam in multis arguméntis, per dies quadragínta appárens eis, et loquens de regno Dei. Et convéscens, præcépit eis ab Ierosólymis ne discéderent, sed exspectárent promissiónem Patris, quam audístis (inquit) per os meum: Quia Ioánnes quidem baptizávit aqua, vos autem baptizabímini Spíritu Sancto non post multos hos dies. Igitur qui convénerant, interrogábant eum, dicéntes: Dómine, si in témpore hoc restítues regnum Israël? Dixit autem eis: Non est vestrum nosse témpora vel moménta quæ Pater pósuit in sua potestáte: Sed accipiétis virtútem superveniéntis Spíritus Sancti in vos, et éritis mihi testes in Ierúsalem, et in omni Iudǽa, et Samaría, et usque ad últimum terræ.
+\else
+\pars{Lectio I.} \scriptura{Ac. 15, 5-12}
+
+\noindent De Actibus Apostolórum.
+
+\noindent Surrexérunt autem quidam de hǽresi Pharisæórum, qui credidérunt, dicéntes quia opórtet circumcídi eos, præcípere quoque serváre legem Móysi. Convenerúntque Apóstoli et senióres vidére de verbo hoc. Cum autem magna conquisítio fíeret, surgens Petrus dixit ad eos: Viri fratres, vos scitis quóniam ab antíquis diébus Deus in nobis elégit, per os meum audíre gentes verbum Evangélii et crédere. Et qui novit corda Deus, testimónium perhíbuit, dans illis Spíritum Sanctum, sicut et nobis, et nihil discrévit inter nos et illos, fide puríficans corda eórum. Nunc ergo quid tentátis Deum, impónere iugum super cervíces discipulórum quod neque patres nostri, neque nos portáre potúimus? sed per grátiam Dómini Iesu Christi crédimus salvári, quemádmodum et illi. Tácuit autem omnis multitúdo: et audiébant Bárnabam et Paulum narrántes quanta Deus fecísset signa et prodígia in géntibus per eos.
+\fi
 
 \noindent \Vbardot{} Tu autem, Dómine, miserére nobis.
 \noindent \Rbardot{} Deo grátias.
@@ -209,11 +322,19 @@
 
 \vspace{7mm}
 
+\iffalse
 \pars{Lectio II.}
 
 \scriptura{Ac. 1, 9-14}
 
 \noindent Et cum hæc dixísset, vidéntibus illis, elevátus est: et nubes suscépit eum ab óculis eórum. Cumque intueréntur in cælum eúntem illum, ecce duo viri astitérunt iuxta illos in véstibus albis, qui et dixérunt: Viri Galilǽi, quid statis aspiciéntes in cælum? Hic Iesus, qui assúmptus est a vobis in cælum, sic véniet quemádmodum vidístis eum eúntem in cælum. Tunc revérsi sunt Ierosólymam a monte qui vocátur Olivéti, qui est iuxta Ierúsalem, sábbati habens iter. Et cum introíssent in cœnáculum, ascendérunt ubi manébant Petrus, et Ioánnes, Iacóbus, et Andréas, Philíppus, et Thomas, Bartholomǽus, et Matthǽus, Iacóbus Alphǽi, et Simon Zelótes, et Iudas Iacóbi. Hi omnes erant perseverántes unanímiter in oratióne cum muliéribus, et María matre Iesu, et frátribus eius.
+\else
+\pars{Lectio II.}
+
+\scriptura{Ac. 15, 13-21}
+
+\noindent Et postquam tacuérunt, respóndit Iacóbus, dicens: Viri fratres, audíte me. Simon narrávit quemádmodum primum Deus visitávit súmere ex géntibus pópulum nómini suo. Et huic concórdant verba prophetárum: sicut scriptum est: Post hæc revértar, et reædificábo tabernáculum David quod décidit: et díruta eius reædificábo, et érigam illud: ut requírant céteri hóminum Dóminum, et omnes gentes super quas invocátum est nomen meum, dicit Dóminus fáciens hæc. Notum a sǽculo est Dómino opus suum. Propter quod ego iúdico non inquietári eos qui ex géntibus convertúntur ad Deum, sed scríbere ad eos ut abstíneant se a contaminatiónibus simulacrórum, et fornicatióne, et suffocátis, et sánguine. Móyses enim a tempóribus antíquis habet in síngulis civitátibus qui eum prǽdicent in synagógis, ubi per omne sábbatum légitur.
+\fi
 
 \noindent \Vbardot{} Tu autem, Dómine, miserére nobis.
 \noindent \Rbardot{} Deo grátias.
@@ -234,11 +355,19 @@
 
 \vspace{7mm}
 
+\iffalse
 \pars{Lectio III.}
 
 \scriptura{Ac. 1, 15-26}
 
 \noindent In diébus illis, exsúrgens Petrus in médio fratrum, dixit (erat autem turba hóminum simul, fere centum vigínti): Viri fratres, opórtet impléri Scriptúram quam prædíxit Spíritus Sanctus per os David de Iuda, qui fuit dux eórum qui comprehendérunt Iesum: Qui connumerátus erat in nobis, et sortítus est sortem ministérii huius.Et hic quidem possédit agrum de mercéde iniquitátis, et suspénsus crépuit médius: et diffúsa sunt ómnia víscera eius. Et notum factum est ómnibus habitántibus Ierúsalem, ita ut appellarétur ager ille, lingua eórum, Hacéldama, hoc est, ager sánguinis. Scriptum est enim in libro Psalmórum: Fiat commorátio eórum desérta, et non sit qui inhábitet in ea: et episcopátum eius accípiat alter. Opórtet ergo ex his viris qui nobíscum sunt congregáti in omni témpore quo intrávit et exívit inter nos Dóminus Iesus, incípiens a baptísmate Ioánnis usque in diem qua assúmptus est a nobis, testem resurrectiónis eius nobíscum fíeri unum ex istis. Et statuérunt duos, Ioseph, qui vocabátur Bársabas, qui cognominátus est Iustus, et Matthíam. Et orántes dixérunt: Tu Dómine, qui corda nosti ómnium, osténde quem elégeris ex his duóbus unum, Accípere locum ministérii huius et apostolátus, de quo prævaricátus est Iudas ut abíret in locum suum. Et dedérunt sortes eis, et cécidit sors super Matthíam: et annumerátus est cum úndecim Apóstolis.
+\else
+\pars{Lectio III.}
+
+\scriptura{Ac. 15, 22-29}
+
+\noindent Tunc plácuit Apóstolis et senióribus cum omni ecclésia elígere viros ex eis, et míttere Antiochíam cum Paulo et Bárnaba: Iudam, qui cognominabátur Bársabas, et Silam, viros primos in frátribus: scribéntes per manus eórum: Apóstoli et senióres fratres, his qui sunt Antiochíæ, et Sýriæ, et Cilíciæ, frátribus ex géntibus, salútem. Quóniam audívimus quia quidam ex nobis exeúntes, turbavérunt vos verbis, everténtes ánimas vestras, quibus non mandávimus, plácuit nobis colléctis in unum elígere viros, et míttere ad vos cum caríssimis nostris Bárnaba et Paulo, homínibus qui tradidérunt ánimas suas pro nómine Dómini nostri Iesu Christi. Mísimus ergo Iudam et Silam, qui et ipsi vobis verbis réferent éadem. Visum est enim Spirítui Sancto et nobis nihil ultra impónere vobis óneris quam hæc necessária: ut abstineátis vos ab immolátis simulacrórum, et sánguine, et suffocáto, et fornicatióne: a quibus custodiéntes vos, bene agétis. Valéte.
+\fi
 
 \noindent \Vbardot{} Tu autem, Dómine, miserére nobis.
 \noindent \Rbardot{} Deo grátias.
@@ -271,9 +400,11 @@
 
 Orémus:
 
+\iffalse
 \noindent Præsta, quǽsumus, omnípotens Deus: \gredagger{} ut qui paschália festa perégimus, \grestar{} hæc, te largiénte, móribus et vita teneámus. Per Dóminum.
-
-\noindent \Rbardot{} Amen.
+\else
+\noindent Deus, qui in Fílii tui humilitáte iacéntem mundum erexísti: \gredagger{} fidélibus tuis perpétuam concéde lætítiam; \grestar{} ut quos perpétuæ mortis eripuísti cásibus, gáudiis fácias pérfrui sempitérnis.  Per eúmdem Dóminum.
+\fi
 
 \vspace{7mm}
 
@@ -291,6 +422,9 @@ Orémus:
 
 \noindent \Rbardot{} Amen.
 
+\vfill
+\pagebreak
+
 \hora{Ad Laudes.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\sideThumbs{Laudes}
 
@@ -299,7 +433,7 @@ Orémus:
 \vspace{0.5cm}
 \grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \cuminitiali{}{temporalia/deusinadiutorium-communis.gtex}
-\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\grechangedim{interwordspacetext}{0.32 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 
 \vfill
 %\pagebreak
@@ -308,14 +442,14 @@ Orémus:
 
 \vspace{-0.4cm}
 
-\antiphona{VIII a}{temporalia/ant-alleluia-fii-laudes1.gtex}
+\antiphona{VI F}{temporalia/ant-alleluia-fii-laudes-1.gtex}
 
 \scriptura{Psalmus 50.}
 
-\initiumpsalmi{temporalia/ps50-initium-viii-A-auto.gtex}
+\initiumpsalmi{temporalia/ps50-initium-vi-F-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps50-comb.tex}{10cm}
-\input{temporalia/ps50.tex}
+%\psalmusEtTranslatioT{temporalia/ps50-I-comb.tex}{10cm}
+\input{temporalia/ps50-I.tex}
 
 \vspace{-1cm}
 
@@ -326,10 +460,10 @@ Orémus:
 
 \scriptura{Psalmus 5.}
 
-\initiumpsalmi{temporalia/ps5-initium-viii-A-auto.gtex}
+\initiumpsalmi{temporalia/ps5-initium-vi-F-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps5-comb.tex}{10cm}
-\input{temporalia/ps5.tex}
+%\psalmusEtTranslatioT{temporalia/ps5-I-comb.tex}{10cm}
+\input{temporalia/ps5-I.tex}
 
 \vfill
 \pagebreak
@@ -338,21 +472,21 @@ Orémus:
 
 \scriptura{Psalmus 35.}
 
-\initiumpsalmi{temporalia/ps35-initium-viii-A-auto.gtex}
+\initiumpsalmi{temporalia/ps35-initium-vi-F-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps35-comb.tex}{10cm}
-\input{temporalia/ps35.tex}
+%\psalmusEtTranslatioT{temporalia/ps35-I-comb.tex}{10cm}
+\input{temporalia/ps35-I.tex}
 
 \vfill
 
 \vspace{-6mm}
 
-\antiphona{}{temporalia/ant-alleluia-fii-laudes1.gtex} % repeat the antiphon - new page
+\antiphona{}{temporalia/ant-alleluia-fii-laudes-1.gtex} % repeat the antiphon - new page
 
 \vfill
 \pagebreak
 
-\pars{Psalmus 4.}
+\pars{Psalmus 4.} \scriptura{Is. 12, 1; \textbf{H93}}
 
 \vspace{-0.4cm}
 
@@ -372,14 +506,14 @@ Orémus:
 
 \vspace{-0.4cm}
 
-\antiphona{I a}{temporalia/ant-alleluia-fii-laudes2.gtex}
+\antiphona{I a}{temporalia/ant-alleluia-fii-laudes-2.gtex}
 
 \scriptura{Psalmus 148.}
 
 \initiumpsalmi{temporalia/ps148-initium-i-a-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps148-comb.tex}{10cm}
-\input{temporalia/ps148.tex}
+%\psalmusEtTranslatioT{temporalia/ps148-I-comb.tex}{10cm}
+\input{temporalia/ps148-I.tex}
 
 \rubrica{Hic non dicitur Gloria Patri.}
 
@@ -391,8 +525,8 @@ Orémus:
 
 \initiumpsalmi{temporalia/ps149-initium-i-a-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps149-comb.tex}{10cm}
-\input{temporalia/ps149.tex}
+%\psalmusEtTranslatioT{temporalia/ps149-I-comb.tex}{10cm}
+\input{temporalia/ps149-I.tex}
 
 \rubrica{Hic non dicitur Gloria Patri.}
 
@@ -404,14 +538,14 @@ Orémus:
 
 \initiumpsalmi{temporalia/ps150-initium-i-a-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps150-comb.tex}{10cm}
-\input{temporalia/ps150.tex}
+%\psalmusEtTranslatioT{temporalia/ps150-I-comb.tex}{10cm}
+\input{temporalia/ps150-I.tex}
 
 \vfill
 
 \vspace{-6mm}
 
-\antiphona{}{temporalia/ant-alleluia-fii-laudes2.gtex} % repeat the antiphon - new page
+\antiphona{}{temporalia/ant-alleluia-fii-laudes-2.gtex} % repeat the antiphon - new page
 
 \vfill
 \pagebreak
@@ -420,7 +554,7 @@ Orémus:
 
 \grechangedim{interwordspacetext}{0.12 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \cuminitiali{}{temporalia/capitulum-ChristusResurgens.gtex}
-\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\grechangedim{interwordspacetext}{0.32 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 
 % preklad Jeruz. bible
 %\trCapituliI
@@ -455,29 +589,55 @@ Orémus:
 \vfill
 \pagebreak
 
-\pars{Canticum Zachariæ.} %\scriptura{Io. 20, 19; \textbf{H203}}
+\iffalse
+\pars{Canticum Zachariæ.} \scriptura{Mc. 16, 9; \textbf{H240}}
 
 \vspace{-7mm}
 
 {
 \grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
-%\antiphona{I D}{temporalia/ant-cumesset.gtex}
-\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{VIII G}{temporalia/ant-surgensjesus.gtex}
+\grechangedim{interwordspacetext}{0.32 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 }
 
 %\trAntIMagnificat
 
-\vspace{-3mm}
+\vspace{-5mm}
 
 \scriptura{Lc. 1, 68-79}
 
 \vspace{-3mm}
 
 \cantusSineNeumas
-%\initiumpsalmi{temporalia/benedictus-initium-isoll-D-auto.gtex}
+\initiumpsalmi{temporalia/benedictus-initium-viii-G-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/benedictus-comb.tex}{10.2cm}
-%\input{temporalia/benedictus.tex}
+%\psalmusEtTranslatioT{temporalia/benedictus-I-comb.tex}{10.2cm}
+\input{temporalia/benedictus-I.tex}
+\else
+\pars{Canticum Zachariæ.} \scriptura{Mt. 28, 19; \textbf{H238}}
+
+%\vspace{-7mm}
+
+{
+\grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{VI F}{temporalia/ant-euntesinmundumalleluia.gtex}
+\grechangedim{interwordspacetext}{0.32 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+
+%\trAntIMagnificat
+
+%\vspace{-5mm}
+
+\scriptura{Lc. 1, 68-79}
+
+%\vspace{-3mm}
+
+\cantusSineNeumas
+\initiumpsalmi{temporalia/benedictus-initium-vi-F-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/benedictus-VII-comb.tex}{10.2cm}
+\input{temporalia/benedictus-VII.tex}
+\fi
 
 \vspace{-1cm}
 
@@ -491,7 +651,11 @@ Orémus:
 \pagebreak
 
 % Oratio. %%%
+\iffalse
 \cuminitiali{}{temporalia/oratio.gtex}
+\else
+\cuminitiali{}{temporalia/oratio2.gtex}
+\fi
 
 \vspace{-1mm}
 %\trOrationisI
@@ -516,12 +680,12 @@ Orémus:
 \vspace{0.5cm}
 \grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \cuminitiali{}{temporalia/deusinadiutorium-communis.gtex}
-\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\grechangedim{interwordspacetext}{0.32 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 
 \vfill
 %\pagebreak
 
-\vspace{-2mm}
+\vspace{8mm}
 
 \pars{Psalmus 1.}
 
@@ -535,8 +699,8 @@ Orémus:
 
 \initiumpsalmi{temporalia/ps113-initium-i-g2-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps113-comb.tex}{10cm}
-\input{temporalia/ps113.tex}
+%\psalmusEtTranslatioT{temporalia/ps113-I-comb.tex}{10cm}
+\input{temporalia/ps113-I.tex}
 
 \vspace{-1cm}
 
@@ -549,8 +713,8 @@ Orémus:
 
 \initiumpsalmi{temporalia/ps114-initium-i-g2-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps114-comb.tex}{10cm}
-\input{temporalia/ps114.tex}
+%\psalmusEtTranslatioT{temporalia/ps114-I-comb.tex}{10cm}
+\input{temporalia/ps114-I.tex}
 
 \vfill
 \pagebreak
@@ -561,10 +725,12 @@ Orémus:
 
 \initiumpsalmi{temporalia/ps115-initium-i-g2-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps115-comb.tex}{10cm}
-\input{temporalia/ps115.tex}
+%\psalmusEtTranslatioT{temporalia/ps115-I-comb.tex}{10cm}
+\input{temporalia/ps115-I.tex}
 
 \rubrica{Hic non dicitur Gloria Patri.}
+
+\vfill
 
 \pars{Psalmus 4.}
 
@@ -572,8 +738,8 @@ Orémus:
 
 \initiumpsalmi{temporalia/ps116-initium-i-g2-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps116-comb.tex}{10cm}
-\input{temporalia/ps116.tex}
+%\psalmusEtTranslatioT{temporalia/ps116-I-comb.tex}{10cm}
+\input{temporalia/ps116-I.tex}
 
 \vfill
 \pagebreak
@@ -584,8 +750,8 @@ Orémus:
 
 \initiumpsalmi{temporalia/ps128-initium-i-g2-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps128-comb.tex}{10cm}
-\input{temporalia/ps128.tex}
+%\psalmusEtTranslatioT{temporalia/ps128-I-comb.tex}{10cm}
+\input{temporalia/ps128-I.tex}
 
 \vfill
 
@@ -600,7 +766,7 @@ Orémus:
 
 \grechangedim{interwordspacetext}{0.12 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \cuminitiali{}{temporalia/capitulum-ChristusResurgens.gtex}
-\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\grechangedim{interwordspacetext}{0.32 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 
 % preklad Jeruz. bible
 %\trCapituliI
@@ -635,14 +801,15 @@ Orémus:
 \vfill
 \pagebreak
 
-\pars{Canticum B. Mariæ V.} %\scriptura{Io. 20, 26; \textbf{H239}}
+\iffalse
+\pars{Canticum B. Mariæ V.} \scriptura{Lc. 24, 36; \textbf{H235}}
 
 \vspace{-4mm}
 
 {
 \grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
-%\antiphona{VIII C}{temporalia/ant-postdiesocto.gtex}
-\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{VI F}{temporalia/ant-paxvobis.gtex}
+\grechangedim{interwordspacetext}{0.32 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 }
 
 %\trAntIMagnificat
@@ -652,12 +819,37 @@ Orémus:
 \scriptura{Lc. 1, 46-55}
 
 \cantusSineNeumas
-%\initiumpsalmi{temporalia/magnificat-initium-viii-C.gtex}
+\initiumpsalmi{temporalia/magnificat-initium-vi-F.gtex}
 
 %\vspace{-7mm}
 
-%\psalmusEtTranslatioT{temporalia/magnificat-II-comb.tex}{10.2cm}
-%\input{temporalia/magnificat-II.tex}
+%\psalmusEtTranslatioT{temporalia/magnificat-I-comb.tex}{10.2cm}
+\input{temporalia/magnificat-I.tex}
+\else
+\pars{Canticum B. Mariæ V.} \scriptura{Io. 10, 11; \textbf{H242}}
+
+\vspace{-4mm}
+
+{
+\grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{VI F}{temporalia/ant-pastorbonus.gtex}
+\grechangedim{interwordspacetext}{0.32 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+
+%\trAntIMagnificat
+
+\vspace{-3mm}
+
+\scriptura{Lc. 1, 46-55}
+
+\cantusSineNeumas
+\initiumpsalmi{temporalia/magnificat-initium-iii-a.gtex}
+
+%\vspace{-7mm}
+
+%\psalmusEtTranslatioT{temporalia/magnificat-VII-comb.tex}{10.2cm}
+\input{temporalia/magnificat-VII.tex}
+\fi
 
 \vspace{-1cm}
 
@@ -671,7 +863,11 @@ Orémus:
 \pagebreak
 
 % Oratio. %%%
+\iffalse
 \cuminitiali{}{temporalia/oratio.gtex}
+\else
+\cuminitiali{}{temporalia/oratio2.gtex}
+\fi
 
 \vspace{-1mm}
 %\trOrationisI
