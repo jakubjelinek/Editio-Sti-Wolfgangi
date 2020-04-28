@@ -205,7 +205,7 @@ module PsalmPreprocessor
     def initialize(io, 
                    first_halfverse=2, second_halfverse=2, 
                    first_halfverse_prep=0, second_halfverse_prep=0,
-                   style=:underline)
+                   style=:underline, flex_underline=false)
       super(io)
       # accents to be emphasized in each part of a verse
       @first_hv = first_halfverse
@@ -218,6 +218,7 @@ module PsalmPreprocessor
       @style = style
       @emphopen = ACCENT_STYLES[@style][0]
       @emphclose = ACCENT_STYLES[@style][1]
+      @fl_underline = flex_underline
 
       @accent_error = false # place for second 'return value' 
       # of #underline_last_accent
@@ -275,10 +276,24 @@ module PsalmPreprocessor
     def underline_last_accent(str)
       @accent_error = false
       s = str
-      i = s.rindex "["
-      s[i] = @emphopen if i
-      j = s.rindex "]"
-      s[j] = @emphclose if j
+      if @fl_underline && str =~ /\+\s*$/ then
+        i = s.rindex "["
+        s[i] = "" if i
+        j = s.rindex "]"
+        if j then
+	  s[j] = "\\underline{"
+          k = s.rindex "+"
+          while s[k-1] == " " do
+            k = k - 1
+          end
+          s[k] = "} "
+        end
+      else
+        i = s.rindex "["
+        s[i] = @emphopen if i
+        j = s.rindex "]"
+        s[j] = @emphclose if j
+      end
       
       if (!i && j) || (i && !j) then
         @accent_error = "Non-complete pair of square brackets on line '#{s}'"
@@ -749,6 +764,7 @@ module PsalmPreprocessor
       :accents => [2,2],
       :preparatory => [0,0],
       :accent_style => :underline,
+      :flex_underline => false,
       :has_title => true,
       :skip_title => false,
       :title_pattern => nil,
@@ -874,7 +890,8 @@ module PsalmPreprocessor
       output = UnderlineAccentsOutputStrategy.new(output, 
                                                   @setup[:accents][0], @setup[:accents][1], 
                                                   @setup[:preparatory][0], @setup[:preparatory][1], 
-                                                  @setup[:accent_style])
+                                                  @setup[:accent_style],
+                                                  @setup[:flex_underline])
       
       output = BreakableAccentsOutputStrategy.new output
       
@@ -974,6 +991,9 @@ if $0 == __FILE__ then
       setup[:has_title] = false
       setup[:no_formatting] = true
       setup[:paragraph_space] = false
+    end
+    opts.on "-F", "--flex-underline", "Underline syllables after flex accent." do
+      setup[:flex_underline] = true
     end
     # Needs package multicol!
     opts.on "-c", "--columns", "Typeset psalm in two columns" do
