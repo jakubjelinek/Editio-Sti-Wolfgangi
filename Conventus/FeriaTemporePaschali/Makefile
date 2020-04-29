@@ -225,17 +225,15 @@ $(TMP_DIR)/%-VI-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-VII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-VIII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-IX-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-feria%-i.tex: feria%.tex
-feria%-ii.tex: feria%.tex
-feriaii-%.tex: hebdomada%.tex
-feriaiii-%.tex: hebdomada%.tex
-feriaiv-%.tex: hebdomada%.tex
-feriav-%.tex: hebdomada%.tex
-feriavi-%.tex: hebdomada%.tex
 
 FERIAE = ii iii iv v vi
 HEBDOMADAE = i ii
 PDF = $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE)))
+define iter-doit
+$(patsubst %.pdf,%.tex,$(i)): feria$(word 1,$(subst -, ,$(patsubst feria%.pdf,%,$(i)))).tex hebdomada$(word 2,$(subst -, ,$(patsubst feria%.pdf,%,$(i)))).tex ; touch $$@
+endef
+iter-left := $(PDF)
+include $(iter)
 all: $(PDF)
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(foreach V,$(NUMSI),$(patsubst %,$(TMP_DIR)/%-$(V).tex,ps115 ps148 ps149)): PSALMOPTS = $(LAPSALMOPTS)
