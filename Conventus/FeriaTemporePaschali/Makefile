@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 5 13 14 16 17i 17ii 17iii 19 20 29 34i 34ii 34iii 35 36i 36ii 36iii 37i 37ii 38 42 44i 44ii 45 47 48i 48ii 49i 49ii 50 56 61 63 64 65i 65ii 75 77i 77ii 77iii 87 89 91 113 114 115 116 128 129 130 131 132 134 135 136 137 138i 138ii 139 140 141 143i 143ii 144i 148 149 150
+PSALMS = 5 13 14 16 17i 17ii 17iii 19 20 29 34i 34ii 34iii 35 36i 36ii 36iii 37i 37ii 38 42 44i 44ii 45 47 48i 48ii 49i 49ii 50 56 61 63 64 65i 65ii 67i 67ii 67iii 68i 68ii 68iii 75 77i 77ii 77iii 87 89 91 113 114 115 116 128 129 130 131 132 134 135 136 137 138i 138ii 139 140 141 143i 143ii 144i 148 149 150
 include tonus.mk
 MODUS-5-I = vi-F
 MODUS-13-I = ii-D
@@ -92,6 +92,12 @@ MODUS-50-IV = viii-G2
 MODUS-61-IV = iv-E
 MODUS-65i-IV = iv-E
 MODUS-65ii-IV = iv-E
+MODUS-67i-IV = iv-E
+MODUS-67ii-IV = iv-E
+MODUS-67iii-IV = iv-E
+MODUS-68i-IV = iv-E
+MODUS-68ii-IV = iv-E
+MODUS-68iii-IV = iv-E
 MODUS-87-IV = viii-G2
 MODUS-89-IV = viii-G2
 MODUS-138i-IV = iii-g
@@ -126,8 +132,10 @@ MODUS-benedictus-VII = vi-F
 MODUS-magnificat-VII = iii-a
 MODUS-benedictus-VIII = iv-E
 MODUS-magnificat-VIII = v-g
+MODUS-benedictus-IX = i-g
+MODUS-magnificat-IX = viii-G
 NUMSI = I II III IV V VI
-NUMSII = I II III IV V VII VIII
+NUMSII = I II III IV V VII VIII IX
 PSALMSALT = $(foreach V,$(NUMSI),$(addsuffix -$(V),$(PSALMS)))
 MAGNIFICAT = $(foreach M,$(NUMSII),magnificat-$(M))
 BENEDICTUS = $(foreach B,$(NUMSII),benedictus-$(B))
@@ -207,6 +215,7 @@ $(TMP_DIR)/%-V.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
 $(TMP_DIR)/%-VI.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
 $(TMP_DIR)/%-VII.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
 $(TMP_DIR)/%-VIII.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
+$(TMP_DIR)/%-IX.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
 $(TMP_DIR)/%-I-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-II-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-III-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
@@ -215,6 +224,7 @@ $(TMP_DIR)/%-V-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-VI-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-VII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-VIII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
+$(TMP_DIR)/%-IX-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 feria%-i.tex: feria%.tex
 feria%-ii.tex: feria%.tex
 feriaii-%.tex: hebdomada%.tex
