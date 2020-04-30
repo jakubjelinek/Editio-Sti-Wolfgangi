@@ -173,6 +173,7 @@ SCORES = $(patsubst %,ant-alleluia-%-laudes-1,$(FERIIS)) \
 	 $(addprefix hym-,AuroraLucis AdCoenam RexSempiterne AveMarisStella) \
 	 respbr-laud respbr-vesp deusinadiutorium-communis \
 	 $(foreach M,vi-F viii-G2 viii-G i-D iii-a v-g,magnificat-initium-$(M)) \
+	 ps67ii-initium-iv-E \
 	 capitulum-ChristusResurgens $(addprefix versus-,mane inresurrectione) \
 	 oratio oratio2 supplicatiolitaniae oratiodominica \
 	 dominusvobiscum-solemnis domineexaudi \
@@ -263,6 +264,8 @@ $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
 $(patsubst %,$(TMP_DIR)/%-boh.tex,$(MAGNIFICAT)): $(TMP_DIR)/%-boh.tex: $(TMP_DIR)/magnificat-boh.tex
 	$(CP) -a $< $@
 $(patsubst %,$(TMP_DIR)/%-comb.tex,$(MAGNIFICAT)): PSSKIP = 2
+$(TMP_DIR)/ps67ii-initium-iv-E-auto.gabc: ps67ii-initium-iv-E.gabc
+	$(CP) -a $< $@
 $(PDF): %.pdf: %.tex conventuscommune.tex translationes_cs.tex \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
