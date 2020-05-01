@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 5 13 14 16 17i 17ii 17iii 19 20 29 34i 34ii 34iii 35 36i 36ii 36iii 37i 37ii 38 42 44i 44ii 45 47 48i 48ii 49i 49ii 50 56 61 63 64 65i 65ii 67i 67ii 67iii 68i 68ii 68iii 75 77i 77ii 77iii 87 89 91 113 114 115 116 128 129 130 131 132 134 135 136 137 138i 138ii 139 140 141 143i 143ii 144i 148 149 150
+PSALMS = 5 13 14 16 17i 17ii 17iii 19 20 29 34i 34ii 34iii 35 36i 36ii 36iii 37i 37ii 38 42 44i 44ii 45 47 48i 48ii 49i 49ii 50 56 61 63 64 65i 65ii 67i 67ii 67iii 68i 68ii 68iii 75 77i 77ii 77iii 87 89 91 104i 104ii 104iii 105i 105ii 105iii 106i 106ii 106iii 113 114 115 116 128 129 130 131 132 134 135 136 137 138i 138ii 139 140 141 142 143i 143ii 144i 148 149 150
 include tonus.mk
 MODUS-5-I = vi-F
 MODUS-13-I = ii-D
@@ -113,6 +113,9 @@ MODUS-magnificat-IV = viii-G2
 MODUS-50-V = i-a2
 MODUS-75-V = i-a2
 MODUS-91-V = i-a2
+MODUS-77i-V = vii-a
+MODUS-77ii-V = vii-a
+MODUS-77iii-V = vii-a
 MODUS-141-V = viii-A
 MODUS-143i-V = viii-A
 MODUS-143ii-V = viii-A
@@ -120,14 +123,28 @@ MODUS-144i-V = viii-A
 MODUS-148-V = i-f
 MODUS-149-V = i-f
 MODUS-150-V = i-f
-MODUS-77i-V = vii-a
-MODUS-77ii-V = vii-a
-MODUS-77iii-V = vii-a
 MODUS-habacuc = iv-E
 MODUS-benedictus-V = i-f
 MODUS-magnificat-V = i-D
 MODUS-50-VI = i-g
-CANTICIS = isaiae ezechiae anna moysis habacuc
+MODUS-104i-VI = v-a
+MODUS-104ii-VI = v-a
+MODUS-104iii-VI = v-a
+MODUS-105i-VI = v-a
+MODUS-105ii-VI = v-a
+MODUS-105iii-VI = v-a
+MODUS-106i-VI = v-a
+MODUS-106ii-VI = v-a
+MODUS-106iii-VI = v-a
+MODUS-142-VI = iv-E
+MODUS-148-VI = iv-E
+MODUS-149-VI = iv-E
+MODUS-150-VI = iv-E
+MODUS-moysis2i = vi-F
+MODUS-moysis2ii = vi-F
+MODUS-benedictus-VI = i-D
+MODUS-magnificat-VI = i-D
+CANTICIS = isaiae ezechiae anna moysis habacuc moysis2i moysis2ii
 MODUS-benedictus-VII = vi-F
 MODUS-magnificat-VII = iii-a
 MODUS-benedictus-VIII = iv-E
@@ -135,7 +152,7 @@ MODUS-magnificat-VIII = v-g
 MODUS-benedictus-IX = i-g
 MODUS-magnificat-IX = viii-G
 NUMSI = I II III IV V VI
-NUMSII = I II III IV V VII VIII IX
+NUMSII = I II III IV V VI VII VIII IX
 PSALMSALT = $(foreach V,$(NUMSI),$(addsuffix -$(V),$(PSALMS)))
 MAGNIFICAT = $(foreach M,$(NUMSII),magnificat-$(M))
 BENEDICTUS = $(foreach B,$(NUMSII),benedictus-$(B))
@@ -170,19 +187,22 @@ SCORES = $(patsubst %,ant-alleluia-%-laudes-1,$(FERIIS)) \
 			  euntesinmundumalleluia pastorbonus euntesinmundumdocete \
 			  mercenariusest itenuntiate sicutnovitme \
 			  tusolusperegrinus aliasoveshabeo) \
-	 $(addprefix hym-,AuroraLucis AdCoenam RexSempiterne AveMarisStella) \
+	 $(addprefix hym-,AuroraLucis AdCoenam RexSempiterne AveMarisStella \
+			  OGloriosaDomina QuemTerra) \
 	 respbr-laud respbr-vesp deusinadiutorium-communis \
 	 $(foreach M,vi-F viii-G2 viii-G i-D iii-a v-g,magnificat-initium-$(M)) \
 	 ps67ii-initium-iv-E \
-	 capitulum-ChristusResurgens $(addprefix versus-,mane inresurrectione) \
-	 oratio oratio2 supplicatiolitaniae oratiodominica \
+	 capitulum-ChristusResurgens capitulum-AbInitio \
+	 $(addprefix versus-,mane inresurrectione benedictatu) \
+	 oratio oratio2 oratiobmv supplicatiolitaniae oratiodominica \
 	 dominusvobiscum-solemnis domineexaudi \
 	 benedicamus-tempore-paschali \
-	 dominelabiamea inv-surrexitdominusvere \
-	 $(addprefix absolutio-,exaudi ipsius avinculis) \
+	 dominelabiamea inv-surrexitdominusvere inv-avemaria \
+	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem ille \
-					evangelica divinum adsocietatem) \
+					evangelica divinum adsocietatem \
+					noscum ipsavirgo pervirginem) \
 	 $(addprefix resp-,angelusdominidescendit angelusdominilocutus \
 			   dumtransisset mariamagdalene surrexitpastor \
 			   virtutemagna deoreprudentis surgensjesus \
@@ -206,7 +226,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../DominicaInAlbis ../Epiphania/cantus/grom61 ../InNativitateBMV/cantus/amon33
+iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../DominicaInAlbis ../Epiphania/cantus/grom61 ../InNativitateBMV/cantus/amon33 ../InNativitateBMV/cantus/nrom02
 include $(iter)
 $(TMP_DIR)/%-I.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
 $(TMP_DIR)/%-II.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
@@ -229,12 +249,18 @@ $(TMP_DIR)/%-IX-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 
 FERIAE = ii iii iv v vi
 HEBDOMADAE = i ii
-PDF = $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE)))
-all: $(PDF)
+PDFI = $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE)))
+PDFII = $(foreach H,$(HEBDOMADAE),sabbato-$(H).pdf)
+all: $(PDFI) $(PDFII)
 define iter-doit
 $(patsubst %.pdf,%.tex,$(i)): feria$(word 1,$(subst -, ,$(patsubst feria%.pdf,%,$(i)))).tex hebdomada$(word 2,$(subst -, ,$(patsubst feria%.pdf,%,$(i)))).tex ; touch $$@
 endef
-iter-left := $(PDF)
+iter-left := $(PDFI)
+include $(iter)
+define iter-doit
+$(patsubst %.pdf,%.tex,$(i)): sabbato.tex hebdomada$(patsubst sabbato-%.pdf,%,$(i)).tex ; touch $$@
+endef
+iter-left := $(PDFII)
 include $(iter)
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(foreach V,$(NUMSI),$(patsubst %,$(TMP_DIR)/%-$(V).tex,ps115 ps148 ps149)): PSALMOPTS = $(LAPSALMOPTS)
@@ -266,7 +292,7 @@ $(patsubst %,$(TMP_DIR)/%-boh.tex,$(MAGNIFICAT)): $(TMP_DIR)/%-boh.tex: $(TMP_DI
 $(patsubst %,$(TMP_DIR)/%-comb.tex,$(MAGNIFICAT)): PSSKIP = 2
 $(TMP_DIR)/ps67ii-initium-iv-E-auto.gabc: ps67ii-initium-iv-E.gabc
 	$(CP) -a $< $@
-$(PDF): %.pdf: %.tex conventuscommune.tex translationes_cs.tex \
+$(PDFI) $(PDFII): %.pdf: %.tex conventuscommune.tex translationes_cs.tex \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
