@@ -192,7 +192,11 @@ SCORES = $(patsubst %,ant-alleluia-%-laudes-1,$(FERIIS)) \
 			  veneruntadmonumentum reginacaelilaetarealleluia \
 			  euntesinmundumalleluia pastorbonus euntesinmundumdocete \
 			  mercenariusest itenuntiate sicutnovitme \
-			  tusolusperegrinus aliasoveshabeo) \
+			  tusolusperegrinus aliasoveshabeo tristitiavestravertetur \
+			  etincipiensamoyse etcoegeruntillum \
+			  manenobiscumquoniamadvesperascit etintravitcumillis \
+			  cognoveruntdominum iterumautemvidebo tristitiaimplevit \
+			  tristitiavestraalleluia nonnesicoportuit) \
 	 $(addprefix hym-,AuroraLucis AdCoenam RexSempiterne AveMarisStella \
 			  OGloriosaDomina QuemTerra) \
 	 respbr-laud respbr-vesp deusinadiutorium-communis \
@@ -212,7 +216,8 @@ SCORES = $(patsubst %,ant-alleluia-%-laudes-1,$(FERIIS)) \
 	 $(addprefix resp-,angelusdominidescendit angelusdominilocutus \
 			   dumtransisset mariamagdalene surrexitpastor \
 			   virtutemagna deoreprudentis surgensjesus \
-			   egosumvitisvera christusresurgens) \
+			   egosumvitisvera christusresurgens \
+			   ostenditmihiangelus-cumdox vidiportamcivitatis-sinedox) \
 	 tedeum-solemnis ezechiae-initium-irreg moysis-initium-irreg \
 	 habacuc-initium-iv-E
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
