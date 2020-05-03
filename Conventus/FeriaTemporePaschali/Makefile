@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 5 13 14 16 17i 17ii 17iii 19 20 29 34i 34ii 34iii 35 36i 36ii 36iii 37i 37ii 38 42 44i 44ii 45 47 48i 48ii 49i 49ii 50 56 61 63 64 65i 65ii 67i 67ii 67iii 68i 68ii 68iii 75 77i 77ii 77iii 87 89 91 104i 104ii 104iii 105i 105ii 105iii 106i 106ii 106iii 113 114 115 116 128 129 130 131 132 134 135 136 137 138i 138ii 139 140 141 142 143i 143ii 144i 148 149 150
+PSALMS = 5 13 14 16 17i 17ii 17iii 19 20 29 34i 34ii 34iii 35 36i 36ii 36iii 37i 37ii 38 42 44i 44ii 45 47 48i 48ii 49i 49ii 50 56 61 63 64 65i 65ii 67i 67ii 67iii 68i 68ii 68iii 75 77i 77ii 77iii 77iv 77v 77vi 78 80 82 87 89 91 104i 104ii 104iii 105i 105ii 105iii 106i 106ii 106iii 113 114 115 116 128 129 130 131 132 134 135 136 137 138i 138ii 139 140 141 142 143i 143ii 144i 148 149 150
 include tonus.mk
 MODUS-5-I = vi-F
 MODUS-13-I = ii-D
@@ -116,6 +116,12 @@ MODUS-91-V = i-a2
 MODUS-77i-V = vii-a
 MODUS-77ii-V = vii-a
 MODUS-77iii-V = vii-a
+MODUS-77iv-V = vii-a
+MODUS-77v-V = vii-a
+MODUS-77vi-V = vii-a
+MODUS-78-V = vii-a
+MODUS-80-V = vii-a
+MODUS-82-V = vii-a
 MODUS-141-V = viii-A
 MODUS-143i-V = viii-A
 MODUS-143ii-V = viii-A
@@ -193,7 +199,7 @@ SCORES = $(patsubst %,ant-alleluia-%-laudes-1,$(FERIIS)) \
 	 $(foreach M,vi-F viii-G2 viii-G i-D iii-a v-g,magnificat-initium-$(M)) \
 	 ps67ii-initium-iv-E \
 	 capitulum-ChristusResurgens capitulum-AbInitio \
-	 $(addprefix versus-,mane inresurrectione benedictatu) \
+	 $(addprefix versus-,mane inresurrectione benedictatu diffusa) \
 	 oratio oratio2 oratiobmv supplicatiolitaniae oratiodominica \
 	 dominusvobiscum-solemnis domineexaudi \
 	 benedicamus-tempore-paschali \
