@@ -204,7 +204,7 @@ SCORES = $(patsubst %,ant-alleluia-%-laudes-1,$(FERIIS)) \
 	 ps67ii-initium-iv-E \
 	 capitulum-ChristusResurgens capitulum-AbInitio \
 	 $(addprefix versus-,mane inresurrectione benedictatu diffusa) \
-	 oratio oratio2 oratiobmv supplicatiolitaniae oratiodominica \
+	 oratio oratio2 oratio3 oratiobmv supplicatiolitaniae oratiodominica \
 	 dominusvobiscum-solemnis domineexaudi \
 	 benedicamus-tempore-paschali \
 	 dominelabiamea inv-surrexitdominusvere inv-avemaria \
@@ -259,7 +259,7 @@ $(TMP_DIR)/%-VIII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-IX-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 
 FERIAE = ii iii iv v vi
-HEBDOMADAE = i ii
+HEBDOMADAE = i ii iii
 PDFI = $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE)))
 PDFII = $(foreach H,$(HEBDOMADAE),sabbato-$(H).pdf)
 all: $(PDFI) $(PDFII)
