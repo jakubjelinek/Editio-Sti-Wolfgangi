@@ -223,7 +223,12 @@ SCORES = $(patsubst %,ant-alleluia-%-laudes-1,$(FERIIS)) \
 			   dumtransisset mariamagdalene surrexitpastor \
 			   virtutemagna deoreprudentis surgensjesus \
 			   egosumvitisvera christusresurgens \
-			   ostenditmihiangelus-cumdox vidiportamcivitatis-sinedox) \
+			   ostenditmihiangelus-cumdox vidiportamcivitatis-sinedox \
+			   vidijerusalemdescendentem-sinedox indiademate-cumdox \
+			   plateaetuaeierusalem-sinedox decantabatpopulus-cumdox \
+			   dignusesdomine-sinedox egosicutvitis-cumdox \
+			   locutusestadmeunus-sinedox audivivocemincaeloangelorum-cumdox \
+			   decantabatpopulus-sinedox) \
 	 tedeum-solemnis ezechiae-initium-irreg moysis-initium-irreg \
 	 habacuc-initium-iv-E
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
