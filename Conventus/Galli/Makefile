@@ -90,12 +90,12 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud t
 	 $(addprefix hym-,IsteConfessor VitaSanctorum TeLucis NuncSancte RectorPotens RerumDeus) \
 	 benedicamus-duplex-laudes benedicamus-duplex-vesperae \
 	 deusinadiutorium-communis supplicatiolitaniae oratiodominica respl respv \
-	 dominusvobiscum-solemnis domineexaudi magnificat-initium-viii-G \
+	 dominusvobiscum-solemnis domineexaudi $(addprefix magnificat-initium-,viiisoll-G isoll-D) \
 	 $(addprefix capitulum-,DilectusDeo tuautem JustusCor JustumDeduxit) \
 	 benedictio-noctemquietam jubedomnebenedicere lectiobrevis-fratressobrii \
 	 convertenosdeus deusinadiutorium-communis \
 	 oratio-visita benedicamus-minor ant-salveregina-simplex \
-	 magnificat-initium-i-D oratio introitus-OsJusti graduale-OsJusti \
+	 oratio introitus-OsJusti graduale-OsJusti \
 	 offertorium-DesideriumAnimae communio-AmenDico \
 	 viii-agnusdei viii-gloria viii-kyrie viii-sanctus credo-i \
 	 oratiodominica-mat benedicamus-minor \

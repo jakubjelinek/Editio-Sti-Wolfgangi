@@ -46,7 +46,7 @@ LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
 LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,magnificat)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant,1 2 3 4 5 -magn-vesp) hym-VirginisProles resp \
-	 magnificat-initium-i-g deusinadiutorium-communis oratio \
+	 magnificat-initium-isoll-g deusinadiutorium-communis oratio \
 	 capitulum-FratresQui versus-diffusa deprecatio \
 	 oratiodominica dominusvobiscum-solemnis \
 	 domineexaudi benedicamus-festis-sanctorum

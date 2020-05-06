@@ -62,7 +62,7 @@ SCORES = $(addprefix ant,1 2 3 4 5 6) $(addprefix ant-magn,1 2 3 4 5 6) respbr r
 	 dominusvobiscum-solemnis domineexaudi benedicamus-tempore-paschali \
 	 $(addprefix capitulum-Carissimi,OmneQuod Christus Obsecro OmneDatum EstoteFactores EstotePrudentes) \
 	 $(addprefix versus-,mane dominus) $(addprefix oratio,I II III IV V VI) an_regina_caeli_simplex \
-	 $(foreach M,viii-C iii-a viii-G i-g viii-G2,magnificat-initium-$(M)) \
+	 $(foreach M,viiisoll-C iiisoll-a viiisoll-G isoll-g viiisoll-G2,magnificat-initium-$(M)) \
 	 $(addprefix deprecatio,1 2 3 4)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = hym-AdCoenam-bohtext.tex hym-JesuNostraRedemptio-bohtext.tex

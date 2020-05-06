@@ -72,7 +72,7 @@ SCORES = $(filter-out antIV-magn-vesp2,$(foreach D,$(DOMINICIS),$(addprefix ant$
 	 deusinadiutorium-alter supplicatiolitaniae oratiodominica resp-vesp \
 	 dominusvobiscum-solemnis domineexaudi $(addprefix oratio,$(DOMINICIS)) \
 	 $(addprefix capitulum-Fratres,Hora Quaecumque Gaudete Sic) \
-	 magnificat-initium-viii-G magnificat-initium-viii-G2 magnificat-initium-ii-D \
+	 $(addprefix magnificat-initium-,viiisoll-G viiisoll-G2 iisoll-D) \
 	 an_alma_redemptoris_mater-simplex ant-rorate resp-vesp-1 ant-rorate-ant
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = ../AdventusDominicaII/cantus/amon33/hym-ConditorAlme-bohtext.tex hym-ConditorAlme-latext.tex \

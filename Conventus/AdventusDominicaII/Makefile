@@ -87,8 +87,8 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 	 $(addprefix hym-,ConditorAlme VoxClara TeLucis NuncSancte RectorPotens RerumDeus VerbumSupernum) \
 	 benedicamus-dominica-advequad \
 	 deusinadiutorium-alter supplicatiolitaniae oratiodominica resp-vesp resp-laud \
-	 dominusvobiscum-solemnis domineexaudi magnificat-initium-vii-a \
-	 magnificat-initium-viii-G2 oratio \
+	 dominusvobiscum-solemnis domineexaudi magnificat-initium-viisoll-a \
+	 magnificat-initium-viiisoll-G2 oratio \
 	 $(addprefix capitulum-,FratresQuaecumque tuautem DeusAutemPatientiae DeusAutemSpei) \
 	 benedictio-noctemquietam jubedomnebenedicere lectiobrevis-fratressobrii \
 	 convertenosdeus ant-miserere deusinadiutorium-communis \

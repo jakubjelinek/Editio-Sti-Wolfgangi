@@ -65,7 +65,8 @@ SCORES = $(addprefix ant,1 1a 2 3 4 5) $(addprefix ant-magn,1 2 3 4 5 6 tq1 tq2 
 	 $(addprefix capitulum-,Benedictus Hortamur Rogamus Estote Scriptum) \
 	 versus-dirigatur versus-angelis oratio ant-salveregina-simplex \
 	 an_ave_regina_caelorum \
-	 $(foreach M,viii-G v-a viii-G2 vii-c i-f vii-a i-g,magnificat-initium-$(M)) \
+	 $(foreach M,viiisoll-G vsoll-a viiisoll-G2 viisoll-c isoll-f \
+		     viisoll-a isoll-g,magnificat-initium-$(M)) \
 	 $(addprefix deprecatio,1 2 3 4)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = oratio.tex hym-LucisCreator-bohtext.tex hym-AudiBenigne-bohtext.tex

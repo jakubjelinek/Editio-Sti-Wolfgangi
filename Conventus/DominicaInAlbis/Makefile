@@ -80,7 +80,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 alleluia4 cumesset \
 			  modicumetnon amenamendico) \
 	 $(addprefix hym-,AuroraLucis AdCoenam RexSempiterne) respbr-laud respbr-vesp \
 	 $(addprefix deusinadiutorium-,solemnis alter) \
-	 $(foreach M,viii-C i-D viii-G2 iii-a vi-F viii-G,magnificat-initium-$(M)) \
+	 $(foreach M,viiisoll-C isoll-D viiisoll-G2 iiisoll-a visoll-F \
+		     viiisoll-G,magnificat-initium-$(M)) \
 	 $(addprefix capitulum-Carissimi,OmneQuod ChristusPassus Obsecro) \
 	 $(addprefix versus-,mane inresurrectione) \
 	 oratio oratio2 oratio3 supplicatiolitaniae oratiodominica \

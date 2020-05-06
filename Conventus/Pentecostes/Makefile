@@ -78,7 +78,7 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 	 $(addprefix hym-,VeniCreator BeataNobis TeLucis JamChristus RectorPotens RerumDeus) \
 	 deusinadiutorium-solemnis deusinadiutorium-communis \
 	 supplicatiolitaniae oratiodominica resp1v resp2v respl \
-	 dominusvobiscum-solemnis domineexaudi magnificat-initium-i-D_ \
+	 dominusvobiscum-solemnis domineexaudi magnificat-initium-isoll-D_ \
 	 $(addprefix capitulum-,CumComplerentur tuautem Facta Judaei) oratio \
 	 benedictio-noctemquietam jubedomnebenedicere lectiobrevis-fratressobrii \
 	 convertenosdeus ant-alleluia deusinadiutorium-solemnis \

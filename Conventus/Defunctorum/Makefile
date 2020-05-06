@@ -83,7 +83,7 @@ SCORES = $(addprefix vesp-ant,1 2 3 4 5) vesp-ant-magn \
 	 $(addprefix versus-,audivi aporta collocet netradas) \
 	 benedicamus-duplex-laudes benedicamus-duplex-vesperae \
 	 deusinadiutorium-communis supplicatiolitaniae oratiodominica \
-	 dominusvobiscum-solemnis domineexaudi magnificat-initium-vii-c \
+	 dominusvobiscum-solemnis domineexaudi magnificat-initium-viisoll-c \
 	 benedictio-noctemquietam jubedomnebenedicere lectiobrevis-fratressobrii \
 	 convertenosdeus deusinadiutorium-communis \
 	 oratio-visita benedicamus-minor ant-salveregina-simplex \

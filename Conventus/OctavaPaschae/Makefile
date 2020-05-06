@@ -51,8 +51,7 @@ LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,benedictus magnificat nuncdimittis
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(patsubst %,ant-%,jesusjunxit quisunt stetitjesus videte mittite dixit \
 			    maria tulerunt undecim dataest currebant) \
-	 magnificat-initium-viii-G magnificat-initium-viii-G2 \
-	 magnificat-initium-viii-g magnificat-initium-vii-d \
+	 $(addprefix magnificat-initium-,viii-G viii-G2 viii-g vii-d) \
 	 $(patsubst %,an-%,egosumquisum postulavi egodormivi) \
 	 dominelabiamea inv-surrexitdominusvere \
 	 $(patsubst %,absolutio-%,ipsius avinculis exaudi) \

@@ -40,7 +40,7 @@ LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,phil2)
 LAPSALMSEXTRA2 = $(patsubst %,$(TMP_DIR)/%.tex,magnificat)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA) $(LAPSALMSEXTRA2)
 SCORES = $(addprefix ant,1 2 3 -magn-vesp) hym-ConditorAlme resp \
-	 magnificat-initium-vii-a deusinadiutorium-communis
+	 magnificat-initium-viisoll-a deusinadiutorium-communis
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS =
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \

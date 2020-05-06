@@ -81,13 +81,13 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 	 $(addprefix hym-,AveMarisStella OGloriosaDomina TeLucis NuncSancte RectorPotens RerumDeus QuemTerra) \
 	 benedicamus-duplex-laudes benedicamus-duplex-vesperae \
 	 deusinadiutorium-communis supplicatiolitaniae oratiodominica resp1v \
-	 dominusvobiscum-solemnis domineexaudi magnificat-initium-i-D2 \
+	 dominusvobiscum-solemnis domineexaudi $(addprefix magnificat-initium-,isoll-D2 isoll-f) \
 	 $(addprefix capitulum-,AbInitio tuautem EtSic InPlateis) \
 	 benedictio-noctemquietam jubedomnebenedicere lectiobrevis-fratressobrii \
 	 convertenosdeus ant-miserere deusinadiutorium-communis \
 	 resp-inmanus ant-salvanos-antiquo \
 	 oratio-visita benedicamus-minor ant-salveregina-simplex \
-	 magnificat-initium-i-f oratio introitus-GaudeamusOmnes graduale-BenedictaEtVenerabilis \
+	 oratio introitus-GaudeamusOmnes graduale-BenedictaEtVenerabilis \
 	 alleluia-SolemnitasGloriosae offertorium-BeataEs \
 	 communio-BeatamMeDicent communio-versus-Magnificat \
 	 ix-agnusdei ix-gloria ix-kyrie ix-sanctus credo-iii \

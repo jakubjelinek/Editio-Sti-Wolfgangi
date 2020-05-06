@@ -48,7 +48,7 @@ ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant,1 2 3 5) ant-magn-vesp1 versus-rorate hym-ConditorAlme \
 	 benedicamus-dominica-advequad \
 	 deusinadiutorium-communis supplicatiolitaniae oratiodominica resp-vesp resp-laud \
-	 dominusvobiscum-solemnis domineexaudi magnificat-initium-i-f oratio \
+	 dominusvobiscum-solemnis domineexaudi magnificat-initium-isoll-f oratio \
 	 capitulum-FratresHora \
 	 deusinadiutorium-communis \
 	 oratio-visita benedicamus-minor an_alma_redemptoris_mater \

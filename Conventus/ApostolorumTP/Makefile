@@ -80,8 +80,8 @@ SCORES = $(addprefix ant-,fulgebuntjusti incaelestibusregnis invelamentoclamaban
 	 $(addprefix hym-,ClaroPaschali TristesErant) \
 	 deusinadiutorium-solemnis deusinadiutorium-communis \
 	 supplicatiolitaniae oratiodominica respbr-laud respbr-vesp \
-	 dominusvobiscum-solemnis domineexaudi magnificat-initium-viii-G \
-	 magnificat-initium-vii-a benedicamus-tempore-paschali
+	 dominusvobiscum-solemnis domineexaudi benedicamus-tempore-paschali \
+	 $(addprefix magnificat-initium-,viiisoll-G viisoll-a)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach V,$(NUMS),$(TMP_DIR)/ps$(P)-initium-$(if $(MODUS-$(P)-$(V)),$(MODUS-$(P)-$(V)),ii-D)-auto.gabc)) \

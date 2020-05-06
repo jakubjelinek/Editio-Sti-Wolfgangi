@@ -81,7 +81,7 @@ SCORES = alleluia-VidimusStellam ant1 ant2 ant3 ant4 ant5 ant-ben-laud ant-magn-
 	 deusinadiutorium-communis domineexaudi dominusvobiscum-solemnis \
 	 graduale-OmnesDeSaba hym-HostisHerodes hym-OSolaMagnarum hym-CrudelisHerodes credo-i \
 	 introitus-EcceAdvenit ii-agnusdei ii-gloria ii-kyrie ii-sanctus \
-	 magnificat-initium-i-D_ magnificat-initium-viii-G2 offertorium-RegesTharsis \
+	 $(addprefix magnificat-initium-,isoll-D_ viiisoll-G2) offertorium-RegesTharsis \
 	 oratiodominica oratio resp1v respl supplicatiolitaniae tuautem \
 	 $(addprefix matant,1 2 3 4 5 6 7 8 9) $(addprefix matresp,1 2 3 4 5 6 7 8) \
 	 ps94-initium-viii-G tedeum-solemnis annuntiatio christus_apparuit_nobis \
