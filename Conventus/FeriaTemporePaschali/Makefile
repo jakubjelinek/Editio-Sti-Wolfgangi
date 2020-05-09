@@ -231,7 +231,11 @@ SCORES = $(patsubst %,ant-alleluia-%-laudes-1,$(FERIIS)) \
 			   plateaetuaeierusalem-sinedox decantabatpopulus-cumdox \
 			   dignusesdomine-sinedox egosicutvitis-cumdox \
 			   locutusestadmeunus-sinedox audivivocemincaeloangelorum-cumdox \
-			   decantabatpopulus-sinedox) \
+			   decantabatpopulus-sinedox intotocordemeo-cumdox \
+			   videruntteaquaedeus-cumdox cantatedeoalleluia-cumdox \
+			   inecclesiisbenedicitedeo-sinedox deuscanticumnovum-sinedox \
+			   sioblitusfuerotui-sinedox bonumestconfiteri-cumdox \
+			   dicantnuncquiredemptisunt-sinedox) \
 	 tedeum-solemnis ezechiae-initium-irreg moysis-initium-irreg \
 	 habacuc-initium-iv-E
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
