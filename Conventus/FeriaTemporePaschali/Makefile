@@ -158,9 +158,9 @@ MODUS-magnificat-VIII = v-g
 MODUS-benedictus-IX = i-g
 MODUS-magnificat-IX = viii-G
 MODUS-benedictus-X = ii-D
-MODUS-magnificat-X = viii-G
+MODUS-magnificat-X = vii-a
 MODUS-benedictus-XI = vii-a
-MODUS-magnificat-XI = viii-G
+MODUS-magnificat-XI = viii-g
 MODUS-benedictus-XII = iii-a
 MODUS-magnificat-XII = viii-G
 NUMSI = I II III IV V VI
@@ -202,15 +202,18 @@ SCORES = $(patsubst %,ant-alleluia-%-laudes-1,$(FERIIS)) \
 			  etincipiensamoyse etcoegeruntillum \
 			  manenobiscumquoniamadvesperascit etintravitcumillis \
 			  cognoveruntdominum iterumautemvidebo tristitiaimplevit \
-			  tristitiavestraalleluia nonnesicoportuit) \
+			  tristitiavestraalleluia nonnesicoportuit nonnecornostrum \
+			  spirituscarnemetossanonhabet istisuntsermones \
+			  obtuleruntdiscipulidomino egoveritatemdicovobis \
+			  cumveneritparaclitus adhucmultahabeo nonenimloqueturasemetipso) \
 	 $(addprefix hym-,AuroraLucis AdCoenam RexSempiterne AveMarisStella \
 			  OGloriosaDomina QuemTerra) \
 	 respbr-laud respbr-vesp deusinadiutorium-communis \
-	 $(foreach M,vi-F viii-G2 viii-G i-D iii-a v-g,magnificat-initium-$(M)) \
+	 $(foreach M,vi-F viii-G2 viii-G i-D iii-a v-g vii-a viii-g,magnificat-initium-$(M)) \
 	 ps67ii-initium-iv-E \
 	 capitulum-ChristusResurgens capitulum-AbInitio \
 	 $(addprefix versus-,mane inresurrectione benedictatu diffusa) \
-	 oratio oratio2 oratio3 oratiobmv supplicatiolitaniae oratiodominica \
+	 oratio $(addprefix oratio,2 3 4 bmv) supplicatiolitaniae oratiodominica \
 	 dominusvobiscum-solemnis domineexaudi \
 	 benedicamus-tempore-paschali \
 	 dominelabiamea inv-surrexitdominusvere inv-avemaria \
@@ -276,7 +279,7 @@ $(TMP_DIR)/%-XI-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-XII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 
 FERIAE = ii iii iv v vi
-HEBDOMADAE = i ii iii
+HEBDOMADAE = i ii iii iv
 PDFI = $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE)))
 PDFII = $(foreach H,$(HEBDOMADAE),sabbato-$(H).pdf)
 all: $(PDFI) $(PDFII)
