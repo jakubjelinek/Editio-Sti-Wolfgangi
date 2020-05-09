@@ -103,7 +103,11 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 alleluia4 cumesset \
 			   audivivocemincaelotamquam-cumdox \
 			   decantabatpopulus-sinedox dignusesdomine-sinedox \
 			   egosicutvitis-sinedox locutusestadmeunus-sinedox \
-			   tristitiavestra-N450-cumdox veniensalibano-cumdox) \
+			   tristitiavestra-N450-cumdox veniensalibano-cumdox \
+			   deuscanticumnovum-sinedox hymnumcantatenobis-cumdox \
+			   inecclesiisbenedicitedeo-sinedox intotocordemeo-sinedox \
+			   narrabonomentuum-cumdox videruntteaquaedeus-sinedox \
+			   bonumestconfiteri-cumdox sioblitusfuerotui-sinedox) \
 	 tedeum-solemnis \
 	 $(addprefix ant-alleluia,lapis quem noli)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
