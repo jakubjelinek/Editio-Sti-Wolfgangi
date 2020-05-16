@@ -89,7 +89,7 @@
 
 %%%% Titulni stranka
 \begin{titulusOfficii}
-\nomenFesti{Feria IV infra Hebdom. \hebdomada{} post Oct. Paschæ.}
+\nomenFesti{Feria IV \hebdomada{}}
 \end{titulusOfficii}
 
 \pagebreak
@@ -281,7 +281,11 @@
 \vfill
 \pagebreak
 
+\ifx\magnificat\undefined
+\cuminitiali{}{temporalia/benedictio-solemn-evangelica.gtex}
+\else
 \cuminitiali{}{temporalia/benedictio-solemn-ille.gtex}
+\fi
 
 \vspace{7mm}
 
@@ -315,7 +319,11 @@
 \vfill
 \pagebreak
 
+\ifx\magnificat\undefined
+\cuminitiali{}{temporalia/benedictio-solemn-adsocietatem.gtex}
+\else
 \cuminitiali{}{temporalia/benedictio-solemn-ignem.gtex}
+\fi
 
 \vspace{7mm}
 
@@ -571,6 +579,8 @@ Orémus:
 
 \vspace{1mm}
 
+\ifx\magnificat\undefined
+\else
 \vfill
 \pagebreak
 
@@ -711,5 +721,6 @@ Orémus:
 \cuminitiali{VII}{temporalia/benedicamus-tempore-paschali.gtex}
 
 \vspace{1mm}
+\fi
 
 \end{document}

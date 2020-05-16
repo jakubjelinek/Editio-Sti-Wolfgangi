@@ -89,7 +89,7 @@
 
 %%%% Titulni stranka
 \begin{titulusOfficii}
-\nomenFesti{Feria II infra Hebdom. \hebdomada{} post Oct. Paschæ.}
+\nomenFesti{Feria II \hebdomada{}}
 \end{titulusOfficii}
 
 \pagebreak
@@ -697,7 +697,11 @@ Orémus:
 \pagebreak
 
 % Oratio. %%%
+\ifx\oratioVesperas\undefined
 \oratioLaudes
+\else
+\oratioVesperas
+\fi
 
 \vspace{-1mm}
 %\trOrationisI
