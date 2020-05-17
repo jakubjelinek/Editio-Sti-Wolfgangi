@@ -8,9 +8,8 @@ cantusindex:002634;
 nabc-lines:1;
 source:http://www.e-codices.unifr.ch/fr/csg/0391/68;
 %%
-(c3)E(e|ta)Le(f|vi)vá(h|vi)ta(hi|pe) est(i|vi) <v>\greheightstar</v>()
+(c3)
+E(e|ta)Le(f|vi)vá(h|vi)ta(hi|pe) est(i|vi) *()
 ma(i>|vi>)gni(h|ta)fi(i|vi)cén(j|vi)ti(i|vi)a(h|ta) tu(i|vi-)a(i|vi-) (;)
 su(f|ta)per(i|vi) cœ(h|vi)los,(g|vi)
-De(fe|/cl-)us,(fe|/cl-) al(de|peS)le(fh|peS)lú(f|ta)ja.(f|ta) (::d+)
-
-
+De(fe|/cl-)us,(fe|/cl-) al(de|peS)le(fh|peS)lú(f|ta)ia.(f|ta) (::d+)
