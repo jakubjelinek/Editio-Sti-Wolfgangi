@@ -158,9 +158,9 @@ MODUS-magnificat-VIII = v-g
 MODUS-benedictus-IX = i-g
 MODUS-magnificat-IX = viii-G
 MODUS-benedictus-X = ii-D
-MODUS-magnificat-X = viii-G
+MODUS-magnificat-X = vii-a
 MODUS-benedictus-XI = vii-a
-MODUS-magnificat-XI = viii-G
+MODUS-magnificat-XI = viii-g
 MODUS-benedictus-XII = iii-a
 MODUS-magnificat-XII = viii-G
 NUMSI = I II III IV V VI
@@ -202,15 +202,20 @@ SCORES = $(patsubst %,ant-alleluia-%-laudes-1,$(FERIIS)) \
 			  etincipiensamoyse etcoegeruntillum \
 			  manenobiscumquoniamadvesperascit etintravitcumillis \
 			  cognoveruntdominum iterumautemvidebo tristitiaimplevit \
-			  tristitiavestraalleluia nonnesicoportuit) \
+			  tristitiavestraalleluia nonnesicoportuit nonnecornostrum \
+			  spirituscarnemetossanonhabet istisuntsermones \
+			  obtuleruntdiscipulidomino egoveritatemdicovobis \
+			  cumveneritparaclitus adhucmultahabeo nonenimloqueturasemetipso \
+			  exiviapatre ipseenimpater oportebatpatichristum patervenithora \
+			  petiteetaccipietisquaerite) \
 	 $(addprefix hym-,AuroraLucis AdCoenam RexSempiterne AveMarisStella \
 			  OGloriosaDomina QuemTerra) \
 	 respbr-laud respbr-vesp deusinadiutorium-communis \
-	 $(foreach M,vi-F viii-G2 viii-G i-D iii-a v-g,magnificat-initium-$(M)) \
+	 $(foreach M,vi-F viii-G2 viii-G i-D iii-a v-g vii-a viii-g,magnificat-initium-$(M)) \
 	 ps67ii-initium-iv-E \
 	 capitulum-ChristusResurgens capitulum-AbInitio \
 	 $(addprefix versus-,mane inresurrectione benedictatu diffusa) \
-	 oratio oratio2 oratio3 oratiobmv supplicatiolitaniae oratiodominica \
+	 oratio $(addprefix oratio,2 3 4 5 5a bmv) supplicatiolitaniae oratiodominica \
 	 dominusvobiscum-solemnis domineexaudi \
 	 benedicamus-tempore-paschali \
 	 dominelabiamea inv-surrexitdominusvere inv-avemaria \
@@ -228,7 +233,11 @@ SCORES = $(patsubst %,ant-alleluia-%-laudes-1,$(FERIIS)) \
 			   plateaetuaeierusalem-sinedox decantabatpopulus-cumdox \
 			   dignusesdomine-sinedox egosicutvitis-cumdox \
 			   locutusestadmeunus-sinedox audivivocemincaeloangelorum-cumdox \
-			   decantabatpopulus-sinedox) \
+			   decantabatpopulus-sinedox intotocordemeo-cumdox \
+			   videruntteaquaedeus-cumdox cantatedeoalleluia-cumdox \
+			   inecclesiisbenedicitedeo-sinedox deuscanticumnovum-sinedox \
+			   sioblitusfuerotui-sinedox bonumestconfiteri-cumdox \
+			   dicantnuncquiredemptisunt-sinedox) \
 	 tedeum-solemnis ezechiae-initium-irreg moysis-initium-irreg \
 	 habacuc-initium-iv-E
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
@@ -248,7 +257,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../DominicaInAlbis ../Epiphania/cantus/grom61 ../InNativitateBMV/cantus/amon33 ../InNativitateBMV/cantus/nrom02
+iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../DominicaInAlbis ../OctavaPaschae ../Epiphania/cantus/grom61 ../InNativitateBMV/cantus/amon33 ../InNativitateBMV/cantus/nrom02
 include $(iter)
 $(TMP_DIR)/%-I.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
 $(TMP_DIR)/%-II.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
@@ -276,8 +285,9 @@ $(TMP_DIR)/%-XI-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-XII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 
 FERIAE = ii iii iv v vi
-HEBDOMADAE = i ii iii
-PDFI = $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE)))
+HEBDOMADAE = i ii iii iv
+PDFI = $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE))) \
+       $(patsubst %,feria%-v.pdf,ii iii iv)
 PDFII = $(foreach H,$(HEBDOMADAE),sabbato-$(H).pdf)
 all: $(PDFI) $(PDFII)
 define iter-doit
