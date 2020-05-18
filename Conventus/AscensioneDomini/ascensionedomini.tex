@@ -1,43 +1,3 @@
-\newcommand{\responsoriumi}{\pars{Responsorium 1.} \scriptura{\Rbardot{} Ps. 136, 5.6; \Vbardot{} Ps. 136, 1; \textbf{H250}}
-
-\vspace{-5mm}
-
-\responsorium{VIII}{temporalia/resp-sioblitusfuerotui-sinedox.gtex}{}}
-\newcommand{\responsoriumii}{\pars{Responsorium 2.} \scriptura{\Rbardot{} Ps. 76, 17.18; \Vbardot{} Ps. 76, 19; \textbf{H250}}
-
-\vspace{-5mm}
-
-\responsorium{II}{temporalia/resp-videruntteaquaedeus-sinedox.gtex}{}}
-\newcommand{\responsoriumiii}{\pars{Responsorium 3.} \scriptura{\Rbardot{} Ps. 21, 23; \Vbardot{} Ps. 65, 10; \textbf{H250}}
-
-\vspace{-5mm}
-
-\responsorium{II}{temporalia/resp-narrabonomentuum-cumdox.gtex}{}}
-\newcommand{\responsoriumiv}{\pars{Responsorium 4.} \scriptura{\Rbardot{} Ps. 67, 27; \Vbardot{} Ps. 65, 2; \textbf{H251}}
-
-\vspace{-5mm}
-
-\responsorium{IV}{temporalia/resp-inecclesiisbenedicitedeo-sinedox.gtex}{}}
-\newcommand{\responsoriumv}{\pars{Responsorium 5.} \scriptura{\Rbardot{} Ps. 118, 10; \Vbardot{} Ps. 118, 12; \textbf{H250}}
-
-\vspace{-5mm}
-
-\responsorium{III}{temporalia/resp-intotocordemeo-sinedox.gtex}{}}
-\newcommand{\responsoriumvi}{\pars{Responsorium 6.} \scriptura{\Rbardot{} Ps. 136, 3.4; \Vbardot{} Ps. 136, 3; \textbf{H251}}
-
-\vspace{-5mm}
-
-\responsorium{VIII}{temporalia/resp-hymnumcantatenobis-cumdox.gtex}{}}
-\newcommand{\responsoriumvii}{\pars{Responsorium 7.} \scriptura{\Rbardot{} Ps. 32, 3.2; \Vbardot{} Ps. 117, 28; \textbf{Sar.263}}
-
-\vspace{-5mm}
-
-\responsorium{VIII}{temporalia/resp-deuscanticumnovum-sinedox.gtex}{}}
-\newcommand{\responsoriumviii}{\pars{Responsorium 8.} \scriptura{\Rbardot{} Ps. 91, 2; \Vbardot{} Ps. 91, 4; \textbf{H252}}
-
-\vspace{-5mm}
-
-\responsorium{VII}{temporalia/resp-bonumestconfiteri-cumdox.gtex}{}}
 % LuaLaTeX
 
 \documentclass[a4paper, twoside, 12pt]{article}
@@ -205,6 +165,11 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
+\newcommand{\capitulumLaudes}{\pars{Capitulum.} \scriptura{Ac. 1, 1-2}
+
+\grechangedim{interwordspacetext}{0.12 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{}{temporalia/capitulum-PrimumQuidem.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}}
 \newcommand{\vesperas}{
 \pars{Psalmus 1.} \scriptura{Ac. 1, 11; \textbf{H265}}
 
@@ -278,11 +243,6 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
-\newcommand{\capitulumLaudes}{\pars{Capitulum.} \scriptura{Ac. 1, 1-2}
-
-\grechangedim{interwordspacetext}{0.12 cm plus 0.15 cm minus 0.05 cm}{scalable}%
-\cuminitiali{}{temporalia/capitulum-PrimumQuidem.gtex}
-\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}}
 \capitulumLaudes
 
 % preklad Jeruz. bible
@@ -292,7 +252,7 @@ per infiníta sǽcula sæculórum.
 
 \pars{Responsorium breve.} \scriptura{Cf. Ps. 67, 19}
 
-\cuminitiali{VI}{temporalia/resp-ascendens.gtex}
+\cuminitiali{VI}{temporalia/resp-ascendenschristusinaltum.gtex}
 
 %\trResp
 
@@ -301,12 +261,12 @@ per infiníta sǽcula sæculórum.
 
 \pars{Hymnus}
 
-\cuminitiali{IV}{temporalia/hym-JesuNostra.gtex}
+\cuminitiali{IV}{temporalia/hym-JesuNostraRedemptio.gtex}
 \vspace{-3mm}
-%\input{hym-JesuNostra-bohtext.tex}
+%\input{hym-JesuNostraRedemptio-bohtext.tex}
 
 \vfill
-\pagebreak
+%\pagebreak
 
 \pars{Versus.} \scriptura{Ps. 46, 6}
 
@@ -322,7 +282,7 @@ per infiníta sǽcula sæculórum.
 
 \pars{Canticum B. Mariæ V.} \scriptura{Io. 17, 6.9}
 
-%\vspace{-6mm}
+\vspace{-3mm}
 
 {
 \grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
@@ -332,17 +292,17 @@ per infiníta sǽcula sæculórum.
 
 %\trAntIMagnificat
 
-%\vspace{-4mm}
+\vspace{-2mm}
 
 \scriptura{Lc. 1, 46-55}
+
+\vspace{-2mm}
 
 \cantusSineNeumas
 \initiumpsalmi{temporalia/magnificat-initium-visoll-F.gtex}
 
-%\vspace{-7mm}
-
-%\psalmusEtTranslatioT{temporalia/magnificat-IX-comb.tex}{10.2cm}
-\input{temporalia/magnificat-IX.tex} \Abardot{}
+%\psalmusEtTranslatioT{temporalia/magnificat-I-comb.tex}{10.2cm}
+\input{temporalia/magnificat-I.tex} \Abardot{}
 
 \vspace{-1cm}
 
@@ -373,7 +333,6 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
-\iffalse
 \hora{Ad Matutinum.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\sideThumbs{Matutinum}
 
@@ -383,11 +342,11 @@ per infiníta sǽcula sæculórum.
 
 \vspace{2mm}
 
-\pars{Invitatorium.} \scriptura{Lc. 24, 34; Psalmus 94; \textbf{H232}}
+\pars{Invitatorium.} \scriptura{Cantor; Psalmus 94; \textbf{H261}}
 
 \vspace{-6mm}
 
-\antiphona{VI}{temporalia/inv-surrexitdominusvere.gtex}
+\antiphona{V}{temporalia/inv-alleluiachristumdominum.gtex}
 
 \vfill
 \pagebreak
@@ -396,11 +355,11 @@ per infiníta sǽcula sæculórum.
 
 \vspace{-5mm}
 
-\scriptura{\textbf{AR454}}
+\scriptura{Anonymus X. sӕculi; \textbf{AR488}}
 
 {
 \grechangedim{interwordspacetext}{0.30 cm plus 0.15 cm minus 0.05 cm}{scalable}%
-\antiphona{IV}{temporalia/hym-RexSempiterne.gtex}
+\antiphona{IV}{temporalia/hym-AEterneRexAltissime.gtex}
 \grechangedim{interwordspacetext}{0.32 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 }
 %{
@@ -415,59 +374,68 @@ per infiníta sǽcula sæculórum.
 
 \subhora{In I. Nocturno}
 
-\pars{Psalmus 1.} \scriptura{\textbf{H230}}
+\pars{Psalmus 1.} \scriptura{Ps. 8, 2; \textbf{H262}}
 
 %\vspace{-5mm}
 
-\antiphona{V a}{temporalia/ant-alleluialapis.gtex}
+\antiphona{IV A*}{temporalia/ant-elevataestmagnificentiatua.gtex}
 
 %\vspace{-5mm}
 
-\scriptura{Ps. 1}
+\scriptura{Ps. 8}
 
 %\vspace{-2mm}
 
-\initiumpsalmi{temporalia/ps1-initium-v-a-auto.gtex}
+\initiumpsalmi{temporalia/ps8-initium-iv-A_-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps1-comb.tex}{10cm}
-
-\input{temporalia/ps1.tex}
-
-\vfill
-\pagebreak
-
-\pars{Psalmus 2.}
-
-\scriptura{Ps. 2}
-
-\initiumpsalmi{temporalia/ps2-initium-v-a-auto.gtex}
-
-%\psalmusEtTranslatioT{temporalia/ps2-comb.tex}{10cm}
-
-\input{temporalia/ps2.tex}
+%\psalmusEtTranslatioT{temporalia/ps8-comb.tex}{10cm}
+\input{temporalia/ps8.tex}
 
 \vfill
 \pagebreak
 
-\pars{Psalmus 3.}
+\pars{Psalmus 2.} \scriptura{Ps. 10, 5; \textbf{H262}}
 
-\scriptura{Ps. 3}
+%\vspace{-5mm}
 
-\initiumpsalmi{temporalia/ps3-initium-v-a-auto.gtex}
+\antiphona{VIII C}{temporalia/ant-dominusintemplosanctosuo.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps3-comb.tex}{10cm}
+%\vspace{-5mm}
 
-\input{temporalia/ps3.tex}
+\scriptura{Ps. 10}
 
-\vfill
+\initiumpsalmi{temporalia/ps10-initium-viii-C-auto.gtex}
 
-\antiphona{}{temporalia/ant-alleluialapis.gtex}
+%\psalmusEtTranslatioT{temporalia/ps10-comb.tex}{10cm}
+\input{temporalia/ps10.tex}
 
 \vfill
 \pagebreak
 
-\noindent \Vbardot{} Surréxit Dóminus de sepúlcro, allelúia.
-\noindent \Rbardot{} Qui pro nobis pepéndit in ligno, allelúia.
+\pars{Psalmus 3.} \scriptura{Ps. 18, 7; \textbf{H262}}
+
+%\vspace{-5mm}
+
+\antiphona{IV A*}{temporalia/ant-asummocoeloegressioejus.gtex}
+
+%\vspace{-5mm}
+
+\scriptura{Ps. 18}
+
+\initiumpsalmi{temporalia/ps18-initium-iv-A_-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps18-comb.tex}{10cm}
+\input{temporalia/ps18.tex}
+
+\vfill
+
+\antiphona{}{temporalia/ant-asummocoeloegressioejus.gtex}
+
+\vfill
+\pagebreak
+
+\noindent \Vbardot{} Ascéndit Deus in iubilatióne, allelúia.
+\noindent \Rbardot{} Et Dóminus in voce tubæ, allelúia.
 
 \noindent Pater noster.
 
@@ -494,7 +462,11 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
-\responsoriumi
+\pars{Responsorium 1.} \scriptura{\Rbardot{} Ac. 1, 3.9; \Vbardot{} ibid. 1, 4; \textbf{H262}}
+
+\vspace{-5mm}
+
+\responsorium{III transp.}{temporalia/resp-postpassionemsuam-sinedox.gtex}{}
 
 \vfill
 \pagebreak
@@ -513,7 +485,11 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
-\responsoriumii
+\pars{Responsorium 2.} \scriptura{\Rbardot{} Cantor; \Vbardot{} Ps. 18, 7; \textbf{H262}}
+
+\vspace{-5mm}
+
+\responsorium{II}{temporalia/resp-omnispulchritudodomini-sinedox.gtex}{}
 
 \vfill
 \pagebreak
@@ -532,66 +508,79 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
-\responsoriumiii
+\pars{Responsorium 3.} \scriptura{\Rbardot{} Ps. 20, 14; \Vbardot{} Ps. 8, 2; \textbf{H262}}
+
+\vspace{-5mm}
+
+\responsorium{VII}{temporalia/resp-exaltaredomine-cumdox.gtex}{}
 
 \vfill
 \pagebreak
 
 \subhora{In II. Nocturno}
 
-\pars{Psalmus 4.} \scriptura{Io. 20, 15; \textbf{H241}}
+\pars{Psalmus 4.} \scriptura{Ps. 20, 14; \textbf{H262}}
 
 %\vspace{-5mm}
 
-\antiphona{V a}{temporalia/ant-alleluiaquem.gtex}
+\antiphona{IV A*}{temporalia/ant-exaltaredomine.gtex}
 
 %\vspace{-5mm}
 
-\scriptura{Ps. 8}
+\scriptura{Ps. 20}
 
 %A\vspace{-2mm}
 
-\initiumpsalmi{temporalia/ps8-initium-v-a-auto.gtex}
+\initiumpsalmi{temporalia/ps20-initium-iv-A_-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps8-comb.tex}{10cm}
-
-\input{temporalia/ps8.tex}
-
-\vfill
-\pagebreak
-
-\pars{Psalmus 5.}
-
-\scriptura{Ps. 9, 2-11}
-
-\initiumpsalmi{temporalia/ps9ii_xi-initium-v-a-auto.gtex}
-
-%\psalmusEtTranslatioT{temporalia/ps9ii_xi-comb.tex}{10cm}
-
-\input{temporalia/ps9ii_xi.tex}
+%\psalmusEtTranslatioT{temporalia/ps20-comb.tex}{10cm}
+\input{temporalia/ps20.tex}
 
 \vfill
 \pagebreak
 
-\pars{Psalmus 6.}
+\pars{Psalmus 5.} \scriptura{Ps. 29, 2; \textbf{H262}}
 
-\scriptura{Ps. 9, 12-21}
+%\vspace{-5mm}
 
-\initiumpsalmi{temporalia/ps9xii_xxi-initium-v-a-auto.gtex}
+\antiphona{VIII G}{temporalia/ant-exaltabotedomine.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps9xii_xxi-comb.tex}{10cm}
+%\vspace{-5mm}
 
-\input{temporalia/ps9xii_xxi.tex}
+\scriptura{Ps. 29}
 
-\vfill
+\initiumpsalmi{temporalia/ps29-initium-viii-G-auto.gtex}
 
-\antiphona{}{temporalia/ant-alleluiaquem.gtex}
+%\psalmusEtTranslatioT{temporalia/ps29-comb.tex}{10cm}
+\input{temporalia/ps29.tex}
 
 \vfill
 \pagebreak
 
-\noindent \Vbardot{} Surréxit Dóminus vere, allelúia.
-\noindent \Rbardot{} Et appáruit Simóni, allelúia.
+\pars{Psalmus 6.} \scriptura{Ps. 46, 6; \textbf{H262}}
+
+%\vspace{-5mm}
+
+\antiphona{IV A*}{temporalia/ant-ascenditdeus.gtex}
+
+%\vspace{-5mm}
+
+\scriptura{Ps. 46}
+
+\initiumpsalmi{temporalia/ps46-initium-iv-A_-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps46-comb.tex}{10cm}
+\input{temporalia/ps46.tex}
+
+\vfill
+
+\antiphona{}{temporalia/ant-ascenditdeus.gtex}
+
+\vfill
+\pagebreak
+
+\noindent \Vbardot{} Ascéndens Christus in altum, allelúia.
+\noindent \Rbardot{} Captívam duxit captivitátem, allelúia.
 
 \noindent Pater noster.
 
@@ -618,7 +607,11 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
-\responsoriumiv
+\pars{Responsorium 4.} \scriptura{\Rbardot{} Tob. 12, 20 \& Io. 14, 27; \Vbardot{} Io. 16, 7; \textbf{H263}}
+
+\vspace{-5mm}
+
+\responsorium{IV}{temporalia/resp-tempusest-sinedox.gtex}{}
 
 \vfill
 \pagebreak
@@ -637,7 +630,11 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
-\responsoriumv
+\pars{Responsorium 5.} \scriptura{\Rbardot{} Cantor super Ioannem; \Vbardot{} Io. 14, 16; \textbf{H263}}
+
+\vspace{-5mm}
+
+\responsorium{III}{temporalia/resp-nonconturbetur-sinedox.gtex}{}
 
 \vfill
 \pagebreak
@@ -656,66 +653,79 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
-\responsoriumvi
+\pars{Responsorium 6.} \scriptura{\Rbardot{} Eph. 4, 8; \Vbardot{} Ps. 46, 6; \textbf{H263}}
+
+\vspace{-5mm}
+
+\responsorium{IV}{temporalia/resp-ascendensinaltum-cumdox.gtex}{}
 
 \vfill
 \pagebreak
 
 \subhora{In III. Nocturno}
 
-\pars{Psalmus 7.} \scriptura{Cf. Io. 20, 15; \textbf{H241}}
+\pars{Psalmus 7.} \scriptura{Ps. 96, 9; \textbf{H263}}
 
 \vspace{-5mm}
 
-\antiphona{V a}{temporalia/ant-alleluianoli.gtex}
+\antiphona{VI f}{temporalia/ant-nimisexaltatusest.gtex}
 
 \vspace{-4mm}
 
-\scriptura{Ps. 9, 22-32}
+\scriptura{Ps. 96}
 
 %\vspace{-2mm}
 
-\initiumpsalmi{temporalia/ps9xxii_xxxii-initium-v-a-auto.gtex}
+\initiumpsalmi{temporalia/ps96-initium-vi-F-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps9xxii_xxxii-comb.tex}{10cm}
-
-\input{temporalia/ps9xxii_xxxii.tex}
-
-\vfill
-\pagebreak
-
-\pars{Psalmus 8.}
-
-\scriptura{Ps. 9, 33-39}
-
-\initiumpsalmi{temporalia/ps9xxxiii_xxxix-initium-v-a-auto.gtex}
-
-%\psalmusEtTranslatioT{temporalia/ps9xxxiii_xxxix-comb.tex}{10cm}
-
-\input{temporalia/ps9xxxiii_xxxix.tex}
+%\psalmusEtTranslatioT{temporalia/ps96-comb.tex}{10cm}
+\input{temporalia/ps96.tex}
 
 \vfill
 \pagebreak
 
-\pars{Psalmus 9.}
+\pars{Psalmus 8.} \scriptura{Ps. 98, 2; \textbf{H263}}
 
-\scriptura{Ps. 10}
+\vspace{-5mm}
 
-\initiumpsalmi{temporalia/ps10-initium-v-a-auto.gtex}
+\antiphona{VI f}{temporalia/ant-dominusinsion.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps10-comb.tex}{10cm}
+\vspace{-4mm}
 
-\input{temporalia/ps10.tex}
+\scriptura{Ps. 98}
 
-\vfill
+\initiumpsalmi{temporalia/ps98-initium-vi-F-auto.gtex}
 
-\antiphona{}{temporalia/ant-alleluianoli.gtex}
+%\psalmusEtTranslatioT{temporalia/ps98-comb.tex}{10cm}
+\input{temporalia/ps98.tex}
 
 \vfill
 \pagebreak
 
-\noindent \Vbardot{} Gavísi sunt discípuli, allelúia.
-\noindent \Rbardot{} Viso Dómino, allelúia.
+\pars{Psalmus 9.} \scriptura{Ps. 102, 19; \textbf{H263}}
+
+\vspace{-5mm}
+
+\antiphona{VI f}{temporalia/ant-dominusincoelo.gtex}
+
+\vspace{-4mm}
+
+\scriptura{Ps. 102}
+
+\initiumpsalmi{temporalia/ps102-initium-vi-F-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps102-comb.tex}{10cm}
+\input{temporalia/ps102.tex}
+
+\vfill
+
+\antiphona{}{temporalia/ant-dominusincoelo.gtex}
+
+\vfill
+\pagebreak
+
+\noindent \Vbardot{} Ascéndo ad Patrem meum, et Patrem vestrum, allelúia.
+\noindent \Rbardot{} Deum meum, et Deum vestrum, allelúia.
 
 \noindent Pater noster.
 
@@ -748,7 +758,11 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
-\responsoriumvii
+\pars{Responsorium 7.} \scriptura{\Rbardot{} Io. 14, 16.17; \Vbardot{} ibid. 16, 7; \textbf{Sar.275}}
+
+\vspace{-5mm}
+
+\responsorium{III}{temporalia/resp-egorogabopatrem-sinedox.gtex}{}
 
 \vfill
 \pagebreak
@@ -767,7 +781,11 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
-\responsoriumviii
+\pars{Responsorium 8.} \scriptura{\Rbardot{} Ps. 103, 3; \Vbardot{} Ps. 103, 1.2; \textbf{H264}}
+
+\vspace{-5mm}
+
+\responsorium{II}{temporalia/resp-ponitnubem-cumdox.gtex}{}
 
 \vfill
 \pagebreak
@@ -833,7 +851,6 @@ Orémus:
 
 \vfill
 \pagebreak
-\fi
 
 \hora{Ad Laudes.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\sideThumbs{Laudes}
@@ -981,9 +998,9 @@ Orémus:
 
 \vfill
 
-\pars{Responsorium breve.} \scriptura{Cf. Mt. 28, 6; Cf. Gal. 3, 13}
+\pars{Responsorium breve.} \scriptura{Ps. 46, 6}
 
-\cuminitiali{VI}{temporalia/respbr-laud.gtex}
+\cuminitiali{VI}{temporalia/resp-ascenditdeus.gtex}
 
 %\trResp
 
@@ -992,9 +1009,9 @@ Orémus:
 
 \pars{Hymnus}
 
-\cuminitiali{VIII}{temporalia/hym-JesuNostra.gtex}
+\cuminitiali{VIII}{temporalia/hym-JesuNostraRedemptio.gtex}
 \vspace{-3mm}
-%\input{hym-JesuNostra-bohtext.tex}
+%\input{hym-JesuNostraRedemptio-bohtext.tex}
 
 \vfill
 %\pagebreak
@@ -1032,8 +1049,8 @@ Orémus:
 
 %\vspace{-1.5mm}
 
-%\psalmusEtTranslatioT{temporalia/benedictus-comb.tex}{10.2cm}
-\input{temporalia/benedictus.tex} \Abardot{}
+%\psalmusEtTranslatioT{temporalia/benedictus-I-comb.tex}{10.2cm}
+\input{temporalia/benedictus-I.tex} \Abardot{}
 
 \vspace{-1cm}
 
@@ -1104,8 +1121,8 @@ Orémus:
 
 %\vspace{-1mm}
 
-%\psalmusEtTranslatioT{temporalia/magnificat-I-comb.tex}{10.2cm}
-\input{temporalia/magnificat-I.tex} \Abardot{}
+%\psalmusEtTranslatioT{temporalia/magnificat-II-comb.tex}{10.2cm}
+\input{temporalia/magnificat-II.tex} \Abardot{}
 
 \vspace{-1cm}
 
@@ -1132,65 +1149,5 @@ Orémus:
 \cuminitiali{VII}{temporalia/benedicamus-tempore-paschali.gtex}
 
 \vspace{1mm}
-
-\newpage
-\RemoveSideThumbs
-\pagestyle{empty}
-
-\pars{Antiphona finalis B. M. V. pro Tempore Paschali.}
-
-\cuminitiali{VI}{temporalia/an_regina_caeli_simplex.gtex}
-%\trReginaCaeli
-
-%%% COLOPHON
-%\vfill
-
-%Fontes.
-%Textus et cantus officii divini secundum
-%Antiphonale Sacrosanctæ Romanæ Eclesiæ Pro Diurnis Horis, Romæ 1912, præter:
-%hymni et responsoria breve secundum Antiphonale Monasticum pro Diurnis Horis,
-%Solesmis 1934. /
-%Translatio capituli sumpta est ex: Jeruzalémská bible, Praha-Kostelní Vydří 2009. /
-%Translationes psalmorum ex Hejčl Jan: Žaltář čili Kniha žalmů, Praha 1922. /
-%Neumæ super canto officii divini de codice Hartker, Stiftsbibl. 391.
-
-%Collaborantes.
-%Textus latinos cantusque transcripsit et omnem laborem typographicum peregit
-%Jakub Jelínek. /
-%Psalmos in lingua bohemica de libro transcripserunt Barbora Maturová et idem Jakub Jelínek. /
-%Václav Ondráček textus responsoriorum in linguam bohemicam transtulit. /
-%Mons. Jiří Reinsberg \olddag{} et Jana Kuběnová textus deprecationum in linguam bohemicam transtulerunt. /
-%Zbyněk Šír et Filip Srovnal librum istum præparare mandaverunt et laborem exprobrationibus
-%utilissimis comitabantur.
-
-%Instrumenta adhibita.
-%LuaTeX, %http://www.luatex.org /
-%Gregorio, %http://home.gna.org/gregorio /
-%typi Junicode. %http://junicode.sourceforge.net
-
-%\begin{center}
-%Liber hic imprimis ad usum chori
-%\guillemotright Conventus Choralis\guillemotleft\
-%paratus est
-%et secundum eius consuetudines.
-%http://www.introitus.cz
-
-%\vfill
-
-%{\large Editio Sancti Wolfgangi \annusEditionis.}
-
-%\vfill
-
-%Series \guillemotright Conventus\guillemotleft, vol. X.
-
-%\vfill
-
-%http://stiwolfgangi.xf.cz
-
-%\vfill
-
-%\today
-
-%\end{center}
 
 \end{document}
