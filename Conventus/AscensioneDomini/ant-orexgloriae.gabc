@@ -1,16 +1,16 @@
 name: O Rex gloriae;
 office-part: Antiphona;
 mode: 2;
-book: Antiphonale Monasticum, 1934, p. 512; H266;
+book: Antiphonale Romanum II, 2009, p. 262; H266;
 transcriber: Jakub Jelínek;
 commentary: Cf. Ps. 23, 7.10; Io. 14, 17.18; Lc. 24, 49; Eph. 4, 10;
 nabc-lines: 1;
 %%
 (f3)
-O(ehhg|pe-hgpihh) Rex(h_f|cl-) gló(gf|cl)ri(ef|pe)æ,(ff|vs) *(,)
-Dó(e|ta)mi(f!gwh|vi-qlhi)ne(hg|//vihh) vir(fg|``vi>lse4)tú(ff|cllsc3)tum,(e.|pr) (;)
-qui(c|``talse4) tri(ef|ta)um(f|vi)phá(g'|vi)tor(f|ta) hó(gf|cl)di(ef|pe)e(ff|vs) (,)
-su(e|ta)per(f!gwh|vi-qlhi) om(hg~|clcl>)nes(fe|vs) cæ(g_h|peS)los(f'|ta) a(h|clhelsc3)scen(h|vi)dís(kxh_j!kvJI|///trhhvihk)ti,(ji..|vi) (:)
-ne(g|vihg) de(ij|vihh)re(i'|vihg)lín(h|ta>)quas(hg|cl) nos(f'|qlppt1) ór(g|vi>)pha(ef|pe-1su2)nos:(f.|ta) (;)
-sed(fe~|vi) mit(fg|vi)te(f'|cl) pro(f|ta)mís(g|vi)sum(hih|vi>) Pa(ghe|peS)tris(e|cl-pr) in(f_e/fe|ta>) nos,(c.|vi-pr) (;)
-Spí(cb|vi)ri(e|pe)tum(fh~|vs>) ve(h|ta)ri(i|pe)tá(hg|vs)tis,(fe|peS) al(f|pe>)le(hg|cl)lú(f.|ta)ia.(f.|ta) (::)
+O(-ehhog|pe-hgpihh) Rex(hf|cl-) gló(gf|cl)ri(ef|pe)æ,(ffo|vs) *(,)
+Dó(e|ta)mi(f!gwh|vi-qlhi)ne(h|//vihh) vir(hf~|``vi>lse4)tú(hg|cllsc3)tum,(ffoe|pr) (;)
+qui(e|``talse4) tri(e|ta)um(f|vi)phá(g|vi)tor(f|ta) hó(gf|cl)di(ef|pe)e(ffo|vs) (,)
+su(e|ta)per(f!gwh|vi-qlhi) om(hf/hg>|clcl>)nes(ffo|vs) cæ(ef|peS)los(f|ta) a(hg|clhelsc3)scen(h|vi)dís(kxijijkv|///trhhvihk)ti,(j|vi) (:)
+ne(j|vihg) de(j|vihh)re(i|vihg)lín(hi~|ta>)quas(hg|cl) nos(f!gwh|qlppt1) ór(h>|vi>)pha(fgFE|pe-1su2)nos:(e|ta) (;)
+sed(f|vi) mit(h|vi)te(hg|cl) pro(f|ta)mís(g|vi)sum(hg~|vi>) Pa(fg|peS)tris(gffoe|cl-pr) in(ef~|ta>) nos,(fveeoc|vi-pr) (;)
+Spí(e|vi)ri(ef|pe)tum(ffo~|vs>) ve(e|ta)ri(fg|pe)tá(hho|vs)tis,(gh|peS) al(i!j>|pe>)le(hg|cl)lú(f|ta)ia.(f|ta) (::)
