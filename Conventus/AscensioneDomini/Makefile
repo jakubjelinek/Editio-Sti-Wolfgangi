@@ -77,10 +77,10 @@ SCORES = $(addprefix ant-,ascenditdeus ascendoadpatrem asummocoeloegressioejus \
 			  oportebatpatichristum orexgloriae patermanifestavi \
 			  patervenithora petiteetaccipietisquaerite \
 			  videntibusillis virigalilaeiquidaspicitis \
-			  alleluia-compl salvanos-antiquo) \
+			  alleluia-compl salvanos-antiquo-tp) \
 	 $(addprefix hym-,AEterneRexAltissime JesuNostraRedemptio TeLucis) \
 	 $(addprefix resp-,ascendenschristusinaltum ascendenschristusinaltum-simplex \
-			   ascenditdeus inmanus) \
+			   ascenditdeus inmanus-tp) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(foreach M,visoll-F iisoll-D,magnificat-initium-$(M)) \
 	 $(addprefix capitulum-,PrimumQuidem tuautem) \
