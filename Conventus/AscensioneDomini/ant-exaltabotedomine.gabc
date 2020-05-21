@@ -1,7 +1,7 @@
 name:Exaltabo te, Domine;
 office-part:Antiphona;
 mode:8;
-book:Nocturnale Romanum, 2002, p. 473;
+book:Nocturnale Romanum, 2002, p. 473; Liber Antiphonarius pro diurnis horis I, p. 565;
 transcriber:Marek Klein;
 commentary:Ps.29,2; H262;
 cantusindex:002755;
@@ -9,6 +9,5 @@ nabc-lines:1;
 source:http://www.e-codices.unifr.ch/fr/csg/0391/68;
 %%
 (c4)
-EX(g|vi)al(g|vi)tá(g|vi)bo(g|vi) te,(h|vi) *()
-Dó(g|ta)mi(h|vi)ne,(g|vi) (;)
-quó(f|vi)ni(h|vi)am(j|vi) su(j|vi)sce(j|vi)pí(h|ta)sti(j|vi) me,(ih|/cl) al(g|ta)le(h|vi)lú(ih>|cl>)ia.(g|ta) (::g+)
+EX(g|vi)al(g|vi)tá(g|vi)bo(g|vi) te,(h|vi) Dó(g|ta)mi(h|vi)ne,(g.|vi) *(,)
+quó(f|vi)ni(g|vi)am(h|vi) su(j|vi)sce(i|vi)pí(h|ta)sti(j|vi) me,(ih|/cl) al(g|ta)le(h|vi)lú(ih>|cl>)ia.(g.|ta) (::g+)
