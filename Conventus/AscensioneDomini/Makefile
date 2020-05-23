@@ -89,7 +89,7 @@ SCORES = $(addprefix ant-,ascenditdeus ascendoadpatrem asummocoeloegressioejus \
 	 $(addprefix versus-,ascenditdeus dominusincaelo custodi gaude \
 			     ascenditdeus-communis dominusincaelo-communis) \
 	 oratio oratio2 supplicatiolitaniae oratiodominica \
-	 dominusvobiscum-solemnis domineexaudi domineexaudi-communis \
+	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 benedicamus-tempore-paschali benedicamus-minor \
 	 dominelabiamea inv-alleluiachristumdominum \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) \
