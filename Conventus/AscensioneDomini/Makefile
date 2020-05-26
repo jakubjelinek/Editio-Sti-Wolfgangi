@@ -82,7 +82,7 @@ SCORES = $(addprefix ant-,ascenditdeus ascendoadpatrem asummocoeloegressioejus \
 			  alleluia-compl salvanos-antiquo-tp) \
 	 $(addprefix hym-,AEterneRexAltissime JesuNostraRedemptio TeLucis) \
 	 $(addprefix resp-,ascendenschristusinaltum ascendenschristusinaltum-simplex \
-			   ascenditdeus inmanus-tp) \
+			   ascenditdeus inmanus-tp subvenite) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(foreach M,visoll-F iisoll-D viiisoll-G,magnificat-initium-$(M)) \
 	 $(addprefix capitulum-,PrimumQuidem CarissimiEstote tuautem) \
