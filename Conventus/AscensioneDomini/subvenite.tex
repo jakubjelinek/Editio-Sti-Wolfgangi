@@ -1,0 +1,104 @@
+% LuaLaTeX
+
+\documentclass[a4paper, twoside, 12pt]{article}
+\usepackage[latin]{babel}
+%\usepackage[landscape, left=3cm, right=1.5cm, top=2cm, bottom=1cm]{geometry} % okraje stranky
+%\usepackage[landscape, a4paper, mag=1166, truedimen, left=2cm, right=1.5cm, top=1.6cm, bottom=0.95cm]{geometry} % okraje stranky
+\usepackage[landscape, a4paper, mag=1400, truedimen, left=0.5cm, right=0.5cm, top=0.5cm, bottom=0.5cm]{geometry} % okraje stranky
+
+\usepackage{fontspec}
+\setmainfont[FeatureFile={junicode.fea}, Ligatures={Common, TeX}, RawFeature=+fixi]{Junicode}
+%\setmainfont{Junicode}
+
+% shortcut for Junicode without ligatures (for the Czech texts)
+\newfontfamily\nlfont[FeatureFile={junicode.fea}, Ligatures={Common, TeX}, RawFeature=+fixi]{Junicode}
+
+\usepackage{multicol}
+\usepackage{color}
+\usepackage{lettrine}
+\usepackage{fancyhdr}
+
+% usual packages loading:
+\usepackage{luatextra}
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{gregoriotex} % for gregorio score inclusion
+\usepackage{gregoriosyms}
+\usepackage{wrapfig} % figures wrapped by the text
+\usepackage{parcolumns}
+\usepackage[contents={},opacity=1,scale=1,color=black]{background}
+\usepackage{tikzpagenodes}
+\usepackage{calc}
+\usepackage{longtable}
+\usetikzlibrary{calc}
+
+\setlength{\headheight}{14.5pt}
+
+\input{conventuscommune.tex} % Often used macros
+\input{translationes_cs.tex} % Czech translations of the proper texts
+
+\newcommand{\annusEditionis}{2020}
+
+\setlength{\columnsep}{30pt} % prostor mezi sloupci
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Here we set the space around the initial.
+% Please report to http://home.gna.org/gregorio/gregoriotex/details for more details and options
+\grechangedim{afterinitialshift}{2.2mm}{scalable}
+\grechangedim{beforeinitialshift}{2.2mm}{scalable}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\grechangedim{annotationraise}{-0.2cm}{scalable}
+
+% Here we set the initial font. Change 38 if you want a bigger initial.
+% Emit the initials in red.
+\grechangestyle{initial}{\color{red}\fontsize{38}{38}\selectfont}
+
+\pagestyle{empty}
+
+\cantusCumNeumis
+
+\pars{Responsorium.} \scriptura{Cf. Lc. 16, 22; \textbf{H389}}
+
+\vspace{-7mm}
+
+\responsorium{IV}{temporalia/resp-subvenite.gtex}{}
+
+\vfill
+
+\vspace{-2mm}
+
+\begin{parcolumns}[nofirstindent=true]{2}
+\colchunk{%
+\noindent Orémus.
+
+\noindent Absólve, quǽsumus, Dómine, ánimam fámuli tui Vladímiri, ut defúnctus sǽculo tibi vivat: \gredagger{}
+
+\noindent et quæ per fragilitátem carnis humána conversatióne commísit, \grestar{}
+
+\noindent tu vénia misericordíssimæ pietátis abstérge.
+
+\noindent Per Dóminum nostrum Jesum Christum fílium tuum: \gredagger{}
+
+\noindent qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, \grestar{}
+
+\noindent per ómnia sǽcula sæculórum. \Rbardot{} Amen.
+}
+\colchunk{%
+\noindent Orémus.
+
+\noindent Deus, cui próprium est míseri semper et párcere: te súpplices exorámus pro ánima fámuli tui Vladímiri, quam hódie de hoc sǽculo migráre jussísti, \gredagger{}
+
+\noindent ut non tradas eam in manus inimíci, neque obliviscáris in finem, sed júbeas eam a sanctis Angelis súscipi, et ad pátriam paradísi perdúci; \grestar{}
+
+\noindent ut quia in te sperávit et crédidit, non pœnas inférni sustíneat, sed gáudia ætérna possídeat.
+
+\noindent Per Christum Dóminum nostrum. \Rbardot{} Amen.
+}
+\end{parcolumns}
+
+\vfill
+
+\noindent Fidélium ánimæ per misericórdiam Dei requiéscant in pace. \Rbardot{} Amen.
+
+\end{document}

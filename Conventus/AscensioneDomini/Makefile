@@ -124,7 +124,7 @@ endef
 iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes
 include $(iter)
 
-PDF = ascensionedomini.pdf $(patsubst %,feria%-oa.pdf,ii iii iv v vi) $(patsubst %,sabbato-%.pdf,oa poa) feriavi-poa.pdf dominicainfraoctavamascensionis.pdf
+PDF = ascensionedomini.pdf $(patsubst %,feria%-oa.pdf,ii iii iv v vi) $(patsubst %,sabbato-%.pdf,oa poa) feriavi-poa.pdf dominicainfraoctavamascensionis.pdf subvenite.pdf
 all: $(PDF)
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
