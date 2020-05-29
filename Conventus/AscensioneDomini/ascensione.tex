@@ -1117,6 +1117,7 @@ Orémus:
 
 \cantusSineNeumas
 
+\ifx\postoctavam\undefined
 \vspace{0.5cm}
 \grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \ifx\festumveldominica\undefined
@@ -1128,6 +1129,11 @@ Orémus:
 
 \vfill
 %\pagebreak
+\else
+\rubrica{Absolute incipitur Officium ab Antiphona primi Psalmi.}
+
+\vspace{7mm}
+\fi
 
 \pars{Psalmus 1.} \scriptura{Ac. 1, 11; \textbf{H265}}
 
@@ -1139,6 +1145,7 @@ Orémus:
 
 \initiumpsalmi{temporalia/ps92-initium-vii-a-auto.gtex}
 
+\ifx\postoctavam\undefined
 %\psalmusEtTranslatioT{temporalia/ps92-comb.tex}{10cm}
 \input{temporalia/ps92.tex}
 
@@ -1147,6 +1154,10 @@ Orémus:
 \vspace{-1cm}
 
 \antiphona{}{temporalia/ant-virigalilaeiquidaspicitis.gtex}
+\else
+%\psalmusEtTranslatioT{temporalia/ps92-comb.tex}{10cm}
+\input{temporalia/ps92.tex} \Abardot{}
+\fi
 
 \vfill
 \pagebreak
