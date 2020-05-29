@@ -216,7 +216,7 @@ SCORES = $(patsubst %,ant-alleluia-%-laudes-1,$(FERIIS)) \
 	 capitulum-ChristusResurgens capitulum-AbInitio \
 	 $(addprefix versus-,mane inresurrectione benedictatu diffusa) \
 	 oratio $(addprefix oratio,2 3 4 5 5a bmv) supplicatiolitaniae oratiodominica \
-	 dominusvobiscum-solemnis domineexaudi \
+	 oratiodominica-mat dominusvobiscum-solemnis domineexaudi \
 	 benedicamus-tempore-paschali \
 	 dominelabiamea inv-surrexitdominusvere inv-avemaria \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \

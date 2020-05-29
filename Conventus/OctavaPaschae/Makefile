@@ -77,7 +77,7 @@ SCORES = $(patsubst %,ant-%,jesusjunxit quisunt stetitjesus videte mittite dixit
 	 $(addprefix respbr-,laud vesp) $(addprefix hym-,AuroraLucis AdCoenam) \
 	 versus-haecdies $(addprefix oratio,2 3 4 5 6 7) benedicamus-octava-paschae \
 	 capitulum-FratresExpurgate supplicatiolitaniae oratiodominica \
-	 dominusvobiscum-solemnis domineexaudi
+	 oratiodominica-mat dominusvobiscum-solemnis domineexaudi
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(TMP_DIR)/magnificat2-comb.tex \
 	    $(TMP_DIR)/benedictus2-comb.tex \

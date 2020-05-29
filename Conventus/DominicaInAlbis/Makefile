@@ -92,7 +92,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 alleluia4 cumesset \
 	 $(addprefix capitulum-Carissimi,OmneQuod ChristusPassus Obsecro OmneDatum Estote) \
 	 $(addprefix versus-,mane inresurrectione) \
 	 oratio $(addprefix oratio,2 3 4 5) supplicatiolitaniae oratiodominica \
-	 dominusvobiscum-solemnis domineexaudi \
+	 oratiodominica-mat dominusvobiscum-solemnis domineexaudi \
 	 benedicamus-tempore-paschali an_regina_caeli_simplex \
 	 dominelabiamea inv-surrexitdominusvere \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) \
