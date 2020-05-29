@@ -88,7 +88,7 @@ SCORES = $(addprefix ant-,ascenditdeus ascendoadpatrem asummocoeloegressioejus \
 	 $(addprefix capitulum-,PrimumQuidem CarissimiEstote tuautem) \
 	 $(addprefix versus-,ascenditdeus dominusincaelo custodi gaude \
 			     ascenditdeus-communis dominusincaelo-communis) \
-	 oratio oratio2 supplicatiolitaniae oratiodominica \
+	 oratio oratio2 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 benedicamus-tempore-paschali benedicamus-minor \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
