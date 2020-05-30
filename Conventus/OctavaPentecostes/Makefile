@@ -21,7 +21,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 4 47 62 67 90 92 99 103 109 110 111 112 113 116 118v_vi 118vii_viii 118ix_x 118xi_xii 118xiii_xiv 118xv_xvi 118xvii_xviii 118xix_xx 118xxi_xxii 133 148 149 150
+PSALMS = 4 47 62 67 90 92 99 103 109 110 111 112 133 148 149 150
 include tonus.mk
 MODUS-4 = viii-G
 MODUS-47 = viii-C
@@ -34,18 +34,7 @@ MODUS-103 = viii-C
 MODUS-109 = iii-a2
 MODUS-110 = viii-G
 MODUS-111 = viii-G
-MODUS-112 = i-a2
-MODUS-113 = vii-c2
-MODUS-116 = vii-c2
-MODUS-118v_vi = viii-G
-MODUS-118vii_viii = viii-G
-MODUS-118ix_x = viii-G
-MODUS-118xi_xii = viii-G
-MODUS-118xiii_xiv = viii-G
-MODUS-118xv_xvi = viii-G
-MODUS-118xvii_xviii = vii-c2
-MODUS-118xix_xx = vii-c2
-MODUS-118xxi_xxii = vii-c2
+MODUS-112 = vii-c2
 MODUS-133 = viii-G
 MODUS-148 = vii-c2
 MODUS-149 = vii-c2
@@ -78,16 +67,16 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 	 $(addprefix hym-,VeniCreator BeataNobis TeLucis JamChristus RectorPotens RerumDeus) \
 	 deusinadiutorium-solemnis deusinadiutorium-communis \
 	 supplicatiolitaniae oratiodominica resp1v resp2v respl \
-	 dominusvobiscum-solemnis domineexaudi magnificat-initium-isoll-D_ \
+	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex magnificat-initium-isoll-D_ \
 	 $(addprefix capitulum-,CumComplerentur tuautem Facta Judaei) oratio \
 	 benedictio-noctemquietam jubedomnebenedicere lectiobrevis-fratressobrii \
-	 convertenosdeus ant-alleluia deusinadiutorium-solemnis \
-	 resp-inmanus ant-salvanos-antiquo \
+	 convertenosdeus ant-alleluia-compl deusinadiutorium-solemnis \
+	 resp-inmanus-tp ant-salvanos-antiquo-tp \
 	 oratio-visita benedicamus-minor an_regina_caeli_simplex \
 	 oratiodominica-mat absolutio-exaudi tedeum-solemnis \
 	 $(addprefix benedictio-solemn-,evangelica divinum adsocietatem) \
-	 $(addprefix benedicamus-solemnis-,laud 1vesp 2vesp) tonus-lectionis-solemnis tuautem \
-	 dominelabiamea inv-alleluiaspiritus \
+	 $(addprefix benedicamus-solemnism-,laud 1vesp 2vesp) tonus-lectionis-solemnis tuautem \
+	 benedicamus-solemnis-laud dominelabiamea inv-alleluiaspiritus \
 	 tedecetlaus
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
@@ -112,10 +101,8 @@ include $(iter)
 
 all: pentecostes.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
-$(patsubst %,$(TMP_DIR)/%.tex,ps4 ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
+$(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
 $(TMP_DIR)/magnificat.tex: PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --flex-underline --skip-verses 2 $(LAPSALMOPTSACC)
-$(TMP_DIR)/ps90.tex: PSALMOPTS = --accents-style bold --flex-underline $(LAPSALMOPTSACC)
-$(patsubst %,$(TMP_DIR)/ps%.tex,118vii_viii 118ix_x 118xiii_xiv 118xv_xvi 118xix_xx 118xxi_xxii 133): PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --flex-underline $(LAPSALMOPTSACC)
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
 $(CZPSALMS) $(TMP_DIR)/benedictus-boh.tex: $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/%.pslm
 	$(GENPSALM)
