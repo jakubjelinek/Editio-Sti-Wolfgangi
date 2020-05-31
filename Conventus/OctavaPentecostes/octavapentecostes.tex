@@ -140,6 +140,11 @@
 \fancyhf{}
 \pagestyle{fancy}
 
+\cantusSineNeumas
+
+\ifx\festumveldominica\undefined
+\else
+
 \pars{Oratio ante divinum Officium.}
 
 \lettrine{{\color{red}A}}{peri,} Dómine, os meum ad benedicéndum nomen sanctum tuum:
@@ -184,10 +189,6 @@ per infiníta sǽcula sæculórum.
 
 \vfill
 
-\cantusSineNeumas
-
-\ifx\festumveldominica\undefined
-\else
 \hora{In I. Vesperis.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\sideThumbs{Vesperæ}
 
@@ -237,7 +238,7 @@ per infiníta sǽcula sæculórum.
 
 \vfill
 
-\pars{Versus.}
+\pars{Versus.} \scriptura{Ac. 2, 4}
 
 % Versus. %%%
 \sineinitiali{temporalia/versus-repleti.gtex}
@@ -257,8 +258,8 @@ per infiníta sǽcula sæculórum.
 
 \initiumpsalmi{temporalia/magnificat-initium-isoll-D_.gtex}
 
-%\psalmusEtTranslatioT{temporalia/magnificat-comb.tex}{10.3cm}
-\input{temporalia/magnificat.tex} \Abardot{}
+%\psalmusEtTranslatioT{temporalia/magnificat-I-comb.tex}{10.3cm}
+\input{temporalia/magnificat-I.tex} \Abardot{}
 
 %\antiphona{}{temporalia/ant-magn-vesp1.gtex} % repeat the antiphon - new page
 
@@ -272,7 +273,7 @@ per infiníta sǽcula sæculórum.
 % Oratio. %%%
 \pars{Oratio.}
 
-\cuminitiali{}{temporalia/oratio.gtex}
+\oratio
 
 \vfill
 
@@ -578,9 +579,7 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \vfill
 \pagebreak
 
-\pars{Versus.} \scriptura{Sap. 1, 7}
-
-\sineinitiali{temporalia/versus-spiritus.gtex}
+\versusMatutinum
 
 \vfill
 
@@ -607,11 +606,7 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \vfill
 \pagebreak
 
-\pars{Responsorium 1.} \scriptura{\Rbar{} Ac. 2, 1.2 \Vbar{} ibidem; \textbf{H269}}
-
-\vspace{-4mm}
-
-\responsorium{III}{temporalia/matresp1.gtex}{}
+\responsoriumi
 
 \vfill
 \pagebreak
@@ -628,11 +623,7 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \vfill
 \pagebreak
 
-\pars{Responsorium 2.} \scriptura{\Rbar{} Ac. 2, 4.6 \Vbar{} ibid. 2, 4.11; \textbf{H269}}
-
-\vspace{-4mm}
-
-\responsorium{II}{temporalia/matresp2.gtex}{}
+\responsoriumii
 
 \vfill
 \pagebreak
@@ -664,7 +655,7 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 
 \pars{Oratio.}
 
-\cuminitiali{}{temporalia/oratio.gtex}
+\oratio
 
 \vfill
 
@@ -673,9 +664,13 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 
 \vfill
 
+\ifx\festum\undefined
+\cuminitiali{VII}{temporalia/benedicamus-tempore-paschali.gtex}
+\else
 % Nocturnale Romanum 2002, p. LXXVI Benedicamus Domino seems to match
 % the one from Solemn Laudes.
 \cuminitiali{V}{temporalia/benedicamus-solemnis-laud.gtex}
+\fi
 
 \vfill
 
@@ -830,32 +825,19 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 
 \vfill
 
-\pars{Versus.}
+\pars{Versus.} \scriptura{Ac. 2, 4}
 
 % Versus. %%%
+\ifx\festum\undefined
+\sineinitiali{temporalia/versus-repleti-communis.gtex}
+\else
 \sineinitiali{temporalia/versus-repleti.gtex}
+\fi
 
 \vfill
 \pagebreak
 
-\pars{Canticum Zachariæ.} \scriptura{Io. 20, 22-23; \textbf{H271}}
-
-\vspace{-5mm}
-
-\antiphona{VII a}{temporalia/ant-ben-laud.gtex}
-
-\vspace{-2mm}
-
-\scriptura{Lc. 1, 68-79}
-
-\vspace{-1mm}
-
-\initiumpsalmi{temporalia/benedictus-initium-viisoll-a-auto.gtex}
-
-%\psalmusEtTranslatioT{temporalia/benedictus-comb.tex}{10cm}
-\input{temporalia/benedictus.tex} \Abardot{}
-
-%\antiphona{}{temporalia/ant-ben-laud.gtex} % repeat the antiphon - new page
+\benedictus
 
 \vfill
 \pagebreak
@@ -867,7 +849,7 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 % Oratio. %%%
 \pars{Oratio.}
 
-\cuminitiali{}{temporalia/oratio.gtex}
+\oratio
 
 \vfill
 
@@ -887,6 +869,7 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \cuminitiali{II}{temporalia/benedicamus-solemnism-laud.gtex}
 \fi
 
+\ifx\sabbato\undefined
 \vfill
 \pagebreak
 
@@ -934,9 +917,13 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 
 \vfill
 
-\pars{Responsorium breve.}
+\pars{Responsorium breve.} \scriptura{Cf. Io. 14, 26}
 
+\ifx\festum\undefined
+\cuminitiali{VI}{temporalia/resp-spiritus-simplex.gtex}
+\else
 \cuminitiali{VI}{temporalia/resp2v.gtex}
+\fi
 
 \vfill
 \pagebreak
@@ -949,29 +936,19 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 
 \vfill
 
-\pars{Versus.}
+\pars{Versus.} \scriptura{Cf. Ac. 2, 4}
 
 % Versus. %%%
+\ifx\festum\undefined
+\sineinitiali{temporalia/versus-loquebantur-communis.gtex}
+\else
 \sineinitiali{temporalia/versus-loquebantur.gtex}
+\fi
 
 \vfill
 \pagebreak
 
-\pars{Canticum B. Mariæ V.} \scriptura{\textbf{Sg. 388 p. 247}}
-
-\antiphona{I D\textsuperscript{*}}{temporalia/ant-magn-vesp2.gtex}
-
-\vfill
-
-\scriptura{Lc. 1, 46-55}
-
-\initiumpsalmi{temporalia/magnificat-initium-isoll-D_.gtex}
-
-% maly svindl, ale prizvukova struktura VIIIsoll-G2 a Isoll-D* je stejna
-%\psalmusEtTranslatioT{temporalia/magnificat-comb.tex}{10.3cm}
-\input{temporalia/magnificat.tex} \Abardot{}
-
-\antiphona{}{temporalia/ant-magn-vesp2.gtex} % repeat the antiphon - new page
+\magnificat
 
 \vfill
 \pagebreak
@@ -983,7 +960,7 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 % Oratio. %%%
 \pars{Oratio.}
 
-\cuminitiali{}{temporalia/oratio.gtex}
+\oratio
 
 \vfill
 
@@ -1004,5 +981,10 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \fi
 
 \vfill
+\else
+\vfill
+
+\rubrica{Post Nonam, celebrata Missa, terminatur Tempus Paschale.}
+\fi
 
 \end{document}
