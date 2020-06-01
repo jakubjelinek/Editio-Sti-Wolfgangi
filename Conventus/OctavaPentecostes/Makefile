@@ -88,7 +88,7 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 	 convertenosdeus ant-alleluia-compl deusinadiutorium-solemnis \
 	 resp-inmanus-tp ant-salvanos-antiquo-tp \
 	 oratio-visita $(addprefix benedicamus-,minor tempore-paschali) an_regina_caeli_simplex \
-	 oratiodominica-mat $(addprefix absolutio-,exaudi ipsius) tedeum-solemnis \
+	 oratiodominica-mat $(addprefix absolutio-,exaudi ipsius avinculis) tedeum-solemnis \
 	 $(addprefix benedictio-solemn-,evangelica divinum adsocietatem) \
 	 $(addprefix benedicamus-solemnism-,laud 1vesp 2vesp) tonus-lectionis-solemnis tuautem \
 	 benedicamus-solemnis-laud dominelabiamea inv-alleluiaspiritus \

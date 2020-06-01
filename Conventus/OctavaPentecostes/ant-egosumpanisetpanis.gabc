@@ -1,13 +1,15 @@
 name:Ego sum panis et panis;
 office-part:Antiphona;
 mode:1;
-book:Antiphonale Monasticum, 1934, p. 528;
+book:Praglia: Liber Antiphonarius, p. 334;
+transcriber:Jakub Jelínek;
 commentary:Io. 6, 51.52;
 %%
 (c4)
-E(d)go(d) sum(d_c~) pa(f)nis(g) vi(f_h)vus(h.) *(,)
-qui(h) de(g) cæ(e_f)lo(g) de(fe)scén(d.)di:(d.) (;)
-si(dh'!iv) quis(h') man(h)du(g)cá(h')ve(g)rit(f') ex(h) hoc(hj) pa(h.)ne,(h.) (,)
-vi(hg)vet(e_f) in (g) æ(fe)tér(d.)num:(d.) (;)
-et(fv_fv_) pa(d_e/DC'd)nis(d_c) quem(d) e(c)go(df) da(ffg)bo,(f.) (,)
-ca(f)ro(h) me(g')a(f) est(e'_) pro(f) mun(g')di(f) vi(fe)ta,(dc) al(d)le(fe)lú(d.)ia(d.) (::)
+E(d)go(df) sum(dc~) pa(f)nis(g) vi(f!gwh)vus(h) *(,)
+qui(h) de(gf) cæ(e_f)lo(g) de(fe)scén(d.)di.(d.) (;)
+Si(ixdh!iv) quis(h) man(h)du(g)cá(h)ve(g)rit(f) ex(g) hoc(gj) pa(ixh_i)ne,(h) (,)
+vi(hg)vet(e_f) in (g) æ(fe)tér(d.)num;(d.) (;)
+et(fv_fv_) pa(d_eDCd)nis(dc__) quem(d) e(c)go(df) da(f_fg)bo,(f) (,)
+ca(f)ro(h) me(g)a(f) est(e) pro(c) mun(d)di(fe) vi(d)ta,(d_) (,)
+al(f)le(hg)lú(g>)ia,(e_f) al(g)le(fe)lú(d.)ia,(d.) (::)
