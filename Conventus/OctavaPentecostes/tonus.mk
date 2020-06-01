@@ -41,6 +41,7 @@ TONUS-iv-g = 1 2 1 0
 TONUS-iv-c = 1 2 1 0
 TONUS-iv-E_ = 1 2 1 3
 TONUS-iv-E2_ = 1 2 1 3
+TONUS-ivsoll-E = 1 3 1 3
 TONUS-v-a = 1 0 2 0
 TONUS-v-g = 1 0 2 0
 TONUS-vsoll-a = 1 3 2 0
