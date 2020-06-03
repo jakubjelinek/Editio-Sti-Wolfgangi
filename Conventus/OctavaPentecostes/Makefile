@@ -49,8 +49,10 @@ MODUS-benedictus-III = viiisoll-g
 MODUS-magnificat-III = isoll-f
 MODUS-benedictus-IV = ivsoll-E
 MODUS-magnificat-IV = viiisoll-G2
-MAGNIFICAT = $(foreach M,I II III IV,magnificat-$(M))
-BENEDICTUS = $(foreach B,I II III IV,benedictus-$(B))
+MODUS-benedictus-V = isoll-D2
+MODUS-magnificat-V = viiisoll-G
+MAGNIFICAT = $(foreach M,I II III IV V,magnificat-$(M))
+BENEDICTUS = $(foreach B,I II III IV V,benedictus-$(B))
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(BENEDICTUS) $(MAGNIFICAT) nuncdimittis dan3,$(MODUS-$(P))))
 CZPSALMOPTS = --accents 0:0 --title-pattern " " --no-paragraph
 CZPSALMS = $(patsubst %,$(TMP_DIR)/ps%-boh.tex,$(PSALMS))
@@ -84,7 +86,8 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 			   disciplinametsapientiam-sinedox iamnondicam-sinedox \
 			   iteinorbemuniversum-cumdox repletisuntomnes-cumdox \
 			   repletisuntomnes-sinedox spiritussanctusprocedens-cumdox \
-			   inprincipiodeuscreavit-sinedox spiritusdominireplevit-cumdox) \
+			   inprincipiodeuscreavit-sinedox spiritusdominireplevit-cumdox \
+			   dumcomplerentur-joppich-sinedox) \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix capitulum-,CumComplerentur tuautem Facta Judaei) oratio $(addprefix oratio,2 3 4 5 6) \
 	 benedictio-noctemquietam jubedomnebenedicere lectiobrevis-fratressobrii \
