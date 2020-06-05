@@ -51,8 +51,9 @@ MODUS-benedictus-IV = ivsoll-E
 MODUS-magnificat-IV = viiisoll-G2
 MODUS-benedictus-V = isoll-D2
 MODUS-magnificat-V = viiisoll-G
+MODUS-benedictus-VI = isoll-f
 MAGNIFICAT = $(foreach M,I II III IV V,magnificat-$(M))
-BENEDICTUS = $(foreach B,I II III IV V,benedictus-$(B))
+BENEDICTUS = $(foreach B,I II III IV V VI,benedictus-$(B))
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(BENEDICTUS) $(MAGNIFICAT) nuncdimittis dan3,$(MODUS-$(P))))
 CZPSALMOPTS = --accents 0:0 --title-pattern " " --no-paragraph
 CZPSALMS = $(patsubst %,$(TMP_DIR)/ps%-boh.tex,$(PSALMS))
@@ -87,7 +88,7 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 			   iteinorbemuniversum-cumdox repletisuntomnes-cumdox \
 			   repletisuntomnes-sinedox spiritussanctusprocedens-cumdox \
 			   inprincipiodeuscreavit-sinedox spiritusdominireplevit-cumdox \
-			   dumcomplerentur-joppich-sinedox) \
+			   dumcomplerentur-joppich-sinedox iamnondicam-cumdox) \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix capitulum-,CumComplerentur tuautem Facta Judaei) oratio $(addprefix oratio,2 3 4 5 6) \
 	 benedictio-noctemquietam jubedomnebenedicere lectiobrevis-fratressobrii \
@@ -122,7 +123,7 @@ iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 aro
 	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 triplex76) ../Pentecostes ../AscensioneDomini
 include $(iter)
 
-PDF = pentecostes.pdf $(patsubst %,feria%-ope.pdf,ii iii iv v vi)
+PDF = pentecostes.pdf $(patsubst %,feria%-ope.pdf,ii iii iv v vi) sabbato-ope.pdf
 all: $(PDF)
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
