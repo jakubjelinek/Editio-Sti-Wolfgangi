@@ -20,37 +20,34 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 4 8 10 18 20 29 46 62 90 92 96 98 99 102 109 110 111 112 133 148 149 150
+PSALMS = 8 18 23 46 47 62 71 92 95 96 97 99 109 110 111 112 148 149 150
 include tonus.mk
 MODUS-4 = viii-G
-MODUS-8 = iv-A_
-MODUS-10 = viii-C
-MODUS-18 = iv-A_
-MODUS-20 = iv-A_
-MODUS-29 = viii-G
-MODUS-46 = iv-A_
+MODUS-8 = i-D_
+MODUS-18 = ii-D
+MODUS-23 = iii-b
+MODUS-46 = iv-E
+MODUS-47 = v-a
 MODUS-62 = iii-a2
-MODUS-90 = viii-G
+MODUS-71 = vi-F
 MODUS-92 = i-f
-MODUS-96 = vi-F
-MODUS-98 = vi-F
+MODUS-95 = vii-a
+MODUS-96 = viii-G
+MODUS-97 = iii-b
 MODUS-99 = ii-D
-MODUS-102 = vi-F
 MODUS-109 = i-f
 MODUS-110 = ii-D
 MODUS-111 = iii-a2
 MODUS-112 = v-a
-MODUS-133 = viii-G
 MODUS-148 = v-a
 MODUS-149 = v-a
 MODUS-150 = v-a
 MODUS-dan3 = iv-E
 MODUS-magnificat-I = isoll-D_
-MODUS-magnificat-II = iisoll-D
-MODUS-magnificat-III = viiisoll-G
-MODUS-benedictus-I = viisoll-a
+MODUS-magnificat-II = ivsoll-E2
+MODUS-benedictus-I = visoll-C
 MODUS-benedictus-II = viiisoll-G
-MAGNIFICAT = $(foreach M,I II III,magnificat-$(M))
+MAGNIFICAT = $(foreach M,I II,magnificat-$(M))
 BENEDICTUS = $(foreach B,I II,benedictus-$(B))
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(MAGNIFICAT) dan3 $(BENEDICTUS),$(MODUS-$(P))))
 CZPSALMOPTS = --accents 0:0 --title-pattern " " --no-paragraph
@@ -80,33 +77,40 @@ SCORES = $(addprefix ant-,ascenditdeus ascendoadpatrem asummocoeloegressioejus \
 			  videntibusillis virigalilaeiquidaspicitis \
 			  benedictasitcreatrix exquoomnia glorialaudisresonet \
 			  gloriatibi gratiastibideus lausdeopatri lausetperennisgloria \
-			  tedeumpatrem) \
-	 $(addprefix hym-,OLuxBeata TuTrinitatisUnitas) \
+			  tedeumpatrem adestounusdeusomnipotens caritaspaterest \
+			  liberanossalvanos pateretfilius spesnostra teinvocamus \
+			  tesemperidemesse teunuminsubstantia veraxestpater) \
+	 $(addprefix hym-,OLuxBeata TuTrinitatisUnitas SummaeParensClementiae) \
 	 $(addprefix resp-,ascendenschristusinaltum ascendenschristusinaltum-simplex \
 			   ascenditdeus \
 			   benedicamuspatrem benedictuses) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
-	 $(foreach M,isoll-D_ visoll-F iisoll-D viiisoll-G,magnificat-initium-$(M)) \
+	 $(foreach M,isoll-D_ ivsoll-E2,magnificat-initium-$(M)) \
 	 $(addprefix capitulum-,OAltitudo) \
 	 $(addprefix versus-,ascenditdeus dominusincaelo custodi gaude \
 			     ascenditdeus-communis dominusincaelo-communis \
-			     benedicamuspatrem benedictuses) \
+			     benedicamuspatrem benedictuses \
+			     benedictuses-communis verbodomini) \
 	 oratio oratio2 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi \
 	 benedicamus-minor $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
-	 benedicamus-solemnis-laud dominelabiamea inv-alleluiachristumdominum \
+	 benedicamus-solemnis-laud dominelabiamea inv-deumverumunumintrinitate \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
-					evangelica divinum adsocietatem) \
+					evangelica divinum adsocietatem perevangelica) \
 	 $(addprefix resp-,egorogabopatrem-sinedox exaltaredomine-cumdox \
 			   ponitnubem-cumdox omnispulchritudodomini-sinedox \
 			   ascendensinaltum-cumdox nonconturbetur-sinedox \
 			   tempusest-sinedox postpassionemsuam-sinedox \
-			   sienimnonabiero-cumdox) \
-	 tedeum-solemnis
+			   sienimnonabiero-cumdox \
+			   benedicamuspatrietfilio benedicatnosdeus-cumdox \
+			   benedictusdominusdeus-sinedox duoseraphim-cumdox \
+			   magnusdominus-cumdox quisdeusmagnus-sinedox \
+			   tibilaustibigloria-sinedox vididominumsedentem-sinedox) \
+	 tedeum-solemnis ps47-initium-v-A
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = $(foreach B,viisoll-a viiisoll-G,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex)
+OTHERDEPS = $(foreach B,visoll-C viiisoll-G,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex)
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
