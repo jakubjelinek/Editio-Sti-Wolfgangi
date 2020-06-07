@@ -97,7 +97,7 @@ SCORES = $(addprefix ant-,ascenditdeus ascendoadpatrem asummocoeloegressioejus \
 	 benedicamus-solemnis-laud dominelabiamea inv-deumverumunumintrinitate \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
-					deus christus ignem \
+					deus christus ignem ille \
 					evangelica divinum adsocietatem perevangelica) \
 	 $(addprefix resp-,egorogabopatrem-sinedox exaltaredomine-cumdox \
 			   ponitnubem-cumdox omnispulchritudodomini-sinedox \
