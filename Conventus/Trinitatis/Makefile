@@ -66,30 +66,17 @@ LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
 LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT) $(BENEDICTUS) dan3)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
-SCORES = $(addprefix ant-,ascenditdeus ascendoadpatrem asummocoeloegressioejus \
-			  cumqueintuerentur cumveneritparaclitus dominusincoelo \
-			  dominusinsion dominusintemplosanctosuo \
-			  elevataestmagnificentiatua elevatismanibus exaltabotedomine \
-			  exaltaredomine exaltateregemregum exiviapatre \
-			  haeclocutussumvobis ipseenimpater nimisexaltatusest \
-			  oportebatpatichristum orexgloriae patermanifestavi \
-			  patervenithora petiteetaccipietisquaerite \
-			  videntibusillis virigalilaeiquidaspicitis \
-			  benedictasitcreatrix exquoomnia glorialaudisresonet \
+SCORES = $(addprefix ant-,benedictasitcreatrix exquoomnia glorialaudisresonet \
 			  gloriatibi gratiastibideus lausdeopatri lausetperennisgloria \
 			  tedeumpatrem adestounusdeusomnipotens caritaspaterest \
 			  liberanossalvanos pateretfilius spesnostra teinvocamus \
 			  tesemperidemesse teunuminsubstantia veraxestpater) \
 	 $(addprefix hym-,OLuxBeata TuTrinitatisUnitas SummaeParensClementiae) \
-	 $(addprefix resp-,ascendenschristusinaltum ascendenschristusinaltum-simplex \
-			   ascenditdeus \
-			   benedicamuspatrem benedictuses) \
+	 $(addprefix resp-,benedicamuspatrem benedictuses) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(foreach M,isoll-D_ ivsoll-E2,magnificat-initium-$(M)) \
 	 $(addprefix capitulum-,OAltitudo) \
-	 $(addprefix versus-,ascenditdeus dominusincaelo custodi gaude \
-			     ascenditdeus-communis dominusincaelo-communis \
-			     benedicamuspatrem benedictuses \
+	 $(addprefix versus-,benedicamuspatrem benedictuses \
 			     benedictuses-communis verbodomini) \
 	 oratio oratio2 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi \
@@ -99,12 +86,7 @@ SCORES = $(addprefix ant-,ascenditdeus ascendoadpatrem asummocoeloegressioejus \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem ille \
 					evangelica divinum adsocietatem perevangelica) \
-	 $(addprefix resp-,egorogabopatrem-sinedox exaltaredomine-cumdox \
-			   ponitnubem-cumdox omnispulchritudodomini-sinedox \
-			   ascendensinaltum-cumdox nonconturbetur-sinedox \
-			   tempusest-sinedox postpassionemsuam-sinedox \
-			   sienimnonabiero-cumdox \
-			   benedicamuspatrietfilio benedicatnosdeus-cumdox \
+	 $(addprefix resp-,benedicamuspatrietfilio benedicatnosdeus-cumdox \
 			   benedictusdominusdeus-sinedox duoseraphim-cumdox \
 			   magnusdominus-cumdox quisdeusmagnus-sinedox \
 			   tibilaustibigloria-sinedox vididominumsedentem-sinedox) \
