@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 4 8 10 18 20 29 46 62 90 92 96 98 99 102 109 110 111 112 133 148 149 150
+PSALMS = 4 8 10 18 20 29 46 62 90 92 96 98 99 102 109 110 115 127 133 147 148 149 150
 include tonus.mk
 MODUS-4 = viii-G
 MODUS-8 = iv-A_
@@ -36,18 +36,19 @@ MODUS-96 = vi-F
 MODUS-98 = vi-F
 MODUS-99 = viii-G2
 MODUS-102 = vi-F
-MODUS-109 = vii-a
-MODUS-110 = viii-G2
-MODUS-111 = iv-A_
-MODUS-112 = viii-G
+MODUS-109 = i-f
+MODUS-110 = ii-D
+MODUS-115 = iii-a
+MODUS-127 = iv-E
 MODUS-133 = viii-G
+MODUS-147 = v-g
 MODUS-148 = viii-G
 MODUS-149 = viii-G
 MODUS-150 = viii-G
 MODUS-dan3 = viii-G2
 MODUS-nuncdimittis = iii-a
 MODUS-magnificat-I = visoll-F
-MODUS-magnificat-II = iisoll-D
+MODUS-magnificat-II = vsoll-a
 MODUS-magnificat-III = viiisoll-G
 MODUS-benedictus-I = viisoll-a
 MODUS-benedictus-II = viiisoll-G
@@ -91,8 +92,8 @@ SCORES = $(addprefix ant-,ascenditdeus ascendoadpatrem asummocoeloegressioejus \
 			   ascenditdeus inmanus \
 			   cibavit cibavit-simplex) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
-	 $(foreach M,visoll-F iisoll-D viiisoll-G,magnificat-initium-$(M)) \
-	 $(addprefix capitulum-,PrimumQuidem CarissimiEstote tuautem) \
+	 $(foreach M,visoll-F vsoll-a vsoll-a_ viiisoll-G,magnificat-initium-$(M)) \
+	 $(addprefix capitulum-,PrimumQuidem CarissimiEstote tuautem FratresEgo) \
 	 $(addprefix versus-,ascenditdeus dominusincaelo custodi gaude \
 			     ascenditdeus-communis dominusincaelo-communis \
 			     panemdecaelo) \
@@ -109,7 +110,8 @@ SCORES = $(addprefix ant-,ascenditdeus ascendoadpatrem asummocoeloegressioejus \
 			   ponitnubem-cumdox omnispulchritudodomini-sinedox \
 			   ascendensinaltum-cumdox nonconturbetur-sinedox \
 			   tempusest-sinedox postpassionemsuam-sinedox \
-			   sienimnonabiero-cumdox) \
+			   sienimnonabiero-cumdox \
+			   quammagnamultitudo-cumdox) \
 	 tedeum-solemnis an_regina_caeli_simplex convertenosdeus \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 benedictio-noctemquietam an_salve_regina
