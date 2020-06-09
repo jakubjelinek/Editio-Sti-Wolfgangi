@@ -177,7 +177,7 @@
 \newcommand{\vesperasiv}{
 \pars{Hymnus} \scriptura{Thomas de Aquino?}
 
-\cuminitiali{IV}{temporalia/hym-PangeLingua.gtex}
+\cuminitiali{I}{temporalia/hym-PangeLingua.gtex}
 \vspace{-3mm}
 %\input{hym-PangeLingua-bohtext.tex}
 
@@ -354,7 +354,13 @@ per infiníta sǽcula sæculórum.
 \initiumpsalmi{temporalia/magnificat-initium-visoll-F.gtex}
 
 %\psalmusEtTranslatioT{temporalia/magnificat-I-comb.tex}{10.2cm}
-\input{temporalia/magnificat-I.tex} \Abardot{}
+\input{temporalia/magnificat-I.tex}
+
+{
+\grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{VI F}{temporalia/ant-oquamsuavisest.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
 \else
 \pars{Canticum B. Mariæ V.} \scriptura{Io. 15, 26; \textbf{H267}}
 
@@ -1171,7 +1177,6 @@ Orémus:
 
 \cantusSineNeumas
 
-\ifx\postoctavam\undefined
 \vspace{0.5cm}
 \grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \ifx\festumveldominica\undefined
@@ -1183,48 +1188,32 @@ Orémus:
 
 \vfill
 %\pagebreak
-\else
-\rubrica{Absolute incipitur Officium ab Antiphona primi Psalmi.}
 
-\vspace{7mm}
-\fi
-
-\pars{Psalmus 1.} \scriptura{Ac. 1, 11; \textbf{H265}}
+\pars{Psalmus 1.} \scriptura{Prv. 9, 1-2}
 
 \vspace{-0.4cm}
 
-\antiphona{VII a}{temporalia/ant-virigalilaeiquidaspicitis.gtex}
+\antiphona{I a\textsuperscript{2}}{temporalia/ant-sapientiaaedificavit.gtex}
 
 \scriptura{Psalmus 92.}
 
-\initiumpsalmi{temporalia/ps92-initium-vii-a-auto.gtex}
+\initiumpsalmi{temporalia/ps92-initium-i-a2-auto.gtex}
 
-\ifx\postoctavam\undefined
-%\psalmusEtTranslatioT{temporalia/ps92-comb.tex}{10cm}
-\input{temporalia/ps92.tex}
-
-\vfill
-
-\vspace{-1cm}
-
-\antiphona{}{temporalia/ant-virigalilaeiquidaspicitis.gtex}
-\else
 %\psalmusEtTranslatioT{temporalia/ps92-comb.tex}{10cm}
 \input{temporalia/ps92.tex} \Abardot{}
-\fi
 
 \vfill
 \pagebreak
 
-\pars{Psalmus 2.} \scriptura{Ac. 1, 10; \textbf{H265}}
+\pars{Psalmus 2.} \scriptura{Sap. 16, 20}
 
 \vspace{-0.4cm}
 
-\antiphona{VIII G\textsuperscript{2}}{temporalia/ant-cumqueintuerentur.gtex}
+\antiphona{II D}{temporalia/ant-angelorumesca.gtex}
 
 \scriptura{Psalmus 99.}
 
-\initiumpsalmi{temporalia/ps99-initium-viii-G2-auto.gtex}
+\initiumpsalmi{temporalia/ps99-initium-ii-D-auto.gtex}
 
 %\psalmusEtTranslatioT{temporalia/ps99-comb.tex}{10cm}
 \input{temporalia/ps99.tex} \Abardot{}
@@ -1232,37 +1221,31 @@ Orémus:
 \vfill
 \pagebreak
 
-\pars{Psalmus 3.} \scriptura{Lc. 24, 50.51; \textbf{H265}}
+\pars{Psalmus 3.} \scriptura{Gn. 48, 20}
 
 \vspace{-0.4cm}
 
-\antiphona{IV A*}{temporalia/ant-elevatismanibus.gtex}
+\antiphona{III a}{temporalia/ant-pinguisest.gtex}
 
 \scriptura{Psalmus 62.}
 
-\initiumpsalmi{temporalia/ps62-initium-iv-A_-auto.gtex}
+\initiumpsalmi{temporalia/ps62-initium-iii-a-auto.gtex}
 
 %\psalmusEtTranslatioT{temporalia/ps62-comb.tex}{10cm}
 \input{temporalia/ps62.tex} \Abardot{}
 
-%\vfill
-
-%\vspace{-6mm}
-
-%\antiphona{}{temporalia/ant-elevatismanibus.gtex} % repeat the antiphon - new page
-
 \vfill
 \pagebreak
 
-\pars{Psalmus 4.} \scriptura{\textbf{H265}}
+\pars{Psalmus 4.} \scriptura{Cf. Lv. 21, 6}
 
 \vspace{-0.4cm}
 
-\antiphona{VIII G\textsuperscript{2}}{temporalia/ant-exaltateregemregum.gtex}
+\antiphona{IV E}{temporalia/ant-sacerdotessancti.gtex}
 
 \scriptura{Canticum trium puerorum, Dan. 3, 57-88 et 56}
 
-\initiumpsalmi{temporalia/dan3-initium-viii-G2-auto.gtex}
+\initiumpsalmi{temporalia/dan3-initium-iv-E-auto.gtex}
 
 %\psalmusEtTranslatioT{temporalia/dan3-comb.tex}{10cm}
 \input{temporalia/dan3.tex}
@@ -1273,20 +1256,20 @@ Orémus:
 
 \vspace{-6mm}
 
-\antiphona{}{temporalia/ant-exaltateregemregum.gtex} % repeat the antiphon - new page
+\antiphona{}{temporalia/ant-sacerdotessancti.gtex} % repeat the antiphon - new page
 
 \vfill
 \pagebreak
 
-\pars{Psalmus 5.} \scriptura{Ac. 1, 9; \textbf{H265}}
+\pars{Psalmus 5.} \scriptura{Ap. 2, 17}
 
 \vspace{-0.4cm}
 
-\antiphona{VIII G}{temporalia/ant-videntibusillis.gtex}
+\antiphona{V a}{temporalia/ant-vincentidabo.gtex}
 
 \scriptura{Psalmus 148.}
 
-\initiumpsalmi{temporalia/ps148-initium-viii-G-auto.gtex}
+\initiumpsalmi{temporalia/ps148-initium-v-a-auto.gtex}
 
 %\psalmusEtTranslatioT{temporalia/ps148-comb.tex}{10cm}
 \input{temporalia/ps148.tex}
@@ -1299,7 +1282,7 @@ Orémus:
 %
 \scriptura{Psalmus 149.}
 
-\initiumpsalmi{temporalia/ps149-initium-viii-G-auto.gtex}
+\initiumpsalmi{temporalia/ps149-initium-v-a-auto.gtex}
 
 %\psalmusEtTranslatioT{temporalia/ps149-comb.tex}{10cm}
 \input{temporalia/ps149.tex}
@@ -1312,7 +1295,7 @@ Orémus:
 %
 \scriptura{Psalmus 150.}
 
-\initiumpsalmi{temporalia/ps150-initium-viii-G-auto.gtex}
+\initiumpsalmi{temporalia/ps150-initium-v-a-auto.gtex}
 
 %\psalmusEtTranslatioT{temporalia/ps150-comb.tex}{10cm}
 \input{temporalia/ps150.tex}
@@ -1321,7 +1304,7 @@ Orémus:
 
 \vspace{-6mm}
 
-\antiphona{}{temporalia/ant-videntibusillis.gtex} % repeat the antiphon - new page
+\antiphona{}{temporalia/ant-vincentidabo.gtex} % repeat the antiphon - new page
 
 \vfill
 \pagebreak
@@ -1333,31 +1316,31 @@ Orémus:
 
 \vfill
 
-\pars{Responsorium breve.} \scriptura{Ps. 46, 6}
+\pars{Responsorium breve.} \scriptura{Ps. 77, 24-25}
 
-\cuminitiali{VI}{temporalia/resp-ascenditdeus.gtex}
+\cuminitiali{VI}{temporalia/resp-panemcaeli.gtex}
 
 %\trResp
 
 \vfill
 \pagebreak
 
-\pars{Hymnus}
+\pars{Hymnus} \scriptura{Thomas de Aquino?}
 
-\cuminitiali{VIII}{temporalia/hym-JesuNostraRedemptio.gtex}
+\cuminitiali{VIII}{temporalia/hym-VerbumSupernum.gtex}
 \vspace{-3mm}
-%\input{hym-JesuNostraRedemptio-bohtext.tex}
+%\input{hym-VerbumSupernum-bohtext.tex}
 
 \vfill
 %\pagebreak
 
-\pars{Versus.}
+\pars{Versus.} \scriptura{Ps. 147, 3}
 
 % Versus. %%%
 \ifx\festum\undefined
-\sineinitiali{temporalia/versus-dominusincaelo-communis.gtex}
+\sineinitiali{temporalia/versus-posuitfines-communis.gtex}
 \else
-\sineinitiali{temporalia/versus-dominusincaelo.gtex}
+\sineinitiali{temporalia/versus-posuitfines.gtex}
 \fi
 
 %\noindent \trVersus
@@ -1366,26 +1349,26 @@ Orémus:
 \pagebreak
 
 \ifx\dominica\undefined
-\pars{Canticum Zachariæ.} \scriptura{Io. 20, 17; \textbf{H265}}
+\pars{Canticum Zachariæ.} \scriptura{Io. 6, 51.52}
 
-%\vspace{-6mm}
+\vspace{-4mm}
 
 {
 \grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
-\antiphona{VII a}{temporalia/ant-ascendoadpatrem.gtex}
+\antiphona{I a\textsuperscript{2}}{temporalia/ant-egosumpanisvivus.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 }
 
 %\trAntIMagnificat
 
-%\vspace{-3mm}
+\vspace{-2mm}
 
 \scriptura{Lc. 1, 68-79}
 
-%\vspace{-2.5mm}
+\vspace{-1mm}
 
 \cantusSineNeumas
-\initiumpsalmi{temporalia/benedictus-initium-viisoll-a-auto.gtex}
+\initiumpsalmi{temporalia/benedictus-initium-isoll-a2-auto.gtex}
 
 %\vspace{-1.5mm}
 
@@ -1398,7 +1381,7 @@ Orémus:
 
 {
 \grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
-\antiphona{VIII G}{temporalia/ant-cumveneritparaclitus.gtex}
+\antiphona{VIII G}{temporalia/ant-xxx.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 }
 

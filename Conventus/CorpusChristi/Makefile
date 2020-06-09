@@ -29,12 +29,12 @@ MODUS-18 = iv-A_
 MODUS-20 = iv-A_
 MODUS-29 = viii-G
 MODUS-46 = iv-A_
-MODUS-62 = iv-A_
+MODUS-62 = iii-a
 MODUS-90 = viii-G
-MODUS-92 = vii-a
+MODUS-92 = i-a2
 MODUS-96 = vi-F
 MODUS-98 = vi-F
-MODUS-99 = viii-G2
+MODUS-99 = ii-D
 MODUS-102 = vi-F
 MODUS-109 = i-f
 MODUS-110 = ii-D
@@ -42,15 +42,15 @@ MODUS-115 = iii-a
 MODUS-127 = iv-E
 MODUS-133 = viii-G
 MODUS-147 = v-g
-MODUS-148 = viii-G
-MODUS-149 = viii-G
-MODUS-150 = viii-G
-MODUS-dan3 = viii-G2
+MODUS-148 = v-a
+MODUS-149 = v-a
+MODUS-150 = v-a
+MODUS-dan3 = iv-E
 MODUS-nuncdimittis = iii-a
 MODUS-magnificat-I = visoll-F
 MODUS-magnificat-II = vsoll-a
 MODUS-magnificat-III = viiisoll-G
-MODUS-benedictus-I = viisoll-a
+MODUS-benedictus-I = isoll-a2
 MODUS-benedictus-II = viiisoll-G
 MAGNIFICAT = $(foreach M,I II III,magnificat-$(M))
 BENEDICTUS = $(foreach B,I II,benedictus-$(B))
@@ -90,13 +90,13 @@ SCORES = $(addprefix ant-,ascenditdeus ascendoadpatrem asummocoeloegressioejus \
 			  PangeLingua VerbumSupernum TeLucis) \
 	 $(addprefix resp-,ascendenschristusinaltum ascendenschristusinaltum-simplex \
 			   ascenditdeus inmanus \
-			   cibavit cibavit-simplex) \
+			   cibavit cibavit-simplex panemcaeli) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(foreach M,visoll-F vsoll-a vsoll-a_ viiisoll-G,magnificat-initium-$(M)) \
 	 $(addprefix capitulum-,PrimumQuidem CarissimiEstote tuautem FratresEgo) \
 	 $(addprefix versus-,ascenditdeus dominusincaelo custodi gaude \
 			     ascenditdeus-communis dominusincaelo-communis \
-			     panemdecaelo) \
+			     panemdecaelo posuitfines) \
 	 oratio oratio2 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 benedicamus-tempore-paschali benedicamus-minor \
@@ -116,7 +116,7 @@ SCORES = $(addprefix ant-,ascenditdeus ascendoadpatrem asummocoeloegressioejus \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 benedictio-noctemquietam an_salve_regina
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = $(foreach B,viisoll-a viiisoll-G,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex)
+OTHERDEPS = $(foreach B,isoll-a2 viiisoll-G,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex)
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3 nuncdimittis,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
