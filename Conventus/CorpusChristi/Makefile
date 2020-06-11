@@ -48,7 +48,7 @@ MODUS-dan3 = iv-E
 MODUS-nuncdimittis = iii-a
 MODUS-magnificat-I = visoll-F
 MODUS-magnificat-II = vsoll-a
-MODUS-magnificat-III = viiisoll-G
+MODUS-magnificat-III = v-a
 MODUS-benedictus-I = isoll-a2
 MODUS-benedictus-II = viiisoll-G
 MAGNIFICAT = $(foreach M,I II III,magnificat-$(M))
@@ -70,16 +70,7 @@ LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
 LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT) $(BENEDICTUS) dan3 nuncdimittis)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
-SCORES = $(addprefix ant-,ascenditdeus ascendoadpatrem asummocoeloegressioejus \
-			  cumqueintuerentur cumveneritparaclitus dominusincoelo \
-			  dominusinsion dominusintemplosanctosuo \
-			  elevataestmagnificentiatua elevatismanibus exaltabotedomine \
-			  exaltaredomine exaltateregemregum exiviapatre \
-			  haeclocutussumvobis ipseenimpater nimisexaltatusest \
-			  oportebatpatichristum orexgloriae patermanifestavi \
-			  patervenithora petiteetaccipietisquaerite \
-			  videntibusillis virigalilaeiquidaspicitis \
-			  salvanos-antiquo \
+SCORES = $(addprefix ant-,salvanos-antiquo \
 			  angelorumesca calicemsalutaris egosumpanis egosumpanisvivus \
 			  homoquidam miseratordominus oquamsuavisest osacrumconvivium \
 			  pinguisest puersamuelministrabat quipacem sacerdosinaeternum \
@@ -90,16 +81,14 @@ SCORES = $(addprefix ant-,ascenditdeus ascendoadpatrem asummocoeloegressioejus \
 			  memorsit-FKP paraturnobis-FKP) \
 	 $(addprefix hym-,AEterneRexAltissime JesuNostraRedemptio \
 			  PangeLingua VerbumSupernum TeLucis SacrisSolemniis) \
-	 $(addprefix resp-,ascendenschristusinaltum ascendenschristusinaltum-simplex \
-			   ascenditdeus inmanus \
-			   cibavit cibavit-simplex panemcaeli) \
+	 $(addprefix resp-,inmanus cibavit cibavit-simplex panemcaeli) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
-	 $(foreach M,visoll-F vsoll-a vsoll-a_ viiisoll-G,magnificat-initium-$(M)) \
+	 $(foreach M,visoll-F vsoll-a vsoll-a v-a,magnificat-initium-$(M)) \
 	 $(addprefix capitulum-,PrimumQuidem CarissimiEstote tuautem FratresEgo) \
-	 $(addprefix versus-,ascenditdeus dominusincaelo custodi gaude \
-			     ascenditdeus-communis dominusincaelo-communis \
+	 $(addprefix versus-,custodi gaude \
 			     panemdecaelo posuitfines panemdecaelo-communis \
-			     panemdecaelohomo-communis cibavit educas) \
+			     panemdecaelohomo-communis posuitfines-communis \
+			     cibavit educas) \
 	 oratio oratio2 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 benedicamus-tempore-paschali benedicamus-minor \
@@ -109,11 +98,7 @@ SCORES = $(addprefix ant-,ascenditdeus ascendoadpatrem asummocoeloegressioejus \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
 					evangelica divinum adsocietatem) \
-	 $(addprefix resp-,egorogabopatrem-sinedox exaltaredomine-cumdox \
-			   ponitnubem-cumdox omnispulchritudodomini-sinedox \
-			   ascendensinaltum-cumdox nonconturbetur-sinedox \
-			   tempusest-sinedox postpassionemsuam-sinedox \
-			   sienimnonabiero-cumdox quammagnamultitudo-cumdox \
+	 $(addprefix resp-,quammagnamultitudo-cumdox \
 			   accepitiesus coenantibus comedetiscarnes \
 			   egosumpanisvitae immolabithaedum misitmevivenspater \
 			   quimanducat respexitelias) \
