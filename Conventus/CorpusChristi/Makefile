@@ -48,10 +48,11 @@ MODUS-dan3 = iv-E
 MODUS-nuncdimittis = iii-a
 MODUS-magnificat-I = visoll-F
 MODUS-magnificat-II = vsoll-a
-MODUS-magnificat-III = v-a
+MODUS-magnificat-III = viisoll-a
+MODUS-magnificat-IV = isoll-a
 MODUS-benedictus-I = isoll-a2
-MODUS-benedictus-II = viiisoll-G
-MAGNIFICAT = $(foreach M,I II III,magnificat-$(M))
+MODUS-benedictus-II = iiisoll-g2
+MAGNIFICAT = $(foreach M,I II III IV,magnificat-$(M))
 BENEDICTUS = $(foreach B,I II,benedictus-$(B))
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(MAGNIFICAT) dan3 nuncdimittis $(BENEDICTUS),$(MODUS-$(P))))
 CZPSALMOPTS = --accents 0:0 --title-pattern " " --no-paragraph
@@ -78,13 +79,13 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 			  miserere salveregina-simplex subtuum \
 			  afructufrumenti communionecalicis fructumsalutiferum \
 			  cibavitnos-FKP exaltari-FKP introibo-FKP invoceexsultationis-FKP \
-			  memorsit-FKP paraturnobis-FKP) \
+			  memorsit-FKP paraturnobis-FKP exicitoinplateas) \
 	 $(addprefix hym-,AEterneRexAltissime JesuNostraRedemptio \
 			  PangeLingua VerbumSupernum TeLucis SacrisSolemniis) \
 	 $(addprefix resp-,inmanus cibavit cibavit-simplex panemcaeli) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
-	 $(foreach M,visoll-F vsoll-a vsoll-a v-a,magnificat-initium-$(M)) \
-	 $(addprefix capitulum-,PrimumQuidem CarissimiEstote tuautem FratresEgo) \
+	 $(foreach M,visoll-F vsoll-a viisoll-a isoll-a,magnificat-initium-$(M)) \
+	 $(addprefix capitulum-,tuautem FratresEgo CarissimiNolite) \
 	 $(addprefix versus-,custodi gaude \
 			     panemdecaelo posuitfines panemdecaelo-communis \
 			     panemdecaelohomo-communis posuitfines-communis \
@@ -106,7 +107,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 benedictio-noctemquietam an_salve_regina ps22-initium-v-a
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = $(foreach B,isoll-a2 viiisoll-G,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex) \
+OTHERDEPS = $(foreach B,isoll-a2 iiisoll-g2,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex) \
 	    $(TMP_DIR)/ps4-initium-ii-D-auto.gtex $(TMP_DIR)/ps4iiD.tex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3 nuncdimittis,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
@@ -125,7 +126,7 @@ endef
 iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../PostPentecosten
 include $(iter)
 
-PDF = corpuschristi.pdf $(patsubst %,feria%-ocx.pdf,ii iii iv v vi) sabbato-ocx.pdf dominicainfraoctavamcorpuschristi.pdf
+PDF = corpuschristi.pdf $(patsubst %,feria%-ocx.pdf,ii iii iv v vi) sabbato-ocx.pdf dominicainfraoctavamcorporischristi.pdf
 all: $(PDF)
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)

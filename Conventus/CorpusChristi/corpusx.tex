@@ -67,10 +67,10 @@
 \cuminitiali{}{temporalia/capitulum-FratresEgo.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}}
 \else
-\newcommand{\capitulumLaudes}{\pars{Capitulum.} \scriptura{1 Ptr. 4, 7-8}
+\newcommand{\capitulumLaudes}{\pars{Capitulum.} \scriptura{1 Io. 3, 13-14}
 
 \grechangedim{interwordspacetext}{0.12 cm plus 0.15 cm minus 0.05 cm}{scalable}%
-\cuminitiali{}{temporalia/capitulum-CarissimiEstote.gtex}
+\cuminitiali{}{temporalia/capitulum-CarissimiNolite.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}}
 \fi
 
@@ -320,9 +320,15 @@ per infiníta sǽcula sæculórum.
 
 \vfill
 
+\ifx\dominica\undefined
 \pars{Responsorium breve.} \scriptura{Ps. 30, 20; \textbf{H085}}
 
 \cuminitiali{I}{temporalia/resp-quammagnamultitudo-cumdox.gtex}
+\else
+\pars{Responsorium breve.} \scriptura{Ps. 80, 17}
+
+\cuminitiali{VI}{temporalia/resp-cibavit-simplex.gtex}
+\fi
 
 %\trResp
 
@@ -362,28 +368,28 @@ per infiníta sǽcula sæculórum.
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 }
 \else
-\pars{Canticum B. Mariæ V.} \scriptura{Io. 15, 26; \textbf{H267}}
+\pars{Canticum B. Mariæ V.} \scriptura{1 Sam. 3, 1; \textbf{B177v}}
 
-\vspace{-6mm}
+\vspace{-3mm}
 
 {
 \grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
-\antiphona{VIII G}{temporalia/ant-XXXcumveneritparaclitus.gtex}
+\antiphona{VII a}{temporalia/ant-puersamuelministrabat.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 }
 
 %\trAntIMagnificat
 
-\vspace{-3mm}
+%\vspace{-3mm}
 
 \scriptura{Lc. 1, 46-55}
 
-\vspace{-2mm}
+%\vspace{-2mm}
 
 \cantusSineNeumas
-\initiumpsalmi{temporalia/magnificat-initium-viiisoll-G.gtex}
+\initiumpsalmi{temporalia/magnificat-initium-viisoll-a.gtex}
 
-\vspace{-1.5mm}
+%\vspace{-1.5mm}
 
 %\psalmusEtTranslatioT{temporalia/magnificat-III-comb.tex}{10.2cm}
 \input{temporalia/magnificat-III.tex} \Abardot{}
@@ -401,7 +407,11 @@ per infiníta sǽcula sæculórum.
 \pagebreak
 
 % Oratio. %%%
+\ifx\dominica\undefined
 \cuminitiali{}{temporalia/oratio.gtex}
+\else
+\cuminitiali{}{temporalia/oratio2.gtex}
+\fi
 
 \vspace{-1mm}
 %\trOrationisI
@@ -1141,7 +1151,11 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 
 \pars{Oratio.}
 
+\ifx\dominica\undefined
 \cuminitiali{}{temporalia/oratio.gtex}
+\else
+\cuminitiali{}{temporalia/oratio2.gtex}
+\fi
 
 \vfill
 
@@ -1365,35 +1379,31 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 %\psalmusEtTranslatioT{temporalia/benedictus-I-comb.tex}{10.2cm}
 \input{temporalia/benedictus-I.tex} \Abardot{}
 \else
-\pars{Canticum Zachariæ.} \scriptura{Io. 15, 26; \textbf{H267}}
+\pars{Canticum Zachariæ.} \scriptura{Lc. 14, 16.17}
 
-\vspace{-3mm}
+\vspace{-4mm}
 
 {
 \grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
-\antiphona{VIII G}{temporalia/ant-xxx.gtex}
+\antiphona{III g\textsuperscript{2}}{temporalia/ant-homoquidam.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 }
 
 %\trAntIMagnificat
 
-%\vspace{-3mm}
+\vspace{-2mm}
 
 \scriptura{Lc. 1, 68-79}
 
-%\vspace{-2.5mm}
+\vspace{-2mm}
 
 \cantusSineNeumas
-\initiumpsalmi{temporalia/benedictus-initium-viiisoll-G-auto.gtex}
+\initiumpsalmi{temporalia/benedictus-initium-iiisoll-g2-auto.gtex}
 
-%\vspace{-1.5mm}
+%\vspace{-1mm}
 
 %\psalmusEtTranslatioT{temporalia/benedictus-II-comb.tex}{10.2cm}
-\input{temporalia/benedictus-II.tex}
-
-\vfill
-
-\antiphona{}{temporalia/ant-cumveneritparaclitus.gtex}
+\input{temporalia/benedictus-II.tex} \Abardot{}
 \fi
 
 \vspace{-1cm}
@@ -1540,23 +1550,31 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 %\psalmusEtTranslatioT{temporalia/magnificat-II-comb.tex}{10.2cm}
 \input{temporalia/magnificat-II.tex} \Abardot{}
 \else
-\pars{Canticum B. Mariæ V.} \scriptura{Io. 16, 4}
+\pars{Canticum B. Mariæ V.} \scriptura{Lc. 14, 21.23; \textbf{H427}}
+
+\vspace{-6mm}
 
 {
 \grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
-\antiphona{VIII G}{temporalia/ant-xxx.gtex}
+\antiphona{I a}{temporalia/ant-exicitoinplateas.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 }
+
+\vspace{-2mm}
 
 %\trAntIMagnificat
 
 \scriptura{Lc. 1, 46-55}
 
-\cantusSineNeumas
-\initiumpsalmi{temporalia/magnificat-initium-viiisoll-G.gtex}
+\vspace{-2mm}
 
-%\psalmusEtTranslatioT{temporalia/magnificat-III-comb.tex}{10.2cm}
-\input{temporalia/magnificat-III.tex} \Abardot{}
+\cantusSineNeumas
+\initiumpsalmi{temporalia/magnificat-initium-isoll-a.gtex}
+
+\vspace{-1mm}
+
+%\psalmusEtTranslatioT{temporalia/magnificat-IV-comb.tex}{10.2cm}
+\input{temporalia/magnificat-IV.tex} \Abardot{}
 \fi
 
 \vspace{-1cm}
