@@ -50,10 +50,12 @@ MODUS-magnificat-I = visoll-F
 MODUS-magnificat-II = vsoll-a
 MODUS-magnificat-III = viisoll-a
 MODUS-magnificat-IV = isoll-a
+MODUS-magnificat-V = v-a
 MODUS-benedictus-I = isoll-a2
 MODUS-benedictus-II = iiisoll-g2
-MAGNIFICAT = $(foreach M,I II III IV,magnificat-$(M))
-BENEDICTUS = $(foreach B,I II,benedictus-$(B))
+MODUS-benedictus-III = i-a2
+MAGNIFICAT = $(foreach M,I II III IV V,magnificat-$(M))
+BENEDICTUS = $(foreach B,I II III,benedictus-$(B))
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(MAGNIFICAT) dan3 nuncdimittis $(BENEDICTUS),$(MODUS-$(P))))
 CZPSALMOPTS = --accents 0:0 --title-pattern " " --no-paragraph
 CZPSALMS = $(patsubst %,$(TMP_DIR)/ps%-boh.tex,$(PSALMS))
@@ -84,7 +86,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 			  PangeLingua VerbumSupernum TeLucis SacrisSolemniis) \
 	 $(addprefix resp-,inmanus cibavit cibavit-simplex panemcaeli) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
-	 $(foreach M,visoll-F vsoll-a viisoll-a isoll-a,magnificat-initium-$(M)) \
+	 $(foreach M,visoll-F vsoll-a viisoll-a isoll-a v-a vsoll-a_ v-a_,magnificat-initium-$(M)) \
 	 $(addprefix capitulum-,tuautem FratresEgo CarissimiNolite) \
 	 $(addprefix versus-,custodi gaude \
 			     panemdecaelo posuitfines panemdecaelo-communis \
@@ -107,7 +109,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 benedictio-noctemquietam an_salve_regina ps22-initium-v-a
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = $(foreach B,isoll-a2 iiisoll-g2,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex) \
+OTHERDEPS = $(foreach B,isoll-a2 iiisoll-g2 i-a2,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex) \
 	    $(TMP_DIR)/ps4-initium-ii-D-auto.gtex $(TMP_DIR)/ps4iiD.tex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3 nuncdimittis,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)

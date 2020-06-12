@@ -1372,12 +1372,21 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \vspace{-1mm}
 
 \cantusSineNeumas
+\ifx\festum\undefined
+\initiumpsalmi{temporalia/benedictus-initium-i-a2-auto.gtex}
+
+%\vspace{-1.5mm}
+
+%\psalmusEtTranslatioT{temporalia/benedictus-III-comb.tex}{10.2cm}
+\input{temporalia/benedictus-III.tex} \Abardot{}
+\else
 \initiumpsalmi{temporalia/benedictus-initium-isoll-a2-auto.gtex}
 
 %\vspace{-1.5mm}
 
 %\psalmusEtTranslatioT{temporalia/benedictus-I-comb.tex}{10.2cm}
 \input{temporalia/benedictus-I.tex} \Abardot{}
+\fi
 \else
 \pars{Canticum Zachariæ.} \scriptura{Lc. 14, 16.17}
 
@@ -1543,12 +1552,21 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \vspace{-2.5mm}
 
 \cantusSineNeumas
-\initiumpsalmi{temporalia/magnificat-initium-vsoll-a.gtex}
+\ifx\festum\undefined
+\initiumpsalmi{temporalia/magnificat-initium-v-a_.gtex}
+
+\vspace{-1.5mm}
+
+%\psalmusEtTranslatioT{temporalia/magnificat-V-comb.tex}{10.2cm}
+\input{temporalia/magnificat-V.tex} \Abardot{}
+\else
+\initiumpsalmi{temporalia/magnificat-initium-vsoll-a_.gtex}
 
 \vspace{-1.5mm}
 
 %\psalmusEtTranslatioT{temporalia/magnificat-II-comb.tex}{10.2cm}
 \input{temporalia/magnificat-II.tex} \Abardot{}
+\fi
 \else
 \pars{Canticum B. Mariæ V.} \scriptura{Lc. 14, 21.23; \textbf{H427}}
 
