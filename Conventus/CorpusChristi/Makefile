@@ -94,7 +94,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 			     cibavit educas) \
 	 oratio oratio2 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
-	 benedicamus-tempore-paschali benedicamus-minor \
+	 $(addprefix benedicamus-,octava-privilegiata duplexmajus-laudes minor) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
 	 dominelabiamea inv-christumregemadoremus benedicamus-solemnis-laud \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) \
@@ -105,7 +105,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 			   accepitiesus coenantibus comedetiscarnes \
 			   egosumpanisvitae immolabithaedum misitmevivenspater \
 			   quimanducat respexitelias homoquidamfecit) \
-	 tedeum-solemnis tedeum-simplex an_regina_caeli_simplex convertenosdeus \
+	 tedeum-solemnis-gn tedeum-simplex an_regina_caeli_simplex convertenosdeus \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 benedictio-noctemquietam an_salve_regina ps22-initium-v-a
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
