@@ -104,7 +104,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 	 $(addprefix resp-,quammagnamultitudo-cumdox \
 			   accepitiesus coenantibus comedetiscarnes \
 			   egosumpanisvitae immolabithaedum misitmevivenspater \
-			   quimanducat respexitelias) \
+			   quimanducat respexitelias homoquidamfecit) \
 	 tedeum-solemnis an_regina_caeli_simplex convertenosdeus \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 benedictio-noctemquietam an_salve_regina ps22-initium-v-a
