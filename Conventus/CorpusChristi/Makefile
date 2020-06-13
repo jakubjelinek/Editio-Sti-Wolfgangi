@@ -105,7 +105,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 			   accepitiesus coenantibus comedetiscarnes \
 			   egosumpanisvitae immolabithaedum misitmevivenspater \
 			   quimanducat respexitelias homoquidamfecit) \
-	 tedeum-solemnis an_regina_caeli_simplex convertenosdeus \
+	 tedeum-solemnis tedeum-simplex an_regina_caeli_simplex convertenosdeus \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 benedictio-noctemquietam an_salve_regina ps22-initium-v-a
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
