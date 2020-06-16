@@ -1,11 +1,13 @@
 name:Exortum est in tenebris;
 office-part:Antiphona;
 mode:7;
-book:Antiphonale Monasticum, 1934, p. 561; H52;
+book:Antiphonale Monasticum, 1934, p. 561; Praglia: Liber antiphonarius, p. 83; H52;
 transcriber:Jakub Jelínek;
 commentary:Ps. 111, 4;
+nabc-lines:1;
 %%
 (c3)
-EX(e)ór(ig/ij)tum(i) est(i'_) *(,)
-in(j) té(l')ne(i)bris(iji'_51) lu(g/h'i)men(g) rec(e.)tis;(e.) (;)
-mi(f)sé(h)ri(hg)cors(f) et(g_h) mi(i)se(h_f)rá(g)tor(f') Dó(e)mi(de)nus.(e.) (::)
+EX(e|ta)ór(ig/i!j>|cllsc3pe>)tum(i|ta) est(i_|tahhlsx6) *(,)
+in(i_0!j>_0|pe>1hh) té(i_|vi-)ne(hih|to)bris(hgh|po) lu(hg|cllsc3)men(f|ta) rec(ghOi|sa)tis(g|vi) cor(e.|ta)de,(e.|talsx6) (;)
+mi(e|ta)sé(g|vi)ri(g|vihg)cors(g|vihh) et(g|vihh) mi(h|vihi)se(g|tahh)rá(h_|vi-)tor(gf|cl) (,)
+et(e_f|peS) jus(g|vihh)tus(f|vihh) Dó(e|vihg)mi(de|pehg)nus.(e.|vihg) (::)
