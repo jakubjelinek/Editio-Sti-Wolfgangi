@@ -23,6 +23,7 @@ TONUS-iisoll-D = 1 3 1 1
 TONUS-iisoll-A = 1 3 1 1
 TONUS-iisoll-D_ = 1 3 1 2
 TONUS-iisoll-A_ = 1 3 1 2
+TONUS-ii_-B = 1 2 1 3
 TONUS-iii-a = 2 0 2 0
 TONUS-iii-a2 = 2 0 2 0
 TONUS-iii-a3 = 2 0 2 0
