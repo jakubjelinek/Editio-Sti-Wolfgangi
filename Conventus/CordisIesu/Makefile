@@ -21,7 +21,7 @@ INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
 #PSALMS = 1 4 15 19 22 41 42 62 80 83 90 92 99 109 110 115 127 133 147 148 149 150
-PSALMS = 4 62 90 92 99 109 110 111 115 129 133 148 149 150
+PSALMS = 4 62 90 92 99 109 110 111 115 127 129 133 148 149 150
 include tonus.mk
 #MODUS-1 = i-D_
 MODUS-4 = viii-G
@@ -34,21 +34,21 @@ MODUS-62 = viii-G
 #MODUS-80 = viii-G
 #MODUS-83 = vi-F
 MODUS-90 = viii-G
-MODUS-92 = i-f
+MODUS-92 = i-g
 MODUS-99 = ii_-B
 MODUS-109 = i-a2
-# + i-f
+# + i-g
 MODUS-110 = ii-D
 # + ii_-B
 MODUS-111 = vii-d
 MODUS-115 = viii-G
-#MODUS-127 = i-g2
+MODUS-127 = i-g
 MODUS-129 = iv-A_
 MODUS-133 = viii-G
 #MODUS-147 = v-g
-MODUS-148 = i-g2
-MODUS-149 = i-g2
-MODUS-150 = i-g2
+MODUS-148 = i-g
+MODUS-149 = i-g
+MODUS-150 = i-g
 MODUS-dan3 = iv-E
 MODUS-nuncdimittis = iii-a
 MODUS-magnificat-I = isoll-D_
@@ -94,14 +94,14 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 	 $(addprefix hym-,AEterneRexAltissime JesuNostraRedemptio \
 			  PangeLingua VerbumSupernum SacrisSolemniis \
 			  AuctorBeate CorArca JesuAuctor TeLucis) \
-	 $(addprefix resp-,inmanus cibavit cibavit-simplex panemcaeli) \
+	 $(addprefix resp-,inmanus cibavit cibavit-simplex panemcaeli tollite christus) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(foreach M,isoll-D_ isoll-f,magnificat-initium-$(M)) \
 	 $(addprefix capitulum-,tuautem FratresEgo CarissimiNolite FratresMihi) \
 	 $(addprefix versus-,custodi gaude \
 			     panemdecaelo posuitfines panemdecaelo-communis \
 			     panemdecaelohomo-communis posuitfines-communis \
-			     cibavit educas tollite) \
+			     cibavit educas tollite haurietis haurietis-communis) \
 	 oratio oratio2 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor) \
@@ -115,14 +115,15 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 			   accepitiesus coenantibus comedetiscarnes \
 			   egosumpanisvitae immolabithaedum misitmevivenspater \
 			   quimanducat respexitelias homoquidamfecit \
-			   tollite) \
+			   tollite-cumdox) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
 	 an_regina_caeli_simplex convertenosdeus \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 benedictio-noctemquietam an_salve_regina ps22-initium-v-a
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = $(foreach B,viiisoll-G,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex)
-	    #$(TMP_DIR)/ps4-initium-ii-D-auto.gtex $(TMP_DIR)/ps4iiD.tex
+OTHERDEPS = $(foreach B,viiisoll-G,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex) \
+	    $(TMP_DIR)/ps109-initium-i-g-auto.gtex \
+	    $(TMP_DIR)/ps110-initium-ii_-B-auto.gtex $(TMP_DIR)/ps110ii_B.tex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3 nuncdimittis,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
@@ -144,7 +145,7 @@ PDF = cordisiesu.pdf $(patsubst %,feria%-oci.pdf,ii iii iv v vi) sabbato-oci.pdf
 all: $(PDF)
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
-#$(TMP_DIR)/ps4iiD.tex: TONUS = 1 0 1 1
+$(TMP_DIR)/ps110ii_B.tex: TONUS = 1 2 1 3
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
 $(CZPSALMS): $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/%.pslm
 	$(GENPSALM)
@@ -170,10 +171,10 @@ $(patsubst %,$(TMP_DIR)/%.tex,$(BENEDICTUS)): \
 $(TMP_DIR)/%.tex: $(PSALMS_DIR)/benedictus.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
-#$(TMP_DIR)/ps4iiD.tex: \
-#$(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps4.pslm
-#	$(GENPSALM)
-#	$(SED) -i -e 'y/Jj/Ii/' $@
+$(TMP_DIR)/ps110ii_B.tex: \
+$(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps110.pslm
+	$(GENPSALM)
+	$(SED) -i -e 'y/Jj/Ii/' $@
 $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
 	$(GENPSCOMB)
 $(patsubst %,$(TMP_DIR)/%-boh.tex,$(MAGNIFICAT)): $(TMP_DIR)/%-boh.tex: $(TMP_DIR)/magnificat-boh.tex
