@@ -20,21 +20,21 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-#PSALMS = 1 4 15 19 22 41 42 62 80 83 90 92 99 109 110 115 127 133 147 148 149 150
-PSALMS = 4 62 90 92 99 109 110 111 115 127 129 133 148 149 150
+PSALMS = 4 8 18 23 44 45 62 86 90 92 95 96 97 99 109 110 111 115 127 129 133 148 149 150
 include tonus.mk
-#MODUS-1 = i-D_
 MODUS-4 = viii-G
-#MODUS-15 = iii-a3
-#MODUS-19 = iv-E
-#MODUS-22 = v-a
-#MODUS-41 = vi-F
-#MODUS-42 = vii-a
+MODUS-8 = i-a2
+MODUS-18 = i-g3
+MODUS-23 = v-a
+MODUS-44 = vi-F
+MODUS-45 = v-a
 MODUS-62 = viii-G
-#MODUS-80 = viii-G
-#MODUS-83 = vi-F
+MODUS-86 = vii-c
 MODUS-90 = viii-G
 MODUS-92 = i-g
+MODUS-95 = ii-D
+MODUS-96 = v-a
+MODUS-97 = i-a2
 MODUS-99 = ii_-B
 MODUS-109 = i-a2
 # + i-g
@@ -45,7 +45,6 @@ MODUS-115 = viii-G
 MODUS-127 = i-g
 MODUS-129 = iv-A_
 MODUS-133 = viii-G
-#MODUS-147 = v-g
 MODUS-148 = i-g
 MODUS-149 = i-g
 MODUS-150 = i-g
@@ -90,7 +89,10 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 			  adjesumautem apuddominumpropitiatio exortumestintenebris \
 			  factasuntenimhaec filipraebe ignemvenimittere incaritateperpetua \
 			  misericorsetmiserator stansjesus suavijugo unusmilitum \
-			  veniteadmeomnesqui quisititveniat) \
+			  veniteadmeomnesqui quisititveniat \
+			  gloriaethonore meditatiocordismei elevamini confitebuntur \
+			  sanctificavittabernaculum sicutlaetantuum annuntiate \
+			  laetamini videruntomnes) \
 	 $(addprefix hym-,AEterneRexAltissime JesuNostraRedemptio \
 			  PangeLingua VerbumSupernum SacrisSolemniis \
 			  AuctorBeate CorArca JesuAuctor TeLucis) \
@@ -101,12 +103,13 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 	 $(addprefix versus-,custodi gaude \
 			     panemdecaelo posuitfines panemdecaelo-communis \
 			     panemdecaelohomo-communis posuitfines-communis \
-			     cibavit educas tollite haurietis haurietis-communis) \
+			     cibavit educas tollite haurietis haurietis-communis \
+			     domine conversus exsion) \
 	 oratio oratio2 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
-	 dominelabiamea inv-christumregemadoremus benedicamus-solemnis-laud \
+	 dominelabiamea inv-coriesuamorenostri benedicamus-solemnis-laud \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
@@ -115,11 +118,15 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 			   accepitiesus coenantibus comedetiscarnes \
 			   egosumpanisvitae immolabithaedum misitmevivenspater \
 			   quimanducat respexitelias homoquidamfecit \
-			   tollite-cumdox) \
+			   tollite-cumdox benedictus-dominus-deus2-cumdox \
+			   eccevidimus-CROCHU egosumpanisvitae-E611 \
+			   magnusdominusnoster-CROCHU-cumdox misitmevivenspater2 \
+			   quimanducat-E611 recesitpastornoster-CROCHU-cumdox \
+			   sicutovis-CROCHU) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
 	 an_regina_caeli_simplex convertenosdeus \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
-	 benedictio-noctemquietam an_salve_regina ps22-initium-v-a
+	 benedictio-noctemquietam an_salve_regina ps45-initium-v-a_
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(foreach B,viiisoll-G,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex) \
 	    $(TMP_DIR)/ps109-initium-i-g-auto.gtex \
