@@ -91,7 +91,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 			  misericorsetmiserator stansjesus suavijugo unusmilitum \
 			  veniteadmeomnesqui quisititveniat \
 			  gloriaethonore meditatiocordismei elevamini confitebuntur \
-			  sanctificavittabernaculum sicutlaetantuum annuntiate \
+			  sanctificavittabernaculum sicutlaetantium annuntiate \
 			  laetamini videruntomnes) \
 	 $(addprefix hym-,AEterneRexAltissime JesuNostraRedemptio \
 			  PangeLingua VerbumSupernum SacrisSolemniis \
