@@ -54,12 +54,12 @@ MODUS-magnificat-I = isoll-D_
 MODUS-magnificat-II = isoll-f
 MODUS-magnificat-III = viisoll-a
 MODUS-magnificat-IV = isoll-a
-MODUS-magnificat-V = v-a
+MODUS-magnificat-V = i-D_
 MODUS-benedictus-I = viiisoll-G
 MODUS-benedictus-II = iiisoll-g2
-MODUS-benedictus-III = i-a2
-MAGNIFICAT = $(foreach M,I II,magnificat-$(M))
-BENEDICTUS = $(foreach B,I,benedictus-$(B))
+MODUS-benedictus-III = viii-G
+MAGNIFICAT = $(foreach M,I II V,magnificat-$(M))
+BENEDICTUS = $(foreach B,I III,benedictus-$(B))
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(MAGNIFICAT) dan3 nuncdimittis $(BENEDICTUS),$(MODUS-$(P))))
 CZPSALMOPTS = --accents 0:0 --title-pattern " " --no-paragraph
 CZPSALMS = $(patsubst %,$(TMP_DIR)/ps%-boh.tex,$(PSALMS))
@@ -96,15 +96,15 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 	 $(addprefix hym-,AEterneRexAltissime JesuNostraRedemptio \
 			  PangeLingua VerbumSupernum SacrisSolemniis \
 			  AuctorBeate CorArca JesuAuctor TeLucis) \
-	 $(addprefix resp-,inmanus cibavit cibavit-simplex panemcaeli tollite christus) \
+	 $(addprefix resp-,inmanus cibavit cibavit-simplex panemcaeli tollite christus egodixi) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
-	 $(foreach M,isoll-D_ isoll-f,magnificat-initium-$(M)) \
+	 $(foreach M,isoll-D_ isoll-f i-D_,magnificat-initium-$(M)) \
 	 $(addprefix capitulum-,tuautem FratresEgo CarissimiNolite FratresMihi) \
 	 $(addprefix versus-,custodi gaude \
 			     panemdecaelo posuitfines panemdecaelo-communis \
 			     panemdecaelohomo-communis posuitfines-communis \
 			     cibavit educas tollite haurietis haurietis-communis \
-			     domine conversus exsion) \
+			     domine conversus exsion tollite-communis) \
 	 oratio oratio2 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor) \
@@ -128,7 +128,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 benedictio-noctemquietam an_salve_regina ps45-initium-v-a_
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = $(foreach B,viiisoll-G,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex) \
+OTHERDEPS = $(foreach B,viiisoll-G viii-G,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex) \
 	    $(TMP_DIR)/ps109-initium-i-g-auto.gtex \
 	    $(TMP_DIR)/ps110-initium-ii_-B-auto.gtex $(TMP_DIR)/ps110ii_B.tex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
