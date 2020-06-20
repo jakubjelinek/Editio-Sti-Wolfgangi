@@ -35,11 +35,11 @@ MODUS-92 = i-g
 MODUS-95 = ii-D
 MODUS-96 = v-a
 MODUS-97 = i-a2
-MODUS-99 = ii_-B
+MODUS-99 = iv-D
 MODUS-109 = i-a2
 # + i-g
 MODUS-110 = ii-D
-# + ii_-B
+# + iv-D
 MODUS-111 = vii-d
 MODUS-115 = viii-G
 MODUS-127 = i-g
@@ -130,7 +130,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(foreach B,viiisoll-G viii-G iiisoll-e,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex) \
 	    $(TMP_DIR)/ps109-initium-i-g-auto.gtex \
-	    $(TMP_DIR)/ps110-initium-ii_-B-auto.gtex $(TMP_DIR)/ps110ii_B.tex
+	    $(TMP_DIR)/ps110-initium-iv-D-auto.gtex $(TMP_DIR)/ps110ivD.tex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3 nuncdimittis,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
@@ -152,7 +152,7 @@ PDF = cordisiesu.pdf $(patsubst %,feria%-oci.pdf,ii iii iv v vi) sabbato-oci.pdf
 all: $(PDF)
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
-$(TMP_DIR)/ps110ii_B.tex: TONUS = 1 2 1 3
+$(TMP_DIR)/ps110ivD.tex: TONUS = 1 2 1 3
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
 $(CZPSALMS): $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/%.pslm
 	$(GENPSALM)
@@ -178,7 +178,7 @@ $(patsubst %,$(TMP_DIR)/%.tex,$(BENEDICTUS)): \
 $(TMP_DIR)/%.tex: $(PSALMS_DIR)/benedictus.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
-$(TMP_DIR)/ps110ii_B.tex: \
+$(TMP_DIR)/ps110ivD.tex: \
 $(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps110.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
