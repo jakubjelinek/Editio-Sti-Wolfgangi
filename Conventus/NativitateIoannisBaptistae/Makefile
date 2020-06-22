@@ -31,17 +31,17 @@ MODUS-110 = iv-E_
 MODUS-111 = i-f
 MODUS-112 = vii-a
 MODUS-116 = vii-a
-MODUS-129 = viii-G
-MODUS-131 = vii-a
-MODUS-145 = vii-a
-MODUS-146 = vii-a
+MODUS-129 = iii-b
+MODUS-131 = iii-b
+MODUS-145 = viii-G
+MODUS-146 = i-f
 MODUS-147 = vii-a
-MODUS-148 = vii-a
-MODUS-149 = vii-a
-MODUS-150 = vii-a
-MODUS-dan3 = viii-G
+MODUS-148 = iii-b
+MODUS-149 = iii-b
+MODUS-150 = iii-b
+MODUS-dan3 = iii-b
 MODUS-magnificat-I = viiisoll-G
-MODUS-magnificat-II = viiisoll-G
+MODUS-magnificat-II = viisoll-a
 MODUS-benedictus-I = viiisoll-G
 MAGNIFICAT = $(foreach M,I II,magnificat-$(M))
 BENEDICTUS = $(foreach B,I,benedictus-$(B))
@@ -73,11 +73,12 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 			  memorsit-FKP paraturnobis-FKP exicitoinplateas \
 			  apertumestoszachariae descenditangelus elisabethzachariae \
 			  etfactumest ingressozacharia innuebantpatriejus istepuer \
-			  joannesest joannesvocabitur) \
+			  joannesest joannesvocabitur exuterosenectutis internatosmulierum \
+			  ipsepraeibitanteillum puerquinatusest tupuerpropheta) \
 	 $(addprefix hym-,UtQueant ONimis) \
 	 $(addprefix resp-,internatos internatos-communis) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
-	 $(foreach M,viiisoll-G,magnificat-initium-$(M)) \
+	 $(foreach M,viiisoll-G viisoll-a,magnificat-initium-$(M)) \
 	 $(addprefix capitulum-,HaecDicit PriusquamTe RegesVidebunt) \
 	 $(addprefix versus-,gloria iustus) \
 	 oratio oratio2 supplicatiolitaniae oratiodominica oratiodominica-mat \
