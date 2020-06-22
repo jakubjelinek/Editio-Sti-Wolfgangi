@@ -54,7 +54,7 @@ MODUS-magnificat-I = isoll-D_
 MODUS-magnificat-II = isoll-f
 MODUS-magnificat-III = isoll-g
 MODUS-magnificat-IV = visoll-F
-MODUS-magnificat-V = i-D_
+MODUS-magnificat-V = i-f
 MODUS-benedictus-I = viiisoll-G
 MODUS-benedictus-II = iiisoll-e
 MODUS-benedictus-III = viii-G
@@ -98,7 +98,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 			  AuctorBeate CorArca JesuAuctor TeLucis) \
 	 $(addprefix resp-,inmanus cibavit cibavit-simplex panemcaeli tollite christus egodixi) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
-	 $(foreach M,isoll-D_ isoll-f i-D_ isoll-g visoll-F,magnificat-initium-$(M)) \
+	 $(foreach M,isoll-D_ isoll-f i-f isoll-g visoll-F,magnificat-initium-$(M)) \
 	 $(addprefix capitulum-,tuautem FratresEgo CarissimiNolite FratresMihi CarissimiHumiliamini) \
 	 $(addprefix versus-,custodi gaude \
 			     panemdecaelo posuitfines panemdecaelo-communis \
