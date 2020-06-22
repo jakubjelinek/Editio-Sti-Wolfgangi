@@ -35,14 +35,14 @@ MODUS-129 = iii-b
 MODUS-131 = iii-b
 MODUS-145 = viii-G
 MODUS-146 = i-f
-MODUS-147 = vii-a
+MODUS-147 = iv-A
 MODUS-148 = iii-b
 MODUS-149 = iii-b
 MODUS-150 = iii-b
 MODUS-dan3 = iii-b
 MODUS-magnificat-I = viiisoll-G
 MODUS-magnificat-II = viisoll-a
-MODUS-benedictus-I = viiisoll-G
+MODUS-benedictus-I = viiisoll-g2
 MAGNIFICAT = $(foreach M,I II,magnificat-$(M))
 BENEDICTUS = $(foreach B,I,benedictus-$(B))
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(MAGNIFICAT) dan3 $(BENEDICTUS),$(MODUS-$(P))))
@@ -99,7 +99,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 benedictio-noctemquietam an_salve_regina ps22-initium-v-a
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = $(foreach B,viiisoll-G,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex)
+OTHERDEPS = $(foreach B,viiisoll-g2,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex)
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))

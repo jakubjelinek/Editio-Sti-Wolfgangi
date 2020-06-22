@@ -1,12 +1,11 @@
 name:Iste puer;
 office-part:Antiphona;
-mode:7;
-book:Antiphonale Monasticum, 1934, p. 921; H276;
-transcriber:Dominique CROCHU;
+mode:4*;
+book:Antiphonale Monasticum, 1934, p. 921; Antiphonale Monasticum III, 2007, p. 117; H276;
+transcriber:Dominique CROCHU; Jakub Jelínek;
 nabc-lines:1;
 %%
 (c3)
-I(e|ta)ste(f|vi) pu(h_i|vivihj)er(i'_|ta-hg) *(,)
-ma(j>|vi>)gnus(h'|ta) co(i|vilsl3)ram(j'>|vi>) Dó(i|vi)mi(hg|clhglsc3)no :(f.|ta-hg) (;)
-nam(f|tahg) et(i'|vihh) ma(i|vihg)nus(h'|ta) e(i|vi>lsc2)jus(hg|cllsc2) (,)
-cum(e|gr) i(fge|to)pso(de|pe) est.(e.|tahh) (::)
+I(e|ta)ste(f|vi) pu(hi|vivihj)er(i|ta-hg) *(,)
+ma(j>|vi>)gnus(h|ta) co(i|vilsl3)ram(j>|vi>) Dó(i|vi)mi(hg|clhglsc3)no:(f|ta-hg) (;)
+nam(f|tahg) et(i|vihh) ma(i|vihg)nus(h|ta) e(i>|vi>lsc2)jus(hg|cllsc2) cum(e|gr) i(fgf|to)pso(ef|pe) est.(f|tahh) (::)

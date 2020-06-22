@@ -1,12 +1,12 @@
 name:Inter natos mulierum;
 office-part:Antiphona;
 mode:3;
-book:Antiphonale Monasticum, 1934, p. 925; H277;
-transcriber:Dominique CROCHU;
+book:Antiphonale Monasticum, 1934, p. 925; Antiphonale Monasticum III, 2007, p. 120; H277;
+transcriber:Dominique CROCHU; Jakub Jelínek;
 nabc-lines:1;
 %%
 (c4)
-IN(g_i|peSlsl2)ter(i>|vi>) na(h_j|peSlss2lsm3)tos(ii|vs) *()
-mu(g_|ta-lst2)lí(h|vilssta3)e(hih|tohglsc3)rum(g.|ta-) (;)
-non(i'|vihg) sur(j|vihhlss3)réx(i|vi)it(hg~|vi>) ma(h|vihh)jor(hf~|vi>hglsc3lsim6) (,)
-Jo(f|ta)án(h_i|vivi>hj)ne(g|vihg) Ba(gf|clhh)ptí(e.|tahi)sta.(e.|tahi) (::)
+IN(gi|peSlsl2)ter(i>|vi>) na(hj|peSlss2lsm3)tos(iio|vs) *()
+mu(g|ta-lst2)lí(h|vilssta3)e(hih|tohglsc3)rum(g|ta-) (;)
+non(i|vihg) sur(j|vihhlss3)réx(i|vi)it(hg~|vi>) ma(h|vihh)jor(hf~|vi>hglsc3lsim6)
+Jo(f|ta)án(hi>|vivi>hj)ne(g|vihg) Ba(gf|clhh)ptí(e|tahi)sta.(e|tahi) (::)

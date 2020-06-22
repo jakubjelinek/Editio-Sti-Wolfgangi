@@ -1,17 +1,17 @@
 name:Puer qui natus est;
 office-part:Antiphona;
 mode:7;
-book:Antiphonale Monasticum, 1934, p. 928; H277;
-transcriber:Dominique CROCHU;
+book:Antiphonale Monasticum, 1934, p. 928; Antiphonale Monasticum III, 2007, p. 123; H277;
+transcriber:Dominique CROCHU; Jakub Jelínek;
 nabc-lines:1;
 %%
 (c3)
-PU(e_i|peSlsi7lss3)er(i'_|vi-) *(,)
-qui(j|vihg) na(i'|vihg)tus(h|vihg) est(f|ta) no(h_j|vi-vihj)bis,(i.|ta) (,)
-plus(i_j|``peSlse4) quam(h'|vi) pro(f|ta)phé(g'|vilsi2)ta(f|vi) est:(e.|ta-) (:)
-hic(d|grlsi3) est(f|vi) e(h_i|vivihj)nim(i.|vilsi3) (,)
-de(i_j|vihhlse4vihl) quo(h'|vi) Sal(f|ta)vá(g'|vi)tor(f|vi) a(e.|ta)it:(e.|ta-) (;)
-In(d|gr)ter(f'|vi) na(h|vihg)tos(h'|vihh)
-mu(h|vi)lí(h|vihg)e(h_j|peS)rum(i'_|vihh) (,)
-non(j|vihjlss3) sur(i'|vi)réx(h|vihg)it(hf~|vi>lsi6) ma(hh|vs)jor(g'_|vi) (,)
-Jo(e|talsc3)án(g_h|vi-vi>)ne(f'|ta) Ba(f|vi)ptí(e.|ta)sta.(e.|ta) (::)
+PU(ei|peSlsi7lss3)er(i|vi-) *(,)
+qui(j|vihg) na(i|vihg)tus(h|vihg) est(f|ta) no(hj|vi-vihj)bis,(i|ta) (,)
+plus(ij|``peSlse4) quam(h|vi) pro(f|ta)phé(g|vilsi2)ta(f|vi) est:(e|ta-) (:)
+hic(d|grlsi3) est(f|vi) e(hj|vivihj)nim(i|vilsi3) (,)
+de(ij|vihhlse4vihl) quo(h|vi) Sal(f|ta)vá(g|vi)tor(f|vi) a(e|ta)it:(e|ta-) (;)
+In(d|gr)ter(f|vi) na(h|vihg)tos(h|vihh)
+mu(h|vi)lí(h|vihg)e(hj|peS)rum(i|vihh) (,)
+non(j|vihjlss3) sur(i|vi)réx(h|vihg)it(hf~|vi>lsi6) ma(hho|vs)jor(g|vi) (,)
+Jo(e|talsc3)án(gh>|vi-vi>)ne(f|ta) Ba(f|vi)ptí(e|ta)sta.(e|ta) (::)
