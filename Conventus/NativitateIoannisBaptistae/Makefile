@@ -91,16 +91,16 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(foreach M,viiisoll-G viisoll-a,magnificat-initium-$(M)) \
 	 $(addprefix capitulum-,HaecDicit PriusquamTe RegesVidebunt) \
-	 $(addprefix versus-,gloria iustus) \
+	 $(addprefix versus-,gloria iustus posuisti elisabeth) \
 	 oratio oratio2 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
 	 dominelabiamea inv-regempraecursoris-FKP benedicamus-solemnis-laud \
-	 $(addprefix absolutio-,exaudi ipsius avinculis) \
-	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
-					deus christus ignem \
-					evangelica divinum adsocietatem) \
+	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
+	 $(addprefix benedictio-solemn-,dextera deus sancti \
+					salus perfecta adgaudia \
+					verba perevangelica sanctievangelii) \
 	 $(addprefix resp-,quammagnamultitudo-cumdox \
 			   accepitiesus coenantibus comedetiscarnes \
 			   egosumpanisvitae immolabithaedum misitmevivenspater \
