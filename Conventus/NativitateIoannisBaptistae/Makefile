@@ -20,10 +20,18 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-#PSALMS = 1 4 15 19 22 41 42 62 80 83 90 92 99 109 110 115 127 133 147 148 149 150
-PSALMS = 62 92 99 109 110 111 112 116 129 131 145 146 147 148 149 150
+PSALMS = 1 2 3 4 5 8 14 20 62 91 92 99 109 110 111 112 116 129 131 145 146 147 148 149 150
 include tonus.mk
+MODUS-1 = viii-g
+MODUS-2 = viii-G
+MODUS-3 = viii-G
+MODUS-4 = vii-c
+MODUS-5 = vii-c
+MODUS-8 = viii-G
+MODUS-14 = vii-c
+MODUS-20 = viii-G
 MODUS-62 = i-f
+MODUS-91 = viii-c
 MODUS-92 = iii-a
 MODUS-99 = iv-E_
 MODUS-109 = iii-a
@@ -74,7 +82,10 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 			  apertumestoszachariae descenditangelus elisabethzachariae \
 			  etfactumest ingressozacharia innuebantpatriejus istepuer \
 			  joannesest joannesvocabitur exuterosenectutis internatosmulierum \
-			  ipsepraeibitanteillum puerquinatusest tupuerpropheta) \
+			  ipsepraeibitanteillum puerquinatusest tupuerpropheta \
+			  adomniaquaemittamte-FKP dominusabutero-FKP eccedediverbamea-FKP \
+			  formansmeexutero-FKP misitdominusmanum-FKP netimeasafacieeorum-FKP \
+			  posuitosmeum-FKP priusquamteformarem regesvidebunt-FKP) \
 	 $(addprefix hym-,UtQueant ONimis) \
 	 $(addprefix resp-,internatos internatos-communis) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
@@ -85,7 +96,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
-	 dominelabiamea inv-christumregemadoremus benedicamus-solemnis-laud \
+	 dominelabiamea inv-regempraecursoris-FKP benedicamus-solemnis-laud \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
@@ -93,7 +104,11 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 	 $(addprefix resp-,quammagnamultitudo-cumdox \
 			   accepitiesus coenantibus comedetiscarnes \
 			   egosumpanisvitae immolabithaedum misitmevivenspater \
-			   quimanducat respexitelias homoquidamfecit) \
+			   quimanducat respexitelias homoquidamfecit \
+			   innuebantpatrieius-FKP descenditangelus-FKP \
+			   elisabethzachariae-FKP fuithomo-FKP gabrielangelus-FKP \
+			   hicpraecursor-FKP internatosmulierum-FKP \
+			   praecursordomini-FKP priusquamteformarem-FKP) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
 	 an_regina_caeli_simplex convertenosdeus \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
