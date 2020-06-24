@@ -50,9 +50,11 @@ MODUS-150 = iii-b
 MODUS-dan3 = iii-b
 MODUS-magnificat-I = viiisoll-G
 MODUS-magnificat-II = viisoll-a
+MODUS-magnificat-III = vii-a
 MODUS-benedictus-I = viiisoll-g2
-MAGNIFICAT = $(foreach M,I II,magnificat-$(M))
-BENEDICTUS = $(foreach B,I,benedictus-$(B))
+MODUS-benedictus-II = viii-g2
+MAGNIFICAT = $(foreach M,I II III,magnificat-$(M))
+BENEDICTUS = $(foreach B,I II,benedictus-$(B))
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(MAGNIFICAT) dan3 $(BENEDICTUS),$(MODUS-$(P))))
 CZPSALMOPTS = --accents 0:0 --title-pattern " " --no-paragraph
 CZPSALMS = $(patsubst %,$(TMP_DIR)/ps%-boh.tex,$(PSALMS))
@@ -89,7 +91,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 	 $(addprefix hym-,UtQueant ONimis) \
 	 $(addprefix resp-,internatos internatos-communis) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
-	 $(foreach M,viiisoll-G viisoll-a,magnificat-initium-$(M)) \
+	 $(foreach M,viiisoll-G viisoll-a vii-a,magnificat-initium-$(M)) \
 	 $(addprefix capitulum-,HaecDicit PriusquamTe RegesVidebunt) \
 	 $(addprefix versus-,gloria iustus posuisti elisabeth) \
 	 oratio oratio2 supplicatiolitaniae oratiodominica oratiodominica-mat \
@@ -114,7 +116,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 benedictio-noctemquietam an_salve_regina ps22-initium-v-a
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = $(foreach B,viiisoll-g2,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex)
+OTHERDEPS = $(foreach B,viiisoll-g2 viii-g2,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex)
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
@@ -132,7 +134,7 @@ endef
 iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../PostPentecosten ../CorpusChristi
 include $(iter)
 
-PDF = nativitatesioannisbaptistae.pdf #$(patsubst %,feria%-ocx.pdf,ii iii iv v vi) sabbato-ocx.pdf dominicainfraoctavamcorporischristi.pdf
+PDF = nativitatesioannisbaptistae.pdf $(patsubst %,die%-oib.pdf,ii)
 all: $(PDF)
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
