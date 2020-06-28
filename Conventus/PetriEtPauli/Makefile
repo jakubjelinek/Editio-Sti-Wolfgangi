@@ -92,8 +92,12 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 			  egoplantaviapollorigavit egoproterogavi gloriosiprincipes \
 			  gratiadeiinme libentergloriabor mihivivere misitdominus petreamasme \
 			  petrusetjoannes tervirgiscaesus tuespetrus vadeanania \
-			  sanctepauleapostole hodiesimonpetrus) \
-	 $(addprefix hym-,AureaLuce JamBonePastor ORomaFelix) \
+			  sanctepauleapostole hodiesimonpetrus \
+			  anuntiaverunt-FKP clamaveruntiusti-FKP \
+			  constitueseosprincipes-FKP custodiebant-FKP \
+			  dedistihereditatem-FKP exaltabunturcornuaiusti-FKP \
+			  inomnemterram-FKP luxortaestiustis-FKP principespopulorum-FKP) \
+	 $(addprefix hym-,AureaLuce JamBonePastor ORomaFelix FelixPerOmnes) \
 	 $(addprefix resp-,internatos internatos-communis inomnemterram) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(foreach M,viisoll-a vii-a,magnificat-initium-$(M)) \
@@ -104,7 +108,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
-	 dominelabiamea inv-regempraecursoris-FKP benedicamus-solemnis-laud \
+	 dominelabiamea inv-regemapostolorum benedicamus-solemnis-laud \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix benedictio-solemn-,dextera deus sancti \
 					salus perfecta adgaudia \
@@ -117,7 +121,10 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 			   elisabethzachariae-FKP fuithomo-FKP gabrielangelus-FKP \
 			   hicpraecursor-FKP internatosmulierum-FKP \
 			   praecursordomini-FKP priusquamteformarem-FKP \
-			   tuespastorovium-CROCHU) \
+			   tuespastorovium-CROCHU dominesitues-CROCHU \
+			   egoproterogavi-CROCHU quemdicunthomines-CROCHU \
+			   sidiligisme-CROCHU simonpetre-CROCHU surgepetre-CROCHU \
+			   tuespetrus-CROCHU) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
 	 an_regina_caeli_simplex convertenosdeus \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
