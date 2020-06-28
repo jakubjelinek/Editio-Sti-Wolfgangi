@@ -53,6 +53,7 @@ TONUS-vi-F = 1 1 1 2
 TONUS-vi-C = 1 1 1 2
 TONUS-visoll-F = 1 3 1 2
 TONUS-vii-a = 2 0 2 0
+TONUS-vii-b = 2 0 2 0
 TONUS-vii-c = 2 0 2 0
 TONUS-vii-c2 = 2 0 2 0
 TONUS-vii-d = 2 0 2 0
