@@ -1,11 +1,12 @@
 name:Misit Dominus (SS. Petri et Pauli));
 office-part:Antiphona;
 mode:7;
-book:Antiphonale Monasticum, 1934, p. 935;
-transcriber:Dominique CROCHU;
+book:Antiphonale Monasticum, 1934, p. 935; H281;
+transcriber:Dominique CROCHU; Jakub Jelínek;
+nabc-lines:1;
 %%
 (c3)
-MI(g)sit(h) Dó(i')mi(j)nus(i.) *(,)
-An(i_j)ge(h')lum(f) su(hh)um,(g.) (;)
-et(g) li(g')be(h)rá(ij)vit(i) me(h'_) de(f) ma(h_)nu(g) He(fe)ró(f)dis,(e_d) (,)
-al(f!gwh)le(hvFE'fwg_f)lú(e.)ia.(e.) (::)
+MI(g|vi)sit(h|vi) Dó(i'|ta-)mi(j|vi)nus(i.|ta-hg) *(,)
+An(i_j|pe>1)ge(h'|vihh)lum(f|tahh) su(hh|vs-hh)um,(g.|ta-hi) (;)
+et(g|vihi) li(g'|vihh)be(h|vihh)rá(ij|pehh)vit(i|vihg) me(h'_|vihg) de(f|tahg) ma(h_|vi-)nu(g|vi) He(fe|clhhlsc3)ró(f|vihi)dis,(e_d|cl-hjlsm2) (,)
+al(f!gwh|viqlhj)le(hvFE'fwg_f|visu1sut1qlhi!cl-hi)lú(e.|ta)ia.(e.|ta) (::)

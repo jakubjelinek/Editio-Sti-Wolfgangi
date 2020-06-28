@@ -30,10 +30,10 @@ MODUS-5 = vii-c
 MODUS-8 = viii-G
 MODUS-14 = vii-c
 MODUS-20 = viii-G
-MODUS-62 = i-f
+MODUS-62 = viii-G
 MODUS-91 = viii-c
-MODUS-92 = iii-a
-MODUS-99 = iv-E_
+MODUS-92 = viii-g
+MODUS-99 = vii-c
 MODUS-109 = iii-a
 MODUS-110 = iv-E_
 MODUS-111 = i-f
@@ -44,15 +44,15 @@ MODUS-131 = iii-b
 MODUS-145 = viii-A
 MODUS-146 = viii-g
 MODUS-147 = vii-c2
-MODUS-148 = iii-b
-MODUS-149 = iii-b
-MODUS-150 = iii-b
-MODUS-dan3 = iii-b
+MODUS-148 = iv-A
+MODUS-149 = iv-A
+MODUS-150 = iv-A
+MODUS-dan3 = viii-G
 MODUS-magnificat-I = viisoll-a
 MODUS-magnificat-II = viisoll-a
 MODUS-magnificat-III = vii-a
-MODUS-benedictus-I = viiisoll-g2
-MODUS-benedictus-II = viii-g2
+MODUS-benedictus-I = visoll-F
+MODUS-benedictus-II = vi-F
 MAGNIFICAT = $(foreach M,I II III,magnificat-$(M))
 BENEDICTUS = $(foreach B,I II,benedictus-$(B))
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(MAGNIFICAT) dan3 $(BENEDICTUS),$(MODUS-$(P))))
@@ -91,7 +91,8 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 			  argentumetaurum damascipraepositus dixitangelusadpetrum \
 			  egoplantaviapollorigavit egoproterogavi gloriosiprincipes \
 			  gratiadeiinme libentergloriabor mihivivere misitdominus petreamasme \
-			  petrusetjoannes tervirgiscaesus tuespetrus vadeanania) \
+			  petrusetjoannes tervirgiscaesus tuespetrus vadeanania \
+			  sanctepauleapostole) \
 	 $(addprefix hym-,AureaLuce JamBonePastor ORomaFelix) \
 	 $(addprefix resp-,internatos internatos-communis inomnemterram) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
@@ -121,7 +122,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 benedictio-noctemquietam an_salve_regina ps22-initium-v-a
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = $(foreach B,viiisoll-g2 viii-g2,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex)
+OTHERDEPS = $(foreach B,visoll-F vi-F,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex)
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
