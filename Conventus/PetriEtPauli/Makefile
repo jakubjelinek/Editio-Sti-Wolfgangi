@@ -92,7 +92,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 			  egoplantaviapollorigavit egoproterogavi gloriosiprincipes \
 			  gratiadeiinme libentergloriabor mihivivere misitdominus petreamasme \
 			  petrusetjoannes tervirgiscaesus tuespetrus vadeanania \
-			  sanctepauleapostole) \
+			  sanctepauleapostole hodiesimonpetrus) \
 	 $(addprefix hym-,AureaLuce JamBonePastor ORomaFelix) \
 	 $(addprefix resp-,internatos internatos-communis inomnemterram) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
