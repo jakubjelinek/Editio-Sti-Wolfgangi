@@ -116,7 +116,8 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 			   innuebantpatrieius-FKP descenditangelus-FKP \
 			   elisabethzachariae-FKP fuithomo-FKP gabrielangelus-FKP \
 			   hicpraecursor-FKP internatosmulierum-FKP \
-			   praecursordomini-FKP priusquamteformarem-FKP) \
+			   praecursordomini-FKP priusquamteformarem-FKP \
+			   tuespastorovium-CROCHU) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
 	 an_regina_caeli_simplex convertenosdeus \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
