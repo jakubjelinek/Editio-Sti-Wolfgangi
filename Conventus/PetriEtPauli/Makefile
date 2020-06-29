@@ -95,7 +95,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 	 $(foreach M,viisoll-a isoll-D_ i-D_,magnificat-initium-$(M)) \
 	 $(addprefix capitulum-,MisitHerodes) \
 	 $(addprefix versus-,inomnem inomnem-communis annuntiaverunt \
-			     nimis constitues) \
+			     nimis constitues annuntiaverunt-communis) \
 	 oratio oratio2 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor) \
@@ -133,7 +133,7 @@ endef
 iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../PostPentecosten ../CorpusChristi
 include $(iter)
 
-PDF = petrietpauli.pdf #$(patsubst %,die%-oib.pdf,ii)
+PDF = petrietpauli.pdf $(patsubst %,die%-opp.pdf,ii)
 all: $(PDF)
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
