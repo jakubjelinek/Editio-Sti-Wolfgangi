@@ -24,7 +24,7 @@ PSALMS = 18 33 44 46 60 62 63 74 92 96 98 99 109 112 115 116 138 145 146 147 148
 include tonus.mk
 MODUS-18 = ii-D
 MODUS-33 = vii-c2
-MODUS-44 = vii-b
+MODUS-44 = viii-A
 MODUS-46 = viii-G
 MODUS-60 = viii-G
 MODUS-62 = viii-G
