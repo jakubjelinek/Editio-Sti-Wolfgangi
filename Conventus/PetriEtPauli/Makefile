@@ -134,7 +134,7 @@ endef
 iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../PostPentecosten ../CorpusChristi
 include $(iter)
 
-PDF = petrietpauli.pdf $(patsubst %,die%-opp.pdf,ii)
+PDF = petrietpauli.pdf $(patsubst %,die%-opp.pdf,ii iii)
 all: $(PDF)
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
