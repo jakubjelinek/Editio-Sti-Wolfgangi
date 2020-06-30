@@ -89,7 +89,8 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 			  constitueseosprincipes-FKP custodiebant-FKP \
 			  dedistihereditatem-FKP exaltabunturcornuaiusti-FKP \
 			  inomnemterram-FKP luxortaestiustis-FKP principespopulorum-FKP) \
-	 $(addprefix hym-,AureaLuce JamBonePastor ORomaFelix FelixPerOmnes) \
+	 $(addprefix hym-,AureaLuce JamBonePastor ORomaFelix FelixPerOmnes \
+			  ApostolorumPassio) \
 	 $(addprefix resp-,inomnemterram) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(foreach M,viisoll-a isoll-D_ i-D_,magnificat-initium-$(M)) \
