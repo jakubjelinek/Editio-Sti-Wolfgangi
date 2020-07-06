@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 4 5 35 42 50 56 62 63 64 75 87 89 90 91 109 110 111 112 113 114 115 116 117 128 129 130 131 132 133 134 135 136 137 138i 139 140 141 142 143i 144i 145 146 147 148 149 150
+PSALMS = 4 5 35 42 50 56 62 63 64 75 87 89 90 91 109 110 111 112 113 114 115 116 117 128 129 130 131 132 133 134 135 136 137 138i 138ii 139 140 141 142 143i 143ii 144i 144ii 145 146 147 148 149 150
 include tonus.mk
 MODUS-50-I = vi-F
 MODUS-117-I = vi-F
@@ -185,7 +185,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 tedeum-solemnis an_regina_caeli_simplex convertenosdeus \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 an_salve_regina ant-salveregina-simplex benedictio-noctemquietam \
-	 $(addsuffix -initium-irreg,ezechiae ps130 ps131)
+	 $(addsuffix -initium-irreg,ezechiae moysis ps130 ps131)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
