@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 4 5 35 42 50 56 62 63 64 75 87 89 90 91 109 110 111 112 113 114 115 116 117 128 129 130 131 132 133 134 135 136 137 138i 138ii 139 140 141 142 143i 143ii 144i 144ii 145 146 147 148 149 150
+PSALMS = 4 5 34i 34ii 34iii 35 36i 36ii 36iii 37i 37ii 38 42 50 56 62 63 64 75 87 89 90 91 109 110 111 112 113 114 115 116 117 128 129 130 131 132 133 134 135 136 137 138i 138ii 139 140 141 142 143i 143ii 144i 144ii 145 146 147 148 149 150
 include tonus.mk
 MODUS-50-I = vi-F
 MODUS-117-I = vi-F
@@ -51,6 +51,15 @@ MODUS-115-II = viii-a
 MODUS-116-II = viii-a
 MODUS-128-II = ii-D
 MODUS-magnificat-II = viii-G
+MODUS-34i-III = iv-g
+MODUS-34ii-III = i-g
+MODUS-34iii-III = ii-D
+MODUS-36i-III = vi-F
+MODUS-36ii-III = iv-A
+MODUS-36iii-III = viii-g
+MODUS-37i-III = viii-c
+MODUS-37ii-III = ii-D
+MODUS-38-III = iv-E
 MODUS-50-III = iv-E
 MODUS-42-III = vi-F
 MODUS-56-III = viii-G2
@@ -155,12 +164,15 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  pervisceramisericordiae portiomeadomine quoniaminaeternum \
 			  quoniaminteconfidit regnumtuum respexitdominus saepeexpungaveruntme \
 			  salutarevultusmei sitnomendomini speretisrael spirituprincipali \
-			  tedecet tibisoli trespueri salvanos-antiquo miserere subtuum) \
+			  tedecet tibisoli trespueri salvanos-antiquo miserere subtuum \
+			  brachiapeccatorum custodiinnocentiam expugnaimpugnantes \
+			  exsurgedomine intendeinadjutorium neiniratua restitueanimam \
+			  reveladomino utnondelinquam) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
 				       TellurisIngens) \
-	 $(addprefix hym-,EcceJamNoctis AveMarisStella OGloriosaDomina) \
+	 $(addprefix hym-,EcceJamNoctis AveMarisStella OGloriosaDomina AdPrecesNostras) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
@@ -172,18 +184,15 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,feria-laudes feria-vesperae minor officium-bmv) \
-	 dominelabiamea inv-alleluiachristumdominum \
+	 dominelabiamea inv-alleluiachristumdominum inv-regemmagnum \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
 					evangelica divinum adsocietatem) \
-	 $(addprefix resp-,egorogabopatrem-sinedox exaltaredomine-cumdox \
-			   ponitnubem-cumdox omnispulchritudodomini-sinedox \
-			   ascendensinaltum-cumdox nonconturbetur-sinedox \
-			   tempusest-sinedox postpassionemsuam-sinedox \
-			   sienimnonabiero-cumdox) \
-	 tedeum-solemnis an_regina_caeli_simplex convertenosdeus \
-	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
+	 $(addprefix resp-,dominesiconversus-CROCHU egotetuli-CROCHU-cumdox \
+			   factumestdumtolleret-CROCHU) \
+	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
+	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
 	 an_salve_regina ant-salveregina-simplex benedictio-noctemquietam \
 	 $(addsuffix -initium-irreg,ezechiae moysis ps130 ps131) \
 	 habacuc-initium-iv-E
@@ -207,7 +216,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../InNativitateBMV/cantus/amon33
+iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../InNativitateBMV/cantus/amon33 ../CorpusChristi
 include $(iter)
 $(TMP_DIR)/%-I.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
 $(TMP_DIR)/%-II.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
