@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 4 5 34i 34ii 34iii 35 36i 36ii 36iii 37i 37ii 38 42 44i 44ii 45 47 48i 48ii 49i 49ii 50 56 62 63 64 75 87 89 90 91 109 110 111 112 113 114 115 116 117 128 129 130 131 132 133 134 135 136 137 138i 138ii 139 140 141 142 143i 143ii 144i 144ii 145 146 147 148 149 150
+PSALMS = 4 5 34i 34ii 34iii 35 36i 36ii 36iii 37i 37ii 38 42 44i 44ii 45 47 48i 48ii 49i_vi 49vii_xv 49xvi_xxiii 50 56 62 63 64 75 87 89 90 91 109 110 111 112 113 114 115 116 117 128 129 130 131 132 133 134 135 136 137 138i 138ii 139 140 141 142 143i 143ii 144i 144ii 145 146 147 148 149 150
 include tonus.mk
 MODUS-50-I = vi-F
 MODUS-117-I = vi-F
@@ -79,9 +79,9 @@ MODUS-45-IV = e
 MODUS-47-IV = iv-A
 MODUS-48i-IV = vii-c
 MODUS-48ii-IV = e
-MODUS-49i-IV = viii-A
-MODUS-49ii-IV = e
-#MODUS-49iii-IV = viii-c
+MODUS-49i_vi-IV = viii-A
+MODUS-49vii_xv-IV = e
+MODUS-49xvi_xxiii-IV = viii-c
 MODUS-50-IV = vii-a
 MODUS-63-IV = ii-D
 MODUS-64-IV = viii-A
@@ -201,7 +201,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 $(addprefix absolutio-,exaudi ipsius avinculis) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
-					evangelica divinum adsocietatem) \
+					evangelica divinum adsocietatem ille) \
 	 $(addprefix resp-,dominesiconversus-CROCHU egotetuli-CROCHU-cumdox \
 			   factumestdumtolleret-CROCHU) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
