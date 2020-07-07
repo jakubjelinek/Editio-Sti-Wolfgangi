@@ -203,7 +203,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 					deus christus ignem \
 					evangelica divinum adsocietatem ille) \
 	 $(addprefix resp-,dominesiconversus-CROCHU egotetuli-CROCHU-cumdox \
-			   factumestdumtolleret-CROCHU) \
+			   factumestdumtolleret-CROCHU peccavisupernumerum-CROCHU \
+			   exaudisti-CROCHU audidominehymnum-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
 	 an_salve_regina ant-salveregina-simplex benedictio-noctemquietam \
