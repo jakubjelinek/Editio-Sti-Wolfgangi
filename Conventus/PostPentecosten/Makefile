@@ -184,7 +184,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
 				       TellurisIngens) \
 	 $(addprefix hym-,EcceJamNoctis AveMarisStella OGloriosaDomina AdPrecesNostras \
-			  ChristeLuxVera) \
+			  ChristeLuxVera AmorisSensusErige) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
@@ -196,8 +196,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,feria-laudes feria-vesperae minor officium-bmv) \
-	 dominelabiamea inv-alleluiachristumdominum inv-regemmagnum \
-	 inv-dominumquifecit \
+	 $(addprefix inv-,alleluiachristumdominum regemmagnum dominumquifecit adoremusdominum) \
+	 dominelabiamea \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
