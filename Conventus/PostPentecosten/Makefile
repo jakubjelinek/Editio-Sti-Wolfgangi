@@ -31,7 +31,7 @@ MODUS-149-I = viii-G
 MODUS-150-I = viii-G
 MODUS-109-I = vii-c2
 MODUS-110-I = iv-g
-MODUS-111-I = iv-A
+MODUS-111-I = iv-a
 MODUS-112-I = vii-c
 MODUS-4-I = viii-G
 MODUS-90-I = viii-G
@@ -132,7 +132,7 @@ MODUS-benedictus-VII = viii-G
 MODUS-144ii-VII = vii-c2
 MODUS-145-VII = iv-E
 MODUS-146-VII = viii-A
-MODUS-147-VII = irreg
+MODUS-147-VII = e
 CANTICIS = isaiae ezechiae anna moysis habacuc moysis2i moysis2ii nuncdimittis dan3
 NUMSI = I II III IV V VI VII
 NUMSII = II III IV V VI VII
@@ -195,7 +195,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 $(addprefix oratio,5 bmv) \
 	 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
-	 $(addprefix benedicamus-,feria-laudes feria-vesperae minor officium-bmv) \
+	 $(addprefix benedicamus-,feria-laudes feria-vesperae minor officium-bmv dominica-perannum) \
 	 $(addprefix inv-,alleluiachristumdominum regemmagnum dominumquifecit adoremusdominum) \
 	 dominelabiamea \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) \
