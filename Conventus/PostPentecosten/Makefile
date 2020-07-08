@@ -63,14 +63,14 @@ MODUS-38-III = iv-E
 MODUS-50-III = iv-E
 MODUS-42-III = vi-F
 MODUS-56-III = viii-G2
-MODUS-ezechiae = irreg
+MODUS-ezechiae = e
 MODUS-148-III = v-g
 MODUS-149-III = v-g
 MODUS-150-III = v-g
 MODUS-benedictus-III = vii-a
 MODUS-129-III = viii-A
-MODUS-130-III = irreg
-MODUS-131-III = irreg
+MODUS-130-III = e
+MODUS-131-III = e
 MODUS-132-III = i-a
 MODUS-magnificat-III = v-a
 MODUS-44i-IV = vi-F
@@ -221,7 +221,6 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
 	 an_salve_regina ant-salveregina-simplex benedictio-noctemquietam \
-	 $(addsuffix -initium-irreg,ezechiae moysis ps130 ps131) \
 	 habacuc-initium-iv-E ps48ii-initium-e
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
