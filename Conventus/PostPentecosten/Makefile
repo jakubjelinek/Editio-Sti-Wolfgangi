@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 4 5 34i 34ii 34iii 35 36i 36ii 36iii 37i 37ii 38 42 44i 44ii 45 47 48i 48ii 49i_vi 49vii_xv 49xvi_xxiii 50 56 62 63 64 75 87 89 90 91 109 110 111 112 113 114 115 116 117 128 129 130 131 132 133 134 135 136 137 138i 138ii 139 140 141 142 143i 143ii 144i 144ii 145 146 147 148 149 150
+PSALMS = 4 5 34i 34ii 34iii 35 36i 36ii 36iii 37i 37ii 38 42 44i 44ii 45 47 48i 48ii 49i_vi 49vii_xv 49xvi_xxiii 50 56 61 62 63 64 65i 65ii 67i 67ii 67iii 68i 68ii 68iii 75 87 89 90 91 109 110 111 112 113 114 115 116 117 128 129 130 131 132 133 134 135 136 137 138i 138ii 139 140 141 142 143i 143ii 144i 144ii 145 146 147 148 149 150
 include tonus.mk
 MODUS-50-I = vi-F
 MODUS-117-I = vi-F
@@ -95,10 +95,19 @@ MODUS-135-IV = iii-g
 MODUS-136-IV = viii-G
 MODUS-137-IV = v-a
 MODUS-magnificat-IV = viii-G2
+MODUS-61-V = iii-g
+MODUS-65i-V = iv_-E
+MODUS-65ii-V = i-g
+MODUS-67i-V = vii-a
+MODUS-67ii-V = ii-D
+MODUS-67iii-V = d-g2
+MODUS-68i-V = viii-C
+MODUS-68ii-V = viii-C
+MODUS-68iii-V = viii-G
 MODUS-50-V = viii-G2
 MODUS-87-V = v-a
 MODUS-89-V = vi-F
-MODUS-moysis = irreg
+MODUS-moysis = e
 MODUS-148-V = vi-F
 MODUS-149-V = vi-F
 MODUS-150-V = vi-F
@@ -178,7 +187,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  exsurgedomine intendeinadjutorium neiniratua restitueanimam \
 			  reveladomino utnondelinquam adjutorintribulationibus auribuspercipite \
 			  deusdeorum eructavitcor immoladeo intellegite magnusdominus \
-			  osmeumloquetur speciosusforma) \
+			  osmeumloquetur speciosusforma auditeomnes cantatedomino \
+			  exsurgatdeus inecclesiis nonnedeo omnisterra quaeritedominum \
+			  salvummefac zelusdomus) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -204,7 +215,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 					evangelica divinum adsocietatem ille) \
 	 $(addprefix resp-,dominesiconversus-CROCHU egotetuli-CROCHU-cumdox \
 			   factumestdumtolleret-CROCHU peccavisupernumerum-CROCHU \
-			   exaudisti-CROCHU audidominehymnum-CROCHU-cumdox) \
+			   exaudisti-CROCHU audidominehymnum-CROCHU-cumdox \
+			   deusomniumexauditorest-sinedox dominusquieripuitme-cumdox \
+			   praeparatecordavestra-sinedox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
 	 an_salve_regina ant-salveregina-simplex benedictio-noctemquietam \
