@@ -195,7 +195,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
 				       TellurisIngens) \
 	 $(addprefix hym-,EcceJamNoctis AveMarisStella OGloriosaDomina AdPrecesNostras \
-			  ChristeLuxVera AmorisSensusErige) \
+			  ChristeLuxVera AmorisSensusErige AdestoChriste) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
