@@ -1,11 +1,11 @@
 name: Domine audivi;
 office-part: Antiphona;
-book: Antiphonale Monasticum, 1934, p. 68; H99;
+book: Antiphonale Monasticum, 1934, p. 68; Praglia: Liber Antiphonarius, p. 684; H99;
 mode: 4;
 transcriber: Jakub Jelínek;
 nabc-lines: 1;
 % Hab. 3, 2;
 %%
 (c4)
-DO(f|vi)mi(d|ta)ne(e'|vi) *()
-au(f|pehg)dí(g|vs)vi(e'|tahg) au(f|vihg)dí(gh|pehg)tum(h'|vihg) tu(h|vihg)um,(g'|vi) et(f|ta) tí(g'|pe)mu(f|vi)i.(e.|ta) (::)
+DO(f|vi)mi(d|ta)ne(e|vi) au(f|pehg)dí(ggo|vs)vi(e|tahg) *()
+au(f|vihg)dí(gh|pehg)tum(g|vihg) tu(g|vihg)um,(f|vi) et(d|ta) tí(dg|pe)mu(f|vi)i.(e.|ta) (::)
