@@ -96,7 +96,7 @@ MODUS-136-IV = viii-G
 MODUS-137-IV = v-a
 MODUS-magnificat-IV = viii-G2
 MODUS-61-V = iii-g
-MODUS-65i-V = iv_-E
+MODUS-65i-V = e
 MODUS-65ii-V = i-g
 MODUS-67i-V = vii-a
 MODUS-67ii-V = ii-D
@@ -221,7 +221,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
 	 an_salve_regina ant-salveregina-simplex benedictio-noctemquietam \
-	 habacuc-initium-iv_-e ps48ii-initium-e
+	 habacuc-initium-iv_-e $(addsuffix -initium-e,ps48ii ps65i)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
