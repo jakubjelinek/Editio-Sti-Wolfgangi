@@ -70,4 +70,5 @@ TONUS-per = 1 3 1 1
 TONUS-dir = 1 2 0 0
 TONUS-irreg = 1 0 0 4
 TONUS-e = 1 0 2 0
+TONUS-c-c2 = 1 2 1 2
 TONUS-d-g2 = 1 2 1 1

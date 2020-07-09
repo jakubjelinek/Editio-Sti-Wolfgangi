@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 4 5 34i 34ii 34iii 35 36i 36ii 36iii 37i 37ii 38 42 44i 44ii 45 47 48i 48ii 49i_vi 49vii_xv 49xvi_xxiii 50 56 61 62 63 64 65i 65ii 67i 67ii 67iii 68i 68ii 68iii 75 87 89 90 91 109 110 111 112 113 114 115 116 117 128 129 130 131 132 133 134 135 136 137 138i 138ii 139 140 141 142 143i 143ii 144i 144ii 145 146 147 148 149 150
+PSALMS = 4 5 34i 34ii 34iii 35 36i 36ii 36iii 37i 37ii 38 42 44i 44ii 45 47 48i 48ii 49i_vi 49vii_xv 49xvi_xxiii 50 56 61 62 63 64 65i 65ii 67i 67ii 67iii 68i 68ii 68iii 75 77i 77ii 77iii 77iv 77v 77vi 78 80 82 87 89 90 91 109 110 111 112 113 114 115 116 117 128 129 130 131 132 133 134 135 136 137 138i 138ii 139 140 141 142 143i 143ii 144i 144ii 145 146 147 148 149 150
 include tonus.mk
 MODUS-50-I = vi-F
 MODUS-117-I = vi-F
@@ -117,6 +117,15 @@ MODUS-138ii-V = iii-g
 MODUS-139-V = iv-g
 MODUS-140-V = viii-A
 MODUS-magnificat-V = vii-c
+MODUS-77i-VI = i-g3
+MODUS-77ii-VI = c-c2
+MODUS-77iii-VI = ii-D
+MODUS-77iv-VI = viii-G
+MODUS-77v-VI = iii-a
+MODUS-77vi-VI = i-g
+MODUS-78-VI = viii-c
+MODUS-80-VI = i-g5
+MODUS-82-VI = vi-F
 MODUS-50-VI = i-a2
 MODUS-75-VI = viii-A
 MODUS-91-VI = viii-A
@@ -189,7 +198,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  deusdeorum eructavitcor immoladeo intellegite magnusdominus \
 			  osmeumloquetur speciosusforma auditeomnes cantatedomino \
 			  exsurgatdeus inecclesiis nonnedeo omnisterra quaeritedominum \
-			  salvummefac zelusdomus) \
+			  salvummefac zelusdomus aedificavitdeus angelorumesca elegitdominus\
+			  exsultatedeo inclinateaurem propitiusesto redemiteos tuesdeus \
+			  tusolus) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
