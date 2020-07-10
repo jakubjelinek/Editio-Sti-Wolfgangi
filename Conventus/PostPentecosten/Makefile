@@ -236,11 +236,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 habacuc-initium-iv_-e $(addsuffix -initium-e,ps48ii ps65i)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
-LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
-		   $(foreach P,dan3 nuncdimittis,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
-LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach V,$(NUMSI),$(TMP_DIR)/ps$(P)-initium-$(if $(MODUS-$(P)-$(V)),$(MODUS-$(P)-$(V)),ii-D)-auto.gabc)) \
-		   $(foreach V,$(NUMSII),$(TMP_DIR)/benedictus-initium-$(if $(MODUS-benedictus-$(V)),$(MODUS-benedictus-$(V)),ii-D)-auto.gabc) \
-		   $(foreach V,$(NUMSIII),$(TMP_DIR)/magnificat-initium-$(if $(MODUS-magnificat-$(V)),$(MODUS-magnificat-$(V)),ii-D).gabc) \
+LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach V,$(NUMSI),$(if $(MODUS-$(P)-$(V)),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P)-$(V))-auto.gabc))) \
+		   $(foreach V,$(NUMSII),$(if $(MODUS-benedictus-$(V)),$(TMP_DIR)/benedictus-initium-$(MODUS-benedictus-$(V))-auto.gabc)) \
+		   $(foreach V,$(NUMSIII),$(if $(MODUS-magnificat-$(V)),$(TMP_DIR)/magnificat-initium-$(MODUS-magnificat-$(V)).gabc)) \
 		   $(foreach P,$(CANTICIS),$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PSALMTONES_DIR)/$(2)-auto.gabc; \
