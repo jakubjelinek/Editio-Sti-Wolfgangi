@@ -51,7 +51,7 @@ LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
 LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT) $(BENEDICTUS) dan3)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant-,fuitvir abipso relictadomo) \
-	 $(addprefix hym-,UtQueant ONimis) \
+	 $(addprefix hym-,UtQueant ONimis QuidquidAntiqui) \
 	 $(addprefix resp-,internatos internatos-communis) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(foreach M,viiisoll-G viisoll-a vii-a,magnificat-initium-$(M)) \
@@ -61,11 +61,9 @@ SCORES = $(addprefix ant-,fuitvir abipso relictadomo) \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
-	 dominelabiamea inv-regempraecursoris-FKP benedicamus-solemnis-laud \
+	 dominelabiamea inv-laudemusdeumnostrum benedicamus-solemnis-laud \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
-	 $(addprefix benedictio-solemn-,dextera deus sancti \
-					salus perfecta adgaudia \
-					verba perevangelica sanctievangelii) \
+	 $(addprefix benedictio-solemn-,ille cujus-ipse adsocietatem) \
 	 $(addprefix resp-,quammagnamultitudo-cumdox \
 			   accepitiesus coenantibus comedetiscarnes \
 			   egosumpanisvitae immolabithaedum misitmevivenspater \
@@ -73,7 +71,8 @@ SCORES = $(addprefix ant-,fuitvir abipso relictadomo) \
 			   innuebantpatrieius-FKP descenditangelus-FKP \
 			   elisabethzachariae-FKP fuithomo-FKP gabrielangelus-FKP \
 			   hicpraecursor-FKP internatosmulierum-FKP \
-			   praecursordomini-FKP priusquamteformarem-FKP) \
+			   praecursordomini-FKP priusquamteformarem-FKP \
+			   beatusbenedictuscum beatusbenedictusdum fuitvirvitae) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
 	 an_regina_caeli_simplex convertenosdeus \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
