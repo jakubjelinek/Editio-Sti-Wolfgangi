@@ -151,10 +151,13 @@ MODUS-144ii-VII = vii-c2
 MODUS-145-VII = iv-E
 MODUS-146-VII = viii-A
 MODUS-147-VII = e
+MODUS-benedictus-VIII = viiisoll-G
+MODUS-magnificat-VIII = isoll-f
+MODUS-magnificat-IX = viisoll-d
 CANTICIS = isaiae ezechiae anna moysis habacuc moysis2i moysis2ii nuncdimittis dan3
 NUMSI = I II III IV V VI VII
-NUMSII = II III IV V VI VII
-NUMSIII = II III IV V VI
+NUMSII = II III IV V VI VII VIII
+NUMSIII = II III IV V VI VIII IX
 PSALMSALT = $(foreach V,$(NUMSI),$(addsuffix -$(V),$(PSALMS)))
 BENEDICTUS = $(foreach B,$(NUMSII),benedictus-$(B))
 MAGNIFICAT = $(foreach M,$(NUMSIII),magnificat-$(M))
@@ -200,7 +203,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  exsurgatdeus inecclesiis nonnedeo omnisterra quaeritedominum \
 			  salvummefac zelusdomus aedificavitdeus angelorumesca elegitdominus\
 			  exsultatedeo inclinateaurem propitiusesto redemiteos tuesdeus \
-			  tusolus) \
+			  tusolus cumturbamulta misereorsuperturbam obsecrodomineaufer) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -214,7 +217,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 				tuautem) \
 	 $(addprefix versus-,custodi gaude dirigatur dominusregnavit repleti vespertina \
 			     diffusa) \
-	 $(addprefix oratio,5 bmv) \
+	 $(addprefix oratio,5 6 bmv) \
 	 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,feria-laudes feria-vesperae minor officium-bmv dominica-perannum) \
@@ -280,7 +283,7 @@ $(TMP_DIR)/%-XI-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-XII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 
 FERIAE = ii iii iv v vi
-HEBDOMADAE = v
+HEBDOMADAE = v vi
 PDFI = $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE)))
 PDFII = $(foreach H,$(HEBDOMADAE),sabbato-$(H).pdf)
 PDFIII = $(foreach H,$(HEBDOMADAE),dominica-$(H).pdf)
