@@ -192,7 +192,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  laudabodeum laudajerusalem laudatedominum magnificat misereremeideus \
 			  nosquivivimus omnesangeliejus omniaquaecumque persingulosdies \
 			  pervisceramisericordiae portiomeadomine quoniaminaeternum \
-			  quoniaminteconfidit regnumtuum respexitdominus saepeexpungaveruntme \
+			  quoniaminteconfidit regnumtuum respexitdominus saepeexpugnaveruntme \
 			  salutarevultusmei sitnomendomini speretisrael spirituprincipali \
 			  tedecet tibisoli trespueri salvanos-antiquo miserere subtuum \
 			  brachiapeccatorum custodiinnocentiam expugnaimpugnantes \
