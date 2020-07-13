@@ -72,15 +72,7 @@ LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
 LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT) $(BENEDICTUS) dan3)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
-SCORES = $(addprefix ant-,salvanos-antiquo \
-			  angelorumesca calicemsalutaris egosumpanis egosumpanisvivus \
-			  homoquidam miseratordominus oquamsuavisest osacrumconvivium \
-			  pinguisest puersamuelministrabat quipacem sacerdosinaeternum \
-			  sacerdotessancti sapientiaaedificavit sicutnovellae vincentidabo \
-			  miserere salveregina-simplex subtuum \
-			  afructufrumenti communionecalicis fructumsalutiferum \
-			  cibavitnos-FKP exaltari-FKP introibo-FKP invoceexsultationis-FKP \
-			  memorsit-FKP paraturnobis-FKP exicitoinplateas \
+SCORES = $(addprefix ant-,salvanos-antiquo miserere salveregina-simplex subtuum \
 			  apertumestoszachariae descenditangelus elisabethzachariae \
 			  etfactumest ingressozacharia innuebantpatriejus istepuer \
 			  joannesest joannesvocabitur exuterosenectutis internatosmulierum \
@@ -103,11 +95,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 	 $(addprefix benedictio-solemn-,dextera deus sancti \
 					salus perfecta adgaudia \
 					verba perevangelica sanctievangelii) \
-	 $(addprefix resp-,quammagnamultitudo-cumdox \
-			   accepitiesus coenantibus comedetiscarnes \
-			   egosumpanisvitae immolabithaedum misitmevivenspater \
-			   quimanducat respexitelias homoquidamfecit \
-			   innuebantpatrieius-FKP descenditangelus-FKP \
+	 $(addprefix resp-,innuebantpatrieius-FKP descenditangelus-FKP \
 			   elisabethzachariae-FKP fuithomo-FKP gabrielangelus-FKP \
 			   hicpraecursor-FKP internatosmulierum-FKP \
 			   praecursordomini-FKP priusquamteformarem-FKP) \
