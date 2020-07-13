@@ -71,15 +71,7 @@ LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
 LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT) $(BENEDICTUS) dan3)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
-SCORES = $(addprefix ant-,salvanos-antiquo \
-			  angelorumesca calicemsalutaris egosumpanis egosumpanisvivus \
-			  homoquidam miseratordominus oquamsuavisest osacrumconvivium \
-			  pinguisest puersamuelministrabat quipacem sacerdosinaeternum \
-			  sacerdotessancti sapientiaaedificavit sicutnovellae vincentidabo \
-			  miserere salveregina-simplex subtuum \
-			  afructufrumenti communionecalicis fructumsalutiferum \
-			  cibavitnos-FKP exaltari-FKP introibo-FKP invoceexsultationis-FKP \
-			  memorsit-FKP paraturnobis-FKP exicitoinplateas \
+SCORES = $(addprefix ant-,salvanos-antiquo miserere salveregina-simplex subtuum \
 			  argentumetaurum damascipraepositus dixitangelusadpetrum \
 			  egoplantaviapollorigavit egoproterogavi gloriosiprincipes \
 			  gratiadeiinme libentergloriabor mihivivere misitdominus petreamasme \
