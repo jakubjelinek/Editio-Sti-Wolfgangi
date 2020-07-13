@@ -77,15 +77,7 @@ LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
 LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT) $(BENEDICTUS) dan3 nuncdimittis)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
-SCORES = $(addprefix ant-,salvanos-antiquo \
-			  angelorumesca calicemsalutaris egosumpanis egosumpanisvivus \
-			  homoquidam miseratordominus oquamsuavisest osacrumconvivium \
-			  pinguisest puersamuelministrabat quipacem sacerdosinaeternum \
-			  sacerdotessancti sapientiaaedificavit sicutnovellae vincentidabo \
-			  miserere salveregina-simplex subtuum \
-			  afructufrumenti communionecalicis fructumsalutiferum \
-			  cibavitnos-FKP exaltari-FKP introibo-FKP invoceexsultationis-FKP \
-			  memorsit-FKP paraturnobis-FKP exicitoinplateas \
+SCORES = $(addprefix ant-,salvanos-antiquo miserere salveregina-simplex subtuum \
 			  adjesumautem apuddominumpropitiatio exortumestintenebris \
 			  factasuntenimhaec filipraebe ignemvenimittere incaritateperpetua \
 			  misericorsetmiserator stansjesus suavijugo unusmilitum \
@@ -93,17 +85,12 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 			  gloriaethonore meditatiocordismei elevamini confitebuntur \
 			  sanctificavittabernaculum sicutlaetantium annuntiate \
 			  laetamini videruntomnes cognoveruntomnes quaemulier quisexvobishomo) \
-	 $(addprefix hym-,AEterneRexAltissime JesuNostraRedemptio \
-			  PangeLingua VerbumSupernum SacrisSolemniis \
-			  AuctorBeate CorArca JesuAuctor TeLucis) \
-	 $(addprefix resp-,inmanus cibavit cibavit-simplex panemcaeli tollite christus egodixi) \
+	 $(addprefix hym-,AuctorBeate CorArca JesuAuctor TeLucis) \
+	 $(addprefix resp-,inmanus tollite christus egodixi) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(foreach M,isoll-D_ isoll-f i-f isoll-g visoll-F,magnificat-initium-$(M)) \
-	 $(addprefix capitulum-,tuautem FratresEgo CarissimiNolite FratresMihi CarissimiHumiliamini) \
-	 $(addprefix versus-,custodi gaude \
-			     panemdecaelo posuitfines panemdecaelo-communis \
-			     panemdecaelohomo-communis posuitfines-communis \
-			     cibavit educas tollite haurietis haurietis-communis \
+	 $(addprefix capitulum-,tuautem FratresMihi CarissimiHumiliamini) \
+	 $(addprefix versus-,custodi tollite haurietis haurietis-communis \
 			     domine conversus exsion tollite-communis memoriam) \
 	 oratio oratio2 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
@@ -114,11 +101,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
 					evangelica divinum adsocietatem) \
-	 $(addprefix resp-,quammagnamultitudo-cumdox \
-			   accepitiesus coenantibus comedetiscarnes \
-			   egosumpanisvitae immolabithaedum misitmevivenspater \
-			   quimanducat respexitelias homoquidamfecit \
-			   tollite-cumdox benedictus-dominus-deus2-cumdox \
+	 $(addprefix resp-,tollite-cumdox benedictus-dominus-deus2-cumdox \
 			   eccevidimus-CROCHU egosumpanisvitae-E611 \
 			   magnusdominusnoster-CROCHU-cumdox misitmevivenspater2 \
 			   quimanducat-E611 recesitpastornoster-CROCHU-cumdox \
