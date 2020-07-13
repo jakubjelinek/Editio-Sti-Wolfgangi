@@ -240,7 +240,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 $(addprefix capitulum-,Benedictio BenedictusDeus NoxPraecessit OAltitudo AbInitio \
 				tuautem) \
 	 $(addprefix versus-,custodi gaude dirigatur dominusregnavit repleti vespertina \
-			     diffusa) \
+			     diffusa cognoscantquia deusnesileas exaltentdominum laudabonomen \
+			     medianocte memorfui praevenerunt psallitedomino sacrificiumlaudis) \
 	 $(addprefix oratio,5 6 bmv) \
 	 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
