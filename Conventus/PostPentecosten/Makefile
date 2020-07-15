@@ -235,7 +235,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 				       TellurisIngens) \
 	 $(addprefix hym-,EcceJamNoctis AveMarisStella OGloriosaDomina AdPrecesNostras \
 			  ChristeLuxVera AmorisSensusErige AdestoChriste SalveDies \
-			  VitaSanctorum) \
+			  VitaSanctorum QuemTerra) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
@@ -243,18 +243,20 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 				tuautem) \
 	 $(addprefix versus-,custodi gaude dirigatur dominusregnavit repleti vespertina \
 			     diffusa cognoscantquia deusnesileas exaltentdominum laudabonomen \
-			     medianocte memorfui praevenerunt psallitedomino sacrificiumlaudis) \
+			     medianocte memorfui praevenerunt psallitedomino sacrificiumlaudis \
+			     benedictatu) \
 	 $(addprefix oratio,5 6 7 bmv) \
 	 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,feria-laudes feria-vesperae minor officium-bmv dominica-perannum) \
 	 $(addprefix inv-,alleluiachristumdominum regemmagnum dominumquifecit adoremusdominum \
-			  dominumdeum veniteexsultemus jubilemusdeo) \
+			  dominumdeum veniteexsultemus jubilemusdeo avemaria) \
 	 dominelabiamea \
-	 $(addprefix absolutio-,exaudi ipsius avinculis) \
+	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
-					evangelica divinum adsocietatem ille) \
+					evangelica divinum adsocietatem ille \
+					noscum ipsavirgo pervirginem) \
 	 $(addprefix resp-,dominesiconversus-CROCHU egotetuli-CROCHU-cumdox \
 			   factumestdumtolleret-CROCHU peccavisupernumerum-CROCHU \
 			   exaudisti-CROCHU audidominehymnum-CROCHU-cumdox \
@@ -283,7 +285,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../InNativitateBMV/cantus/amon33 ../CorpusChristi
+iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../InNativitateBMV/cantus/amon33 ../CorpusChristi ../InNativitateBMV/cantus/nrom02
 include $(iter)
 $(TMP_DIR)/%-I.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
 $(TMP_DIR)/%-II.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
