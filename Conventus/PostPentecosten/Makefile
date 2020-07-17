@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 1 2 3 4 5 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 10 13 14 16 17i 17ii 17iii 19 20 29 34i 34ii 34iii 35 36i 36ii 36iii 37i 37ii 38 42 44i 44ii 45 47 48i 48ii 49i_vi 49vii_xv 49xvi_xxiii 50 56 61 62 63 64 65i 65ii 67i 67ii 67iii 68i 68ii 68iii 75 77i 77ii 77iii 77iv 77v 77vi 78 80 82 87 89 90 91 109 110 111 112 113 114 115 116 117 128 129 130 131 132 133 134 135 136 137 138i 138ii 139 140 141 142 143i 143ii 144i 144ii 145 146 147 148 149 150
+PSALMS = 1 2 3 4 5 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 10 13 14 16 17i 17ii 17iii 19 20 29 34i 34ii 34iii 35 36i 36ii 36iii 37i 37ii 38 42 44i 44ii 45 47 48i 48ii 49i_vi 49vii_xv 49xvi_xxiii 50 56 61 62 63 64 65i 65ii 67i 67ii 67iii 68i 68ii 68iii 75 77i 77ii 77iii 77iv 77v 77vi 78 80 82 87 89 90 91 104i 104ii 104iii 105i 105ii 105iii 106i 106ii 106iii 109 110 111 112 113 114 115 116 117 128 129 130 131 132 133 134 135 136 137 138i 138ii 139 140 141 142 143i 143ii 144i 144ii 145 146 147 148 149 150
 include tonus.mk
 MODUS-1-I = viii-G
 MODUS-2-I = vii-a
@@ -157,6 +157,15 @@ MODUS-143i-VI = vi-F
 MODUS-143ii-VI = vi-F
 MODUS-144i-VI = viii-A
 MODUS-magnificat-VI = ii-D
+MODUS-104i-VII = d-g
+MODUS-104ii-VII = viii-a
+MODUS-104iii-VII = iv-E
+MODUS-105i-VII = e
+MODUS-105ii-VII = viii-G
+MODUS-105iii-VII = vii-a
+MODUS-106i-VII = iv_-e
+MODUS-106ii-VII = c-c2
+MODUS-106iii-VII = iii-a2
 MODUS-50-VII = iv-E
 MODUS-142-VII = viii-G
 MODUS-moysis2i = vi-F
@@ -228,7 +237,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  justusdominus quamadmirabileest sedistisuperthronum servitedomino \
 			  utquiddomine diligamtedomine domineinvirtute dominusdecaelo \
 			  exaltabote exaudiatte habitabit inclinadomine retribuetmihi \
-			  vivitdominus attenditeafalsis nonpotestarborbona unxeruntsalomonem) \
+			  vivitdominus attenditeafalsis nonpotestarborbona unxeruntsalomonem \
+			  confiteanturdomino cumtribularentur denecessitatibus dominusmihi \
+			  domusiacob eduxitdeus ipsividerunt laeteturcor visitanos) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -266,7 +277,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
 	 an_salve_regina ant-salveregina-simplex benedictio-noctemquietam \
-	 habacuc-initium-iv_-e $(addsuffix -initium-e,ps48ii ps65i) ps10-initium-ii_-f
+	 habacuc-initium-iv_-e $(addsuffix -initium-e,ps48ii ps65i ps105i) ps10-initium-ii_-f
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach V,$(NUMSI),$(if $(MODUS-$(P)-$(V)),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P)-$(V))-auto.gabc))) \
