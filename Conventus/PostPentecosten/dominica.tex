@@ -721,6 +721,9 @@ per infiníta sǽcula sæculórum.
 
 % Te Deum
 
+\ifx\tedeumromanum\undefined
+\ifx\tedeumsimplex\undefined
+\ifx\tedeummonasticum\undefined
 {
 \pars{Hymnus Ambrosianus} \scriptura{Tonus Solemnis}
 
@@ -730,6 +733,39 @@ per infiníta sǽcula sæculórum.
 \cuminitiali{III}{temporalia/tedeum-solemnis-gn.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 }
+\else
+{
+\pars{Hymnus Ambrosianus} \scriptura{Tonus Monasticus}
+
+\vspace{-2mm}
+
+\grechangedim{interwordspacetext}{0.26 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{III}{temporalia/tedeum-monasticum-am34.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+\fi
+\else
+{
+\pars{Hymnus Ambrosianus} \scriptura{Tonus Simplex}
+
+\vspace{-2mm}
+
+\grechangedim{interwordspacetext}{0.30 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{III}{temporalia/tedeum-simplex-gn.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+\fi
+\else
+{
+\pars{Hymnus Ambrosianus} \scriptura{Alio modo, iuxta morem Romanum}
+
+\vspace{-2mm}
+
+\grechangedim{interwordspacetext}{0.26 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{III}{temporalia/tedeum-romanum-gn.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+\fi
 
 \vfill
 \pagebreak

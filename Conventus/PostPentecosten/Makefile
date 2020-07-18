@@ -275,7 +275,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   praeparatecordavestra-sinedox montesgelboe percussitsaulmille2 \
 			   duoseraphim-cumdox recordaredomine-CROCHU) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
-	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
+	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex benedictio-noctemquietam \
 	 habacuc-initium-iv_-e $(addsuffix -initium-e,ps48ii ps65i ps105i) ps10-initium-ii_-f
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
