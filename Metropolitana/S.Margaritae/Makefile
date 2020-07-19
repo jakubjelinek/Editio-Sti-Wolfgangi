@@ -49,7 +49,7 @@ SCORES = $(addprefix ant,1 2 3 4 5 -magn-vesp) hym-VirginisProles resp \
 	 magnificat-initium-isoll-g deusinadiutorium-communis oratio \
 	 capitulum-FratresQui versus-diffusa deprecatio \
 	 oratiodominica dominusvobiscum-solemnis \
-	 domineexaudi benedicamus-festis-sanctorum
+	 domineexaudi benedicamus-festis-sanctorum supplicatiolitaniae
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = hym-VirginisProles-bohtext.tex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc)
@@ -74,7 +74,7 @@ endef
 iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR)
 include $(iter)
 
-all: smargaritae.pdf
+all: smargaritae.pdf smargaritae-alt.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(TMP_DIR)/magnificat.tex: PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
@@ -91,7 +91,7 @@ $(TMP_DIR)/magnificat-comb.tex: PSSKIP = 2
 $(LAPSALMSEXTRA): $(TMP_DIR)/%.tex: $(PSALMS_DIR)/%.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
-smargaritae.pdf: smargaritae.tex conventuscommune.tex margarita.jpg translationes_cs.tex \
+smargaritae%.pdf: smargaritae%.tex conventuscommune.tex margarita.jpg translationes_cs.tex \
 	$(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<

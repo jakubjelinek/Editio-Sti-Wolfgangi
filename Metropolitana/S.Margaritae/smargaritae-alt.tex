@@ -1,0 +1,337 @@
+% LuaLaTeX
+
+\documentclass[a4paper, twoside, 12pt]{article}
+\usepackage[latin]{babel}
+%\usepackage[landscape, left=3cm, right=1.5cm, top=2cm, bottom=1cm]{geometry} % okraje stranky
+%\usepackage[landscape, a4paper, mag=1166, truedimen, left=2cm, right=1.5cm, top=1.6cm, bottom=0.95cm]{geometry} % okraje stranky
+\usepackage[landscape, a4paper, mag=1400, truedimen, left=0.5cm, right=0.5cm, top=0.5cm, bottom=0.5cm]{geometry} % okraje stranky
+
+\usepackage{fontspec}
+\setmainfont[FeatureFile={junicode.fea}, Ligatures={Common, TeX}, RawFeature=+fixi]{Junicode}
+%\setmainfont{Junicode}
+
+% shortcut for Junicode without ligatures (for the Czech texts)
+\newfontfamily\nlfont[FeatureFile={junicode.fea}, Ligatures={Common, TeX}, RawFeature=+fixi]{Junicode}
+
+\usepackage{multicol}
+\usepackage{color}
+\usepackage{lettrine}
+\usepackage{fancyhdr}
+
+% usual packages loading:
+\usepackage{luatextra}
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{gregoriotex} % for gregorio score inclusion
+\usepackage{gregoriosyms}
+\usepackage{wrapfig} % figures wrapped by the text
+\usepackage{parcolumns}
+\usepackage[contents={},opacity=1,scale=1,color=black]{background}
+\usepackage{tikzpagenodes}
+\usepackage{calc}
+\usepackage{longtable}
+
+\setlength{\headheight}{12pt}
+
+\input{conventuscommune.tex} % Often used macros
+\input{translationes_cs.tex} % Czech translations of the proper texts
+
+%%%% Vicekrat opakovane kousky
+
+\newcommand{\anteOrationem}{
+  \rubrica{Ante Orationem, cantatur a Superiore:}
+
+  \pars{Supplicatio Litaniæ.}
+
+  \cuminitiali{}{temporalia/supplicatiolitaniae.gtex}
+
+  \vfill
+
+  \pars{Oratio Dominica.}
+
+  \cuminitiali{}{temporalia/oratiodominica.gtex}
+
+  %\trOratioDominica
+  \vfill
+
+  \rubrica{Deinde dicitur ab Hebdomadario:}
+
+  \vspace{1mm}
+
+  \cuminitiali{}{temporalia/dominusvobiscum-solemnis.gtex}
+
+  %\trDominusVobiscum
+
+  \rubrica{In choro monialium loco Dominus vobiscum dicitur:}
+
+  \vspace{1mm}
+
+  \sineinitiali{temporalia/domineexaudi.gtex}
+
+  %\trDomineExaudi
+}
+
+\setlength{\columnsep}{15pt} % prostor mezi sloupci
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Here we set the space around the initial.
+% Please report to http://home.gna.org/gregorio/gregoriotex/details for more details and options
+\grechangedim{afterinitialshift}{2.2mm}{scalable}
+\grechangedim{beforeinitialshift}{2.2mm}{scalable}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\grechangedim{annotationraise}{-0.2cm}{scalable}
+
+% Here we set the initial font. Change 38 if you want a bigger initial.
+% Emit the initials in red.
+\grechangestyle{initial}{\color{red}\fontsize{36}{36}\selectfont}
+
+\renewcommand{\headrulewidth}{0pt} % no horiz. rule at the header
+\pagestyle{empty}
+
+\grechangedim{spaceabovelines}{0.2cm}{scalable}%
+
+\vfill
+
+\hbox{}
+
+\vspace{2.5cm}
+
+\begin{center}
+{\large \textit{DIE XX IULII}}
+
+\vspace{0.5cm}
+
+{\huge S. MARGARITÆ}
+
+{\large VIRGINIS ET MARTYRIS}
+
+\vspace{0.5cm}
+
+% graphic
+\vspace{1.5cm}
+\begin{center}
+\includegraphics[width=8cm]{margarita.jpg}
+\end{center}
+
+\vspace{1.8cm}
+
+%\textsc{Secundum Antiphonale Breunowiensis}
+\textsc{Secundum Antiphonale Raygradensis}
+\end{center}
+
+\vfill
+\pagebreak
+
+\cantusSineNeumas
+
+\pars{Introductio}
+
+\gregorioscore{temporalia/deusinadiutorium-communis.gtex}
+
+%\trIntroductio
+
+\vspace{0.5cm}
+
+\pars{Antiphona I} \scriptura{\textbf{Sg. 389, pag. 410}}
+
+\vspace{-0.2cm}
+
+\antiphona{II D}{temporalia/ant1.gtex}
+
+%\trAntI
+
+\scriptura{Ps. 109}
+
+\gregorioscore{temporalia/ps109-initium-ii-D-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps109-comb.tex}{6cm}
+\input{temporalia/ps109.tex}
+
+\vfill
+
+% Repeat the antiphon - new page
+\antiphona{}{temporalia/ant1.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Antiphona II} \scriptura{\textbf{Sg. 389, pag. 410}}
+
+\vspace{-4mm}
+
+\antiphona{III g}{temporalia/ant2.gtex}
+
+\vspace{-2mm}
+
+%\trAntII
+
+\scriptura{Ps. 110}
+
+\gregorioscore{temporalia/ps110-initium-iii-g-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps110-comb.tex}{6cm}
+\input{temporalia/ps110.tex} \Abardot{}
+
+% Repeat the antiphon - new page
+%\antiphona{}{temporalia/ant2.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Antiphona III} \scriptura{\textbf{Sg. 389, pag. 410}}
+
+\vspace{-0.2cm}
+
+\antiphona{IV E}{temporalia/ant3.gtex}
+
+%\trAntIII
+
+\scriptura{Ps. 111}
+
+\gregorioscore{temporalia/ps111-initium-iv-E-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps111-comb.tex}{6cm}
+\input{temporalia/ps111.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Antiphona IV} \scriptura{\textbf{Sg. 389, pag. 410}}
+
+\vspace{-0.2cm}
+
+\antiphona{V a}{temporalia/ant4.gtex}
+
+%\trAntIV
+
+\scriptura{Ps. 112}
+
+\gregorioscore{temporalia/ps112-initium-v-a-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps112-comb.tex}{6cm}
+\input{temporalia/ps112.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Antiphona V} \scriptura{\textbf{Sg. 389, pag. 410}}
+
+\vspace{-7mm}
+
+\antiphona{VI C}{temporalia/ant5.gtex}
+
+\vspace{-4mm}
+
+%\trAntV
+
+\scriptura{Ps. 113}
+
+\vspace{-3mm}
+
+\gregorioscore{temporalia/ps113-initium-vi-C-auto.gtex}
+
+\vspace{-1mm}
+
+%\psalmusEtTranslatioT{temporalia/ps113-comb.tex}{6cm}
+\input{temporalia/ps113.tex}
+
+\vfill
+
+\vspace{-5mm}
+
+\antiphona{}{temporalia/ant5.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Capitulum} \scriptura{2 Cor. 10, 17-18}
+
+\cuminitiali{}{temporalia/capitulum-FratresQui.gtex}
+
+%\trCapituli
+
+\vfill
+
+\pars{Responsorium breve} \scriptura{Ps. 45, 6; \textbf{H190}}
+
+\vspace{-0.2cm}
+
+\antiphona{\oldrbar.~ br.}{temporalia/resp.gtex}
+
+%\trResp
+
+\vfill
+\pagebreak
+
+\pars{Hymnus}
+
+\vspace{-0.5cm}
+
+\antiphona{I}{temporalia/hym-VirginisProles.gtex}
+
+%\input{hym-VirginisProles-bohtext.tex}
+
+\vfill
+
+\pars{Versus} \scriptura{Ps. 44, 3}
+
+\sineinitiali{temporalia/versus-diffusa.gtex}
+
+%\trVersiculi
+
+\vfill
+\pagebreak
+
+\pars{Antiphona ad Magnificat} \scriptura{\textbf{Sg. 389, pag. 407}}
+
+\vspace{-0.2cm}
+
+\antiphona{I g}{temporalia/ant-magn-vesp.gtex}
+
+%\trAntMagnificat
+
+\scriptura{Lc. 1, 46-55}
+
+\gregorioscore{temporalia/magnificat-initium-isoll-g.gtex}
+
+%\psalmusEtTranslatioT{temporalia/magnificat-comb.tex}{6cm}
+\input{temporalia/magnificat.tex} \Abardot{}
+
+% Repeat the antiphon - new page
+\antiphona{}{temporalia/ant-magn-vesp.gtex}
+
+\vfill
+\pagebreak
+
+\anteOrationem
+
+\vfill
+\pagebreak
+
+\vspace{0.5cm}
+
+\pars{Oratio conclusiva}
+
+\gregorioscore{temporalia/oratio.gtex}
+
+%\trOratio
+
+\vfill
+
+\rubrica{Hebdomadarius dicit iterum Dominus vobiscum, vel cantor dicit:}
+
+\vspace{2mm}
+
+\sineinitiali{temporalia/domineexaudi.gtex}
+
+\rubrica{Postea cantatur a cantore:}
+
+\vspace{2mm}
+
+\cuminitiali{V}{temporalia/benedicamus-festis-sanctorum.gtex}
+
+%\trBenedicamus
+
+\vfill
+\end{document}
