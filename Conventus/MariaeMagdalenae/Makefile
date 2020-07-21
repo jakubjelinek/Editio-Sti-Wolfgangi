@@ -20,9 +20,11 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 18 33 44 46 60 62 63 74 92 96 98 99 109 112 121 126 145 146 147 148 149 150
+PSALMS = 8 18 23 33 44 46 60 62 63 74 92 96 98 99 109 112 121 126 145 146 147 148 149 150
 include tonus.mk
-MODUS-18 = ii-D
+MODUS-8 = iv-E
+MODUS-18 = i-D_
+MODUS-23 = i-D_
 MODUS-33 = vii-c2
 MODUS-44 = viii-A
 MODUS-46 = viii-G
@@ -77,7 +79,8 @@ SCORES = $(addprefix ant-,salvanos-antiquo miserere salveregina-simplex subtuum 
 			  dedistihereditatem-FKP exaltabunturcornuaiusti-FKP \
 			  inomnemterram-FKP luxortaestiustis-FKP principespopulorum-FKP \
 			  ardensestcormeum dicitjesusmariaconversa dumtransissetsabbatum \
-			  inclinavitsemaria surgensjesusmaneprima tuleruntdominummeum venitmarianuntians) \
+			  inclinavitsemaria surgensjesusmaneprima tuleruntdominummeum \
+			  venitmarianuntians incendit ingressusjesus stansmaria) \
 	 $(addprefix hym-,AuroraSurgit MagdalaeSidus) \
 	 $(addprefix resp-,tibidixitcormeum) \
 	 $(addprefix deusinadiutorium-,communis) \
@@ -87,7 +90,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo miserere salveregina-simplex subtuum 
 	 oratio supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,duplex-laudes duplex-vesperae) \
-	 dominelabiamea inv-regemapostolorum benedicamus-solemnis-laud \
+	 dominelabiamea inv-stellam benedicamus-solemnis-laud \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
@@ -95,7 +98,8 @@ SCORES = $(addprefix ant-,salvanos-antiquo miserere salveregina-simplex subtuum 
 	 $(addprefix resp-,tuespastorovium-CROCHU dominesitues-CROCHU \
 			   egoproterogavi-CROCHU quemdicunthomines-CROCHU \
 			   sidiligisme-CROCHU simonpetre-CROCHU surgepetre-CROCHU \
-			   tuespetrus-CROCHU) \
+			   tuespetrus-CROCHU \
+			   caelestis mariaplorans sorormarthae) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(foreach B,viii-G,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex) \
