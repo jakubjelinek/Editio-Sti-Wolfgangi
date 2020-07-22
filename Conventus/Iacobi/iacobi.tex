@@ -1,3 +1,7 @@
+\newcommand{\festum}{Petrus et Paulus}
+\newcommand{\aequus}{Petrus et Paulus}
+\newcommand{\festumveldominica}{Petrus et Paulus}
+\newcommand{\solemnis}{Petrus et Paulus}
 % LuaLaTeX
 
 \documentclass[a4paper, twoside, 12pt]{article}
@@ -80,7 +84,8 @@
 
 %%%% Titulni stranka
 \begin{titulusOfficii}
-\titulus
+\nomenFesti{Ss. Apostolorum Petri et Pauli.}
+\celebratio{Duplex 1. classis.}
 \end{titulusOfficii}
 
 % graphic
@@ -105,8 +110,6 @@
 
 \cantusSineNeumas
 
-\ifx\festum\undefined
-\else
 \pars{Oratio ante divinum Officium.}
 
 \lettrine{{\color{red}A}}{peri,} Dómine, os meum ad benedicéndum nomen sanctum tuum:
@@ -366,7 +369,6 @@ per infiníta sǽcula sæculórum.
 
 \vfill
 \pagebreak
-\fi
 
 \hora{Ad Matutinum.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\sideThumbs{Matutinum}
@@ -394,8 +396,6 @@ per infiníta sǽcula sæculórum.
 
 \vfill
 \pagebreak
-
-\subhora{In I. Nocturno}
 
 \pars{Psalmus 1.} \scriptura{Ps. 18, 5; \textbf{H360}}
 
@@ -467,89 +467,6 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
-\pars{Versus.} \scriptura{Ps. 18, 5}
-
-% Versus. %%%
-\sineinitiali{temporalia/versus-inomnem-communis.gtex}
-
-\vspace{5mm}
-
-\sineinitiali{temporalia/oratiodominica-mat.gtex}
-
-\vspace{5mm}
-
-\pars{Absolutio.}
-
-\cuminitiali{}{temporalia/absolutio-exaudi.gtex}
-
-\vfill
-\pagebreak
-
-\cuminitiali{}{temporalia/benedictio-solemn-benedictione.gtex}
-
-\vspace{7mm}
-
-\lectioi
-
-\noindent \Vbardot{} Tu autem, Dómine, miserére nobis.
-\noindent \Rbardot{} Deo grátias.
-
-\vfill
-\pagebreak
-
-\pars{Responsorium 1.} \scriptura{\Rbardot{} Mt. 16, 19 \Vbardot{} ibid; \textbf{H280}}
-
-\vspace{-5mm}
-
-\responsorium{VII}{temporalia/resp-simonpetre-CROCHU.gtex}{}
-
-\vfill
-\pagebreak
-
-\cuminitiali{}{temporalia/benedictio-solemn-unigenitus.gtex}
-
-\vspace{7mm}
-
-\lectioii
-
-\noindent \Vbardot{} Tu autem, Dómine, miserére nobis.
-\noindent \Rbardot{} Deo grátias.
-
-\vfill
-\pagebreak
-
-\pars{Responsorium 2.} \scriptura{\Rbardot{} Io. 21, 15.17 \Vbardot{} Mt. 26, 35; \textbf{H280}}
-
-\vspace{-5mm}
-
-\responsorium{VI}{temporalia/resp-sidiligisme-CROCHU.gtex}{}
-
-\vfill
-\pagebreak
-
-\cuminitiali{}{temporalia/benedictio-solemn-spiritus.gtex}
-
-\vspace{7mm}
-
-\lectioiii
-
-\noindent \Vbardot{} Tu autem, Dómine, miserére nobis.
-\noindent \Rbardot{} Deo grátias.
-
-\vfill
-\pagebreak
-
-\pars{Responsorium 3.} \scriptura{\Rbardot{} Mt. 16, 18.19 \Vbardot{} ibid; \textbf{H280}}
-
-\vspace{-5mm}
-
-\responsorium{VII}{temporalia/resp-tuespetrus-CROCHU.gtex}{}
-
-\vfill
-\pagebreak
-
-\subhora{In II. Nocturno}
-
 \pars{Psalmus 4.} \scriptura{Ps. 46, 10; \textbf{H361}}
 
 \vspace{-4mm}
@@ -613,89 +530,6 @@ per infiníta sǽcula sæculórum.
 
 \vfill
 \pagebreak
-
-\pars{Versus.} \scriptura{Ps. 44, 17-18}
-
-% Versus. %%%
-\sineinitiali{temporalia/versus-constitues.gtex}
-
-\vspace{5mm}
-
-\sineinitiali{temporalia/oratiodominica-mat.gtex}
-
-\vspace{5mm}
-
-\pars{Absolutio.}
-
-\cuminitiali{}{temporalia/absolutio-ipsius.gtex}
-
-\vfill
-\pagebreak
-
-\cuminitiali{}{temporalia/benedictio-solemn-deus.gtex}
-
-\vspace{7mm}
-
-\lectioiv
-
-\noindent \Vbardot{} Tu autem, Dómine, miserére nobis.
-\noindent \Rbardot{} Deo grátias.
-
-\vfill
-\pagebreak
-
-\pars{Responsorium 4.} \scriptura{\Rbardot{} Mt. 14, 28.31 \Vbardot{} ibid. 14, 30; \textbf{H281}}
-
-\vspace{-5mm}
-
-\responsorium{VIII}{temporalia/resp-dominesitues-CROCHU.gtex}{}
-
-\vfill
-\pagebreak
-
-\cuminitiali{}{temporalia/benedictio-solemn-christus.gtex}
-
-\vspace{7mm}
-
-\lectiov
-
-\noindent \Vbardot{} Tu autem, Dómine, miserére nobis.
-\noindent \Rbardot{} Deo grátias.
-
-\vfill
-\pagebreak
-
-\pars{Responsorium 5.} \scriptura{\Rbardot{} Ac. 12, 7.8 \Vbardot{} ibid. 12, 7; \textbf{H281}}
-
-\vspace{-5mm}
-
-\responsorium{VII}{temporalia/resp-surgepetre-CROCHU.gtex}{}
-
-\vfill
-\pagebreak
-
-\cuminitiali{}{temporalia/benedictio-solemn-ignem.gtex}
-
-\vspace{7mm}
-
-\lectiovi
-
-\noindent \Vbardot{} Tu autem, Dómine, miserére nobis.
-\noindent \Rbardot{} Deo grátias.
-
-\vfill
-\pagebreak
-
-\pars{Responsorium 6.} \scriptura{\Rbardot{} Mt. 16, 19 \Vbardot{} ibid.; \textbf{H282}}
-
-\vspace{-5mm}
-
-\responsorium{VIII}{temporalia/resp-tuespastorovium-CROCHU.gtex}{}
-
-\vfill
-\pagebreak
-
-\subhora{In III. Nocturno}
 
 \pars{Psalmus 7.} \scriptura{Ps. 74, 11; \textbf{H361}}
 
@@ -761,10 +595,10 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
-\pars{Versus.} \scriptura{Ps. 138, 17}
+\pars{Versus.} \scriptura{Ps. 18, 5}
 
 % Versus. %%%
-\sineinitiali{temporalia/versus-nimis.gtex}
+\sineinitiali{temporalia/versus-inomnem-communis.gtex}
 
 \vspace{5mm}
 
@@ -774,16 +608,20 @@ per infiníta sǽcula sæculórum.
 
 \pars{Absolutio.}
 
-\cuminitiali{}{temporalia/absolutio-avinculis.gtex}
+\cuminitiali{}{temporalia/absolutio-exaudi.gtex}
 
 \vfill
 \pagebreak
 
-\cuminitiali{}{temporalia/benedictio-solemn-evangelica.gtex}
+\cuminitiali{}{temporalia/benedictio-solemn-benedictione.gtex}
 
 \vspace{7mm}
 
-\lectiovii
+\lectioi}{\pars{Lectio I.} \scriptura{Ac. 3, 1-5}
+
+\noindent De Actibus Apostolórum.
+
+\noindent Petrus autem et Ioánnes ascendébant in templum ad horam oratiónis nonam. Et quidam vir, qui erat claudus ex útero matris suæ, baiulabátur; quem ponébant quotídie ad portam templi, quæ dícitur Speciósa, ut péteret eleemósynam ab introëúntibus in templum. Is, cum vidísset Petrum et Ioánnem incipiéntes introíre in templum, rogábat ut eleemósynam accíperet. Intuens autem in eum Petrus cum Ioánne, dixit: Réspice in nos. At ille intendébat in eos, sperans se áliquid acceptúrum ab eis.
 
 \noindent \Vbardot{} Tu autem, Dómine, miserére nobis.
 \noindent \Rbardot{} Deo grátias.
@@ -791,20 +629,22 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
-\pars{Responsorium 7.} \scriptura{\Rbardot{} Lc. 22, 32 \Vbardot{} Mt. 16, 17; \textbf{H282}}
+\pars{Responsorium 1.} \scriptura{\Rbardot{} Mt. 16, 19 \Vbardot{} ibid; \textbf{H280}}
 
 \vspace{-5mm}
 
-\responsorium{III}{temporalia/resp-egoproterogavi-CROCHU.gtex}{}
+\responsorium{VII}{temporalia/resp-simonpetre-CROCHU.gtex}{}
 
 \vfill
 \pagebreak
 
-\cuminitiali{}{temporalia/benedictio-solemn-quorum.gtex}
+\cuminitiali{}{temporalia/benedictio-solemn-unigenitus.gtex}
 
 \vspace{7mm}
 
-\lectioviii
+\pars{Lectio II.} \scriptura{Ac. 3, 6-10}
+
+\noindent Petrus autem dixit: Argéntum et aurum non est mihi: quod autem hábeo, hoc tibi do: In nómine Iesu Christi Nazaréni surge, et ámbula. Et, apprehénsa manu eius déxtera, allevávit eum, et prótinus consolidátæ sunt bases eius, et plantæ. Et exsíliens stetit, et ambulábat; et intrávit cum illis in templum ámbulans, et exsíliens, et laudans Deum. Et vidit omnis pópulus eum ambulántem, et laudántem Deum. Cognoscébant autem illum, quod ipse erat, qui ad eleemósynam sedébat ad Speciósam portam templi; et impléti sunt stupóre et éxtasi in eo, quod contígerat illi.
 
 \noindent \Vbardot{} Tu autem, Dómine, miserére nobis.
 \noindent \Rbardot{} Deo grátias.
@@ -812,20 +652,22 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
-\pars{Responsorium 8.} \scriptura{\Rbardot{} Mt. 16, 13.16.18 \Vbardot{} ibid. 16, 17; \textbf{H282}}
+\pars{Responsorium 2.} \scriptura{\Rbardot{} Io. 21, 15.17 \Vbardot{} Mt. 26, 35; \textbf{H280}}
 
 \vspace{-5mm}
 
-\responsorium{I}{temporalia/resp-quemdicunthomines-CROCHU.gtex}{}
+\responsorium{VI}{temporalia/resp-sidiligisme-CROCHU.gtex}{}
 
 \vfill
 \pagebreak
 
-\cuminitiali{}{temporalia/benedictio-solemn-adsocietatem.gtex}
+\cuminitiali{}{temporalia/benedictio-solemn-spiritus.gtex}
 
 \vspace{7mm}
 
-\lectioix
+\pars{Lectio III.} \scriptura{Ac. 3, 11-16}
+
+\noindent Cum tenéret autem Petrum et Ioánnem, cucúrrit omnis pópulus ad eos ad pórticum, quæ appellátur Salomónis, stupéntes. Videns autem Petrus, respóndit ad pópulum: Viri Israëlítæ, quid mirámini in hoc, aut nos quid intuémini, quasi nostra virtúte aut potestáte fecérimus hunc ambuláre? Deus Abraham, et Deus Isaac, et Deus Iacob, Deus patrum nostrórum glorificávit Fílium suum Iesum, quem vos quidem tradidístis et negástis ante fáciem Piláti, iudicánte illo dimítti. Vos autem Sanctum et Iustum negástis, et petístis virum homicídam donári vobis: Auctórem vero vitæ interfecístis, quem Deus suscitávit a mórtuis, cuius nos testes sumus. Et in fide nóminis eius, hunc, quem vos vidístis et nostis, confirmávit nomen eius: et fides, quæ per eum est, dedit íntegram sanitátem istam in conspéctu ómnium vestrum.
 
 \noindent \Vbardot{} Tu autem, Dómine, miserére nobis.
 \noindent \Rbardot{} Deo grátias.
