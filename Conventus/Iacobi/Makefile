@@ -36,10 +36,10 @@ MODUS-98 = iv-A
 MODUS-99 = iii-b
 MODUS-109 = ii-D
 MODUS-112 = i-g
-# + vii-c
-MODUS-115 = i-g
+# + iii-b
+MODUS-115 = iv-E
 MODUS-116 = i-f
-MODUS-138 = viii-g
+MODUS-138 = vii-c
 MODUS-145 = viii-G
 MODUS-146 = i-f
 MODUS-147 = viii-G
@@ -107,7 +107,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo miserere salveregina-simplex subtuum 
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(foreach B,isoll-g,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex) \
-	    $(TMP_DIR)/ps112-initium-vii-c-auto.gtex $(TMP_DIR)/ps112viic.tex
+	    $(TMP_DIR)/ps112-initium-iii-b-auto.gtex $(TMP_DIR)/ps112iiib.tex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
@@ -129,7 +129,7 @@ PDF = iacobi.pdf
 all: $(PDF)
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
-$(TMP_DIR)/ps112viic.tex: TONUS = 2 0 2 0
+$(TMP_DIR)/ps112iiib.tex: TONUS = 2 0 2 0
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
 $(CZPSALMS): $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/%.pslm
 	$(GENPSALM)
@@ -155,7 +155,7 @@ $(patsubst %,$(TMP_DIR)/%.tex,$(BENEDICTUS)): \
 $(TMP_DIR)/%.tex: $(PSALMS_DIR)/benedictus.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
-$(TMP_DIR)/ps112viic.tex: \
+$(TMP_DIR)/ps112iiib.tex: \
 $(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps112.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
