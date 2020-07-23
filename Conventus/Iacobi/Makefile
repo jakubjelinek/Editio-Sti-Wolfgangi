@@ -103,7 +103,8 @@ SCORES = $(addprefix ant-,salvanos-antiquo miserere salveregina-simplex subtuum 
 			   egoproterogavi-CROCHU quemdicunthomines-CROCHU \
 			   sidiligisme-CROCHU simonpetre-CROCHU surgepetre-CROCHU \
 			   tuespetrus-CROCHU \
-			   immensosalvatoris insignisathleta) \
+			   immensosalvatoris insignisathleta beatieritis dumsteteris \
+			   istisuntquiviventes istisunttriumphatores istisuntvirisancti) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(foreach B,isoll-g,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex) \
