@@ -98,7 +98,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo miserere salveregina-simplex subtuum 
 	 $(addprefix absolutio-,exaudi ipsius avinculis) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
-					evangelica quorum adsocietatem) \
+					evangelica cujus-ipse adsocietatem) \
 	 $(addprefix resp-,tuespastorovium-CROCHU dominesitues-CROCHU \
 			   egoproterogavi-CROCHU quemdicunthomines-CROCHU \
 			   sidiligisme-CROCHU simonpetre-CROCHU surgepetre-CROCHU \
