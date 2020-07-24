@@ -103,7 +103,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo miserere salveregina-simplex subtuum 
 			   egoproterogavi-CROCHU quemdicunthomines-CROCHU \
 			   sidiligisme-CROCHU simonpetre-CROCHU surgepetre-CROCHU \
 			   tuespetrus-CROCHU \
-			   immensosalvatoris insignisathleta beatieritis dumsteteris \
+			   immensosalvatoris insignisathleta beatieritis dumsteteritis \
 			   istisuntquiviventes istisunttriumphatores istisuntvirisancti \
 			   vidiconjunctos) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex)
