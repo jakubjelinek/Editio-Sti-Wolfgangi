@@ -48,8 +48,9 @@ MODUS-149 = vii-c
 MODUS-150 = vii-c
 MODUS-dan3 = vii-c
 MODUS-magnificat-I = isoll-g
+MODUS-magnificat-II = viiisoll-G
 MODUS-benedictus-I = isoll-g
-MAGNIFICAT = $(foreach M,I,magnificat-$(M))
+MAGNIFICAT = $(foreach M,I II,magnificat-$(M))
 BENEDICTUS = $(foreach B,I,benedictus-$(B))
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(MAGNIFICAT) dan3 $(BENEDICTUS),$(MODUS-$(P))))
 CZPSALMOPTS = --accents 0:0 --title-pattern " " --no-paragraph
@@ -68,28 +69,20 @@ LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
 LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT) $(BENEDICTUS) dan3)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
-SCORES = $(addprefix ant-,salvanos-antiquo miserere salveregina-simplex subtuum \
-			  argentumetaurum damascipraepositus dixitangelusadpetrum \
-			  egoplantaviapollorigavit egoproterogavi gloriosiprincipes \
-			  gratiadeiinme libentergloriabor mihivivere misitdominus petreamasme \
-			  petrusetjoannes tervirgiscaesus tuespetrus vadeanania \
-			  sanctepauleapostole hodiesimonpetrus \
-			  anuntiaverunt-FKP clamaveruntiusti-FKP \
+SCORES = $(addprefix ant-,anuntiaverunt-FKP clamaveruntiusti-FKP \
 			  constitueseosprincipes-FKP custodiebant-FKP \
 			  dedistihereditatem-FKP exaltabunturcornuaiusti-FKP \
 			  inomnemterram-FKP luxortaestiustis-FKP principespopulorum-FKP \
 			  adchristi assumpsitjesus assumptojesus auctoricelebres \
 			  congaudendumest cumfacies dumperambularet gloriosasplendet \
 			  huiusinecclesia namsignis obeate occiditherodes relictisigitur) \
-	 $(addprefix hym-,AureaLuce JamBonePastor ORomaFelix FelixPerOmnes ApostolorumPassio \
-			  ExsultetCaelum OSempiternaeCuriae TeNostraLaetis) \
+	 $(addprefix hym-,ExsultetCaelum OSempiternaeCuriae TeNostraLaetis) \
 	 $(addprefix resp-,inomnemterram annuntiateinter \
 			   constitueseos inhoccognoscent) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
-	 $(foreach M,isoll-g,magnificat-initium-$(M)) \
+	 $(foreach M,isoll-g viiisoll-G,magnificat-initium-$(M)) \
 	 $(addprefix capitulum-,FratresJam) \
-	 $(addprefix versus-,inomnem inomnem-communis annuntiaverunt \
-			     nimis constitues annuntiaverunt-communis) \
+	 $(addprefix versus-,inomnem annuntiaverunt nimis constitues) \
 	 oratio oratio2 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor) \
@@ -99,11 +92,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo miserere salveregina-simplex subtuum 
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
 					evangelica cujus-ipse adsocietatem) \
-	 $(addprefix resp-,tuespastorovium-CROCHU dominesitues-CROCHU \
-			   egoproterogavi-CROCHU quemdicunthomines-CROCHU \
-			   sidiligisme-CROCHU simonpetre-CROCHU surgepetre-CROCHU \
-			   tuespetrus-CROCHU \
-			   immensosalvatoris insignisathleta beatieritis dumsteteritis \
+	 $(addprefix resp-,immensosalvatoris insignisathleta beatieritis dumsteteritis \
 			   istisuntquiviventes istisunttriumphatores istisuntvirisancti \
 			   vidiconjunctos) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex)
