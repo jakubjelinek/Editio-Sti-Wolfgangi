@@ -20,8 +20,9 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 18 33 44 46 60 62 63 74 92 96 98 99 109 110 111 112 116 120 145 146 147 148 149 150
+PSALMS = 4 18 33 44 46 60 62 63 74 90 92 96 98 99 109 110 111 112 116 120 133 145 146 147 148 149 150
 include tonus.mk
+MODUS-4 = viii-G
 MODUS-18 = ii-D
 MODUS-33 = vii-c2
 MODUS-44 = viii-A
@@ -30,6 +31,7 @@ MODUS-60 = viii-G
 MODUS-62 = iv-E
 MODUS-63 = viii-G
 MODUS-74 = vi-F
+MODUS-90 = viii-G
 MODUS-92 = i-g
 MODUS-96 = vi-F
 MODUS-98 = iv-A
@@ -40,6 +42,7 @@ MODUS-111 = iv-E
 MODUS-112 = i-g
 MODUS-116 = ii-D
 MODUS-120 = vi-F
+MODUS-133 = viii-G
 MODUS-145 = iv-E
 MODUS-146 = i-g
 MODUS-147 = vi-F
@@ -50,13 +53,14 @@ MODUS-dan3 = i-g
 MODUS-magnificat-I = ivsoll-E
 MODUS-magnificat-II = viiisoll-G
 MODUS-benedictus-I = viisoll-a
+MODUS-nuncdimittis = iii-a
 MAGNIFICAT = $(foreach M,I II,magnificat-$(M))
 BENEDICTUS = $(foreach B,I,benedictus-$(B))
-MODUSLIST = $(sort $(foreach P,$(PSALMS) $(MAGNIFICAT) dan3 $(BENEDICTUS),$(MODUS-$(P))))
+MODUSLIST = $(sort $(foreach P,$(PSALMS) $(MAGNIFICAT) dan3 nuncdimittis $(BENEDICTUS),$(MODUS-$(P))))
 CZPSALMOPTS = --accents 0:0 --title-pattern " " --no-paragraph
 CZPSALMS = $(patsubst %,$(TMP_DIR)/ps%-boh.tex,$(PSALMS))
-ALLCZPSALMS = $(CZPSALMS) $(patsubst %,$(TMP_DIR)/%-boh.tex,magnificat dan3)
-ALLCOMBPSALMS = $(patsubst %,$(TMP_DIR)/%-comb.tex,$(addprefix ps,$(PSALMS)) $(MAGNIFICAT) $(BENEDICTUS) dan3)
+ALLCZPSALMS = $(CZPSALMS) $(patsubst %,$(TMP_DIR)/%-boh.tex,magnificat dan3 nuncdimittis)
+ALLCOMBPSALMS = $(patsubst %,$(TMP_DIR)/%-comb.tex,$(addprefix ps,$(PSALMS)) $(MAGNIFICAT) $(BENEDICTUS) dan3 nuncdimittis)
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
 	   && $(SED) -i -e 's/\*/\\grestar{}/g' $@
 TONUS = $(TONUS-$(MODUS-$*))
@@ -67,7 +71,7 @@ LAPSALMOPTSACC = --accents $(word 1,$(TONUS)):$(word 3,$(TONUS)) \
 		 --preparatory-syllables $(word 2,$(TONUS)):$(word 4,$(TONUS))
 LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
-LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT) $(BENEDICTUS) dan3)
+LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT) $(BENEDICTUS) dan3 nuncdimittis)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant-,anuntiaverunt-FKP clamaveruntiusti-FKP \
 			  constitueseosprincipes-FKP custodiebant-FKP \
@@ -80,15 +84,16 @@ SCORES = $(addprefix ant-,anuntiaverunt-FKP clamaveruntiusti-FKP \
 			  etecceapparuerunteis eteccevoxdenube hodiedominusiesus \
 			  hodietransfigurato lexpermoysen resplenduitfacieseius \
 			  uttestimoniumhaberet visionemquamvidistis voxdecaelissonuit \
-			  adhuceoloquente respondensautempetrus) \
-	 $(addprefix hym-,CaelestisFormam DulcisIesuMemoria ONataLux) \
+			  adhuceoloquente respondensautempetrus miserere \
+			  salvanos-antiquo salveregina-simplex subtuum) \
+	 $(addprefix hym-,CaelestisFormam DulcisIesuMemoria ONataLux TeLucis) \
 	 $(addprefix resp-,gloriaethonore gloriosusapparuisti \
-			   magnificentiaetpulchritudo ) \
+			   magnificentiaetpulchritudo inmanus) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(foreach M,ivsoll-E viiisoll-G,magnificat-initium-$(M)) \
-	 $(addprefix capitulum-,SalvatoremExspectamus) \
-	 $(addprefix versus-,corona gloriosus) \
-	 oratio oratio2 supplicatiolitaniae oratiodominica oratiodominica-mat \
+	 $(addprefix capitulum-,SalvatoremExspectamus tuautem) \
+	 $(addprefix versus-,corona gloriosus custodi) \
+	 oratio oratio-visita supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
@@ -100,11 +105,13 @@ SCORES = $(addprefix ant-,anuntiaverunt-FKP clamaveruntiusti-FKP \
 	 $(addprefix resp-,immensosalvatoris insignisathleta beatieritis dumsteteritis \
 			   istisuntquiviventes istisunttriumphatores istisuntvirisancti \
 			   vidiconjunctos) \
-	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex)
+	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
+	 jubedomnebenedicere benedictio-noctemquietam lectiobrevis-fratressobrii \
+	 convertenosdeus an_salve_regina
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(foreach B,viisoll-a,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex);
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
-		   $(foreach P,dan3,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
+		   $(foreach P,dan3 nuncdimittis,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PSALMTONES_DIR)/$(2)-auto.gabc; \
 	     [ $(2) = "dir" ] && cd .. && $(SED) -i -e '/(::)$$$$/{/(,) (::)$$$$/!{s/<b>//g;s/<\/b>//g}}' $(3) || :
@@ -132,12 +139,12 @@ $(patsubst %,$(TMP_DIR)/%-boh.tex,$(BENEDICTUS)): $(TMP_DIR)/%-boh.tex: $(CZECH_
 $(TMP_DIR)/dan3-boh.tex: $(CZECH_PSALMS_DIR)/Pavlik/dan3.pslm
 	$(GENPSALM)
 $(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT)): PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --flex-underline --skip-verses 2 $(LAPSALMOPTSACC)
-$(TMP_DIR)/magnificat-boh.tex: $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/DMC199x/%.pslm
+$(TMP_DIR)/nuncdimittis-boh.tex $(TMP_DIR)/magnificat-boh.tex: $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/DMC199x/%.pslm
 	$(GENPSALM)
 $(LAPSALMS): $(TMP_DIR)/ps%.tex: $(PSALMS_DIR)/ps%.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
-$(patsubst %,$(TMP_DIR)/%.tex,dan3): \
+$(patsubst %,$(TMP_DIR)/%.tex,dan3 nuncdimittis): \
 $(TMP_DIR)/%.tex: $(PSALMS_DIR)/%.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
