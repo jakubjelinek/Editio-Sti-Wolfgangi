@@ -30,26 +30,25 @@ MODUS-60 = viii-G
 MODUS-62 = iv-E
 MODUS-63 = viii-G
 MODUS-74 = vi-F
-MODUS-92 = ii-D
+MODUS-92 = i-g
 MODUS-96 = vi-F
 MODUS-98 = iv-A
-MODUS-99 = iii-b
+MODUS-99 = ii-D
 MODUS-109 = ii-D
 MODUS-112 = i-g
-# + iii-b
 MODUS-115 = iv-E
 MODUS-116 = ii-D
 MODUS-138 = vii-c
 MODUS-145 = iv-E
 MODUS-146 = i-g
 MODUS-147 = vi-F
-MODUS-148 = vii-c
-MODUS-149 = vii-c
-MODUS-150 = vii-c
-MODUS-dan3 = vii-c
+MODUS-148 = vi-F
+MODUS-149 = vi-F
+MODUS-150 = vi-F
+MODUS-dan3 = i-g
 MODUS-magnificat-I = ivsoll-E
 MODUS-magnificat-II = viiisoll-G
-MODUS-benedictus-I = isoll-g
+MODUS-benedictus-I = viisoll-a
 MAGNIFICAT = $(foreach M,I II,magnificat-$(M))
 BENEDICTUS = $(foreach B,I,benedictus-$(B))
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(MAGNIFICAT) dan3 $(BENEDICTUS),$(MODUS-$(P))))
@@ -102,8 +101,7 @@ SCORES = $(addprefix ant-,anuntiaverunt-FKP clamaveruntiusti-FKP \
 			   vidiconjunctos) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = $(foreach B,isoll-g,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex) \
-	    $(TMP_DIR)/ps112-initium-iii-b-auto.gtex $(TMP_DIR)/ps112iiib.tex
+OTHERDEPS = $(foreach B,viisoll-a,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex);
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
@@ -125,7 +123,6 @@ PDF = transfiguratio.pdf
 all: $(PDF)
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
-$(TMP_DIR)/ps112iiib.tex: TONUS = 2 0 2 0
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
 $(CZPSALMS): $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/%.pslm
 	$(GENPSALM)
@@ -149,10 +146,6 @@ $(TMP_DIR)/%.tex: $(PSALMS_DIR)/magnificat.pslm
 	$(SED) -i -e 'y/Jj/Ii/' $@
 $(patsubst %,$(TMP_DIR)/%.tex,$(BENEDICTUS)): \
 $(TMP_DIR)/%.tex: $(PSALMS_DIR)/benedictus.pslm
-	$(GENPSALM)
-	$(SED) -i -e 'y/Jj/Ii/' $@
-$(TMP_DIR)/ps112iiib.tex: \
-$(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps112.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
 $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
