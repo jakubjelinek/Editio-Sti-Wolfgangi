@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 18 33 44 46 60 62 63 74 92 96 98 99 109 112 115 116 138 145 146 147 148 149 150
+PSALMS = 18 33 44 46 60 62 63 74 92 96 98 99 109 110 111 112 116 120 145 146 147 148 149 150
 include tonus.mk
 MODUS-18 = ii-D
 MODUS-33 = vii-c2
@@ -34,11 +34,12 @@ MODUS-92 = i-g
 MODUS-96 = vi-F
 MODUS-98 = iv-A
 MODUS-99 = ii-D
-MODUS-109 = ii-D
+MODUS-109 = i-g
+MODUS-110 = ii-D
+MODUS-111 = iv-E
 MODUS-112 = i-g
-MODUS-115 = iv-E
 MODUS-116 = ii-D
-MODUS-138 = vii-c
+MODUS-120 = vi-F
 MODUS-145 = iv-E
 MODUS-146 = i-g
 MODUS-147 = vi-F
@@ -84,7 +85,7 @@ SCORES = $(addprefix ant-,anuntiaverunt-FKP clamaveruntiusti-FKP \
 	 $(addprefix resp-,gloriaethonore gloriosusapparuisti \
 			   magnificentiaetpulchritudo ) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
-	 $(foreach M,ivsoll-E,magnificat-initium-$(M)) \
+	 $(foreach M,ivsoll-E viiisoll-G,magnificat-initium-$(M)) \
 	 $(addprefix capitulum-,SalvatoremExspectamus) \
 	 $(addprefix versus-,corona gloriosus) \
 	 oratio oratio2 supplicatiolitaniae oratiodominica oratiodominica-mat \
