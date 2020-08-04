@@ -20,22 +20,22 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 4 18 33 44 46 60 62 63 74 90 92 96 98 99 109 110 111 112 116 120 133 145 146 147 148 149 150
+PSALMS = 4 8 28 44 62 75 83 86 88 90 92 96 99 103 109 110 111 112 116 120 133 145 146 147 148 149 150
 include tonus.mk
 MODUS-4 = viii-G
-MODUS-18 = ii-D
-MODUS-33 = vii-c2
-MODUS-44 = viii-A
-MODUS-46 = viii-G
-MODUS-60 = viii-G
+MODUS-8 = ii-A
+MODUS-28 = iv-E
+MODUS-44 = viii-G
 MODUS-62 = iv-E
-MODUS-63 = viii-G
-MODUS-74 = vi-F
+MODUS-75 = i-a2
+MODUS-83 = i-g3
+MODUS-86 = i-g
+MODUS-88 = i-d
 MODUS-90 = viii-G
 MODUS-92 = i-g
-MODUS-96 = vi-F
-MODUS-98 = iv-A
+MODUS-96 = viii-G
 MODUS-99 = ii-D
+MODUS-103 = i-f
 MODUS-109 = i-g
 MODUS-110 = ii-D
 MODUS-111 = iv-E
@@ -85,7 +85,8 @@ SCORES = $(addprefix ant-,anuntiaverunt-FKP clamaveruntiusti-FKP \
 			  hodietransfigurato lexpermoysen resplenduitfacieseius \
 			  uttestimoniumhaberet visionemquamvidistis voxdecaelissonuit \
 			  adhuceoloquente respondensautempetrus miserere \
-			  salvanos-antiquo salveregina-simplex subtuum) \
+			  salvanos-antiquo salveregina-simplex subtuum \
+			  assumpsit audientesdiscipuli dominebonumest) \
 	 $(addprefix hym-,CaelestisFormam DulcisIesuMemoria ONataLux TeLucis) \
 	 $(addprefix resp-,gloriaethonore gloriosusapparuisti \
 			   magnificentiaetpulchritudo inmanus) \
@@ -97,7 +98,7 @@ SCORES = $(addprefix ant-,anuntiaverunt-FKP clamaveruntiusti-FKP \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
-	 dominelabiamea inv-regemapostolorum benedicamus-solemnis-laud \
+	 dominelabiamea  inv-summumregem benedicamus-solemnis-laud \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \

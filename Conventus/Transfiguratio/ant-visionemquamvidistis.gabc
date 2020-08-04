@@ -1,13 +1,14 @@
 name:Visionem quam vidistis;
 office-part:Antiphona;
 mode:1;
-book:Antiphonale monasticum III, 2007, p. 167;
+book:Antiphonale monasticum III, 2007, p. 167; H149;
 transcriber:Jakub Jelínek;
 commentary:Mt. 17, 9;
+nabc-lines:1;
 %%
 (c4)
-VI(d)si(ef)ó(g)nem(e) *()
-quam(g!h>) vi(fe)dís(d)tis(dfddc) (,)
-né(h)mi(g)ni(g) di(h)xé(gf)ri(g)tis,(f) (;)
-do(fd)nec(f) a(g) mór(h)tu(g)is(f) re(e)súr(fg~)gat(g) (,)
-Fí(gh)li(ge)us(fe) hó(d)mi(cd)nis.(d) (::)
+VI(d|ta)si(ef|peS)ó(g|vi)nem(e|ta) *()
+quam(g!h>|pe>) vi(fe|cl)dís(d|ta)tis(dfddc|toS2cl-) (,)
+né(h|vilsl2)mi(g|ta)ni(g|ta) di(h|vi)xé(gf|cl)ri(g|vi)tis,(f|ta-) (;)
+do(fd|cllsc3)nec(f|vihg) a(g|vihh) mór(h|vihj)tu(g|vihi)is(f|vihh) re(e|ta)súr(fg~|ta>)gat(g|vihg) (,)
+Fí(gh|peShg)li(ge|cl)us(fe|cl) hó(d|vi)mi(cd|pe)nis.(d|ta) (::)
