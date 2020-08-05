@@ -93,7 +93,7 @@ SCORES = $(addprefix ant-,anuntiaverunt-FKP clamaveruntiusti-FKP \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(foreach M,ivsoll-E viiisoll-G,magnificat-initium-$(M)) \
 	 $(addprefix capitulum-,SalvatoremExspectamus tuautem) \
-	 $(addprefix versus-,corona gloriosus custodi) \
+	 $(addprefix versus-,corona gloriosus custodi gloria) \
 	 oratio oratio-visita supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor) \
@@ -105,7 +105,7 @@ SCORES = $(addprefix ant-,anuntiaverunt-FKP clamaveruntiusti-FKP \
 					evangelica cujus-ipse adsocietatem) \
 	 $(addprefix resp-,immensosalvatoris insignisathleta beatieritis dumsteteritis \
 			   istisuntquiviventes istisunttriumphatores istisuntvirisancti \
-			   vidiconjunctos) \
+			   vidiconjunctos illuminare splendidafactaest assumensiesus) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
 	 jubedomnebenedicere benedictio-noctemquietam lectiobrevis-fratressobrii \
 	 convertenosdeus an_salve_regina
