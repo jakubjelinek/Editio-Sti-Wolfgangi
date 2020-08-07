@@ -181,6 +181,7 @@ MODUS-147-VII = e
 MODUS-benedictus-VIII = viiisoll-G
 MODUS-benedictus-IX = isoll-f
 MODUS-benedictus-X = isoll-g
+MODUS-benedictus-XI = iisoll-D
 MODUS-magnificat-VIII = isoll-f
 MODUS-magnificat-IX = viisoll-d
 MODUS-magnificat-X = viiisoll-G
@@ -188,10 +189,11 @@ MODUS-magnificat-XI = isoll-D
 MODUS-magnificat-XII = viisoll-a
 MODUS-magnificat-XIII = ivsoll-E2
 MODUS-magnificat-XIV = viiisoll-G2
+MODUS-magnificat-XV = viiisoll-C
 CANTICIS = isaiae ezechiae anna moysis habacuc moysis2i moysis2ii nuncdimittis dan3
 NUMSI = I II III IV V VI VII
-NUMSII = II III IV V VI VII VIII IX X
-NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV
+NUMSII = II III IV V VI VII VIII IX X XI
+NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV XV
 PSALMSALT = $(foreach V,$(NUMSI),$(addsuffix -$(V),$(PSALMS)))
 BENEDICTUS = $(foreach B,$(NUMSII),benedictus-$(B))
 MAGNIFICAT = $(foreach M,$(NUMSIII),magnificat-$(M))
@@ -247,7 +249,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  domusiacob eduxitdeus ipsividerunt laeteturcor visitanos \
 			  aitdominusvillico exaudistidomineorationem quidfaciamquiadominus \
 			  cumappropinquaretdominus sapientiaaedificavit scriptumestenimquia \
-			  sanctaetimmaculata) \
+			  sanctaetimmaculata continuoiesus cumquevidisset egoinaltissimishabito) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
