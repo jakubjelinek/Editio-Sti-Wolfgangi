@@ -20,8 +20,11 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 4 8 28 44 62 75 83 86 88 90 92 96 99 103 109 111 112 114 115 116 133 145 146 147 148 149 150
+PSALMS = 1 2 3 4 8 28 44 62 75 83 86 88 90 92 96 99 103 109 111 112 114 115 116 133 145 146 147 148 149 150
 include tonus.mk
+MODUS-1 = vii-a
+MODUS-2 = i-D
+MODUS-3 = viii-g
 MODUS-4 = viii-G
 MODUS-8 = ii-A
 MODUS-28 = iv-E
@@ -82,7 +85,7 @@ SCORES = $(addprefix ant-,adhaesitanimameapostte beatuslaurentiusclamavit \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(foreach M,viiisoll-G,magnificat-initium-$(M)) \
 	 $(addprefix capitulum-,FratresQui) \
-	 $(addprefix versus-,dispersit gloria levita) \
+	 $(addprefix versus-,dispersit gloria levita posuisti) \
 	 oratio oratio-visita supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor) \
