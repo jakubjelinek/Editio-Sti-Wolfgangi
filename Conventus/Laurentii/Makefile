@@ -20,13 +20,17 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 1 2 3 4 8 28 44 62 75 83 86 88 90 92 96 99 103 109 111 112 114 115 116 133 145 146 147 148 149 150
+PSALMS = 1 2 3 4 5 8 14 16 20 28 44 62 75 83 86 88 90 92 96 99 103 109 111 112 114 115 116 133 145 146 147 148 149 150
 include tonus.mk
-MODUS-1 = vii-a
-MODUS-2 = i-D
-MODUS-3 = viii-g
-MODUS-4 = viii-G
-MODUS-8 = ii-A
+MODUS-1 = vii-d
+MODUS-2 = viii-G
+MODUS-3 = viii-G
+MODUS-4 = i-D
+MODUS-5 = vii-a
+MODUS-8 = viii-g
+MODUS-14 = vii-c
+MODUS-16 = viii-g
+MODUS-20 = vii-a
 MODUS-28 = iv-E
 MODUS-44 = viii-G
 MODUS-62 = viii-G
@@ -79,7 +83,9 @@ ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant-,adhaesitanimameapostte beatuslaurentiusclamavit \
 			  beatuslaurentiusdixitmea beatuslaurentiusorabat incraticula \
 			  interrogatustedominum laurentiusbonumopus laurentiusingressusest \
-			  levitalaurentius misitdominus puermeusnolitimere) \
+			  levitalaurentius misitdominus puermeusnolitimere \
+			  dixitromanus ignemeexaminasti nonegote nonmederelinque \
+			  quoprogrederis strinxeruntcorporis) \
 	 $(addprefix hym-,InMartyrisLaurentii MartyrisChristi) \
 	 $(addprefix resp-,gloriaethonore posuistidomine) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
@@ -90,7 +96,7 @@ SCORES = $(addprefix ant-,adhaesitanimameapostte beatuslaurentiusclamavit \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
-	 dominelabiamea  inv-regemmartyrum benedicamus-solemnis-laud \
+	 dominelabiamea inv-regemmartyrum inv-venitelaurentii benedicamus-solemnis-laud \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
