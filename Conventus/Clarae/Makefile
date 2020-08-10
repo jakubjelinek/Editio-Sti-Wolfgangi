@@ -81,8 +81,11 @@ SCORES = $(addprefix ant-,agnesadagni corverbissapientiae cunctaprochristi excel
 	 dominelabiamea inv-regiquicarneminduit benedicamus-solemnis-laud \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) \
 	 $(addprefix benedictio-solemn-,ille cujus-ipsa adsocietatem) \
-	 $(addprefix resp-,) \
-	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex)
+	 $(addprefix resp-,amicacrucisplangere francisciprimaplantula \
+			   venielectamea vivensinmundo) \
+	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
+	 ps112-initium-iii-b ps121-initium-iv-E ps23-initium-iii-g \
+	 ps44-initium-iv-G ps45-initium-v-a ps62-initium-iv-E ps99-initium-iii-b
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(foreach B,viiisoll-G,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex)
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
