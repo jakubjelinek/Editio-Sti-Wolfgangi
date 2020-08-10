@@ -76,7 +76,7 @@ SCORES = $(addprefix ant-,agnesadagni corverbissapientiae cunctaprochristi excel
 	 $(addprefix versus-,auditui diffusa) \
 	 oratio oratio-visita supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
-	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor) \
+	 $(addprefix benedicamus-,feria-vesperae feria-laudes) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
 	 dominelabiamea inv-regiquicarneminduit benedicamus-solemnis-laud \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) \
