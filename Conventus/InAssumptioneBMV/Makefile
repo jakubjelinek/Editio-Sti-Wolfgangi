@@ -87,7 +87,7 @@ SCORES = $(addprefix ant-,animamealiquefacta assumptaestmaria benedictafilia com
 	 oratio supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,festis-bmv) \
-	 dominelabiamea $(addprefix inv-,) benedicamus-solemnis-laud \
+	 dominelabiamea inv-cuiushodie benedicamus-solemnis-laud \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
