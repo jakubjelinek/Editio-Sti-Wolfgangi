@@ -1,10 +1,11 @@
 name:Ecce tu pulchra es amica mea;
 % V 287 /154v;
 % I g4;
+% H309;
 mode:1;
 transcriber:Isabelle Valloton;
+nabc-lines:1;
 %%
 (c4)
-EC(df)ce(df) tu(dc) pul(f<)chra(gh) es(h) a(fg)mí(h)ca(ge) me(fg)a,(g) (,)
-ec(gh)ce(fe) tu(df) pul(d>)chra:(c) ó(da)cu(cd)li(d) tu(c)i(ff) co(gh)lum(ffd~)bá(d)rum.(d) (::)
-e(h) u(h) o(hg) u(gf) a(gh) e(g) (::)
+EC(df|pe)ce(df|pe) tu(dc|pr-) pul(f<|vi)chra(gh|pe) es(h|vi) a(fg|pe)mí(h|vi)ca(ge|cl) me(fg|pe)a,(g|ta) (,)
+ec(gh|pe)ce(fe|cl) tu(df|pe) pul(d>|vi>)chra:(c|ta) ó(da|cl)cu(cd|pe)li(d|vi) tu(c|ta)i(ff|bv) co(gh|peS)lum(ffd~|vi>)bá(d|ta)rum.(d|ta) (::)

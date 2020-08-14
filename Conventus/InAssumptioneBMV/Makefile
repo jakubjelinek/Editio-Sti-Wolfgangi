@@ -20,18 +20,24 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 18 33 44 46 60 62 63 74 92 96 98 99 109 112 115 116 138 145 146 147 148 149 150
+PSALMS = 8 18 23 33 44 45 46 60 62 63 74 86 92 95 96 97 98 99 109 112 115 116 138 145 146 147 148 149 150
 include tonus.mk
+MODUS-8 = i-g
 MODUS-18 = ii-D
+MODUS-23 = iii-a2
 MODUS-33 = vii-c2
-MODUS-44 = viii-A
+MODUS-44 = iv-E
+MODUS-45 = v-a
 MODUS-46 = viii-G
 MODUS-60 = viii-G
 MODUS-62 = ii_-a
 MODUS-63 = viii-G
 MODUS-74 = vi-F
+MODUS-86 = viii-G2
 MODUS-92 = vii-a
+MODUS-95 = vii-a
 MODUS-96 = vi-F
+MODUS-97 = vii-a
 MODUS-98 = iv-A
 MODUS-99 = viii-G
 MODUS-109 = viii-g
@@ -83,7 +89,7 @@ SCORES = $(addprefix ant-,animamealiquefacta assumptaestmaria benedictafilia com
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(foreach M,isoll-g isoll-D_ i-D_,magnificat-initium-$(M)) \
 	 $(addprefix capitulum-,BenedixitTe) \
-	 $(addprefix versus-,elegit exaltata) \
+	 $(addprefix versus-,elegit exaltata assumpta maria) \
 	 oratio supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,festis-bmv) \
@@ -92,9 +98,11 @@ SCORES = $(addprefix ant-,animamealiquefacta assumptaestmaria benedictafilia com
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
 					evangelica quorum adsocietatem) \
-	 $(addprefix resp-,) \
+	 $(addprefix resp-,vidispeciosam-sinedox) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
-	 magnificat-initium-isoll-g4 ps112-initium-i-g4 ps62-initium-ii_-a
+	 magnificat-initium-isoll-g4 ps112-initium-i-g4 ps62-initium-ii_-a \
+	 ps8-initium-i-g4 ps23-initium-iii-a2 ps44-initium-iv-E ps45-initium-v-a \
+	 ps95-initium-vii-a ps97-initium-vii-a
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(foreach B,isoll-g vi-F,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex) \
 	    $(TMP_DIR)/ps112-initium-iv-A-auto.gtex $(TMP_DIR)/ps112ivA.tex

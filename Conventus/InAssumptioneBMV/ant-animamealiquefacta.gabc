@@ -1,17 +1,18 @@
 name:Anima mea liquefacta;
 % VOR 287*;
 % vii a2;
+% H310;
 mode:7;
 transcriber:Isabelle Valloton;
+nabc-lines:1;
 %%
 (c3)
-A(e)ni(hg)ma(hi) me(i!jki)a(i) li(k)que(k)fác(k)ta(hi) est,(i) (,)
-ut(i) di(jiio)léc(hgh~)tus(f) lo(g)cú(h)tus(f) est;(e) (;)
-quae(ef)sí(f)vi(e) et(f) non(d) in(f)vé(hg)ni(f) il(h>)lum:(e) (,)
-vo(hi)cá(i)vi(e) et(f) non(h) res(gf)pón(g)dit(f) mi(e)hi.(e) (;)
-In(ik)ve(i)né(j!kl)runt(k) me(k) cus(h)tó(k)des(k) ci(k)vi(j)tá(i)tis,(i) (,)
-per(i)cus(ij)sé(kj)runt(i>) me(h) et(h) vul(i)ne(hg)ra(fe)vé(h)runt(i) me;(h) (,)
-tu(d)lé(e)runt(f) pá(h)li(hg)um(fe~) me(hi)um(i) cus(ij)tó(hf)des(g) mu(fg)ró(e)rum.(e) (;)
-Fí(k)li(j)ae(iivHG) Ie(f)rú(g)sa(hi)lem,(i) (,)
-nun(i)ti(i)á(i)te(h) di(i)léc(i)to(e) qui(d)a(f) a(gxghivHGF)mó(g)re(fgf) lán(e)gue(de)o.(e) (::)
-e(i) u(i) o(k) u(h) a(h) e(hf) (::)
+A(e|ta)ni(hg|cl)ma(hi|ta) me(i!jki|toS)a(i|ta) li(k|vihi)que(k|vihi)fác(k|vihi)ta(hi|pe) est,(i|ta) (,)
+ut(i|ta) di(jiio|cl)léc(hgh~|cl)tus(f|ta) lo(g|vi)cú(h|vi)tus(f|vi) est;(e|ta) (;)
+quæ(ef|pe)sí(f|vi)vi(e|ta) et(f|vi>) non(d|ta) in(f|vi)vé(hg|cl)ni(f|ta) il(h>|vi>)lum:(e|ta) (,)
+vo(hi|peS)cá(i|vs)vi(e|ta) et(f|vi) non(h|vi) res(gf|cl)pón(g|vi)dit(f|vi) mi(e|ta)hi.(e|ta) (;)
+In(ik|pe>hi)ve(i|ta)né(j!kl|saM3hi)runt(k|ta>) me(k|toShi) cus(h|ta)tó(k|vihi)des(k|vihi) ci(k|vihi)vi(j|vi)tá(i|ta)tis,(i|ta) (,)
+per(i|ta)cus(ij|pe)sé(kj|vihi)runt(i>|vi>) me(h|ta) et(h) vul(i|pe>)ne(hg|cl)ra(fe|cl)vé(h|vi)runt(i|vi>) me;(h|vi) (,)
+tu(d|ta)lé(e|vi)runt(f|vi) pá(h|vi)li(hg|pe)um(fe~|vi>) me(hi|pe)um(i|vi) cus(ij|pe)tó(hf|cl)des(g|vi) mu(fg|vs)ró(e|ta)rum.(e|ta) (;)
+Fí(k|vihi)li(j|vi)æ(iivHG|cl) Ie(f|ta)rú(g|vi)sa(hi|pe)lem,(i|vi) (,)
+nun(i|vi)ti(i|ta)á(i|vi)te(h|ta) di(i|vi)léc(i|vi)to(e|ta) qui(d|vi)a(f|ta) a(gxghivHGF|///vi)mó(g|toS)re(fgf|cl) lán(e|vi>)gue(de|pe)o.(e|ta) (::)

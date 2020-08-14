@@ -1,10 +1,11 @@
 name:Sicut lilium inter spinas;
 % V 287 /154v;
 % II d1;
+% H309;
 mode:2;
 transcriber:Isabelle Valloton;
+nabc-lines:1;
 %%
 (f3)
-SI(e)cut(f) lí(h)li(hvGF)um(f) in(hvGF)ter(c) spi(ef)nas(f) (,)
-sic(f) a(fe)mí(hi)ca(ih) me(ij)a(j) in(ji/jhi>)ter(f) fí(fvEDC)li(ef)as.(f) (::)
-e(h) u(h) o(h) u(h) a(ef) e(f) (::)
+SI(e|ta)cut(f|vi) lí(h|vi)li(hvGF|ci)um(f|ta) in(hvGF|vs>)ter(c|ta) spi(ef|pe)nas(f|ta) (,)
+sic(f|ta) a(fe|cl)mí(hi|pe)ca(ih|cl) me(ij|pe)a(j|vi) in(ji/jhi>|posu2)ter(f|cl>1) fí(fvEDC|ci)li(ef|pe)as.(f|ta) (::)

@@ -1,9 +1,11 @@
 name:Talis est dilectus meus;
 % GU 30;
+% H309;
 mode:6;
 transcriber:Isabelle Valloton;
+nabc-lines:1;
 %%
 (c4)
-TA(f)lis(gh) est(hg) di(ixivHGF)léc(g)tus(ghg) me(fd!ef)us,(f) (;)
-et(fd) i(e)pse(dc) est(f!gh) a(ixivHGF)mí(g)cus(ghg) me(ffgf)us,(f) (,)
-fí(f)li(e)æ(ixgiHG) Ie(hg)rú(f)sa(df)lem.(f) (::)
+TA(f|ta)lis(gh|pe) est(hg|cl) di(ixivHGF|///ci)léc(g|vi)tus(ghg|to) me(fd!ef|ta)us,(f|ta) (;)
+et(fd|pr) i(e|vi)pse(dc|vi) est(f!gh|pe) a(ixivHGF|///pr)mí(g|cl)cus(ghg|to) me(ffgf|ta)us,(f|ta) (,)
+fí(f|vi)li(e|ta)æ(ixgiHG|///pe) Ie(hg|cl)rú(f|pr)sa(df|pe)lem.(f|ta) (::)
