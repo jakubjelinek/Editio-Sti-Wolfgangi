@@ -98,7 +98,9 @@ SCORES = $(addprefix ant-,animamealiquefacta assumptaestmaria benedictafilia com
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
 					evangelica quorum adsocietatem) \
-	 $(addprefix resp-,vidispeciosam-sinedox) \
+	 $(addprefix resp-,vidispeciosam-sinedox beataesvirgomariadei beatammedicent \
+			   diffusaestgratia istaestspeciosa ornataminmonilibus \
+			   sicutcedrus supersalutem) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
 	 magnificat-initium-isoll-g4 ps112-initium-i-g4 ps62-initium-ii_-a \
 	 ps8-initium-i-g4 ps23-initium-iii-a2 ps44-initium-iv-E ps45-initium-v-a \
