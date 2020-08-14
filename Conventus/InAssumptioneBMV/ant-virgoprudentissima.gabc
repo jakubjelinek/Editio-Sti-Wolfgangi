@@ -1,12 +1,14 @@
 name:Magn Virgo prudentissima;
 % I g4;
+% H298;
 mode:1;
 transcriber:Isabelle Valloton;
+nabc-lines:1;
 %%
 (c4)
-VIr(d)go(ff) pru(d)den(dc~)tís(f)si(g)ma,(h) (,)
-quo(h) pro(gf)gré(f!gh)de(fvEDC)ris(d) qua(c)si(d) au(d)ró(dhjvIHG)ra(gh) val(h)de(f) rú(g)ti(fe)lans?(c) (;)
-Fí(f)li(gf)a(f) Si(efd)on,(d) (`)
-to(dc)ta(f) for(g)mó(hj)sa(h) et(h) su(h)á(hj)vis(hg) es,(gh) (,)
-pul(f)chra(gh) ut(h) lu(ghfg)na,(f!gefd) e(fg)léc(ghfg)ta(c) ut(d!efe) sol.(d) (::)
-e(h) u(h) o(hg) u(gf) a(gh) e(g) (::)
+VIr(d|ta)go(ff|vi) pru(d|ta)den(dc~|vi>)tís(f|vi)si(g|ta>)ma,(h|ta) (,)
+quo(h|vi) pro(gf|cl-lsi8)gré(f!gh|viqlhi!clhi)de(fvEDC|vi-su1suu1)ris(d|ta) qua(c|``talse4)si(d|vi) au(d|vihg)ró(dhjvIHG|pevi-hhsu1suu1lss3)ra(gh|pq-)
+val(h|``vi>lse4)de(f|cllsc2lsi8) rú(g|vi)ti(fe|cllsc3)lans?(c|ta) (;)
+Fí(f|vihg)li(gf|vihhlsc2)a(f|vi) Si(efd|vihi)on,(d|talsc3) (`)
+to(dc|clMlsc3)ta(f|vi) for(g|ta>)mó(hj|pe)sa(h|ta) et(h|ta) su(h|ta)á(hj|vi)vis(hg|vi) es,(gh|pq-) (,)
+pul(f|talsi6)chra(gh|pe) ut(h|vi>) lu(ghfg|poppt1)na,(f!gefd|peSsut2lss3) e(fg|viqlhi)léc(ghfg|vi-po-1lsc2)ta(c|ta) ut(d!efe|ql) sol.(d|ta) (::)
