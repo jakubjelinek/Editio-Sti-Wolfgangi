@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 8 18 23 33 44 45 46 60 62 63 74 86 92 95 96 97 98 99 109 112 115 116 138 145 146 147 148 149 150
+PSALMS = 8 18 23 33 44 45 46 60 62 63 74 86 92 95 96 97 98 99 109 112 115 116 121 126 138 145 146 147 148 149 150
 include tonus.mk
 MODUS-8 = i-g
 MODUS-18 = ii-D
@@ -40,11 +40,13 @@ MODUS-96 = vi-F
 MODUS-97 = vii-a
 MODUS-98 = iv-A
 MODUS-99 = viii-G
-MODUS-109 = viii-g
+MODUS-109 = vii-a
 MODUS-112 = i-g
-# + iv-A
+# + viii-G
 MODUS-115 = i-g
 MODUS-116 = viii-G
+MODUS-121 = ii_-a
+MODUS-126 = i-g3
 MODUS-138 = viii-g
 MODUS-145 = i-g
 MODUS-146 = i-f
@@ -54,7 +56,7 @@ MODUS-149 = i-g3
 MODUS-150 = i-g3
 MODUS-dan3 = vii-c2
 MODUS-magnificat-I = isoll-g
-MODUS-magnificat-II = isoll-D_
+MODUS-magnificat-II = viiisoll-G2
 MODUS-magnificat-III = i-D_
 MODUS-benedictus-I = isoll-g
 MODUS-benedictus-II = vi-F
@@ -87,7 +89,7 @@ SCORES = $(addprefix ant-,animamealiquefacta assumptaestmaria benedictafilia com
 	 $(addprefix hym-,AuroraVelut GaudiumMundi SolisOVirgo) \
 	 $(addprefix resp-,hodiemariavirgo mariavirgoexaltataest vidispeciosam) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
-	 $(foreach M,isoll-g isoll-D_ i-D_,magnificat-initium-$(M)) \
+	 $(foreach M,isoll-g viiisoll-G2 i-D_,magnificat-initium-$(M)) \
 	 $(addprefix capitulum-,BenedixitTe) \
 	 $(addprefix versus-,elegit exaltata assumpta maria) \
 	 oratio supplicatiolitaniae oratiodominica oratiodominica-mat \
@@ -107,7 +109,7 @@ SCORES = $(addprefix ant-,animamealiquefacta assumptaestmaria benedictafilia com
 	 ps95-initium-vii-a ps97-initium-vii-a
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(foreach B,isoll-g vi-F,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex) \
-	    $(TMP_DIR)/ps112-initium-iv-A-auto.gtex $(TMP_DIR)/ps112ivA.tex
+	    $(TMP_DIR)/ps112-initium-viii-G-auto.gtex $(TMP_DIR)/ps112viiiG.tex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
@@ -129,7 +131,7 @@ PDF = inassumptionebmv.pdf #$(patsubst %,die%-abmv.pdf,ii iii v vi vii viii)
 all: $(PDF)
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
-$(TMP_DIR)/ps112ivA.tex: TONUS = 1 2 1 3
+$(TMP_DIR)/ps112viiiG.tex: TONUS = 1 0 1 2
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
 $(CZPSALMS): $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/%.pslm
 	$(GENPSALM)
@@ -155,7 +157,7 @@ $(patsubst %,$(TMP_DIR)/%.tex,$(BENEDICTUS)): \
 $(TMP_DIR)/%.tex: $(PSALMS_DIR)/benedictus.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
-$(TMP_DIR)/ps112ivA.tex: \
+$(TMP_DIR)/ps112viiiG.tex: \
 $(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps112.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
