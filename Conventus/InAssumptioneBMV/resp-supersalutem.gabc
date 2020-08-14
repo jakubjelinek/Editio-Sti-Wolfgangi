@@ -3,13 +3,15 @@ office-part:Responsorium;
 mode:3;
 book:Cantus selecti, 1957, p. 136*;
 transcriber:MarkM;
+nabc-lines:1;
 %%
 (c4)
-SU(ed)per(g) sa(hih)lú(iv/jg/hg/h/jj/kjj)tem(ji) et(g) om(i)nem(j) pul(hhg~)chri(h)tú(h!ij)di(g)nem(ef!gwh/ig/ff/ded) (:)
-di(f)léc(gh)ta(h!iwj) es(ggf) a(g) Dó(gf/gff)mi(fvdf/gvFEf)no,(fe) (;)
-et(h!iwjIH) re(i)gí(i)na(g) cæ(h)ló(j!kl)rum(k) vo(k)cá(kjji)ri(hig) dig(h!iwj)na(ikjj) es:(ji) +(:)
-Gau(g)dent(hi) cho(i)ri(ghg) An(fe~)ge(fgf)ló(dc/ggfg/fh/jjk/ikj/hji)rum,(g) (;)
-con(j)sór(hi~)tes(g) et(g) con(g)cí(ge)ves(ge/fg) nó(eg/ge)stri.(e) <sp>V/</sp>.(::)
+SU(ed|cl)per(g|vi) sa(hih|to)lú(iv/jg|tacl|/hg|/cl|/h/jj/kjj|//tsMhhpohi)tem(ji|cl-) et(g|ta) om(i|vi)nem(j|vi) pul(hhg~|pr)chri(h|vi)tú(h!ij|vi-qlhi)di(g|vi)nem(ef!gwh/ig/ff/ded|qi-ppt2clS-hids-hitohj) (:)
+di(f|vi)léc(gh|pe)ta(h!iwj|vi-qlhi) es(ggf|pr) a(g|pe) Dó(gf/gff|pflsc2sthg)mi(fvdf/gvFEf|vi-vi-hhpp2su2vihi)no,(fe|cl) (;)
+et(h!iwjIH|pe-ci-) re(i|vi)gí(i|vi)na(g|ta) cæ(h|ta)ló(j!kl|vi-hjpqhm)rum(k|ta)
+vo(k|vihi)cá(kjji|clhi!pihi)ri(hig|to) dig(h!iwj|vi-qlhi)na(ikjj|//toShi) es:(ji|vi) +(:)
+Gau(g|ta)dent(hi|pe>) cho(i|vi-)ri(ghg|sa) An(fe~|ta)ge(fgf|to)ló(dc/ggfg/fh/jjk/ikj/hji|cl-vi-posa-1vi-hivi-hltohmtoS2hp)rum,(g|ta) (;)
+con(j|ta)sór(hi~|pe)tes(g|ta) et(g|ta) con(g|ta)cí(ge|cllst2)ves(ge/fg|cllsc2pq) nó(eg/ge|pe-cl-)stri.(e|ta) <sp>V/</sp>.(::)
 Val(ikjj)de(h!iwji/hhg) te(ij) nos(h) op(h)ór(h)tet(hg) ve(h)ne(j)rá(ikjj)ri,(ji) (;)
 quæ(hg) tam(hi) san(ij)cta(i) et(i) in(i)tá(ikj/jvIH/iwji)cta(hg) es(gh!iwj) Vir(jiih/ivGh)go.(hg) +(::)
-Gau(g)dent.(hi) (::)
+Gau(g|ta)dent.(hi|pe>) (::)
