@@ -57,9 +57,9 @@ MODUS-150 = i-g3
 MODUS-dan3 = vii-c2
 MODUS-magnificat-I = isoll-g
 MODUS-magnificat-II = viiisoll-G2
-MODUS-magnificat-III = i-D_
+MODUS-magnificat-III = viii-G2
 MODUS-benedictus-I = isoll-g
-MODUS-benedictus-II = vi-F
+MODUS-benedictus-II = i-g
 MAGNIFICAT = $(foreach M,I II III,magnificat-$(M))
 BENEDICTUS = $(foreach B,I II,benedictus-$(B))
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(MAGNIFICAT) dan3 $(BENEDICTUS),$(MODUS-$(P))))
@@ -89,7 +89,7 @@ SCORES = $(addprefix ant-,animamealiquefacta assumptaestmaria benedictafilia com
 	 $(addprefix hym-,AuroraVelut GaudiumMundi SolisOVirgo) \
 	 $(addprefix resp-,hodiemariavirgo mariavirgoexaltataest vidispeciosam) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
-	 $(foreach M,isoll-g viiisoll-G2 i-D_,magnificat-initium-$(M)) \
+	 $(foreach M,isoll-g viiisoll-G2 viii-G2,magnificat-initium-$(M)) \
 	 $(addprefix capitulum-,BenedixitTe) \
 	 $(addprefix versus-,elegit exaltata assumpta maria) \
 	 oratio supplicatiolitaniae oratiodominica oratiodominica-mat \
@@ -108,7 +108,7 @@ SCORES = $(addprefix ant-,animamealiquefacta assumptaestmaria benedictafilia com
 	 ps8-initium-i-g4 ps23-initium-iii-a2 ps44-initium-iv-E ps45-initium-v-a \
 	 ps95-initium-vii-a ps97-initium-vii-a
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = $(foreach B,isoll-g vi-F,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex) \
+OTHERDEPS = $(foreach B,isoll-g i-g,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex) \
 	    $(TMP_DIR)/ps112-initium-viii-G-auto.gtex $(TMP_DIR)/ps112viiiG.tex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
@@ -127,7 +127,7 @@ endef
 iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../PostPentecosten ../CorpusChristi
 include $(iter)
 
-PDF = inassumptionebmv.pdf #$(patsubst %,die%-abmv.pdf,ii iii v vi vii viii)
+PDF = inassumptionebmv.pdf $(patsubst %,die%-abmv.pdf,iii iv v vi vii viii)
 all: $(PDF)
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
