@@ -79,8 +79,8 @@ ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 	 $(addprefix versus-,nativitasest custodi orapronobis specie adjuvabit elegit) \
 	 $(addprefix hym-,AveMarisStella OGloriosaDomina TeLucis NuncSancte RectorPotens RerumDeus QuemTerra) \
-	 benedicamus-duplex-laudes benedicamus-duplex-vesperae \
-	 deusinadiutorium-communis supplicatiolitaniae oratiodominica resp1v \
+	 benedicamus-duplex-laudes benedicamus-duplex-vesperae benedicamus-festis-bmv \
+	 $(addprefix deusinadiutorium-,communis solemnis) supplicatiolitaniae oratiodominica resp1v \
 	 dominusvobiscum-solemnis domineexaudi $(addprefix magnificat-initium-,isoll-D2 isoll-f) \
 	 $(addprefix capitulum-,AbInitio tuautem EtSic InPlateis) \
 	 benedictio-noctemquietam jubedomnebenedicere lectiobrevis-fratressobrii \
@@ -97,7 +97,9 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 	 $(addprefix matant,1 2 3 4 5 6 7 8 9) $(addprefix matresp,1 2 3 4 5 6 7 8) \
 	 tedecetlaus tonus-evangelii-b tonus-lectionis-solemnis \
 	 $(addprefix venite2,a b c d e f) matinv-NativitatemVirginis \
-	 benedicamus-solemnis-laud tedeum-solemnis tuautem
+	 benedicamus-solemnis-laud tedeum-solemnis tedeum-solemnis-gn tuautem \
+	 $(addprefix resp-,beatissimaevirginis-CROCHU gloriosaevirginis-CROCHU \
+			   hodienataest-CROCHU nativitasgloriosae-CROCHU nativitastua-CROCHU)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(addprefix cantus/amon33/hym-,$(addsuffix -bohtext.tex,AveMarisStella OGloriosaDomina TeLucis NuncSancte RectorPotens RerumDeus)) \
 	    cantus/nrom02/hym-QuemTerra-bohtext.tex
@@ -118,10 +120,10 @@ $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e 
 endef
 iter-left := . $(TMP_DIR) $(addprefix cantus/,amon33 triplex76 nrom02) \
 	     $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) \
-	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 triplex76)
+	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 triplex76) ../CorpusChristi
 include $(iter)
 
-all: innativitatebmv.pdf
+all: innativitatebmv.pdf nativitatebmv.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
 $(TMP_DIR)/magnificat.tex: PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
@@ -147,7 +149,7 @@ $(TMP_DIR)/magnificat-comb.tex: PSSKIP = 2
 $(patsubst %,$(TMP_DIR)/ps%-comb.tex,90 118vii_viii 118ix_x 118xiii_xiv 118xv_xvi 118xix_xx 118xxi_xxii 133): PSSKIP = 0
 #$(TMP_DIR)/communio-versus-Exsurgat-comb.tex: $(patsubst %,communio-versus-Exsurgat%tex,. -boh.)
 #	$(GENPSCOMB)
-innativitatebmv.pdf: innativitatebmv.tex conventuscommune.tex translationes_cs.tex \
+innativitatebmv.pdf nativitatebmv.pdf: %.pdf: %.tex conventuscommune.tex translationes_cs.tex \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS) \
 	       imagines/imago_nativitas.jpg imagines/giotto.jpg
 	$(LUALATEX) -interaction=nonstopmode $<
