@@ -99,7 +99,8 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 	 $(addprefix venite2,a b c d e f) matinv-NativitatemVirginis \
 	 benedicamus-solemnis-laud tedeum-solemnis tedeum-solemnis-gn tuautem \
 	 $(addprefix resp-,beatissimaevirginis-CROCHU gloriosaevirginis-CROCHU \
-			   hodienataest-CROCHU nativitasgloriosae-CROCHU nativitastua-CROCHU)
+			   hodienataest-CROCHU nativitasgloriosae-CROCHU nativitastua-CROCHU \
+			   beatammedicent-CROCHU felixnamquees-CROCHU)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(addprefix cantus/amon33/hym-,$(addsuffix -bohtext.tex,AveMarisStella OGloriosaDomina TeLucis NuncSancte RectorPotens RerumDeus)) \
 	    cantus/nrom02/hym-QuemTerra-bohtext.tex
