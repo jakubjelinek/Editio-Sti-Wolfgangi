@@ -63,7 +63,7 @@ MODUS-benedictus = viiisoll-G
 MODUS-magnificat = isoll-D2
 MODUS-nuncdimittis = iii-a
 MODUS-dan3 = viii-G
-MODUSLIST = $(sort $(foreach P,$(PSALMS) benedictus magnificat nuncdimittis dan3,$(MODUS-$(P))))
+MODUSLIST = $(sort $(foreach P,$(PSALMS) benedictus magnificat nuncdimittis dan3,$(MODUS-$(P)))) ii_-a
 CZPSALMOPTS = --accents 0:0 --title-pattern " " --no-paragraph
 CZPSALMS = $(patsubst %,$(TMP_DIR)/ps%-boh.tex,$(PSALMS))
 ALLCZPSALMS = $(CZPSALMS) $(patsubst %,$(TMP_DIR)/%-boh.tex,benedictus magnificat nuncdimittis dan3)
@@ -108,11 +108,13 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 	 $(addprefix resp-,beatissimaevirginis-CROCHU gloriosaevirginis-CROCHU \
 			   hodienataest-CROCHU nativitasgloriosae-CROCHU nativitastua-CROCHU \
 			   beatammedicent-CROCHU felixnamquees-CROCHU) \
-	 ps112-initium-viii-G3 ps116-initium-viii-G3 magnificat-initium-ivsoll-E3
+	 ps112-initium-viii-G3 ps116-initium-viii-G3 magnificat-initium-ivsoll-E3 \
+	 ps145-initium-vii-a ps146-initium-vii-a ps147-initium-iv-E \
+	 ps8-initium-ii_-a ps95-initium-ii_-a ps96-initium-ii_-a ps97-initium-ii_-a
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(addprefix cantus/amon33/hym-,$(addsuffix -bohtext.tex,AveMarisStella OGloriosaDomina TeLucis NuncSancte RectorPotens RerumDeus)) \
 	    cantus/nrom02/hym-QuemTerra-bohtext.tex \
-	    $(TMP_DIR)/ps112viiiG.tex $(TMP_DIR)/magnificativE.tex
+	    $(TMP_DIR)/ps112viiiG.tex $(TMP_DIR)/magnificativE.tex $(patsubst %,$(TMP_DIR)/ps%ii_a.tex,95 96 97)
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3 benedictus nuncdimittis,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
@@ -136,12 +138,12 @@ include $(iter)
 all: innativitatebmv.pdf nativitatebmv.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
-$(TMP_DIR)/magnificat.tex: PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
+$(TMP_DIR)/magnificat.tex $(TMP_DIR)/magnificativE.tex: PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
 $(TMP_DIR)/ps90.tex: PSALMOPTS = --accents-style bold $(LAPSALMOPTSACC)
 $(patsubst %,$(TMP_DIR)/ps%.tex,118vii_viii 118ix_x 118xiii_xiv 118xv_xvi 118xix_xx 118xxi_xxii 133): PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold $(LAPSALMOPTSACC)
 $(TMP_DIR)/ps112viiiG.tex: TONUS = 1 0 1 2
+$(patsubst %,$(TMP_DIR)/ps%ii_a.tex,95 96 97): TONUS = 1 2 1 3
 $(TMP_DIR)/magnificativE.tex: TONUS = 1 3 1 3
-$(TMP_DIR)/magnificativE.tex: PSSKIP = 2
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
 $(CZPSALMS) $(TMP_DIR)/benedictus-boh.tex: $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/%.pslm
 	$(GENPSALM)
@@ -162,6 +164,18 @@ $(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps112.pslm
 	$(SED) -i -e 'y/Jj/Ii/' $@
 $(TMP_DIR)/magnificativE.tex: \
 $(TMP_DIR)/%.tex: $(PSALMS_DIR)/magnificat.pslm
+	$(GENPSALM)
+	$(SED) -i -e 'y/Jj/Ii/' $@
+$(TMP_DIR)/ps95ii_a.tex: \
+$(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps95.pslm
+	$(GENPSALM)
+	$(SED) -i -e 'y/Jj/Ii/' $@
+$(TMP_DIR)/ps96ii_a.tex: \
+$(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps96.pslm
+	$(GENPSALM)
+	$(SED) -i -e 'y/Jj/Ii/' $@
+$(TMP_DIR)/ps97ii_a.tex: \
+$(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps97.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
 $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
