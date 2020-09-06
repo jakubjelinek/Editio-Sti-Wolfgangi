@@ -63,7 +63,7 @@ MODUS-benedictus = viiisoll-G
 MODUS-magnificat = isoll-D2
 MODUS-nuncdimittis = iii-a
 MODUS-dan3 = viii-G
-MODUSLIST = $(sort $(foreach P,$(PSALMS) benedictus magnificat nuncdimittis dan3,$(MODUS-$(P)))) ii_-a
+MODUSLIST = $(sort $(foreach P,$(PSALMS) benedictus magnificat nuncdimittis dan3,$(MODUS-$(P))))
 CZPSALMOPTS = --accents 0:0 --title-pattern " " --no-paragraph
 CZPSALMS = $(patsubst %,$(TMP_DIR)/ps%-boh.tex,$(PSALMS))
 ALLCZPSALMS = $(CZPSALMS) $(patsubst %,$(TMP_DIR)/%-boh.tex,benedictus magnificat nuncdimittis dan3)
@@ -101,16 +101,17 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus deus christus ignem evangelica cujus-virgo-virginum adsocietatem) \
 	 $(addprefix matant,1 2 3 4 5 6 7 8 9) $(addprefix matresp,1 2 3 4 5 6 7 8) \
 	 $(addprefix ant-,adestnamquenativitas animamealiquefacta antethorum-FKP benedictatu descendiinhortum \
-			  dignareme gaudemariavirgo omniumrerumcreator postpartum sanctamaria totapulchraes) \
+			  dignareme gaudemariavirgo omniumrerumcreator postpartum sanctamaria totapulchraes \
+			  cordeetanimo nativitasgloriosae regaliexprogenie nativitatemhodiernam nativitastua) \
 	 tedecetlaus tedecetlausii tonus-evangelii-b tonus-lectionis-solemnis \
 	 $(addprefix venite2,a b c d e f) matinv-NativitatemVirginis inv-nativitatemvirginis \
 	 benedicamus-solemnis-laud tedeum-solemnis tedeum-solemnis-gn tuautem \
 	 $(addprefix resp-,beatissimaevirginis-CROCHU gloriosaevirginis-CROCHU \
 			   hodienataest-CROCHU nativitasgloriosae-CROCHU nativitastua-CROCHU \
 			   beatammedicent-CROCHU felixnamquees-CROCHU) \
-	 ps112-initium-viii-G3 ps116-initium-viii-G3 magnificat-initium-ivsoll-E3 \
-	 ps145-initium-vii-a ps146-initium-vii-a ps147-initium-iv-E \
-	 ps8-initium-ii_-a ps95-initium-ii_-a ps96-initium-ii_-a ps97-initium-ii_-a
+	 $(patsubst %,ps%-initium-viii-G3,112 116) magnificat-initium-ivsoll-E3 \
+	 $(patsubst %,ps%-initium-vii-a,145 146) ps147-initium-iv-E \
+	 $(patsubst %,ps%-initium-ii_-a,8 95 96 97) $(patsubst %,ps%-initium-vi-C,62 121)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(addprefix cantus/amon33/hym-,$(addsuffix -bohtext.tex,AveMarisStella OGloriosaDomina TeLucis NuncSancte RectorPotens RerumDeus)) \
 	    cantus/nrom02/hym-QuemTerra-bohtext.tex \
