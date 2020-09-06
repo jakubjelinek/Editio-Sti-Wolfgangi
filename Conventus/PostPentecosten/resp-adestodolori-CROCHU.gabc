@@ -1,12 +1,12 @@
 name: Adesto dolori meo;
 commentary: D. Crochu;
-centering-scheme: english;
+nabc-lines:1;
 %%
 (c4)
-A(d)dés(f/gh)to(g) do(f)ló(h)ri(g) me(h)o,(hwj) De(gfg)us,(fg/f/fod) (;)
-ní(fg)mi(efEDe)um(ed) fa(fe!fwg)tí(g!hwihi)gor,(hg) (:)
-et(fh) cé(-hj/jk)ci(j)dit(j) in(hj~) luc(jjoi)tum(hg) cý(jvjvIG)tha(h)ra(j) me(ikjjs)a,(ji) +(:)
-et(jvjvIH) can(k>)tá(ji)ti(hi)o(i) me(ihhog/hv)a(hg) in(g) plo(g)ra(gffvED)ti(g)ó(g!hwihi)nem.(hg) <sp>V/</sp>.(::)
-Ver(j)sa(ji) est(jkj/iji/hhog) in(hi~) luc(i)tum(i) cý(ih)tha(ij)ra(hi) me(g!hwih)a,(hg) (;)
-et(g) ór(fg~)ga(g)num(g) me(gh)um(g) in(g) vo(ixhiHGhih)cem(ghf~) flén(gh)ti(iyh!iwji/jkJIH)um.(hiHGhg) +(::)
-Et.(jvjvIH) (::)
+A(d|gr)dés(f/gh|vi-pehi)to(g|vi) do(f|ta)ló(h|vi)ri(g|ta) me(h|vi)o,(hwj|ql) De(gfg|po)us,(fg/f/fod|pe-1pr) (;)
+ní(fg|peS)mi(efEDe|pe-1su2vihh)um(ed|cl-) fa(fe!fwg|```cl-qilse6)tí(g!hwihi|vi-qlhi!pohi)gor,(hg|cl-) (:)
+et(fh|pe) cé(-hj/jk|pepehi)ci(j|vi-)dit(j|vi-) in(hj~|`ta>lsi7) luc(jjoi|pr-)tum(hg|clhg) cý(jvjvIG|vi-hh`ci-hh)tha(h|vi)ra(j|vi) me(ikjjs|tohisthj)a,(ji|tosthg) +(:)
+et(jvjvIH|vi-hh`ci-hh) can(k>|vi>hilss3)tá(ji|cllsc3)ti(hi|pe)o(i|vi) me(ihhog/hv|cl!prlsc2vihg)a(hg|cl-) in(g|vi) plo(g|vi)ra(gffvED|clS-hhci-hh)ti(g|vi)ó(g!hwihi|vi-qlhi!pohi)nem.(hg|cl-) <sp>V/</sp>.(::)
+Ver(j|vi)sa(ji|cl) est(jkj/iji/hhog|toS2hitoS2hipr) in(hi~|ta>) luc(i|ta)tum(i|ta) cý(ih|cl)tha(ij|pe)ra(hi|pe) me(g!hwih|ql!clppt1)a,(hg|cl-) (;)
+et(g|vi) ór(fg~|ta>)ga(g|ta)num(g|ta) me(gh|pe)um(g|ta) in(g|ta) vo(ixhiHGhih|///pe-su2to)cem(ghf~|pe>) flén(gh|peS)ti(iyh!iwji/jkJIH|///ql!clppt1//toS2hhsu2)um.(hiHGhg|pe-1su2cl-) +(::)
+Et.(jvjvIH|vi-hh`ci-hh) (::)
