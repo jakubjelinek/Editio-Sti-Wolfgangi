@@ -110,7 +110,7 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 			   hodienataest-CROCHU nativitasgloriosae-CROCHU nativitastua-CROCHU \
 			   beatammedicent-CROCHU felixnamquees-CROCHU) \
 	 $(patsubst %,ps%-initium-viii-G3,112 116) magnificat-initium-ivsoll-E3 \
-	 $(patsubst %,ps%-initium-vii-a,145 146) ps147-initium-iv-E \
+	 $(patsubst %,ps%-initium-vii-a,145 146) ps147-initium-iv-E ps23-initium-iv-c \
 	 $(patsubst %,ps%-initium-ii_-a,8 95 96 97) $(patsubst %,ps%-initium-vi-C,62 121)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(addprefix cantus/amon33/hym-,$(addsuffix -bohtext.tex,AveMarisStella OGloriosaDomina TeLucis NuncSancte RectorPotens RerumDeus)) \
