@@ -3,21 +3,22 @@ office-part:Hymnus;
 mode:1;
 book:Graduale Romanum, 1961, p. 232 & Graduale Romanum, 1961, p. 236 & The Liber Usualis, 1961, p. 742;
 transcriber:Andrew Hinkley; Dominique CROCHU;
+nabc-lines:1;
 %%
 (c4)
-CRux(d) fi(e)dé(gh)lis,(hg) in(h)ter(j) o(ji)mnes(hg__) (,)
-Ar(i)bor(j) u(kl)na(hg) nó(j)bi(ih)lis:(h.) (:)
-Nul(h)la(hji) sil(g)va(ge) ta(f)lem(dc) pro(de)fert,(efe.) (,)
-Fron(d)de,(dh) fló(hg)re,(ed) gér(f)mi(ed)ne:(d.) (:)
-Dul(h)ce(hji) li(g)gnum,(ge) dul(f)ci(dc) cla(de)vos,(efe.) (,)
-Dul(d)ce(dh) pon(hg)dus(ed) sú(f)sti(ed)net.(d.) (::)
+CRux(d|ta) fi(e|vi)dé(gh|peS)lis,(hg|cl-) in(h|vi)ter(j|pe) o(ji|cl>)mnes(hg__|cl-) (,)
+Ar(i|pe>)bor(j|pe) u(kl|peShn)na(hg|cl-) nó(j|to)bi(ih|vi-su1sut1)lis:(h.|ta) (:)
+Nul(h|ta)la(hji|to) sil(g|ta)va(ge|cllsc2) ta(f|vi)lem(dc|vi>) pro(de|peS)fert,(efe.|ta-pr) (,)
+Fron(d|vi>)de,(dh|viqihi) fló(hg|vi-su1sut1)re,(ed|cl-) gér(f|pe>)mi(ed|vi-su1sut1)ne:(d.|ta) (:)
+Dul(h|vi)ce(hji|to) li(g|vi)gnum,(ge|vi>) dul(f|vi)ci(dc|cllsc2) cla(de|peS)vos,(efe.|ta-pr) (,)
+Dul(d|vi>)ce(dh|viqihi) pon(hg|cl>)dus(ed|cl) sú(f|cl-)sti(ed|ci-)net.(d.|ta) (::)
 
-Pan(d)ge(e) lin(gh)gua,(hg) glo(h')ri(j)ó(ji)si(h_g) (,)
-Prǽ(i)li(j)um(kl) cer(hg~)tá(j)mi(ih)nis,(h.) (:)
-Et(h) su(hji)per(g) Cru(ge)cis(f) tro(dc)phǽ(de)o(efe.) (,)
-Dic(d) tri(dh)úm(hg~)phum(ed) nó(f)bi(ed)lem,(d.) (:)
-Quá(h)li(hji)ter(g) Red(ge)émp(f)tor(dc) or(de)bis(efe.) (,)
-Im(d)mo(dh)lá(hg)tus(edf) ví(f)ce(ed)rit.(d.) (::)
+Pan(d|ta)ge(e|vi) lin(gh|peS)gua,(hg|cl-) glo(h'|vi)ri(j|pehg)ó(ji|cllstw3)si(h_g|cl) (,)
+Prǽ(i|vi)li(j|vihg)um(kl|peShn) cer(hg~|vi>)tá(j|vi)mi(ih|cllsc3)nis,(h.|ta) (:)
+Et(h|ta) su(hji|ta)per(g|vi>) Cru(ge|vi)cis(f|cllsc2) tro(dc|ci-)phǽ(de|peS)o(efe.|peS) (,)
+Dic(d|ta) tri(dh|pe)úm(hg~|vi>)phum(ed|vi>) nó(f|vi)bi(ed|cllsc2)lem,(d.|ta) (:)
+Quá(h|vi)li(hji|cllsc2)ter(g|ta) Red(ge|cllsc2)émp(f|vi)tor(dc|cllsc2) or(de|peS)bis(efe.|peS) (,)
+Im(d|ta)mo(dh|pe)lá(hg|cl-)tus(edf|clhglsc2) ví(f|vi)ce(ed|cllsc2)rit.(d.|ta) (::)
 
 De(d) pa(e)rén(gh)tis(hg) pro(h)to(j)plás(ji)ti(h_g) (,)
 Frau(i)de(j) Fac(kl)tor(hg) cón(j)do(ih)lens,(h.) (:)

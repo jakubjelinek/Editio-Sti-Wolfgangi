@@ -1,15 +1,16 @@
 name: Ecce Crucem Domini;
 office-part: laudes, 3. antiphona;
 occasion: Exaltatio Sanctae Crucis;
-book: Antiphonale Monasticum, 1934, p. 1041;
+book: Antiphonale Monasticum, 1934, p. 1041; H257;
 transcriber: Jakub Pavlík;
 mode: 1;
 annotation: I f;
+nabc-lines:1;
 %%
 
 (c4)
-EC(d)ce(ef) Cru(g)cem(g>) Dó(fg)mi(fe)ni,(d) *(;)
-fú(f!gwh)gi(h)te(ghg) par(ef)tes(g) ad(f>)vér(fe>)sæ:(ded) (;)
-vi(c)cit(cd~) le(d)o(d) (`)
-de(d) tri(e)bu(f) Iu(gh)da,(ghg) (,)
-ra(ef)dix(g) Da(f)vid,(evDC) al(d)le(fe)lú(d)ia.(d) (::)
+EC(d|ta)ce(ef|peS) Cru(g|vi)cem(g>|vi>) Dó(fg|peS)mi(fe|cl)ni,(d|ta) *(;)
+fú(f!gwh|vi-qlhi)gi(h|vi)te(ghg|toS) par(ef|peS)tes(g|vi) ad(f>|vi>)vér(fe>|cl>)sæ:(ded|toS) (;)
+vi(c|ta)cit(cd~|ta>) le(d|ta)o(d|ta-lsx6) (`)
+de(d|ta) tri(e|vi)bu(f|vihh) Iu(gh|pe)da,(ghg|to-) (,)
+ra(ef|peS)dix(g|vi) Da(f|vi)vid,(evDC|ci-) al(d|vi)le(fe|cl)lú(d|ta)ia.(d|ta) (::)

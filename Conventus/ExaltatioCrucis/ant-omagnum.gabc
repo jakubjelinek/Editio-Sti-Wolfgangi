@@ -1,14 +1,15 @@
 name: O magnum pietatis opus;
 office-part: laudes, 1. antiphona;
 occasion: Exaltatio Sanctae Crucis;
-book: Antiphonale Monasticum, 1934, p. 1040;
+book: Antiphonale Monasticum, 1934, p. 1040; H257;
 transcriber: Jakub Pavlík;
 mode: 7;
 annotation: VII c;
+nabc-lines:1;
 %%
 
 (c3)
-O(ig/ij) ma(i!j>)gnum(i) *()
-pi(i)e(g)tá(hi)tis(f) o(e)pus!(e) (;)
-Mors(g) mór(h)tu(g)a(f) tunc(h) est,(g) (;)
-quan(g)do(h) hoc(iwji) in(h) li(h>)gno(gh) mór(f)tu(e)a(f) vi(h)ta(g) fu(e)it.(e) (::)
+O(ig/ij|clpe) ma(i!j>|pe>)gnum(i|ta) *()
+pi(i|vi)e(g|ta)tá(hi|pe)tis(f|vi) o(e|ta)pus!(e|ta) (;)
+Mors(g|vi-) mór(h|vihg)tu(g|vihg)a(f|ta) tunc(h|vi) est,(g|ta) (;)
+quan(g|ta)do(h|vi) hoc(iwji|vi-qihi!cl-hi) in(h|ta) li(h>|vi>)gno(gh|peSlsx6) mór(f|vi)tu(e|ta)a(f|vi) vi(h|vihh)ta(g|vihg) fu(e|ta)it.(e|ta) (::)
