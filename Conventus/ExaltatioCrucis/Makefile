@@ -104,7 +104,9 @@ SCORES = $(addprefix versus-,hocsignum adoramuste omnisterra) \
 	 inv-christumregem $(addprefix resp-,adoramustechriste ocruxgloriosa) \
 	 tedecetlaus tedecetlausii tonus-evangelii-b tonus-lectionis-solemnis \
 	 benedicamus-solemnis-laud tedeum-solemnis tedeum-solemnis-gn tuautem \
-	 $(addprefix resp-,ocruxgloriosa-CROCHU)
+	 $(addprefix resp-,ocruxgloriosa-CROCHU agnusdeichristus-CROCHU cruxbenedictanitet-CROCHU \
+			   cruxfidelis-CROCHU dulcelignum-CROCHU gloriosumdiem hocsignumcrucis-CROCHU \
+			   ocruxbenedicta-CROCHU)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(TMP_DIR)/ps116iiD.tex $(TMP_DIR)/magnificativE.tex $(TMP_DIR)/ps116-initium-ii-D-auto.gtex \
 	    $(TMP_DIR)/magnificat-initium-ivsoll-E.gtex
