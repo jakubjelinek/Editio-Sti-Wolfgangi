@@ -21,11 +21,16 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 4 8 18 23 44 45 62 66 86 90 92 95 96 97 99 109 112 116 118v_vi 118vii_viii 118ix_x 118xi_xii 118xiii_xiv 118xv_xvi 118xvii_xviii 118xix_xx 118xxi_xxii 121 126 133 145 146 147 148 149 150
+PSALMS = 1 2 3 4 8 10 18 20 23 44 45 62 66 86 90 92 95 96 97 99 109 112 116 118v_vi 118vii_viii 118ix_x 118xi_xii 118xiii_xiv 118xv_xvi 118xvii_xviii 118xix_xx 118xxi_xxii 121 126 133 145 146 147 148 149 150
 include tonus.mk
+MODUS-1 = vi-F
+MODUS-2 = i-a2
+MODUS-3 = viii-G
 MODUS-4 = viii-G
 MODUS-8 = iv-A
+MODUS-10 = i-g
 MODUS-18 = iv-A
+MODUS-20 = iv-E
 MODUS-23 = iv-A
 MODUS-44 = vii-c
 MODUS-45 = vii-c
@@ -34,9 +39,9 @@ MODUS-66 = dir
 MODUS-86 = vii-c
 MODUS-90 = viii-G
 MODUS-92 = viii-G
-MODUS-95 = iv-c
-MODUS-96 = iv-c
-MODUS-97 = iv-c
+MODUS-95 = viii-G
+MODUS-96 = vii-a
+MODUS-97 = i-g
 MODUS-99 = vii-c
 MODUS-109 = viii-G
 MODUS-112 = vii-c
@@ -80,19 +85,21 @@ LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
 LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,benedictus magnificat nuncdimittis dan3)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
-SCORES = $(addprefix versus-,hocsignum) \
-	 $(addprefix hym-,CruxFidelis) \
+SCORES = $(addprefix versus-,hocsignum adoramuste omnisterra) \
+	 $(addprefix hym-,CruxFidelis SalveCruxSancta SignumCrucis VexillaRegis) \
 	 benedicamus-duplexmajus-laudes benedicamus-duplexmajus-vesperae \
 	 $(addprefix deusinadiutorium-,communis solemnis alter) supplicatiolitaniae oratiodominica \
 	 dominusvobiscum-solemnis domineexaudi $(addprefix magnificat-initium-,isoll-D2 isoll-f) \
 	 $(addprefix capitulum-,HocEnimSentite) \
 	 oratio oratiodominica-mat benedicamus-minor \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) dominelabiamea \
-	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus deus christus ignem evangelica cujus-virgo-virginum adsocietatem) \
+	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus deus christus ignem evangelica divinum adsocietatem) \
 	 $(addprefix ant-,adoramustechriste adoremuscrucissignaculum crucemsanctam crucifixussurrexit \
 			  cruxalmafulget cruxbenedictanitet eccecrucem mihivivere nosautem ocruxadmirabilis \
 			  ocruxsplendidior omagnum persignumcrucis pertuamcrucem propterlignum salvanos \
-			  salvatormundi superomnia tuamcrucemadoramus veniteomnesadoremus) \
+			  salvatormundi superomnia tuamcrucemadoramus veniteomnesadoremus \
+			  crucemtuam salvecruxpretiosa salvecruxquae) \
+	 inv-christumregem $(addprefix resp-,adoramustechriste ocruxgloriosa) \
 	 tedecetlaus tedecetlausii tonus-evangelii-b tonus-lectionis-solemnis \
 	 benedicamus-solemnis-laud tedeum-solemnis tedeum-solemnis-gn tuautem \
 	 $(addprefix resp-,ocruxgloriosa-CROCHU)
