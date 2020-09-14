@@ -26,7 +26,7 @@ include tonus.mk
 MODUS-1 = vi-F
 MODUS-2 = i-a2
 MODUS-3 = viii-g
-MODUS-4 = viii-G
+MODUS-4 = viii-g
 MODUS-8 = iv-A
 MODUS-10 = i-g
 MODUS-18 = iv-A
