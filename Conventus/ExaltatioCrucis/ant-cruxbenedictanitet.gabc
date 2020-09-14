@@ -1,13 +1,14 @@
 name:Crux benedicta nitet;
 office-part:Antiphona;
 mode:8;
-book:Antiphonale monasticum III, 2007, p. 214;
+book:Antiphonale monasticum III, 2007, p. 214; H258;
 transcriber:Jakub Jelínek;
 commentary:S. Venantius Fortunatus;
+nabc-lines:1;
 %%
 (c4)
-CRux(ggo) *()
-be(f)ne(hj)díc(j)ta(j) ni(ji)tet,(h) (,)
-Dó(jk)mi(ji)nus(hg) qua(h) car(g>)ne(f) pe(g)pén(fe/fed~)dit,(d) (;)
-at(d)que(e) cru(f)ó(g)re(g) su(h)o(g) (,)
-vúl(h>)ne(g)ra(f) nos(h)tra(hji) la(g)vit.(g) (::)
+CRux(ggo|vs) *()
+be(f|ta)ne(hj|pe)díc(j|vi-)ta(j|ta) ni(ji|cl)tet,(h|ta) (,)
+Dó(jk|peShi)mi(ji|cllsc3)nus(hg|cl-) qua(h|vihg) car(g>|vi>)ne(f|ta) pe(g|vi)pén(fe/fed~|vicl>)dit,(d|ta) (;)
+at(d|vi)que(e|vihg) cru(f|vihh)ó(g|vihi)re(g|tahh) su(h|vihi)o(g|tahh) (,)
+vúl(h>|vi>hh)ne(g|vi)ra(f|ta) nos(h|vi)tra(hji|to) la(g|ta)vit.(g|ta) (::)
