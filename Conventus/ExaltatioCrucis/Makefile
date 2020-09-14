@@ -25,7 +25,7 @@ PSALMS = 1 2 3 4 8 10 18 20 23 44 45 62 66 86 90 92 95 96 97 99 109 110 111 112 
 include tonus.mk
 MODUS-1 = vi-F
 MODUS-2 = i-a2
-MODUS-3 = viii-G
+MODUS-3 = viii-g
 MODUS-4 = viii-G
 MODUS-8 = iv-A
 MODUS-10 = i-g
