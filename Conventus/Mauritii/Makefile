@@ -42,11 +42,11 @@ MODUS-92 = viii-G
 MODUS-95 = viii-G
 MODUS-96 = vii-a
 MODUS-97 = i-g
-MODUS-99 = iii-a
-MODUS-109 = vii-c
-MODUS-110 = iii-a
-MODUS-111 = i-f
-MODUS-112 = vii-c
+MODUS-99 = i-g5
+MODUS-109 = viii-G
+MODUS-110 = i-g5
+MODUS-111 = v-g
+MODUS-112 = vii-a
 MODUS-116 = iii-a
 MODUS-118v_vi = vii-c
 MODUS-118vii_viii = vii-c
@@ -66,9 +66,9 @@ MODUS-147 = ii-D
 MODUS-148 = vii-a
 MODUS-149 = vii-a
 MODUS-150 = vii-a
-MODUS-benedictus = isoll-D2
-MODUS-magnificat = isoll-D2
-MODUS-dan3 = iii-a2
+MODUS-benedictus = isoll-D_
+MODUS-magnificat = isoll-D_
+MODUS-dan3 = i-g
 MODUSLIST = $(sort $(foreach P,$(PSALMS) benedictus magnificat dan3,$(MODUS-$(P))))
 CZPSALMOPTS = --accents 0:0 --title-pattern " " --no-paragraph
 CZPSALMS = $(patsubst %,$(TMP_DIR)/ps%-boh.tex,$(PSALMS))
@@ -88,9 +88,9 @@ LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,benedictus magnificat dan3)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix versus-,stant) \
 	 $(addprefix hym-,AlmaChristi OAgaunensis) \
-	 benedicamus-duplexmajus-laudes benedicamus-duplexmajus-vesperae \
+	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
 	 $(addprefix deusinadiutorium-,communis solemnis alter) supplicatiolitaniae oratiodominica \
-	 dominusvobiscum-solemnis domineexaudi $(addprefix magnificat-initium-,isoll-D2 ivsoll-E) \
+	 dominusvobiscum-solemnis domineexaudi $(addprefix magnificat-initium-,isoll-D_ ivsoll-E) \
 	 $(addprefix capitulum-,HiSunt) \
 	 oratio oratiodominica-mat benedicamus-minor \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) dominelabiamea \
@@ -99,7 +99,8 @@ SCORES = $(addprefix versus-,stant) \
 			  sanctorumcorpora sanctusmauritius triumphabantsancti) \
 	 $(addprefix resp-,exsultentjusti) \
 	 tonus-lectionis-solemnis \
-	 benedicamus-solemnis-laud tedeum-solemnis tedeum-solemnis-gn tuautem
+	 benedicamus-solemnis-laud tedeum-solemnis tedeum-solemnis-gn tuautem \
+	 $(addsuffix -initium-iii-a,ps99 ps110) dan3-initium-iii-a2
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(TMP_DIR)/ps116iiD.tex $(TMP_DIR)/magnificativE.tex $(TMP_DIR)/ps116-initium-ii-D-auto.gtex \
 	    $(TMP_DIR)/magnificat-initium-ivsoll-E.gtex
