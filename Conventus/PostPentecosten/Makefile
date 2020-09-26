@@ -318,7 +318,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   adonai-CROCHU benedixittedominus-CROCHU-cumdox benedixittedominus-CROCHU \
 			   confortamerexsanctorum-CROCHU dominatordomine-CROCHU \
 			   dominedeusquiconteris-CROCHU-cumdox dominedeusquiconteris-CROCHU \
-			   nosaliumdeumnescimus-CROCHU) \
+			   nosaliumdeumnescimus-CROCHU dominerexomnipotens-CROCHU \
+			   mementomeideusinbono-CROCHU speminalionumquamhabui-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex benedictio-noctemquietam \
