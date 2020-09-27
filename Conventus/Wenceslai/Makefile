@@ -43,9 +43,9 @@ MODUS-95 = viii-G
 MODUS-96 = vii-a
 MODUS-97 = i-g
 MODUS-99 = ii-D
-MODUS-109 = viii-G
-MODUS-110 = i-g5
-MODUS-111 = v-g
+MODUS-109 = i-g
+MODUS-110 = ii-D
+MODUS-111 = iii-a
 MODUS-112 = i-D
 MODUS-116 = ii-D
 MODUS-118v_vi = vii-c
@@ -90,8 +90,8 @@ SCORES = $(addprefix versus-,iustus) \
 	 $(addprefix hym-,DiesVenit) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
 	 $(addprefix deusinadiutorium-,communis solemnis alter) supplicatiolitaniae oratiodominica \
-	 dominusvobiscum-solemnis domineexaudi $(addprefix magnificat-initium-,isoll-D) \
-	 $(addprefix capitulum-,AmplificatusEst) \
+	 dominusvobiscum-solemnis domineexaudi $(addprefix magnificat-initium-,isoll-D visoll-F) \
+	 $(addprefix capitulum-,AmplificatusEst ConsummatusIustus) \
 	 oratio oratiodominica-mat benedicamus-minor \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) dominelabiamea \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus deus christus ignem evangelica divinum adsocietatem) \
@@ -103,11 +103,13 @@ SCORES = $(addprefix versus-,iustus) \
 	 benedicamus-solemnis-laud tedeum-solemnis tedeum-solemnis-gn tuautem \
 	 ps112-initium-i-D ps116-initium-ii-D ps145-initium-iii-g ps146-initium-iv-E \
 	 ps147-initium-v-a ps92-initium-i-g ps99-initium-ii-D ps62-initium-iii-a \
-	 dan3-initium-iv-E benedictus-initium-visoll-F
+	 dan3-initium-iv-E benedictus-initium-visoll-F ps109-initium-i-g ps110-initium-ii-D \
+	 ps111-initium-iii-e ps112-initium-iv-E
 #	 $(addsuffix -initium-iii-a,ps99 ps110) dan3-initium-iii-a2
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(TMP_DIR)/ps112iD.tex $(TMP_DIR)/ps116iiD.tex $(TMP_DIR)/ps145iiig.tex \
-	    $(TMP_DIR)/magnificatiD.tex $(TMP_DIR)/ps99iiD.tex $(TMP_DIR)/ps62iiia.tex
+	    $(TMP_DIR)/magnificatiD.tex $(TMP_DIR)/ps99iiD.tex $(TMP_DIR)/ps62iiia.tex \
+	    $(TMP_DIR)/ps110iiD.tex $(TMP_DIR)/ps111iiie.tex $(TMP_DIR)/ps112ivE.tex
 	    #$(TMP_DIR)/ps116iiD.tex $(TMP_DIR)/magnificativE.tex $(TMP_DIR)/ps116-initium-ii-D-auto.gtex \
 	    #$(TMP_DIR)/magnificat-initium-ivsoll-E.gtex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
@@ -142,6 +144,9 @@ $(TMP_DIR)/ps145iiig.tex: TONUS = 2 0 1 1
 $(TMP_DIR)/magnificatiD.tex: TONUS = 1 3 1 3
 $(TMP_DIR)/ps99iiD.tex: TONUS = 1 0 1 0
 $(TMP_DIR)/ps62iiia.tex: TONUS = 2 0 1 1
+$(TMP_DIR)/ps110iiD.tex: TONUS = 1 0 1 0
+$(TMP_DIR)/ps111iiie.tex: TONUS = 2 0 1 1
+$(TMP_DIR)/ps112ivE.tex: TONUS = 1 2 1 3
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
 $(CZPSALMS) $(TMP_DIR)/benedictus-boh.tex: $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/%.pslm
 	$(GENPSALM)
@@ -164,7 +169,19 @@ $(TMP_DIR)/ps99iiD.tex: \
 $(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps99.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
+$(TMP_DIR)/ps110iiD.tex: \
+$(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps110.pslm
+	$(GENPSALM)
+	$(SED) -i -e 'y/Jj/Ii/' $@
+$(TMP_DIR)/ps111iiie.tex: \
+$(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps111.pslm
+	$(GENPSALM)
+	$(SED) -i -e 'y/Jj/Ii/' $@
 $(TMP_DIR)/ps112iD.tex: \
+$(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps112.pslm
+	$(GENPSALM)
+	$(SED) -i -e 'y/Jj/Ii/' $@
+$(TMP_DIR)/ps112ivE.tex: \
 $(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps112.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
