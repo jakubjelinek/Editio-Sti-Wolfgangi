@@ -105,13 +105,10 @@ SCORES = $(addprefix versus-,iustus) \
 	 ps147-initium-v-a ps92-initium-i-g ps99-initium-ii-D ps62-initium-iii-a \
 	 dan3-initium-iv-E benedictus-initium-visoll-F ps109-initium-i-g ps110-initium-ii-D \
 	 ps111-initium-iii-e ps112-initium-iv-E
-#	 $(addsuffix -initium-iii-a,ps99 ps110) dan3-initium-iii-a2
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(TMP_DIR)/ps112iD.tex $(TMP_DIR)/ps116iiD.tex $(TMP_DIR)/ps145iiig.tex \
 	    $(TMP_DIR)/magnificatiD.tex $(TMP_DIR)/ps99iiD.tex $(TMP_DIR)/ps62iiia.tex \
 	    $(TMP_DIR)/ps110iiD.tex $(TMP_DIR)/ps111iiie.tex $(TMP_DIR)/ps112ivE.tex
-	    #$(TMP_DIR)/ps116iiD.tex $(TMP_DIR)/magnificativE.tex $(TMP_DIR)/ps116-initium-ii-D-auto.gtex \
-	    #$(TMP_DIR)/magnificat-initium-ivsoll-E.gtex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3 benedictus,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
@@ -135,7 +132,7 @@ include $(iter)
 all: wenceslai.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
-$(TMP_DIR)/magnificat.tex $(TMP_DIR)/magnificativE.tex: PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
+$(TMP_DIR)/magnificat.tex $(TMP_DIR)/magnificatiD.tex: PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
 $(TMP_DIR)/ps90.tex: PSALMOPTS = --accents-style bold $(LAPSALMOPTSACC)
 $(patsubst %,$(TMP_DIR)/ps%.tex,118vii_viii 118ix_x 118xiii_xiv 118xv_xvi 118xix_xx 118xxi_xxii 133): PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold $(LAPSALMOPTSACC)
 $(TMP_DIR)/ps112iD.tex: TONUS = 2 0 1 3
