@@ -34,15 +34,15 @@ MODUS-20 = iv-E
 MODUS-23 = iv-A
 MODUS-44 = vii-c
 MODUS-45 = vii-c
-MODUS-62 = v-g
+MODUS-62 = iii-a
 MODUS-66 = dir
 MODUS-86 = vii-c
 MODUS-90 = viii-G
-MODUS-92 = viii-G
+MODUS-92 = i-g
 MODUS-95 = viii-G
 MODUS-96 = vii-a
 MODUS-97 = i-g
-MODUS-99 = i-g5
+MODUS-99 = ii-D
 MODUS-109 = viii-G
 MODUS-110 = i-g5
 MODUS-111 = v-g
@@ -63,12 +63,12 @@ MODUS-133 = viii-G
 MODUS-145 = iii-g
 MODUS-146 = iv-E
 MODUS-147 = v-a
-MODUS-148 = vii-a
-MODUS-149 = vii-a
-MODUS-150 = vii-a
-MODUS-benedictus = isoll-D_
+MODUS-148 = v-a
+MODUS-149 = v-a
+MODUS-150 = v-a
+MODUS-benedictus = visoll-F
 MODUS-magnificat = isoll-D
-MODUS-dan3 = i-g
+MODUS-dan3 = iv-E
 MODUSLIST = $(sort $(foreach P,$(PSALMS) benedictus magnificat dan3,$(MODUS-$(P))))
 CZPSALMOPTS = --accents 0:0 --title-pattern " " --no-paragraph
 CZPSALMS = $(patsubst %,$(TMP_DIR)/ps%-boh.tex,$(PSALMS))
@@ -102,11 +102,12 @@ SCORES = $(addprefix versus-,iustus) \
 	 tonus-lectionis-solemnis \
 	 benedicamus-solemnis-laud tedeum-solemnis tedeum-solemnis-gn tuautem \
 	 ps112-initium-i-D ps116-initium-ii-D ps145-initium-iii-g ps146-initium-iv-E \
-	 ps147-initium-v-a
+	 ps147-initium-v-a ps92-initium-i-g ps99-initium-ii-D ps62-initium-iii-a \
+	 dan3-initium-iv-E benedictus-initium-visoll-F
 #	 $(addsuffix -initium-iii-a,ps99 ps110) dan3-initium-iii-a2
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(TMP_DIR)/ps112iD.tex $(TMP_DIR)/ps116iiD.tex $(TMP_DIR)/ps145iiig.tex \
-	    $(TMP_DIR)/magnificatiD.tex
+	    $(TMP_DIR)/magnificatiD.tex $(TMP_DIR)/ps99iiD.tex $(TMP_DIR)/ps62iiia.tex
 	    #$(TMP_DIR)/ps116iiD.tex $(TMP_DIR)/magnificativE.tex $(TMP_DIR)/ps116-initium-ii-D-auto.gtex \
 	    #$(TMP_DIR)/magnificat-initium-ivsoll-E.gtex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
@@ -139,6 +140,8 @@ $(TMP_DIR)/ps112iD.tex: TONUS = 2 0 1 3
 $(TMP_DIR)/ps116iiD.tex: TONUS = 1 0 1 0
 $(TMP_DIR)/ps145iiig.tex: TONUS = 2 0 1 1
 $(TMP_DIR)/magnificatiD.tex: TONUS = 1 3 1 3
+$(TMP_DIR)/ps99iiD.tex: TONUS = 1 0 1 0
+$(TMP_DIR)/ps62iiia.tex: TONUS = 2 0 1 1
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
 $(CZPSALMS) $(TMP_DIR)/benedictus-boh.tex: $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/%.pslm
 	$(GENPSALM)
@@ -151,6 +154,14 @@ $(LAPSALMS): $(TMP_DIR)/ps%.tex: $(PSALMS_DIR)/ps%.pslm
 	case "$<" in */ps118[ivx]*) $(AWK) -f hebletter.awk -v PSLM="$<" -v TEX=$(if $(filter --skip-verses,$(PSALMOPTS)),1,2) $@ > $@.tmp; $(MV) -f $@.tmp $@;; esac || :
 	$(SED) -i -e 'y/Jj/Ii/' $@
 $(LAPSALMSEXTRA): $(TMP_DIR)/%.tex: $(PSALMS_DIR)/%.pslm
+	$(GENPSALM)
+	$(SED) -i -e 'y/Jj/Ii/' $@
+$(TMP_DIR)/ps62iiia.tex: \
+$(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps62.pslm
+	$(GENPSALM)
+	$(SED) -i -e 'y/Jj/Ii/' $@
+$(TMP_DIR)/ps99iiD.tex: \
+$(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps99.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
 $(TMP_DIR)/ps112iD.tex: \
