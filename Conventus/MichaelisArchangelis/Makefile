@@ -21,54 +21,30 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 1 2 3 4 8 10 18 20 23 44 45 62 66 86 90 92 95 96 97 99 109 110 111 112 116 118v_vi 118vii_viii 118ix_x 118xi_xii 118xiii_xiv 118xv_xvi 118xvii_xviii 118xix_xx 118xxi_xxii 121 126 133 145 146 147 148 149 150
+PSALMS = 8 10 14 18 23 33 62 92 95 96 99 102 109 110 111 137 148 149 150
 include tonus.mk
-MODUS-1 = vi-F
-MODUS-2 = i-a2
-MODUS-3 = viii-g
-MODUS-4 = viii-g
-MODUS-8 = iv-A
-MODUS-10 = i-g
-MODUS-18 = iv-A
-MODUS-20 = iv-E
-MODUS-23 = iv-A
-MODUS-44 = vii-c
-MODUS-45 = vii-c
-MODUS-62 = iii-a
-MODUS-66 = dir
-MODUS-86 = vii-c
-MODUS-90 = viii-G
-MODUS-92 = i-g
-MODUS-95 = viii-G
-MODUS-96 = vii-a
-MODUS-97 = i-g
-MODUS-99 = ii-D
-MODUS-109 = i-g
-MODUS-110 = ii-D
-MODUS-111 = iii-a
-MODUS-112 = i-D
-MODUS-116 = ii-D
-MODUS-118v_vi = vii-c
-MODUS-118vii_viii = vii-c
-MODUS-118ix_x = vii-c
-MODUS-118xi_xii = vi-F
-MODUS-118xiii_xiv = vi-F
-MODUS-118xv_xvi = vi-F
-MODUS-118xvii_xviii = vii-c
-MODUS-118xix_xx = vii-c
-MODUS-118xxi_xxii = vii-c
-MODUS-121 = vi-F
-MODUS-126 = viii-G
-MODUS-133 = viii-G
-MODUS-145 = iii-g
-MODUS-146 = iv-E
-MODUS-147 = v-a
-MODUS-148 = v-a
-MODUS-149 = v-a
-MODUS-150 = v-a
-MODUS-benedictus = visoll-F
-MODUS-magnificat = isoll-D
-MODUS-dan3 = iv-E
+MODUS-8 = ii_-a
+MODUS-10 = viii-G
+MODUS-14 = ii_-a
+MODUS-18 = ii-D
+MODUS-23 = vii-d
+MODUS-33 = viii-g
+MODUS-62 = viii-G
+MODUS-92 = vii-a
+MODUS-95 = ii-D
+MODUS-96 = viii-G2
+MODUS-99 = i-f
+MODUS-102 = ii_-c
+MODUS-109 = vii-a
+MODUS-110 = i-f
+MODUS-111 = viii-G
+MODUS-137 = vii-c
+MODUS-148 = vii-c
+MODUS-149 = vii-c
+MODUS-150 = vii-c
+MODUS-benedictus = viiisoll-G2
+MODUS-magnificat = isoll-D2
+MODUS-dan3 = per
 MODUSLIST = $(sort $(foreach P,$(PSALMS) benedictus magnificat dan3,$(MODUS-$(P))))
 CZPSALMOPTS = --accents 0:0 --title-pattern " " --no-paragraph
 CZPSALMS = $(patsubst %,$(TMP_DIR)/ps%-boh.tex,$(PSALMS))
@@ -86,29 +62,27 @@ LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
 LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,benedictus magnificat dan3)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
-SCORES = $(addprefix versus-,iustus) \
-	 $(addprefix hym-,DiesVenit) \
+SCORES = $(addprefix versus-,ascendit inconspectu inconspectu-solemnis stetit) \
+	 $(addprefix hym-,ChristeSanctorum FestivaVos TibiChriste) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
 	 $(addprefix deusinadiutorium-,communis solemnis alter) supplicatiolitaniae oratiodominica \
-	 dominusvobiscum-solemnis domineexaudi $(addprefix magnificat-initium-,isoll-D visoll-F) \
-	 $(addprefix capitulum-,AmplificatusEst ConsummatusIustus) \
+	 dominusvobiscum-solemnis domineexaudi $(addprefix magnificat-initium-,isoll-D2) \
+	 $(addprefix capitulum-,SignificavitDeus) \
 	 oratio oratiodominica-mat benedicamus-minor \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) dominelabiamea \
-	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus deus christus ignem evangelica divinum adsocietatem) \
-	 $(addprefix ant-,adestdies carcernocte carnemterens cruorfusus dumgentiles exgestato gressusreddit hicdives \
-			  iubaraltae laudantdominum laudemotus lausalmesit morbidisrefugium opugilegregie peremptorispena \
-			  pertrimatum vivensabinfantia) \
-	 $(addprefix resp-,castusmente laetabiturjustus) \
-	 tonus-lectionis-solemnis \
-	 benedicamus-solemnis-laud tedeum-solemnis tedeum-solemnis-gn tuautem \
-	 ps112-initium-i-D ps116-initium-ii-D ps145-initium-iii-g ps146-initium-iv-E \
-	 ps147-initium-v-a ps92-initium-i-g ps99-initium-ii-D ps62-initium-iii-a \
-	 dan3-initium-iv-E benedictus-initium-visoll-F ps109-initium-i-g ps110-initium-ii-D \
-	 ps111-initium-iii-e ps112-initium-iv-E
+	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus deus christus ignem evangelica quorum adsocietatem) \
+	 $(addprefix ant-,angeliarchangeli angelidomini archangelemichael ascenditfumus concussumest datasuntei \
+			  dumpraeliaretur etomnesangeli factumest gloriosusapparuisti laudemusdominum michaelarchangelus \
+			  michaelgabriel michaelpraepositus princepsgloriosissime stetitangelus) \
+	 $(addprefix resp-,stetitangelus) \
+	 inv-regemangelorum tonus-lectionis-solemnis \
+	 benedicamus-solemnis-laud tedeum-solemnis tedeum-romanum-gn tuautem \
+	 $(addprefix resp-,factumest-CROCHU hicestmichael-CROCHU inconspectuangelorum-CROCHU \
+			   inconspectugentium-CROCHU intemporeillo-CROCHU numquidscis-CROCHU \
+			   stetitangelus-CROCHU venitmichael-CROCHU) \
+	 ps14-initium-ii_-c ps23-initium-vii-d ps102-initium-ii_-c
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = $(TMP_DIR)/ps112iD.tex $(TMP_DIR)/ps116iiD.tex $(TMP_DIR)/ps145iiig.tex \
-	    $(TMP_DIR)/magnificatiD.tex $(TMP_DIR)/ps99iiD.tex $(TMP_DIR)/ps62iiia.tex \
-	    $(TMP_DIR)/ps110iiD.tex $(TMP_DIR)/ps111iiie.tex $(TMP_DIR)/ps112ivE.tex
+OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3 benedictus,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
@@ -129,21 +103,11 @@ iter-left := . $(TMP_DIR) $(addprefix ../InNativitateBMV/cantus/,amon33 triplex7
 	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 triplex76) ../CorpusChristi ../InNativitateBMV
 include $(iter)
 
-all: wenceslai.pdf
+all: indedicationemichaelisarchangelis.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
 $(TMP_DIR)/magnificat.tex $(TMP_DIR)/magnificatiD.tex: PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --flex-underline --skip-verses 2 $(LAPSALMOPTSACC)
-$(TMP_DIR)/ps90.tex: PSALMOPTS = --accents-style bold --flex-underline $(LAPSALMOPTSACC)
-$(patsubst %,$(TMP_DIR)/ps%.tex,118vii_viii 118ix_x 118xiii_xiv 118xv_xvi 118xix_xx 118xxi_xxii 133): PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --flex-underline $(LAPSALMOPTSACC)
-$(TMP_DIR)/ps112iD.tex: TONUS = 2 0 1 3
-$(TMP_DIR)/ps116iiD.tex: TONUS = 1 0 1 0
-$(TMP_DIR)/ps145iiig.tex: TONUS = 2 0 1 1
 $(TMP_DIR)/magnificatiD.tex: TONUS = 1 3 1 3
-$(TMP_DIR)/ps99iiD.tex: TONUS = 1 0 1 0
-$(TMP_DIR)/ps62iiia.tex: TONUS = 2 0 1 1
-$(TMP_DIR)/ps110iiD.tex: TONUS = 1 0 1 0
-$(TMP_DIR)/ps111iiie.tex: TONUS = 2 0 1 1
-$(TMP_DIR)/ps112ivE.tex: TONUS = 1 2 1 3
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
 $(CZPSALMS) $(TMP_DIR)/benedictus-boh.tex: $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/%.pslm
 	$(GENPSALM)
@@ -158,38 +122,6 @@ $(LAPSALMS): $(TMP_DIR)/ps%.tex: $(PSALMS_DIR)/ps%.pslm
 $(LAPSALMSEXTRA): $(TMP_DIR)/%.tex: $(PSALMS_DIR)/%.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
-$(TMP_DIR)/ps62iiia.tex: \
-$(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps62.pslm
-	$(GENPSALM)
-	$(SED) -i -e 'y/Jj/Ii/' $@
-$(TMP_DIR)/ps99iiD.tex: \
-$(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps99.pslm
-	$(GENPSALM)
-	$(SED) -i -e 'y/Jj/Ii/' $@
-$(TMP_DIR)/ps110iiD.tex: \
-$(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps110.pslm
-	$(GENPSALM)
-	$(SED) -i -e 'y/Jj/Ii/' $@
-$(TMP_DIR)/ps111iiie.tex: \
-$(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps111.pslm
-	$(GENPSALM)
-	$(SED) -i -e 'y/Jj/Ii/' $@
-$(TMP_DIR)/ps112iD.tex: \
-$(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps112.pslm
-	$(GENPSALM)
-	$(SED) -i -e 'y/Jj/Ii/' $@
-$(TMP_DIR)/ps112ivE.tex: \
-$(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps112.pslm
-	$(GENPSALM)
-	$(SED) -i -e 'y/Jj/Ii/' $@
-$(TMP_DIR)/ps116iiD.tex: \
-$(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps116.pslm
-	$(GENPSALM)
-	$(SED) -i -e 'y/Jj/Ii/' $@
-$(TMP_DIR)/ps145iiig.tex: \
-$(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps145.pslm
-	$(GENPSALM)
-	$(SED) -i -e 'y/Jj/Ii/' $@
 $(TMP_DIR)/magnificatiD.tex: \
 $(TMP_DIR)/%.tex: $(PSALMS_DIR)/magnificat.pslm
 	$(GENPSALM)
@@ -197,7 +129,7 @@ $(TMP_DIR)/%.tex: $(PSALMS_DIR)/magnificat.pslm
 $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
 	$(GENPSCOMB)
 $(TMP_DIR)/magnificat-comb.tex: PSSKIP = 2
-wenceslai.pdf: wenceslai.tex conventuscommune.tex translationes_cs.tex \
+indedicationemichaelisarchangelis.pdf: indedicationemichaelisarchangelis.tex conventuscommune.tex translationes_cs.tex \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
