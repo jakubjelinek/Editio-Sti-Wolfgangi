@@ -79,7 +79,7 @@ GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
 TONUS = $(TONUS-$(MODUS-$*))
 GLORIAPATRI = $(PSALMS_DIR)/gloriapatri.pslm
 APPENDGLORIAPATRI = --append "`cat $(GLORIAPATRI)`"
-LAPSALMOPTS_COMMON = --accents-style bold --skip-verses 1
+LAPSALMOPTS_COMMON = --accents-style bold --flexa-underline --skip-verses 1
 LAPSALMOPTSACC = --accents $(word 1,$(TONUS)):$(word 3,$(TONUS)) \
 		 --preparatory-syllables $(word 2,$(TONUS)):$(word 4,$(TONUS))
 LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
@@ -127,9 +127,9 @@ include $(iter)
 all: mauritii.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
-$(TMP_DIR)/magnificat.tex $(TMP_DIR)/magnificativE.tex: PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
-$(TMP_DIR)/ps90.tex: PSALMOPTS = --accents-style bold $(LAPSALMOPTSACC)
-$(patsubst %,$(TMP_DIR)/ps%.tex,118vii_viii 118ix_x 118xiii_xiv 118xv_xvi 118xix_xx 118xxi_xxii 133): PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold $(LAPSALMOPTSACC)
+$(TMP_DIR)/magnificat.tex $(TMP_DIR)/magnificativE.tex: PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --flexa-underline --skip-verses 2 $(LAPSALMOPTSACC)
+$(TMP_DIR)/ps90.tex: PSALMOPTS = --accents-style bold --flexa-underline $(LAPSALMOPTSACC)
+$(patsubst %,$(TMP_DIR)/ps%.tex,118vii_viii 118ix_x 118xiii_xiv 118xv_xvi 118xix_xx 118xxi_xxii 133): PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --flexa-underline $(LAPSALMOPTSACC)
 $(TMP_DIR)/ps116iiD.tex: TONUS = 1 0 1 1
 $(TMP_DIR)/magnificativE.tex: TONUS = 1 3 1 3
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
