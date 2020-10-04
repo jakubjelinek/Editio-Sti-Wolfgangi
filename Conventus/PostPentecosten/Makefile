@@ -272,6 +272,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
 				       TellurisIngens) \
+	 $(patsubst %,hym-%-hiemalis,ImmenseCaeli SplendorPaternae) \
 	 $(addprefix hym-,EcceJamNoctis AveMarisStella OGloriosaDomina AdPrecesNostras \
 			  ChristeLuxVera AmorisSensusErige AdestoChriste SalveDies \
 			  VitaSanctorum QuemTerra) \
