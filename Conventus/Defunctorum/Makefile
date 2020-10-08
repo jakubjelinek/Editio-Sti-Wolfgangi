@@ -23,6 +23,7 @@ PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
 PSALMS = 5 6 7 22 24 26 37i 37ii 39 40 41 50 55 62 64 69 84 85 101i 101ii 101iii 114 119 120 122 129 129d 137 141 142 145 148 149 150
 include tonus.mk
+include $(PSALMTONES_DIR)/tonus.mk
 MODUS-5 = vii-c
 MODUS-6 = viii-G
 MODUS-7 = viii-G

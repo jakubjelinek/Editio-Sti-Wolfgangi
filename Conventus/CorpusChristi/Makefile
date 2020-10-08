@@ -21,7 +21,7 @@ INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
 PSALMS = 1 4 15 19 22 41 42 62 80 83 90 92 99 109 110 115 127 133 147 148 149 150
-include tonus.mk
+include $(PSALMTONES_DIR)/tonus.mk
 MODUS-1 = i-D_
 MODUS-4 = viii-G
 MODUS-15 = iii-a3
