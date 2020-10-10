@@ -252,7 +252,11 @@ per infiníta sǽcula sæculórum.
 
 \pars{Hymnus} \scriptura{Ambrosius (\olddag{} 397)}
 
-\cuminitiali{I}{temporalia/hym-OLuxBeata-aestivalis.gtex}
+\ifx\hiemalis\undefined
+\cuminitiali{VIII}{temporalia/hym-OLuxBeata-aestivalis.gtex}
+\else
+\cuminitiali{I}{temporalia/hym-OLuxBeata-hiemalis.gtex}
+\fi
 \vspace{-3mm}
 %\input{hym-OLuxBeata-bohtext.tex}
 
@@ -952,11 +956,19 @@ Orémus:
 \vfill
 \pagebreak
 
+\ifx\hiemalis\undefined
 \pars{Hymnus} \scriptura{Gregorius Magnus (\olddag{} 604)}
 
 \cuminitiali{IV}{temporalia/hym-EcceJamNoctis.gtex}
 \vspace{-3mm}
 %\input{hym-EcceJamNocis-bohtext.tex}
+\else
+\pars{Hymnus} \scriptura{Ambrosius (\olddag{} 397)}
+
+\cuminitiali{I}{temporalia/hym-AEterneRerum.gtex}
+\vspace{-3mm}
+%\input{hym-AEterneRerum-bohtext.tex}
+\fi
 
 \vfill
 %\pagebreak
@@ -1114,7 +1126,11 @@ Orémus:
 
 \pars{Hymnus} \scriptura{Gregorius Magnus (\olddag{} 604)}
 
-\cuminitiali{I}{temporalia/hym-LucisCreator-aestivalis.gtex}
+\ifx\hiemalis\undefined
+\cuminitiali{VIII}{temporalia/hym-LucisCreator-aestivalis.gtex}
+\else
+\cuminitiali{IV}{temporalia/hym-LucisCreator-aestivalis.gtex}
+\fi
 \vspace{-3mm}
 %\input{hym-LucisCreator-bohtext.tex}
 
