@@ -102,16 +102,17 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud t
 	 $(addprefix absolutio-,exaudi ipsius avinculis) dominelabiamea \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus inunitate deus christus ignem acunctis \
 					evangelica ille cujus-ipse adsocietatem) \
-	 $(addprefix matant,1 2 3 4 5 6 7 8 9 10 11 12 13) $(addprefix matresp,1 2 3 4 5 6 7 8 9 10 11 12) \
+	 $(addprefix matant,1 2 3 4 5 6 7 8 9 10 11 12 13) $(addprefix matresp,1 2 3 3-cumdox 4 5 6 7 8 9 10 11 12) \
 	 tedecetlaus tonus-evangelii-b tonus-lectionis-solemnis \
-	 $(addprefix venite3,a b c d e f) matinv-RegemConfessorum \
-	 benedicamus-solemnis-laud tedeum-solemnis tuautem \
+	 $(addprefix venite3,a b c d e f) matinv-RegemConfessorum inv-regemconfessorum \
+	 benedicamus-solemnis-laud tedeum-solemnis tedeum-solemnis-gn tuautem \
 	 communio-versus-Exaudi-initium seq-DilecteDeo alleluia-BeatusVirQui
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(TMP_DIR)/ps4dir-comb.tex $(TMP_DIR)/ps4-initium-dir-auto.gtex \
 	    $(addprefix hym-,$(addsuffix -bohtext.tex,TeLucis NuncSancte RectorPotens RerumDeus \
 						      VitaSanctorum IsteConfessor)) \
-	    $(TMP_DIR)/communio-versus-Exaudi-comb.tex
+	    $(TMP_DIR)/communio-versus-Exaudi-comb.tex $(TMP_DIR)/ps149alt.tex \
+	    $(TMP_DIR)/ps150alt.tex
 LAPSALMSINITGABC = $(foreach P,$(filter-out 118vi 118vii 118ix 118x 118xii 118xiii,$(PSALMS)),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3 benedictus beatitudosapientis jeremiae ecclesiasticus31,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
@@ -129,16 +130,18 @@ $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e 
 endef
 iter-left := . $(TMP_DIR) $(addprefix cantus/,amon33 triplex76 nrom02) \
 	     $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) \
-	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 triplex76)
+	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 triplex76) ../CorpusChristi
 include $(iter)
 
-all: galli.pdf
+all: galli.pdf galli-breviori.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
-$(patsubst %,$(TMP_DIR)/%.tex,ps148 dan3 ps4dir): PSALMOPTS = $(LAPSALMOPTS)
+$(patsubst %,$(TMP_DIR)/%.tex,ps148 dan3 ps4dir ps149alt): PSALMOPTS = $(LAPSALMOPTS)
 $(TMP_DIR)/magnificat.tex: PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
 $(patsubst %,$(TMP_DIR)/ps%.tex,90 149): PSALMOPTS = --accents-style bold $(LAPSALMOPTSACC)
 $(patsubst %,$(TMP_DIR)/%.tex,$(addprefix ps,118vi 118vii 118ix 118x 118xii 118xiii 133 150) jeremiae ecclesiasticus31): PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold $(LAPSALMOPTSACC)
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
+$(TMP_DIR)/ps149alt.tex: TONUS = 2 0 1 2
+$(TMP_DIR)/ps150alt.tex: TONUS = 2 0 1 2
 $(CZPSALMS) $(patsubst %,$(TMP_DIR)/%-boh.tex,benedictus beatitudosapientis jeremiae ecclesiasticus31): $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/%.pslm
 	$(GENPSALM)
 $(TMP_DIR)/dan3-boh.tex: $(CZECH_PSALMS_DIR)/Pavlik/dan3.pslm
@@ -157,13 +160,21 @@ $(TMP_DIR)/ps4dir.tex: $(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps4.pslm
 	$(SED) -i -e 'y/Jj/Ii/' $@
 $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
 	$(GENPSCOMB)
+$(TMP_DIR)/ps149alt.tex: \
+$(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps149.pslm
+	$(GENPSALM)
+	$(SED) -i -e 'y/Jj/Ii/' $@
+$(TMP_DIR)/ps150alt.tex: \
+$(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps150.pslm
+	$(GENPSALM)
+	$(SED) -i -e 'y/Jj/Ii/' $@
 $(TMP_DIR)/ps4dir-comb.tex: $(TMP_DIR)/ps4dir.tex $(TMP_DIR)/ps4-boh.tex
 	$(GENPSCOMB)
 $(TMP_DIR)/magnificat-comb.tex: PSSKIP = 2
 $(patsubst %,$(TMP_DIR)/%-comb.tex,$(addprefix ps,90 118vi 118vii 118ix 118x 118xii 118xiii 133 149 150) jeremiae ecclesiasticus31): PSSKIP = 0
 $(TMP_DIR)/communio-versus-Exaudi-comb.tex: $(patsubst %,communio-versus-Exaudi%tex,. -boh.)
 	$(GENPSCOMB)
-galli.pdf: galli.tex conventuscommune.tex translationes_cs.tex gallus.jpg \
+galli.pdf galli-breviori.pdf: %.pdf: %.tex conventuscommune.tex translationes_cs.tex gallus.jpg \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
