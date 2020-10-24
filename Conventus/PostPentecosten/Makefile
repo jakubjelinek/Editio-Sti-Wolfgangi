@@ -186,6 +186,7 @@ MODUS-benedictus-XII = isoll-D
 MODUS-benedictus-XIII = ivsoll-E
 MODUS-benedictus-XIV = viisoll-a
 MODUS-benedictus-XV = isoll-D_
+MODUS-benedictus-XVI = viisoll-d
 MODUS-magnificat-VIII = isoll-f
 MODUS-magnificat-IX = viisoll-d
 MODUS-magnificat-X = viiisoll-G
@@ -203,7 +204,7 @@ MODUS-magnificat-XXI = viiisoll-g
 MODUS-magnificat-XXII = iiisoll-a
 CANTICIS = isaiae ezechiae anna moysis habacuc moysis2i moysis2ii nuncdimittis dan3
 NUMSI = I II III IV V VI VII
-NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV
+NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI
 NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII
 PSALMSALT = $(foreach V,$(NUMSI),$(addsuffix -$(V),$(PSALMS)))
 BENEDICTUS = $(foreach B,$(NUMSII),benedictus-$(B))
@@ -270,7 +271,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  dominerexomnipotens multieruntpriminovissimi nonomnisquidicit \
 			  adaperiatdominus malosmaleperdet novissimeautemmisit \
 			  doctusdoctrinae intravitautemrex nuptiaequidemparataesunt \
-			  refulsitsol lugebatautemjudam magisterscimus redditeergo) \
+			  refulsitsol lugebatautemjudam magisterscimus redditeergo \
+			  diligamusnos exaudiatdominusorationes magisterquodest) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -290,7 +292,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			     diffusa cognoscantquia deusnesileas exaltentdominum laudabonomen \
 			     medianocte memorfui praevenerunt psallitedomino sacrificiumlaudis \
 			     benedictatu) \
-	 $(addprefix oratio,5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 bmv -franciscus) \
+	 $(addprefix oratio,5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 bmv -franciscus) \
 	 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,feria-laudes feria-vesperae minor officium-bmv dominica-perannum) \
@@ -340,7 +342,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex benedictio-noctemquietam \
-	 habacuc-initium-iv_-e $(addsuffix -initium-e,ps48ii ps65i ps105i) ps10-initium-ii_-f
+	 habacuc-initium-iv_-e $(addsuffix -initium-e,ps48ii ps65i ps105i) ps10-initium-ii_-f \
+	 benedictus-initium-viisoll-d
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach V,$(NUMSI),$(if $(MODUS-$(P)-$(V)),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P)-$(V))-auto.gabc))) \
@@ -409,7 +412,7 @@ $(TMP_DIR)/%-XXII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-XXIII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 
 FERIAE = ii iii iv v vi
-HEBDOMADAE = v vi vii viii ix x xi xii xiii xiv xv xvi xvii xviii xix xx
+HEBDOMADAE = v vi vii viii ix x xi xii xiii xiv xv xvi xvii xviii xix xx xxi
 PDFI = $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE)))
 PDFII = $(foreach H,$(HEBDOMADAE),sabbato-$(H).pdf)
 PDFIII = $(foreach H,$(HEBDOMADAE),dominica-$(H).pdf)
