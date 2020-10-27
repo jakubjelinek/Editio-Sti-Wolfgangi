@@ -87,6 +87,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo miserere salveregina-simplex subtuum 
 			  iuravitdominus majoremcaritatem venientesvenient vosamicimei) \
 	 $(addprefix hym-,AureaLuce JamBonePastor ORomaFelix FelixPerOmnes \
 			  ApostolorumPassio CommuneVos ExsultetCaelum) \
+	 seq-ClareSanctorum \
 	 $(addprefix resp-,inomnemterram constitueseos) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(foreach M,isoll-g isoll-D_ i-D_,magnificat-initium-$(M)) \
@@ -105,7 +106,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo miserere salveregina-simplex subtuum 
 	 $(addprefix resp-,tuespastorovium-CROCHU dominesitues-CROCHU \
 			   egoproterogavi-CROCHU quemdicunthomines-CROCHU \
 			   sidiligisme-CROCHU simonpetre-CROCHU surgepetre-CROCHU \
-			   tuespetrus-CROCHU tollite dumsteteritis) \
+			   tuespetrus-CROCHU tollite dumsteteritis ecceegomittovos) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
 	 an_regina_caeli_simplex convertenosdeus \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \

@@ -1,15 +1,20 @@
-name:Tollite jugum;
+name:Tollite iugum meum;
 office-part:Responsorium;
-book:The Liber Usualis, 1961, p. 970; Praglia: Liber antiphonarius, p. 543;
-transcriber:Andrew Hinkley; Jakub Jelínek;
+mode:7;
+% gregofacsimil
+commentary:Mt. 11, 29-30; H361;
+transcriber:Jakub Jelínek;
+nabc-lines:1;
 %%
-(c4)
-TOl(f)li(f)te(f) ju(f)gum(f) me(g)um(f) su(g)per(gh) vos(hg__) *(;)
-Et(f_g) dí(h)sci(g)te(fg) a(g) me.(f.) (::)
-Tól(f)li(f)te.(f) <sp>V/</sp>.(::)
-Qui(h)a(h) mí(ixhi)tis(g) sum(g_) (,)
-et(g) hú(h)mi(g)lis(f) cor(g_h)de.(hg__) *(::)
-Et.(f_g) <sp>V/</sp>.(::)
-Gló(h)ri(h)a(h) Pa(ixhi)tri,(h) et(h) Fí(gh)li(g)o,(g_) (,)
-et(g) Spi(g)rí(h)tu(g)i(gf) San(g)cto.(gh..) (::)
-Tól(f)li(f)te.(f) (::)
+(c3)
+TOl(e!f>|pe>)li(e|ta)te(e|ta) *()
+iu(ef|pe)gum(e|ta) me(e|ta)um(ef!gwh|qlppt2) su(hih/hg|to!cl)per(h!iwjij>|viqlhi!po>hi) vos,(i|talse6) (;)
+di(ihhvGF|clci-hg)cit(g!hwiHGFgwhGF>|viqlhisut3ql-hksu1sux1) Dó(e|ta)mi(ef!gvFEf|vi-pp2su2vihi)nus,(fe|cl) (:)
+et(ihi|polsl2) dí(kOl|pq-hj)sci(l|vihk)te(lk/|clShk|kvJI|ci-hj|ji|cl-hh) (`)
+qui(i|``talse4)a(j|vi) mi(k|vihh)tis(i|vihh) sum,(hi/hhog|pe-1pi) (,)
+et(h|vi) hú(i|vihglse3)mi(i|vihg)lis(ki!jwkj|cl-hhqlhi!clhi) cor(i>|vi>)de,(ijiio/|tohhorhi|ghg|tohi) +(:)
+Iu(g|vi)gum(ij|pehh) e(j|tahh)nim(j|tahh) me(jij|pohg)um(-hih|tohg) su(hf|clM)á(hiOj|sa)ve(i|vihg) est,(giHG|toS2sut1|hvGFE|vihhsut1su2|fe|cl-hh) (;)
+et(e|ta) o(f|vihg)nus(-fi|``pehhlse4) me(ihhvGF|clS-ci-hg)um(g!hwiHGFgwhGF>|viql-hisut3ql-hjsu1sux1) le(ef!gvFEf|vi-pp2su2vihh)ve.(fe|cl-) <sp>V/</sp>.(::)
+Et(i!jwkJI|viql-hisu2) in(hi/hhog~|peSvs>hj)ve(h|vi)ni(ig|clhg)é(hi|pehh)tis(hi|pehh) ré(i|tahhlsl2)qui(i!jwkj|qlhh!cl-hhppt1)em(ji|cl-hh) (;)
+a(i|vi)ni(-ijijIH|tr-1su2)má(ih|clM)bus(h!iwji/jkj|qlhh!clhhppt1tohj) ves(ih!iwjij|cl-hhqlhi!pohi)tris.(ivHG|ci-hh|hg|cl-hh) +(::)
+Iu(g|vi)gum.(ij|pehh) (::)
