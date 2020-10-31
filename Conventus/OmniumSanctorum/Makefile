@@ -91,9 +91,10 @@ SCORES = $(addprefix versus-,exsultabunt laetamini) \
 			   inconspectugentium-CROCHU intemporeillo-CROCHU numquidscis-CROCHU \
 			   stetitangelus-CROCHU venitmichael-CROCHU \
 			   felixnamquees-CROCHU inconspectuangelorum-CROCHU \
-			   internatosmulierum-FKP istisuntquiviventes sanctimei-cumdox \
+			   internatosmulierum-FKP istisuntquiviventes sanctimei-CROCHU \
 			   summaetrinitati-CROCHU vididominumsedentem-cumdox \
-			   vididominumsedentem-sinedox) \
+			   vididominumsedentem-sinedox beatipauperesspiritu-CROCHU \
+			   beatiquipersecutionem-CROCHU) \
 	 ps14-initium-ii_-c ps23-initium-vii-d ps102-initium-ii_-c
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
