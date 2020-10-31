@@ -1,10 +1,11 @@
 name: Admirabile est nomen tuum;
-book: VOR 287;
+book: VOR 287; H331;
 %annotation: I d2 (or d3);
 mode: 1;
 transcriber: Isabelle Valloton;
+nabc-lines: 1;
 %%
 (c4)
-AD(c)mi(d)rá(dh/jv)bi(h)le(h) est(h) no(h)men(g) tu(h)um(gf~) Dó(g)mi(gh)ne,(h) (,)
-qui(h)a(h) gló(h)ri(g)a(j) et(h) ho(g)nó(h)re(gh) co(h)ro(g)ná(f)sti(f) san(gh)ctos(fe) tu(d)os:(d) (;)
-et(dg) con(g>)sti(g)tu(h)í(f)sti(f) e(df)os(fc) su(c)per(d) ó(f)pe(g)ra(f) má(gh)nu(f)um(f) tu(fgFEf)á(d)rum.(d) (::)
+AD(c|gr)mi(d|vi)rá(dh/jv|pevihj)bi(h|ta)le(h|ta) est(h|ta) no(h|vi)men(g|ta) tu(h|vi)um(gf~|vi>) Dó(g|vi)mi(gh|pe)ne,(h|vi-) (,)
+qui(h|vi)a(h|vi) gló(h|vi)ri(g|vi)a(j|vihilsal3) et(h|vihh) ho(g|tahg)nó(h|vi)re(gh|pq) co(h|vi)ro(g|vi)ná(f|vihe)sti(f|ta) san(gh|pe>1)ctos(fe|cllsc3) tu(d|ta)os:(d|ta) (;)
+et(dg|peS) con(g>|vi-hg)sti(g|vi)tu(h|vihi)í(f|vi)sti(f|vi) e(df|qlppt1)os(fc|//clM-) su(c|ta)per(d|vi) ó(f|vi)pe(g|vihi)ra(f|ta) má(gh|``peSlsl1)nu(f|vi)um(f|vi>) tu(fgFEf|to)á(d|ta)rum.(d|ta) (::)
