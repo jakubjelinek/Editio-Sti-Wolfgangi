@@ -78,7 +78,7 @@ SCORES = $(addprefix versus-,exsultabunt laetamini exsultabunt-communis \
 	 $(addprefix capitulum-,EcceEgo) \
 	 oratio oratiodominica-mat benedicamus-minor \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) dominelabiamea \
-	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus deus christus ignem evangelica quorum adsocietatem) \
+	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus deus christus ignem evangelica divinum perevangelica) \
 	 $(addprefix ant-,angeliarchangeli angelidomini archangelemichael ascenditfumus concussumest datasuntei \
 			  dumpraeliaretur etomnesangeli factumest gloriosusapparuisti laudemusdominum michaelarchangelus \
 			  michaelgabriel michaelpraepositus princepsgloriosissime stetitangelus \
@@ -87,7 +87,7 @@ SCORES = $(addprefix versus-,exsultabunt laetamini exsultabunt-communis \
 			  mirificavit novitdominus quidiligitis timetedominum) \
 	 $(addprefix resp-,stetitangelus) \
 	 inv-regemregum tonus-lectionis-solemnis \
-	 benedicamus-solemnis-laud tedeum-solemnis tedeum-romanum-gn tuautem \
+	 benedicamus-solemnis-laud tedeum-solemnis-gn tedeum-romanum-gn tuautem \
 	 $(addprefix resp-,factumest-CROCHU hicestmichael-CROCHU inconspectuangelorum-CROCHU \
 			   inconspectugentium-CROCHU intemporeillo-CROCHU numquidscis-CROCHU \
 			   stetitangelus-CROCHU venitmichael-CROCHU \
@@ -96,9 +96,10 @@ SCORES = $(addprefix versus-,exsultabunt laetamini exsultabunt-communis \
 			   summaetrinitati-CROCHU vididominumsedentem-cumdox \
 			   vididominumsedentem-sinedox beatipauperesspiritu-CROCHU \
 			   beatiquipersecutionem-CROCHU) \
-	 ps14-initium-ii_-c ps23-initium-vii-d ps102-initium-ii_-c
+	 ps1-initium-viii-G3 ps23-initium-iii-a ps33-initium-i-g2 ps60-initium-iii-a \
+	 ps96-initium-i-D3
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = 
+OTHERDEPS = $(TMP_DIR)/ps23iiia.tex $(TMP_DIR)/ps60iiia.tex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3 benedictus,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
@@ -124,6 +125,8 @@ $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
 $(TMP_DIR)/magnificat.tex $(TMP_DIR)/magnificatiD.tex: PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --flex-underline --skip-verses 2 $(LAPSALMOPTSACC)
 $(TMP_DIR)/magnificatiD.tex: TONUS = 1 3 1 3
+$(TMP_DIR)/ps23iiia.tex: TONUS = 2 0 1 2
+$(TMP_DIR)/ps60iiia.tex: TONUS = 2 0 1 2
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
 $(CZPSALMS) $(TMP_DIR)/benedictus-boh.tex: $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/%.pslm
 	$(GENPSALM)
@@ -140,6 +143,14 @@ $(LAPSALMSEXTRA): $(TMP_DIR)/%.tex: $(PSALMS_DIR)/%.pslm
 	$(SED) -i -e 'y/Jj/Ii/' $@
 $(TMP_DIR)/magnificatiD.tex: \
 $(TMP_DIR)/%.tex: $(PSALMS_DIR)/magnificat.pslm
+	$(GENPSALM)
+	$(SED) -i -e 'y/Jj/Ii/' $@
+$(TMP_DIR)/ps23iiia.tex: \
+$(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps23.pslm
+	$(GENPSALM)
+	$(SED) -i -e 'y/Jj/Ii/' $@
+$(TMP_DIR)/ps60iiia.tex: \
+$(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps60.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
 $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
