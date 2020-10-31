@@ -21,7 +21,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 1 4 8 14 23 31 33 60 62 92 95 96 99 102 109 110 111 112 116 137 145 146 147 148 149 150
+PSALMS = 1 4 8 14 23 31 33 60 62 92 95 96 99 102 109 110 111 112 115 116 137 145 146 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-1 = viii-G
 MODUS-4 = vii-c2
@@ -32,24 +32,25 @@ MODUS-31 = viii-G
 MODUS-33 = i-g2
 MODUS-60 = iii-a
 MODUS-62 = viii-G
-MODUS-92 = vii-a
+MODUS-92 = i-f
 MODUS-95 = ii-D
 MODUS-96 = i-D
 MODUS-99 = i-f
 MODUS-102 = ii_-a
-MODUS-109 = vii-a
+MODUS-109 = i-f
 MODUS-110 = i-f
-MODUS-111 = viii-G
+MODUS-111 = vii-a
 MODUS-112 = viii-G
+MODUS-115 = viii-G
 MODUS-116 = i-g
 MODUS-137 = vii-c
 MODUS-145 = i-D2
 MODUS-146 = iv-E
 MODUS-147 = vii-a
-MODUS-148 = vii-c
-MODUS-149 = vii-c
-MODUS-150 = vii-c
-MODUS-benedictus = viiisoll-G2
+MODUS-148 = viii-G
+MODUS-149 = viii-G
+MODUS-150 = viii-G
+MODUS-benedictus = viisoll-a
 MODUS-magnificat = isoll-D
 MODUS-dan3 = per
 MODUSLIST = $(sort $(foreach P,$(PSALMS) benedictus magnificat dan3,$(MODUS-$(P))))
@@ -71,27 +72,23 @@ LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,benedictus magnificat dan3)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix versus-,exsultabunt laetamini exsultabunt-communis \
 			     justi laetamini-communis) \
-	 $(addprefix hym-,ChristeCaelorum ChristeRedemptor) \
+	 $(addprefix hym-,ChristeCaelorum ChristeRedemptor IesuSalvator) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
 	 $(addprefix deusinadiutorium-,communis solemnis alter) supplicatiolitaniae oratiodominica \
-	 dominusvobiscum-solemnis domineexaudi $(addprefix magnificat-initium-,isoll-D) \
+	 dominusvobiscum-solemnis domineexaudi $(addprefix magnificat-initium-,isoll-D visoll-C) \
 	 $(addprefix capitulum-,EcceEgo) \
 	 oratio oratiodominica-mat benedicamus-minor \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) dominelabiamea \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus deus christus ignem evangelica divinum perevangelica) \
-	 $(addprefix ant-,angeliarchangeli angelidomini archangelemichael ascenditfumus concussumest datasuntei \
-			  dumpraeliaretur etomnesangeli factumest gloriosusapparuisti laudemusdominum michaelarchangelus \
-			  michaelgabriel michaelpraepositus princepsgloriosissime stetitangelus \
-			  admirabileest angeliarchangeli cantabantsancti dominequioperati dominespessanctorum \
+	 $(addprefix ant-,admirabileest angeliarchangeli cantabantsancti dominequioperati dominespessanctorum \
 			  eccevideagnum gaudeteetexultate haecestgeneratio laetamini laudemdicite luxperpetua \
-			  mirificavit novitdominus quidiligitis timetedominum) \
-	 $(addprefix resp-,stetitangelus) \
+			  mirificavit novitdominus quidiligitis timetedominum \
+			  deustentavitillos etomnesangeli hymnusomnibus incaelestibusregnis \
+			  incivitatedomini oquamgloriosum redemistinos sanctidomini viditurbam) \
+	 $(addprefix resp-,exsultentjusti laetaminiindomino) \
 	 inv-regemregum tonus-lectionis-solemnis \
 	 benedicamus-solemnis-laud tedeum-solemnis-gn tedeum-romanum-gn tuautem \
-	 $(addprefix resp-,factumest-CROCHU hicestmichael-CROCHU inconspectuangelorum-CROCHU \
-			   inconspectugentium-CROCHU intemporeillo-CROCHU numquidscis-CROCHU \
-			   stetitangelus-CROCHU venitmichael-CROCHU \
-			   felixnamquees-CROCHU inconspectuangelorum-CROCHU \
+	 $(addprefix resp-,felixnamquees-CROCHU inconspectuangelorum-CROCHU \
 			   internatosmulierum-FKP istisuntquiviventes sanctimei-CROCHU \
 			   summaetrinitati-CROCHU vididominumsedentem-cumdox \
 			   vididominumsedentem-sinedox beatipauperesspiritu-CROCHU \
@@ -125,8 +122,8 @@ $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
 $(TMP_DIR)/magnificat.tex $(TMP_DIR)/magnificatiD.tex: PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --flex-underline --skip-verses 2 $(LAPSALMOPTSACC)
 $(TMP_DIR)/magnificatiD.tex: TONUS = 1 3 1 3
-$(TMP_DIR)/ps23iiia.tex: TONUS = 2 0 1 2
-$(TMP_DIR)/ps60iiia.tex: TONUS = 2 0 1 2
+$(TMP_DIR)/ps23iiia.tex: TONUS = 2 0 1 1
+$(TMP_DIR)/ps60iiia.tex: TONUS = 2 0 1 1
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
 $(CZPSALMS) $(TMP_DIR)/benedictus-boh.tex: $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/%.pslm
 	$(GENPSALM)
