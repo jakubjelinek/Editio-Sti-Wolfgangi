@@ -69,7 +69,8 @@ LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
 LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,benedictus magnificat dan3)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
-SCORES = $(addprefix versus-,exsultabunt laetamini) \
+SCORES = $(addprefix versus-,exsultabunt laetamini exsultabunt-communis \
+			     justi laetamini-communis) \
 	 $(addprefix hym-,ChristeCaelorum ChristeRedemptor) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
 	 $(addprefix deusinadiutorium-,communis solemnis alter) supplicatiolitaniae oratiodominica \
@@ -82,10 +83,10 @@ SCORES = $(addprefix versus-,exsultabunt laetamini) \
 			  dumpraeliaretur etomnesangeli factumest gloriosusapparuisti laudemusdominum michaelarchangelus \
 			  michaelgabriel michaelpraepositus princepsgloriosissime stetitangelus \
 			  admirabileest angeliarchangeli cantabantsancti dominequioperati dominespessanctorum \
-			  eccevideagnum gaudeteetexultate haecestgeneratio laetamini laudemdicite luxaeterna \
+			  eccevideagnum gaudeteetexultate haecestgeneratio laetamini laudemdicite luxperpetua \
 			  mirificavit novitdominus quidiligitis timetedominum) \
 	 $(addprefix resp-,stetitangelus) \
-	 inv-regemangelorum tonus-lectionis-solemnis \
+	 inv-regemregum tonus-lectionis-solemnis \
 	 benedicamus-solemnis-laud tedeum-solemnis tedeum-romanum-gn tuautem \
 	 $(addprefix resp-,factumest-CROCHU hicestmichael-CROCHU inconspectuangelorum-CROCHU \
 			   inconspectugentium-CROCHU intemporeillo-CROCHU numquidscis-CROCHU \
