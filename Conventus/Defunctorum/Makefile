@@ -88,14 +88,17 @@ SCORES = $(addprefix vesp-ant,1 2 3 4 5) vesp-ant-magn \
 	 benedictio-noctemquietam jubedomnebenedicere lectiobrevis-fratressobrii \
 	 convertenosdeus deusinadiutorium-communis \
 	 oratio-visita benedicamus-minor ant-salveregina-simplex \
-	 oratiodominica-mat oratio oratio-compl oratio-fidelium requiescant benedicamus-minor \
+	 oratiodominica-mat oratio oratio-compl oratio-fidelium oratio2 requiescant benedicamus-minor \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) dominelabiamea \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus inunitate deus christus ignem acunctis \
 					evangelica ille cujus-ipse adsocietatem) \
 	 $(addprefix matant,1 2 3 4 5 6 7 8 9) $(addprefix matresp,1 2 3 4 5 6 7 8 9 10) \
-	 tedecetlaus tonus-evangelii-b tonus-lectionis-prophetiae \
+	 tedecetlaus tonus-evangelii-b tonus-lectionis-prophetiae inv-regemcui \
 	 $(addprefix venite6,a b c d e f) $(addprefix matinv-RegemCu,i i3) \
-	 benedicamus-solemnis-laud ps26-initium-iv-E seq-DiesIrae
+	 benedicamus-solemnis-laud ps26-initium-iv-E seq-DiesIrae \
+	 $(addprefix resp-,credoquod-GN quilazarum-GN dominequando-CROCHU \
+			   mementomei-CROCHU heumihi-CROCHU nerecorderis-CROCHU \
+			   peccantemme-CROCHU dominesecundum-CROCHU liberamedominedemorte-CROCHU)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = seq-DiesIrae-bohtext.tex
 LAPSALMSINITGABC = $(foreach P,$(filter-out 129d 118vi 118vii 118ix 118x 118xii 118xiii,$(PSALMS)),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
@@ -119,7 +122,7 @@ iter-left := . $(TMP_DIR) $(addprefix cantus/,amon33 triplex76 nrom02) \
 	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 triplex76)
 include $(iter)
 
-all: defunctorum.pdf
+all: defunctorum.pdf omniumdefunctorum.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDREQUIEMAETERNAM) $(LAPSALMOPTS)
 $(TMP_DIR)/magnificat.tex: PSALMOPTS = $(APPENDREQUIEMAETERNAM) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
@@ -144,7 +147,7 @@ $(TMP_DIR)/ps129d.tex: $(TMP_DIR)/ps%.tex: $(TMP_DIR)/ps%.pslm
 $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
 	$(GENPSCOMB)
 $(TMP_DIR)/magnificat-comb.tex: PSSKIP = 2
-defunctorum.pdf: defunctorum.tex conventuscommune.tex translationes_cs.tex defunctorum.png torcello.jpg \
+defunctorum.pdf omniumdefunctorum.pdf: %.pdf: %.tex conventuscommune.tex translationes_cs.tex defunctorum.png torcello.jpg \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
