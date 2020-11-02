@@ -85,7 +85,7 @@ SCORES = $(addprefix vesp-ant,1 2 3 4 5) vesp-ant-magn \
 	 $(addprefix laud-ant,1 2 3 4 5) laud-ant-ben \
 	 $(addprefix ant-,dirigedomine converteredomine nequandorapiat \
 			  complaceat sitivitanima exsultabunt mesuscepit \
-			  delictaiuventutis) \
+			  delictaiuventutis egosum) \
 	 $(addprefix versus-,audivi aporta collocet netradas) \
 	 benedicamus-duplex-laudes benedicamus-duplex-vesperae \
 	 deusinadiutorium-communis supplicatiolitaniae oratiodominica \
