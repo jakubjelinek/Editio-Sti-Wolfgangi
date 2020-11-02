@@ -84,7 +84,8 @@ ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA) $(patsubst %,$(TMP_DIR)/%.tex,ps129d)
 SCORES = $(addprefix vesp-ant,1 2 3 4 5) vesp-ant-magn \
 	 $(addprefix laud-ant,1 2 3 4 5) laud-ant-ben \
 	 $(addprefix ant-,dirigedomine converteredomine nequandorapiat \
-			  complaceat sitivitanima exsultabunt mesuscepit) \
+			  complaceat sitivitanima exsultabunt mesuscepit \
+			  delictaiuventutis) \
 	 $(addprefix versus-,audivi aporta collocet netradas) \
 	 benedicamus-duplex-laudes benedicamus-duplex-vesperae \
 	 deusinadiutorium-communis supplicatiolitaniae oratiodominica \
