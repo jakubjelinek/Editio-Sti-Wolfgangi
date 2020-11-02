@@ -292,7 +292,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			     diffusa cognoscantquia deusnesileas exaltentdominum laudabonomen \
 			     medianocte memorfui praevenerunt psallitedomino sacrificiumlaudis \
 			     benedictatu) \
-	 $(addprefix oratio,5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 bmv -franciscus) \
+	 $(addprefix oratio,5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 bmv -franciscus) \
 	 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,feria-laudes feria-vesperae minor officium-bmv dominica-perannum) \
@@ -338,7 +338,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   dixitiudassimoni-CROCHU inhymnisetconfessionibus-CROCHU \
 			   ornaveruntfaciemtempli-CROCHU apericaelostuosdomine-CROCHU-cumdox \
 			   hicestfratrumamator-CROCHU tudomineuniversorum-CROCHU \
-			   disrumpamvinculapopuli-CROCHU) \
+			   disrumpamvinculapopuli-CROCHU afaciefuroristui-CROCHU \
+			   civitatemistamtucircumda-CROCHU gentipeccatrici-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex benedictio-noctemquietam \
@@ -412,7 +413,7 @@ $(TMP_DIR)/%-XXII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-XXIII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 
 FERIAE = ii iii iv v vi
-HEBDOMADAE = v vi vii viii ix x xi xii xiii xiv xv xvi xvii xviii xix xx xxi
+HEBDOMADAE = v vi vii viii ix x xi xii xiii xiv xv xvi xvii xviii xix xx xxi xxii
 PDFI = $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE)))
 PDFII = $(foreach H,$(HEBDOMADAE),sabbato-$(H).pdf)
 PDFIII = $(foreach H,$(HEBDOMADAE),dominica-$(H).pdf)
