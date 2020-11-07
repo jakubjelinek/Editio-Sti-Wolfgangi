@@ -187,6 +187,7 @@ MODUS-benedictus-XIII = ivsoll-E
 MODUS-benedictus-XIV = viisoll-a
 MODUS-benedictus-XV = isoll-D_
 MODUS-benedictus-XVI = viisoll-d
+MODUS-benedictus-XVII = visoll-C
 MODUS-magnificat-VIII = isoll-f
 MODUS-magnificat-IX = viisoll-d
 MODUS-magnificat-X = viiisoll-G
@@ -205,7 +206,7 @@ MODUS-magnificat-XXII = iiisoll-a
 MODUS-magnificat-XXIII = isoll-a
 CANTICIS = isaiae ezechiae anna moysis habacuc moysis2i moysis2ii nuncdimittis dan3
 NUMSI = I II III IV V VI VII
-NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI
+NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII
 NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII
 PSALMSALT = $(foreach V,$(NUMSI),$(addsuffix -$(V),$(PSALMS)))
 BENEDICTUS = $(foreach B,$(NUMSII),benedictus-$(B))
@@ -421,7 +422,7 @@ $(TMP_DIR)/%-XXII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-XXIII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 
 FERIAE = ii iii iv v vi
-HEBDOMADAE = v vi vii viii ix x xi xii xiii xiv xv xvi xvii xviii xix xx xxi xxii
+HEBDOMADAE = v vi vii viii ix x xi xii xiii xiv xv xvi xvii xviii xix xx xxi xxii xxiii
 PDFI = $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE)))
 PDFII = $(foreach H,$(HEBDOMADAE),sabbato-$(H).pdf)
 PDFIII = $(foreach H,$(HEBDOMADAE),dominica-$(H).pdf)
