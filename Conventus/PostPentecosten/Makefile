@@ -202,10 +202,11 @@ MODUS-magnificat-XIX = visoll-C
 MODUS-magnificat-XX = isoll-D2
 MODUS-magnificat-XXI = viiisoll-g
 MODUS-magnificat-XXII = iiisoll-a
+MODUS-magnificat-XXIII = isoll-a
 CANTICIS = isaiae ezechiae anna moysis habacuc moysis2i moysis2ii nuncdimittis dan3
 NUMSI = I II III IV V VI VII
 NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI
-NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII
+NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII
 PSALMSALT = $(foreach V,$(NUMSI),$(addsuffix -$(V),$(PSALMS)))
 BENEDICTUS = $(foreach B,$(NUMSII),benedictus-$(B))
 MAGNIFICAT = $(foreach M,$(NUMSIII),magnificat-$(M))
@@ -272,7 +273,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  adaperiatdominus malosmaleperdet novissimeautemmisit \
 			  doctusdoctrinae intravitautemrex nuptiaequidemparataesunt \
 			  refulsitsol lugebatautemjudam magisterscimus redditeergo \
-			  diligamusnos exaudiatdominusorationes magisterquodest) \
+			  diligamusnos exaudiatdominusorationes magisterquodest \
+			  dumautemirent murotuo quimajor quinqueprudentes unusestenim \
+			  vididominumsedentem) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -292,7 +295,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			     diffusa cognoscantquia deusnesileas exaltentdominum laudabonomen \
 			     medianocte memorfui praevenerunt psallitedomino sacrificiumlaudis \
 			     benedictatu) \
-	 $(addprefix oratio,5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 bmv -franciscus) \
+	 $(addprefix oratio,5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 bmv -franciscus) \
 	 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,feria-laudes feria-vesperae minor officium-bmv dominica-perannum) \
