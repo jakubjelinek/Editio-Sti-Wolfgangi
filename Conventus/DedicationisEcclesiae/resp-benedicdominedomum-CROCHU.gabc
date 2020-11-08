@@ -2,14 +2,15 @@ name: Benedic, Domine, domum istam;
 book: H328;
 mode: 8;
 transcriber: Isabelle Valloton;
+nabc-lines: 1;
 %%
 (c4)
 BE(d|ta)ne(d|ta)dic,(f/gh|vi-pehi) Dó(gh|pehh)mi(g|tahh)ne,(g|tahh) (`)
-do(g|tahg)mum(ixghOi|///sa1) i(h|ta)stam(ixhg/h!iwjg/hvggo!f|cl-qlhh!clhhppt1vihhprhh) (;)
-quam(g|vi) æ(h|vi)di(hwj|ql)fi(hg|cllsc2)cá(h|vi)vi(gf|cllsc2) nó(gh|pe)mi(g|ta)ni(gh!iwjIHiwjIH|ql-ppt2sut2ql-hhsu2) tu(gh!ivHGh|vi-pp2su2vihh)o;(g!hih|cl-ppt2lsc2) +(;)
-Ve(f|ta)ni(h|vi)én(jkj~|pe>1)ti(j)um(jo!kv|pqS) in(jh~|vi>) lo(jkj|to)co(-jk|pe) i(ki/jkh/iv|cltoS2hgvihh)sto(hho!g|pr-) (;)
+do(g|tahg)mum(ixghOi|///sa1) i(h|ta)stam(ixhg/h!iwjg/hvggo1!f|///cl-qlhh!clhhppt1vihhprhh) (;)
+quam(g|vi) æ(h|vi)di(hwj|ql)fi(hg|cllsc2)cá(h|vi)vi(gf|cllsc2) nó(gh|pe)mi(g|ta)ni(gh!iwjIHiwjIH|ql-hhppt2sut2ql-hjsu2) tu(gh!ivHGh|vi-pp2su2vihh)o;(g!hih|cl-ppt2lsc2) +(;)
+Ve(f|ta)ni(h|vi)én(jkj~|pe>1hi)ti(j)um(jo1!kv|pqShi) in(jh~|vi>) lo(jkj|tohh)co(-jk|pehh) i(ki/jkh/iv|clhhtoS2hivihj)sto(hho1!g|pr-) (;)
 e(h|vilse6)xáu(h/jvIgh~|vivihilsc3su1ta>)di(g|vi) pre(gh|pe)ces(g|tahg) in(g|vi) e(eg|peS)xcél(fef|po)so(dec/d!ewfe/fvED|toS2ql!cl-ppt1ci-hg) (;)
-só(dc|cl)li(f|vihg)o(gh|pe) gló(ixhiHGFgh|toSsu2peS)ri(g|ta)æ(iygh!iwjIH|///ql-ppt2sut2ql-hhsu2) tu(ghivHG|vi-pp2su2vihh)æ.(hg|cl-) <sp>V/</sp>.(::)
-Do(ji|cl)mum(jkj/iji/hho!g|toS2toS2pi) tu(hi|pe)am,(ih~|vi>) Dó(jk|pe)mi(j|vi)ne,(j|vi) de(ji|cl)cet(ih~|vi>) san(ij|pe)cti(hi|pe)tú(g!hwih|ql!clppt1)do(hg|cl-) (;)
-in(g|vi) lon(g|vi)gi(g|vi)tú(g|vi)di(ixhiHGhih|pe-su2tohh)ne(ghf|to) di(gh|peS)é(iyh!iwji/jkJIH|///ql!clppt1toS2hhsu2)rum.(hiHGhg|pe-1su2cl-) +(::)
-Ve(f|ta)ni(h|vi)én(jkj~|pe>1)ti(j)um.(jo!kv|pqS) (::)
+só(dc|cl)li(f|vihg)o(gh|pe) gló(ixhiHGFgh|///toSsu2peS)ri(g|ta)æ(iygh!iwjIH|/ql-hhppt2sut2ql-hjsu2) tu(gh!ivHG|vi-pp2su2vihh)æ.(hg|cl-) <sp>V/</sp>.(::)
+Do(ji|cl)mum(jkj/iji/hho1!g|toS2hhtoS2pi) tu(hi|pe)am,(ih~|vi>) Dó(jk|pehi)mi(j|vi)ne,(j|vi) de(ji|cl)cet(ih~|vi>) san(ij|pe)cti(hi|pe)tú(g!hwih|ql!clppt1)do(hg|cl-) (;)
+in(g|vi) lon(g|vi)gi(g|vi)tú(g|vi)di(ixhiHGhih|///pe-su2tohh)ne(ghf|to) di(gh|peS)é(iyh!iwji/jkJIH|///ql!clppt1toS2hhsu2)rum.(hiHGhg|pe-1su2cl-) +(::)
+Ve(f|ta)ni(h|vi)én(jkj~|pe>1hi)ti(j)um.(jo1!kv|pqShi) (::)
