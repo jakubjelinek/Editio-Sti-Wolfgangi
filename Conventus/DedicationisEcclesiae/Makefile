@@ -60,12 +60,13 @@ LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
 LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,benedictus magnificat dan3)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix versus-,domumtuam domumtuam-communis haecest) \
-	 $(addprefix hym-,AngularisFundamentum UrbsBeata UrbsJerusalem) \
+	 $(addprefix hym-,AngularisFundamentum UrbsBeata UrbsJerusalem IamBone) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
+	 $(addprefix benedicamus-duplexmajus-,laudes vesperae) \
 	 $(addprefix deusinadiutorium-,communis solemnis alter) supplicatiolitaniae oratiodominica \
 	 dominusvobiscum-solemnis domineexaudi $(addprefix magnificat-initium-,viiisoll-G2) \
 	 $(addprefix capitulum-,VidiCivitatem) \
-	 oratio oratiodominica-mat benedicamus-minor \
+	 oratio oratio2 oratiodominica-mat benedicamus-minor \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) dominelabiamea \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus deus christus ignem evangelica divinum perevangelica) \
 	 $(addprefix ant-,aedificavitmoyses benefundataest domumtuam domusmea eritmihi \
@@ -99,7 +100,7 @@ iter-left := . $(TMP_DIR) $(addprefix ../InNativitateBMV/cantus/,amon33 triplex7
 	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 triplex76) ../CorpusChristi ../InNativitateBMV ../MichaelisArchangelis
 include $(iter)
 
-all: indedicationearchbasilicaesssalvatoris.pdf
+all: indedicationearchbasilicaesssalvatoris.pdf indedicationebasilicarumssapostolorumpetrietpauli.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
 $(TMP_DIR)/magnificat.tex: PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --flex-underline --skip-verses 2 $(LAPSALMOPTSACC)
@@ -124,7 +125,8 @@ $(TMP_DIR)/%.tex: $(PSALMS_DIR)/magnificat.pslm
 $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
 	$(GENPSCOMB)
 $(TMP_DIR)/magnificat-comb.tex: PSSKIP = 2
-indedicationearchbasilicaesssalvatoris.pdf: %.pdf: %.tex dedicationisecclesiae.tex conventuscommune.tex translationes_cs.tex \
+indedicationearchbasilicaesssalvatoris.pdf \
+indedicationebasilicarumssapostolorumpetrietpauli.pdf: %.pdf: %.tex dedicationisecclesiae.tex conventuscommune.tex translationes_cs.tex \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<

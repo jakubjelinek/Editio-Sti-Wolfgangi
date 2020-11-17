@@ -387,6 +387,7 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
+\ifx\duplexmaius\undefined
 % Te Deum
 
 \pars{Hymnus Ambrosianus} \scriptura{Tonus Solemnis}
@@ -401,6 +402,7 @@ per infiníta sǽcula sæculórum.
 
 \vfill
 \pagebreak
+\fi
 
 \sineinitiali{temporalia/domineexaudi.gtex}
 
@@ -408,7 +410,11 @@ per infiníta sǽcula sæculórum.
 
 \pars{Oratio.}
 
+\ifx\duplexmaius\undefined
 \cuminitiali{}{temporalia/oratio.gtex}
+\else
+\cuminitiali{}{temporalia/oratio2.gtex}
+\fi
 %\trOrationis
 
 \vfill
@@ -614,7 +620,11 @@ per infiníta sǽcula sæculórum.
 
 {
 \grechangedim{interwordspacetext}{0.20 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\ifx\duplexmaius\undefined
 \cuminitiali{IV}{temporalia/hym-AngularisFundamentum.gtex}
+\else
+\cuminitiali{IV}{temporalia/hym-IamBone.gtex}
+\fi
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 }
 %\input{cantus/amon33/hym-TibiChriste-bohtext.tex}
@@ -668,7 +678,11 @@ per infiníta sǽcula sæculórum.
 % Oratio. %%%
 \pars{Oratio.}
 
+\ifx\duplexmaius\undefined
 \cuminitiali{}{temporalia/oratio.gtex}
+\else
+\cuminitiali{}{temporalia/oratio2.gtex}
+\fi
 %\trOrationis
 
 \vfill
@@ -683,7 +697,11 @@ per infiníta sǽcula sæculórum.
 
 \vspace{2mm}
 
+\ifx\duplexmaius\undefined
 \cuminitiali{II}{temporalia/benedicamus-solemnism-laud.gtex}
+\else
+\cuminitiali{VIII}{temporalia/benedicamus-duplexmajus-laudes.gtex}
+\fi
 
 \vspace{1mm}
 
@@ -846,7 +864,11 @@ per infiníta sǽcula sæculórum.
 %% Oratio. %%%
 \pars{Oratio.}
 
+\ifx\duplexmaius\undefined
 \cuminitiali{}{temporalia/oratio.gtex}
+\else
+\cuminitiali{}{temporalia/oratio2.gtex}
+\fi
 %\trOrationis
 
 \vfill
@@ -861,7 +883,11 @@ per infiníta sǽcula sæculórum.
 
 \vspace{2mm}
 
+\ifx\duplexmaius\undefined
 \cuminitiali{II}{temporalia/benedicamus-solemnism-2vesp.gtex}
+\else
+\cuminitiali{II}{temporalia/benedicamus-duplexmajus-vesperae.gtex}
+\fi
 
 \vspace{1mm}
 
