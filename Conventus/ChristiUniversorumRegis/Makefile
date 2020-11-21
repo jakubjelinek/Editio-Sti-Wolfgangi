@@ -91,7 +91,9 @@ SCORES = $(addprefix versus-,exsultabunt laetamini exsultabunt-communis \
 	 $(addprefix resp-,exsultentjusti laetaminiindomino) \
 	 inv-regemregum tonus-lectionis-solemnis \
 	 benedicamus-solemnis-laud tedeum-solemnis-gn tedeum-romanum-gn tuautem \
-	 $(addprefix resp-,tuaestpotentia-CROCHU tuaestpotentia-CROCHU-cumdox)
+	 $(addprefix resp-,tuaestpotentia-CROCHU-cumdox dominatordomine-CROCHU-cumdox \
+			   dominerexomnipotens-CROCHU duoseraphim-cumdox quicaelorumcontinesthronos-CROCHU-sinedox \
+			   redemitdominus-CROCHU tudomineuniversorum-CROCHU vididominumsedentem-CROCHU-sinedox)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
