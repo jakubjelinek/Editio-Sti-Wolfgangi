@@ -21,17 +21,18 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 1 4 8 14 23 31 33 60 62 92 95 96 99 102 109 110 111 112 115 116 137 144i 144ii 145 146 147 148 149 150
+PSALMS = 2 8 23 28 44 46 62 71 88i 88ii 92 95 96 99 102 109 110 111 112 115 116 137 144i 144ii 145 146 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
-MODUS-1 = viii-G
-MODUS-4 = vii-c2
-MODUS-8 = i-D2
-MODUS-14 = vi-F
-MODUS-23 = iii-a
-MODUS-31 = viii-G
-MODUS-33 = i-g2
-MODUS-60 = iii-a
+MODUS-2 = i-f
+MODUS-8 = viii-G2
+MODUS-23 = v-a
+MODUS-28 = vii-a
+MODUS-44 = vii-d
+MODUS-46 = i-a
 MODUS-62 = viii-G
+MODUS-71 = ii-D
+MODUS-88i = viii-G
+MODUS-88ii = ii-D
 MODUS-92 = i-f
 MODUS-95 = ii-D
 MODUS-96 = i-D
@@ -72,9 +73,8 @@ LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
 LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,benedictus magnificat dan3)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
-SCORES = $(addprefix versus-,exsultabunt laetamini exsultabunt-communis \
-			     justi laetamini-communis dataest) \
-	 $(addprefix hym-,ChristeCaelorum ChristeRedemptor IesuSalvator TeSaeculorum) \
+SCORES = $(addprefix versus-,dataest adorabunt afferte dataest-communis) \
+	 $(addprefix hym-,TeSaeculorum IesuRex) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
 	 $(addprefix deusinadiutorium-,communis solemnis alter) supplicatiolitaniae oratiodominica \
 	 dominusvobiscum-solemnis domineexaudi $(addprefix magnificat-initium-,viisoll-b) \
@@ -82,18 +82,16 @@ SCORES = $(addprefix versus-,exsultabunt laetamini exsultabunt-communis \
 	 oratio oratiodominica-mat benedicamus-minor \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) dominelabiamea \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus deus christus ignem evangelica divinum perevangelica) \
-	 $(addprefix ant-,admirabileest angeliarchangeli cantabantsancti dominequioperati dominespessanctorum \
-			  eccevideagnum gaudeteetexultate haecestgeneratio laetamini laudemdicite luxperpetua \
-			  mirificavit novitdominus quidiligitis timetedominum \
-			  deustentavitillos etomnesangeli hymnusomnibus incaelestibusregnis \
-			  incivitatedomini oquamgloriosum redemistinos sanctidomini viditurbam \
-			  christodatusest ecceviroriens magnificemus pacificusvocabitur regnumeius) \
+	 $(addprefix ant-,christodatusest ecceviroriens magnificemus pacificusvocabitur regnumeius \
+			  affertedomino dabitilli dicitefiliae elevamini gloriaethonore multiplicabitur \
+			  psallitedeo supersolium suscitabitdeus) \
 	 $(addprefix resp-,exsultentjusti laetaminiindomino) \
-	 inv-regemregum tonus-lectionis-solemnis \
+	 inv-iesumchristum tonus-lectionis-solemnis \
 	 benedicamus-solemnis-laud tedeum-solemnis-gn tedeum-romanum-gn tuautem \
 	 $(addprefix resp-,tuaestpotentia-CROCHU-cumdox dominatordomine-CROCHU-cumdox \
 			   dominerexomnipotens-CROCHU duoseraphim-cumdox quicaelorumcontinesthronos-CROCHU-sinedox \
-			   redemitdominus-CROCHU tudomineuniversorum-CROCHU vididominumsedentem-CROCHU-sinedox)
+			   redemitdominus-CROCHU tudomineuniversorum-CROCHU vididominumsedentem-CROCHU-sinedox) \
+	 ps44-initium-vii-d ps46-initium-i-a
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
