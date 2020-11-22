@@ -21,7 +21,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 2 8 23 28 44 46 62 71 88i 88ii 92 95 96 99 102 109 110 111 112 115 116 137 144i 144ii 145 146 147 148 149 150
+PSALMS = 2 8 23 28 44 46 62 71 88i 88ii 92 99 109 110 112 116 144i 144ii 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-2 = i-f
 MODUS-8 = viii-G2
@@ -34,22 +34,13 @@ MODUS-71 = ii-D
 MODUS-88i = viii-G
 MODUS-88ii = ii-D
 MODUS-92 = i-g
-MODUS-95 = ii-D
-MODUS-96 = i-D
 MODUS-99 = i-f
-MODUS-102 = ii_-a
-MODUS-109 = i-f
-MODUS-110 = i-f
-MODUS-111 = vii-a
+MODUS-109 = i-a2
+MODUS-110 = viii-G
 MODUS-112 = viii-G
-MODUS-115 = viii-G
 MODUS-116 = viii-C2
-MODUS-137 = vii-c
 MODUS-144i = vii-c2
 MODUS-144ii = viii-G
-MODUS-145 = i-D2
-MODUS-146 = iv-E
-MODUS-147 = vii-a
 MODUS-148 = i-a
 MODUS-149 = i-a
 MODUS-150 = i-a
@@ -77,7 +68,7 @@ SCORES = $(addprefix versus-,dataest adorabunt afferte dataest-communis multipli
 	 $(addprefix hym-,TeSaeculorum IesuRex AEternaImago) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
 	 $(addprefix deusinadiutorium-,communis solemnis alter) supplicatiolitaniae oratiodominica \
-	 dominusvobiscum-solemnis domineexaudi $(addprefix magnificat-initium-,viisoll-b) \
+	 dominusvobiscum-solemnis domineexaudi $(addprefix magnificat-initium-,viisoll-b viisoll-a) \
 	 $(addprefix capitulum-,OportetChristus VeritatemAutem) \
 	 oratio oratiodominica-mat benedicamus-minor \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) dominelabiamea \
@@ -85,8 +76,8 @@ SCORES = $(addprefix versus-,dataest adorabunt afferte dataest-communis multipli
 	 $(addprefix ant-,christodatusest ecceviroriens magnificemus pacificusvocabitur regnumeius \
 			  affertedomino dabitilli dicitefiliae elevamini gloriaethonore multiplicabitur \
 			  psallitedeo supersolium suscitabitdeus deditei exibuntaquae fecitnos magnificabitur \
-			  regesterrae regnavitdominus) \
-	 $(addprefix resp-,sanctitui) \
+			  regesterrae regnavitdominus habetinvestimento virgamvirtutis) \
+	 $(addprefix resp-,sanctitui sedestua) \
 	 inv-iesumchristum tonus-lectionis-solemnis \
 	 benedicamus-solemnis-laud tedeum-solemnis-gn tedeum-romanum-gn tuautem \
 	 $(addprefix resp-,tuaestpotentia-CROCHU-cumdox dominatordomine-CROCHU-cumdox \
@@ -112,7 +103,7 @@ $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e 
 endef
 iter-left := . $(TMP_DIR) $(addprefix ../InNativitateBMV/cantus/,amon33 triplex76 nrom02) \
 	     $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) \
-	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 triplex76) ../CorpusChristi ../InNativitateBMV ../MichaelisArchangelis ../OmniumSanctorum
+	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 triplex76) ../CorpusChristi ../InNativitateBMV
 include $(iter)
 
 all: christiuniversorumregis.pdf
