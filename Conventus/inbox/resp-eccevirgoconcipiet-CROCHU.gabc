@@ -3,11 +3,21 @@ office-part:Responsorium;
 mode:3;
 transcriber:Dominique CROCHU;
 commentary:Is 7, 14 ; 9, 6 V/ Ps 23, 7;
+cantusindex:http://cantusindex.org/id/006620;
+nabc-lines:1;
+nabc-source:http://www.e-codices.unifr.ch/fr/csg/0390/017;
+ntranscriber:Marek Klein;
 %%
-(c4)EC(g)ce(g) Vir(hi~)go(i) con(i)cí(j)pi(ih)et(h) (,) et(g) pá(i)ri(j)et(h) Fí(jh!iwj)li(g)um,(e/fh~) (,) di(hv/f!goh)cit(ixhiGFghg) Dó(e)mi(egffs)nus;(fe) (:) et(e) vo(e)cá(EFg!ho)bi(g)tur(g) no(g)men(gh) e(h>)jus(gf/ghhg) (,) ad(i)mi(j)rá(iioh)bi(jh!iwjIG)lis,(e/fh~) *(,) De(hv/f!goh)us,(ixhiGFghg) for(egffs)tis.(fe) (::)
+(c4)EC(g|ta)ce(g|ta) Vir(hi~|pe~)go(i|vi) con(i|vi)cí(j|vihg)pi(ih|/cllsc2)et(h|vi) (,) et(g|ta) pá(i|vi)ri(j|vihg)et(h|ta) Fí(jh|/cl-|!iwj|ql)li(g|vi)um,(e|ta-|/fh~|pe~) (,) di(hv|vi-|/f!goh|sa)cit(ixhiGF|////pesu2lsc2|ghg|//to) Dó(e|ta)mi(egffs|//tosthh)nus;(fe|/cl-) (:) et(e|ta) vo(e|ta)cá(EFg!ho|vshhlsc2pp2)bi(g|ta)tur(g|ta) no(g|ta)men(gh|pe) e(h>|vi>)jus(gf|/cl|/gh|pe-|hg|/cl-) (,) ad(i|vi)mi(j|vi)rá(iioh|/pr)bi(jh|/cl-|!iwjIG|ql-su2)lis,(e|ta|/fh~|pe~) (,)
 
-<sp>V/</sp>. Tól(ikjjs)li(h!iwji)te(hhog) por(ij~)tas,(h) prí(h)ni(h)pes,(h) ves(hi)tras,(h) (,) et(h) e(h)le(h)vá(hi)mi(h)ni,(h) por(h)tæ(hg) æ(h)ter(j)ná(ikjjs)les,(ji) (;) et(ikjjvHG/iwji) in(hg~)tro(gh!iwj)í(jiioh/ivHGh)bit.(hg) (::)
-*() De(hv/f!goh)us,(ixhiGFghg) for(egffs)tis.(fe) (::)
++() De(hv|vi-|/f!goh|sa)us,(ixhiGF|////pesu2lsc2|ghg|//to) for(egffs|//tosthh)tis.(fe|/cl-) (::)
 
-<sp>V/</sp>. Gló(ikjjs)ri(h!iwji)a(hhg) Pa(hg)tri,(h) et(j) Fí(i)li(ikjjs)o,(ji) (;) et(i) Spi(i)rí(ikjjvIH/iwji)tu(hg)i(gh!iwj) San(jiioh/ivHGh)cto.(hg) (::) 
-*() De(hv/f!goh)us,(ixhiGFghg) for(egffs)tis.(fe) (::)
+<sp>V/</sp>. Tól(ikjjs|//tohisthj)li(h!iwji|ql!clppt1)te(hhog|/pr) por(ij~|pe~hg)tas,(h|ta) prí(h|ta)ni(h|ta)pes,(h|ta) ves(hi|pe)tras,(h|ta) (,) et(h|ta) e(h|ta)le(h|ta)vá(hi|pe)mi(h|ta)ni,(h|ta) por(h|ta)tæ(hg|/cl) æ(h|vi)ter(j|vi)ná(ikjjs|//tohisthk)les,(ji|/cl-) (;) et(ikj|//toShi|jvHG|//vi-hhsut2|/iwji|qihh!cl-hh) in(hg~|cl~)tro(gh!iwj|``qlhhppt2)í(jiioh|/clhh!pihh|/ivHGh|vi-su2/vi)bit.(hg|/cl-) (::)
+
++() De(hv|vi-|/f!goh|sa)us,(ixhiGF|////pesu2lsc2|ghg|//to) for(egffs|//tosthh)tis.(fe|/cl-) (::)
+
+<sp>V/</sp>. Gló(ikjjs|//tohisthk)ri(h!iwji|ql!cl-ppt1)a(hhO1g|pr) Pa(hg)tri,(h) et(j) Fí(i)li(ikjjs|//tohhsthj)o,(ji|/cl-) (;)
+et(i) Spi(i)rí(ikjjvIHiwji|/toShivi-hhsut2qihg!cl-hg)tu(hg|/cllsc2)i(GHiwj|``qlhhppt2)
+San(jiiO1hivHGh|//clhh!pihhci-/vihg)cto.(hg|/cl-) (::)
+
++() De(hv|vi-|/f!goh|sa)us,(ixhiGF|////pesu2lsc2|ghg|//to) for(egffs|//tosthh)tis.(fe|/cl-) (::)
