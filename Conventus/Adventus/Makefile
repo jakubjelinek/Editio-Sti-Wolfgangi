@@ -267,7 +267,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  gabrielangelus gaudeetlaetare gaudeteomnes inadventusummi inilladie \
 			  jucundarefilia mariadixit netimeasmaria omnessitientes rexnosteradveniet \
 			  veniteeccerex gaudeetlaetaresion spiritussanctus) \
-	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
+	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
 				     TellurisIngens) \
@@ -307,7 +307,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   auditeverbumdomini-CROCHU-cumdox auditeverbumdomini-CROCHU) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
-	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
+	 an_alma_redemptoris_mater an_alma_redemptoris_mater-simplex benedictio-noctemquietam \
 	 habacuc-initium-iv_-e $(addsuffix -initium-e,ps48ii ps65i ps105i) ps10-initium-ii_-f \
 	 benedictus-initium-viisoll-d
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
