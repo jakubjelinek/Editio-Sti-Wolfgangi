@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 1 2 3 4 5 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 10 13 14 16 17i 17ii 17iii 19 20 29 34i 34ii 34iii 35 36i 36ii 36iii 37i 37ii 38 42 44i 44ii 45 47 48i 48ii 49i_vi 49vii_xv 49xvi_xxiii 50 56 61 62 63 64 65i 65ii 67i 67ii 67iii 68i 68ii 68iii 75 77i 77ii 77iii 77iv 77v 77vi 78 80 82 87 89 90 91 104i 104ii 104iii 105i 105ii 105iii 106i 106ii 106iii 109 110 111 112 113 114 115 116 117 128 129 130 131 132 133 134 135 136 137 138i 138ii 139 140 141 142 143i 143ii 144i 144ii 145 146 147 148 149 150
+PSALMS = 1 2 3 4 5 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 10 13 14 16 17i 17ii 17iii 19 20 29 34i 34ii 34iii 35 36i 36ii 36iii 37i 37ii 38 42 44i 44ii 45 47 48i 48ii 49i_vi 49vii_xv 49xvi_xxiii 50 56 61 62 63 64 65i 65ii 66 67i 67ii 67iii 68i 68ii 68iii 75 77i 77ii 77iii 77iv 77v 77vi 78 80 82 87 89 90 91 92 99 104i 104ii 104iii 105i 105ii 105iii 106i 106ii 106iii 109 110 111 112 113 114 115 116 117 128 129 130 131 132 133 134 135 136 137 138i 138ii 139 140 141 142 143i 143ii 144i 144ii 145 146 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-1-I = i-g
 MODUS-2-I = ii-D
@@ -31,17 +31,18 @@ MODUS-9xii_xxi-I = vi-F
 MODUS-9xxii_xxxii-I = vii-d
 MODUS-9xxxiii_xxxix-I = viii-g
 MODUS-10-I = iv-E
-MODUS-50-I = vi-F
-MODUS-117-I = vi-F
-MODUS-62-I = vi-F
-MODUS-dan3 = viii-G
-MODUS-148-I = viii-G
-MODUS-149-I = viii-G
-MODUS-150-I = viii-G
-MODUS-109-I = vii-c2
-MODUS-110-I = iv-g
-MODUS-111-I = iv-a
-MODUS-112-I = vii-c
+MODUS-92-I = viii-G
+MODUS-99-I = viii-G2
+MODUS-62-I = v-a
+MODUS-66-I = i-g
+MODUS-dan3 = vii-c
+MODUS-148-I = iv-A
+MODUS-149-I = iv-A
+MODUS-150-I = iv-A
+MODUS-109-I = viii-G
+MODUS-110-I = viii-G2
+MODUS-111-I = v-a
+MODUS-112-I = iv-A
 MODUS-4-I = viii-G
 MODUS-90-I = viii-G
 MODUS-133-I = viii-G
@@ -265,7 +266,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  confortatemanus eccedominusveniet eccenomen eccevenietpropheta ecceveniocito \
 			  gabrielangelus gaudeetlaetare gaudeteomnes inadventusummi inilladie \
 			  jucundarefilia mariadixit netimeasmaria omnessitientes rexnosteradveniet \
-			  veniteeccerex) \
+			  veniteeccerex gaudeetlaetaresion spiritussanctus) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -273,18 +274,18 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 $(addprefix hym-,EcceJamNoctis AEterneRerum AveMarisStella OGloriosaDomina AdPrecesNostras \
 			  ChristeLuxVera AmorisSensusErige AdestoChriste \
 			  VitaSanctorum QuemTerra OGloriosaFemina QuemTerra-alt \
-			  ConditorAlme VerbumSupernum) \
+			  ConditorAlme VerbumSupernum VoxClara) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
-			   sanaanimammeam avemaria inmanus ostendenobis) \
+			   sanaanimammeam avemaria inmanus ostendenobis veni) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(addprefix capitulum-,Benedictio BenedictusDeus NoxPraecessit OAltitudo AbInitio \
-				tuautem FratresHora) \
+				tuautem FratresHora GaudeteInDomino HoraEst IpseDeus) \
 	 $(addprefix versus-,custodi gaude dirigatur dominusregnavit repleti vespertina \
 			     diffusa cognoscantquia deusnesileas exaltentdominum laudabonomen \
 			     medianocte memorfui praevenerunt psallitedomino sacrificiumlaudis \
 			     benedictatu \
-			     egredietur emitte exsion rorate) \
-	 $(addprefix oratio,1 bmv) \
+			     egredietur emitte exsion rorate voxclamantis) \
+	 $(addprefix oratio,1 1vo bmv) \
 	 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,feria-laudes feria-vesperae minor officium-bmv dominica-advequad) \
