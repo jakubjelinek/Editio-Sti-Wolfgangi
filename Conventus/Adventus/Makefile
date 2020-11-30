@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 1 2 3 4 5 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 10 13 14 16 17i 17ii 17iii 19 20 29 34i 34ii 34iii 35 36i 36ii 36iii 37i 37ii 38 42 44i 44ii 45 47 48i 48ii 49i_vi 49vii_xv 49xvi_xxiii 50 56 61 62 63 64 65i 65ii 66 67i 67ii 67iii 68i 68ii 68iii 75 77i 77ii 77iii 77iv 77v 77vi 78 80 82 87 89 90 91 92 99 104i 104ii 104iii 105i 105ii 105iii 106i 106ii 106iii 109 110 111 112 113 114 115 116 117 128 129 130 131 132 133 134 135 136 137 138i 138ii 139 140 141 142 143i 143ii 144i 144ii 145 146 147 148 149 150
+PSALMS = 1 2 3 4 5 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 10 11 13 14 16 17i 17ii 17iii 19 20 23 29 32 35 36i_xi 36xii_xxix 36iii 38 42 44i 44ii 45 47 48i 48ii 49i_vi 49vii_xv 49xvi_xxiii 50 56 61 62 63 64 65i 65ii 66 67i 67ii 67iii 68i 68ii 68iii 75 77i 77ii 77iii 77iv 77v 77vi 78 80 82 87 89 90 91 92 99 104i 104ii 104iii 105i 105ii 105iii 106i 106ii 106iii 109 110 111 112 113 114 115 116 117 128 129 130 131 132 133 134 135 136 137 138i 138ii 139 140 141 142 143i 143ii 144i 144ii 145 146 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-1-I = i-g
 MODUS-2-I = ii-D
@@ -70,22 +70,16 @@ MODUS-115-II = viii-A
 MODUS-116-II = viii-A
 MODUS-128-II = ii-D
 MODUS-magnificat-II = viii-G
-MODUS-34i-III = iv-g
-MODUS-34ii-III = i-g
-MODUS-34iii-III = ii-D
-MODUS-36i-III = vi-F
-MODUS-36ii-III = iv-A_
-MODUS-36iii-III = viii-g
-MODUS-37i-III = viii-C
-MODUS-37ii-III = ii-D
-MODUS-38-III = iv-E
-MODUS-50-III = iv-E
-MODUS-42-III = vi-F
-MODUS-56-III = viii-G2
-MODUS-ezechiae = e
-MODUS-148-III = v-g
-MODUS-149-III = v-g
-MODUS-150-III = v-g
+MODUS-9xxii_xxxii-III = ii-D
+MODUS-9xxxiii_xxxix-III = iv_-e
+MODUS-11-III = viii-G
+MODUS-36i_xi-III = vi-F
+MODUS-36xii_xxix-III = ii-D
+MODUS-36iii-III = vi-F
+MODUS-23-III = iv_-e
+MODUS-ezechiae = vii-a
+MODUS-tobiae = vii-a
+MODUS-32-III = iv-E
 MODUS-benedictus-III = vii-a
 MODUS-129-III = viii-A
 MODUS-130-III = e
@@ -189,6 +183,7 @@ MODUS-benedictus-XIV = viisoll-a
 MODUS-benedictus-XV = isoll-D_
 MODUS-benedictus-XVI = viisoll-d
 MODUS-benedictus-XVII = visoll-C
+MODUS-benedictus-XVIII = i-f
 MODUS-magnificat-VIII = isoll-f
 MODUS-magnificat-IX = viisoll-d
 MODUS-magnificat-X = viiisoll-G
@@ -206,10 +201,11 @@ MODUS-magnificat-XXI = viiisoll-g
 MODUS-magnificat-XXII = iiisoll-a
 MODUS-magnificat-XXIII = isoll-a
 MODUS-magnificat-XXIV = ivsoll-E
-CANTICIS = isaiae ezechiae anna moysis habacuc moysis2i moysis2ii nuncdimittis dan3
+MODUS-magnificat-XXV = iv-A
+CANTICIS = isaiae ezechiae tobiae anna moysis habacuc moysis2i moysis2ii nuncdimittis dan3
 NUMSI = I II III IV V VI VII
-NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII
-NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV
+NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII
+NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV
 PSALMSALT = $(foreach V,$(NUMSI),$(addsuffix -$(V),$(PSALMS)))
 BENEDICTUS = $(foreach B,$(NUMSII),benedictus-$(B))
 MAGNIFICAT = $(foreach M,$(NUMSIII),magnificat-$(M))
@@ -266,7 +262,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  confortatemanus eccedominusveniet eccenomen eccevenietpropheta ecceveniocito \
 			  gabrielangelus gaudeetlaetare gaudeteomnes inadventusummi inilladie \
 			  jucundarefilia mariadixit netimeasmaria omnessitientes rexnosteradveniet \
-			  veniteeccerex gaudeetlaetaresion spiritussanctus) \
+			  veniteeccerex gaudeetlaetaresion spiritussanctus \
+			  egredieturvirga exaltateregem innocensmanibus iuniorfui quaeritedominum \
+			  rectosdecet speraindomino tudomine) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -276,21 +274,23 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  VitaSanctorum QuemTerra OGloriosaFemina QuemTerra-alt \
 			  ConditorAlme VerbumSupernum VoxClara) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
-			   sanaanimammeam avemaria inmanus ostendenobis veni) \
+			   sanaanimammeam avemaria inmanus ostendenobis veni superte) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(addprefix capitulum-,Benedictio BenedictusDeus NoxPraecessit OAltitudo AbInitio \
-				tuautem FratresHora GaudeteInDomino HoraEst IpseDeus) \
+				tuautem FratresHora GaudeteInDomino HoraEst IpseDeus \
+				NosAuferetur) \
 	 $(addprefix versus-,custodi gaude dirigatur dominusregnavit repleti vespertina \
 			     diffusa cognoscantquia deusnesileas exaltentdominum laudabonomen \
 			     medianocte memorfui praevenerunt psallitedomino sacrificiumlaudis \
 			     benedictatu \
-			     egredietur emitte exsion rorate voxclamantis) \
+			     egredietur emitte exsion rorate voxclamantis voxclamantis-simplex) \
 	 $(addprefix oratio,1 1vo bmv) \
 	 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
-	 $(addprefix benedicamus-,feria-laudes feria-vesperae minor officium-bmv dominica-advequad) \
+	 $(addprefix benedicamus-,feria-advequad minor officium-bmv dominica-advequad) \
 	 $(addprefix inv-,alleluiachristumdominum regemmagnum dominumquifecit adoremusdominum \
-			  dominumdeum veniteexsultemus jubilemusdeo avemaria regemventurum) \
+			  dominumdeum veniteexsultemus jubilemusdeo avemaria regemventurum \
+			  regemventurumsimplex) \
 	 dominelabiamea \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
@@ -354,6 +354,7 @@ $(TMP_DIR)/%-XXI.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
 $(TMP_DIR)/%-XXII.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
 $(TMP_DIR)/%-XXIII.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
 $(TMP_DIR)/%-XXIV.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
+$(TMP_DIR)/%-XXV.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
 $(TMP_DIR)/%-I-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-II-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-III-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
@@ -378,6 +379,7 @@ $(TMP_DIR)/%-XXI-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-XXII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-XXIII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-XXIV-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
+$(TMP_DIR)/%-XXV-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 
 FERIAE = ii iii iv v vi
 HEBDOMADAE = i ii iii iv
