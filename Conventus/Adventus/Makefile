@@ -227,7 +227,8 @@ LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMSALT))
 LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT) $(BENEDICTUS) $(CANTICIS))
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
-SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo \
+SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
+			  alleluia1 alleluia2 ampliuslavame atimore aviroiniquo \
 			  beatadeigenitrix beatamater benedictusdeusisrael benedictusdominus \
 			  benignefac bonumestconfiteri caelicaelorum cantemusdomino conversusest \
 			  credidi cunctisdiebus datemagnitudinem deledomine demanuomnium deonostro \
