@@ -184,6 +184,8 @@ MODUS-benedictus-XV = isoll-D_
 MODUS-benedictus-XVI = viisoll-d
 MODUS-benedictus-XVII = visoll-C
 MODUS-benedictus-XVIII = i-f
+MODUS-benedictus-XIX = viii-g
+MODUS-benedictus-XX = ii_-B
 MODUS-magnificat-VIII = isoll-f
 MODUS-magnificat-IX = viisoll-d
 MODUS-magnificat-X = viiisoll-G
@@ -202,10 +204,11 @@ MODUS-magnificat-XXII = iiisoll-a
 MODUS-magnificat-XXIII = isoll-a
 MODUS-magnificat-XXIV = ivsoll-E
 MODUS-magnificat-XXV = iv-A
+MODUS-magnificat-XXVI = ii_-B
 CANTICIS = isaiae ezechiae tobiae anna moysis habacuc moysis2i moysis2ii nuncdimittis dan3
 NUMSI = I II III IV V VI VII
-NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII
-NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV
+NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX
+NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI
 PSALMSALT = $(foreach V,$(NUMSI),$(addsuffix -$(V),$(PSALMS)))
 BENEDICTUS = $(foreach B,$(NUMSII),benedictus-$(B))
 MAGNIFICAT = $(foreach M,$(NUMSIII),magnificat-$(M))
@@ -265,7 +268,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  jucundarefilia mariadixit netimeasmaria omnessitientes rexnosteradveniet \
 			  veniteeccerex gaudeetlaetaresion spiritussanctus \
 			  egredieturvirga exaltateregem innocensmanibus iuniorfui quaeritedominum \
-			  rectosdecet speraindomino tudomine) \
+			  rectosdecet speraindomino tudomine benedictatu desionexibit \
+			  exspectabodominum laetabiturdeserta) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -301,7 +305,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 	 $(addprefix resp-,aspiciebam-CROCHU-cumdox aspiciebam-CROCHU aspiciensalonge-CROCHU \
 			   missusestgabriel-CROCHU-cumdox obsecrodomine-CROCHU-cumdox \
 			   salvatoremexspectamus-CROCHU-cumdox salvatoremexspectamus-CROCHU \
-			   avemaria-CROCHU-cumdox avemaria-CROCHU \
+			   avemaria-CROCHU-cumdox avemaria-CROCHU obsecrodomine-CROCHU \
 			   eccediesvenient-CROCHU-cumdox eccediesvenient-CROCHU \
 			   eccevirgoconcipiet-CROCHU-cumdox eccevirgoconcipiet-CROCHU \
 			   laetenturcaeli-CROCHU-cumdox laetenturcaeli-CROCHU \
