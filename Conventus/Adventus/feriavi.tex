@@ -1,0 +1,810 @@
+% LuaLaTeX
+
+\documentclass[a4paper, twoside, 12pt]{article}
+\usepackage[latin]{babel} 
+%\usepackage[landscape, left=3cm, right=1.5cm, top=2cm, bottom=1cm]{geometry} % okraje stranky
+%\usepackage[landscape, a4paper, mag=1166, truedimen, left=2cm, right=1.5cm, top=1.6cm, bottom=0.95cm]{geometry} % okraje stranky
+\usepackage[landscape, a4paper, mag=1400, truedimen, left=0.5cm, right=0.5cm, top=0.5cm, bottom=0.5cm]{geometry} % okraje stranky
+
+\usepackage{fontspec}
+\setmainfont[FeatureFile={junicode.fea}, Ligatures={Common, TeX}, RawFeature=+fixi]{Junicode}
+%\setmainfont{Junicode}
+
+% shortcut for Junicode without ligatures (for the Czech texts)
+\newfontfamily\nlfont[FeatureFile={junicode.fea}, Ligatures={Common, TeX}, RawFeature=+fixi]{Junicode}
+
+% Hebrew font:
+% http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=SILHebrUnic2
+\newfontfamily\hebfont[Scale=1]{Ezra SIL}
+
+\usepackage{multicol}
+\usepackage{color}
+\usepackage{lettrine}
+\usepackage{fancyhdr}
+
+% usual packages loading:
+\usepackage{luatextra}
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{gregoriotex} % for gregorio score inclusion
+\usepackage{gregoriosyms}
+\usepackage{wrapfig} % figures wrapped by the text
+\usepackage{parcolumns}
+\usepackage[contents={},opacity=1,scale=1,color=black]{background}
+\usepackage{tikzpagenodes}
+\usepackage{calc}
+\usepackage{longtable}
+\usetikzlibrary{calc}
+
+\setlength{\headheight}{14.5pt}
+
+\input{conventuscommune.tex} % Often used macros
+\input{translationes_cs.tex} % Czech translations of the proper texts
+
+\newcommand{\annusEditionis}{2020}
+
+\def\hebinitial#1{%
+\leavevmode{\newbox\hebbox\setbox\hebbox\hbox{\hebfont{#1}\hskip 1mm}\kern -\wd\hebbox\hbox{\hebfont{#1}\hskip 1mm}}%
+}
+
+%%%% Vicekrat opakovane kousky
+
+\newcommand{\anteOrationem}{
+  \rubrica{Ante Orationem, cantatur a Superiore:}
+
+  \pars{Supplicatio Litaniæ.}
+
+  \cuminitiali{}{temporalia/supplicatiolitaniae.gtex}
+
+  \pars{Oratio Dominica.}
+
+  \cuminitiali{}{temporalia/oratiodominica.gtex}
+
+  \rubrica{Deinde dicitur ab Hebdomadario:}
+
+  \cuminitiali{}{temporalia/dominusvobiscum-solemnis.gtex}
+
+  \rubrica{In choro monialium loco Dominus vobiscum dicitur:}
+
+  \sineinitiali{temporalia/domineexaudi.gtex}
+}
+
+\setlength{\columnsep}{30pt} % prostor mezi sloupci
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Here we set the space around the initial.
+% Please report to http://home.gna.org/gregorio/gregoriotex/details for more details and options
+\grechangedim{afterinitialshift}{2.2mm}{scalable}
+\grechangedim{beforeinitialshift}{2.2mm}{scalable}
+
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\grechangedim{annotationraise}{-0.2cm}{scalable}
+
+% Here we set the initial font. Change 38 if you want a bigger initial.
+% Emit the initials in red.
+\grechangestyle{initial}{\color{red}\fontsize{38}{38}\selectfont}
+
+\pagestyle{empty}
+
+%%%% Titulni stranka
+\begin{titulusOfficii}
+\nomenFesti{Feria VI \hebdomada{}}
+\end{titulusOfficii}
+
+\pars{}
+
+\scriptura{}
+
+\pagebreak
+
+% graphic
+\renewcommand{\headrulewidth}{0pt} % no horiz. rule at the header
+\fancyhf{}
+\pagestyle{fancy}
+
+\cantusSineNeumas
+
+\hora{Ad Matutinum.}
+
+\vspace{2mm}
+
+\cuminitiali{}{temporalia/dominelabiamea.gtex}
+
+\vspace{2mm}
+
+\pars{Invitatorium.}
+
+\vspace{-6mm}
+
+\antiphona{VI}{temporalia/inv-regemventurumsimplex.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Hymnus.}
+
+\vspace{-5mm}
+
+\antiphona{II}{temporalia/hym-VerbumSupernum.gtex}
+%{
+%\vspace{-5mm}
+%\setlength{\columnsep}{0pt} % prostor mezi sloupci
+%\input{hym-VerbumSupernumAdestoChriste-bohtext.tex}
+%\setlength{\columnsep}{30pt} % prostor mezi sloupci
+%}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 1.} \scriptura{Ps. 77, 1}
+
+\vspace{-4mm}
+
+\antiphona{I g\textsuperscript{3}}{temporalia/ant-inclinateaurem.gtex}
+
+%\vspace{-5mm}
+
+\scriptura{Ps. 77, 1-8}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps77i-initium-i-g3-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps77i-VI-comb.tex}{10cm}
+\input{temporalia/ps77i-VI.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 2.} \scriptura{Ps. 76, 15; \textbf{H97}}
+
+\vspace{-4mm}
+
+\antiphona{C}{temporalia/ant-tuesdeus.gtex}
+
+%\vspace{-5mm}
+
+\scriptura{Ps. 77, 9-16}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps77ii-initium-c-c2-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps77ii-VI-comb.tex}{10cm}
+\input{temporalia/ps77ii-VI.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 3.} \scriptura{Sap. 16, 20}
+
+\vspace{-4mm}
+
+\antiphona{II D}{temporalia/ant-angelorumesca.gtex}
+
+%\vspace{-5mm}
+
+\scriptura{Ps. 77, 17-31}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps77iii-initium-ii-D-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps77iii-VI-comb.tex}{10cm}
+\input{temporalia/ps77iii-VI.tex}
+
+\vfill
+
+\antiphona{}{temporalia/ant-angelorumesca.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 4.} \scriptura{Ps. 131, 13}
+
+\vspace{-4mm}
+
+\antiphona{VIII G}{temporalia/ant-elegitdominus.gtex}
+
+%\vspace{-5mm}
+
+\scriptura{Ps. 77, 32-41}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps77iv-initium-viii-G-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps77iv-VI-comb.tex}{10cm}
+\input{temporalia/ps77iv-VI.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 5.} \scriptura{Ps. 77, 42}
+
+\vspace{-4mm}
+
+\antiphona{III a}{temporalia/ant-redemiteos.gtex}
+
+%\vspace{-5mm}
+
+\scriptura{Ps. 77, 42-58}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps77v-initium-iii-a-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps77v-VI-comb.tex}{10cm}
+\input{temporalia/ps77v-VI.tex}
+
+\vfill
+
+\antiphona{}{temporalia/ant-redemiteos.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 6.} \scriptura{Ps. 77, 69}
+
+\vspace{-4mm}
+
+\antiphona{I g}{temporalia/ant-aedificavitdeus.gtex}
+
+%\vspace{-5mm}
+
+\scriptura{Ps. 77, 59-72}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps77vi-initium-i-g-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps77vi-VI-comb.tex}{10cm}
+\input{temporalia/ps77vi-VI.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 7.} \scriptura{Ps. 78, 9; \textbf{H97}}
+
+\vspace{-4mm}
+
+\antiphona{VIII c}{temporalia/ant-propitiusesto.gtex}
+
+%\vspace{-5mm}
+
+\scriptura{Ps. 78}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps78-initium-viii-c-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps78-VI-comb.tex}{10cm}
+\input{temporalia/ps78-VI.tex}
+
+\vfill
+
+\antiphona{}{temporalia/ant-propitiusesto.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 8.} \scriptura{Ps. 80, 2}
+
+\vspace{-4.5mm}
+
+\antiphona{I g\textsuperscript{5}}{temporalia/ant-exsultatedeo.gtex}
+
+\vspace{-2.5mm}
+
+\scriptura{Ps. 80}
+
+\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps80-initium-i-g5-auto.gtex}
+
+\vspace{-1.5mm}
+
+%\psalmusEtTranslatioT{temporalia/ps80-VI-comb.tex}{10cm}
+\input{temporalia/ps80-VI.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 9.} \scriptura{Ps. 82, 19; \textbf{H97}}
+
+\vspace{-4mm}
+
+\antiphona{VI F}{temporalia/ant-tusolus.gtex}
+
+%\vspace{-5mm}
+
+\scriptura{Ps. 82}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps82-initium-vi-F-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps82-VI-comb.tex}{10cm}
+\input{temporalia/ps82-VI.tex}
+
+\antiphona{}{temporalia/ant-tusolus.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Versus.} \scriptura{Mc. 1, 3; Is. 40, 3}
+
+% Versus. %%%
+\sineinitiali{temporalia/versus-voxclamantis-simplex.gtex}
+
+\vspace{5mm}
+
+\sineinitiali{temporalia/oratiodominica-mat.gtex}
+
+\vspace{5mm}
+
+\pars{Absolutio.}
+
+\cuminitiali{}{temporalia/absolutio-ipsius.gtex}
+
+\vfill
+\pagebreak
+
+\cuminitiali{}{temporalia/benedictio-solemn-deus.gtex}
+
+\vspace{7mm}
+
+\lectioi
+
+\noindent \Vbardot{} Tu autem, Dómine, miserére nobis.
+\noindent \Rbardot{} Deo grátias.
+
+\vfill
+\pagebreak
+
+\responsoriumi
+
+\vfill
+\pagebreak
+
+\cuminitiali{}{temporalia/benedictio-solemn-christus.gtex}
+
+\vspace{7mm}
+
+\lectioii
+
+\noindent \Vbardot{} Tu autem, Dómine, miserére nobis.
+\noindent \Rbardot{} Deo grátias.
+
+\vfill
+\pagebreak
+
+\responsoriumii
+
+\vfill
+\pagebreak
+
+\cuminitiali{}{temporalia/benedictio-solemn-ignem.gtex}
+
+\vspace{7mm}
+
+\lectioiii
+
+\noindent \Vbardot{} Tu autem, Dómine, miserére nobis.
+\noindent \Rbardot{} Deo grátias.
+
+\vfill
+\pagebreak
+
+\responsoriumiii
+
+\vfill
+\pagebreak
+
+\rubrica{Reliqua omittuntur, nisi Laudes separandæ sint.}
+
+\pars{Oratio}
+
+\noindent \Vbardot{} Dómine, exáudi oratiónem meam.
+
+\noindent \Rbardot{} Et clamor meus ad te véniat.
+
+Orémus:
+
+\oratio
+
+\vspace{7mm}
+
+\pars{Conclusio}
+
+\noindent \Vbardot{} Dómine, exáudi oratiónem meam.
+
+\noindent \Rbardot{} Et clamor meus ad te véniat.
+
+\noindent \Vbardot{} Benedicámus Dómino.
+
+\noindent \Rbardot{} Deo grátias.
+
+\noindent \Vbardot{} Fidélium ánimæ per misericórdiam Dei requiéscant in pace.
+
+\noindent \Rbardot{} Amen.
+
+\vfill
+\pagebreak
+
+\hora{Ad Laudes.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\sideThumbs{Laudes}
+
+\cantusSineNeumas
+
+\vspace{0.5cm}
+\grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{}{temporalia/deusinadiutorium-communis.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+
+\vfill
+%\pagebreak
+
+\pars{Psalmus 1.} \scriptura{Ps. 50, 14; \textbf{H98}}
+
+\vspace{-4mm}
+
+\antiphona{I a\textsuperscript{2}}{temporalia/ant-spirituprincipali.gtex}
+
+\scriptura{Psalmus 50.}
+
+\initiumpsalmi{temporalia/ps50-initium-i-a2-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps50-VI-comb.tex}{10cm}
+\input{temporalia/ps50-VI.tex}
+
+\vfill
+
+\antiphona{}{temporalia/ant-spirituprincipali.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 2.} \scriptura{Ps. 75, 2; \textbf{H99}}
+
+\vspace{-4mm}
+
+\antiphona{VIII a}{temporalia/ant-inisraelmagnum.gtex}
+
+\scriptura{Psalmus 75.}
+
+\initiumpsalmi{temporalia/ps75-initium-viii-A-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps75-VI-comb.tex}{10cm}
+\input{temporalia/ps75-VI.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 3.} \scriptura{Ps. 91, 2; \textbf{H99}}
+
+\vspace{-6mm}
+
+\antiphona{VIII a}{temporalia/ant-bonumestconfiteri.gtex}
+
+\vspace{-2mm}
+
+\scriptura{Psalmus 91.}
+
+\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps91-initium-viii-A-auto.gtex}
+
+\vspace{-1.5mm}
+
+%\psalmusEtTranslatioT{temporalia/ps91-VI-comb.tex}{10cm}
+\input{temporalia/ps91-VI.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 4.} \scriptura{Hab. 3, 2; \textbf{H99}}
+
+\vspace{-6mm}
+
+\antiphona{IV* e}{temporalia/ant-domineaudivi.gtex}
+
+\vspace{-2mm}
+
+\scriptura{Canticum Habacuc, Hab. 3, 2-19}
+
+%\vspace{-3mm}
+
+%\initiumpsalmi{temporalia/habacuc-initium-iv_-e-auto.gtex}
+\initiumpsalmi{temporalia/habacuc-initium-iv_-e.gtex}
+
+%\psalmusEtTranslatioT{temporalia/habacuc-comb.tex}{10cm}
+\input{temporalia/habacuc.tex}
+
+\vfill
+
+\antiphona{}{temporalia/ant-domineaudivi.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 5.} \scriptura{Ps. 150, 4; \textbf{H99}}
+
+\vspace{-4mm}
+
+\antiphona{I f}{temporalia/ant-intympanoetchoro.gtex}
+
+\scriptura{Psalmus 148.}
+
+\initiumpsalmi{temporalia/ps148-initium-i-f-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps148-VI-comb.tex}{10cm}
+\input{temporalia/ps148-VI.tex}
+
+\rubrica{Hic non dicitur Gloria Patri.}
+
+\vfill
+\pagebreak
+
+%
+\scriptura{Psalmus 149.}
+
+\initiumpsalmi{temporalia/ps149-initium-i-f-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps149-VI-comb.tex}{10cm}
+\input{temporalia/ps149-VI.tex}
+
+\rubrica{Hic non dicitur Gloria Patri.}
+
+\vfill
+\pagebreak
+
+%
+\scriptura{Psalmus 150.}
+
+\initiumpsalmi{temporalia/ps150-initium-i-f-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps150-VI-comb.tex}{10cm}
+\input{temporalia/ps150-VI.tex}
+
+\vfill
+
+\vspace{-6mm}
+
+\antiphona{}{temporalia/ant-intympanoetchoro.gtex} % repeat the antiphon - new page
+
+\vfill
+\pagebreak
+
+\lectiobrevis
+
+% preklad Jeruz. bible
+%\trCapituliI
+
+\vfill
+
+\pars{Responsorium breve.} \scriptura{Is. 60, 2; \textbf{H20}}
+
+\cuminitiali{IV}{temporalia/resp-superte.gtex}
+
+%\trResp
+
+\vfill
+\pagebreak
+
+\pars{Hymnus} \scriptura{Ambrosius (\olddag{} 397)}
+
+\cuminitiali{I}{temporalia/hym-VoxClara.gtex}
+\vspace{-3mm}
+%\input{hym-VoxClara-bohtext.tex}
+
+\vfill
+%\pagebreak
+
+\pars{Versus.} \scriptura{Mc. 1, 3; Is. 40, 3}
+
+% Versus. %%%
+\sineinitiali{temporalia/versus-voxclamantis.gtex}
+
+%\noindent \trVersus
+
+\vfill
+\pagebreak
+
+\benedictus
+
+\vfill
+\pagebreak
+
+%\sideThumbs{{\scriptsize{}Fine horarum}}
+
+\anteOrationem
+
+\pagebreak
+
+% Oratio. %%%
+\oratio
+
+\vspace{-1mm}
+%\trOrationisI
+
+\vfill
+
+\rubrica{Hebdomadarius dicit iterum Dominus vobiscum, vel cantor dicit:}
+
+\vspace{2mm}
+
+\sineinitiali{temporalia/domineexaudi.gtex}
+
+\rubrica{Postea cantatur a cantore:}
+
+\vspace{2mm}
+
+\cuminitiali{IV}{temporalia/benedicamus-dominica-advequad.gtex}
+
+\vspace{1mm}
+
+\vfill
+\pagebreak
+
+\hora{Ad Vesperas.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\sideThumbs{Vesperæ}
+
+\cantusSineNeumas
+
+%\vspace{0.5cm}
+\grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{}{temporalia/deusinadiutorium-communis.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+
+\vfill
+%\pagebreak
+
+\vspace{4mm}
+
+\pars{Psalmus 1.} \scriptura{Ps. 141, 6; \textbf{H99}}
+
+\vspace{-4mm}
+
+\antiphona{VIII a}{temporalia/ant-portiomeadomine.gtex}
+
+%\vspace{-4mm}
+
+\scriptura{Psalmus 141.}
+
+\initiumpsalmi{temporalia/ps141-initium-viii-A-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps141-VI-comb.tex}{10cm}
+\input{temporalia/ps141-VI.tex}
+
+\vfill
+
+\antiphona{}{temporalia/ant-portiomeadomine.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 2.} \scriptura{Ps. 143, 1; \textbf{H99}}
+
+\vspace{-4mm}
+
+\antiphona{VI F}{temporalia/ant-benedictusdominus.gtex}
+
+\scriptura{Psalmus 143, 1-8}
+
+\initiumpsalmi{temporalia/ps143i-initium-vi-F-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps143i-VI-comb.tex}{10cm}
+\input{temporalia/ps143i-VI.tex}
+
+\vspace{4mm}
+
+\rubrica{Hic non dicitur antiphonam.}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 3.} \scriptura{Psalmus 143, 9-15}
+
+\initiumpsalmi{temporalia/ps143ii-initium-vi-F-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps143ii-VI-comb.tex}{10cm}
+\input{temporalia/ps143ii-VI.tex}
+
+\vfill
+
+\antiphona{}{temporalia/ant-benedictusdominus.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 4.} \scriptura{Ps. 144, 2; \textbf{H99}}
+
+\vspace{-4mm}
+
+\antiphona{VIII a}{temporalia/ant-persingulosdies.gtex}
+
+\scriptura{Psalmus 144, 1-9}
+
+\initiumpsalmi{temporalia/ps144i-initium-viii-A-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps144i-VI-comb.tex}{10cm}
+\input{temporalia/ps144i-VI.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Capitulum.} \scriptura{Gen. 49, 10}
+
+\grechangedim{interwordspacetext}{0.12 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{}{temporalia/capitulum-NosAuferetur.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+
+% preklad Jeruz. bible
+%\trCapituliI
+
+\vfill
+
+\pars{Responsorium breve.} \scriptura{Ps. 84, 8; \textbf{H20}}
+
+\cuminitiali{IV}{temporalia/resp-ostendenobis.gtex}
+
+%\trResp
+
+\vfill
+\pagebreak
+
+\pars{Hymnus} \scriptura{Ambrosius (\olddag{} 397)}
+
+\cuminitiali{I}{temporalia/hym-ConditorAlme.gtex}
+\vspace{-3mm}
+%\input{hym-ConditorAlme-bohtext.tex}
+
+\vfill
+%\pagebreak
+
+\pars{Versus.} \scriptura{Is. 45, 8}
+
+% Versus. %%%
+\sineinitiali{temporalia/versus-rorate.gtex}
+
+%\noindent \trVersus
+
+\vfill
+\pagebreak
+
+\magnificat
+
+\vfill
+\pagebreak
+
+%\sideThumbs{{\scriptsize{}Fine horarum}}
+
+\anteOrationem
+
+\pagebreak
+
+% Oratio. %%%
+\cuminitiali{}{temporalia/oratiobmv.gtex}
+
+\vspace{-1mm}
+%\trOrationisI
+
+\vfill
+
+\rubrica{Hebdomadarius dicit iterum Dominus vobiscum, vel cantor dicit:}
+
+\vspace{2mm}
+
+\sineinitiali{temporalia/domineexaudi.gtex}
+
+\rubrica{Postea cantatur a cantore:}
+
+\vspace{2mm}
+
+\cuminitiali{IV}{temporalia/benedicamus-dominica-advequad.gtex}
+
+\vspace{1mm}
+
+\end{document}

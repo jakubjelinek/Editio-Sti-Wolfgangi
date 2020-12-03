@@ -186,6 +186,7 @@ MODUS-benedictus-XVII = visoll-C
 MODUS-benedictus-XVIII = i-f
 MODUS-benedictus-XIX = viii-g
 MODUS-benedictus-XX = ii_-B
+MODUS-benedictus-XXI = i-a2
 MODUS-magnificat-VIII = isoll-f
 MODUS-magnificat-IX = viisoll-d
 MODUS-magnificat-X = viiisoll-G
@@ -205,10 +206,11 @@ MODUS-magnificat-XXIII = isoll-a
 MODUS-magnificat-XXIV = ivsoll-E
 MODUS-magnificat-XXV = iv-A
 MODUS-magnificat-XXVI = ii_-B
+MODUS-magnificat-XXVII = ii_-c
 CANTICIS = isaiae ezechiae tobiae anna moysis habacuc moysis2i moysis2ii nuncdimittis dan3
 NUMSI = I II III IV V VI VII
-NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX
-NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI
+NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI
+NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI XXVII
 PSALMSALT = $(foreach V,$(NUMSI),$(addsuffix -$(V),$(PSALMS)))
 BENEDICTUS = $(foreach B,$(NUMSII),benedictus-$(B))
 MAGNIFICAT = $(foreach M,$(NUMSIII),magnificat-$(M))
@@ -269,7 +271,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  veniteeccerex gaudeetlaetaresion spiritussanctus \
 			  egredieturvirga exaltateregem innocensmanibus iuniorfui quaeritedominum \
 			  rectosdecet speraindomino tudomine benedictatu desionexibit \
-			  exspectabodominum laetabiturdeserta) \
+			  exspectabodominum laetabiturdeserta confundantur eccevenietdeus exaegypto \
+			  indominoiustificabitur iubilatedeo iudicacausam liberame nederelinquasme) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
