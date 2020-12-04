@@ -181,6 +181,7 @@ MODUS-benedictus-XVIII = i-f
 MODUS-benedictus-XIX = viii-g
 MODUS-benedictus-XX = ii_-B
 MODUS-benedictus-XXI = i-a2
+MODUS-benedictus-XXII = iv-D
 MODUS-magnificat-VIII = isoll-f
 MODUS-magnificat-IX = viisoll-d
 MODUS-magnificat-X = viiisoll-G
@@ -203,7 +204,7 @@ MODUS-magnificat-XXVI = ii_-B
 MODUS-magnificat-XXVII = ii_-c
 CANTICIS = isaiae ezechiae tobiae anna moysis habacuc moysis2i moysis2ii nuncdimittis dan3 isaiae2
 NUMSI = I II III IV V VI VII
-NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI
+NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII
 NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI XXVII
 PSALMSALT = $(foreach V,$(NUMSI),$(addsuffix -$(V),$(PSALMS)))
 BENEDICTUS = $(foreach B,$(NUMSII),benedictus-$(B))
@@ -267,7 +268,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  rectosdecet speraindomino tudomine benedictatu desionexibit \
 			  exspectabodominum laetabiturdeserta confundantur eccevenietdeus exaegypto \
 			  indominoiustificabitur iubilatedeo iudicacausam liberame nederelinquasme \
-			  tuammagnificentiam) \
+			  tuammagnificentiam sionnolitimere) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -312,7 +313,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_alma_redemptoris_mater an_alma_redemptoris_mater-simplex benedictio-noctemquietam \
 	 habacuc-initium-iv_-e $(addsuffix -initium-e,ps48ii ps65i ps105i) ps10-initium-ii_-f \
-	 benedictus-initium-viisoll-d tonusprecum
+	 benedictus-initium-viisoll-d tonusprecum dominusnosbenedicat
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach V,$(NUMSI),$(if $(MODUS-$(P)-$(V)),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P)-$(V))-auto.gabc))) \
