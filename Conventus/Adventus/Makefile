@@ -266,7 +266,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  egredieturvirga exaltateregem innocensmanibus iuniorfui quaeritedominum \
 			  rectosdecet speraindomino tudomine benedictatu desionexibit \
 			  exspectabodominum laetabiturdeserta confundantur eccevenietdeus exaegypto \
-			  indominoiustificabitur iubilatedeo iudicacausam liberame nederelinquasme) \
+			  indominoiustificabitur iubilatedeo iudicacausam liberame nederelinquasme \
+			  tuammagnificentiam) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
