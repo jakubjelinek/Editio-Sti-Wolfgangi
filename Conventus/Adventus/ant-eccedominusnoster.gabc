@@ -1,0 +1,13 @@
+name: Ecce Dóminus noster;
+office-part: laudes, 5. ant.;
+occasion: Dominica II Adventus;
+%book: Antiphonale Monasticum 1933, pg. 197;
+book: Antiphonale Monasticum I, 2005, p. 17;
+mode: 3;
+nabc-lines: 1;
+%%
+(c4)
+EC(g|vi)ce(g|vi) Dó(hi|pehg)mi(i|vihg)nus(i|vihg) nos(i|vi)ter(i|vi-) *(,)
+cum(i|vihg) vir(i|vihg)tú(j|vihh)te(h|ta) vé(i|vi)ni(hg|cllsc3)et,(g|talsx6) (;)
+ut(g|ta) il(h|vi)lú(j|vihh)mi(i|vi)net(g|ta) ó(h|````vilssta4)cu(h|vi)los(g|ta) (,)
+ser(g|````talssta4)vó(gh|peSlsal3)rum(f|ta) su(g|vi)ó(f|ta)rum,(fd|cl-) al(ef|peS)le(g|vi)lú(gf~|vi>)ia.(e|ta) (::)

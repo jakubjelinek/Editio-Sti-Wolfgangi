@@ -47,6 +47,10 @@ MODUS-4-I = viii-G
 MODUS-90-I = viii-G
 MODUS-133-I = viii-G
 MODUS-nuncdimittis = iii-a
+MODUS-144ii-I = i-g
+MODUS-145-I = vii-d
+MODUS-146-I = vii-a
+MODUS-147-I = iii-a
 MODUS-13-II = ii-D
 MODUS-14-II = iv_-e
 MODUS-16-II = vii-c
@@ -268,7 +272,9 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  rectosdecet speraindomino tudomine benedictatu desionexibit \
 			  exspectabodominum laetabiturdeserta confundantur eccevenietdeus exaegypto \
 			  indominoiustificabitur iubilatedeo iudicacausam liberame nederelinquasme \
-			  tuammagnificentiam sionnolitimere) \
+			  tuammagnificentiam sionnolitimere ecceapparebit eccedominusnoster \
+			  ecceinnubibus joannesautem montesetcolles tuesquiventurus \
+			  urbsfortitudinis venidominevisitare) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -288,7 +294,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			     medianocte memorfui praevenerunt psallitedomino sacrificiumlaudis \
 			     benedictatu \
 			     egredietur emitte exsion rorate voxclamantis voxclamantis-simplex) \
-	 $(addprefix oratio,1 1vo bmv) \
+	 $(addprefix oratio,1 1vo 2vo bmv) \
 	 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,feria-advequad minor officium-bmv dominica-advequad) \
@@ -308,7 +314,12 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			   eccediesvenient-CROCHU-cumdox eccediesvenient-CROCHU \
 			   eccevirgoconcipiet-CROCHU-cumdox eccevirgoconcipiet-CROCHU \
 			   laetenturcaeli-CROCHU-cumdox laetenturcaeli-CROCHU \
-			   auditeverbumdomini-CROCHU-cumdox auditeverbumdomini-CROCHU) \
+			   auditeverbumdomini-CROCHU-cumdox auditeverbumdomini-CROCHU \
+			   civitasjerusalem-CROCHU-cumdox eccedominusveniet-CROCHU \
+			   eccedominusveniet-cumdox eccevenietdominus-CROCHU \
+			   egredieturdominus-CROCHU festinanetardaveris \
+			   jerusalemcito-CROCHU jerusalemplantabis-CROCHU-cumdox \
+			   sicutmater-CROCHU) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_alma_redemptoris_mater an_alma_redemptoris_mater-simplex benedictio-noctemquietam \

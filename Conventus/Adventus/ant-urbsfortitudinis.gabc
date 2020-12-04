@@ -1,0 +1,16 @@
+name: Urbs fortitudinis nostrae;
+office-part: laudes, 2. ant.;
+occasion: Dominica II Adventus;
+%book: Antiphonale Monasticum 1933, pg. 195;
+book: Antiphonale Monasticum I, Praglia, p. 30;
+mode: 7;
+nabc-lines: 1;
+%%
+
+(c3)
+URBS(e_i|peSlsl3) *()
+for(i|``vilse1)ti(i|vihh)tú(i|vihh)di(i|vihh)nis(i|vihh) nos(k|vihjlsal3)træ(i|vihg) Si(hi|pe)on,(i.|vi-) (;)
+Sal(gxg|//ta)vá(i|vi)tor(h|ta) po(gxi|//vi)né(hg|cllsc3)tur(f|ta) in(gxg|vi) e(h|vihh)a(gxgf|//cl) mu(e.|ta)rus(e.|ta) (;)
+et(i_j_i_|toShhlsl2) an(ih~|vi>)te(i|vi)mu(il|pehllsl3)rá(l/li|prhllsi9)le:(i.|ta-) (:)
+a(i|ta)pe(i|ta)rí(j|vi)te(ih|cl) por(i|vi>)tas,(g.f!gwh.|cl-ql) (;)
+qui(h|vi)a(hho!g|pr) no(f|talsi8)bís(g_h|peS)cum(f|ta) De(fe|cllsc3)us,(d|ta) al(ef|pe)le(f|vi)lú(e.|ta)ia.(e.|ta) (::)
