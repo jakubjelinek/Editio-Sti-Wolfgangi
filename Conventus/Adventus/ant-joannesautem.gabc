@@ -1,16 +1,17 @@
 name: Joánnes autem cum audísset;
 office-part: laudes, ad Benedictus ant.;
 occasion: Dominica II Adventus;
-book: Antiphonale Monasticum 1933, pg. 197;
+%book: Antiphonale Monasticum 1933, pg. 197;
+book: Antiphonale Monasticum I, Praglia, p. 41;
 mode: 1;
 nabc-lines: 1;
 %%
 
 (c4)
-JO(d|ta)án(d|ta)nes(f'|vi) au(d|ta)tem(dc~|vi>) *()
-cum(f|ta) au(g>|vi>)dís(f_h|peS)set(h.|vi-) (,)
-in(hg~|vi>) vín(h|vi)cu(g|vi)lis(e'|ta) ó(f|vi)pe(g|vihh)ra(fe|cl) Chris(d.|ta)ti,(d.|ta) (;)
-mit(d|ta)tens(d'|ta) du(d|ta)os(d'|ta) de(d|ta) di(dc|cl)scí(f|vi)pu(g'|vihg)lis(f|ta) su(gh|pe)is,(h_'|vi-) (,)
-a(h|vi)it(g'|ta) il(g|vi>)li:(f.|ta-) (;)
-Tu(f|ta) es(g'|vi) qui(h|vihh) ven(g'|ta)tú(h|vi)rus(fe|cl) es,(d_f_d_'/dc.|peSpr) (,)
-an(c_d|peS) á(f|vi)li(f|ta)um(e_f|cl-) ex(g|vi)spec(fe|cl)tá(d.|ta)mus?(d.|ta) (::)
+JO(d|ta)án(d|ta)nes(f|vi) au(d|ta)tem(dc~|vi>) *()
+cum(f|ta) au(g>|vi>)dís(f_h|peS)set(h_|vi-) (,)
+in(hg~|vi>) vín(h|vi)cu(g|vi)lis(e|ta) ó(f|vi)pe(g|vihh)ra(fe|cl) Chris(d.|ta)ti,(d.|ta) (;)
+mit(d|ta)tens(d|ta) du(d|ta)os(d|ta) de(d|ta) di(dc|cl)scí(f|vi)pu(g|vihg)lis(f|ta) su(gh|pe)is,(h_|vi-) (,)
+a(h|vi)it(g|ta) il(g>|vi>)li:(f.|ta-) (;)
+Tu(f|ta) es(g|vi) qui(h|vihh) ven(g|ta)tú(h|vi)rus(fe|cl) es,(d_f/ddo!c|peSpr) (,)
+an(e_f|peS) á(g|vi)li(f|ta)um(fe__|cl-) ex(g|vi)spec(fe|cl)tá(d.|ta)mus?(d.|ta) (::)
