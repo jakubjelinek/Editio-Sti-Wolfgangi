@@ -2,14 +2,15 @@ name:Regem venturum Dominum;
 office-part:Invitatorium;
 occassion:In Tempore Adventus;
 mode:6;
-book:Liber Hymnarius, 1983, p. 4 & p. 149;
+book:Liber Hymnarius, 1983, p. 4 & p. 149; H14;
 transcriber:Jakub Jelínek; Marek Klein;
+nabc-lines:1;
 %%
 (c4)
-RE(f)gem(f) ven(f)tú(fg)rum(g) Dó(gf)mi(g)num,(gh..) *(;)
+RE(f|ta)gem(f|ta) ven(f|ta)tú(fg|pe)rum(g|vi) Dó(gf|cllsc3)mi(g|vi)num,(gh..|pe) *(;)
 ve(h)ní(gf)te(gh) ad(g_h_G_F_)o(fg)ré(g.)mus.(f.) <sp>A/</sp>.(::)
 
-Re(f)gem.(f) <sp>V/</sp>.(::)
+Re(f|ta)gem.(f|ta) <sp>V/</sp>.(::)
 
 Ve(h)ní(g)te,(h) ex(h)sul(h)té(h)mus(h) Dó(h)mi(h)no,(h'_) (,)
 iu(g)bi(h)lé(h)mus(h) De(h)o,(h) sa(g)lu(f)tá(g)ri(h) no(f)stro.(g.) (;)
@@ -17,7 +18,7 @@ Præ(h)oc(g)cu(h)pé(h)mus(h) fá(h)ci(h)em(h) e(h)ius(h_') (,)
 in(h) con(g)fes(h)si(g)ó(g)ne,(gf..) (;)
 et(g) in(g) psal(h)mis(g') iu(f)bi(f)lé(f_g)mus(gf) e(g)i.(gh..) <sp>A/</sp>.(::)
 
-Re(f)gem.(f) <sp>V/</sp>.(::)
+Re(f|ta)gem.(f|ta) <sp>V/</sp>.(::)
 
 Quó(h)ni(g)am(h) De(h)us(h) ma(h)gnus(h) Dó(h)mi(h)nus,(h'_) (,)
 et(g) rex(h) ma(h)gnus(h) su(g)per(f) om(g)nes(h) de(f)os.(g.) (;)
@@ -36,7 +37,7 @@ qui(g)a(g) i(h)pse(g) est(g') Dó(h)mi(g)nus,(g') De(h)us(g) no(g)ster,(gf..) (;
 nos(g) au(g)tem(g) pó(h)pu(g)lus(f) e(g)ius,(f_') (,)
 et(f) o(f_g)ves(f) pá(f_g)scu(g)æ(gf) e(g)ius.(gh..) <sp>A/</sp>.(::)
 
-Re(f)gem.(f) <sp>V/</sp>.(::)
+Re(f|ta)gem.(f|ta) <sp>V/</sp>.(::)
 
 Hó(h)di(g)e,(h_') si(h) vo(h)cem(h) e(h)ius(h) au(h)di(h)é(h)ri(h)tis:(h_') 
 «(,)No(g)lí(h)te(g) ob(g)du(h)rá(g)re(f) cor(g)da(h) ve(f)stra,(g.) (;)
@@ -56,7 +57,7 @@ I(h)psi(g) ve(h)ro(h) non(h) co(h)gno(h)vé(h)runt(h) vi(h)as(h) me(h)as:(h_') (
 qui(g)bus(h) iu(h)rá(h)vi(h) in(g) i(h)ra(g) me(g)a:(gf..) (;)
 Si(g) in(g)tro(g)í(h)bunt(g') in(f) ré(f_g)qui(g)em(gf~) me(g)am.»(gh..) <sp>A/</sp>.(::)
 
-Re(f)gem.(f) <sp>V/</sp>.(::)
+Re(f|ta)gem.(f|ta) <sp>V/</sp>.(::)
 
 Gló(h)ri(g)a(h) Pa(h)tri,(h) et(h) Fí(h)li(h)o,(h_') (,)
 et(h) Spi(g)rí(f)tu(g)i(h) San(f)cto.(g.) (;)
@@ -66,5 +67,5 @@ et(g) in(g)  sǽ(h)cu(g)la(g') sæ(f)cu(f_g)ló(g)rum.(gf) A(g)men.(gh..) *(::)
 
 Ve(h)ní(gf)te.(gh) <sp>A/</sp>.(::)
 
-Re(f)gem(f) ven(f)tú(fg)rum(g) Dó(gf)mi(g)num,(gh..) *(;)
+Re(f|ta)gem(f|ta) ven(f|ta)tú(fg|pe)rum(g|vi) Dó(gf|cllsc3)mi(g|vi)num,(gh..|pe) *(;)
 ve(h)ní(gf)te(gh) ad(g_h_G_F_)o(fg)ré(g.)mus.(f.) (::)
