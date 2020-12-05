@@ -174,7 +174,7 @@ MODUS-147-VIII = iii-a
 MODUS-92-VIII = i-g
 MODUS-99-VIII = vii-d
 MODUS-62-VIII = vii-a
-#MODUS-66-VIII = i-g
+MODUS-66-VIII = vi-F
 MODUS-148-VIII = iii-a
 MODUS-149-VIII = iii-a
 MODUS-150-VIII = iii-a
@@ -285,7 +285,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  indominoiustificabitur iubilatedeo iudicacausam liberame nederelinquasme \
 			  tuammagnificentiam sionnolitimere ecceapparebit eccedominusnoster \
 			  ecceinnubibus joannesautem montesetcolles tuesquiventurus \
-			  urbsfortitudinis venidominevisitare) \
+			  urbsfortitudinis venidominevisitare gaudeetlaetarenova) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
