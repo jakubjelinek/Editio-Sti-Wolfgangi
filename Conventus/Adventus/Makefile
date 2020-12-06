@@ -197,6 +197,7 @@ MODUS-benedictus-XIX = viii-g
 MODUS-benedictus-XX = ii_-B
 MODUS-benedictus-XXI = i-a2
 MODUS-benedictus-XXII = iv-D
+MODUS-benedictus-XXIII = i-D
 MODUS-magnificat-VIII = isoll-f
 MODUS-magnificat-IX = viisoll-d
 MODUS-magnificat-X = viiisoll-G
@@ -219,7 +220,7 @@ MODUS-magnificat-XXVI = ii_-B
 MODUS-magnificat-XXVII = ii_-c
 CANTICIS = isaiae ezechiae tobiae anna moysis habacuc moysis2i moysis2ii nuncdimittis dan3 isaiae2
 NUMSI = I II III IV V VI VII VIII
-NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII
+NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII
 NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI XXVII
 PSALMSALT = $(foreach V,$(NUMSI),$(addsuffix -$(V),$(PSALMS)))
 BENEDICTUS = $(foreach B,$(NUMSII),benedictus-$(B))
@@ -285,7 +286,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  indominoiustificabitur iubilatedeo iudicacausam liberame nederelinquasme \
 			  tuammagnificentiam sionnolitimere ecceapparebit eccedominusnoster \
 			  ecceinnubibus joannesautem montesetcolles tuesquiventurus \
-			  urbsfortitudinis venidominevisitare gaudeetlaetarenova) \
+			  urbsfortitudinis venidominevisitare gaudeetlaetarenova \
+			  amaviteum eccerexveniet) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -293,9 +295,10 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 	 $(addprefix hym-,EcceJamNoctis AEterneRerum AveMarisStella OGloriosaDomina AdPrecesNostras \
 			  ChristeLuxVera AmorisSensusErige AdestoChriste \
 			  VitaSanctorum QuemTerra OGloriosaFemina QuemTerra-alt \
-			  ConditorAlme VerbumSupernum VoxClara) \
+			  ConditorAlme VerbumSupernum VoxClara AmbrosiDoctor) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
-			   sanaanimammeam avemaria inmanus ostendenobis veni superte) \
+			   sanaanimammeam avemaria inmanus ostendenobis veni superte \
+			   christe) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(addprefix capitulum-,Benedictio BenedictusDeus NoxPraecessit OAltitudo AbInitio \
 				tuautem FratresHora GaudeteInDomino HoraEst IpseDeus \
