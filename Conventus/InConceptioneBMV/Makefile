@@ -83,7 +83,8 @@ ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 	 $(addprefix versus-,nativitasest custodi orapronobis specie adjuvabit elegit immaculata) \
 	 $(addprefix hym-,AveMarisStella OGloriosaDomina TeLucis NuncSancte RectorPotens RerumDeus QuemTerra \
-			  BeataDeiGenetrix OSanctaMundiDomina AveMarisStella-iv AveMaris-praglia InPlausu) \
+			  BeataDeiGenetrix OSanctaMundiDomina AveMarisStella-iv AveMaris-praglia InPlausu \
+			  TeDicimus) \
 	 benedicamus-duplex-laudes benedicamus-duplex-vesperae benedicamus-festis-bmv \
 	 $(addprefix deusinadiutorium-,communis solemnis alter) supplicatiolitaniae oratiodominica resp1v \
 	 dominusvobiscum-solemnis domineexaudi $(addprefix magnificat-initium-,isoll-D2 isoll-f viiisoll-G) \
@@ -109,7 +110,8 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 	 benedicamus-solemnis-laud tedeum-solemnis tedeum-solemnis-gn tuautem \
 	 $(addprefix resp-,beatissimaevirginis-CROCHU gloriosaevirginis-CROCHU \
 			   hodienataest-CROCHU nativitasgloriosae-CROCHU nativitastua-CROCHU \
-			   beatammedicent-CROCHU felixnamquees-CROCHU) \
+			   beatammedicent-CROCHU felixnamquees-CROCHU \
+			   conceptiogloriosae-CROCHU conceptiotua-CROCHU-cumdox hodieconceptaest-CROCHU) \
 	 $(patsubst %,ps%-initium-viii-G3,112 116) magnificat-initium-ivsoll-E3 \
 	 $(patsubst %,ps%-initium-vii-a,145 146) ps147-initium-iv-E ps23-initium-iv-c \
 	 $(patsubst %,ps%-initium-ii_-a,8 95 96 97) $(patsubst %,ps%-initium-vi-C,62 121)
@@ -135,7 +137,7 @@ $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e 
 endef
 iter-left := . $(TMP_DIR) ../InNativitateBMV $(addprefix ../InNativitateBMV/cantus/,amon33 triplex76 nrom02) \
 	     $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) \
-	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 triplex76) ../CorpusChristi ../RosariiBMV ../Adventus
+	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 triplex76) ../CorpusChristi ../RosariiBMV ../Adventus ../PresentationeBMV
 include $(iter)
 
 all: conceptionebmv.pdf
