@@ -29,7 +29,7 @@ MODUS-18 = iv-A
 MODUS-23 = iv-A
 MODUS-44 = vii-c
 MODUS-45 = vii-c
-MODUS-62 = vi-F
+MODUS-62 = iii-a2
 MODUS-66 = dir
 MODUS-86 = vii-c
 MODUS-90 = viii-G
@@ -57,12 +57,12 @@ MODUS-145 = vii-a
 MODUS-146 = vii-a
 MODUS-147 = iv-E
 MODUS-148 = vii-c
-MODUS-149 = vii-c
+MODUS-149 = iii-a
 MODUS-150 = vii-c
-MODUS-benedictus = viiisoll-G
+MODUS-benedictus = iiisoll-a
 MODUS-magnificat = isoll-D2
 MODUS-nuncdimittis = iii-a
-MODUS-dan3 = viii-G
+MODUS-dan3 = vii-a
 MODUSLIST = $(sort $(foreach P,$(PSALMS) benedictus magnificat nuncdimittis dan3,$(MODUS-$(P))))
 CZPSALMOPTS = --accents 0:0 --title-pattern " " --no-paragraph
 CZPSALMS = $(patsubst %,$(TMP_DIR)/ps%-boh.tex,$(PSALMS))
@@ -83,14 +83,14 @@ ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 	 $(addprefix versus-,nativitasest custodi orapronobis specie adjuvabit elegit immaculata) \
 	 $(addprefix hym-,AveMarisStella OGloriosaDomina TeLucis NuncSancte RectorPotens RerumDeus QuemTerra \
-			  BeataDeiGenetrix OSanctaMundiDomina AveMarisStella-iv AveMaris-praglia) \
+			  BeataDeiGenetrix OSanctaMundiDomina AveMarisStella-iv AveMaris-praglia InPlausu) \
 	 benedicamus-duplex-laudes benedicamus-duplex-vesperae benedicamus-festis-bmv \
 	 $(addprefix deusinadiutorium-,communis solemnis alter) supplicatiolitaniae oratiodominica resp1v \
 	 dominusvobiscum-solemnis domineexaudi $(addprefix magnificat-initium-,isoll-D2 isoll-f viiisoll-G) \
 	 $(addprefix capitulum-,AbInitio tuautem EtSic InPlateis) \
 	 benedictio-noctemquietam jubedomnebenedicere lectiobrevis-fratressobrii \
 	 convertenosdeus ant-miserere deusinadiutorium-communis \
-	 resp-inmanus ant-salvanos-antiquo \
+	 resp-inmanus resp-deusomnipotens ant-salvanos-antiquo \
 	 oratio-visita benedicamus-minor ant-salveregina-simplex \
 	 oratio introitus-GaudeamusOmnes graduale-BenedictaEtVenerabilis \
 	 alleluia-SolemnitasGloriosae offertorium-BeataEs \
@@ -103,9 +103,9 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 	 $(addprefix ant-,adestnamquenativitas animamealiquefacta antethorum-FKP benedictatu descendiinhortum \
 			  dignareme gaudemariavirgo omniumrerumcreator postpartum sanctamaria totapulchraes \
 			  cordeetanimo nativitasgloriosae regaliexprogenie nativitatemhodiernam nativitastua \
-			  beatammedicent) \
-	 tedecetlaus tedecetlausii tonus-evangelii-b tonus-lectionis-solemnis \
-	 $(addprefix venite2,a b c d e f) matinv-NativitatemVirginis inv-nativitatemvirginis \
+			  beatammedicent aitdominusdeus benedictaestu trahenos vidispeciosam) \
+	 tedecetlaus tedecetlausii tonus-evangelii-b tonus-lectionis-solemnis tonusprecum \
+	 inv-immaculatamconceptionem dominusnosbenedicat \
 	 benedicamus-solemnis-laud tedeum-solemnis tedeum-solemnis-gn tuautem \
 	 $(addprefix resp-,beatissimaevirginis-CROCHU gloriosaevirginis-CROCHU \
 			   hodienataest-CROCHU nativitasgloriosae-CROCHU nativitastua-CROCHU \
@@ -135,12 +135,12 @@ $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e 
 endef
 iter-left := . $(TMP_DIR) ../InNativitateBMV $(addprefix ../InNativitateBMV/cantus/,amon33 triplex76 nrom02) \
 	     $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) \
-	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 triplex76) ../CorpusChristi
+	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 triplex76) ../CorpusChristi ../RosariiBMV ../Adventus
 include $(iter)
 
 all: conceptionebmv.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
-$(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
+$(patsubst %,$(TMP_DIR)/%.tex,ps148 dan3): PSALMOPTS = $(LAPSALMOPTS)
 $(TMP_DIR)/magnificat.tex $(TMP_DIR)/magnificativE.tex $(TMP_DIR)/magnificatviiiG.tex: PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
 $(TMP_DIR)/ps90.tex: PSALMOPTS = --accents-style bold $(LAPSALMOPTSACC)
 $(patsubst %,$(TMP_DIR)/ps%.tex,118vii_viii 118ix_x 118xiii_xiv 118xv_xvi 118xix_xx 118xxi_xxii 133): PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold $(LAPSALMOPTSACC)
