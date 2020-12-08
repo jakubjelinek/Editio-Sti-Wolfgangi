@@ -218,10 +218,11 @@ MODUS-magnificat-XXIV = ivsoll-E
 MODUS-magnificat-XXV = iv-A
 MODUS-magnificat-XXVI = ii_-B
 MODUS-magnificat-XXVII = ii_-c
+MODUS-magnificat-XXVIII = iv-D
 CANTICIS = isaiae ezechiae tobiae anna moysis habacuc moysis2i moysis2ii nuncdimittis dan3 isaiae2
 NUMSI = I II III IV V VI VII VIII
 NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII
-NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI XXVII
+NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI XXVII XXVIII
 PSALMSALT = $(foreach V,$(NUMSI),$(addsuffix -$(V),$(PSALMS)))
 BENEDICTUS = $(foreach B,$(NUMSII),benedictus-$(B))
 MAGNIFICAT = $(foreach M,$(NUMSIII),magnificat-$(M))
@@ -287,7 +288,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  tuammagnificentiam sionnolitimere ecceapparebit eccedominusnoster \
 			  ecceinnubibus joannesautem montesetcolles tuesquiventurus \
 			  urbsfortitudinis venidominevisitare gaudeetlaetarenova \
-			  amaviteum eccerexveniet) \
+			  amaviteum eccerexveniet supersolium sionrenovaberis) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
