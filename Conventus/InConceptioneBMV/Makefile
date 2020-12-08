@@ -38,8 +38,8 @@ MODUS-95 = iv-c
 MODUS-96 = iv-c
 MODUS-97 = iv-c
 MODUS-99 = vii-c
-MODUS-109 = viii-G
-MODUS-112 = vii-c
+MODUS-109 = i-g2
+MODUS-112 = viii-G
 MODUS-116 = viii-G
 MODUS-118v_vi = vii-c
 MODUS-118vii_viii = vii-c
@@ -50,8 +50,8 @@ MODUS-118xv_xvi = vi-F
 MODUS-118xvii_xviii = vii-c
 MODUS-118xix_xx = vii-c
 MODUS-118xxi_xxii = vii-c
-MODUS-121 = vi-F
-MODUS-126 = viii-G
+MODUS-121 = viii-c
+MODUS-126 = iv-d
 MODUS-133 = viii-G
 MODUS-145 = vii-a
 MODUS-146 = vii-a
@@ -60,7 +60,7 @@ MODUS-148 = vii-c
 MODUS-149 = iii-a
 MODUS-150 = vii-c
 MODUS-benedictus = iiisoll-a
-MODUS-magnificat = isoll-D2
+MODUS-magnificat = isoll-D
 MODUS-nuncdimittis = iii-a
 MODUS-dan3 = vii-a
 MODUSLIST = $(sort $(foreach P,$(PSALMS) benedictus magnificat nuncdimittis dan3,$(MODUS-$(P))))
@@ -87,11 +87,11 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 			  TeDicimus) \
 	 benedicamus-duplex-laudes benedicamus-duplex-vesperae benedicamus-festis-bmv \
 	 $(addprefix deusinadiutorium-,communis solemnis alter) supplicatiolitaniae oratiodominica resp1v \
-	 dominusvobiscum-solemnis domineexaudi $(addprefix magnificat-initium-,isoll-D2 isoll-f viiisoll-G) \
-	 $(addprefix capitulum-,AbInitio tuautem EtSic InPlateis) \
+	 dominusvobiscum-solemnis domineexaudi $(addprefix magnificat-initium-,isoll-D isoll-f viiisoll-G) \
+	 $(addprefix capitulum-,AbInitio tuautem EtSic InPlateis DominusPossedit) \
 	 benedictio-noctemquietam jubedomnebenedicere lectiobrevis-fratressobrii \
 	 convertenosdeus ant-miserere deusinadiutorium-communis \
-	 resp-inmanus resp-deusomnipotens ant-salvanos-antiquo \
+	 resp-inmanus resp-deusomnipotens resp-inhoccognovi ant-salvanos-antiquo \
 	 oratio-visita benedicamus-minor ant-salveregina-simplex \
 	 oratio introitus-GaudeamusOmnes graduale-BenedictaEtVenerabilis \
 	 alleluia-SolemnitasGloriosae offertorium-BeataEs \
@@ -104,7 +104,8 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 	 $(addprefix ant-,adestnamquenativitas animamealiquefacta antethorum-FKP benedictatu descendiinhortum \
 			  dignareme gaudemariavirgo omniumrerumcreator postpartum sanctamaria totapulchraes \
 			  cordeetanimo nativitasgloriosae regaliexprogenie nativitatemhodiernam nativitastua \
-			  beatammedicent aitdominusdeus benedictaestu trahenos vidispeciosam) \
+			  beatammedicent aitdominusdeus benedictaestu trahenos vidispeciosam \
+			  totapulchra vestimentumtuum tugloriajerusalem hodieegressaest odortuus) \
 	 tedecetlaus tedecetlausii tonus-evangelii-b tonus-lectionis-solemnis tonusprecum \
 	 inv-immaculatamconceptionem dominusnosbenedicat \
 	 benedicamus-solemnis-laud tedeum-solemnis tedeum-solemnis-gn tuautem \
