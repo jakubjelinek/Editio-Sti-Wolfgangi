@@ -189,6 +189,21 @@ MODUS-109-VIII = i-g
 MODUS-110-VIII = vii-d
 MODUS-111-VIII = vii-a
 MODUS-112-VIII = iii-a
+MODUS-144ii-IX = i-a
+MODUS-145-IX = vii-a
+MODUS-146-IX = viii-G
+MODUS-147-IX = ii-D
+MODUS-92-IX = i-a
+MODUS-99-IX = vii-a
+MODUS-62-IX = viii-G
+MODUS-66-IX = vi-F
+MODUS-148-IX = ii-D
+MODUS-149-IX = ii-D
+MODUS-150-IX = ii-D
+MODUS-109-IX = i-a
+MODUS-110-IX = vii-a
+MODUS-111-IX = viii-G
+MODUS-112-IX = ii-D
 MODUS-benedictus-VIII = viiisoll-G
 MODUS-benedictus-IX = isoll-f
 MODUS-benedictus-X = isoll-g
@@ -229,10 +244,11 @@ MODUS-magnificat-XXVI = ii_-B
 MODUS-magnificat-XXVII = ii_-c
 MODUS-magnificat-XXVIII = iv-D
 MODUS-magnificat-XXIX = vii-b
+MODUS-magnificat-XXX = ii_soll-f
 CANTICIS = isaiae ezechiae tobiae anna moysis habacuc moysis2i moysis2ii moysis2i_xii nuncdimittis dan3 isaiae2
-NUMSI = I II III IV V VI VII VIII
+NUMSI = I II III IV V VI VII VIII IX
 NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV
-NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI XXVII XXVIII XXIX
+NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI XXVII XXVIII XXIX XXX
 PSALMSALT = $(foreach V,$(NUMSI),$(addsuffix -$(V),$(PSALMS)))
 BENEDICTUS = $(foreach B,$(NUMSII),benedictus-$(B))
 MAGNIFICAT = $(foreach M,$(NUMSIII),magnificat-$(M))
@@ -300,7 +316,9 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  urbsfortitudinis venidominevisitare gaudeetlaetarenova \
 			  amaviteum eccerexveniet supersolium sionrenovaberis \
 			  quipostmevenit cantatedomino dicitepusillanimes laudaierusalem \
-			  levabitdominus quammagnificatasunt) \
+			  levabitdominus quammagnificatasunt antemenonest beataesmaria \
+			  daboinsion jerusalemgaude justeetpie montesetomnescolles \
+			  venietdominus) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -315,13 +333,13 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(addprefix capitulum-,Benedictio BenedictusDeus NoxPraecessit OAltitudo AbInitio \
 				tuautem FratresHora GaudeteInDomino HoraEst IpseDeus \
-				NosAuferetur FratresQuaecumque) \
+				NosAuferetur FratresQuaecumque FratresGaudete) \
 	 $(addprefix versus-,custodi gaude dirigatur dominusregnavit repleti vespertina \
 			     diffusa cognoscantquia deusnesileas exaltentdominum laudabonomen \
 			     medianocte memorfui praevenerunt psallitedomino sacrificiumlaudis \
 			     benedictatu \
 			     egredietur emitte exsion rorate voxclamantis voxclamantis-simplex) \
-	 $(addprefix oratio,1 1vo 2vo bmv) \
+	 $(addprefix oratio,1 1vo 2vo 3vo bmv) \
 	 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,feria-advequad minor officium-bmv dominica-advequad) \
@@ -356,7 +374,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 	 benedictus-initium-viisoll-d tonusprecum dominusnosbenedicat ps147-initium-e \
 	 ps91-initium-e
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = $(TMP_DIR)/dan3if.tex $(TMP_DIR)/dan3-initium-i-f-auto.gtex
+OTHERDEPS = $(TMP_DIR)/dan3if.tex $(TMP_DIR)/dan3va.tex $(TMP_DIR)/dan3-initium-i-f-auto.gtex \
+	    $(TMP_DIR)/dan3-initium-v-a-auto.gtex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach V,$(NUMSI),$(if $(MODUS-$(P)-$(V)),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P)-$(V))-auto.gabc))) \
 		   $(foreach V,$(NUMSII),$(if $(MODUS-benedictus-$(V)),$(TMP_DIR)/benedictus-initium-$(MODUS-benedictus-$(V))-auto.gabc)) \
 		   $(foreach V,$(NUMSIII),$(if $(MODUS-magnificat-$(V)),$(TMP_DIR)/magnificat-initium-$(MODUS-magnificat-$(V)).gabc)) \
@@ -460,9 +479,10 @@ iter-left := $(PDFIII)
 include $(iter)
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(foreach V,$(NUMSI),$(patsubst %,$(TMP_DIR)/%-$(V).tex,ps115 ps148 ps149)): PSALMOPTS = $(LAPSALMOPTS)
-$(patsubst %,$(TMP_DIR)/%.tex,dan3 dan3if): PSALMOPTS = $(LAPSALMOPTS)
+$(patsubst %,$(TMP_DIR)/%.tex,dan3 dan3if dan3va): PSALMOPTS = $(LAPSALMOPTS)
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
 $(TMP_DIR)/dan3if.tex: TONUS = 2 0 1 2
+$(TMP_DIR)/dan3va.tex: TONUS = 1 0 2 0
 $(CZPSALMS) $(patsubst %,$(TMP_DIR)/%-boh.tex,benedictus $(filter-out dan3 nuncdimittis,$(CANTICIS))): $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/%.pslm
 	$(GENPSALM)
 $(TMP_DIR)/dan3-boh.tex: $(CZECH_PSALMS_DIR)/Pavlik/dan3.pslm
@@ -485,7 +505,7 @@ $(patsubst %,$(TMP_DIR)/%.tex,$(BENEDICTUS)): \
 $(TMP_DIR)/%.tex: $(PSALMS_DIR)/benedictus.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
-$(TMP_DIR)/dan3if.tex: \
+$(TMP_DIR)/dan3if.tex $(TMP_DIR)/dan3va.tex: \
 $(TMP_DIR)/%.tex: $(PSALMS_DIR)/dan3.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
