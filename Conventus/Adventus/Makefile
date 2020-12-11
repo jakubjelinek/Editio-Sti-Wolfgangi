@@ -171,6 +171,9 @@ MODUS-144ii-VII = viii-G
 MODUS-145-VII = viii-G2
 MODUS-146-VII = v-a
 MODUS-147-VII = iv-A
+MODUS-91-VII = e
+MODUS-moysis2i_xii = vi-F
+MODUS-8-VII = i-g
 MODUS-144ii-VIII = i-g
 MODUS-145-VIII = vii-d
 MODUS-146-VIII = vii-a
@@ -203,6 +206,7 @@ MODUS-benedictus-XXI = i-a2
 MODUS-benedictus-XXII = iv-D
 MODUS-benedictus-XXIII = i-D
 MODUS-benedictus-XXIV = viii-G2
+MODUS-benedictus-XXV = i-g
 MODUS-magnificat-VIII = isoll-f
 MODUS-magnificat-IX = viisoll-d
 MODUS-magnificat-X = viiisoll-G
@@ -225,9 +229,9 @@ MODUS-magnificat-XXVI = ii_-B
 MODUS-magnificat-XXVII = ii_-c
 MODUS-magnificat-XXVIII = iv-D
 MODUS-magnificat-XXIX = vii-b
-CANTICIS = isaiae ezechiae tobiae anna moysis habacuc moysis2i moysis2ii nuncdimittis dan3 isaiae2
+CANTICIS = isaiae ezechiae tobiae anna moysis habacuc moysis2i moysis2ii moysis2i_xii nuncdimittis dan3 isaiae2
 NUMSI = I II III IV V VI VII VIII
-NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV
+NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV
 NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI XXVII XXVIII XXIX
 PSALMSALT = $(foreach V,$(NUMSI),$(addsuffix -$(V),$(PSALMS)))
 BENEDICTUS = $(foreach B,$(NUMSII),benedictus-$(B))
@@ -295,7 +299,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  ecceinnubibus joannesautem montesetcolles tuesquiventurus \
 			  urbsfortitudinis venidominevisitare gaudeetlaetarenova \
 			  amaviteum eccerexveniet supersolium sionrenovaberis \
-			  quipostmevenit cantatedomino dicitepusillanimes laudaierusalem) \
+			  quipostmevenit cantatedomino dicitepusillanimes laudaierusalem \
+			  levabitdominus quammagnificatasunt) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -342,12 +347,14 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			   egredieturdominus-CROCHU festinanetardaveris \
 			   jerusalemcito-CROCHU jerusalemplantabis-CROCHU-cumdox \
 			   sicutmater-CROCHU jerusalemsurge-CROCHU-cumdox \
-			   jerusalemsurge-CROCHU rexnosteradveniet-CROCHU-cumdox) \
+			   jerusalemsurge-CROCHU rexnosteradveniet-CROCHU-cumdox \
+			   rexnosteradveniet-CROCHU) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_alma_redemptoris_mater an_alma_redemptoris_mater-simplex benedictio-noctemquietam \
 	 habacuc-initium-iv_-e $(addsuffix -initium-e,ps48ii ps65i ps105i) ps10-initium-ii_-f \
-	 benedictus-initium-viisoll-d tonusprecum dominusnosbenedicat ps147-initium-e
+	 benedictus-initium-viisoll-d tonusprecum dominusnosbenedicat ps147-initium-e \
+	 ps91-initium-e
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(TMP_DIR)/dan3if.tex $(TMP_DIR)/dan3-initium-i-f-auto.gtex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach V,$(NUMSI),$(if $(MODUS-$(P)-$(V)),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P)-$(V))-auto.gabc))) \
