@@ -149,7 +149,7 @@ MODUS-magnificat-VI = ii-D
 MODUS-77i_xvi-VI = i-g3
 MODUS-77iii-VI = ii-D
 MODUS-77xxxii_xxxix-VI = viii-G
-MODUS-147-VI = i-a
+MODUS-147-VI = e
 MODUS-104i-VII = d-g
 MODUS-104ii-VII = viii-a
 MODUS-104iii-VII = iv-E
@@ -347,7 +347,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_alma_redemptoris_mater an_alma_redemptoris_mater-simplex benedictio-noctemquietam \
 	 habacuc-initium-iv_-e $(addsuffix -initium-e,ps48ii ps65i ps105i) ps10-initium-ii_-f \
-	 benedictus-initium-viisoll-d tonusprecum dominusnosbenedicat ps147-initium-i-a3
+	 benedictus-initium-viisoll-d tonusprecum dominusnosbenedicat ps147-initium-e
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(TMP_DIR)/dan3if.tex $(TMP_DIR)/dan3-initium-i-f-auto.gtex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach V,$(NUMSI),$(if $(MODUS-$(P)-$(V)),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P)-$(V))-auto.gabc))) \
