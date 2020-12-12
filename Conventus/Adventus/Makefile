@@ -196,7 +196,7 @@ MODUS-147-IX = ii-D
 MODUS-92-IX = i-a
 MODUS-99-IX = vii-a
 MODUS-62-IX = viii-G
-MODUS-66-IX = vi-F
+MODUS-66-IX = vii-b
 MODUS-148-IX = ii-D
 MODUS-149-IX = ii-D
 MODUS-150-IX = ii-D
@@ -318,7 +318,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  quipostmevenit cantatedomino dicitepusillanimes laudaierusalem \
 			  levabitdominus quammagnificatasunt antemenonest beataesmaria \
 			  daboinsion jerusalemgaude justeetpie montesetomnescolles \
-			  venietdominus) \
+			  venietdominus erumpantmontes) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -366,7 +366,16 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			   jerusalemcito-CROCHU jerusalemplantabis-CROCHU-cumdox \
 			   sicutmater-CROCHU jerusalemsurge-CROCHU-cumdox \
 			   jerusalemsurge-CROCHU rexnosteradveniet-CROCHU-cumdox \
-			   rexnosteradveniet-CROCHU) \
+			   rexnosteradveniet-CROCHU aegyptenoliflere-CROCHU-cumdox \
+			   aegyptenoliflere-CROCHU bethleemcivitas-CROCHU-cumdox \
+			   bethleemcivitas-CROCHU descendetdominus-CROCHU-cumdox \
+			   descendetdominus-CROCHU docebitnos-CROCHU-cumdox docebitnos-CROCHU \
+			   ecceapparebit-CROCHU-cumdox ecceapparebit-CROCHU \
+			   propeestutveniat-CROCHU-cumdox propeestutveniat-CROCHU \
+			   quiventurusest-CROCHU-cumdox quiventurusest-CROCHU \
+			   suscipeverbum-CROCHU-cumdox suscipeverbum-CROCHU \
+			   venidomine-CROCHU-cumdox venidomine-CROCHU \
+			   ecceradixjesse-CROCHU-cumdox ecceradixjesse-CROCHU) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_alma_redemptoris_mater an_alma_redemptoris_mater-simplex benedictio-noctemquietam \
