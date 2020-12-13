@@ -222,6 +222,8 @@ MODUS-benedictus-XXII = iv-D
 MODUS-benedictus-XXIII = i-D
 MODUS-benedictus-XXIV = viii-G2
 MODUS-benedictus-XXV = i-g
+MODUS-benedictus-XXVI = vii-b
+MODUS-benedictus-XXVII = ii-D
 MODUS-magnificat-VIII = isoll-f
 MODUS-magnificat-IX = viisoll-d
 MODUS-magnificat-X = viiisoll-G
@@ -245,10 +247,11 @@ MODUS-magnificat-XXVII = ii_-c
 MODUS-magnificat-XXVIII = iv-D
 MODUS-magnificat-XXIX = vii-b
 MODUS-magnificat-XXX = ii_soll-f
+MODUS-magnificat-XXXI = i-f
 CANTICIS = isaiae ezechiae tobiae anna moysis habacuc moysis2i moysis2ii moysis2i_xii nuncdimittis dan3 isaiae2
 NUMSI = I II III IV V VI VII VIII IX
-NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV
-NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI XXVII XXVIII XXIX XXX
+NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI XXVII
+NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI XXVII XXVIII XXIX XXX XXXI
 PSALMSALT = $(foreach V,$(NUMSI),$(addsuffix -$(V),$(PSALMS)))
 BENEDICTUS = $(foreach B,$(NUMSII),benedictus-$(B))
 MAGNIFICAT = $(foreach M,$(NUMSIII),magnificat-$(M))
@@ -318,7 +321,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  quipostmevenit cantatedomino dicitepusillanimes laudaierusalem \
 			  levabitdominus quammagnificatasunt antemenonest beataesmaria \
 			  daboinsion jerusalemgaude justeetpie montesetomnescolles \
-			  venietdominus erumpantmontes) \
+			  venietdominus erumpantmontes consolaminiconsolamini \
+			  antequamconvenirent elevareelevare beatammedicent decaeloveniet) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -433,6 +437,15 @@ $(TMP_DIR)/%-XXVII.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
 $(TMP_DIR)/%-XXVIII.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
 $(TMP_DIR)/%-XXIX.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
 $(TMP_DIR)/%-XXX.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
+$(TMP_DIR)/%-XXXI.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
+$(TMP_DIR)/%-XXXII.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
+$(TMP_DIR)/%-XXXIII.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
+$(TMP_DIR)/%-XXXIV.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
+$(TMP_DIR)/%-XXXV.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
+$(TMP_DIR)/%-XXXVI.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
+$(TMP_DIR)/%-XXXVII.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
+$(TMP_DIR)/%-XXXVIII.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
+$(TMP_DIR)/%-XXXIX.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
 $(TMP_DIR)/%-I-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-II-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-III-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
@@ -463,6 +476,15 @@ $(TMP_DIR)/%-XXVII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-XXVIII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-XXIX-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 $(TMP_DIR)/%-XXX-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
+$(TMP_DIR)/%-XXXI-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
+$(TMP_DIR)/%-XXXII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
+$(TMP_DIR)/%-XXXIII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
+$(TMP_DIR)/%-XXXIV-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
+$(TMP_DIR)/%-XXXV-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
+$(TMP_DIR)/%-XXXVI-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
+$(TMP_DIR)/%-XXXVII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
+$(TMP_DIR)/%-XXXVIII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
+$(TMP_DIR)/%-XXXIX-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 
 FERIAE = ii iii iv v vi
 HEBDOMADAE = i ii iii iv

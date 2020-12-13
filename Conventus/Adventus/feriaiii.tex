@@ -458,6 +458,7 @@
 
 %\sideThumbs{{\scriptsize{}Fine horarum}}
 
+\ifx\preces\undefined
 \rubrica{Ante Orationem, cantatur a Superiore:}
 
 \pars{Supplicatio Litaniæ.}
@@ -467,6 +468,26 @@
 \pars{Oratio Dominica.}
 
 \cuminitiali{}{temporalia/oratiodominica.gtex}
+\else
+\pars{Preces.}
+
+\sineinitiali{}{temporalia/tonusprecum.gtex}
+
+\preces
+
+\rubrica{vel:}
+
+\pars{Supplicatio Litaniæ.}
+
+\cuminitiali{}{temporalia/supplicatiolitaniae.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Oratio Dominica.}
+
+\cuminitiali{}{temporalia/oratiodominica.gtex}
+\fi
 
 \vfill
 \pagebreak
@@ -489,7 +510,7 @@
 
 \vspace{2mm}
 
-\cuminitiali{IV}{temporalia/benedicamus-feria-advequad.gtex}
+\cuminitiali{IV}{temporalia/benedicamus-dominica-advequad.gtex}
 
 \vspace{1mm}
 
