@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 1 2 3 4 5 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 10 11 13 14 16 17i 17ii 17iii 19 20 23 29 32 34i 34ii 34iii 35 36i_xi 36xii_xxix 36iii 37ii_v 37vi_xiii 37xiv_xxiii 38 42 44i 44ii 45 47 48i 48ii 49i_vi 49vii_xv 49xvi_xxiii 50 56 61 62 63 64 65i 65ii 66 67i 67ii 67iii 68i 68ii 68iii 77i_xvi 77iii 77xxxii_xxxix 87 89 90 91 92 99 104i 104ii 104iii 105i 105ii 105iii 106i 106ii 106iii 109 110 111 112 113 114 115 116 117 128 129 130 131 132 133 134 135 136 137 138i 138ii 139 140 141 142 143i 143ii 144i 144ii 145 146 147 148 149 150
+PSALMS = 1 2 3 4 5 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 10 11 13 14 16 17i 17ii 17iii 19 20 23 29 32 34i 34ii 34iii 35 36i_xi 36xii_xxix 36iii 37ii_v 37vi_xiii 37xiv_xxiii 38 42 44i 44ii 45 47 48i 48ii 49i_vi 49vii_xv 49xvi_xxiii 50 56 61 62 63 64 65i 65ii 66 67i 67ii 67iii 68i 68ii 68iii 77i_xvi 77iii 77xxxii_xxxix 84 87 89 90 91 92 99 104i 104ii 104iii 105i 105ii 105iii 106i 106ii 106iii 109 110 111 112 113 114 115 116 117 128 129 130 131 132 133 134 135 136 137 138i 138ii 139 140 141 142 143i 143ii 144i 144ii 145 146 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-1-I = i-g
 MODUS-2-I = ii-D
@@ -86,6 +86,12 @@ MODUS-130-III = e
 MODUS-131-III = e
 MODUS-132-III = i-a
 MODUS-magnificat-III = v-a
+MODUS-67i-III = vii-a
+MODUS-67ii-III = i-f
+MODUS-67iii-III = d-g2
+MODUS-84-III = viii-G
+MODUS-isaiae3 = vii-d
+MODUS-66-III = ii-D
 MODUS-44i-IV = vi-F
 MODUS-44ii-IV = i-g
 MODUS-45-IV = e
@@ -248,7 +254,7 @@ MODUS-magnificat-XXVIII = iv-D
 MODUS-magnificat-XXIX = vii-b
 MODUS-magnificat-XXX = ii_soll-f
 MODUS-magnificat-XXXI = i-f
-CANTICIS = isaiae ezechiae tobiae anna moysis habacuc moysis2i moysis2ii moysis2i_xii nuncdimittis dan3 isaiae2
+CANTICIS = isaiae ezechiae tobiae anna moysis habacuc moysis2i moysis2ii moysis2i_xii nuncdimittis dan3 isaiae2 isaiae3
 NUMSI = I II III IV V VI VII VIII IX
 NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI XXVII
 NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI XXVII XXVIII XXIX XXX XXXI
@@ -322,7 +328,9 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  levabitdominus quammagnificatasunt antemenonest beataesmaria \
 			  daboinsion jerusalemgaude justeetpie montesetomnescolles \
 			  venietdominus erumpantmontes consolaminiconsolamini \
-			  antequamconvenirent elevareelevare beatammedicent decaeloveniet) \
+			  antequamconvenirent elevareelevare beatammedicent decaeloveniet \
+			  beatiquihabitant denoctespiritusmeus deusnosterdeussalvos \
+			  illuminadomine) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -385,7 +393,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 	 an_alma_redemptoris_mater an_alma_redemptoris_mater-simplex benedictio-noctemquietam \
 	 habacuc-initium-iv_-e $(addsuffix -initium-e,ps48ii ps65i ps105i) ps10-initium-ii_-f \
 	 benedictus-initium-viisoll-d tonusprecum dominusnosbenedicat ps147-initium-e \
-	 ps91-initium-e
+	 ps91-initium-e ps66-initium-e
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(TMP_DIR)/dan3if.tex $(TMP_DIR)/dan3va.tex $(TMP_DIR)/dan3-initium-i-f-auto.gtex \
 	    $(TMP_DIR)/dan3-initium-v-a-auto.gtex
