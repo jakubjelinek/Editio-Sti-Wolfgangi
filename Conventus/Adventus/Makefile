@@ -195,6 +195,13 @@ MODUS-109-VIII = i-g
 MODUS-110-VIII = vii-d
 MODUS-111-VIII = vii-a
 MODUS-112-VIII = iii-a
+MODUS-50-VIII = i-f
+MODUS-87-VIII = i-g3
+MODUS-89-VIII = ii_-B
+MODUS-138i-VIII = i-f
+MODUS-138ii-VIII = i-g3
+MODUS-139-VIII = ii_-B
+MODUS-140-VIII = i-g3
 MODUS-144ii-IX = i-a
 MODUS-145-IX = vii-a
 MODUS-146-IX = viii-G
@@ -230,6 +237,7 @@ MODUS-benedictus-XXIV = viii-G2
 MODUS-benedictus-XXV = i-g
 MODUS-benedictus-XXVI = vii-b
 MODUS-benedictus-XXVII = ii-D
+MODUS-benedictus-XXVIII = i-D2
 MODUS-magnificat-VIII = isoll-f
 MODUS-magnificat-IX = viisoll-d
 MODUS-magnificat-X = viiisoll-G
@@ -254,14 +262,15 @@ MODUS-magnificat-XXVIII = iv-D
 MODUS-magnificat-XXIX = vii-b
 MODUS-magnificat-XXX = ii_soll-f
 MODUS-magnificat-XXXI = i-f
+MODUS-magnificat-XXXII = iisoll-D
 CANTICIS = isaiae ezechiae tobiae anna moysis habacuc moysis2i moysis2ii moysis2i_xii nuncdimittis dan3 isaiae2 isaiae3
 NUMSI = I II III IV V VI VII VIII IX
-NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI XXVII
-NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI XXVII XXVIII XXIX XXX XXXI
+NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI XXVII XXVIII
+NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI XXVII XXVIII XXIX XXX XXXI XXXII
 PSALMSALT = $(foreach V,$(NUMSI),$(addsuffix -$(V),$(PSALMS)))
 BENEDICTUS = $(foreach B,$(NUMSII),benedictus-$(B))
 MAGNIFICAT = $(foreach M,$(NUMSIII),magnificat-$(M))
-MODUSLIST = $(sort $(foreach P,$(PSALMSALT) $(MAGNIFICAT) $(CANTICIS) $(BENEDICTUS),$(MODUS-$(P))))
+MODUSLIST = $(sort $(foreach P,$(PSALMSALT) $(MAGNIFICAT) $(CANTICIS) $(BENEDICTUS),$(MODUS-$(P)))) v-g
 CZPSALMOPTS = --accents 0:0 --title-pattern " " --no-paragraph
 CZPSALMS = $(patsubst %,$(TMP_DIR)/ps%-boh.tex,$(PSALMS))
 ALLCZPSALMS = $(CZPSALMS) $(patsubst %,$(TMP_DIR)/%-boh.tex,magnificat benedictus $(CANTICIS))
@@ -330,7 +339,9 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  venietdominus erumpantmontes consolaminiconsolamini \
 			  antequamconvenirent elevareelevare beatammedicent decaeloveniet \
 			  beatiquihabitant denoctespiritusmeus deusnosterdeussalvos \
-			  illuminadomine) \
+			  illuminadomine oadonai oclavis oemmanuel ooriens oradix orex osapientia \
+			  nonauferetursceptrum afinibusterrae desionveniet damercedemdomine \
+			  haurietisaquas venietdiesdomini) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -338,7 +349,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 	 $(addprefix hym-,EcceJamNoctis AEterneRerum AveMarisStella OGloriosaDomina AdPrecesNostras \
 			  ChristeLuxVera AmorisSensusErige AdestoChriste \
 			  VitaSanctorum QuemTerra OGloriosaFemina QuemTerra-alt \
-			  ConditorAlme VerbumSupernum VoxClara AmbrosiDoctor) \
+			  ConditorAlme VerbumSupernum VoxClara AmbrosiDoctor \
+			  MagnisProphetae VeniRedemptor VerbumSalutis) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus ostendenobis veni superte \
 			   christe) \
@@ -357,7 +369,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 	 $(addprefix benedicamus-,feria-advequad minor officium-bmv dominica-advequad) \
 	 $(addprefix inv-,alleluiachristumdominum regemmagnum dominumquifecit adoremusdominum \
 			  dominumdeum veniteexsultemus jubilemusdeo avemaria regemventurum \
-			  regemventurumsimplex) \
+			  regemventurumsimplex propeestiamsimplex) \
 	 dominelabiamea \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
@@ -387,7 +399,10 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			   quiventurusest-CROCHU-cumdox quiventurusest-CROCHU \
 			   suscipeverbum-CROCHU-cumdox suscipeverbum-CROCHU \
 			   venidomine-CROCHU-cumdox venidomine-CROCHU \
-			   ecceradixjesse-CROCHU-cumdox ecceradixjesse-CROCHU) \
+			   ecceradixjesse-CROCHU-cumdox ecceradixjesse-CROCHU \
+			   emitteagnumdomine-CROCHU-cumdox emitteagnumdomine-CROCHU \
+			   festina-CROCHU-cumdox festina-CROCHU roratecaeli-CROCHU-cumdox \
+			   roratecaeli-CROCHU) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_alma_redemptoris_mater an_alma_redemptoris_mater-simplex benedictio-noctemquietam \
@@ -396,7 +411,9 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 	 ps91-initium-e ps66-initium-e isaiae3-initium-vii-d
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(TMP_DIR)/dan3if.tex $(TMP_DIR)/dan3va.tex $(TMP_DIR)/dan3-initium-i-f-auto.gtex \
-	    $(TMP_DIR)/dan3-initium-v-a-auto.gtex
+	    $(TMP_DIR)/dan3-initium-v-a-auto.gtex $(TMP_DIR)/moysis-initium-v-g-auto.gtex \
+	    $(TMP_DIR)/ps148-initium-i-g3-auto.gtex $(TMP_DIR)/ps149-initium-i-g3-auto.gtex \
+	    $(TMP_DIR)/ps150-initium-i-g3-auto.gtex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach V,$(NUMSI),$(if $(MODUS-$(P)-$(V)),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P)-$(V))-auto.gabc))) \
 		   $(foreach V,$(NUMSII),$(if $(MODUS-benedictus-$(V)),$(TMP_DIR)/benedictus-initium-$(MODUS-benedictus-$(V))-auto.gabc)) \
 		   $(foreach V,$(NUMSIII),$(if $(MODUS-magnificat-$(V)),$(TMP_DIR)/magnificat-initium-$(MODUS-magnificat-$(V)).gabc)) \
