@@ -89,7 +89,7 @@
 
 %%%% Titulni stranka
 \begin{titulusOfficii}
-\nomenFesti{Feria VI \hebdomada{}}
+\nomenFesti{Feria VI infra Hebdom. Ultima Adventus.}
 \end{titulusOfficii}
 
 \pars{}
@@ -113,11 +113,11 @@
 
 \vspace{2mm}
 
-\pars{Invitatorium.} \scriptura{\textbf{H14}}
+\pars{Invitatorium.} \scriptura{Phil. 4, 4.5}
 
 \vspace{-6mm}
 
-\antiphona{VI}{temporalia/inv-regemventurumsimplex.gtex}
+\antiphona{VI}{temporalia/inv-propeestiamsimplex.gtex}
 
 \vfill
 \pagebreak
@@ -126,11 +126,11 @@
 
 \vspace{-5mm}
 
-\antiphona{II}{temporalia/hym-VerbumSupernum.gtex}
+\antiphona{II}{temporalia/hym-VeniRedemptor.gtex}
 %{
 %\vspace{-5mm}
 %\setlength{\columnsep}{0pt} % prostor mezi sloupci
-%\input{hym-VerbumSupernumAdestoChriste-bohtext.tex}
+%\input{hym-VeniRedemptor-bohtext.tex}
 %\setlength{\columnsep}{30pt} % prostor mezi sloupci
 %}
 
@@ -508,16 +508,17 @@
 \vfill
 %\pagebreak
 
-\pars{Hymnus} \scriptura{Ambrosius (\olddag{} 397)}
+\pars{Hymnus}
 
-\cuminitiali{I}{temporalia/hym-VoxClara.gtex}
+\cuminitiali{D}{temporalia/hym-MagnisProphetae.gtex}
 \vspace{-3mm}
-%\input{hym-VoxClara-bohtext.tex}
+%\input{hym-MagnisProphetae-bohtext.tex}
 
 \vfill
 \pagebreak
 
 \iffalse
+% LA
 \pars{Psalmus 1.} \scriptura{Ps. 50, 3; \textbf{H93}}
 
 \vspace{-4mm}
@@ -572,7 +573,9 @@
 
 %\psalmusEtTranslatioT{temporalia/ps99-VI-comb.tex}{10cm}
 \input{temporalia/ps99-VI.tex} \Abardot{}
-\else
+\fi
+\iffalse
+% LB
 \pars{Psalmus 1.} \scriptura{Ps. 50, 4; \textbf{H95}}
 
 \vspace{-4mm}
@@ -636,6 +639,65 @@
 %\psalmusEtTranslatioT{temporalia/ps147-VI-comb.tex}{10cm}
 \input{temporalia/ps147-VI.tex} \Abardot{}
 \fi
+\iftrue
+% LC
+\pars{Psalmus 1.} \scriptura{\textbf{H38}}
+
+\vspace{-4mm}
+
+\antiphona{I g\textsuperscript{3}}{temporalia/ant-desionveniet.gtex}
+
+\scriptura{Psalmus 50.}
+
+\initiumpsalmi{temporalia/ps50-initium-i-g3-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps50-VIII-comb.tex}{10cm}
+\input{temporalia/ps50-VIII.tex}
+
+\vfill
+
+\antiphona{}{temporalia/ant-desionveniet.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 2.} \scriptura{2. Par. 20, 17; \textbf{H39}}
+
+\vspace{-6mm}
+
+\antiphona{II D}{temporalia/ant-constantesestote.gtex}
+
+\vspace{-2mm}
+
+\scriptura{Canticum Ieremieræ, Ier. 14, 17-21}
+
+%\vspace{-3mm}
+
+\initiumpsalmi{temporalia/jeremiae2-initium-ii-D-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/jeremiae2-comb.tex}{10cm}
+\input{temporalia/jeremiae2.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 3.} \scriptura{Mich. 7, 7; \textbf{H39}}
+
+\vspace{-4mm}
+
+\antiphona{II* b}{temporalia/ant-egoautemaddominum.gtex}
+
+\vspace{-2mm}
+
+\scriptura{Psalmus 99.}
+
+%\vspace{-3mm}
+
+\initiumpsalmi{temporalia/ps99-initium-ii_-B-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps99-VII-comb.tex}{10cm}
+\input{temporalia/ps99-VII.tex} \Abardot{}
+\fi
 
 \vfill
 \pagebreak
@@ -678,6 +740,15 @@
 
 \preces
 
+\vfill
+
+\pars{Oratio Dominica.}
+
+\cuminitiali{}{temporalia/oratiodominicaalt.gtex}
+
+\vfill
+\pagebreak
+
 \rubrica{vel:}
 
 \pars{Supplicatio Litaniæ.}
@@ -685,7 +756,6 @@
 \cuminitiali{}{temporalia/supplicatiolitaniae.gtex}
 
 \vfill
-\pagebreak
 
 \pars{Oratio Dominica.}
 
@@ -735,74 +805,70 @@
 
 \vspace{4mm}
 
-\pars{Psalmus 1.} \scriptura{Ps. 141, 6; \textbf{H99}}
+\pars{Psalmus 1.} \scriptura{2 Par. 20, 17; \textbf{H39}}
 
 \vspace{-4mm}
 
-\antiphona{VIII a}{temporalia/ant-portiomeadomine.gtex}
+\antiphona{II D}{temporalia/ant-constantesestote.gtex}
 
 %\vspace{-4mm}
 
 \scriptura{Psalmus 141.}
 
-\initiumpsalmi{temporalia/ps141-initium-viii-A-auto.gtex}
+\initiumpsalmi{temporalia/ps141-initium-ii-D-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps141-VI-comb.tex}{10cm}
-\input{temporalia/ps141-VI.tex}
+%\psalmusEtTranslatioT{temporalia/ps141-VII-comb.tex}{10cm}
+\input{temporalia/ps141-VII.tex}
 
 \vfill
 
-\antiphona{}{temporalia/ant-portiomeadomine.gtex}
+\antiphona{}{temporalia/ant-constantesestote.gtex}
 
 \vfill
 \pagebreak
 
-\pars{Psalmus 2.} \scriptura{Ps. 143, 1; \textbf{H99}}
+\pars{Psalmus 2.} \scriptura{Ps. 142, 8-9; \textbf{H39}}
 
 \vspace{-4mm}
 
-\antiphona{VI F}{temporalia/ant-benedictusdominus.gtex}
+\antiphona{II* c}{temporalia/ant-adtedominelevavi.gtex}
 
 \scriptura{Psalmus 143, 1-8}
 
-\initiumpsalmi{temporalia/ps143i-initium-vi-F-auto.gtex}
+\initiumpsalmi{temporalia/ps143i-initium-ii_-c-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps143i-VI-comb.tex}{10cm}
-\input{temporalia/ps143i-VI.tex}
-
-\vspace{4mm}
-
-\rubrica{Hic non dicitur antiphonam.}
+%\psalmusEtTranslatioT{temporalia/ps143i-VII-comb.tex}{10cm}
+\input{temporalia/ps143i-VII.tex} \Abardot{}
 
 \vfill
 \pagebreak
 
-\pars{Psalmus 3.} \scriptura{Psalmus 143, 9-15}
-
-\initiumpsalmi{temporalia/ps143ii-initium-vi-F-auto.gtex}
-
-%\psalmusEtTranslatioT{temporalia/ps143ii-VI-comb.tex}{10cm}
-\input{temporalia/ps143ii-VI.tex}
-
-\vfill
-
-\antiphona{}{temporalia/ant-benedictusdominus.gtex}
-
-\vfill
-\pagebreak
-
-\pars{Psalmus 4.} \scriptura{Ps. 144, 2; \textbf{H99}}
+\pars{Psalmus 3.} \scriptura{Hab. 2, 3; \textbf{H39}}
 
 \vspace{-4mm}
 
-\antiphona{VIII a}{temporalia/ant-persingulosdies.gtex}
+\antiphona{II* b}{temporalia/ant-venidomineetnoli.gtex}
+
+\initiumpsalmi{temporalia/ps143ii-initium-ii_-B-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps143ii-VII-comb.tex}{10cm}
+\input{temporalia/ps143ii-VII.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 4.} \scriptura{Mich. 7, 7; \textbf{H39}}
+
+\vspace{-4mm}
+
+\antiphona{II* b}{temporalia/ant-egoautemaddominum.gtex}
 
 \scriptura{Psalmus 144, 1-9}
 
-\initiumpsalmi{temporalia/ps144i-initium-viii-A-auto.gtex}
+\initiumpsalmi{temporalia/ps144i-initium-ii_-B-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps144i-VI-comb.tex}{10cm}
-\input{temporalia/ps144i-VI.tex} \Abardot{}
+%\psalmusEtTranslatioT{temporalia/ps144i-VII-comb.tex}{10cm}
+\input{temporalia/ps144i-VII.tex} \Abardot{}
 
 \vfill
 \pagebreak
@@ -829,9 +895,9 @@
 
 \pars{Hymnus} \scriptura{Ambrosius (\olddag{} 397)}
 
-\cuminitiali{IV}{temporalia/hym-ConditorAlme.gtex}
+\cuminitiali{IV}{temporalia/hym-VerbumSalutis.gtex}
 \vspace{-3mm}
-%\input{hym-ConditorAlme-bohtext.tex}
+%\input{hym-VerbumSalutis-bohtext.tex}
 
 \vfill
 %\pagebreak
