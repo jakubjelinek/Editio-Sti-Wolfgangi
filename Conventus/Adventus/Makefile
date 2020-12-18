@@ -92,6 +92,9 @@ MODUS-67iii-III = d-g2
 MODUS-84-III = viii-G
 MODUS-isaiae3 = vii-d
 MODUS-66-III = ii-D
+MODUS-148-III = ii-D
+MODUS-149-III = ii-D
+MODUS-150-III = ii-D
 MODUS-44i-IV = vi-F
 MODUS-44ii-IV = i-g
 MODUS-45-IV = e
@@ -226,6 +229,8 @@ MODUS-109-IX = i-a
 MODUS-110-IX = vii-a
 MODUS-111-IX = viii-G
 MODUS-112-IX = ii-D
+MODUS-50-IX = ii_-a
+MODUS-142-IX = ii_-c
 MODUS-benedictus-VIII = viiisoll-G
 MODUS-benedictus-IX = isoll-f
 MODUS-benedictus-X = isoll-g
@@ -353,7 +358,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  nonauferetursceptrum afinibusterrae desionveniet damercedemdomine \
 			  haurietisaquas venietdiesdomini adtedominelevavi consolantemme \
 			  constantesestote egoautemaddominum quaeritedominumet \
-			  venidomineetnoli vigilateanimo) \
+			  venidomineetnoli vigilateanimo eccedeusmeus exspectetur \
+			  orietursicutsol paratusesto roratecaeli) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -417,7 +423,9 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			   roratecaeli-CROCHU clamainfortitudine-CROCHU-cumdox \
 			   clamainfortitudine-CROCHU egredieturdominusetpraeliabitur-CROCHU-cumdox \
 			   egredieturdominusetpraeliabitur-CROCHU modoveniet-CROCHU-cumdox \
-			   modoveniet-CROCHU) \
+			   modoveniet-CROCHU egredieturvirga-CROCHU-cumdox egredieturvirga-CROCHU \
+			   germinaveruntcampi-CROCHU-cumdox germinaveruntcampi-CROCHU \
+			   radixjesse-CROCHU-cumdox radixjesse-CROCHU) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_alma_redemptoris_mater an_alma_redemptoris_mater-simplex benedictio-noctemquietam \
@@ -428,7 +436,9 @@ OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(TMP_DIR)/dan3if.tex $(TMP_DIR)/dan3va.tex $(TMP_DIR)/dan3-initium-i-f-auto.gtex \
 	    $(TMP_DIR)/dan3-initium-v-a-auto.gtex $(TMP_DIR)/moysis-initium-v-g-auto.gtex \
 	    $(TMP_DIR)/ps148-initium-i-g3-auto.gtex $(TMP_DIR)/ps149-initium-i-g3-auto.gtex \
-	    $(TMP_DIR)/ps150-initium-i-g3-auto.gtex $(TMP_DIR)/ps50-initium-i-g3-auto.gtex
+	    $(TMP_DIR)/ps150-initium-i-g3-auto.gtex $(TMP_DIR)/ps50-initium-i-g3-auto.gtex \
+	    $(TMP_DIR)/moysis2i-initium-viii-G-auto.gtex $(TMP_DIR)/moysis2ii-initium-ii_-B-auto.gtex \
+	    $(TMP_DIR)/moysis2iviiiG.tex $(TMP_DIR)/moysis2iiii_B.tex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach V,$(NUMSI),$(if $(MODUS-$(P)-$(V)),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P)-$(V))-auto.gabc))) \
 		   $(foreach V,$(NUMSII),$(if $(MODUS-benedictus-$(V)),$(TMP_DIR)/benedictus-initium-$(MODUS-benedictus-$(V))-auto.gabc)) \
 		   $(foreach V,$(NUMSIII),$(if $(MODUS-magnificat-$(V)),$(TMP_DIR)/magnificat-initium-$(MODUS-magnificat-$(V)).gabc)) \
@@ -554,6 +564,8 @@ $(patsubst %,$(TMP_DIR)/%.tex,dan3 dan3if dan3va): PSALMOPTS = $(LAPSALMOPTS)
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
 $(TMP_DIR)/dan3if.tex: TONUS = 2 0 1 2
 $(TMP_DIR)/dan3va.tex: TONUS = 1 0 2 0
+$(TMP_DIR)/moysis2iviiiG.tex: TONUS = 1 0 1 2
+$(TMP_DIR)/moysis2iiii_B.tex: TONUS = 1 2 1 3
 $(CZPSALMS) $(patsubst %,$(TMP_DIR)/%-boh.tex,benedictus $(filter-out dan3 nuncdimittis,$(CANTICIS))): $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/%.pslm
 	$(GENPSALM)
 $(TMP_DIR)/dan3-boh.tex: $(CZECH_PSALMS_DIR)/Pavlik/dan3.pslm
@@ -578,6 +590,14 @@ $(TMP_DIR)/%.tex: $(PSALMS_DIR)/benedictus.pslm
 	$(SED) -i -e 'y/Jj/Ii/' $@
 $(TMP_DIR)/dan3if.tex $(TMP_DIR)/dan3va.tex: \
 $(TMP_DIR)/%.tex: $(PSALMS_DIR)/dan3.pslm
+	$(GENPSALM)
+	$(SED) -i -e 'y/Jj/Ii/' $@
+$(TMP_DIR)/moysis2iviiiG.tex: \
+$(TMP_DIR)/%.tex: $(PSALMS_DIR)/moysis2i.pslm
+	$(GENPSALM)
+	$(SED) -i -e 'y/Jj/Ii/' $@
+$(TMP_DIR)/moysis2iiii_B.tex: \
+$(TMP_DIR)/%.tex: $(PSALMS_DIR)/moysis2ii.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
 $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
