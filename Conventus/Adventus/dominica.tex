@@ -170,10 +170,14 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
+\ifx\hymnusvesperas\undefined
 \pars{Hymnus} \scriptura{Ambrosius (\olddag{} 397)}
 
 \cuminitiali{IV}{temporalia/hym-ConditorAlme.gtex}
 \vspace{-3mm}
+\else
+\hymnusvesperas
+\fi
 %\input{hym-ConditorAlme-bohtext.tex}
 
 \vfill
@@ -238,16 +242,24 @@ per infiníta sǽcula sæculórum.
 
 \vspace{-6mm}
 
+\ifx\invitatorium\undefined
 \antiphona{V}{temporalia/inv-regemventurum.gtex}
+\else
+\invitatorium
+\fi
 
 \vfill
 \pagebreak
 
+\ifx\hymnusmatutinum\undefined
 \pars{Hymnus.}
 
 \vspace{-5mm}
 
 \antiphona{II}{temporalia/hym-VerbumSupernum.gtex}
+\else
+\hymnusmatutinum
+\fi
 
 %{
 %\vspace{-5mm}
@@ -696,9 +708,13 @@ Orémus:
 \vfill
 \pagebreak
 
+\ifx\hymnuslaudes\undefined
 \pars{Hymnus} \scriptura{Ambrosius (\olddag{} 397)}
 
 \cuminitiali{I}{temporalia/hym-VoxClara.gtex}
+\else
+\hymnuslaudes
+\fi
 \vspace{-3mm}
 %\input{hym-VoxClara-bohtext.tex}
 
@@ -772,10 +788,14 @@ Orémus:
 \vfill
 \pagebreak
 
+\ifx\hymnusvesperas\undefined
 \pars{Hymnus} \scriptura{Ambrosius (\olddag{} 397)}
 
 \cuminitiali{IV}{temporalia/hym-ConditorAlme.gtex}
 \vspace{-3mm}
+\else
+\hymnusvesperas
+\fi
 %\input{hym-ConditorAlme-bohtext.tex}
 
 \vfill

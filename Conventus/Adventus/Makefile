@@ -231,6 +231,9 @@ MODUS-111-IX = viii-G
 MODUS-112-IX = ii-D
 MODUS-50-IX = ii_-a
 MODUS-142-IX = ii_-c
+MODUS-144ii-X = i-g
+MODUS-145-X = i-f
+MODUS-146-X = i-g
 MODUS-benedictus-VIII = viiisoll-G
 MODUS-benedictus-IX = isoll-f
 MODUS-benedictus-X = isoll-g
@@ -279,7 +282,7 @@ MODUS-magnificat-XXX = ii_soll-f
 MODUS-magnificat-XXXI = i-f
 MODUS-magnificat-XXXII = iisoll-D
 CANTICIS = isaiae ezechiae tobiae anna moysis habacuc moysis2i moysis2ii moysis2i_xii nuncdimittis dan3 isaiae2 isaiae3 jeremiae2
-NUMSI = I II III IV V VI VII VIII IX
+NUMSI = I II III IV V VI VII VIII IX X
 NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI XXVII XXVIII XXIX
 NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI XXVII XXVIII XXIX XXX XXXI XXXII
 PSALMSALT = $(foreach V,$(NUMSI),$(addsuffix -$(V),$(PSALMS)))
@@ -359,7 +362,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  haurietisaquas venietdiesdomini adtedominelevavi consolantemme \
 			  constantesestote egoautemaddominum quaeritedominumet \
 			  venidomineetnoli vigilateanimo eccedeusmeus exspectetur \
-			  orietursicutsol paratusesto roratecaeli) \
+			  orietursicutsol paratusesto roratecaeli canitetuba dominusveniet \
+			  eccevenietdesideratus eruntprava omnipotenssermotuus) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -375,13 +379,13 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(addprefix capitulum-,Benedictio BenedictusDeus NoxPraecessit OAltitudo AbInitio \
 				tuautem FratresHora GaudeteInDomino HoraEst IpseDeus \
-				NosAuferetur FratresQuaecumque FratresGaudete) \
+				NosAuferetur FratresQuaecumque FratresGaudete FratresSic) \
 	 $(addprefix versus-,custodi gaude dirigatur dominusregnavit repleti vespertina \
 			     diffusa cognoscantquia deusnesileas exaltentdominum laudabonomen \
 			     medianocte memorfui praevenerunt psallitedomino sacrificiumlaudis \
 			     benedictatu \
 			     egredietur emitte exsion rorate voxclamantis voxclamantis-simplex) \
-	 $(addprefix oratio,1 1vo 2vo 3vo bmv) \
+	 $(addprefix oratio,1 1vo 2vo 3vo 4vo bmv) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,feria-advequad minor officium-bmv dominica-advequad) \
