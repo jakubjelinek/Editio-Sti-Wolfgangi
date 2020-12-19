@@ -234,6 +234,13 @@ MODUS-142-IX = ii_-c
 MODUS-144ii-X = i-g
 MODUS-145-X = i-f
 MODUS-146-X = i-g
+MODUS-92-X = i-g
+MODUS-99-X = i-f
+MODUS-62-X = i-g
+MODUS-66-X = ii_-B
+MODUS-109-X = i-g
+MODUS-110-X = i-f
+MODUS-111-X = i-g
 MODUS-benedictus-VIII = viiisoll-G
 MODUS-benedictus-IX = isoll-f
 MODUS-benedictus-X = isoll-g
@@ -363,7 +370,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  constantesestote egoautemaddominum quaeritedominumet \
 			  venidomineetnoli vigilateanimo eccedeusmeus exspectetur \
 			  orietursicutsol paratusesto roratecaeli canitetuba dominusveniet \
-			  eccevenietdesideratus eruntprava omnipotenssermotuus) \
+			  eccevenietdesideratus eruntprava omnipotenssermotuus avemaria) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -391,7 +398,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 	 $(addprefix benedicamus-,feria-advequad minor officium-bmv dominica-advequad) \
 	 $(addprefix inv-,alleluiachristumdominum regemmagnum dominumquifecit adoremusdominum \
 			  dominumdeum veniteexsultemus jubilemusdeo avemaria regemventurum \
-			  regemventurumsimplex propeestiamsimplex) \
+			  regemventurumsimplex propeestiam propeestiamsimplex) \
 	 dominelabiamea \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
@@ -429,7 +436,15 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			   egredieturdominusetpraeliabitur-CROCHU modoveniet-CROCHU-cumdox \
 			   modoveniet-CROCHU egredieturvirga-CROCHU-cumdox egredieturvirga-CROCHU \
 			   germinaveruntcampi-CROCHU-cumdox germinaveruntcampi-CROCHU \
-			   radixjesse-CROCHU-cumdox radixjesse-CROCHU) \
+			   radixjesse-CROCHU-cumdox radixjesse-CROCHU canitetuba-CROCHU-cumdox \
+			   canitetuba-CROCHU ecceiamveniet-CROCHU-cumdox ecceiamveniet-CROCHU \
+			   intueminiquantus-CROCHU-cumdox intueminiquantus-CROCHU \
+			   meoportetminui-CROCHU-cumdox meoportetminui-CROCHU \
+			   nasceturnobisparvulus-CROCHU-cumdox nasceturnobisparvulus-CROCHU \
+			   nonauferetursceptrumdeiuda-CROCHU-cumdox nonauferetursceptrumdeiuda-CROCHU \
+			   nondiscedimusate-CROCHU-cumdox nondiscedimusate-CROCHU \
+			   vigesimaquarta-CROCHU-cumdox vigesimaquarta-CROCHU \
+			   virgoisrael-CROCHU-cumdox virgoisrael-CROCHU ) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_alma_redemptoris_mater an_alma_redemptoris_mater-simplex benedictio-noctemquietam \
