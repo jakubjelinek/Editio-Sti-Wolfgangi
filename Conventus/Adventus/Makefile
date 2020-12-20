@@ -370,7 +370,10 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  constantesestote egoautemaddominum quaeritedominumet \
 			  venidomineetnoli vigilateanimo eccedeusmeus exspectetur \
 			  orietursicutsol paratusesto roratecaeli canitetuba dominusveniet \
-			  eccevenietdesideratus eruntprava omnipotenssermotuus avemaria) \
+			  eccevenietdesideratus eruntprava omnipotenssermotuus avemaria \
+			  eccevenietdominus dumvenerit eccedeusnoster ponaminsion \
+			  egredieturdominus emitteagnum convertere utcognoscamus \
+			  desionvenietdominus spiritusdomini proptersion) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -444,7 +447,10 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			   nonauferetursceptrumdeiuda-CROCHU-cumdox nonauferetursceptrumdeiuda-CROCHU \
 			   nondiscedimusate-CROCHU-cumdox nondiscedimusate-CROCHU \
 			   vigesimaquarta-CROCHU-cumdox vigesimaquarta-CROCHU \
-			   virgoisrael-CROCHU-cumdox virgoisrael-CROCHU ) \
+			   virgoisrael-CROCHU-cumdox virgoisrael-CROCHU \
+			   orieturstella-CROCHU-cumdox orieturstella-CROCHU \
+			   praecursorpronobis-CROCHU-cumdox praecursorpronobis-CROCHU \
+			   videbuntgentesiustumtuum-CROCHU-cumdox videbuntgentesiustumtuum-CROCHU) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_alma_redemptoris_mater an_alma_redemptoris_mater-simplex benedictio-noctemquietam \
