@@ -95,6 +95,14 @@ MODUS-66-III = ii-D
 MODUS-148-III = ii-D
 MODUS-149-III = ii-D
 MODUS-150-III = ii-D
+MODUS-50-III = ii_-B
+MODUS-5-III = viii-C
+MODUS-35-III = viii-G
+MODUS-113-III = ii_-B
+MODUS-114-III = viii-C
+MODUS-115-III = viii-G
+MODUS-116-III = viii-G
+MODUS-128-III = ii_-a
 MODUS-44i-IV = vi-F
 MODUS-44ii-IV = i-g
 MODUS-45-IV = e
@@ -222,9 +230,9 @@ MODUS-92-IX = i-a
 MODUS-99-IX = vii-a
 MODUS-62-IX = viii-G
 MODUS-66-IX = vii-b
-MODUS-148-IX = ii-D
-MODUS-149-IX = ii-D
-MODUS-150-IX = ii-D
+MODUS-148-IX = ii_-a
+MODUS-149-IX = ii_-a
+MODUS-150-IX = ii_-a
 MODUS-109-IX = i-a
 MODUS-110-IX = vii-a
 MODUS-111-IX = viii-G
@@ -373,7 +381,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  eccevenietdesideratus eruntprava omnipotenssermotuus avemaria \
 			  eccevenietdominus dumvenerit eccedeusnoster ponaminsion \
 			  egredieturdominus emitteagnum convertere utcognoscamus \
-			  desionvenietdominus spiritusdomini proptersion) \
+			  desionvenietdominus spiritusdomini proptersion \
+			  scitotequiapropeest eccecompletasunt nolitetimere) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
