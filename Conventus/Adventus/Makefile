@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 1 2 3 4 5 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 10 11 13 14 16 17i 17ii 17iii 19 20 23 29 32 34i 34ii 34iii 35 36i_xi 36xii_xxix 36iii 37ii_v 37vi_xiii 37xiv_xxiii 38 42 44i 44ii 45 47 48i 48ii 49i_vi 49vii_xv 49xvi_xxiii 50 56 61 62 63 64 65i 65ii 66 67i 67ii 67iii 68i 68ii 68iii 68ii_xiii 68xiv_xxii 77i_xvi 77iii 77xxxii_xxxix 84 87 89 90 91 92 99 100 101ii_xii 101xiii_xxiii 101iii 104i 104ii 104iii 105i 105ii 105iii 106i 106ii 106iii 109 110 111 112 113 114 115 116 117 128 129 130 131 132 133 134 135 136 137 138i 138ii 139 140 141 142 143i 143ii 143i_x 144i 144ii 145 146 147 148 149 150
+PSALMS = 1 2 3 4 5 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 10 11 13 14 16 17i 17ii 17iii 19 20 23 29 32 34i 34ii 34iii 35 36i_xi 36xii_xxix 36iii 37ii_v 37vi_xiii 37xiv_xxiii 38 38i 38ii 42 44i 44ii 45 47 48i 48ii 49i_vi 49vii_xv 49xvi_xxiii 50 51 56 61 62 63 64 65i 65ii 66 67i 67ii 67iii 68i 68ii 68iii 68ii_xiii 68xiv_xxii 77i_xvi 77iii 77xxxii_xxxix 84 87 89 90 91 92 99 100 101ii_xii 101xiii_xxiii 101iii 102i 102ii 102iii 104i 104ii 104iii 105i 105ii 105iii 106i 106ii 106iii 109 110 111 112 113 114 115 116 117 128 129 130 131 132 133 134 135 136 137 138i 138ii 139 140 141 142 143i 143ii 143i_x 144i 144ii 145 146 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-1-I = i-g
 MODUS-2-I = ii-D
@@ -135,6 +135,12 @@ MODUS-129-IV = ii_-a
 MODUS-130-IV = viii-g
 MODUS-131-IV = ii_-a
 MODUS-132-IV = i-g
+MODUS-38i-IV = iv-E
+MODUS-38ii-IV = vii-c
+MODUS-51-IV = iv-e
+MODUS-102i-IV = viii-C
+MODUS-102ii-IV = i-D
+MODUS-102iii-IV = iii-g
 MODUS-61-V = iii-g
 MODUS-65i-V = e
 MODUS-65ii-V = i-g
@@ -281,6 +287,7 @@ MODUS-benedictus-XXVI = vii-b
 MODUS-benedictus-XXVII = ii-D
 MODUS-benedictus-XXVIII = i-D2
 MODUS-benedictus-XXIX = iv-e
+MODUS-benedictus-XXX = viii-c
 MODUS-magnificat-VIII = isoll-f
 MODUS-magnificat-IX = viisoll-d
 MODUS-magnificat-X = viiisoll-G
@@ -308,7 +315,7 @@ MODUS-magnificat-XXXI = i-f
 MODUS-magnificat-XXXII = iisoll-D
 CANTICIS = isaiae ezechiae tobiae anna moysis habacuc moysis2i moysis2ii moysis2i_xii nuncdimittis dan3 dan32 isaiae2 isaiae3 jeremiae2
 NUMSI = I II III IV V VI VII VIII IX X
-NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI XXVII XXVIII XXIX
+NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI XXVII XXVIII XXIX XXX
 NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI XXVII XXVIII XXIX XXX XXXI XXXII
 PSALMSALT = $(foreach V,$(NUMSI),$(addsuffix -$(V),$(PSALMS)))
 BENEDICTUS = $(foreach B,$(NUMSII),benedictus-$(B))
@@ -393,7 +400,9 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  egredieturdominus emitteagnum convertere utcognoscamus \
 			  desionvenietdominus spiritusdomini proptersion \
 			  scitotequiapropeest eccecompletasunt nolitetimere \
-			  clamormeus1 iusticonfitebuntur1 respicehumilitatem deusiudicii) \
+			  clamormeus1 iusticonfitebuntur1 respicehumilitatem deusiudicii \
+			  benedicanimamea benedicitedomino exspectabonomentuum nonsismihi \
+			  supertimentesdominum) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -478,7 +487,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 	 habacuc-initium-iv_-e $(addsuffix -initium-e,ps48ii ps65i ps105i) ps10-initium-ii_-f \
 	 benedictus-initium-viisoll-d tonusprecum dominusnosbenedicat ps147-initium-e \
 	 ps91-initium-e ps66-initium-e isaiae3-initium-vii-d benedictus-initium-iv-e \
-	 ps101ii_xii-initium-i-a
+	 ps101ii_xii-initium-i-a ps102iii-initium-iii-g
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(TMP_DIR)/dan3if.tex $(TMP_DIR)/dan3va.tex $(TMP_DIR)/dan3-initium-i-f-auto.gtex \
 	    $(TMP_DIR)/dan3-initium-v-a-auto.gtex $(TMP_DIR)/moysis-initium-v-g-auto.gtex \

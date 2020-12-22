@@ -89,7 +89,7 @@
 
 %%%% Titulni stranka
 \begin{titulusOfficii}
-\nomenFesti{Feria IV \hebdomada{}}
+\nomenFesti{Feria IV infra Hebdom. Ultima Adventus.}
 \end{titulusOfficii}
 
 \pars{}
@@ -113,11 +113,11 @@
 
 \vspace{2mm}
 
-\pars{Invitatorium.} \scriptura{\textbf{H14}}
+\pars{Invitatorium.} \scriptura{Phil. 4, 4.5}
 
 \vspace{-6mm}
 
-\antiphona{VI}{temporalia/inv-regemventurumsimplex.gtex}
+\antiphona{VI}{temporalia/inv-propeestiamsimplex.gtex}
 
 \vfill
 \pagebreak
@@ -126,11 +126,11 @@
 
 \vspace{-5mm}
 
-\antiphona{II}{temporalia/hym-VerbumSupernum.gtex}
+\antiphona{II}{temporalia/hym-VeniRedemptor.gtex}
 %{
 %\vspace{-5mm}
 %\setlength{\columnsep}{0pt} % prostor mezi sloupci
-%\input{hym-VerbumSupernum-bohtext.tex}
+%\input{hym-VeniRedemptor-bohtext.tex}
 %\setlength{\columnsep}{30pt} % prostor mezi sloupci
 %}
 
@@ -538,6 +538,7 @@
 
 %\sideThumbs{{\scriptsize{}Fine horarum}}
 
+\ifx\preces\undefined
 \rubrica{Ante Orationem, cantatur a Superiore:}
 
 \pars{Supplicatio Litaniæ.}
@@ -547,6 +548,34 @@
 \pars{Oratio Dominica.}
 
 \cuminitiali{}{temporalia/oratiodominica.gtex}
+\else
+\pars{Preces.}
+
+\sineinitiali{}{temporalia/tonusprecum.gtex}
+
+\preces
+
+\vfill
+
+\pars{Oratio Dominica.}
+
+\cuminitiali{}{temporalia/oratiodominicaalt.gtex}
+
+\vfill
+\pagebreak
+
+\rubrica{vel:}
+
+\pars{Supplicatio Litaniæ.}
+
+\cuminitiali{}{temporalia/supplicatiolitaniae.gtex}
+
+\vfill
+
+\pars{Oratio Dominica.}
+
+\cuminitiali{}{temporalia/oratiodominica.gtex}
+\fi
 
 \vfill
 \pagebreak
@@ -569,7 +598,7 @@
 
 \vspace{2mm}
 
-\cuminitiali{IV}{temporalia/benedicamus-dominica-advequad.gtex}
+\cuminitiali{IV}{temporalia/benedicamus-feria-advequad.gtex}
 
 \vspace{1mm}
 
@@ -733,7 +762,7 @@
 
 \vspace{2mm}
 
-\cuminitiali{IV}{temporalia/benedicamus-dominica-advequad.gtex}
+\cuminitiali{IV}{temporalia/benedicamus-feria-advequad.gtex}
 
 \vspace{1mm}
 
