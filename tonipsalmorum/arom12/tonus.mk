@@ -1,6 +1,7 @@
 TONUS-i-D = 2 0 1 2
 TONUS-i-D2 = 2 0 1 2
 TONUS-i-D_ = 2 0 1 2
+TONUS-i-d = 2 0 1 2
 TONUS-i-F = 2 0 1 2
 TONUS-i-a = 2 0 1 2
 TONUS-i-a2 = 2 0 1 2
