@@ -409,7 +409,9 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  scitotequiapropeest eccecompletasunt nolitetimere \
 			  clamormeus1 iusticonfitebuntur1 respicehumilitatem deusiudicii \
 			  benedicanimamea benedicitedomino exspectabonomentuum nonsismihi \
-			  supertimentesdominum ponentdomino) \
+			  supertimentesdominum ponentdomino completisunt crastinaerit \
+			  hodiescietis iudaeaetierusalem levatecapita tubethlehem \
+			  venietdominusinpotestate) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -421,7 +423,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  MagnisProphetae VeniRedemptor VerbumSalutis) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus ostendenobis veni superte \
-			   christe) \
+			   christe crastinadie) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(addprefix capitulum-,Benedictio BenedictusDeus NoxPraecessit OAltitudo AbInitio \
 				tuautem FratresHora GaudeteInDomino HoraEst IpseDeus \
@@ -437,7 +439,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 	 $(addprefix benedicamus-,feria-advequad minor officium-bmv dominica-advequad) \
 	 $(addprefix inv-,alleluiachristumdominum regemmagnum dominumquifecit adoremusdominum \
 			  dominumdeum veniteexsultemus jubilemusdeo avemaria regemventurum \
-			  regemventurumsimplex propeestiam propeestiamsimplex) \
+			  regemventurumsimplex propeestiam propeestiamsimplex hodiescietis) \
 	 dominelabiamea \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
@@ -487,7 +489,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			   orieturstella-CROCHU-cumdox orieturstella-CROCHU \
 			   praecursorpronobis-CROCHU-cumdox praecursorpronobis-CROCHU \
 			   videbuntgentesiustumtuum-CROCHU-cumdox videbuntgentesiustumtuum-CROCHU \
-			   annuntiatumest-CROCHU-cumdox) \
+			   annuntiatumest-CROCHU-cumdox deillaocculta-CROCHU-cumdox \
+			   sanctificaminifilii-CROCHU sanctificaminihodie-CROCHU) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_alma_redemptoris_mater an_alma_redemptoris_mater-simplex benedictio-noctemquietam \
