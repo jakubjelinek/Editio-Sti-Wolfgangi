@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 1 2 3 4 5 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 10 11 13 14 16 17i 17ii 17iii 19 20 23 29 32 34i 34ii 34iii 35 36i_xi 36xii_xxix 36iii 37ii_v 37vi_xiii 37xiv_xxiii 38 38i 38ii 42 44i 44ii 45 47 48i 48ii 49i_vi 49vii_xv 49xvi_xxiii 50 51 56 61 62 63 64 65i 65ii 66 67i 67ii 67iii 68i 68ii 68iii 68ii_xiii 68xiv_xxii 77i_xvi 77iii 77xxxii_xxxix 84 87 89 90 91 92 99 100 101ii_xii 101xiii_xxiii 101iii 102i 102ii 102iii 104i 104ii 104iii 105i 105ii 105iii 106i 106ii 106iii 107 109 110 111 112 113 114 115 116 117 128 129 130 131 132 133 134 135 136 137 138i 138ii 139 140 141 142 143i 143ii 143i_x 144i 144ii 145 146 147 148 149 150
+PSALMS = 1 2 3 4 5 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 10 11 13 14 16 17i 17ii 17iii 19 20 23 29 32 34i 34ii 34iii 35 36i_xi 36xii_xxix 36iii 37ii_v 37vi_xiii 37xiv_xxiii 38 38i 38ii 42 43i 43ii 43iii 44i 44ii 45 47 48i 48ii 49i_vi 49vii_xv 49xvi_xxiii 50 51 56 61 62 63 64 65i 65ii 66 67i 67ii 67iii 68i 68ii 68iii 68ii_xiii 68xiv_xxii 77i_xvi 77iii 77xxxii_xxxix 84 87 89 90 91 92 99 100 101ii_xii 101xiii_xxiii 101iii 102i 102ii 102iii 104i 104ii 104iii 105i 105ii 105iii 106i 106ii 106iii 107 109 110 111 112 113 114 115 116 117 120 121 122 128 129 130 131 132 133 134 135 136 137 138i 138ii 139 140 141 142 143i 143ii 143i_x 144i 144ii 145 146 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-1-I = i-g
 MODUS-2-I = ii-D
@@ -47,6 +47,8 @@ MODUS-4-I = viii-G
 MODUS-90-I = viii-G
 MODUS-133-I = viii-G
 MODUS-nuncdimittis = iii-a
+MODUS-142-I = iii-a
+MODUS-146-I = viii-c
 MODUS-13-II = ii-D
 MODUS-14-II = iv_-e
 MODUS-16-II = vii-c
@@ -223,6 +225,13 @@ MODUS-141-VII = ii-D
 MODUS-143i-VII = ii_-c
 MODUS-143ii-VII = ii_-B
 MODUS-144i-VII = ii_-B
+MODUS-43i-VII = viii-G
+MODUS-43ii-VII = viii-a
+MODUS-43iii-VII = ii_-a
+MODUS-120-VII = vii-b
+MODUS-121-VII = v-g
+MODUS-122-VII = ii_-B
+MODUS-isaiae5 = i-g
 MODUS-144ii-VIII = i-g
 MODUS-145-VIII = vii-d
 MODUS-146-VIII = vii-a
@@ -320,7 +329,7 @@ MODUS-magnificat-XXIX = vii-b
 MODUS-magnificat-XXX = ii_soll-f
 MODUS-magnificat-XXXI = i-f
 MODUS-magnificat-XXXII = iisoll-D
-CANTICIS = isaiae ezechiae tobiae anna moysis habacuc moysis2i moysis2ii moysis2i_xii nuncdimittis dan3 dan32 isaiae2 isaiae3 isaiae4 jeremiae2
+CANTICIS = isaiae ezechiae tobiae anna moysis habacuc moysis2i moysis2ii moysis2i_xii nuncdimittis dan3 dan32 isaiae2 isaiae3 isaiae4 isaiae5 jeremiae2
 NUMSI = I II III IV V VI VII VIII IX X
 NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI XXVII XXVIII XXIX XXX
 NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI XXVII XXVIII XXIX XXX XXXI XXXII
@@ -607,7 +616,7 @@ HEBDOMADAE = i ii iii iv
 PDFI = $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE)))
 PDFII = $(foreach H,$(HEBDOMADAE),sabbato-$(H).pdf)
 PDFIII = $(foreach H,$(HEBDOMADAE),dominica-$(H).pdf)
-PDF = completorium.pdf $(PDFI) $(PDFII) $(PDFIII)
+PDF = completorium.pdf $(PDFI) $(PDFII) $(PDFIII) vigilianativitatis.pdf
 all: $(PDF)
 define iter-doit
 $(patsubst %.pdf,%.tex,$(i)): feria$(word 1,$(subst -, ,$(patsubst feria%.pdf,%,$(i)))).tex hebdomada$(word 2,$(subst -, ,$(patsubst feria%.pdf,%,$(i)))).tex ; touch $$@
