@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 2 3 5 10 16 20 62 92 99 109 112 115 116 125 138 145 146 147 148 149 150
+PSALMS = 2 3 5 10 16 20 62 92 99 109 110 111 131 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-2 = i-f
 MODUS-3 = ii-D
@@ -31,20 +31,15 @@ MODUS-20 = i-d3
 MODUS-62 = i-g
 MODUS-92 = iv-E
 MODUS-99 = i-d
-MODUS-109 = i-f
-MODUS-112 = viii-g
-MODUS-115 = viii-g
-MODUS-116 = viii-G
-MODUS-125 = i-g
-MODUS-138 = vii-a
-MODUS-145 = viii-A
-MODUS-146 = viii-g
-MODUS-147 = vii-c2
+MODUS-109 = i-g
+MODUS-110 = vii-a
+MODUS-111 = vii-d
+MODUS-131 = viii-G
 MODUS-148 = i-f
 MODUS-149 = i-f
 MODUS-150 = i-f
 MODUS-dan3 = vii-a
-MODUS-magnificat-I = isoll-D
+MODUS-magnificat-I = iisoll-D
 MODUS-magnificat-II = isoll-D_
 MODUS-magnificat-III = i-D_
 MODUS-benedictus-I = isoll-d3
@@ -70,12 +65,14 @@ LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT) $(BENEDICTUS) dan3)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant-,abimatuetinfra adoraveruntviventem ambulabuntmecum auditaestvox dicuntinfantesdomino \
 			  exoreinfantium herodesiratus hiemptisunt innocentesprochristo laetitiasempiterna \
-			  laveruntstolas probatnovos voxinrama) \
-	 $(addprefix hym-,HymnumCanentes TyrannusAnxius) \
-	 $(addprefix resp-,iustiautem) \
+			  laveruntstolas probatnovos voxinrama defructuventris exortumest redemptionemmisit \
+			  tecumprincipium) \
+	 $(addprefix capitulum-,VidiSupra) \
+	 $(addprefix hym-,HymnumCanentes TyrannusAnxius ChristeRedemptor) \
+	 $(addprefix resp-,iustiautem verbumcaro) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
-	 $(foreach M,isoll-D isoll-D_ i-D_,magnificat-initium-$(M)) \
-	 $(addprefix versus-,herodes laetamini) \
+	 $(foreach M,iisoll-D isoll-D_ i-D_,magnificat-initium-$(M)) \
+	 $(addprefix versus-,herodes laetamini subthrono) \
 	 oratio supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor) \
