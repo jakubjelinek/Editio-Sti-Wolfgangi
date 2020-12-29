@@ -20,12 +20,15 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 45 62 71i 71ii 109 110 111 129 131 149
+PSALMS = 45 62 71i 71ii 84 88ii_xix 88xx_xxx 109 110 111 129 131 149
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-45 = viii-G
 MODUS-62 = ii-D
 MODUS-71i = iii-b
 MODUS-71ii = ii_-a
+MODUS-84 = viii-a
+MODUS-88ii_xix = i-a2
+MODUS-88xx_xxx = ii-D
 MODUS-109 = i-g
 MODUS-110 = vii-a
 MODUS-111 = vii-d
@@ -34,10 +37,10 @@ MODUS-131 = viii-G
 MODUS-149 = viii-G2
 MODUS-dan3 = vii-d
 MODUS-magnificat-I = vi-F
-MODUS-magnificat-II = isoll-D_
+MODUS-magnificat-II = iv-E
 MODUS-magnificat-III = i-D_
 MODUS-benedictus-I = vii-d
-MODUS-benedictus-II = vi-F
+MODUS-benedictus-II = viii-G2
 MAGNIFICAT = $(foreach M,I II III,magnificat-$(M))
 BENEDICTUS = $(foreach B,I II,benedictus-$(B))
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(MAGNIFICAT) dan3 $(BENEDICTUS),$(MODUS-$(P))))
@@ -60,18 +63,18 @@ ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defructuventris \
 			  dominusvirtutum exortumest gaudeamusomnesfideles orieturindiebus \
 			  parvulusfilius pastoresloquebantur quemvidistis redemptionemmisit \
-			  tecumprincipium) \
+			  tecumprincipium egoprimogenitum misericordiaetveritas glorificamuste natodomino veritasdeterra) \
 	 $(addprefix capitulum-,Multifariam) \
 	 $(addprefix hym-,ASolisOrtus ChristeRedemptor CandorAEternae CandorAEternae-simplex) \
 	 $(addprefix resp-,notumfecit verbumcaro) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
-	 $(foreach M,vi-F isoll-D_ i-D_,magnificat-initium-$(M)) \
+	 $(foreach M,vi-F iv-E i-D_,magnificat-initium-$(M)) \
 	 $(addprefix versus-,notumfecit-communis tamquam) \
 	 oratio supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
-	 dominelabiamea inv-christusnatusest benedicamus-solemnis-laud \
+	 dominelabiamea inv-christusnatusest inv-christusnatusest-simplex benedicamus-solemnis-laud \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
@@ -81,9 +84,10 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
 	 an_regina_caeli_simplex convertenosdeus \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
-	 benedictio-noctemquietam an_salve_regina tonusprecum
+	 benedictio-noctemquietam an_salve_regina tonusprecum \
+	 ps88ii_xix-initium-i-a2 ps88xx_xxx-initium-ii-D benedictus-initium-viii-G2
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = $(foreach B,vii-d vi-F,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex) \
+OTHERDEPS = $(foreach B,vii-d viii-G2,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex) \
 	    $(TMP_DIR)/ps149gp.tex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
@@ -108,6 +112,7 @@ $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
 $(TMP_DIR)/ps149gp.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(TMP_DIR)/ps149gp.tex: TONUS = 1 0 1 2
+$(TMP_DIR)/ps88xx_xxx.tex: TONUS = 1 0 1 0
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
 $(CZPSALMS): $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/%.pslm
 	$(GENPSALM)
