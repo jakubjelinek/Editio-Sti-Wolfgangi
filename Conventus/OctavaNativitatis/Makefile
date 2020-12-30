@@ -88,7 +88,7 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			   confirmatumest-CROCHU nesciensmatervirgo-CROCHU verbumcarofactumest-CROCHU-cumdox \
 			   oregemcaeli-CROCHU ecceagnusdei-CROCHU hodienobiscaelorum-CROCHU-cumdox) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
-	 an_regina_caeli_simplex convertenosdeus \
+	 an_regina_caeli_simplex convertenosdeus dominusnosbenedicat \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 benedictio-noctemquietam an_salve_regina tonusprecum \
 	 ps88ii_xix-initium-i-a2 ps88xx_xxx-initium-ii-D benedictus-initium-viii-G2 \

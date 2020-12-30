@@ -387,11 +387,16 @@ per infiníta sǽcula sæculórum.
 
 \vfill
 
-\rubrica{Hebdomadarius dicit iterum Dominus vobiscum, vel cantor dicit:}
+\ifx\commemoratio\undefined
+\else
+\commemoratio
+\fi
+
+\rubrica{Hebdomadarius dicit Dominus vobiscum, vel, absente sacerdote vel diacono, sic concluditur:}
 
 \vspace{2mm}
 
-\sineinitiali{temporalia/domineexaudi.gtex}
+\antiphona{C}{temporalia/dominusnosbenedicat.gtex}
 
 \rubrica{Postea cantatur a cantore:}
 
@@ -404,7 +409,7 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
-\ifx\vesperas\undefined
+\ifx\sinevesperas\undefined
 \hora{Ad Vesperas.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\sideThumbs{Vesperæ}
 
@@ -576,8 +581,6 @@ per infiníta sǽcula sæculórum.
 \cuminitiali{II}{temporalia/benedicamus-solemnism-2vesp.gtex}
 
 \vspace{1mm}
-\else
-\vesperas
 \fi
 
 \end{document}
