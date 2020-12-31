@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 45 62 71i 71ii 84 88ii_xix 88xx_xxx 95 96 97 109 110 111 129 131 149
+PSALMS = 45 62 71i 71ii 84 88ii_xix 88xx_xxx 95 96 97 109 110 111 112 116 129 131 145 146 149
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-45 = viii-G
 MODUS-62 = ii-D
@@ -35,13 +35,17 @@ MODUS-97 = viii-G
 MODUS-109 = i-g
 MODUS-110 = vii-a
 MODUS-111 = vii-d
+MODUS-112 = vi-F
+MODUS-116 = iii-a2
 MODUS-129 = ii_-B
 MODUS-131 = viii-G
+MODUS-145 = iv-E
+MODUS-146 = ii-D
 MODUS-149 = viii-G2
 MODUS-dan3 = vii-d
 MODUS-magnificat-I = vi-F
 MODUS-magnificat-II = iv-E
-MODUS-magnificat-III = i-D_
+MODUS-magnificat-III = viiisoll-G
 MODUS-benedictus-I = vii-d
 MODUS-benedictus-II = viii-G2
 MAGNIFICAT = $(foreach M,I II III,magnificat-$(M))
@@ -68,25 +72,33 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			  parvulusfilius pastoresloquebantur quemvidistis redemptionemmisit \
 			  tecumprincipium egoprimogenitum misericordiaetveritas glorificamuste \
 			  natodomino veritasdeterra luxortaestiusto notumfecitdominus \
-			  silvesterbeatissimus laetenturcaeli factaestcumangelo) \
-	 $(addprefix capitulum-,Multifariam) \
-	 $(addprefix hym-,ASolisOrtus ChristeRedemptor CandorAEternae CandorAEternae-simplex) \
-	 $(addprefix resp-,notumfecit verbumcaro) \
+			  silvesterbeatissimus laetenturcaeli factaestcumangelo \
+			  dominusdixitadme eccemariagenuit exsultabuntomnialigna \
+			  germinavitradixiesse inprincipioetantesaecula insoleposuit \
+			  magnumhereditatis mirabilemysterium natodominoangelorumchorus \
+			  oadmirabile propternimiam quandonatuses rubumquemviderat) \
+	 $(addprefix capitulum-,Multifariam ApparuitGratia) \
+	 $(addprefix hym-,ASolisOrtus ChristeRedemptor CandorAEternae CandorAEternae-simplex \
+			  CordeNatus FitPorta RadixIesse) \
+	 $(addprefix resp-,notumfecit verbumcaro-simplex verbumcaro) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
-	 $(foreach M,vi-F iv-E i-D_,magnificat-initium-$(M)) \
+	 $(foreach M,vi-F iv-E viiisoll-G,magnificat-initium-$(M)) \
 	 $(addprefix versus-,notumfecit-communis tamquam) \
-	 oratio supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
+	 oratio oratiobmv supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
-	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor) \
+	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor festis-bmv) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
-	 dominelabiamea inv-christusnatusest inv-christusnatusest-simplex benedicamus-solemnis-laud \
+	 dominelabiamea inv-christusnatusest inv-christusnatusest-simplex inv-maternitatemvirginis \
+	 benedicamus-solemnis-laud \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
 					evangelica quorum adsocietatem) \
 	 $(addprefix resp-,benedictusquivenit-CROCHU hodienobis-CROCHU hicquiadvenit-CROCHU-cumdox \
 			   confirmatumest-CROCHU nesciensmatervirgo-CROCHU verbumcarofactumest-CROCHU-cumdox \
-			   oregemcaeli-CROCHU ecceagnusdei-CROCHU hodienobiscaelorum-CROCHU-cumdox) \
+			   oregemcaeli-CROCHU ecceagnusdei-CROCHU hodienobiscaelorum-CROCHU-cumdox \
+			   beatadeigenitrix-CROCHU beataviscera-CROCHU-cumdox continetingremio-CROCHU \
+			   sanctaetimmaculata-CROCHU) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
 	 an_regina_caeli_simplex convertenosdeus dominusnosbenedicat \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
@@ -113,7 +125,7 @@ endef
 iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../PostPentecosten ../CorpusChristi ../PetriEtPauli
 include $(iter)
 
-PDF = dievpostnativitatem.pdf dievipostnativitatem.pdf dieviipostnativitatem.pdf
+PDF = dievpostnativitatem.pdf dievipostnativitatem.pdf dieviipostnativitatem.pdf sdeigenetricismariae.pdf
 all: $(PDF)
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
