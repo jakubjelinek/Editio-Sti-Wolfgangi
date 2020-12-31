@@ -20,8 +20,11 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 45 62 71i 71ii 84 88ii_xix 88xx_xxx 95 96 97 109 110 111 112 116 129 131 145 146 149
+PSALMS = 2 18i 23 45 62 71i 71ii 84 88ii_xix 88xx_xxx 95 96 97 98 109 110 111 112 116 129 131 145 146 149
 include $(PSALMTONES_DIR)/tonus.mk
+MODUS-2 = viii-C
+MODUS-18i = v-a
+MODUS-23 = v-a
 MODUS-45 = viii-G
 MODUS-62 = ii-D
 MODUS-71i = iii-b
@@ -32,6 +35,7 @@ MODUS-88xx_xxx = ii-D
 MODUS-95 = ii_-a
 MODUS-96 = viii-G
 MODUS-97 = viii-G
+MODUS-98 = viii-G2
 MODUS-109 = i-g
 MODUS-110 = vii-a
 MODUS-111 = vii-d
@@ -76,7 +80,7 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			  dominusdixitadme eccemariagenuit exsultabuntomnialigna \
 			  germinavitradixiesse inprincipioetantesaecula insoleposuit \
 			  magnumhereditatis mirabilemysterium natodominoangelorumchorus \
-			  oadmirabile propternimiam quandonatuses rubumquemviderat) \
+			  oadmirabile propternimiam quandonatuses rubumquemviderat elevamini) \
 	 $(addprefix capitulum-,Multifariam ApparuitGratia) \
 	 $(addprefix hym-,ASolisOrtus ChristeRedemptor CandorAEternae CandorAEternae-simplex \
 			  CordeNatus FitPorta RadixIesse) \
@@ -93,12 +97,12 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 	 $(addprefix absolutio-,exaudi ipsius avinculis) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
-					evangelica quorum adsocietatem) \
+					evangelica quorum divinum adsocietatem) \
 	 $(addprefix resp-,benedictusquivenit-CROCHU hodienobis-CROCHU hicquiadvenit-CROCHU-cumdox \
 			   confirmatumest-CROCHU nesciensmatervirgo-CROCHU verbumcarofactumest-CROCHU-cumdox \
 			   oregemcaeli-CROCHU ecceagnusdei-CROCHU hodienobiscaelorum-CROCHU-cumdox \
 			   beatadeigenitrix-CROCHU beataviscera-CROCHU-cumdox continetingremio-CROCHU \
-			   sanctaetimmaculata-CROCHU) \
+			   sanctaetimmaculata-CROCHU nesciensmatervirgo-CROCHU-cumdox) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
 	 an_regina_caeli_simplex convertenosdeus dominusnosbenedicat \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
@@ -107,7 +111,7 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 	 ps97-initium-viii-d
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(foreach B,vii-d viii-G2,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex) \
-	    $(TMP_DIR)/ps149gp.tex
+	    $(TMP_DIR)/ps149gp.tex $(TMP_DIR)/ps97-initium-v-a-auto.gtex $(TMP_DIR)/ps97va.tex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
@@ -132,7 +136,7 @@ $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
 $(TMP_DIR)/ps149gp.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(TMP_DIR)/ps149gp.tex: TONUS = 1 0 1 2
 $(TMP_DIR)/ps88xx_xxx.tex: TONUS = 1 0 1 0
-$(TMP_DIR)/ps97.tex: TONUS = 1 0 1 0
+$(TMP_DIR)/ps97va.tex: TONUS = 1 0 2 0
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
 $(CZPSALMS): $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/%.pslm
 	$(GENPSALM)
@@ -160,6 +164,10 @@ $(TMP_DIR)/%.tex: $(PSALMS_DIR)/benedictus.pslm
 	$(SED) -i -e 'y/Jj/Ii/' $@
 $(TMP_DIR)/ps149gp.tex: \
 $(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps149.pslm
+	$(GENPSALM)
+	$(SED) -i -e 'y/Jj/Ii/' $@
+$(TMP_DIR)/ps97va.tex: \
+$(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps97.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
 $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
