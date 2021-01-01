@@ -192,6 +192,7 @@ per infiníta sǽcula sæculórum.
 
 \matutinum
 
+\ifx\postoctavam\undefined
 % Te Deum
 
 %\pars{Hymnus Ambrosianus}
@@ -210,6 +211,7 @@ per infiníta sǽcula sæculórum.
 
 \vfill
 \pagebreak
+\fi
 
 \rubrica{Reliqua omittuntur, nisi Laudes separandæ sint.}
 
@@ -245,7 +247,11 @@ per infiníta sǽcula sæculórum.
 
 \vspace{0.5cm}
 \grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\ifx\postoctavam\undefined
 \cuminitiali{}{temporalia/deusinadiutorium-alter.gtex}
+\else
+\cuminitiali{}{temporalia/deusinadiutorium-communis.gtex}
+\fi
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 
 \vfill
@@ -402,7 +408,11 @@ per infiníta sǽcula sæculórum.
 
 \vspace{2mm}
 
+\ifx\postoctavam\undefined
 \cuminitiali{II}{temporalia/benedicamus-solemnism-laud.gtex}
+\else
+\cuminitiali{IV}{temporalia/benedicamus-feria-laudes.gtex}
+\fi
 
 \vspace{1mm}
 
@@ -417,7 +427,11 @@ per infiníta sǽcula sæculórum.
 
 %\vspace{-2mm}
 \grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\ifx\postoctavam\undefined
 \cuminitiali{}{temporalia/deusinadiutorium-solemnis.gtex}
+\else
+\cuminitiali{}{temporalia/deusinadiutorium-communis.gtex}
+\fi
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 
 \vfill
@@ -578,7 +592,11 @@ per infiníta sǽcula sæculórum.
 
 \vspace{2mm}
 
+\ifx\postoctavam\undefined
 \cuminitiali{II}{temporalia/benedicamus-solemnism-2vesp.gtex}
+\else
+\cuminitiali{I}{temporalia/benedicamus-feria-vesperae.gtex}
+\fi
 
 \vspace{1mm}
 \fi
