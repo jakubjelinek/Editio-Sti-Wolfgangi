@@ -84,7 +84,7 @@ SCORES = alleluia-VidimusStellam ant1 ant2 ant3 ant4 ant5 ant-ben-laud ant-magn-
 	 $(addprefix magnificat-initium-,isoll-D_ viiisoll-G2) offertorium-RegesTharsis \
 	 oratiodominica oratio resp1v respl supplicatiolitaniae tuautem \
 	 $(addprefix matant,1 2 3 4 5 6 7 8 9) $(addprefix matresp,1 2 3 4 5 6 7 8) \
-	 ps94-initium-viii-G tedeum-solemnis annuntiatio christus_apparuit_nobis \
+	 ps94-initium-viii-G tedeum-solemnis tedeum-solemnis-gn annuntiatio christus_apparuit_nobis \
 	 hym-RerumDeus hym-RectorPotens hym-NuncSancte hym-TeLucis \
 	 benedictio-noctemquietam jubedomnebenedicere lectiobrevis-fratressobrii \
 	 convertenosdeus ant-miserere deusinadiutorium-solemnis \
@@ -96,7 +96,12 @@ SCORES = alleluia-VidimusStellam ant1 ant2 ant3 ant4 ant5 ant-ben-laud ant-magn-
 	 $(addprefix benedicamus-solemnis-,laud 1vesp 2vesp) \
 	 $(addprefix versus-,adorate adorate-simplex reges reges-simplex omnes) \
 	 $(addprefix capitulum-,Surge Leva Omnes) tedecetlaus tonus-evangelii-b \
-	 tonus-lectionis-solemnis
+	 tonus-lectionis-solemnis \
+	 $(addprefix resp-,hodieiniordane-CROCHU illuminare-CROCHU incolumbaespecie-CROCHU \
+			   magiveniunt-CROCHU-cumdox omnesdesaba-CROCHU stellaquamviderunt-CROCHU \
+			   videntesstellam-CROCHU-cumdox illuminare-CROCHU-cumdox) \
+	 $(addprefix ant-,anteluciferum stellaista venitlumentuum magividentes \
+			  tribusmiraculis fluminisimpetus psallitedeo)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(patsubst %,cantus/amon33/hym-%-bohtext.tex,HostisHerodes OSolaMagnarum NuncSancte RerumDeus RectorPotens TeLucis) \
 	    cantus/nrom02/ps94.tex $(TMP_DIR)/communio-versus-DeusJudicium-comb.tex \
@@ -117,10 +122,11 @@ define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
 iter-left := . $(TMP_DIR) $(addprefix cantus/,amon33 nrom02 grom61 triplex76 otriplex85 arom12 cselecti57) \
-	     $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR)
+	     $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../CorpusChristi
 include $(iter)
 
-all: epiphania.pdf
+PDF = epiphania.pdf epiphania-breviori.pdf
+all: $(PDF)
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps4 ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
 $(TMP_DIR)/magnificat.tex: PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
@@ -150,7 +156,7 @@ $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
 	$(GENPSCOMB)
 $(TMP_DIR)/communio-versus-DeusJudicium-comb.tex: $(patsubst %,cantus/triplex76/communio-versus-DeusJudicium%tex,. -boh.)
 	$(GENPSCOMB)
-epiphania.pdf: epiphania.tex conventuscommune.tex translationes_cs.tex \
+$(PDF): %.pdf: %.tex conventuscommune.tex translationes_cs.tex \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
