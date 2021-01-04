@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 2 18i 23 30i 30ii 30iii 45 62 66 71i 71ii 84 88ii_xix 88xx_xxx 92 95 96 97 98 99 103i 103ii 103iii 104i 104ii 104iii 105i 105ii 105iii 109 110 111 112 116 121 126 129 131 144ii 145 146 147 148 149 150
+PSALMS = 2 18i 23 30i 30ii 30iii 36i_xi 36xii_xxix 36iii 45 62 66 71i 71ii 84 88ii_xix 88xx_xxx 92 95 96 97 98 99 103i 103ii 103iii 104i 104ii 104iii 105i 105ii 105iii 109 110 111 112 116 121 126 129 131 144ii 145 146 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-2 = viii-C
 MODUS-18i = v-a
@@ -28,6 +28,9 @@ MODUS-23 = v-a
 MODUS-30i = viii-G
 MODUS-30ii = viii-G
 MODUS-30iii = ii-D
+MODUS-36i_xi = vi-F
+MODUS-36xii_xxix = ii-D
+MODUS-36iii = vi-F
 MODUS-45 = viii-G
 MODUS-62 = ii-D
 MODUS-66 = i-d
@@ -83,8 +86,9 @@ MODUS-benedictus-II = viii-G2
 MODUS-benedictus-III = viiisoll-G
 MODUS-benedictus-IV = vii-b
 MODUS-benedictus-V = viii-G
+MODUS-benedictus-VI = vii-c2
 MAGNIFICAT = $(foreach M,I II III IV V VI VII,magnificat-$(M))
-BENEDICTUS = $(foreach B,I II III IV V,benedictus-$(B))
+BENEDICTUS = $(foreach B,I II III IV V VI,benedictus-$(B))
 CANTICIS = isaiae3 isaiae5 isaiae6
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(MAGNIFICAT) dan3 $(CANTICIS) $(BENEDICTUS),$(MODUS-$(P)))) i-f
 CZPSALMOPTS = --accents 0:0 --title-pattern " " --no-paragraph
@@ -119,7 +123,8 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			  natusestnobisdeus nesciensmatervirgo populusgentium \
 			  verbumcaro exsultemusindomino interrisnatusest confessionemetdecorem \
 			  dominumdeumadoremus quammagnificatasunt vocabiturnomeneius \
-			  diligitedominum faciemtuam christusdeusnoster salusaeterna intuaiustitia) \
+			  diligitedominum faciemtuam christusdeusnoster salusaeterna intuaiustitia \
+			  visitavitnos reveladomino iuniorfui speraindomino) \
 	 $(addprefix capitulum-,Multifariam ApparuitGratia) \
 	 $(addprefix hym-,ASolisOrtus ChristeRedemptor CandorAEternae CandorAEternae-simplex \
 			  CordeNatus FitPorta RadixIesse) \
@@ -143,7 +148,7 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			   oregemcaeli-CROCHU ecceagnusdei-CROCHU hodienobiscaelorum-CROCHU-cumdox \
 			   beatadeigenitrix-CROCHU beataviscera-CROCHU-cumdox continetingremio-CROCHU \
 			   sanctaetimmaculata-CROCHU nesciensmatervirgo-CROCHU-cumdox verbumcarofactumest-CROCHU \
-			   omagnummysterium-CROCHU) \
+			   omagnummysterium-CROCHU descenditdecaelis-CROCHU-cumdox) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
 	 an_regina_caeli_simplex convertenosdeus dominusnosbenedicat \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
@@ -152,7 +157,7 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 	 ps97-initium-viii-d dan3-initium-i-g-trans ps126-initium-i-g-trans \
 	 ps105i-initium-e ps103iii-initium-e
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = $(foreach B,vii-d viii-G2 viiisoll-G vii-b viii-G,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex) \
+OTHERDEPS = $(foreach B,vii-d viii-G2 viiisoll-G vii-b viii-G vii-c2,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex) \
 	    $(TMP_DIR)/ps149gp.tex $(TMP_DIR)/ps97-initium-v-a-auto.gtex $(TMP_DIR)/ps97va.tex \
 	    $(TMP_DIR)/ps62-initium-iv-E-auto.gtex $(TMP_DIR)/ps62ivE.tex \
 	    $(TMP_DIR)/dan3-initium-i-g-auto.gtex $(TMP_DIR)/dan3ig.tex \
@@ -191,7 +196,7 @@ iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 aro
 include $(iter)
 
 PDF = dievpostnativitatem.pdf dievipostnativitatem.pdf dieviipostnativitatem.pdf sdeigenetricismariae.pdf \
-      iiianuarii.pdf dominicaiipostnativitatem.pdf ivianuarii.pdf
+      iiianuarii.pdf dominicaiipostnativitatem.pdf ivianuarii.pdf vianuarii.pdf
 all: $(PDF)
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
