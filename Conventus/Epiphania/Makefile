@@ -99,7 +99,11 @@ SCORES = alleluia-VidimusStellam ant1 ant2 ant3 ant4 ant5 ant-ben-laud ant-magn-
 	 tonus-lectionis-solemnis \
 	 $(addprefix resp-,hodieiniordane-CROCHU illuminare-CROCHU incolumbaespecie-CROCHU \
 			   magiveniunt-CROCHU-cumdox omnesdesaba-CROCHU stellaquamviderunt-CROCHU \
-			   videntesstellam-CROCHU-cumdox illuminare-CROCHU-cumdox) \
+			   videntesstellam-CROCHU-cumdox illuminare-CROCHU-cumdox \
+			   diessanctificatusilluxit-CROCHU-cumdox diessanctificatusilluxit-CROCHU \
+			   hicestdiespraeclarus-CROCHU-cumdox hicestdiespraeclarus-CROCHU \
+			   interrogabatmagosherodes-CROCHU-cumdox interrogabatmagosherodes-CROCHU \
+			   magnusdominusnoster-CROCHU) \
 	 $(addprefix ant-,anteluciferum stellaista venitlumentuum magividentes \
 			  tribusmiraculis fluminisimpetus psallitedeo hodiecaelestisponso \
 			  omnisterra omnesgentes aboriente confundantur conversusestfuror \
