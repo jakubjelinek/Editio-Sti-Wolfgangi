@@ -85,16 +85,16 @@ SCORES = alleluia-VidimusStellam ant1 ant2 ant3 ant4 ant5 ant-ben-laud ant-magn-
 	 oratiodominica oratio resp1v respl supplicatiolitaniae tuautem \
 	 $(addprefix matant,1 2 3 4 5 6 7 8 9) $(addprefix matresp,1 2 3 4 5 6 7 8) \
 	 ps94-initium-viii-G tedeum-solemnis tedeum-solemnis-gn annuntiatio christus_apparuit_nobis \
-	 $(addprefix hym-,RerumDeus RectorPotens NuncSancte TeLucis QuicumqueChristum) \
+	 $(addprefix hym-,RerumDeus RectorPotens NuncSancte TeLucis QuicumqueChristum MagiVidentes) \
 	 benedictio-noctemquietam jubedomnebenedicere lectiobrevis-fratressobrii \
 	 convertenosdeus ant-miserere deusinadiutorium-solemnis \
-	 capitulum-tuautem resp-inmanus ant-salvanos-antiquo versus-custodi \
+	 capitulum-tuautem resp-inmanus resp-omnesdesaba ant-salvanos-antiquo versus-custodi \
 	 oratio-visita benedicamus-minor an_alma_redemptoris_mater \
 	 versus-omnis versus-adorate-mat oratiodominica-mat \
 	 absolutio-exaudi absolutio-ipsius absolutio-avinculis \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus deus christus ignem evangelica divinum perevangelica) \
 	 $(addprefix benedicamus-solemnis-,laud 1vesp 2vesp) \
-	 $(addprefix versus-,adorate adorate-simplex reges reges-simplex omnes) \
+	 $(addprefix versus-,adorate adorate-simplex reges reges-simplex omnes reges-communis) \
 	 $(addprefix capitulum-,Surge Leva Omnes) tedecetlaus tonus-evangelii-b \
 	 tonus-lectionis-solemnis \
 	 $(addprefix resp-,hodieiniordane-CROCHU illuminare-CROCHU incolumbaespecie-CROCHU \
@@ -102,7 +102,10 @@ SCORES = alleluia-VidimusStellam ant1 ant2 ant3 ant4 ant5 ant-ben-laud ant-magn-
 			   videntesstellam-CROCHU-cumdox illuminare-CROCHU-cumdox) \
 	 $(addprefix ant-,anteluciferum stellaista venitlumentuum magividentes \
 			  tribusmiraculis fluminisimpetus psallitedeo hodiecaelestisponso \
-			  omnisterra omnesgentes)
+			  omnisterra omnesgentes aboriente confundantur conversusestfuror \
+			  exsultatedeo extendedomine mementodomine tuamdomineexcita \
+			  videntesstellammagi) \
+	  inv-christusapparuit
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(patsubst %,cantus/amon33/hym-%-bohtext.tex,HostisHerodes OSolaMagnarum NuncSancte RerumDeus RectorPotens TeLucis) \
 	    cantus/nrom02/ps94.tex $(TMP_DIR)/communio-versus-DeusJudicium-comb.tex \
