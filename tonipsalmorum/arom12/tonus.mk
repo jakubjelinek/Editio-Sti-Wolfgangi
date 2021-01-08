@@ -55,6 +55,7 @@ TONUS-iv-c = 1 2 1 0
 TONUS-iv-d = 1 2 1 3
 TONUS-iv-d2 = 1 2 1 3
 TONUS-iv-e = 1 2 1 3
+TONUS-iv-e2 = 1 2 1 3
 TONUS-iv-g = 1 2 1 0
 TONUS-iv_-E = 1 2 2 0
 TONUS-iv_-e = 1 2 2 0
