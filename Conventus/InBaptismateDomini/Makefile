@@ -31,15 +31,15 @@ MODUS-20 = i-d3
 MODUS-28 = vii-a
 MODUS-45 = vi-F
 MODUS-46 = i-f
-MODUS-62 = i-g
+MODUS-62 = vii-d3
 MODUS-65 = iv_-E
 MODUS-71 = i-a2
 MODUS-85 = iv_-E
-MODUS-92 = iv-E
+MODUS-92 = vii-d3
 MODUS-95 = vi-F
 MODUS-96 = vi-F
 MODUS-97 = vi-F
-MODUS-99 = i-d
+MODUS-99 = vii-d3
 MODUS-109 = i-g
 MODUS-110 = vii-a
 MODUS-111 = vii-d
@@ -49,14 +49,14 @@ MODUS-131 = viii-G
 MODUS-145 = ii-A
 MODUS-146 = vi-F
 MODUS-147 = viii-G
-MODUS-148 = i-f
-MODUS-149 = i-f
-MODUS-150 = i-f
-MODUS-dan3 = vii-a
+MODUS-148 = vii-d3
+MODUS-149 = vii-d3
+MODUS-150 = vii-d3
+MODUS-dan3 = vii-d3
 MODUS-magnificat-I = viiisoll-a
 MODUS-magnificat-II = isoll-D_
 MODUS-magnificat-III = i-D_
-MODUS-benedictus-I = isoll-d3
+MODUS-benedictus-I = viisoll-a
 MODUS-benedictus-II = vi-F
 MAGNIFICAT = $(foreach M,I II III,magnificat-$(M))
 BENEDICTUS = $(foreach B,I II,benedictus-$(B))
@@ -79,15 +79,18 @@ LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT) $(BENEDICTUS) dan3)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant-,baptizatmiles descenditspiritus egobaptizavivos fontesaquarum \
 			  incolumbaespecie superripamiordanis fluminisimpetus psallitedeo \
-			  omnisterra omnesgentes notumfecitdominus) \
-	 $(addprefix hym-,APatreUnigenite ImplenteMunus) \
-	 $(addprefix resp-,) \
+			  omnisterra omnesgentes notumfecitdominus veteremhominem \
+			  tequiinspiritu baptistacontremuit caputdraconis magnummysterium \
+			  baptizaturchristus adoratedeum adoratedominum affertedomino \
+			  regestharsis) \
+	 $(addprefix hym-,APatreUnigenite ImplenteMunus IesusRefulsit) \
+	 $(addprefix resp-,christefilidei) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(foreach M,viiisoll-a isoll-D_ i-D_,magnificat-initium-$(M)) \
 	 $(addprefix versus-,adorate omnes omnis) \
 	 oratio inv-christumfiliumdilectum supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
-	 $(addprefix benedicamus-,dominica-perannum) \
+	 $(addprefix benedicamus-,nativitatis-laudes nativitatis-vesperae) \
 	 dominelabiamea benedicamus-solemnis-laud \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
@@ -100,9 +103,9 @@ SCORES = $(addprefix ant-,baptizatmiles descenditspiritus egobaptizavivos fontes
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
 	 an_regina_caeli_simplex convertenosdeus \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
-	 benedictio-noctemquietam an_salve_regina $(addprefix matant,1 5 8 9)
+	 benedictio-noctemquietam an_salve_regina
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = $(foreach B,isoll-d3 vi-F,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex)
+OTHERDEPS = $(foreach B,viisoll-a vi-F,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex)
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
@@ -117,7 +120,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../PostPentecosten ../CorpusChristi ../PetriEtPauli ../Epiphania ../Epiphania/cantus/nrom02
+iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../PostPentecosten ../CorpusChristi ../PetriEtPauli ../Epiphania
 include $(iter)
 
 PDF = inbaptismatedomini.pdf

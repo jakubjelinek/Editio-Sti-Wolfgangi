@@ -74,6 +74,7 @@ TONUS-vii-b = 2 0 2 0
 TONUS-vii-c = 2 0 2 0
 TONUS-vii-c2 = 2 0 2 0
 TONUS-vii-d = 2 0 2 0
+TONUS-vii-d3 = 2 0 2 0
 TUNUS-vii-C = 2 0 2 0
 TONUS-viisoll-a = 2 0 2 0
 TONUS-viisoll-b = 2 0 2 0
