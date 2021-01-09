@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 2 3 5 10 16 20 62 92 99 109 110 111 112 116 131 145 146 147 148 149 150
+PSALMS = 2 3 5 10 16 20 28 45 46 62 65 71 85 92 95 96 97 99 109 110 111 112 116 131 145 146 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-2 = i-f
 MODUS-3 = ii-D
@@ -28,8 +28,17 @@ MODUS-5 = ii-D
 MODUS-10 = viii-G
 MODUS-16 = i-d
 MODUS-20 = i-d3
+MODUS-28 = vii-a
+MODUS-45 = vi-F
+MODUS-46 = i-f
 MODUS-62 = i-g
+MODUS-65 = iv_-E
+MODUS-71 = i-a2
+MODUS-85 = iv_-E
 MODUS-92 = iv-E
+MODUS-95 = vi-F
+MODUS-96 = vi-F
+MODUS-97 = vi-F
 MODUS-99 = i-d
 MODUS-109 = i-g
 MODUS-110 = vii-a
@@ -69,25 +78,29 @@ LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
 LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT) $(BENEDICTUS) dan3)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant-,baptizatmiles descenditspiritus egobaptizavivos fontesaquarum \
-			  incolumbaespecie superripamiordanis) \
-	 $(addprefix hym-,APatreUnigenite) \
+			  incolumbaespecie superripamiordanis fluminisimpetus psallitedeo \
+			  omnisterra omnesgentes notumfecitdominus) \
+	 $(addprefix hym-,APatreUnigenite ImplenteMunus) \
 	 $(addprefix resp-,) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(foreach M,viiisoll-a isoll-D_ i-D_,magnificat-initium-$(M)) \
-	 $(addprefix versus-,) \
-	 oratio supplicatiolitaniae oratiodominica oratiodominica-mat \
+	 $(addprefix versus-,adorate omnes omnis) \
+	 oratio inv-christumfiliumdilectum supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,dominica-perannum) \
 	 dominelabiamea benedicamus-solemnis-laud \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
-					deus christus ignem \
+					deus christus ignem divinum \
 					evangelica quorum adsocietatem) \
-	 $(addprefix resp-,incolumbaespecie-CROCHU-cumdox) \
+	 $(addprefix resp-,incolumbaespecie-CROCHU-cumdox hodieiniordane-CROCHU \
+			   omnesdesaba-CROCHU stellaquamviderunt-CROCHU-cumdox \
+			   interrogabatmagosherodes-CROCHU magiveniunt-CROCHU \
+			   illuminare-CROCHU-cumdox hodiecaeliapertisunt) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
 	 an_regina_caeli_simplex convertenosdeus \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
-	 benedictio-noctemquietam an_salve_regina
+	 benedictio-noctemquietam an_salve_regina $(addprefix matant,1 5 8 9)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(foreach B,isoll-d3 vi-F,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex)
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
@@ -104,7 +117,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../PostPentecosten ../CorpusChristi ../PetriEtPauli ../Epiphania
+iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../PostPentecosten ../CorpusChristi ../PetriEtPauli ../Epiphania ../Epiphania/cantus/nrom02
 include $(iter)
 
 PDF = inbaptismatedomini.pdf
