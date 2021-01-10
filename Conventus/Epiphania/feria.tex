@@ -115,15 +115,20 @@
 
 \vspace{2mm}
 
+\ifx\invitatorium\undefined
 \pars{Invitatorium.}
 
 %\vspace{-6mm}
 
 \antiphona{E}{temporalia/inv-christusapparuit.gtex}
+\else
+\invitatorium
+\fi
 
 \vfill
 \pagebreak
 
+\ifx\hymnusmatutinum\undefined
 \pars{Hymnus.}
 
 {
@@ -131,6 +136,9 @@
 \antiphona{III}{temporalia/hym-MagiVidentes.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 }
+\else
+\hymnusmatutinum
+\fi
 
 \vspace{-3mm}
 
@@ -179,12 +187,16 @@
 \vfill
 \pagebreak
 
+\ifx\hymnuslaudes\undefined
 \pars{Hymnus}
 
 \grechangedim{interwordspacetext}{0.16 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \cuminitiali{III}{temporalia/hym-QuicumqueChristum.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \vspace{-3mm}
+\else
+\hymnuslaudes
+\fi
 
 \vfill
 \pagebreak
@@ -198,9 +210,13 @@
 
 \vfill
 
+\ifx\responsoriumbreve\undefined
 \pars{Responsorium breve.} \scriptura{Ps. 71, 10}
 
 \cuminitiali{VI}{temporalia/respl.gtex}
+\else
+\responsoriumbreve
+\fi
 
 %\trResp
 
