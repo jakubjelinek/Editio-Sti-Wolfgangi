@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 2 3 5 10 16 20 28 45 46 62 65 71 85 92 95 96 97 99 109 110 111 112 116 131 145 146 147 148 149 150
+PSALMS = 2 3 5 10 16 20 28 45 46 62 65 71 85 92 95 96 97 99 109 110 111 112 113 116 131 145 146 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-2 = i-f
 MODUS-3 = ii-D
@@ -40,10 +40,11 @@ MODUS-95 = vi-F
 MODUS-96 = vi-F
 MODUS-97 = vi-F
 MODUS-99 = vii-d3
-MODUS-109 = i-g
-MODUS-110 = vii-a
-MODUS-111 = vii-d
+MODUS-109 = vii-d3
+MODUS-110 = vii-d3
+MODUS-111 = vii-d3
 MODUS-112 = viii-G
+MODUS-113 = vii-d3
 MODUS-116 = ii-D
 MODUS-131 = viii-G
 MODUS-145 = ii-A
@@ -54,7 +55,7 @@ MODUS-149 = vii-d3
 MODUS-150 = vii-d3
 MODUS-dan3 = vii-d3
 MODUS-magnificat-I = viiisoll-a
-MODUS-magnificat-II = isoll-D_
+MODUS-magnificat-II = viisoll-d3
 MODUS-magnificat-III = i-D_
 MODUS-benedictus-I = viisoll-a
 MODUS-benedictus-II = vi-F
@@ -82,11 +83,11 @@ SCORES = $(addprefix ant-,baptizatmiles descenditspiritus egobaptizavivos fontes
 			  omnisterra omnesgentes notumfecitdominus veteremhominem \
 			  tequiinspiritu baptistacontremuit caputdraconis magnummysterium \
 			  baptizaturchristus adoratedeum adoratedominum affertedomino \
-			  regestharsis) \
+			  regestharsis praecursorioannes) \
 	 $(addprefix hym-,APatreUnigenite ImplenteMunus IesusRefulsit) \
-	 $(addprefix resp-,christefilidei) \
+	 $(addprefix resp-,christefilidei hicestquivenit) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
-	 $(foreach M,viiisoll-a isoll-D_ i-D_,magnificat-initium-$(M)) \
+	 $(foreach M,viiisoll-a viisoll-d3 i-D_,magnificat-initium-$(M)) \
 	 $(addprefix versus-,adorate omnes omnis) \
 	 oratio inv-christumfiliumdilectum supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
@@ -105,7 +106,8 @@ SCORES = $(addprefix ant-,baptizatmiles descenditspiritus egobaptizavivos fontes
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 benedictio-noctemquietam an_salve_regina
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = $(foreach B,viisoll-a vi-F,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex)
+OTHERDEPS = $(foreach B,viisoll-a vi-F,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex) \
+	    $(TMP_DIR)/ps112viid3.tex $(TMP_DIR)/ps112-initium-vii-d3-auto.gtex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
@@ -120,14 +122,14 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../PostPentecosten ../CorpusChristi ../PetriEtPauli ../Epiphania
+iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../Epiphania ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../PostPentecosten ../CorpusChristi ../PetriEtPauli
 include $(iter)
 
 PDF = inbaptismatedomini.pdf
 all: $(PDF)
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
-$(TMP_DIR)/ps112ivA.tex: TONUS = 1 2 1 3
+$(TMP_DIR)/ps112viid3.tex: TONUS = 2 0 2 0
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
 $(CZPSALMS): $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/%.pslm
 	$(GENPSALM)
@@ -153,7 +155,7 @@ $(patsubst %,$(TMP_DIR)/%.tex,$(BENEDICTUS)): \
 $(TMP_DIR)/%.tex: $(PSALMS_DIR)/benedictus.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
-$(TMP_DIR)/ps112ivA.tex: \
+$(TMP_DIR)/ps112viid3.tex: \
 $(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps112.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
