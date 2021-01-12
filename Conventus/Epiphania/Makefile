@@ -21,7 +21,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 4 5 6 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 11 23 28 32 37ii_v 37vi_xiii 37xiv_xxiii 43i 43ii 43iii 45 46 50 62 65 71 79 80 85 90 91 92 95 96 99 105i 105ii 105iii 109 110 111 112 113 116 118v_vi 118vii_viii 118ix_x 118xi_xii 118xiii_xiv 118xv_xvi 118xvii_xviii 118xix_xx 118xxi_xxii 133 147 148 149 150
+PSALMS = 4 5 6 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 11 17ii_vii 17viii_xx 17xxi_xxx 23 28 32 35 37ii_v 37vi_xiii 37xiv_xxiii 43i 43ii 43iii 45 46 50 62 65 71 79 80 85 90 91 92 95 96 99 105i 105ii 105iii 109 110 111 112 113 116 118v_vi 118vii_viii 118ix_x 118xi_xii 118xiii_xiv 118xv_xvi 118xvii_xviii 118xix_xx 118xxi_xxii 133 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-4 = viii-G
 MODUS-5 = viii-A
@@ -32,9 +32,13 @@ MODUS-9xii_xxi = i-g3
 MODUS-9xxii_xxxii = ii-D
 MODUS-9xxxiii_xxxix = iv_-e
 MODUS-11 = viii-G
+MODUS-17ii_vii = vi-F
+MODUS-17viii_xx = i-g
+MODUS-17xxi_xxx = iv_-e
 MODUS-23 = iv_-e
 MODUS-28 = vii-a
 MODUS-32 = iv-E
+MODUS-35 = ii-D
 MODUS-37ii_v = viii-C
 MODUS-37vi_xiii = ii_-a
 MODUS-37xiv_xxiii = ii-A
@@ -96,10 +100,11 @@ MODUS-habacuc = iv_-e
 MODUS-moysis2i_xii = vi-F
 MODUS-david = i-f
 MODUS-tobiae = vii-a
+MODUS-iudith2 = ii_-d
 MAGNIFICAT = $(foreach M,I II III IV,magnificat-$(M))
 BENEDICTUS = $(foreach B,I II III IV V VI,benedictus-$(B))
-CANTICIS = isaiae habacuc moysis2i_xii david tobiae
-MODUSLIST = $(sort $(foreach P,$(PSALMS) $(BENEDICTUS) $(MAGNIFICAT) nuncdimittis dan3 $(CANTICIS),$(MODUS-$(P)))) iv_-E
+CANTICIS = isaiae habacuc moysis2i_xii david tobiae iudith2
+MODUSLIST = $(sort $(foreach P,$(PSALMS) $(BENEDICTUS) $(MAGNIFICAT) nuncdimittis dan3 $(CANTICIS),$(MODUS-$(P)))) iv_-E viii-c
 CZPSALMOPTS = --accents 0:0 --title-pattern " " --no-paragraph
 CZPSALMS = $(patsubst %,$(TMP_DIR)/ps%-boh.tex,$(PSALMS))
 ALLCZPSALMS = $(CZPSALMS) $(patsubst %,$(TMP_DIR)/%-boh.tex,dan3 $(BENEDICTUS) $(MAGNIFICAT) nuncdimittis $(CANTICIS))
@@ -126,7 +131,8 @@ SCORES = alleluia-VidimusStellam ant1 ant2 ant3 ant4 ant5 ant-ben-laud ant-magn-
 	 $(addprefix matant,1 2 3 4 5 6 7 8 9) $(addprefix matresp,1 2 3 4 5 6 7 8) \
 	 ps94-initium-viii-G tedeum-solemnis tedeum-solemnis-gn annuntiatio christus_apparuit_nobis \
 	 $(addprefix hym-,RerumDeus RectorPotens NuncSancte TeLucis QuicumqueChristum MagiVidentes \
-			  SplendorPaternae-hiemalis SomnoRefectis ConsorsPaterni PergrataMundo) \
+			  SplendorPaternae-hiemalis SomnoRefectis ConsorsPaterni PergrataMundo \
+			  RerumCreator NoxEtTenebrae) \
 	 benedictio-noctemquietam jubedomnebenedicere lectiobrevis-fratressobrii \
 	 convertenosdeus ant-miserere deusinadiutorium-solemnis \
 	 capitulum-tuautem resp-inmanus resp-omnesdesaba ant-salvanos-antiquo versus-custodi \
@@ -139,7 +145,7 @@ SCORES = alleluia-VidimusStellam ant1 ant2 ant3 ant4 ant5 ant-ben-laud ant-magn-
 	 $(addprefix versus-,adorate adorate-simplex reges reges-simplex omnes reges-communis omnis-simplex) \
 	 $(addprefix capitulum-,Surge Leva Omnes) tedecetlaus tonus-evangelii-b \
 	 tonus-lectionis-solemnis \
-	 $(addprefix resp-,benedictusdominus deusmeusadiutormeus) \
+	 $(addprefix resp-,benedictusdominus deusmeusadiutormeus inclinacormeum) \
 	 $(addprefix resp-,hodieiniordane-CROCHU illuminare-CROCHU incolumbaespecie-CROCHU \
 			   magiveniunt-CROCHU-cumdox omnesdesaba-CROCHU stellaquamviderunt-CROCHU \
 			   videntesstellam-CROCHU-cumdox illuminare-CROCHU-cumdox \
@@ -150,7 +156,8 @@ SCORES = alleluia-VidimusStellam ant1 ant2 ant3 ant4 ant5 ant-ben-laud ant-magn-
 			   hodieiniordane-CROCHU-cumdox videntesstellam-CROCHU \
 			   emittedominesapientiam-CROCHU-sinedox initiumsapientiae-CROCHU \
 			   quisdeusmagnus-CROCHU-cumdox sibonasuscepimus-CROCHU sicutcedrus \
-			   istaestspeciosa) \
+			   istaestspeciosa inprincipiodeusantequam-CROCHU gyrumcaeli-CROCHU \
+			   damihidominesedium-CROCHU-cumdox) \
 	 $(addprefix ant-,anteluciferum stellaista venitlumentuum magividentes \
 			  tribusmiraculis fluminisimpetus psallitedeo hodiecaelestisponso \
 			  omnisterra omnesgentes aboriente confundanturqui conversusestfuror \
@@ -162,8 +169,11 @@ SCORES = alleluia-VidimusStellam ant1 ant2 ant3 ant4 ant5 ant-ben-laud ant-magn-
 			  admonitimagi confitebortibi intellegeclamorem laudamusnomentuum \
 			  misereremihi exsurgedominenon benedictusdeusisrael \
 			  affertedomino utquiddomine inaeternum tudomine innocensmanibus \
-			  exaltateregem rectosdecet erexitnobisdominus) \
-	  $(addprefix inv-,christusapparuit jubilemusdeo regemmagnum) \
+			  exaltateregem rectosdecet erexitnobisdominus dominemagnuses \
+			  factusestadiutormeus domineincaelo rexomnisterrae \
+			  memoraredominetestamenti nonenimvosestis diligamtedomine \
+			  retribuetmihi) \
+	  $(addprefix inv-,christusapparuit jubilemusdeo regemmagnum dominumquifecit) \
 	  dominelabiamea tonusprecum oratiodominicaalt \
 	  dominusnosbenedicat habacuc-initium-iv_-e ps147-initium-e ps105i-initium-e \
 	  ps91-initium-e
@@ -171,7 +181,8 @@ OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(patsubst %,cantus/amon33/hym-%-bohtext.tex,HostisHerodes OSolaMagnarum NuncSancte RerumDeus RectorPotens TeLucis) \
 	    cantus/nrom02/ps94.tex $(TMP_DIR)/communio-versus-DeusJudicium-comb.tex \
 	    cantus/arom12/hym-CrudelisHerodes-bohtext.tex $(TMP_DIR)/ps65iv_E.tex $(TMP_DIR)/ps85iv_E.tex \
-	    $(TMP_DIR)/ps65-initium-iv_-E-auto.gtex $(TMP_DIR)/ps85-initium-iv_-E-auto.gtex
+	    $(TMP_DIR)/ps65-initium-iv_-E-auto.gtex $(TMP_DIR)/ps85-initium-iv_-E-auto.gtex \
+	    $(TMP_DIR)/ps46-initium-viii-c-auto.gtex $(TMP_DIR)/ps46viiic.tex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3 nuncdimittis $(CANTICIS),$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,$(BENEDICTUS),$(TMP_DIR)/benedictus-initium-$(MODUS-$(P))-auto.gabc)
@@ -192,7 +203,7 @@ iter-left := . $(TMP_DIR) $(addprefix cantus/,amon33 nrom02 grom61 triplex76 otr
 	     $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../CorpusChristi ../Adventus ../PostPentecosten ../InAssumptioneBMV
 include $(iter)
 
-FERIAPDF = dieiiinfraoctavamepiphaniae.pdf dieiiiinfraoctavamepiphaniae.pdf dieivinfraoctavamepiphaniae.pdf dieviinfraoctavamepiphaniae.pdf dieviiinfraoctavamepiphaniae.pdf
+FERIAPDF = dieiiinfraoctavamepiphaniae.pdf dieiiiinfraoctavamepiphaniae.pdf dieivinfraoctavamepiphaniae.pdf dieviinfraoctavamepiphaniae.pdf dieviiinfraoctavamepiphaniae.pdf octavaepiphaniae.pdf
 PDF = epiphania.pdf epiphania-breviori.pdf $(FERIAPDF)
 all: $(PDF)
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
@@ -202,6 +213,7 @@ $(TMP_DIR)/ps90.tex: PSALMOPTS = --accents-style bold $(LAPSALMOPTSACC)
 $(patsubst %,$(TMP_DIR)/ps%.tex,118vii_viii 118ix_x 118xiii_xiv 118xv_xvi 118xix_xx 118xxi_xxii 133): PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold $(LAPSALMOPTSACC)
 $(TMP_DIR)/ps65iv_E.tex: TONUS = 1 2 2 0
 $(TMP_DIR)/ps85iv_E.tex: TONUS = 1 2 2 0
+$(TMP_DIR)/ps46viiic.tex: TONUS = 1 0 1 2
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%-boh.tex,$(BENEDICTUS)): $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/benedictus.pslm
 	$(GENPSALM)
@@ -236,6 +248,10 @@ $(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps65.pslm
 	$(SED) -i -e 'y/Jj/Ii/' $@
 $(TMP_DIR)/ps85iv_E.tex: \
 $(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps85.pslm
+	$(GENPSALM)
+	$(SED) -i -e 'y/Jj/Ii/' $@
+$(TMP_DIR)/ps46viiic.tex: \
+$(TMP_DIR)/%.tex: $(PSALMS_DIR)/ps46.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
 $(patsubst %,$(TMP_DIR)/%-boh.tex,$(MAGNIFICAT)): $(TMP_DIR)/%-boh.tex: $(TMP_DIR)/magnificat-boh.tex
