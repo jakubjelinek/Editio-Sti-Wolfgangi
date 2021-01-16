@@ -313,7 +313,6 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
-\iffalse
 \hora{Ad Matutinum.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \vspace{2mm}
@@ -344,6 +343,7 @@ per infiníta sǽcula sæculórum.
 
 \subhora{In I. Nocturno}
 
+\ifx\nocturnoi\undefined
 \pars{Psalmus 1.} \scriptura{Ps. 1, 1}
 
 \vspace{-4mm}
@@ -369,7 +369,7 @@ per infiníta sǽcula sæculórum.
 
 \antiphona{VII a}{temporalia/ant-servitedomino.gtex}
 
-\vspace{-3mm}
+\vspace{-1mm}
 
 \scriptura{Ps. 2}
 
@@ -394,10 +394,13 @@ per infiníta sǽcula sæculórum.
 
 \initiumpsalmi{temporalia/ps3-initium-vi-F-auto.gtex}
 
-\input{temporalia/ps3-I.tex} \Abardot{}
+\input{temporalia/ps3-vi-F.tex} \Abardot{}
 
 \vfill
 \pagebreak
+\else
+\nocturnoi
+\fi
 
 \pars{Versus.} \scriptura{Ps. 118, 55}
 
@@ -470,6 +473,7 @@ per infiníta sǽcula sæculórum.
 
 \subhora{In II. Nocturno}
 
+\ifx\nocturnoii\undefined
 \pars{Psalmus 4.} \scriptura{Ps. 8, 2}
 
 \vspace{-4mm}
@@ -522,6 +526,9 @@ per infiníta sǽcula sæculórum.
 
 \vfill
 \pagebreak
+\else
+\nocturnoii
+\fi
 
 \pars{Versus.} \scriptura{Ps. 118, 62}
 
@@ -594,6 +601,7 @@ per infiníta sǽcula sæculórum.
 
 \subhora{In III. Nocturno}
 
+\ifx\nocturnoiii\undefined
 \pars{Psalmus 7.} \scriptura{Ps. 9, 22}
 
 \vspace{-4mm}
@@ -646,6 +654,9 @@ per infiníta sǽcula sæculórum.
 
 \vfill
 \pagebreak
+\else
+\nocturnoiii
+\fi
 
 \pars{Versus.} \scriptura{Ps. 118, 148}
 
@@ -1125,6 +1136,5 @@ Orémus:
 \cuminitiali{I}{temporalia/benedicamus-dominica-perannum.gtex}
 
 \vspace{1mm}
-\fi
 
 \end{document}

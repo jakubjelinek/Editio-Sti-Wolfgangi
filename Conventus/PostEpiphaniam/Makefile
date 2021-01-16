@@ -131,7 +131,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 $(addprefix inv-,alleluiachristumdominum regemmagnum dominumquifecit adoremusdominum \
 			  dominumdeum veniteexsultemus jubilemusdeo avemaria) \
 	 $(addprefix capitulum-,OAltitudo Benedictio BenedictusDeus) \
-	 $(addprefix versus-,vespertina) \
+	 $(addprefix versus-,vespertina memorfui medianocte praevenerunt dominusregnavit dirigatur) \
 	 $(addprefix oratio,1 2) \
 	 dominelabiamea \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
@@ -235,9 +235,10 @@ $(patsubst %.pdf,%.tex,$(i)): dominica.tex hebdomada$(patsubst dominica-%.pdf,%,
 endef
 iter-left := $(PDFIII)
 include $(iter)
-$(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
-$(TMP_DIR)/magnificat-%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --flex-underline --skip-verses 2 $(LAPSALMOPTS)
-$(foreach C,ps148 ps149 dan3,$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/$(C)-$(M).tex)): PSALMOPTS = $(LAPSALMOPTS)
+$(filter-out $(TMP_DIR)/ps148% $(TMP_DIR)/ps149% $(TMP_DIR)/dan3% $(TMP_DIR)/magnificat%,$(ALLLAPSALMS)): PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
+$(foreach M,$(MODUS-magnificat),$(TMP_DIR)/magnificat-$(M).tex): PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --flex-underline --skip-verses 2
+$(foreach C,dan3,$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/$(C)-$(M).tex)): PSALMOPTS = $(LAPSALMOPTS)
+$(foreach C,148 149,$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/ps$(C)-$(M).tex)): PSALMOPTS = $(LAPSALMOPTS)
 $(PDF): %.pdf: %.tex conventuscommune.tex \
 	       $(ALLLAPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
