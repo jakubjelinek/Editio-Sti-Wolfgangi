@@ -52,8 +52,8 @@ MODUS-dan3 = viii-G
 MODUS-isaiae7 = d-g
 MODUS-isaiae8 = d-g
 MODUS-ecclesiasticus36 = d-g
-MODUS-benedictus = viiisoll-g2
-MODUS-magnificat = viisoll-a isoll-f
+MODUS-benedictus = viiisoll-g2 viiisoll-G2
+MODUS-magnificat = viisoll-a isoll-f viiisoll-g
 CANTICIS = dan3 isaiae7 isaiae8 ecclesiasticus36
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -120,7 +120,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  dumautemirent murotuo quimajor quinqueprudentes unusestenim \
 			  vididominumsedentem dominequinquetalenta quicaelorumcontines \
 			  serveboneetfidelisquia suscepitdeus confessionemetdecorem \
-			  dominumdeumadoremus eccedeusnoster quammagnificatasunt) \
+			  dominumdeumadoremus eccedeusnoster quammagnificatasunt \
+			  dicitandreas eratandreas) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -132,7 +133,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  ChristeLuxVera AmorisSensusErige AdestoChriste SalveDies \
 			  VitaSanctorum QuemTerra OGloriosaFemina QuemTerra-alt) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
-			   sanaanimammeam avemaria inmanus) \
+			   sanaanimammeam avemaria inmanus confitebimurtibi) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
@@ -192,7 +193,10 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   fluctustuisuperme-CROCHU praecipitadomine-CROCHU \
 			   quicaelorumcontinesthronos-CROCHU-cumdox redemitdominus-CROCHU \
 			   inprincipiodeusantequam-CROCHU-cumdox supersalutem \
-			   emittedominesapientiam-CROCHU-sinedox benedicitedeum-CROCHU-cumdox) \
+			   emittedominesapientiam-CROCHU-sinedox benedicitedeum-CROCHU-cumdox \
+			   benedicamdominum-CROCHU auribuspercipedomine-CROCHU \
+			   adiutormeustibipsallam-CROCHU-cumdox paratumcormeum-CROCHU \
+			   delectareindomino-CROCHU statuitdominussupra-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
