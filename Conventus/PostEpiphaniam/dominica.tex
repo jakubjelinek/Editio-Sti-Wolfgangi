@@ -658,6 +658,8 @@ per infiníta sǽcula sæculórum.
 \nocturnoiii
 \fi
 
+\ifx\lectiovii\undefined
+\else
 \pars{Versus.} \scriptura{Ps. 118, 148}
 
 % Versus. %%%
@@ -721,6 +723,12 @@ per infiníta sǽcula sæculórum.
 
 \vfill
 \pagebreak
+\fi
+
+\ifx\evangelium\undefined
+\else
+\evangelium
+\fi
 
 % Te Deum
 
@@ -822,6 +830,7 @@ Orémus:
 
 \antiphona{VI F}{temporalia/ant-alleluia1.gtex}
 
+\ifx\laudespsalmifestivi\undefined
 \scriptura{Psalmus 50.}
 
 \initiumpsalmi{temporalia/ps50-initium-vi-F-auto.gtex}
@@ -838,6 +847,24 @@ Orémus:
 \initiumpsalmi{temporalia/ps117-initium-vi-F-auto.gtex}
 
 \input{temporalia/ps117-vi-F.tex}
+\else
+\scriptura{Psalmus 92.}
+
+\initiumpsalmi{temporalia/ps92-initium-vi-F-auto.gtex}
+
+\input{temporalia/ps92-vi-F.tex}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 2.}
+
+\scriptura{Psalmus 99.}
+
+\initiumpsalmi{temporalia/ps99-initium-vi-F-auto.gtex}
+
+\input{temporalia/ps99-vi-F.tex}
+\fi
 
 \vfill
 \pagebreak
