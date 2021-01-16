@@ -831,11 +831,15 @@ Orémus:
 \antiphona{VI F}{temporalia/ant-alleluia1.gtex}
 
 \ifx\laudespsalmifestivi\undefined
+\ifx\laudespsalmusi\undefined
 \scriptura{Psalmus 50.}
 
 \initiumpsalmi{temporalia/ps50-initium-vi-F-auto.gtex}
 
 \input{temporalia/ps50-vi-F.tex}
+\else
+\laudespsalmusi
+\fi
 
 \vfill
 \pagebreak
