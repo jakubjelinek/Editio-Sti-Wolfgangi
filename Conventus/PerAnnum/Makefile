@@ -18,14 +18,19 @@ COMMON_CHANTS_DIR = $(EDITIO_ROOTDIR)/cantuscommunes
 PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
-PSALMS = 17xxxi_xxxv 17xxxvi_xlvi 17xlvii_li 34i 34ii 34iii 47 50 56 99 116 118xix 130 131i 131ii
+PSALMS = 17xxxi_xxxv 17xxxvi_xlvi 17xlvii_li 18i 30i 30ii 30iii 34i 34ii 34iii 41 47 50 56 99 116 118xix 130 131i 131ii
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-17xxxi_xxxv = viii-G
 MODUS-17xxxvi_xlvi = vii-c
 MODUS-17xlvii_li = vii-c2
+MODUS-18i = ii-D
+MODUS-30i = viii-G
+MODUS-30ii = e-a
+MODUS-30iii = ii-D
 MODUS-34i = iv-g
 MODUS-34ii = viii-G
 MODUS-34iii = viii-G
+MODUS-41 = ii-D
 MODUS-47 = iv-a
 MODUS-50 = vi-F
 MODUS-56 = viii-g
@@ -35,11 +40,12 @@ MODUS-118xix = vii-a
 MODUS-130 = e
 MODUS-131i = e
 MODUS-131ii = vii-c
+MODUS-ecclesiastici = iii-a
 MODUS-isaiae2 = v-a
 MODUS-jeremiae3 = iv_-e
 MODUS-moysis = e
-MODUS-benedictus = v-a vi-F vii-a
-CANTICIS = isaiae2 jeremiae3 moysis
+MODUS-benedictus = iv-E v-a vi-F vii-a
+CANTICIS = isaiae2 jeremiae3 moysis ecclesiastici
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
 	   && $(SED) -i -e 's/\*/\\grestar{}/g' $@
@@ -107,13 +113,14 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  serveboneetfidelisquia dominusfirmamentum mesuscepit exsurgamdiluculo \
 			  populusmeusait iudicacausam liberame indominoiustificabitur \
 			  iubilatedeo visitavitetfecit haecrequiesmea adtedeluce \
-			  laudatedominumomnes) \
+			  laudatedominumomnes diligitedominum operamanuumeius ostendenobisdomine \
+			  benedictusdominus illuminadomine intuaiustitia sitivitanima) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
-			  OGloriosaFemina) \
+			  OGloriosaFemina IpsumNunc LucisLargitor) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
-			   avemaria-alt) \
+			   avemaria-alt exsultateiusti) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
@@ -170,7 +177,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   fluctustuisuperme-CROCHU praecipitadomine-CROCHU \
 			   quicaelorumcontinesthronos-CROCHU-cumdox redemitdominus-CROCHU \
 			   inprincipiodeusantequam-CROCHU-cumdox supersalutem \
-			   emittedominesapientiam-CROCHU-sinedox benedicitedeum-CROCHU-cumdox) \
+			   emittedominesapientiam-CROCHU-sinedox benedicitedeum-CROCHU-cumdox \
+			   benedicamdominum-CROCHU cumcecideritiustus-CROCHU \
+			   auribuspercipedomine-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
@@ -185,7 +194,7 @@ LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PSALMTONES_DIR)/$(2)-auto.gabc; \
 	     [ $(2) = "dir" ] && cd .. && $(SED) -i -e '/(::)$$$$/{/(,) (::)$$$$/!{s/<b>//g;s/<\/b>//g}}' $(3) || :
 FERIAE = ii iii iv v vi
-HEBDOMADAE = i
+HEBDOMADAE = i ii
 PDFI = $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE)))
 PDFII = $(foreach H,$(HEBDOMADAE),sabbato-$(H).pdf)
 PDFIII = $(foreach H,$(HEBDOMADAE),dominica-$(H).pdf)
