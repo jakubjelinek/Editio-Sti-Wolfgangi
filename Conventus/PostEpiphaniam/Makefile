@@ -18,7 +18,7 @@ COMMON_CHANTS_DIR = $(EDITIO_ROOTDIR)/cantuscommunes
 PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
-PSALMS = 1 2 3 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 10 50 62 92 99 103i 103ii 103iii 109 110 111 112 117 144ii 145 146 147 148 149 150
+PSALMS = 1 2 3 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 10 50 62 92 99 103i 103ii 103iii 109 110 111 112 113 114 115 116 117 128 129 130 131 132 134 135 136 137 138i 138ii 139 140 141 143i 143ii 144i 144ii 145 146 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-1 = viii-G
 MODUS-2 = vii-a
@@ -40,7 +40,28 @@ MODUS-109 = vii-c2
 MODUS-110 = iv-g
 MODUS-111 = iv-a
 MODUS-112 = vii-c
+MODUS-113 = per
+MODUS-114 = i-g2
+MODUS-115 = viii-A
+MODUS-116 = viii-A
 MODUS-117 = vi-F
+MODUS-128 = ii-D
+MODUS-129 = viii-A
+MODUS-130 = e
+MODUS-131 = e
+MODUS-132 = i-a
+MODUS-134 = iii-g
+MODUS-135 = iii-g
+MODUS-136 = viii-G
+MODUS-137 = v-a
+MODUS-138i = iii-g
+MODUS-138ii = iii-g
+MODUS-139 = iv-g
+MODUS-140 = viii-A
+MODUS-141 = viii-A
+MODUS-143i = vi-F
+MODUS-143ii = vi-F
+MODUS-144i = viii-A
 MODUS-144ii = vii-c2
 MODUS-145 = iv-E
 MODUS-146 = viii-A
@@ -53,7 +74,7 @@ MODUS-isaiae7 = d-g
 MODUS-isaiae8 = d-g
 MODUS-ecclesiasticus36 = d-g
 MODUS-benedictus = viiisoll-g2 viiisoll-G2
-MODUS-magnificat = viisoll-a isoll-f viiisoll-g
+MODUS-magnificat = isoll-f ii-D v-a viisoll-a vii-c viiisoll-g viii-G viii-G2
 CANTICIS = dan3 isaiae7 isaiae8 ecclesiasticus36
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -140,9 +161,10 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 $(addprefix benedicamus-,feria-laudes feria-vesperae minor officium-bmv dominica-perannum) \
 	 $(addprefix inv-,alleluiachristumdominum regemmagnum dominumquifecit adoremusdominum \
 			  dominumdeum veniteexsultemus jubilemusdeo avemaria) \
-	 $(addprefix capitulum-,OAltitudo Benedictio BenedictusDeus) \
-	 $(addprefix versus-,vespertina memorfui medianocte praevenerunt dominusregnavit dirigatur) \
-	 $(addprefix oratio,1 2) \
+	 $(addprefix capitulum-,OAltitudo Benedictio BenedictusDeus AbInitio) \
+	 $(addprefix versus-,vespertina memorfui medianocte praevenerunt dominusregnavit dirigatur \
+			     diffusa) \
+	 $(addprefix oratio,1 2 bmv) \
 	 dominelabiamea \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
@@ -215,7 +237,8 @@ HEBDOMADAE = i ii
 PDFI = $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE)))
 PDFII = $(foreach H,$(HEBDOMADAE),sabbato-$(H).pdf)
 PDFIII = $(foreach H,$(HEBDOMADAE),dominica-$(H).pdf)
-PDF = $(PDFI) $(PDFII) $(PDFIII)
+PDFIV = $(foreach H,$(HEBDOMADAE),$(patsubst %,vferia%-$(H).pdf,$(FERIAE)))
+PDF = $(PDFI) $(PDFII) $(PDFIII) $(PDFIV)
 all: $(PDF)
 iter = $(patsubst %,iterator.mk,$(iter-left))
 define iter-doit
@@ -248,10 +271,15 @@ $(patsubst %.pdf,%.tex,$(i)): dominica.tex hebdomada$(patsubst dominica-%.pdf,%,
 endef
 iter-left := $(PDFIII)
 include $(iter)
-$(filter-out $(TMP_DIR)/ps148% $(TMP_DIR)/ps149% $(TMP_DIR)/dan3% $(TMP_DIR)/magnificat%,$(ALLLAPSALMS)): PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
+define iter-doit
+$(patsubst %.pdf,%.tex,$(i)): vferia$(word 1,$(subst -, ,$(patsubst vferia%.pdf,%,$(i)))).tex hebdomada$(word 2,$(subst -, ,$(patsubst vferia%.pdf,%,$(i)))).tex ; touch $$@
+endef
+iter-left := $(PDFIV)
+include $(iter)
+$(filter-out $(TMP_DIR)/ps115% $(TMP_DIR)/ps148% $(TMP_DIR)/ps149% $(TMP_DIR)/dan3% $(TMP_DIR)/magnificat%,$(ALLLAPSALMS)): PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(foreach M,$(MODUS-magnificat),$(TMP_DIR)/magnificat-$(M).tex): PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --flex-underline --skip-verses 2
 $(foreach C,dan3,$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/$(C)-$(M).tex)): PSALMOPTS = $(LAPSALMOPTS)
-$(foreach C,148 149,$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/ps$(C)-$(M).tex)): PSALMOPTS = $(LAPSALMOPTS)
+$(foreach C,115 148 149,$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/ps$(C)-$(M).tex)): PSALMOPTS = $(LAPSALMOPTS)
 $(PDF): %.pdf: %.tex conventuscommune.tex \
 	       $(ALLLAPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
