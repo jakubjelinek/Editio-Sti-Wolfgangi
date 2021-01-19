@@ -18,7 +18,7 @@ COMMON_CHANTS_DIR = $(EDITIO_ROOTDIR)/cantuscommunes
 PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
-PSALMS = 17xxxi_xxxv 17xxxvi_xlvi 17xlvii_li 18i 30i 30ii 30iii 34i 34ii 34iii 36i_xi 36xii_xxix 36iii 41 42 47 50 56 64 99 116 118xix 130 131i 131ii
+PSALMS = 17xxxi_xxxv 17xxxvi_xlvi 17xlvii_li 18i 30i 30ii 30iii 34i 34ii 34iii 36i_xi 36xii_xxix 36iii 38i 38ii 41 42 47 50 51 56 64 76 96 99 116 118xix 130 131i 131ii
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-17xxxi_xxxv = viii-G
 MODUS-17xxxvi_xlvi = vii-c
@@ -33,25 +33,31 @@ MODUS-34iii = viii-G
 MODUS-36i_xi = vi-F
 MODUS-36xii_xxix = ii-D
 MODUS-36iii = vi-F
+MODUS-38i = iv-E
+MODUS-38ii = vii-c
 MODUS-41 = ii-D
 MODUS-42 = vi-F
 MODUS-47 = iv-a
 MODUS-50 = vi-F
+MODUS-51 = iv-e
 MODUS-56 = viii-g
 MODUS-64 = viii-A
+MODUS-76 = viii-G
+MODUS-96 = iii-a2
 MODUS-99 = iv_-e
 MODUS-116 = e
 MODUS-118xix = vii-a
 MODUS-130 = e
 MODUS-131i = e
 MODUS-131ii = vii-c
+MODUS-anna = ii-D
 MODUS-ecclesiastici = iii-a
 MODUS-ezechiae = e
 MODUS-isaiae2 = v-a
 MODUS-jeremiae3 = iv_-e
 MODUS-moysis = e
-MODUS-benedictus = i-g5 iv-E v-a vi-F vii-a
-CANTICIS = isaiae2 jeremiae3 moysis ecclesiastici ezechiae
+MODUS-benedictus = i-g5 iv-E v-a vi-F vii-a viii-G2
+CANTICIS = anna isaiae2 jeremiae3 moysis ecclesiastici ezechiae
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
 	   && $(SED) -i -e 's/\*/\\grestar{}/g' $@
@@ -121,11 +127,12 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  iubilatedeo visitavitetfecit haecrequiesmea adtedeluce \
 			  laudatedominumomnes diligitedominum operamanuumeius ostendenobisdomine \
 			  benedictusdominus illuminadomine intuaiustitia sitivitanima \
-			  iuniorfui speraindomino) \
+			  iuniorfui speraindomino nonsismihi exspectabonomentuum deusinsancto \
+			  exsultavitcormeum dominusregnavit liberatiserviamusdeo) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
-			  AEterneLucis) \
+			  AEterneLucis OSatorRerum FulgentisAuctor) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi) \
@@ -194,7 +201,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
 	 habacuc-initium-iv_-e $(addsuffix -initium-e,ps48ii ps65i ps105i) ps10-initium-ii_-f \
 	 benedictus-initium-viisoll-d ps17xxxvi_xlvi-initium-vii-c-trans ps116-initium-e \
-	 ps131i-initium-e
+	 ps131i-initium-e ps96-initium-iii-a2
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
