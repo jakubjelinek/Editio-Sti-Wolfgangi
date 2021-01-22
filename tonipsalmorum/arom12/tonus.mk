@@ -44,6 +44,7 @@ TONUS-iiisoll-a = 2 0 2 0
 TONUS-iiisoll-e = 2 0 2 0
 TONUS-iiisoll-g = 2 0 2 0
 TONUS-iiisoll-g2 = 2 0 2 0
+TONUS-iiir-g = 2 0 1 2
 TONUS-iv-A = 1 2 1 3
 TONUS-iv-A_ = 1 2 1 3
 TONUS-iv-D = 1 2 1 3
