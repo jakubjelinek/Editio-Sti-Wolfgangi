@@ -96,6 +96,7 @@ TONUS-viiisoll-A = 1 3 1 2
 TONUS-viiisoll-C = 1 3 1 2
 TONUS-viiisoll-G = 1 3 1 2
 TONUS-viiisoll-G2 = 1 3 1 2
+TONUS-viiisoll-G3 = 1 3 1 2
 TONUS-viiisoll-a = 1 3 1 2
 TONUS-viiisoll-c = 1 3 1 2
 TONUS-viiisoll-g = 1 3 1 2
