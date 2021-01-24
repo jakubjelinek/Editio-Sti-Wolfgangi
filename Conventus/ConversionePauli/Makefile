@@ -18,16 +18,20 @@ COMMON_CHANTS_DIR = $(EDITIO_ROOTDIR)/cantuscommunes
 PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
-PSALMS = 18 62 63 96 149
+PSALMS = 18 62 63 96 109 112 115 138 149
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-18 = i-d3
 MODUS-62 = i-a
 MODUS-63 = vii-a
 MODUS-96 = i-g
+MODUS-109 = viii-G
+MODUS-112 = viii-G
+MODUS-115 = viii-G
+MODUS-138 = viii-G
 MODUS-149 = ii_-a
 MODUS-dan3 = i-g
 MODUS-benedictus = viiisoll-G
-MODUS-magnificat = 
+MODUS-magnificat = viiisoll-G
 CANTICIS = dan3
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -46,21 +50,24 @@ LAPSALMS = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-$(M
 LAPSALMSEXTRA = $(foreach C,benedictus magnificat $(CANTICIS),$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/$(C)-$(M).tex))
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant-,saulesaule vadeanania mihivivere sciocuicredidi \
-			  nemagnitudorevelationum gratiadeiinme achristodecaelo) \
-	 $(addprefix hym-,PressiMalorum DoctorEgregie) \
-	 $(addprefix resp-,tuesvaselectionis) \
+			  nemagnitudorevelationum gratiadeiinme achristodecaelo \
+			  libentergloriabor egoplantaviapollorigavit \
+			  damascipraepositus tervirgiscaesus sanctepauleapostole) \
+	 $(addprefix hym-,PressiMalorum DoctorEgregie ExcelsamPauli) \
+	 $(addprefix resp-,tuesvaselectionis constitueseos) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
-	 $(addprefix benedicamus-,duplexmajus-laudes) \
+	 $(addprefix benedicamus-,duplexmajus-laudes duplexmajus-vesperae) \
 	 $(addprefix inv-,laudemusdeumnostrum) \
+	 $(addprefix capitulum-,SaulusAdhuc) $(addprefix versus-,tuesvas) \
 	 dominelabiamea tonusprecum dominusnosbenedicat \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
 					evangelica divinum adsocietatem ille \
 					noscum ipsavirgo pervirginem) \
-	 $(addprefix resp-,ecceegomittovos tollite dumsteteritis) \
+	 $(addprefix resp-,ecceegomittovos tollite dumsteteritis) oratio \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
