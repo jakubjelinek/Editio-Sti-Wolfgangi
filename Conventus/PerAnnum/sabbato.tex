@@ -127,7 +127,6 @@
 \fi
 
 \hora{Ad Matutinum.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\sideThumbs{Matutinum}
 
 \vspace{2mm}
 
@@ -163,7 +162,7 @@
 \pagebreak
 
 \ifx\hymnusmatutinum\undefined
-\ifx\matua\undefined
+\ifx\matuac\undefined
 \else
 \pars{Hymnus.}
 
@@ -175,7 +174,7 @@
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 }
 \fi
-\ifx\matub\undefined
+\ifx\matubd\undefined
 \else
 \pars{Hymnus.}
 
@@ -316,6 +315,70 @@
 \vfill
 \pagebreak
 \fi
+\ifx\matuc\undefined
+\else
+% MAT C
+\pars{Psalmus 1.} \scriptura{Ps. 106, 8}
+
+\vspace{-4mm}
+
+\antiphona{IV* e}{temporalia/ant-confiteanturdomino.gtex}
+
+%\vspace{-2mm}
+
+\scriptura{Ps. 106, 1-14}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps106i-initium-iv_-e-auto.gtex}
+
+\input{temporalia/ps106i-iv_-e.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 2.} \scriptura{Ps. 24, 17; \textbf{H100}}
+
+\vspace{-4mm}
+
+\antiphona{C}{temporalia/ant-denecessitatibus.gtex}
+
+%\vspace{-2mm}
+
+\scriptura{Ps. 106, 15-30}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps106ii-initium-c-c2-auto.gtex}
+
+\input{temporalia/ps106ii-c-c2.tex}
+
+\vfill
+
+\antiphona{}{temporalia/ant-denecessitatibus.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 3.} \scriptura{Ps. 106, 24}
+
+\vspace{-4mm}
+
+\antiphona{III a\textsuperscript{2}}{temporalia/ant-ipsividerunt.gtex}
+
+%\vspace{-2mm}
+
+\scriptura{Ps. 106, 31-43}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps106iii-initium-iii-a2-auto.gtex}
+
+\input{temporalia/ps106iii-iii-a2.tex} \Abardot{}
+
+\vfill
+\pagebreak
+\fi
 
 \pars{Versus.}
 
@@ -331,6 +394,12 @@
 \noindent \Vbardot{} Vias tuas, Dómine, demónstra mihi.
 
 \noindent \Rbardot{} Et sémitas tuas édoce me.
+\fi
+\ifx\matuc\undefined
+\else
+\noindent \Vbardot{} Dómine, véritas tua usque ad nubes. 
+
+\noindent \Rbardot{} Iudícia tua abýssus multa.
 \fi
 \else
 \matversus
@@ -427,7 +496,6 @@
 \pagebreak
 
 \hora{Ad Laudes.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\sideThumbs{Laudes}
 
 \cantusSineNeumas
 
@@ -440,7 +508,7 @@
 \pagebreak
 
 \ifx\hymnuslaudes\undefined
-\ifx\laudac\undefined
+\ifx\lauda\undefined
 \else
 \pars{Hymnus} \scriptura{Venantius Fortunatus (\olddag{} 609)}
 
@@ -452,6 +520,13 @@
 \pars{Hymnus}
 
 \cuminitiali{II}{temporalia/hym-QuaeCaritatis.gtex}
+\vspace{-3mm}
+\fi
+\ifx\laudc\undefined
+\else
+\pars{Hymnus}
+
+\cuminitiali{I}{temporalia/hym-AveMarisStella.gtex}
 \vspace{-3mm}
 \fi
 \else
@@ -572,7 +647,65 @@
 
 \vfill
 \pagebreak
+\fi
+\ifx\laudc\undefined
+\else
+\pars{Psalmus 1.} \scriptura{Ps. 62, 7}
 
+\vspace{-4mm}
+
+\antiphona{E}{temporalia/ant-inmatutinis.gtex}
+
+%\vspace{-2mm}
+
+\scriptura{Psalmus 118, 145-152.}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps118xix-initium-e-auto.gtex}
+
+%\vspace{-1.5mm}
+
+\input{temporalia/ps118xix-e.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 2.}
+
+\vspace{-4mm}
+
+\antiphona{V a}{temporalia/ant-mecumsitdomine.gtex}
+
+%\vspace{-2mm}
+
+\scriptura{Canticum Sapientiæ, Sap. 9, 1-6.9-11}
+
+\initiumpsalmi{temporalia/sapientia-initium-v-a-auto.gtex}
+
+\input{temporalia/sapientia-v-a.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 3.}
+
+\vspace{-4mm}
+
+\antiphona{II* b}{temporalia/ant-veritasdomini.gtex}
+
+%\vspace{-2mm}
+
+\scriptura{Ps. 116}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps116-initium-ii_-B-auto.gtex}
+
+\input{temporalia/ps116-ii_-B.tex} \Abardot{}
+
+\vfill
+\pagebreak
 \fi
 
 \ifx\lectiobrevis\undefined
@@ -587,6 +720,12 @@
 \pars{Lectio Brevis.} \scriptura{Cf. Is. 61, 10}
 
 \noindent Gaudens gaudébo in Dómino, et exsultábit ánima mea in Deo meo, quia índuit me vestiméntis salútis et induménto iustítiæ circúmdedit me, quasi sponsam ornátam monílibus suis.
+\fi
+\ifx\laudc\undefined
+\else
+\pars{Lectio Brevis.} \scriptura{Ap. 12, 1}
+
+\noindent Signum magnum appáruit in cælo: múlier amícta sole, et luna sub pédibus eius, et super caput eius coróna stellárum duódecim.
 \fi
 \else
 \lectiobrevis
@@ -609,7 +748,7 @@
 \pagebreak
 
 \ifx\benedictus\undefined
-\ifx\laudac\undefined
+\ifx\lauda\undefined
 \else
 \pars{Canticum Zachariæ.} \scriptura{\textbf{H54}}
 
@@ -659,6 +798,31 @@
 
 \input{temporalia/benedictus-i-f.tex} \Abardot{}
 \fi
+\ifx\laudc\undefined
+\else
+\pars{Canticum Zachariæ.} \scriptura{\textbf{H300}}
+
+\vspace{-5mm}
+
+{
+\grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{II* d}{temporalia/ant-subtuamprotectionem.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+
+\vspace{-3mm}
+
+\scriptura{Lc. 1, 68-79}
+
+\vspace{-2mm}
+
+\cantusSineNeumas
+\initiumpsalmi{temporalia/benedictus-initium-ii_-d-auto.gtex}
+
+\vspace{-1.5mm}
+
+\input{temporalia/benedictus-ii_-d.tex} \Abardot{}
+\fi
 \else
 \benedictus
 \fi
@@ -667,8 +831,6 @@
 
 \vfill
 \pagebreak
-
-%\sideThumbs{{\scriptsize{}Fine horarum}}
 
 \pars{Preces.}
 
