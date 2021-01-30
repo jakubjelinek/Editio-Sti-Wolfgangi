@@ -838,16 +838,17 @@ Orémus:
 
 \vspace{0.5cm}
 \grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
-\ifx\tempquad\undefined
+%\ifx\tempquad\undefined
 \cuminitiali{}{temporalia/deusinadiutorium-alter.gtex}
-\else
-\cuminitiali{}{temporalia/deusinadiutorium-alter-tq.gtex}
-\fi
+%\else
+%\cuminitiali{}{temporalia/deusinadiutorium-alter-tq.gtex}
+%\fi
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 
 \vfill
 %\pagebreak
 
+\ifx\laudes\undefined
 \pars{Psalmus 1.}
 
 \vspace{-4mm}
@@ -979,6 +980,9 @@ Orémus:
 
 \vfill
 \pagebreak
+\else
+\laudes
+\fi
 
 \ifx\capitulum\undefined
 \pars{Capitulum.} \scriptura{Ac. 7, 12}
@@ -1089,9 +1093,11 @@ Orémus:
 
 \initiumpsalmi{temporalia/ps109-initium-vii-c2-auto.gtex}
 
-\input{temporalia/ps109-vii-c2.tex} \Abardot{}
+\input{temporalia/ps109-vii-c2.tex}
 
-\vspace{-1cm}
+\vfill
+
+\antiphona{}{temporalia/ant-dixitdominus.gtex}
 
 \vfill
 \pagebreak
@@ -1141,11 +1147,15 @@ Orémus:
 \vfill
 \pagebreak
 
+\ifx\capitulum\undefined
 \pars{Capitulum.} \scriptura{2 Cor. 1, 3-4}
 
 \grechangedim{interwordspacetext}{0.12 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \cuminitiali{}{temporalia/capitulum-BenedictusDeus.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}
+\else
+\capitulum
+\fi
 
 \vfill
 

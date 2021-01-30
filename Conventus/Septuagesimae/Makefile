@@ -18,7 +18,7 @@ COMMON_CHANTS_DIR = $(EDITIO_ROOTDIR)/cantuscommunes
 PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
-PSALMS = 1 2 3 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 10 50 62 92 99 103i 103ii 103iii 109 110 111 112 113 114 115 116 117 128 129 130 131 132 134 135 136 137 138i 138ii 139 140 141 143i 143ii 144i 144ii 144x_xiii 144xiv_xxi 145 146 147 148 149 150
+PSALMS = 1 2 3 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 10 23 50 62 65i 65ii 92 99 103i 103ii 103iii 109 110 111 112 113 114 115 116 117 128 129 130 131 132 134 135 136 137 138i 138ii 139 140 141 143i 143ii 144i 144ii 144x_xiii 144xiv_xxi 145 146 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-1 = viii-G
 MODUS-2 = vii-a
@@ -29,8 +29,11 @@ MODUS-9xii_xxi = i-g3
 MODUS-9xxii_xxxii = ii-D
 MODUS-9xxxiii_xxxix = iv_-e
 MODUS-10 = iv-c
+MODUS-23 = viii-G
 MODUS-50 = vi-F
-MODUS-62 = vi-F
+MODUS-62 = i-f vi-F
+MODUS-65i = vi-F
+MODUS-65ii = ii_-a
 MODUS-92 = vi-F
 MODUS-99 = vi-F
 MODUS-103i = iii-a
@@ -44,7 +47,7 @@ MODUS-113 = per
 MODUS-114 = i-g2
 MODUS-115 = viii-A
 MODUS-116 = viii-A
-MODUS-117 = vi-F
+MODUS-117 = vi-F viii-G2
 MODUS-128 = ii-D
 MODUS-129 = viii-A
 MODUS-130 = e
@@ -68,14 +71,14 @@ MODUS-144xiv_xxi = viii-a
 MODUS-145 = iv-E
 MODUS-146 = viii-A
 MODUS-147 = e
-MODUS-148 = viii-G
-MODUS-149 = viii-G
-MODUS-150 = viii-G
-MODUS-dan3 = viii-G
+MODUS-148 = i-a viii-G
+MODUS-149 = i-a viii-G
+MODUS-150 = i-a viii-G
+MODUS-dan3 = i-a2 viii-G
 MODUS-isaiae7 = d-g
 MODUS-isaiae8 = d-g
 MODUS-ecclesiasticus36 = d-g
-MODUS-benedictus = viiisoll-g2 viiisoll-G2 viiisoll-G3
+MODUS-benedictus = isoll-g viiisoll-g2 viiisoll-G2 viiisoll-G3
 MODUS-magnificat = isoll-d3 isoll-f ii-D v-a viisoll-a vii-c viiisoll-g viiisoll-G viii-G viii-G2
 CANTICIS = dan3 isaiae7 isaiae8 ecclesiasticus36
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
@@ -145,7 +148,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  serveboneetfidelisquia suscepitdeus confessionemetdecorem \
 			  dominumdeumadoremus eccedeusnoster quammagnificatasunt \
 			  dicitandreas eratandreas agitepaenitentiam inaeternumet \
-			  regnumtuumdomine ambulansiesus eccedeusmeus dixitdominusadadam) \
+			  regnumtuumdomine ambulansiesus eccedeusmeus dixitdominusadadam \
+			  benedicitegentes dominiestterra introiboindomumtuam mirabanturomnes \
+			  confitebortibidomine deusdeusmeus benedictusesinfirmamento) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -156,7 +161,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 $(addprefix hym-,EcceJamNoctis AEterneRerum AveMarisStella OGloriosaDomina AdPrecesNostras \
 			  ChristeLuxVera AmorisSensusErige AdestoChriste SalveDies \
 			  VitaSanctorum QuemTerra OGloriosaFemina QuemTerra-alt \
-			  PrimoDierum) \
+			  PrimoDierum MediaeNoctis) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus confitebimurtibi christefilidei) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
@@ -227,7 +232,11 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   delectareindomino-CROCHU statuitdominussupra-CROCHU-cumdox \
 			   notasmihifecisti-CROCHU domineneiniratua-CROCHU \
 			   adextrisestmihi-CROCHU-cumdox adtedominelevavi-CROCHU \
-			   deusquisedes-CROCHU audiamdomine-CROCHU-cumdox) \
+			   deusquisedes-CROCHU audiamdomine-CROCHU-cumdox \
+			   formavitigiturdominus-CROCHU-cumdox tulitergodominus-CROCHU \
+			   dixitdominusdeusnonest-CROCHU immisitdominussoporem-CROCHU-cumdox \
+			   inprincipiodeuscreavit-sinedox inprincipiofecitdeus-CROCHU \
+			   dominiestterra-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
