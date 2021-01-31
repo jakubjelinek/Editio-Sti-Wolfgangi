@@ -59,7 +59,7 @@ SCORES = $(addprefix ant-,oadmirabile quandonatuses rubumquemviderat eccemariage
 					deus christus ignem \
 					evangelica divinum adsocietatem ille \
 					noscum ipsavirgo pervirginem) \
-	 $(addprefix resp-,) oratio \
+	 $(addprefix resp-,gaudemariavirgo-CROCHU-cumdox) oratio \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
