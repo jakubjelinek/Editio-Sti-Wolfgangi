@@ -18,7 +18,7 @@ COMMON_CHANTS_DIR = $(EDITIO_ROOTDIR)/cantuscommunes
 PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
-PSALMS = 8 17xxxi_xxxv 17xxxvi_xlvi 17xlvii_li 18i 30i 30ii 30iii 34i 34ii 34iii 36i_xi 36xii_xxix 36iii 37ii_v 37vi_xiii 37xiv_xxiii 38i 38ii 41 42 47 50 51 56 64 66 67i 67ii 67iii 68ii_xiii 68xiv_xxii 68iii 76 84 85 86 88ii_xix 88xx_xxx 88xxxi_xxxviii 88xxxix_xlvi 88xlvii_liii 89 91 96 97 98 99 106i 106ii 106iii 116 118xix 130 131i 131ii 135i 135ii 135iii 147
+PSALMS = 8 17xxxi_xxxv 17xxxvi_xlvi 17xlvii_li 18i 30i 30ii 30iii 34i 34ii 34iii 36i_xi 36xii_xxix 36iii 37ii_v 37vi_xiii 37xiv_xxiii 38i 38ii 41 42 47 50 51 56 64 66 67i 67ii 67iii 68ii_xiii 68xiv_xxii 68iii 72i 72ii 72iii 76 84 85 86 88ii_xix 88xx_xxx 88xxxi_xxxviii 88xxxix_xlvi 88xlvii_liii 89 91 96 97 98 99 106i 106ii 106iii 116 118xix 130 131i 131ii 134i 135i 135ii 135iii 147
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-8 = i-g
 MODUS-17xxxi_xxxv = viii-G
@@ -53,6 +53,9 @@ MODUS-67iii = d-g2
 MODUS-68ii_xiii = viii-c
 MODUS-68xiv_xxii = viii-c
 MODUS-68iii = viii-G
+MODUS-72i = viii-c
+MODUS-72ii = ii-D
+MODUS-72iii = iii-b
 MODUS-76 = viii-G
 MODUS-84 = viii-G
 MODUS-85 = ii-D
@@ -62,7 +65,7 @@ MODUS-88xx_xxx = viii-G
 MODUS-88xxxi_xxxviii = viii-G
 MODUS-88xxxix_xlvi = vii-a
 MODUS-88xlvii_liii = vi-F
-MODUS-89 = i-g
+MODUS-89 = i-g vi-F
 MODUS-91 = e
 MODUS-96 = iii-a2
 MODUS-97 = e
@@ -76,6 +79,7 @@ MODUS-118xix = vii-a e
 MODUS-130 = e
 MODUS-131i = e
 MODUS-131ii = vii-c
+MODUS-134i = i-a
 MODUS-135i = iiir-g
 MODUS-135ii = iiir-g
 MODUS-135iii = c-c2
@@ -88,13 +92,14 @@ MODUS-isaiae2 = v-a
 MODUS-isaiae3 = vii-d
 MODUS-isaiae8 = viii-g
 MODUS-isaiae9 = ii-D
+MODUS-isaiae10 = vi-F
 MODUS-jeremiae2 = viii-G
 MODUS-jeremiae3 = iv_-e
 MODUS-moysis = e
 MODUS-moysis2i_xii = vi-F
 MODUS-sapientia = v-a
 MODUS-benedictus = i-d i-f i-g5 ii_-d iv-E v-a vi-F vii-a vii-d2 viii-G viii-G2
-CANTICIS = anna isaiae2 isaiae3 isaiae8 isaiae9 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia
+CANTICIS = anna isaiae2 isaiae3 isaiae8 isaiae9 isaiae10 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
 	   && $(SED) -i -e 's/\*/\\grestar{}/g' $@
@@ -175,7 +180,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  eccedominusnosterbrachio iustusetsanctus omnesinimici \
 			  benedictusdominusinaeternum fundamentaeius quaeritedominumet \
 			  consolantemme nosnosderelinquas servitedominoinlaetitia \
-			  inmatutinis mecumsitdomine veritasdomini subtuamprotectionem) \
+			  inmatutinis mecumsitdomine veritasdomini subtuamprotectionem \
+			  adhaereredeobonumest quambonusdeus benedicamdomino dominerefugium \
+			  cantatedominocanticum laudatenomendomini) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -255,7 +262,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   confitebortibidomine-CROCHU-cumdox gaudebuntlabiamea-CROCHU-cumdox \
 			   domineexaudiorationem-CROCHU adtedominelevavi-CROCHU \
 			   audiamdomine-CROCHU-cumdox afflictipropeccatisnostris-CROCHU \
-			   velociterexaudime-CROCHU quammagnamultitudo-cumdox) \
+			   velociterexaudime-CROCHU quammagnamultitudo-cumdox \
+			   dumdeambularetdominus-CROCHU insudorevultustui-CROCHU \
+			   formavitigiturdominus-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
@@ -263,7 +272,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 benedictus-initium-viisoll-d ps17xxxvi_xlvi-initium-vii-c-trans ps116-initium-e \
 	 ps131i-initium-e ps96-initium-iii-a2 ps147-initium-e ps91-initium-e ps66-initium-e \
 	 isaiae3-initium-vii-d ps88xxxi_xxxviii-initium-viii-G_ ps97-initium-e ps98-initium-e \
-	 jeremiae2-initium-viii-G ps99-initium-e
+	 jeremiae2-initium-viii-G ps99-initium-e ps72iii-initium-iii-b
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
@@ -272,7 +281,7 @@ LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PSALMTONES_DIR)/$(2)-auto.gabc; \
 	     [ $(2) = "dir" ] && cd .. && $(SED) -i -e '/(::)$$$$/{/(,) (::)$$$$/!{s/<b>//g;s/<\/b>//g}}' $(3) || :
 FERIAE = ii iii iv v vi
-HEBDOMADAE = i ii iii
+HEBDOMADAE = i ii iii iv
 PDFI = $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE)))
 PDFII = $(foreach H,$(HEBDOMADAE),sabbato-$(H).pdf)
 PDFIII = $(foreach H,$(HEBDOMADAE),dominica-$(H).pdf)
