@@ -18,8 +18,11 @@ COMMON_CHANTS_DIR = $(EDITIO_ROOTDIR)/cantuscommunes
 PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
-PSALMS = 62 109 112 116 121 126 145 146 147 149
+PSALMS = 2 18i 44 62 109 112 116 121 126 145 146 147 149
 include $(PSALMTONES_DIR)/tonus.mk
+MODUS-2 = viii-G
+MODUS-18i = ii_-B
+MODUS-44 = vi-F
 MODUS-62 = iii-b
 MODUS-109 = iii-b
 MODUS-112 = vi-F vii-a
@@ -53,14 +56,15 @@ ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant-,oadmirabile quandonatuses rubumquemviderat eccemariagenuit \
 			  senexpuerumportabat eccemariagenuit-tq accipienssimeon \
 			  hodiebeatavirgomaria lumenadrevelationem obtuleruntproeo \
-			  responsumaccepit simeoniustus cuminducerentpuerum) \
-	 $(addprefix hym-,AveMarisStella-iv QuodChorus AdornaSion) \
+			  responsumaccepit simeoniustus cuminducerentpuerum \
+			  adornathalamumtuum superteierusalem gaudeetlaetarenova) \
+	 $(addprefix hym-,AveMarisStella-iv QuodChorus AdornaSion LegisSacratae) \
 	 $(addprefix resp-,avemaria-alt notumfecitdominus adoratedominum) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis solemnis-tq alter-tq communis-tq) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,festis-bmv) \
-	 $(addprefix inv-,) \
+	 $(addprefix inv-,eccevenitadtemplum) \
 	 $(addprefix capitulum-,EcceEgo) $(addprefix versus-,responsum) \
 	 dominelabiamea tonusprecum dominusnosbenedicat \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
@@ -68,7 +72,9 @@ SCORES = $(addprefix ant-,oadmirabile quandonatuses rubumquemviderat eccemariage
 					deus christus ignem \
 					evangelica divinum adsocietatem ille \
 					noscum ipsavirgo pervirginem) \
-	 $(addprefix resp-,gaudemariavirgo-CROCHU-cumdox) oratio \
+	 $(addprefix resp-,gaudemariavirgo-CROCHU-cumdox \
+			   adornathalamum-CROCHU cuminducerentpuerum-CROCHU-cumdox \
+			   senexpuerumportabat-CROCHU) oratio \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 ps109-initium-iii-b-trans ps121-initium-iii-b-trans \
