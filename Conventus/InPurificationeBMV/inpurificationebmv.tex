@@ -269,7 +269,11 @@ per infiníta sǽcula sæculórum.
 
 \vspace{-4mm}
 
+\ifx\tempquad\undefined
 \antiphona{II D}{temporalia/ant-eccemariagenuit.gtex}
+\else
+\antiphona{II D}{temporalia/ant-eccemariagenuit-tq.gtex}
+\fi
 
 \scriptura{Psalmus 146.}
 
@@ -279,7 +283,11 @@ per infiníta sǽcula sæculórum.
 
 \vfill
 
+\ifx\tempquad\undefined
 \antiphona{}{temporalia/ant-eccemariagenuit.gtex}
+\else
+\antiphona{}{temporalia/ant-eccemariagenuit-tq.gtex}
+\fi
 
 \vfill
 \pagebreak
@@ -377,6 +385,9 @@ per infiníta sǽcula sæculórum.
 \cuminitiali{I}{temporalia/benedicamus-festis-bmv.gtex}
 
 \vspace{1mm}
+
+\vfill
+\pagebreak
 
 \iffalse
 \hora{Ad Matutinum.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -783,6 +794,7 @@ per infiníta sǽcula sæculórum.
 
 \vfill
 \pagebreak
+\fi
 
 \hora{Ad II Vesperas.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -800,74 +812,89 @@ per infiníta sǽcula sæculórum.
 \vfill
 %\pagebreak
 
-\vspace{-2mm}
+\vspace{2mm}
 
-\pars{Psalmus 1.} \scriptura{2 Cor. 12, 9; \textbf{H288}}
+\pars{Psalmus 1.} \scriptura{Lc. 2, 25; \textbf{H119}}
 
 \vspace{-4mm}
 
-\antiphona{VIII G}{temporalia/ant-libentergloriabor.gtex}
+\antiphona{III b trans.}{temporalia/ant-simeoniustus.gtex}
 
-\vspace{-2mm}
+%\vspace{-2mm}
 
 \scriptura{Psalmus 109.}
 
-\vspace{-1mm}
+%\vspace{-1mm}
 
-\initiumpsalmi{temporalia/ps109-initium-viii-G-auto.gtex}
+\initiumpsalmi{temporalia/ps109-initium-iii-b-trans.gtex}
 
-\input{temporalia/ps109-viii-G.tex} \Abardot{}
+\input{temporalia/ps109-iii-b.tex}
+
+\vfill
+
+\antiphona{}{temporalia/ant-simeoniustus.gtex}
 
 \vspace{-1cm}
 
 \vfill
 \pagebreak
 
-\pars{Psalmus 2.} \scriptura{1 Cor. 3, 6; \textbf{H288}}
+\pars{Psalmus 2.} \scriptura{Lc. 2, 26; \textbf{H119}}
 
 \vspace{-6mm}
 
-\antiphona{VIII G}{temporalia/ant-egoplantaviapollorigavit.gtex}
+\antiphona{VII a}{temporalia/ant-responsumaccepit.gtex}
 
 \scriptura{Psalmus 112.}
 
-\initiumpsalmi{temporalia/ps112-initium-viii-G-auto.gtex}
+\initiumpsalmi{temporalia/ps112-initium-vii-a-auto.gtex}
 
-\input{temporalia/ps112-viii-G.tex} \Abardot{}
-
-\vfill
-\pagebreak
-
-\pars{Psalmus 3.} \scriptura{2 Cor. 11, 32.33; \textbf{H289}}
-
-\vspace{-4mm}
-
-\antiphona{VIII G}{temporalia/ant-damascipraepositus.gtex}
-
-\scriptura{Psalmus 115.}
-
-\initiumpsalmi{temporalia/ps115-initium-viii-G-auto.gtex}
-
-\input{temporalia/ps115-viii-G.tex} \Abardot{}
+\input{temporalia/ps112-vii-a.tex} \Abardot{}
 
 \vfill
 \pagebreak
 
-\pars{Psalmus 4.} \scriptura{2 Cor. 11, 25; \textbf{H286}}
+\pars{Psalmus 3.} \scriptura{Cf. Lc. 2, 28; \textbf{H119}}
 
 \vspace{-4mm}
 
-\antiphona{VIII G}{temporalia/ant-tervirgiscaesus.gtex}
+\antiphona{III b trans.}{temporalia/ant-accipienssimeon.gtex}
 
-\scriptura{Psalmus 138.}
+\scriptura{Psalmus 121.}
 
-\initiumpsalmi{temporalia/ps138-initium-viii-G-auto.gtex}
+\initiumpsalmi{temporalia/ps121-initium-iii-b-trans.gtex}
 
-\input{temporalia/ps138-viii-G.tex}
+\input{temporalia/ps121-iii-b.tex} \Abardot{}
 
 \vfill
+\pagebreak
 
-\antiphona{}{temporalia/ant-tervirgiscaesus.gtex}
+\pars{Psalmus 4.} \scriptura{Lc. 2, 32; \textbf{H120}}
+
+\vspace{-4mm}
+
+\antiphona{VIII a}{temporalia/ant-lumenadrevelationem.gtex}
+
+\scriptura{Psalmus 126.}
+
+\initiumpsalmi{temporalia/ps126-initium-viii-a-auto.gtex}
+
+\input{temporalia/ps126-viii-a.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 5.} \scriptura{Cf. Lc. 2, 24; \textbf{H118}}
+
+\vspace{-4mm}
+
+\antiphona{VIII G}{temporalia/ant-obtuleruntproeo.gtex}
+
+\scriptura{Psalmus 147.}
+
+\initiumpsalmi{temporalia/ps147-initium-viii-G-auto.gtex}
+
+\input{temporalia/ps147-viii-G.tex} \Abardot{}
 
 \vfill
 \pagebreak
@@ -880,48 +907,50 @@ per infiníta sǽcula sæculórum.
 
 \vfill
 
-\pars{Responsorium breve.} \scriptura{Ps. 44, 17-18}
+\pars{Responsorium breve.} \scriptura{Ps. 97, 2}
 
-\cuminitiali{VI}{temporalia/resp-constitueseos.gtex}
+\cuminitiali{VI}{temporalia/resp-notumfecitdominus.gtex}
 
 \vfill
 \pagebreak
 
-\pars{Hymnus}
+\pars{Hymnus} \scriptura{Rhabanus Maurus (\olddag{} 856)}
 
-\cuminitiali{I}{temporalia/hym-ExcelsamPauli.gtex}
+\cuminitiali{I}{temporalia/hym-QuodChorus.gtex}
 \vspace{-3mm}
 
 \vfill
 %\pagebreak
 
-\pars{Versus.} \scriptura{Cf. Ac. 9, 15}
+\pars{Versus.} \scriptura{Lc. 2, 26}
 
-\sineinitiali{temporalia/versus-tuesvas.gtex}
+\sineinitiali{temporalia/versus-responsum.gtex}
 
 \vfill
 \pagebreak
 
-\pars{Canticum B. Mariæ V.} \scriptura{\textbf{H288}}
+\pars{Canticum B. Mariæ V.} \scriptura{Cf. Lc. 2, 28; \textbf{H120}}
+
+\vspace{-5mm}
 
 {
 \grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
-\antiphona{VIII G}{temporalia/ant-sanctepauleapostole.gtex}
+\antiphona{VIII G\textsuperscript{2}}{temporalia/ant-hodiebeatavirgomaria.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 }
 
-%\vspace{-3mm}
+\vspace{-3mm}
 
 \scriptura{Lc. 1, 46-55}
 
-%\vspace{-2mm}
+\vspace{-2mm}
 
 \cantusSineNeumas
-\initiumpsalmi{temporalia/magnificat-initium-viiisoll-G.gtex}
+\initiumpsalmi{temporalia/magnificat-initium-viiisoll-g2.gtex}
 
-%\vspace{-2mm}
+\vspace{-1.5mm}
 
-\input{temporalia/magnificat-viiisoll-G.tex} \Abardot{}
+\input{temporalia/magnificat-viiisoll-g2.tex} \Abardot{}
 
 \vspace{-1cm}
 
@@ -953,6 +982,5 @@ per infiníta sǽcula sæculórum.
 \cuminitiali{I}{temporalia/benedicamus-festis-bmv.gtex}
 
 \vspace{1mm}
-\fi
 
 \end{document}

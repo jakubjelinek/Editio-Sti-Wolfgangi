@@ -18,14 +18,18 @@ COMMON_CHANTS_DIR = $(EDITIO_ROOTDIR)/cantuscommunes
 PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
-PSALMS = 112 116 145 146
+PSALMS = 109 112 116 121 126 145 146 147
 include $(PSALMTONES_DIR)/tonus.mk
-MODUS-112 = vi-F
+MODUS-109 = iii-b
+MODUS-112 = vi-F vii-a
 MODUS-116 = iii-a2
+MODUS-121 = iii-b
+MODUS-126 = viii-a
 MODUS-145 = iv-E
 MODUS-146 = ii-D
+MODUS-147 = viii-G
 MODUS-benedictus = 
-MODUS-magnificat = isoll-f
+MODUS-magnificat = isoll-f viiisoll-g2
 CANTICIS = 
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -44,9 +48,11 @@ LAPSALMS = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-$(M
 LAPSALMSEXTRA = $(foreach C,benedictus magnificat $(CANTICIS),$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/$(C)-$(M).tex))
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant-,oadmirabile quandonatuses rubumquemviderat eccemariagenuit \
-			  senexpuerumportabat) \
-	 $(addprefix hym-,AveMarisStella-iv) \
-	 $(addprefix resp-,avemaria-alt) \
+			  senexpuerumportabat eccemariagenuit-tq accipienssimeon \
+			  hodiebeatavirgomaria lumenadrevelationem obtuleruntproeo \
+			  responsumaccepit simeoniustus) \
+	 $(addprefix hym-,AveMarisStella-iv QuodChorus) \
+	 $(addprefix resp-,avemaria-alt notumfecitdominus) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis solemnis-tq alter-tq communis-tq) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
@@ -61,7 +67,8 @@ SCORES = $(addprefix ant-,oadmirabile quandonatuses rubumquemviderat eccemariage
 					noscum ipsavirgo pervirginem) \
 	 $(addprefix resp-,gaudemariavirgo-CROCHU-cumdox) oratio \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
-	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34
+	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
+	 ps109-initium-iii-b-trans ps121-initium-iii-b-trans
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
