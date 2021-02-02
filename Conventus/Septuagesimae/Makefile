@@ -79,7 +79,7 @@ MODUS-isaiae7 = d-g
 MODUS-isaiae8 = d-g
 MODUS-ecclesiasticus36 = d-g
 MODUS-benedictus = isoll-g viiisoll-g2 viiisoll-G2 viiisoll-G3
-MODUS-magnificat = isoll-d3 isoll-f ii-D v-a viisoll-a vii-c viiisoll-g viiisoll-G viii-G viii-G2
+MODUS-magnificat = isoll-d3 isoll-f ii-D v-a viisoll-a vii-c viiisoll-g viiisoll-G viii-a viii-g viii-G viii-G2
 CANTICIS = dan3 isaiae7 isaiae8 ecclesiasticus36
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -150,7 +150,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  dicitandreas eratandreas agitepaenitentiam inaeternumet \
 			  regnumtuumdomine ambulansiesus eccedeusmeus dixitdominusadadam \
 			  benedicitegentes dominiestterra introiboindomumtuam mirabanturomnes \
-			  confitebortibidomine deusdeusmeus benedictusesinfirmamento) \
+			  confitebortibidomine deusdeusmeus benedictusesinfirmamento \
+			  nonlicetmihi siceruntnovissimi tollequodtuum) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
