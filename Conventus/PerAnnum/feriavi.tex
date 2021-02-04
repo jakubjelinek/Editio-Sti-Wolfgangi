@@ -140,7 +140,6 @@
 \fi
 
 \hora{Ad Matutinum.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\sideThumbs{Matutinum}
 
 \vspace{2mm}
 
@@ -378,6 +377,68 @@
 \vfill
 \pagebreak
 \fi
+\ifx\matud\undefined
+\else
+% MAT D
+\pars{Psalmus 1.} \scriptura{Ps. 72, 8; \textbf{H179}}
+
+\vspace{-4mm}
+
+\antiphona{VIII c}{temporalia/ant-cogitaveruntimpii.gtex}
+
+%\vspace{-3mm}
+
+\scriptura{Ps. 54, 2-8}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps54i-initium-viii-c-auto.gtex}
+
+%\vspace{-1.5mm}
+
+\input{temporalia/ps54i-viii-c.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 2.} \scriptura{Ps. 34, 4; \textbf{H178}}
+
+\vspace{-4mm}
+
+\antiphona{VII c\textsuperscript{2}}{temporalia/ant-avertanturretrorsum.gtex}
+
+%\vspace{-2mm}
+
+\scriptura{Ps. 54, 9-16}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps54ii-initium-vii-c2-auto.gtex}
+
+\input{temporalia/ps54ii-vii-c2.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 3.}
+
+\vspace{-4mm}
+
+\antiphona{VIII G}{temporalia/ant-iustusnonconturbabitur.gtex}
+
+%\vspace{-2mm}
+
+\scriptura{Ps. 54, 17-24}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps54iii-initium-viii-G-auto.gtex}
+
+\input{temporalia/ps54iii-viii-G.tex} \Abardot{}
+
+\vfill
+\pagebreak
+\fi
 
 \pars{Versus.}
 
@@ -399,6 +460,12 @@
 \noindent \Vbardot{} Dóminus vias suas docébit nos.
 
 \noindent \Rbardot{} Et ambulábimus in sémitis eius.
+\fi
+\ifx\matud\undefined
+\else
+\noindent \Vbardot{} Tribulátio et angústia invenérunt me.
+
+\noindent \Rbardot{} Mandáta tua meditátio mea est.
 \fi
 \else
 \matversus
@@ -495,7 +562,6 @@
 \pagebreak
 
 \hora{Ad Laudes.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\sideThumbs{Laudes}
 
 \cantusSineNeumas
 
@@ -714,6 +780,65 @@
 \vfill
 \pagebreak
 \fi
+\ifx\laudd\undefined
+\else
+\pars{Psalmus 1.} \scriptura{Ps. 50, 12}
+
+\vspace{-4mm}
+
+\antiphona{I a\textsuperscript{2}}{temporalia/ant-cormundumcrea.gtex}
+
+\scriptura{Psalmus 50.}
+
+\initiumpsalmi{temporalia/ps50-initium-i-a2-auto.gtex}
+
+\input{temporalia/ps50-i-a2.tex}
+
+\vfill
+
+\antiphona{}{temporalia/ant-cormundumcrea.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 2.}
+
+\vspace{-4mm}
+
+\antiphona{II D}{temporalia/ant-aedificansierusalem.gtex}
+
+%\vspace{-2mm}
+
+\scriptura{Canticum Tobiæ, Tob. 13, 10-18}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/tobiae2-initium-ii-D-auto.gtex}
+
+\input{temporalia/tobiae2-ii-D.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 3.} \scriptura{Ps. 147, 13; \textbf{H101}}
+
+\vspace{-4mm}
+
+\antiphona{VI F}{temporalia/ant-benedixitfiliistuis.gtex}
+
+\vspace{-2mm}
+
+\scriptura{Psalmus 147.}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps147-initium-vi-F-auto.gtex}
+
+\input{temporalia/ps147-vi-F.tex} \Abardot{}
+
+\vfill
+\pagebreak
+\fi
 
 \ifx\lectiobrevis\undefined
 \ifx\lauda\undefined
@@ -733,6 +858,12 @@
 \pars{Lectio Brevis.} \scriptura{2 Cor. 12, 9-10}
 
 \noindent Libentíssime gloriábor in infirmitátibus meis, ut inhábitet in me virtus Christi. Propter quod pláceo mihi in infirmitátibus, in contuméliis, in necessitátibus, in persecutiónibus et in angústiis, pro Christo: cum enim infírmor, tunc potens sum.
+\fi
+\ifx\laudd\undefined
+\else
+\pars{Lectio Brevis.} \scriptura{2 Cor. 1, 3-5}
+
+\noindent Benedíctus Deus et Pater Dómini nostri Iesu Christi, Pater misericordiárum et Deus totíus consolatiónis, qui consolátur nos in omni tribulatióne nostra, ut possímus et ipsi consolári eos, qui in omni pressúra sunt, per exhortatiónem, qua exhortámur et ipsi a Deo; quóniam, sicut abúndant passiónes Christi in nobis, ita per Christum abúndat et consolátio nostra.
 \fi
 \else
 \lectiobrevis
@@ -817,8 +948,6 @@
 \vfill
 \pagebreak
 
-%\sideThumbs{{\scriptsize{}Fine horarum}}
-
 \pars{Preces.}
 
 \sineinitiali{}{temporalia/tonusprecum.gtex}
@@ -890,6 +1019,28 @@
 
 \Rbardot{} Salva, Dómine, quos tuo sánguine redemísti.
 \fi
+\ifx\laudd\undefined
+\else
+\noindent Fratres, Salvatórem nostrum, testem fidélem, per mártyres interféctos propter verbum Dei, \gredagger{} celebrémus, clamántes:
+
+\Rbardot{} Redemísti nos Deo in sánguine tuo.
+
+\noindent Per mártyres tuos, qui líbere mortem in testimónium fídei sunt ampléxi, \gredagger{} da nobis, Dómine, veram spíritus libertátem.
+
+\Rbardot{} Redemísti nos Deo in sánguine tuo.
+
+\noindent Per mártyres tuos, qui fidem usque ad sánguinem sunt conféssi, \gredagger{} da nobis, Dómine, puritátem fideíque constántiam.
+
+\Rbardot{} Redemísti nos Deo in sánguine tuo.
+
+\noindent Per mártyres tuos, qui, sustinéntes crucem, tua vestígia sunt secúti, \gredagger{} da nobis, Dómine, ærúmnas vitæ fórtiter sustinére.
+
+\Rbardot{} Redemísti nos Deo in sánguine tuo.
+
+\noindent Per mártyres tuos, qui stolas suas lavérunt in sánguine Agni, \gredagger{} da nobis, Dómine, omnes insídias carnis mundíque devíncere.
+
+\Rbardot{} Redemísti nos Deo in sánguine tuo.
+\fi 
 \else
 \preces
 \fi
