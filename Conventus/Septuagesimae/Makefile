@@ -31,7 +31,7 @@ MODUS-9xxxiii_xxxix = iv_-e
 MODUS-10 = iv-c
 MODUS-23 = viii-G
 MODUS-50 = vi-F
-MODUS-62 = i-f vi-F
+MODUS-62 = i-f ii-D vi-F
 MODUS-65i = vi-F
 MODUS-65ii = ii_-a
 MODUS-92 = vi-F
@@ -47,7 +47,7 @@ MODUS-113 = per
 MODUS-114 = i-g2
 MODUS-115 = viii-A
 MODUS-116 = viii-A
-MODUS-117 = vi-F viii-G2
+MODUS-117 = i-a2 vi-F viii-G2
 MODUS-128 = ii-D
 MODUS-129 = viii-A
 MODUS-130 = e
@@ -71,9 +71,9 @@ MODUS-144xiv_xxi = viii-a
 MODUS-145 = iv-E
 MODUS-146 = viii-A
 MODUS-147 = e
-MODUS-148 = i-a viii-G
-MODUS-149 = i-a viii-G
-MODUS-150 = i-a viii-G
+MODUS-148 = i-a i-f viii-G
+MODUS-149 = i-a i-f viii-G
+MODUS-150 = i-a i-f viii-G
 MODUS-dan3 = i-a2 viii-G
 MODUS-isaiae7 = d-g
 MODUS-isaiae8 = d-g
@@ -151,7 +151,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  regnumtuumdomine ambulansiesus eccedeusmeus dixitdominusadadam \
 			  benedicitegentes dominiestterra introiboindomumtuam mirabanturomnes \
 			  confitebortibidomine deusdeusmeus benedictusesinfirmamento \
-			  nonlicetmihi siceruntnovissimi tollequodtuum dixitdominusadnoe) \
+			  nonlicetmihi siceruntnovissimi tollequodtuum dixitdominusadnoe \
+			  hymnumdicamus intympanoetchoro invelamentoclamavi omnesquihabebant \
+			  simihidominus) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -238,7 +240,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   formavitigiturdominus-CROCHU-cumdox tulitergodominus-CROCHU \
 			   dixitdominusdeusnonest-CROCHU immisitdominussoporem-CROCHU-cumdox \
 			   inprincipiodeuscreavit-sinedox inprincipiofecitdeus-CROCHU \
-			   dominiestterra-CROCHU-cumdox) \
+			   dominiestterra-CROCHU-cumdox quadragintadiesetnoctes-CROCHU-cumdox \
+			   aedificavitnoealtare-CROCHU ponamarcummeuminnubibus-CROCHU \
+			   permemetipsumiuravi-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
