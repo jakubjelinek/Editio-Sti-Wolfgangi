@@ -140,19 +140,27 @@ per infiníta sǽcula sæculórum.
 
 \vfill
 
+\ifx\deusinadiutoriumivesp\undefined
+\ifx\tempquad\undefined
+\else
+\vspace{-5mm}
+\fi
+\fi
+
 \hora{Ad I. Vesperas.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cantusSineNeumas
 
-\vspace{0.5cm}
 \grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \ifx\deusinadiutoriumivesp\undefined
 \ifx\tempquad\undefined
+\vspace{0.5cm}
 \cuminitiali{}{temporalia/deusinadiutorium-solemnis.gtex}
 \else
 \cuminitiali{}{temporalia/deusinadiutorium-solemnis-tq.gtex}
 \fi
 \else
+\vspace{0.5cm}
 \deusinadiutoriumivesp
 \fi
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%

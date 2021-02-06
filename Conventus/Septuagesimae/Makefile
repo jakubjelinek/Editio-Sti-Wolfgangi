@@ -151,7 +151,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  regnumtuumdomine ambulansiesus eccedeusmeus dixitdominusadadam \
 			  benedicitegentes dominiestterra introiboindomumtuam mirabanturomnes \
 			  confitebortibidomine deusdeusmeus benedictusesinfirmamento \
-			  nonlicetmihi siceruntnovissimi tollequodtuum) \
+			  nonlicetmihi siceruntnovissimi tollequodtuum dixitdominusadnoe) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -173,10 +173,11 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 				  feria-advequad dominica-advequad octava-paschae) \
 	 $(addprefix inv-,alleluiachristumdominum regemmagnum dominumquifecit adoremusdominum \
 			  dominumdeum veniteexsultemus jubilemusdeo avemaria) \
-	 $(addprefix capitulum-,OAltitudo Benedictio BenedictusDeus AbInitio FratresNescitis) \
+	 $(addprefix capitulum-,OAltitudo Benedictio BenedictusDeus AbInitio FratresNescitis \
+				FratresLibenter) \
 	 $(addprefix versus-,vespertina memorfui medianocte praevenerunt dominusregnavit dirigatur \
 			     diffusa) \
-	 $(addprefix oratio,lxx bmv) \
+	 $(addprefix oratio,lxx lx bmv) \
 	 dominelabiamea \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
