@@ -107,6 +107,16 @@
 \cantusSineNeumas
 
 \ifx\oratio\undefined
+\ifx\lauda\undefined
+\else
+\newcommand{\oratio}{\pars{Oratio.}
+
+\noindent Actiónes nostras, quǽsumus, Dómine, aspirándo prǽveni et adiuvándo proséquere, ut cuncta nostra operátio a te semper incípiat et per te cœpta finiátur.
+
+\noindent Per Dóminum nostrum Iesum Christum, Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.
+
+\noindent \Rbardot{} Amen.}
+\fi
 \ifx\laudb\undefined
 \else
 \newcommand{\oratio}{\pars{Oratio.}
@@ -153,6 +163,12 @@
 \pagebreak
 
 \ifx\hymnusmatutinum\undefined
+\ifx\matuac\undefined
+\else
+\pars{Hymnus}
+
+\cuminitiali{IV}{temporalia/hym-SomnoRefectis.gtex}
+\fi
 \ifx\matubd\undefined
 \else
 \pars{Hymnus.}
@@ -172,6 +188,66 @@
 \vfill
 \pagebreak
 
+\ifx\matua\undefined
+\else
+% MAT A
+\pars{Psalmus 1.} \scriptura{Ps. 6, 3}
+
+\vspace{-4mm}
+
+\antiphona{IV E}{temporalia/ant-misereremihi.gtex}
+
+%\vspace{-2mm}
+
+\scriptura{Ps. 6}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps6-initium-iv-E-auto.gtex}
+
+\input{temporalia/ps6-iv-E.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 2.} \scriptura{Ps. 110, 1; \textbf{H91}}
+
+\vspace{-4mm}
+
+\antiphona{VIII G}{temporalia/ant-confitebortibi.gtex}
+
+%\vspace{-2mm}
+
+\scriptura{Ps. 9, 2-11}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps9ii_xi-initium-viii-G-auto.gtex}
+
+\input{temporalia/ps9ii_xi-viii-G.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 3.} \scriptura{Ps. 9, 20}
+
+\vspace{-4mm}
+
+\antiphona{I g\textsuperscript{3}}{temporalia/ant-exsurgedominenon.gtex}
+
+%\vspace{-2mm}
+
+\scriptura{Ps. 9, 12-21}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps9xii_xxi-initium-i-g3-auto.gtex}
+
+\input{temporalia/ps9xii_xxi-i-g3.tex} \Abardot{}
+
+\vfill
+\pagebreak
+\fi
 \ifx\matub\undefined
 \else
 % MAT B
@@ -300,6 +376,12 @@
 \pars{Versus.}
 
 \ifx\matversus\undefined
+\ifx\matua\undefined
+\else
+\noindent \Vbardot{} Da mihi intelléctum et servábo legem tuam. 
+
+\noindent \Rbardot{} Et custódiam illam in toto corde meo.
+\fi
 \ifx\matub\undefined
 \else
 \noindent \Vbardot{} Dírige me, Dómine, in veritáte tua, et doce me.
@@ -419,6 +501,12 @@
 \pagebreak
 
 \ifx\hymnuslaudes\undefined
+\ifx\laudac\undefined
+\else
+\pars{Hymnus} \scriptura{Ambrosius (\olddag{} 397)}
+
+\cuminitiali{I}{temporalia/hym-SplendorPaternae-hiemalis.gtex}
+\fi
 \ifx\laudbd\undefined
 \else
 \pars{Hymnus} \scriptura{Hilarius (\olddag{} 367)}
@@ -435,6 +523,63 @@
 \vfill
 \pagebreak
 
+\ifx\lauda\undefined
+\else
+\pars{Psalmus 1.} \scriptura{Ps. 5, 2; \textbf{H93}}
+
+\vspace{-6mm}
+
+\antiphona{VIII a}{temporalia/ant-intellegeclamorem.gtex}
+
+\vspace{-4mm}
+
+\scriptura{Psalmus 5.}
+
+\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps5-initium-viii-A-auto.gtex}
+
+\vspace{-1.5mm}
+
+\input{temporalia/ps5-viii-A.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 2.} \scriptura{1 Par. 29, 13}
+
+\vspace{-4mm}
+
+\antiphona{I f}{temporalia/ant-laudamusnomentuum.gtex}
+
+%\vspace{-2mm}
+
+\scriptura{Canticum David, 1 Par. 29, 10-13}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/david-initium-i-f-auto.gtex}
+
+\input{temporalia/david-i-f.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 3.} \scriptura{Ps. 28, 1.2; \textbf{H72}}
+
+\vspace{-4mm}
+
+\antiphona{VII a}{temporalia/ant-affertedomino.gtex}
+
+\scriptura{Psalmus. 28}
+
+\initiumpsalmi{temporalia/ps28-initium-vii-a-auto.gtex}
+
+\input{temporalia/ps28-vii-a.tex} \Abardot{}
+
+\vfill
+\pagebreak
+\fi
 \ifx\laudb\undefined
 \else
 \pars{Psalmus 1.} \scriptura{Ps. 41, 3; \textbf{H391}}
@@ -559,6 +704,12 @@
 \fi
 
 \ifx\lectiobrevis\undefined
+\ifx\lauda\undefined
+\else
+\pars{Lectio Brevis.} \scriptura{2 Th. 3, 10-13}
+
+\noindent Si quis non vult operári, nec mandúcet. Audímus enim inter vos quosdam ambuláre inordináte, nihil operántes sed curióse agéntes; his autem, qui eiúsmodi sunt, præcípimus et obsecrámus in Dómino Iesu Christo, ut cum quiéte operántes suum panem mandúcent. Vos autem, fratres, nolíte defícere benefaciéntes.
+\fi
 \ifx\laudb\undefined
 \else
 \pars{Lectio Brevis.} \scriptura{Ier. 15, 16}
@@ -570,7 +721,6 @@
 \pars{Lectio Brevis.} \scriptura{Idt. 8, 25-27}
 
 \noindent Grátias agámus Dómino Deo nostro, qui temptat nos sicut et patres nostros. Mémores estóte quanta fécerit cum Abraham et Isaac, et quanta facta sint Iacob. Quia non sicut illos combússit in inquisitiónem cordis illórum et in nos non ultus est, sed in monitiónem flagéllat Dóminus appropinquántes sibi.
-
 \fi
 \else
 \lectiobrevis
@@ -579,6 +729,12 @@
 \vfill
 
 \ifx\responsoriumbreve\undefined
+\ifx\laudac\undefined
+\else
+\pars{Responsorium breve.}
+
+\cuminitiali{VI}{temporalia/resp-benedictusdominus.gtex}
+\fi
 \ifx\laudbd\undefined
 \else
 \pars{Responsorium breve.} \scriptura{Ps. 32, 1.3}
@@ -593,6 +749,31 @@
 \pagebreak
 
 \ifx\benedictus\undefined
+\ifx\laudac\undefined
+\else
+\pars{Canticum Zachariæ.} \scriptura{Lc. 1, 68; \textbf{H422}}
+
+%\vspace{-4mm}
+
+{
+\grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{VI F}{temporalia/ant-benedictusdeusisrael.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+
+%\vspace{-3mm}
+
+\scriptura{Lc. 1, 68-79}
+
+%\vspace{-2mm}
+
+\cantusSineNeumas
+\initiumpsalmi{temporalia/benedictus-initium-vi-F-auto.gtex}
+
+%\vspace{-1.5mm}
+
+\input{temporalia/benedictus-vi-F.tex} \Abardot{}
+\fi
 \ifx\laudbd\undefined
 \else
 \pars{Canticum Zachariæ.} \scriptura{Lc. 1, 68; \textbf{H422}}
@@ -632,6 +813,28 @@
 \sineinitiali{}{temporalia/tonusprecum.gtex}
 
 \ifx\preces\undefined
+\ifx\lauda\undefined
+\else
+\noindent Christum magnificémus, plenum grátia et Spíritu Sancto, \gredagger{} et fidénter eum implorémus:
+
+\Rbardot{} Spíritum tuum da nobis, Dómine.
+
+\noindent Concéde nobis diem istum iucúndum, pacíficum et sine mácula, \gredagger{} ut, ad vésperam perdúcti, cum gáudio et mundo corde te collaudáre valeámus.
+
+\Rbardot{} Spíritum tuum da nobis, Dómine.
+
+\noindent Sit hódie splendor tuus super nos, \gredagger{} et opus mánuum nostrárum dírige.
+
+\Rbardot{} Spíritum tuum da nobis, Dómine.
+
+\noindent Osténde fáciem tuam super nos ad bonum in pace, \gredagger{} ut hódie manu tua válida contegámur.
+
+\Rbardot{} Spíritum tuum da nobis, Dómine.
+
+\noindent Réspice propítius omnes, qui oratiónibus nostris confídunt, \gredagger{} eos adímple bonis ánimæ et córporis univérsis.
+
+\Rbardot{} Spíritum tuum da nobis, Dómine.
+\fi
 \ifx\laudb\undefined
 \else
 \noindent Salvátor noster fecit nos regnum et sacerdótium, ut hóstias Deo acceptábiles offerámus. \gredagger{} Grati ígitur eum invocémus:
