@@ -129,7 +129,7 @@ MODUS-moysis2i_xii = vi-F
 MODUS-sapientia = v-a
 MODUS-tobiae = vii-a
 MODUS-tobiae2 = ii-D
-MODUS-benedictus = i-d i-f i-g5 ii_-d iii-b iv-E v-a vi-F vii-a vii-c2 vii-d2 viii-G viii-G2
+MODUS-benedictus = i-d i-f i-g5 ii_-d iii-b iv-E v-a vi-F vii-a vii-c2 vii-d2 viii-g viii-G viii-G2
 CANTICIS = anna isaiae2 isaiae3 isaiae4 isaiae5 isaiae8 isaiae9 isaiae10 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -223,7 +223,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  exoreinfantium nigrasumsedformosa misereremihi \
 			  confitebortibi intellegeclamorem laudamusnomentuum affertedomino \
 			  tudomine innocensmanibus exaltateregem rectosdecet \
-			  praeclarasalutisaurora) \
+			  praeclarasalutisaurora extollensquaedam) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -314,7 +314,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   ecceadamquasiunus-CROCHU-cumdox inarticulodiei recordatusdominus \
 			   quadragintadiesetnoctes-CROCHU-cumdox aedificavitnoealtare-CROCHU \
 			   ponamarcummeuminnubibus-CROCHU permemetipsumiuravi-CROCHU-cumdox \
-			   conceptiogloriosae-CROCHU conceptiotua-CROCHU-cumdox) \
+			   conceptiogloriosae-CROCHU conceptiotua-CROCHU-cumdox \
+			   egressonoedearcha) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
