@@ -31,7 +31,7 @@ MODUS-9xxxiii_xxxix = iv_-e
 MODUS-10 = iv-c
 MODUS-23 = viii-G
 MODUS-50 = vi-F
-MODUS-62 = i-f ii-D vi-F
+MODUS-62 = i-f ii-D vi-F vii-a
 MODUS-65i = vi-F
 MODUS-65ii = ii_-a
 MODUS-92 = vi-F
@@ -47,7 +47,7 @@ MODUS-113 = per
 MODUS-114 = i-g2
 MODUS-115 = viii-A
 MODUS-116 = viii-A
-MODUS-117 = i-a2 vi-F viii-G2
+MODUS-117 = i-a2 vi-F viii-C viii-G2
 MODUS-128 = ii-D
 MODUS-129 = viii-A
 MODUS-130 = e
@@ -71,15 +71,15 @@ MODUS-144xiv_xxi = viii-a
 MODUS-145 = iv-E
 MODUS-146 = viii-A
 MODUS-147 = e
-MODUS-148 = i-a i-f viii-G
-MODUS-149 = i-a i-f viii-G
-MODUS-150 = i-a i-f viii-G
-MODUS-dan3 = i-a2 viii-G
+MODUS-148 = i-a i-f v-g viii-G
+MODUS-149 = i-a i-f v-g viii-G
+MODUS-150 = i-a i-f v-g viii-G
+MODUS-dan3 = i-a2 iv-E viii-G
 MODUS-isaiae7 = d-g
 MODUS-isaiae8 = d-g
 MODUS-ecclesiasticus36 = d-g
-MODUS-benedictus = isoll-g viiisoll-g2 viiisoll-G2 viiisoll-G3
-MODUS-magnificat = isoll-d3 isoll-f i-g ii-D iii-a v-a visoll-F viisoll-a vii-a vii-c viiisoll-g viiisoll-G viii-a viii-g viii-G viii-G2
+MODUS-benedictus = isoll-g viiisoll-g2 viiisoll-G viiisoll-G2 viiisoll-G3
+MODUS-magnificat = isoll-d3 isoll-D isoll-f i-g ii-D iii-a v-a visoll-F viisoll-a vii-a vii-c viiisoll-g viiisoll-G viii-a viii-g viii-G viii-G2
 CANTICIS = dan3 isaiae7 isaiae8 ecclesiasticus36
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -154,7 +154,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  nonlicetmihi siceruntnovissimi tollequodtuum dixitdominusadnoe \
 			  hymnumdicamus intympanoetchoro invelamentoclamavi omnesquihabebant \
 			  simihidominus vobisdatumest siculmenveri semenestverbum quodautemcecidit \
-			  semencecidit paterfideinostrae) \
+			  semencecidit paterfideinostrae cumautemdescendisset deusmeusestu \
+			  hymnumdicite stansautemiesus secundummultitudinem adtedeluce) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -244,7 +245,10 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   dominiestterra-CROCHU-cumdox quadragintadiesetnoctes-CROCHU-cumdox \
 			   aedificavitnoealtare-CROCHU ponamarcummeuminnubibus-CROCHU \
 			   permemetipsumiuravi-CROCHU-cumdox dixitdominusadnoe \
-			   afflictipropeccatisnostris-CROCHU) \
+			   afflictipropeccatisnostris-CROCHU locutusestdominusadabraham-CROCHU \
+			   dumstaretabrahamadradicem-CROCHU tentavitdeusabraham-CROCHU-cumdox \
+			   angelusdominivocavit-CROCHU vocavitangelusdomini-CROCHU \
+			   deusdominimeiabraham-CROCHU-cumdox confitebortibidomine-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
