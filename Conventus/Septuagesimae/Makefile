@@ -155,7 +155,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  hymnumdicamus intympanoetchoro invelamentoclamavi omnesquihabebant \
 			  simihidominus vobisdatumest siculmenveri semenestverbum quodautemcecidit \
 			  semencecidit paterfideinostrae cumautemdescendisset deusmeusestu \
-			  hymnumdicite stansautemiesus secundummultitudinem adtedeluce) \
+			  hymnumdicite stansautemiesus secundummultitudinem adtedeluce \
+			  etquipraeibant misereremeifilidavid) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
