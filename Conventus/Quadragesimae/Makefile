@@ -18,7 +18,7 @@ COMMON_CHANTS_DIR = $(EDITIO_ROOTDIR)/cantuscommunes
 PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
-PSALMS = 4 5 6 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 11 17xxxi_xxxv 17xxxvi_xlvi 17xlvii_li 18i 23 28 30i 30ii 30iii 32 34i 34ii 34iii 36i_xi 36xii_xxix 36iii 37ii_v 37vi_xiii 37xiv_xxiii 38i 38ii 41 42 43i 43ii 43iii 47 49i_vi 49vii_xv 49xvi_xxiii 50 51 54i 54ii 54iii 56 64 66 67i 67ii 67iii 68ii_xiii 68xiv_xxii 68iii 72i 72ii 72iii 76 84 85 86 88ii_xix 88xx_xxx 88xxxi_xxxviii 88xxxix_xlvi 88xlvii_liii 89 90 91 96 97 98 99 102i 102ii 102iii 106i 106ii 106iii 107 113 114 115 116 118xix 128 129 130 131 131i 131ii 132 133 134 134i 135 135i 135ii 135iii 136 137 138i 138ii 139 140 141 142 143i 143ii 144i 145 146 147
+PSALMS = 4 5 6 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 11 17xxxi_xxxv 17xxxvi_xlvi 17xlvii_li 18i 23 28 30i 30ii 30iii 32 34i 34ii 34iii 36i_xi 36xii_xxix 36iii 37ii_v 37vi_xiii 37xiv_xxiii 38i 38ii 41 42 43i 43ii 43iii 47 49i_vi 49vii_xv 49xvi_xxiii 50 51 54i 54ii 54iii 56 64 66 67i 67ii 67iii 68ii_xiii 68xiv_xxii 68iii 72i 72ii 72iii 76 77i_xvi 77iii 77xxxii_xxxix 84 85 86 88ii_xix 88xx_xxx 88xxxi_xxxviii 88xxxix_xlvi 88xlvii_liii 89 90 91 96 97 98 99 102i 102ii 102iii 106i 106ii 106iii 107 113 114 115 116 118xix 128 129 130 131 131i 131ii 132 133 134 134i 135 135i 135ii 135iii 136 137 138i 138ii 139 140 141 142 143i 143ii 144i 145 146 147
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-4 = viii-G
 MODUS-5 = viii-A
@@ -77,6 +77,9 @@ MODUS-72i = viii-c
 MODUS-72ii = ii-D
 MODUS-72iii = iii-b
 MODUS-76 = viii-G
+MODUS-77i_xvi = i-g3
+MODUS-77iii = ii-D
+MODUS-77xxxii_xxxix = viii-G
 MODUS-84 = viii-G
 MODUS-85 = ii-D
 MODUS-86 = i-g
@@ -248,7 +251,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  confitebortibi intellegeclamorem laudamusnomentuum affertedomino \
 			  tudomine innocensmanibus exaltateregem rectosdecet \
 			  praeclarasalutisaurora extollensquaedam cumieiunatis \
-			  thesaurizatevobis dominenonsumdignus quivultvenire) \
+			  thesaurizatevobis dominenonsumdignus quivultvenire \
+			  cumviderisnudum deusadiuvatme) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -280,9 +284,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  dominumdeum veniteexsultemus jubilemusdeo avemaria christummariaefilium \
 			  hodiesivocem) \
 	 dominelabiamea tonusprecum dominusnosbenedicat \
-	 $(addprefix capitulum-,tuautem BenedictusDeus) \
+	 $(addprefix capitulum-,tuautem BenedictusDeus AbInitio) \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
-	 $(addprefix versus-,custodi gaude dirigatur) \
+	 $(addprefix versus-,custodi gaude dirigatur diffusa-tq) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
 					evangelica divinum adsocietatem ille \
@@ -361,8 +365,10 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   emendemusinmelius-CROCHU-cumdox emendemusinmelius-CROCHU \
 			   paradisiportas-CROCHU-cumdox paradisiportas-CROCHU \
 			   locutusestdominusadabraham-CROCHU dumstaretabrahamadradicem-CROCHU \
-			   caecussedebatsecusviam-CROCHU-cumdox angelusdominivocavit-CROCHU-cumdox) \
-	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
+			   caecussedebatsecusviam-CROCHU-cumdox angelusdominivocavit-CROCHU-cumdox \
+			   tentavitdeusabraham-CROCHU angelusdominivocavit-CROCHU \
+			   vocavitangelusdomini-CROCHU-cumdox) \
+	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita oratiobmv \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 $(addprefix ant-avereginacaelorum-,simplex solemnis) benedictio-noctemquietam \
 	 habacuc-initium-iv_-e $(addsuffix -initium-e,ps48ii ps65i ps105i) ps10-initium-ii_-f \
