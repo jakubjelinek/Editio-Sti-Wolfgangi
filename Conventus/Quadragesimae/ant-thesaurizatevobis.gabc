@@ -1,12 +1,12 @@
 name:Thesaurizate vobis;
 office-part:Antiphona;
-mode:4;
-book:Antiphonale Monasticum, 1934, p. 333; H142;
+mode:2;
+book:Antiphonale Monasticum I, Praglia, p. 162; H142;
 transcriber:Dominique CROCHU;
 nabc-lines:1;
 %%
 (c3)
-THe(f|vi)sau(e'|ta)ri(f|vi)zá(h'|vihg)te(h|vihg) vo(h_j|```peShglsal3)bis(i'|///vs) *(,)
-the(i|ta)sáu(h_i|vi)ros(j|vihh) in(ih~|vi>) cæ(i.|vi-)lo:(i.|vi-) (;)
-u(f'|ta)bi(i|vi) nec(h'|vi) æ(g|vi)rú(f_e|cl-)go,(f'_|vi) (,)
-nec(e|vi) tí(d'|ta)ne(e|vi)a(gxf_g) de(h')mo(gxg)lí(f.)tur.(f.) (::)
+THe(f|vi)sau(e|ta)ri(f|vi)zá(h|vihg)te(h|vihg) vo(h_j|```peShglsal3)bis(iio|///vs) *(,)
+the(h|ta)sáu(i|vi)ros(j|vihh) in(ih~|vi>) cæ(i.|vi-)lo:(i.|vi-) (;)
+u(f|ta)bi(i|vi) nec(h|vi) æ(g|vi)rú(fe__|cl-)go,(f|vi) (,)
+nec(e|vi) tí(d|ta)ne(e|vi)a(gxf_g) de(h)mo(gxg)lí(f.)tur.(f.) (::)
