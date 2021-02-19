@@ -195,6 +195,7 @@
 \vfill
 \pagebreak
 
+\ifx\matutinum\undefined
 \ifx\matua\undefined
 \else
 % MAT A
@@ -439,6 +440,9 @@
 \vfill
 \pagebreak
 \fi
+\else
+\matutinum
+\fi
 
 \pars{Versus.}
 
@@ -479,12 +483,20 @@
 
 \pars{Absolutio.}
 
+\ifx\sineobmv\undefined
 \cuminitiali{}{temporalia/absolutio-precibus.gtex}
+\else
+\cuminitiali{}{temporalia/absolutio-avinculis.gtex}
+\fi
 
 \vfill
 \pagebreak
 
+\ifx\sineobmv\undefined
 \cuminitiali{}{temporalia/benedictio-solemn-noscum.gtex}
+\else
+\cuminitiali{}{temporalia/benedictio-solemn-ille.gtex}
+\fi
 
 \vspace{7mm}
 
@@ -501,7 +513,11 @@
 \vfill
 \pagebreak
 
+\ifx\sineobmv\undefined
 \cuminitiali{}{temporalia/benedictio-solemn-ipsavirgo.gtex}
+\else
+\cuminitiali{}{temporalia/benedictio-solemn-divinum.gtex}
+\fi
 
 \vspace{7mm}
 
@@ -518,7 +534,11 @@
 \vfill
 \pagebreak
 
+\ifx\sineobmv\undefined
 \cuminitiali{}{temporalia/benedictio-solemn-pervirginem.gtex}
+\else
+\cuminitiali{}{temporalia/benedictio-solemn-adsocietatem.gtex}
+\fi
 
 \vspace{7mm}
 
@@ -1062,7 +1082,11 @@
 
 \vspace{2mm}
 
+\ifx\sineobmv\undefined
 \cuminitiali{VIII}{temporalia/benedicamus-officium-bmv.gtex}
+\else
+\cuminitiali{IV}{temporalia/benedicamus-feria-advequad.gtex}
+\fi
 
 \vspace{1mm}
 
