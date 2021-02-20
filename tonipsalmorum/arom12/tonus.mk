@@ -103,6 +103,7 @@ TONUS-viiisoll-a = 1 3 1 2
 TONUS-viiisoll-c = 1 3 1 2
 TONUS-viiisoll-g = 1 3 1 2
 TONUS-viiisoll-g2 = 1 3 1 2
+TONUS-viiisoll-g5 = 1 3 1 2
 TONUS-dir = 1 2 0 0
 TONUS-irreg = 1 0 0 4
 TONUS-per = 1 3 1 1
