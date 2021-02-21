@@ -251,7 +251,7 @@ per infiníta sǽcula sæculórum.
 \pagebreak
 
 \ifx\magnificati\undefined
-\pars{Canticum B.  Mariæ V.} \scriptura{Lc. 1, 54.55.52; \textbf{H425}}
+\pars{Canticum B. Mariæ V.} \scriptura{Lc. 1, 54.55.52; \textbf{H425}}
 
 \vspace{-4mm}
 
@@ -319,7 +319,6 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
-\iffalse
 \hora{Ad Matutinum.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \vspace{2mm}
@@ -328,11 +327,15 @@ per infiníta sǽcula sæculórum.
 
 \vspace{2mm}
 
+\ifx\invitatorium\undefined
 \pars{Invitatorium.} \scriptura{Ps. 94, 1; Psalmus 94}
 
 \vspace{-6mm}
 
 \antiphona{E}{temporalia/inv-veniteexsultemus.gtex}
+\else
+\invitatorium
+\fi
 
 \vfill
 \pagebreak
@@ -413,10 +416,14 @@ per infiníta sǽcula sæculórum.
 \nocturnoi
 \fi
 
+\ifx\matversusi\undefined
 \pars{Versus.} \scriptura{Ps. 118, 55}
 
 % Versus. %%%
 \sineinitiali{temporalia/versus-memorfui.gtex}
+\else
+\matversusi
+\fi
 
 \vspace{5mm}
 
@@ -541,10 +548,14 @@ per infiníta sǽcula sæculórum.
 \nocturnoii
 \fi
 
+\ifx\matversusii\undefined
 \pars{Versus.} \scriptura{Ps. 118, 62}
 
 % Versus. %%%
 \sineinitiali{temporalia/versus-medianocte.gtex}
+\else
+\matversusii
+\fi
 
 \vspace{5mm}
 
@@ -927,7 +938,11 @@ Orémus:
 \cuminitiali{}{temporalia/capitulum-Benedictio.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}
 \else
+\ifx\lectiobrevis\undefined
 \capitulum
+\else
+\lectiobrevis
+\fi
 \fi
 
 \vfill
@@ -943,6 +958,7 @@ Orémus:
 \vfill
 \pagebreak
 
+\ifx\hymnuslaudes\undefined
 \ifx\hiemalis\undefined
 \pars{Hymnus} \scriptura{Gregorius Magnus (\olddag{} 604)}
 
@@ -954,13 +970,16 @@ Orémus:
 \cuminitiali{I}{temporalia/hym-AEterneRerum.gtex}
 \vspace{-3mm}
 \fi
+\else
+\hymnuslaudes
+\fi
 
 \vfill
 %\pagebreak
 
-\pars{Versus.} \scriptura{Ps. 92, 1}
+\pars{Versus.} \scriptura{Ps. 90, 11}
 
-\sineinitiali{temporalia/versus-dominusregnavit.gtex}
+\sineinitiali{temporalia/versus-angelis.gtex}
 
 \vfill
 \pagebreak
@@ -976,7 +995,11 @@ Orémus:
 
 \pagebreak
 
+\ifx\oratio\undefined
 \oratioLaudes
+\else
+\oratio
+\fi
 
 \vspace{-1mm}
 
