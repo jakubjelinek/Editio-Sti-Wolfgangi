@@ -280,7 +280,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  eccenunctempus praedicanspraeceptum tuesgloriamea \
 			  confessionemetdecorem dominumdeumadoremus sustinuimuspacem \
 			  inlegedomini odominesalvummefac sicbenedicamte \
-			  inspirituhumilitatis laudatedeum ductusestiesus) \
+			  inspirituhumilitatis laudatedeum ductusestiesus \
+			  exaudiatdominusorationes tamquamauruminfornace) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -312,7 +313,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  dominumdeum veniteexsultemus jubilemusdeo avemaria christummariaefilium \
 			  hodiesivocem nonsitvobisvanum) \
 	 dominelabiamea tonusprecum dominusnosbenedicat \
-	 $(addprefix capitulum-,tuautem BenedictusDeus AbInitio Hortamur) \
+	 $(addprefix capitulum-,tuautem BenedictusDeus AbInitio Hortamur InterVestibulum) \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix versus-,custodi gaude dirigatur diffusa-tq angelis) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
@@ -398,7 +399,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   vocavitangelusdomini-CROCHU-cumdox paradisiportas-CROCHU \
 			   emendemusinmelius-CROCHU-cumdox inieiunioetfletu-CROCHU \
 			   inomnibusexhibeamus-CROCHU angelissuismandavit-CROCHU-cumdox \
-			   ductusestiesusindesertum-CROCHU-cumdox) \
+			   ductusestiesusindesertum-CROCHU-cumdox tribularersinescirem-CROCHU \
+			   paterpeccaviincaelum-CROCHU-cumdox) \
 	 $(addprefix oratio,-visita bmv 1) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
