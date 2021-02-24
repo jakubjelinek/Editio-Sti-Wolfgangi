@@ -28,6 +28,9 @@ MODUS-9xii_xxi = i-g3
 MODUS-9xxii_xxxii = ii-D
 MODUS-9xxxiii_xxxix = iv_-e
 MODUS-11 = viii-G
+MODUS-17ii_vii = vi-F
+MODUS-17viii_xx = i-g
+MODUS-17xxi_xxx = iv_-e
 MODUS-17xxxi_xxxv = viii-G
 MODUS-17xxxvi_xlvi = vii-c
 MODUS-17xlvii_li = vii-c2
@@ -41,6 +44,7 @@ MODUS-32 = iv-E
 MODUS-34i = iv-g
 MODUS-34ii = viii-G
 MODUS-34iii = viii-G
+MODUS-35 = ii-D
 MODUS-36i_xi = vi-F
 MODUS-36xii_xxix = ii-D
 MODUS-36iii = vi-F
@@ -54,6 +58,7 @@ MODUS-42 = vi-F
 MODUS-43i = viii-G
 MODUS-43ii = viii-C
 MODUS-43iii = i-g3
+MODUS-46 = viii-c
 MODUS-47 = iv-a
 MODUS-49i_vi = i-g2
 MODUS-49vii_xv = viii-G
@@ -121,7 +126,8 @@ MODUS-isaiae4 = vii-c
 MODUS-isaiae5 = iv-E iv_-e
 MODUS-isaiae8 = viii-g
 MODUS-isaiae9 = ii-D
-MODUS-isaiae10 = vi-F
+MODUS-isaiaee10 = vi-F
+MODUS-iudith2 = ii_-d
 MODUS-jeremiae2 = viii-G
 MODUS-jeremiae3 = iv_-e
 MODUS-moysis = e
@@ -130,7 +136,7 @@ MODUS-sapientia = v-a
 MODUS-tobiae = vii-a
 MODUS-tobiae2 = ii-D
 MODUS-benedictus = i-d i-f i-g5 ii_-d iii-b iv-E v-a vi-F vii-a vii-c2 vii-d2 viii-g viii-G viii-G2
-CANTICIS = anna isaiae2 isaiae3 isaiae4 isaiae5 isaiae8 isaiae9 isaiae10 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david
+CANTICIS = anna isaiae2 isaiae3 isaiae4 isaiae5 isaiae8 isaiae9 isaiae10 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david iudith2
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
 	   && $(SED) -i -e 's/\*/\\grestar{}/g' $@
@@ -223,7 +229,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  exoreinfantium nigrasumsedformosa misereremihi \
 			  confitebortibi intellegeclamorem laudamusnomentuum affertedomino \
 			  tudomine innocensmanibus exaltateregem rectosdecet \
-			  praeclarasalutisaurora extollensquaedam) \
+			  praeclarasalutisaurora extollensquaedam factusestadiutormeus \
+			  dominemagnuses rexomnisterrae) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -325,7 +332,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 benedictus-initium-viisoll-d ps17xxxvi_xlvi-initium-vii-c-trans ps116-initium-e \
 	 ps131i-initium-e ps96-initium-iii-a2 ps147-initium-e ps91-initium-e ps66-initium-e \
 	 isaiae3-initium-vii-d ps88xxxi_xxxviii-initium-viii-G_ ps97-initium-e ps98-initium-e \
-	 jeremiae2-initium-viii-G ps99-initium-e ps72iii-initium-iii-b ps102iii-initium-iii-g
+	 jeremiae2-initium-viii-G ps99-initium-e ps72iii-initium-iii-b ps102iii-initium-iii-g \
+	 ps47-initium-iv-a
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \

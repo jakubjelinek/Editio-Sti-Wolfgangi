@@ -183,7 +183,7 @@ MODUS-tobiae = vii-a
 MODUS-tobiae2 = ii-D
 MODUS-dan3 = ii-D
 MODUS-nuncdimittis = iii-a
-MODUS-magnificat = i-g2 ii-D ii_-B iv-A v-a vii-c viisoll-b viii-G viii-G2 viiisoll-g5
+MODUS-magnificat = i-g2 ii-D ii_-B iv-A iv-A_ v-a vii-c viisoll-b viii-G viii-G2 viiisoll-g5
 MODUS-benedictus = i-d i-f i-g5 isoll-d3 ii_-a ii_-d iii-b iv-E v-a vi-F vii-a vii-c2 vii-d2 viii-g viii-G viii-G2
 CANTICIS = anna isaiae2 isaiae3 isaiae4 isaiae5 isaiae8 isaiae9 isaiae10 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david nuncdimittis ezechiae2 lamentatio dan3 iudith2
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
@@ -289,7 +289,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  inspirituhumilitatis laudatedeum ductusestiesus \
 			  exaudiatdominusorationes tamquamauruminfornace \
 			  generatiohaec sicutfuitionas factusestadiutormeus \
-			  dominemagnuses rexomnisterrae) \
+			  dominemagnuses rexomnisterrae siergovos omuliermagnaest) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -418,7 +418,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 ps131i-initium-e ps96-initium-iii-a2 ps147-initium-e ps91-initium-e ps66-initium-e \
 	 isaiae3-initium-vii-d ps88xxxi_xxxviii-initium-viii-G_ ps97-initium-e ps98-initium-e \
 	 jeremiae2-initium-viii-G ps99-initium-e ps72iii-initium-iii-b ps102iii-initium-iii-g \
-	 ps103iii-initium-e
+	 ps103iii-initium-e ps47-initium-iv-a
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
