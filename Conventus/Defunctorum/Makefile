@@ -87,10 +87,11 @@ SCORES = $(addprefix vesp-ant,1 2 3 4 5) vesp-ant-magn \
 			  complaceat sitivitanima exsultabunt mesuscepit \
 			  delictaiuventutis egosum dominuscustodit egosum \
 			  heume omnequoddat operamanuum placebo) \
-	 $(addprefix versus-,audivi aporta collocet netradas) \
+	 $(addprefix versus-,audivi aporta collocet netradas \
+			     aporta-alt collocet-alt netradas-alt) \
 	 benedicamus-duplex-laudes benedicamus-duplex-vesperae \
 	 deusinadiutorium-communis supplicatiolitaniae oratiodominica \
-	 dominusvobiscum-solemnis domineexaudi magnificat-initium-viisoll-c \
+	 dominusvobiscum-solemnis domineexaudi magnificat-initium-viisoll-c magnificat-initium-vii-c \
 	 benedictio-noctemquietam jubedomnebenedicere lectiobrevis-fratressobrii \
 	 convertenosdeus deusinadiutorium-communis \
 	 oratio-visita benedicamus-minor ant-salveregina-simplex \
@@ -104,9 +105,11 @@ SCORES = $(addprefix vesp-ant,1 2 3 4 5) vesp-ant-magn \
 	 benedicamus-solemnis-laud ps26-initium-iv-E ps26-initium-iv_-e seq-DiesIrae \
 	 $(addprefix resp-,credoquod-GN quilazarum-GN dominequando-CROCHU \
 			   mementomei-CROCHU heumihi-CROCHU nerecorderis-CROCHU \
-			   peccantemme-CROCHU dominesecundum-CROCHU liberamedominedemorte-CROCHU)
+			   peccantemme-CROCHU dominesecundum-CROCHU liberamedominedemorte-CROCHU \
+			   subvenite-gn)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = seq-DiesIrae-bohtext.tex
+OTHERDEPS = seq-DiesIrae-bohtext.tex $(TMP_DIR)/magnificatviic.tex $(TMP_DIR)/benedictus-initium-ii-D-auto.gtex \
+	    $(TMP_DIR)/benedictusiiD.tex
 LAPSALMSINITGABC = $(foreach P,$(filter-out 26iv_e 129d 118vi 118vii 118ix 118x 118xii 118xiii,$(PSALMS)),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,benedictus nuncdimittis ezechiae,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(TMP_DIR)/ps129-initium-$(MODUS-129d)-auto.gabc \
@@ -129,9 +132,11 @@ iter-left := . $(TMP_DIR) $(addprefix cantus/,amon33 triplex76 nrom02) \
 	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 triplex76)
 include $(iter)
 
-all: defunctorum.pdf omniumdefunctorum.pdf
+all: defunctorum.pdf omniumdefunctorum.pdf defunctorum-breviori.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDREQUIEMAETERNAM) $(LAPSALMOPTS)
-$(TMP_DIR)/magnificat.tex: PSALMOPTS = $(APPENDREQUIEMAETERNAM) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
+$(TMP_DIR)/magnificat.tex $(TMP_DIR)/magnificatviic.tex: PSALMOPTS = $(APPENDREQUIEMAETERNAM) --accents-style bold --skip-verses 2 $(LAPSALMOPTSACC)
+$(TMP_DIR)/magnificatviic.tex: TONUS = 2 0 2 0
+$(TMP_DIR)/benedictusiiD.tex: TONUS = 1 0 1 1
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
 $(TMP_DIR)/ps129d-boh.tex: $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/ps129.pslm
 	$(GENPSALM)
@@ -158,10 +163,18 @@ $(TMP_DIR)/ps129d.tex: $(TMP_DIR)/ps%.tex: $(TMP_DIR)/ps%.pslm
 $(TMP_DIR)/ps26iv_e.tex: $(TMP_DIR)/ps%.tex: $(TMP_DIR)/ps%.pslm
 	$(GENPSALM)
 	$(SED) -i -e 'y/Jj/Ii/' $@
+$(TMP_DIR)/magnificatviic.tex: \
+$(TMP_DIR)/%.tex: $(PSALMS_DIR)/magnificat.pslm
+	$(GENPSALM)
+	$(SED) -i -e 'y/Jj/Ii/' $@
+$(TMP_DIR)/benedictusiiD.tex: \
+$(TMP_DIR)/%.tex: $(PSALMS_DIR)/benedictus.pslm
+	$(GENPSALM)
+	$(SED) -i -e 'y/Jj/Ii/' $@
 $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
 	$(GENPSCOMB)
 $(TMP_DIR)/magnificat-comb.tex: PSSKIP = 2
-defunctorum.pdf omniumdefunctorum.pdf: %.pdf: %.tex conventuscommune.tex translationes_cs.tex defunctorum.png torcello.jpg \
+defunctorum.pdf omniumdefunctorum.pdf defunctorum-breviori.pdf: %.pdf: %.tex conventuscommune.tex translationes_cs.tex defunctorum.png torcello.jpg \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<

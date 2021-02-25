@@ -89,9 +89,7 @@
 
 %%%% Titulni stranka
 \begin{titulusOfficii}
-\dies{Die 2. Novembris.}
-\nomenFesti{Commemoratione Omnium Fidelium Defunctorum}
-\celebratio{Duplex.}
+\nomenFesti{Officium Defunctorum}
 \end{titulusOfficii}
 
 \pars{}
@@ -180,7 +178,9 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
+\iffalse
 \subhora{In I. Nocturno}
+\fi
 
 \pars{Psalmus 1.} \scriptura{Ps. 5, 9; \textbf{H390}}
 
@@ -311,6 +311,7 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
+\iffalse
 \subhora{In II. Nocturno}
 
 \pars{Psalmus 4.} \scriptura{Ps. 22, 2; \textbf{H391}}
@@ -549,6 +550,7 @@ per infiníta sǽcula sæculórum.
 \vspace{-5mm}
 
 \responsorium{I}{temporalia/resp-liberamedominedemorte-CROCHU.gtex}{}
+\fi
 
 \vfill
 \pagebreak
@@ -701,12 +703,12 @@ per infiníta sǽcula sæculórum.
 
 \vspace{-2mm}
 
-\initiumpsalmi{temporalia/benedictus-initium-iisoll-D-auto.gtex}
+\initiumpsalmi{temporalia/benedictus-initium-ii-D-auto.gtex}
 
 \vspace{-1.5mm}
 
 %\psalmusEtTranslatioT{temporalia/benedictus-comb.tex}{10cm}
-\input{temporalia/benedictus.tex} \Abardot{}
+\input{temporalia/benedictusiiD.tex} \Abardot{}
 
 %\antiphona{}{temporalia/ant-egosum.gtex} % repeat the antiphon - new page
 
@@ -743,6 +745,7 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
+\iffalse
 \rubrica{Deinde:}
 
 \noindent \Vbardot{} A porta ínferi. \Rbardot{} Erue ánimas eórum.
@@ -760,6 +763,53 @@ per infiníta sǽcula sæculórum.
 \grechangedim{spaceabovelines}{2mm}{scalable}
 \cuminitiali{}{temporalia/oratio2.gtex}
 \grechangedim{spaceabovelines}{0cm}{scalable}
+\fi
+
+\pars{Responsorium.} \scriptura{Cf. Lc. 16, 22; \textbf{H389}}
+
+\vspace{-7mm}
+
+\responsorium{IV}{temporalia/resp-subvenite-gn.gtex}{}
+
+\vfill
+
+\vspace{-2mm}
+
+\begin{parcolumns}[nofirstindent=true]{2}
+\colchunk{%
+\noindent Orémus.
+
+\noindent Absólve, quǽsumus, Dómine, ánimam fámuli tui {\color{red}N.}, ut defúnctus sǽculo tibi vivat: \gredagger{}
+
+\noindent et quæ per fragilitátem carnis humána conversatióne commísit, \grestar{}
+
+\noindent tu vénia misericordíssimæ pietátis abstérge.
+
+\noindent Per Dóminum nostrum Iesum Christum fílium tuum: \gredagger{}
+
+\noindent qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, \grestar{}
+
+\noindent per ómnia sǽcula sæculórum. \Rbardot{} Amen.
+}
+\colchunk{%
+\noindent Orémus.
+
+\noindent Deus, cui próprium est míseri semper et párcere: te súpplices exorámus pro ánima fámuli tui {\color{red}N.}, quam hódie de hoc sǽculo migráre jussísti, \gredagger{}
+
+\noindent ut non tradas eam in manus inimíci, neque obliviscáris in finem, sed júbeas eam a sanctis Angelis súscipi, et ad pátriam paradísi perdúci; \grestar{}
+
+\noindent ut quia in te sperávit et crédidit, non pœnas inférni sustíneat, sed gáudia ætérna possídeat.
+
+\noindent Per Christum Dóminum nostrum. \Rbardot{} Amen.
+}
+\end{parcolumns}
+
+\vfill
+
+\noindent Fidélium ánimæ per misericórdiam Dei requiéscant in pace. \Rbardot{} Amen.
+
+\vfill
+\pagebreak
 
 \rubrica{Post Orationem dicitur (semper plurali numero):}
 
@@ -901,10 +951,10 @@ per infiníta sǽcula sæculórum.
 \scriptura{Lc. 1, 46-55}
 
 \cantusSineNeumas
-\initiumpsalmi{temporalia/magnificat-initium-viisoll-c.gtex}
+\initiumpsalmi{temporalia/magnificat-initium-vii-c.gtex}
 
 %\psalmusEtTranslatioT{temporalia/magnificat-comb.tex}{10.3cm}
-\input{temporalia/magnificat.tex} \Abardot{}
+\input{temporalia/magnificatviic.tex} \Abardot{}
 
 \vfill
 \pagebreak
