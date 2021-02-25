@@ -289,7 +289,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  inspirituhumilitatis laudatedeum ductusestiesus \
 			  exaudiatdominusorationes tamquamauruminfornace \
 			  generatiohaec sicutfuitionas factusestadiutormeus \
-			  dominemagnuses rexomnisterrae siergovos omuliermagnaest) \
+			  dominemagnuses rexomnisterrae siergovos omuliermagnaest \
+			  amendicovobis) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
