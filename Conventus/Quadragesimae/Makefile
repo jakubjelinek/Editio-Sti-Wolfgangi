@@ -67,13 +67,13 @@ MODUS-47 = iv-a
 MODUS-49i_vi = i-g2
 MODUS-49vii_xv = viii-G
 MODUS-49xvi_xxiii = e
-MODUS-50 = i-a2 vi-F vii-a viii-G2
+MODUS-50 = i-a2 vi-F vii-a vii-c viii-G2
 MODUS-51 = iv_-e
 MODUS-54i = viii-c
 MODUS-54ii = vii-c2
 MODUS-54iii = viii-G
 MODUS-56 = viii-g
-MODUS-62 = vii-a
+MODUS-62 = i-g vii-a
 MODUS-64 = viii-A
 MODUS-66 = e dir
 MODUS-67i = vii-a
@@ -128,7 +128,7 @@ MODUS-113 = per
 MODUS-114 = i-g2
 MODUS-115 = viii-A
 MODUS-116 = ii_-B viii-A e
-MODUS-117 = ii-D
+MODUS-117 = ii-D viii-C
 MODUS-118xix = vii-a e
 MODUS-128 = ii-D
 MODUS-129 = viii-A
@@ -159,9 +159,9 @@ MODUS-144ii = vii-c2
 MODUS-145 = iv-E iv_-e
 MODUS-146 = viii-g viii-A
 MODUS-147 = vi-F e
-MODUS-148 = ii-D
-MODUS-149 = ii-D
-MODUS-150 = ii-D
+MODUS-148 = ii-D vii-a
+MODUS-149 = ii-D vii-a
+MODUS-150 = ii-D vii-a
 MODUS-anna = ii-D
 MODUS-david = i-f
 MODUS-ecclesiastici = iii-a
@@ -184,10 +184,10 @@ MODUS-moysis2i_xii = vi-F
 MODUS-sapientia = v-a
 MODUS-tobiae = vii-a
 MODUS-tobiae2 = ii-D
-MODUS-dan3 = ii-D
+MODUS-dan3 = ii-D viii-G
 MODUS-nuncdimittis = iii-a
 MODUS-magnificat = isoll-f i-g2 ii-D ii_-B iv-A iv-A_ v-a vii-c viisoll-b viii-G viii-G2 viiisoll-g5
-MODUS-benedictus = i-d i-f i-g5 isoll-d3 ii_-a ii_-d iii-b iv-E v-a vi-F vii-a vii-c2 vii-d2 viii-g viii-G viii-G2
+MODUS-benedictus = i-d i-f i-g5 isoll-d3 iisoll-A ii_-a ii_-d iii-b iv-E v-a vi-F vii-a vii-c2 vii-d2 viii-g viii-G viii-G2
 CANTICIS = anna isaiae2 isaiae3 isaiae4 isaiae5 isaiae8 isaiae9 isaiae10 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david nuncdimittis ezechiae2 lamentatio dan3 iudith2
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -293,7 +293,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  exaudiatdominusorationes tamquamauruminfornace \
 			  generatiohaec sicutfuitionas factusestadiutormeus \
 			  dominemagnuses rexomnisterrae siergovos omuliermagnaest \
-			  amendicovobis oratepropersequentibus visionemquamvidistis) \
+			  amendicovobis oratepropersequentibus visionemquamvidistis \
+			  assumpsit dexteradomini dominelabiamea factusestadiutor \
+			  statuiteainaeternum triumpuerorum) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -413,7 +415,10 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   emendemusinmelius-CROCHU-cumdox inieiunioetfletu-CROCHU \
 			   inomnibusexhibeamus-CROCHU angelissuismandavit-CROCHU-cumdox \
 			   ductusestiesusindesertum-CROCHU-cumdox tribularersinescirem-CROCHU \
-			   paterpeccaviincaelum-CROCHU-cumdox) \
+			   paterpeccaviincaelum-CROCHU-cumdox tollearmatua-CROCHU \
+			   ecceodorfiliimei-CROCHU dettibideus-CROCHU-cumdox dumexiretiacob-CROCHU \
+			   sidominusdeusmeus-CROCHU eritmihidominusindeum-CROCHU-cumdox \
+			   vididominumfacieadfaciem-CROCHU-cumdox) \
 	 $(addprefix oratio,-visita bmv 1 2) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
