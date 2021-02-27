@@ -186,7 +186,7 @@ MODUS-tobiae = vii-a
 MODUS-tobiae2 = ii-D
 MODUS-dan3 = ii-D
 MODUS-nuncdimittis = iii-a
-MODUS-magnificat = i-g2 ii-D ii_-B iv-A iv-A_ v-a vii-c viisoll-b viii-G viii-G2 viiisoll-g5
+MODUS-magnificat = isoll-f i-g2 ii-D ii_-B iv-A iv-A_ v-a vii-c viisoll-b viii-G viii-G2 viiisoll-g5
 MODUS-benedictus = i-d i-f i-g5 isoll-d3 ii_-a ii_-d iii-b iv-E v-a vi-F vii-a vii-c2 vii-d2 viii-g viii-G viii-G2
 CANTICIS = anna isaiae2 isaiae3 isaiae4 isaiae5 isaiae8 isaiae9 isaiae10 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david nuncdimittis ezechiae2 lamentatio dan3 iudith2
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
@@ -293,7 +293,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  exaudiatdominusorationes tamquamauruminfornace \
 			  generatiohaec sicutfuitionas factusestadiutormeus \
 			  dominemagnuses rexomnisterrae siergovos omuliermagnaest \
-			  amendicovobis oratepropersequentibus) \
+			  amendicovobis oratepropersequentibus visionemquamvidistis) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -325,7 +325,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  dominumdeum veniteexsultemus jubilemusdeo avemaria christummariaefilium \
 			  hodiesivocem nonsitvobisvanum) \
 	 dominelabiamea tonusprecum dominusnosbenedicat \
-	 $(addprefix capitulum-,tuautem BenedictusDeus AbInitio Hortamur InterVestibulum) \
+	 $(addprefix capitulum-,tuautem BenedictusDeus AbInitio Hortamur InterVestibulum \
+				FratresRogamus) \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix versus-,custodi gaude dirigatur diffusa-tq angelis) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
@@ -413,7 +414,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   inomnibusexhibeamus-CROCHU angelissuismandavit-CROCHU-cumdox \
 			   ductusestiesusindesertum-CROCHU-cumdox tribularersinescirem-CROCHU \
 			   paterpeccaviincaelum-CROCHU-cumdox) \
-	 $(addprefix oratio,-visita bmv 1) \
+	 $(addprefix oratio,-visita bmv 1 2) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 $(addprefix ant-avereginacaelorum-,simplex solemnis) benedictio-noctemquietam \
