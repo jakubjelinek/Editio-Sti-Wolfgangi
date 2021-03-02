@@ -186,7 +186,7 @@ MODUS-tobiae = vii-a
 MODUS-tobiae2 = ii-D
 MODUS-dan3 = ii-D viii-G
 MODUS-nuncdimittis = iii-a
-MODUS-magnificat = isoll-f i-g i-g2 ii-D ii_-B iv-A iv-A_ iv-d v-a vii-c viisoll-b viii-G viii-G2 viiisoll-g5
+MODUS-magnificat = isoll-f i-f i-g i-g2 ii-D ii_-B iv-A iv-A_ iv-d v-a vii-c viisoll-b viii-G viii-G2 viiisoll-g5
 MODUS-benedictus = i-d i-f i-g i-g5 isoll-d3 iisoll-A ii_-a ii_-d iii-b iv-E v-a vi-F vii-a vii-c2 vii-d2 viii-g viii-G viii-G2
 CANTICIS = anna isaiae2 isaiae3 isaiae4 isaiae5 isaiae8 isaiae9 isaiae10 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david nuncdimittis ezechiae2 lamentatio dan3 iudith2
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
@@ -296,7 +296,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  amendicovobis oratepropersequentibus visionemquamvidistis \
 			  assumpsit dexteradomini dominelabiamea factusestadiutor \
 			  statuiteainaeternum triumpuerorum estoteergomisericordes \
-			  quimemisitmecumest unusestenim omnesenimvos) \
+			  quimemisitmecumest unusestenim omnesenimvos quicumquevoluerit \
+			  tradeturenim) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -419,7 +420,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   paterpeccaviincaelum-CROCHU-cumdox tollearmatua-CROCHU \
 			   ecceodorfiliimei-CROCHU dettibideus-CROCHU-cumdox dumexiretiacob-CROCHU \
 			   sidominusdeusmeus-CROCHU eritmihidominusindeum-CROCHU-cumdox \
-			   vididominumfacieadfaciem-CROCHU-cumdox) \
+			   vididominumfacieadfaciem-CROCHU-cumdox oravitiacobetdixit-CROCHU \
+			   dixitangelusadiacob-CROCHU) \
 	 $(addprefix oratio,-visita bmv 1 2) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
