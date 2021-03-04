@@ -38,6 +38,7 @@ TONUS-ii_soll-f = 1 3 1 0
 TONUS-iii-a = 2 0 2 0
 TONUS-iii-a2 = 2 0 2 0
 TONUS-iii-a3 = 2 0 2 0
+TONUS-iii-a4 = 2 0 2 0
 TONUS-iii-b = 2 0 2 0
 TONUS-iii-g = 2 0 2 0
 TONUS-iii-g2 = 2 0 2 0
