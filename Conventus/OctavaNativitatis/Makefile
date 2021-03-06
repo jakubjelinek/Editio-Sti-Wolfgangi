@@ -79,7 +79,7 @@ MODUS-magnificat-II = iv-E
 MODUS-magnificat-III = viiisoll-G
 MODUS-magnificat-IV = iisoll-A
 MODUS-magnificat-V = iiisoll-e
-MODUS-magnificat-VI = isoll-a3
+MODUS-magnificat-VI = isoll-a5
 MODUS-magnificat-VII = viii-g
 MODUS-benedictus-I = vii-d
 MODUS-benedictus-II = viii-G2
@@ -130,7 +130,7 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			  CordeNatus FitPorta RadixIesse) \
 	 $(addprefix resp-,notumfecit verbumcaro-simplex verbumcaro) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
-	 $(foreach M,vi-F iv-E viiisoll-G iisoll-A iiisoll-e isoll-a3 viii-g,magnificat-initium-$(M)) \
+	 $(foreach M,vi-F iv-E viiisoll-G iisoll-A iiisoll-e isoll-a5 viii-g,magnificat-initium-$(M)) \
 	 $(addprefix versus-,notumfecit-communis tamquam verbumcaro) \
 	 oratio oratiobmv oratiodomii supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
