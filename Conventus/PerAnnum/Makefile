@@ -18,7 +18,7 @@ COMMON_CHANTS_DIR = $(EDITIO_ROOTDIR)/cantuscommunes
 PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
-PSALMS = 5 6 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 11 17xxxi_xxxv 17xxxvi_xlvi 17xlvii_li 18i 23 28 30i 30ii 30iii 32 34i 34ii 34iii 36i_xi 36xii_xxix 36iii 37ii_v 37vi_xiii 37xiv_xxiii 38i 38ii 41 42 43i 43ii 43iii 47 49i_vi 49vii_xv 49xvi_xxiii 50 51 54i 54ii 54iii 56 64 66 67i 67ii 67iii 68ii_xiii 68xiv_xxii 68iii 72i 72ii 72iii 76 79 80 84 85 86 88ii_xix 88xx_xxx 88xxxi_xxxviii 88xxxix_xlvi 88xlvii_liii 89 91 96 97 98 99 102i 102ii 102iii 106i 106ii 106iii 107 116 118xix 130 131i 131ii 134i 135i 135ii 135iii 142 145 146 147
+PSALMS = 5 6 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 11 17xxxi_xxxv 17xxxvi_xlvi 17xlvii_li 18i 23 28 30i 30ii 30iii 32 34i 34ii 34iii 36i_xi 36xii_xxix 36iii 37ii_v 37vi_xiii 37xiv_xxiii 38i 38ii 41 42 43i 43ii 43iii 47 49i_vi 49vii_xv 49xvi_xxiii 50 51 54i 54ii 54iii 56 64 66 67i 67ii 67iii 68ii_xiii 68xiv_xxii 68iii 72i 72ii 72iii 76 79 80 83 84 85 86 88ii_xix 88xx_xxx 88xxxi_xxxviii 88xxxix_xlvi 88xlvii_liii 89 91 95 96 97 98 99 102i 102ii 102iii 106i 106ii 106iii 107 116 118xix 130 131i 131ii 134i 135i 135ii 135iii 142 145 146 147
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-5 = viii-A
 MODUS-6 = iv-E
@@ -60,9 +60,9 @@ MODUS-43ii = ii_-a viii-C
 MODUS-43iii = i-g3 ii-D
 MODUS-46 = viii-c
 MODUS-47 = iv-a
-MODUS-49i_vi = i-g2
-MODUS-49vii_xv = viii-G
-MODUS-49xvi_xxiii = e
+MODUS-49i_vi = i-g2 viii-A
+MODUS-49vii_xv = viii-G e
+MODUS-49xvi_xxiii = vii-c e
 MODUS-50 = i-a2 vi-F vii-a viii-G2
 MODUS-51 = iv_-e
 MODUS-54i = viii-c
@@ -83,6 +83,7 @@ MODUS-72iii = iii-b
 MODUS-76 = viii-G
 MODUS-79 = ii_-B
 MODUS-80 = i-g5
+MODUS-83 = viii-G
 MODUS-84 = viii-G
 MODUS-85 = ii-D
 MODUS-86 = i-g
@@ -93,6 +94,7 @@ MODUS-88xxxix_xlvi = vii-a
 MODUS-88xlvii_liii = vi-F
 MODUS-89 = i-g vi-F
 MODUS-91 = viii-g e
+MODUS-95 = ii-D
 MODUS-96 = iii-a2
 MODUS-97 = e
 MODUS-98 = e
@@ -129,7 +131,8 @@ MODUS-isaiae4 = vii-c
 MODUS-isaiae5 = iv-E iv_-e
 MODUS-isaiae8 = viii-g
 MODUS-isaiae9 = ii-D
-MODUS-isaiaee10 = vi-F
+MODUS-isaiae10 = vi-F
+MODUS-isaiae11 = viii-g
 MODUS-iudith2 = ii_-d
 MODUS-jeremiae2 = viii-G
 MODUS-jeremiae3 = iv_-e
@@ -139,7 +142,7 @@ MODUS-sapientia = v-a
 MODUS-tobiae = vii-a
 MODUS-tobiae2 = ii-D
 MODUS-benedictus = i-d i-f i-g5 ii_-d iii-b iv-E v-a vi-F vii-a vii-c2 vii-d2 viii-g viii-G viii-G2
-CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae8 isaiae9 isaiae10 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david iudith2
+CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae8 isaiae9 isaiae10 isaiae11 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david iudith2
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
 	   && $(SED) -i -e 's/\*/\\grestar{}/g' $@
@@ -234,7 +237,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  tudomine innocensmanibus exaltateregem rectosdecet \
 			  praeclarasalutisaurora extollensquaedam factusestadiutormeus \
 			  dominemagnuses rexomnisterrae extendedomine confundanturqui mementodomine \
-			  tuamdomineexcita conversusestfuror) \
+			  tuamdomineexcita conversusestfuror veniteascendamus dixiiniquis \
+			  cantatedominoetbenedicite) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
