@@ -95,7 +95,7 @@ MODUS-77lxv_lxxii = viii-G
 MODUS-79 = ii_-B
 MODUS-80 = i-g5
 MODUS-83 = viii-G
-MODUS-84 = viii-G
+MODUS-84 = vi-F viii-G
 MODUS-85 = ii-D
 MODUS-86 = i-g
 MODUS-88ii_xix = viii-G
@@ -314,7 +314,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  dixitautempateradservos eccedeusmeus regnumtuumdomine inaeternumet \
 			  labiamealaudabunt intravitiesus facbenigne vimvirtutissuae soletluna \
 			  veniteascendamus dixiiniquis cantatedominoetbenedicite \
-			  amendicovobisquianemo iesusautemtransiens) \
+			  amendicovobisquianemo iesusautemtransiens ubiduoveltres \
+			  nondicotibi benedixistidomine siquisfecerit) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -444,7 +445,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   iosephdumintraret-CROCHU mementomeidumbene-CROCHU \
 			   tollitehincvobiscum-CROCHU-cumdox salusnostrainmanutuaest-CROCHU-cumdox \
 			   isteestfrater-CROCHU dixitrubenfratribussuis-CROCHU \
-			   meritohaecpatimur-CROCHU-cumdox) \
+			   meritohaecpatimur-CROCHU-cumdox dixitiosephundecim-CROCHU \
+			   nuntiaveruntiacobdicentes-CROCHU) \
 	 $(addprefix oratio,-visita bmv 1 2 3) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \

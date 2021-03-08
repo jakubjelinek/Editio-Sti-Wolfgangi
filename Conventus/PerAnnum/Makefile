@@ -84,7 +84,7 @@ MODUS-76 = viii-G
 MODUS-79 = ii_-B
 MODUS-80 = i-g5
 MODUS-83 = viii-G
-MODUS-84 = viii-G
+MODUS-84 = vi-F viii-G
 MODUS-85 = ii-D
 MODUS-86 = i-g
 MODUS-88ii_xix = viii-G
@@ -238,7 +238,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  praeclarasalutisaurora extollensquaedam factusestadiutormeus \
 			  dominemagnuses rexomnisterrae extendedomine confundanturqui mementodomine \
 			  tuamdomineexcita conversusestfuror veniteascendamus dixiiniquis \
-			  cantatedominoetbenedicite) \
+			  cantatedominoetbenedicite benedixistidomine) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
