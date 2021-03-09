@@ -197,7 +197,7 @@ MODUS-tobiae = vii-a
 MODUS-tobiae2 = ii-D
 MODUS-dan3 = i-a4 ii-D viii-G
 MODUS-nuncdimittis = iii-a
-MODUS-magnificat = isoll-f i-f i-g i-g2 i-g4 ii-D ii_-B iii-a iv-A iv-A_ iv-d v-a vii-c vii-c2 viisoll-b viii-G viii-G2 viiisoll-g viiisoll-g5
+MODUS-magnificat = isoll-f i-f i-g i-g2 i-g4 ii-D ii_-B iii-a iv-A iv-A_ iv-d v-a vii-b vii-c vii-c2 viisoll-b viii-G viii-G2 viiisoll-g viiisoll-g5
 MODUS-benedictus = i-a4 i-d i-f i-g i-g4 i-g5 isoll-a5 isoll-d3 iisoll-A ii_-a ii_-d iii-a4 iii-b iv-E v-a vi-F vii-a vii-c2 vii-d2 viii-g viii-G viii-G2 viii-G5
 CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae8 isaiae9 isaiae10 isaiae11 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david nuncdimittis ezechiae2 lamentatio dan3 iudith2
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
@@ -315,7 +315,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  labiamealaudabunt intravitiesus facbenigne vimvirtutissuae soletluna \
 			  veniteascendamus dixiiniquis cantatedominoetbenedicite \
 			  amendicovobisquianemo iesusautemtransiens ubiduoveltres \
-			  nondicotibi benedixistidomine siquisfecerit) \
+			  nondicotibi benedixistidomine siquisfecerit lexpermoysendata \
+			  nonlotismanibus) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
