@@ -316,7 +316,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  veniteascendamus dixiiniquis cantatedominoetbenedicite \
 			  amendicovobisquianemo iesusautemtransiens ubiduoveltres \
 			  nondicotibi benedixistidomine siquisfecerit lexpermoysendata \
-			  nonlotismanibus) \
+			  nonlotismanibus etcumeiecisset omnesquihabebantinfirmos) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -447,7 +447,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   tollitehincvobiscum-CROCHU-cumdox salusnostrainmanutuaest-CROCHU-cumdox \
 			   isteestfrater-CROCHU dixitrubenfratribussuis-CROCHU \
 			   meritohaecpatimur-CROCHU-cumdox dixitiosephundecim-CROCHU \
-			   nuntiaveruntiacobdicentes-CROCHU) \
+			   nuntiaveruntiacobdicentes-CROCHU tollitehincvobiscum-CROCHU \
+			   isteestfrater-CROCHU-cumdox) \
 	 $(addprefix oratio,-visita bmv 1 2 3) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
