@@ -18,7 +18,7 @@ COMMON_CHANTS_DIR = $(EDITIO_ROOTDIR)/cantuscommunes
 PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
-PSALMS = 1 2 3 4 5 6 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 11 17ii_vii 17viii_xx 17xxi_xxx 17xxxi_xxxv 17xxxvi_xlvi 17xlvii_li 18i 23 28 30i 30ii 30iii 32 34i 34ii 34iii 35 36i_xi 36xii_xxix 36iii 37ii_v 37vi_xiii 37xiv_xxiii 38i 38ii 41 42 43i 43ii 43iii 46 47 49i_vi 49vii_xv 49xvi_xxiii 50 51 54i 54ii 54iii 56 62 64 66 67i 67ii 67iii 68ii_xiii 68xiv_xxii 68iii 72i 72ii 72iii 76 77i_xvi 77iii 77xxxii_xxxix 77xl_li 77lii_lxiv 77lxv_lxxii 79 80 83 84 85 86 88ii_xix 88xx_xxx 88xxxi_xxxviii 88xxxix_xlvi 88xlvii_liii 89 90 91 95 96 97 98 99 102i 102ii 102iii 103i 103ii 103iii 104i 104ii 104iii 105i 105ii 105iii 106i 106ii 106iii 107 109 110 111 112 113 114 115 116 117 118xix 128 129 130 131 131i 131ii 132 133 134 134i 135 135i 135ii 135iii 136 137 138i 138ii 139 140 141 142 143i 143ii 144i 144ii 144x_xiii 144xiv_xxi 145 146 147 148 149 150
+PSALMS = 1 2 3 4 5 6 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 11 17ii_vii 17viii_xx 17xxi_xxx 17xxxi_xxxv 17xxxvi_xlvi 17xlvii_li 18i 23 28 30i 30ii 30iii 32 34i 34ii 34iii 35 36i_xi 36xii_xxix 36iii 37ii_v 37vi_xiii 37xiv_xxiii 38i 38ii 41 42 43i 43ii 43iii 46 47 49i_vi 49vii_xv 49xvi_xxiii 50 51 54i 54ii 54iii 56 62 64 65i 65ii 66 67i 67ii 67iii 68ii_xiii 68xiv_xxii 68iii 72i 72ii 72iii 76 77i_xvi 77iii 77xxxii_xxxix 77xl_li 77lii_lxiv 77lxv_lxxii 79 80 83 84 85 86 88ii_xix 88xx_xxx 88xxxi_xxxviii 88xxxix_xlvi 88xlvii_liii 89 90 91 95 96 97 98 99 102i 102ii 102iii 103i 103ii 103iii 104i 104ii 104iii 105i 105ii 105iii 106i 106ii 106iii 107 109 110 111 112 113 114 115 116 117 118xix 128 129 130 131 131i 131ii 132 133 134 134i 135 135i 135ii 135iii 136 137 138i 138ii 139 140 141 142 143i 143ii 144i 144ii 144x_xiii 144xiv_xxi 145 146 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-1 = i-g
 MODUS-2 = i-a4
@@ -39,7 +39,7 @@ MODUS-17xxxi_xxxv = viii-G
 MODUS-17xxxvi_xlvi = vii-c
 MODUS-17xlvii_li = vii-c2
 MODUS-18i = ii-D
-MODUS-23 = iv_-e
+MODUS-23 = iv_-e viii-G
 MODUS-28 = vii-a
 MODUS-30i = viii-G
 MODUS-30ii = e-a
@@ -73,8 +73,10 @@ MODUS-54i = viii-c
 MODUS-54ii = vii-c2
 MODUS-54iii = viii-G
 MODUS-56 = viii-g
-MODUS-62 = i-g vii-a viii-G
+MODUS-62 = i-g vii-a viii-G e
 MODUS-64 = viii-A
+MODUS-65i = vi-F
+MODUS-65ii = ii_-a
 MODUS-66 = e dir
 MODUS-67i = vii-a
 MODUS-67ii = i-f
@@ -168,9 +170,9 @@ MODUS-144xiv_xxi = viii-a
 MODUS-145 = iv-E iv_-e
 MODUS-146 = viii-g viii-A
 MODUS-147 = vi-F e
-MODUS-148 = i-g ii-D vii-a
-MODUS-149 = i-g ii-D vii-a
-MODUS-150 = i-g ii-D vii-a
+MODUS-148 = i-a i-g ii-D vii-a
+MODUS-149 = i-a i-g ii-D vii-a
+MODUS-150 = i-a i-g ii-D vii-a
 MODUS-anna = ii-D
 MODUS-david = i-f
 MODUS-ecclesiastici = iii-a
@@ -197,8 +199,8 @@ MODUS-tobiae = vii-a
 MODUS-tobiae2 = ii-D
 MODUS-dan3 = i-a4 ii-D viii-G
 MODUS-nuncdimittis = iii-a
-MODUS-magnificat = isoll-f i-f i-g i-g2 i-g4 ii-D ii_-B iii-a iiisoll-a iv-A iv-A_ iv-d v-a vii-b vii-c vii-c2 viisoll-b viii-G viii-G2 viiisoll-g viiisoll-g5
-MODUS-benedictus = i-a4 i-d i-f i-g i-g4 i-g5 isoll-a5 isoll-d3 iisoll-A ii_-a ii_-d iii-a4 iii-b iv-E v-a vi-F vii-a vii-c2 vii-d2 viii-g viii-G viii-G2 viii-G5
+MODUS-magnificat = isoll-f isoll-g i-f i-g i-g2 i-g4 ii-D ii_-B iii-a iiisoll-a iv-A iv-A_ iv-d v-a vii-b vii-c vii-c2 viisoll-b viii-G viii-G2 viiisoll-g viiisoll-g5
+MODUS-benedictus = i-a4 i-d i-f i-g i-g4 i-g5 isoll-a5 isoll-d3 iisoll-A ii_-a ii_-d iii-a4 iii-b iv-E v-a vi-F vii-a vii-c2 vii-d2 viii-g viii-G viii-G2 viii-G5 viiisoll-G
 CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae8 isaiae9 isaiae10 isaiae11 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david nuncdimittis ezechiae2 lamentatio dan3 iudith2
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -318,7 +320,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  nondicotibi benedixistidomine siquisfecerit lexpermoysendata \
 			  nonlotismanibus etcumeiecisset omnesquihabebantinfirmos \
 			  domineutvideo magisterquodestmandatum istaestspeciosa stansalonge \
-			  nemotecondemnavit) \
+			  nemotecondemnavit subiitergoinmontem bonumestsperare \
+			  tuncacceptabis potensesdomine sicutmoyses regesterrae dominiestterra \
+			  benedicitegentes introiboindomumtuam) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -450,7 +454,10 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   isteestfrater-CROCHU dixitrubenfratribussuis-CROCHU \
 			   meritohaecpatimur-CROCHU-cumdox dixitiosephundecim-CROCHU \
 			   nuntiaveruntiacobdicentes-CROCHU tollitehincvobiscum-CROCHU \
-			   isteestfrater-CROCHU-cumdox) \
+			   isteestfrater-CROCHU-cumdox locutusestdominusadmoysen-CROCHU \
+			   stetitmoysescoram-CROCHU cantemusdominogloriose-CROCHU-cumdox \
+			   inmariviatua-CROCHU quipersequebanturpopulum-CROCHU \
+			   moysesfamulusdomini-CROCHU-cumdox eccemittoangelummeum-CROCHU-cumdox) \
 	 $(addprefix oratio,-visita bmv 1 2 3 4) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
