@@ -18,24 +18,24 @@ COMMON_CHANTS_DIR = $(EDITIO_ROOTDIR)/cantuscommunes
 PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
-PSALMS = 2 18i 44 62 109 112 116 121 126 145 146 147 149
+PSALMS = 20 62 91i 91ii 109 112 116 121 126 145 146 147 149
 include $(PSALMTONES_DIR)/tonus.mk
-MODUS-2 = viii-G
-MODUS-18i = ii_-B
-MODUS-44 = vi-F
-MODUS-62 = iii-b
-MODUS-109 = iii-b
-MODUS-112 = i-a4
+MODUS-20 = vii-a
+MODUS-62 = vii-d
+MODUS-91i = i-g3
+MODUS-91ii = iii-a
+MODUS-109 = i-a4
+MODUS-112 = i-a4 ii-D
 MODUS-116 = ii-D
-MODUS-121 = iii-b
-MODUS-126 = viii-a
+MODUS-121 = iii-e
+MODUS-126 = iv-e2
 MODUS-145 = iii-e
 MODUS-146 = iv-e2
 MODUS-147 = vii-a
-MODUS-149 = viii-a
-MODUS-dan3 = iii-b
-MODUS-benedictus = isoll-f
-MODUS-magnificat = isoll-g3
+MODUS-149 = iv-e2
+MODUS-dan3 = iii-e
+MODUS-benedictus = viiisoll-G5
+MODUS-magnificat = isoll-g3 viiisoll-G
 CANTICIS = dan3
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -56,14 +56,17 @@ LAPSALMSSINEDOX = $(foreach P,115 148 149,$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/p
 		  $(foreach C,dan3,$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/$(C)-$(M)-sinedox.tex))
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant-,cumessetdesponsata exsurgensiosephasomno iacobautemgenuit \
-			  iosephfilidavid iosephvireius missusestangelus) \
-	 $(addprefix hym-,TeIoseph) \
-	 $(addprefix resp-,invocavidominum) \
-	 $(addprefix deusinadiutorium-,solemnis alter communis solemnis-tq alter-tq communis-tq) \
+			  iosephfilidavid iosephvireius missusestangelus \
+			  ibantparentesiesu noninvenientesiesum dixitmatereius \
+			  eratiosephetmaria fidelisservusetprudens eccefidelis) \
+	 $(addprefix hym-,TeIoseph CaelitumIoseph IsteQuem) \
+	 $(addprefix resp-,invocavidominum constituiteum) \
+	 $(addprefix deusinadiutorium-,solemnis alter communis solemnis-tq alter-tq communis-tq \
+				       solemnis-quad alter-quad communis-quad) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
-	 $(addprefix inv-,) \
+	 $(addprefix inv-,laudemusdeumioseph) \
 	 $(addprefix capitulum-,VirFidelis) $(addprefix versus-,constituit) \
 	 dominelabiamea tonusprecum dominusnosbenedicat \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
@@ -71,7 +74,8 @@ SCORES = $(addprefix ant-,cumessetdesponsata exsurgensiosephasomno iacobautemgen
 					deus christus ignem \
 					evangelica divinum adsocietatem ille \
 					noscum ipsavirgo pervirginem) \
-	 $(addprefix resp-,) oratio \
+	 $(addprefix resp-,justusgerminabit-CROCHU dominusquielegit-CROCHU \
+			   istehomoperfecit-CROCHU-cumdox) oratio \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
