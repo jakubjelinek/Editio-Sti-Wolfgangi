@@ -333,7 +333,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  benedictusdominusdeusmeus nemoineummisit quimesanumfecit \
 			  clamormeus1 respicehumilitatem iusticonfitebuntur1 \
 			  quiverbummeumaudit euntesdoceteomnes illehomoquidicituriesus \
-			  prophetamagnus egononabhomine quidoctifuerint) \
+			  prophetamagnus egononabhomine quidoctifuerint iamhiemstransiit \
+			  quidamenimiudaei) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
