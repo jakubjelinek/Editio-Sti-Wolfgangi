@@ -75,6 +75,7 @@ TONUS-ivsoll-d = 1 3 1 3
 TONUS-v-a = 1 0 2 0
 TONUS-v-g = 1 0 2 0
 TONUS-vsoll-a = 1 3 2 0
+TONUS-vsoll-g = 1 3 2 0
 TONUS-vi-C = 1 1 1 2
 TONUS-vi-F = 1 1 1 2
 TONUS-visoll-C = 1 3 1 2
