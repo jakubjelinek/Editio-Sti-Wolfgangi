@@ -205,7 +205,7 @@ MODUS-tobiae2 = ii-D
 MODUS-dan3 = i-a4 ii-D viii-G
 MODUS-dan32 = i-f
 MODUS-nuncdimittis = iii-a
-MODUS-magnificat = isoll-f isoll-g i-f i-g i-g2 i-g4 i-a ii-D ii_-B iii-a iiisoll-a iv-A iv-A_ iv-d v-a vii-b vii-c vii-c2 viisoll-b viii-G viii-G2 viiisoll-g viiisoll-g5
+MODUS-magnificat = isoll-f isoll-g i-f i-g i-g2 i-g4 i-a ii-D ii_-B iii-a iiisoll-a iv-A iv-A_ iv-d v-a vii-b vii-c vii-c2 viisoll-b viii-G viii-G2 viiisoll-G viiisoll-g viiisoll-g5
 MODUS-benedictus = i-a4 i-d i-f i-g i-g4 i-g5 isoll-a5 isoll-d3 iisoll-A ii_-a ii_-d iii-a4 iii-b iv-E v-a vi-F vii-a vii-c2 vii-d2 viii-g viii-G viii-G2 viii-G5 viiisoll-G
 CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae8 isaiae9 isaiae10 isaiae11 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david nuncdimittis ezechiae2 lamentatio dan3 dan32 iudith2
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
@@ -334,7 +334,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  clamormeus1 respicehumilitatem iusticonfitebuntur1 \
 			  quiverbummeumaudit euntesdoceteomnes illehomoquidicituriesus \
 			  prophetamagnus egononabhomine quidoctifuerint iamhiemstransiit \
-			  quidamenimiudaei) \
+			  quidamenimiudaei egosumquitestimonium) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -350,13 +350,14 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  ConsorsPaterni PergrataMundo TeLucis-quadragesimae \
 			  IamChriste NuncTempus EcceJamNoctis AEterneRerum OGloriosaDomina \
 			  AdPrecesNostras ChristeLuxVera AmorisSensusErige AdestoChriste SalveDies \
-			  VitaSanctorum QuemTerra AudiBenigne ExMore PrecemurOmnes) \
+			  VitaSanctorum QuemTerra AudiBenigne ExMore PrecemurOmnes \
+			  VexillaRegis) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
 			   benedictusdominus inmedioecclesiae sapientiamsanctorum \
 			   inmatutinis deusmeusadiutormeus ipseliberavitme scapulissuis \
-			   christefilidei-tq) \
+			   christefilidei-tq deoreleonis deoreleonis-feriale) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis solemnis-tq alter-tq communis-tq \
 				       solemnis-quad alter-quad communis-quad) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
@@ -368,9 +369,10 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  hodiesivocem nonsitvobisvanum) \
 	 dominelabiamea tonusprecum dominusnosbenedicat \
 	 $(addprefix capitulum-,tuautem BenedictusDeus AbInitio Hortamur InterVestibulum \
-				FratresRogamus FratresEstote FratresScriptum) \
+				FratresRogamus FratresEstote FratresScriptum FratresChristus \
+				TuAutemDomineSabaoth) \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
-	 $(addprefix versus-,custodi gaude dirigatur diffusa-tq angelis) \
+	 $(addprefix versus-,custodi gaude dirigatur diffusa-tq angelis eripe) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
 					evangelica divinum adsocietatem ille \
@@ -474,7 +476,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   audiisraelpraecepta-CROCHU-cumdox vosquitransituriestis-CROCHU \
 			   sicutfuicummoyse-CROCHU-cumdox adduxivosperdesertum-CROCHU \
 			   populemeusquidfeci-CROCHU eccemittoangelummeum-CROCHU-cumdox) \
-	 $(addprefix oratio,-visita bmv 1 2 3 4) \
+	 $(addprefix oratio,-visita bmv 1 2 3 4 5) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 $(addprefix ant-avereginacaelorum-,simplex solemnis) benedictio-noctemquietam \
