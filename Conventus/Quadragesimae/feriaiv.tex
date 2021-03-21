@@ -1123,32 +1123,61 @@ Spíritus Sancti tui cáritas dírigat corda et lábia nostra, \gredagger{} ut i
 \pagebreak
 
 \ifx\postcinerum\undefined
+\ifx\tempuspassionis\undefined
 \pars{Capitulum.} \scriptura{Ioel 2, 17}
 
 \grechangedim{interwordspacetext}{0.12 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \cuminitiali{}{temporalia/capitulum-InterVestibulum.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\else
+\pars{Capitulum.} \scriptura{Ier. 11, 20}
+
+\grechangedim{interwordspacetext}{0.12 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{}{temporalia/capitulum-TuAutemDomineSabaoth.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\fi
 
 \vfill
 
+\ifx\tempuspassionis\undefined
 \pars{Responsorium breve.} \scriptura{Ps. 90, 4}
 
 \cuminitiali{IV}{temporalia/resp-scapulissuis.gtex}
+\else
+\pars{Responsorium breve.} \scriptura{Cf. Ps. 21, 22}
+
+\cuminitiali{IV}{temporalia/resp-deoreleonis-feriale.gtex}
+\fi
 
 \vfill
 \pagebreak
 
+\ifx\tempuspassionis\undefined
 \pars{Hymnus.} \scriptura{Gregorius Magnus (\olddag{} 604)}
 
 \antiphona{II}{temporalia/hym-AudiBenigne.gtex}
+\else
+\pars{Hymnus.} \scriptura{Venantius Fortunatus (sæc. VI)}
+
+\vspace{-3mm}
+
+\antiphona{I}{temporalia/hym-VexillaRegis.gtex}
+\fi
 \vspace{-3mm}
 
 \vfill
 %\pagebreak
 
+\ifx\tempuspassionis\undefined
 \pars{Versus.} \scriptura{Ps. 90, 11}
 
 \sineinitiali{temporalia/versus-angelis.gtex}
+\else
+\vspace{3mm}
+\pars{Versus.} \scriptura{Ps. 139, 2}
+
+\sineinitiali{temporalia/versus-eripe.gtex}
+\fi
 
 \vfill
 \pagebreak

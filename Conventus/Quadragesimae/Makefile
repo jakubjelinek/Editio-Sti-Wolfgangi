@@ -336,7 +336,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  prophetamagnus egononabhomine quidoctifuerint iamhiemstransiit \
 			  quidamenimiudaei egosumquitestimonium abrahampatervester \
 			  nisigranumfrumenti intribulatione iudicastidomine \
-			  numquidredditurprobono populemeusquidfeci videdomineafflictionem) \
+			  numquidredditurprobono populemeusquidfeci videdomineafflictionem \
+			  siquissitit inclinavitseiesus) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -359,7 +360,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
 			   benedictusdominus inmedioecclesiae sapientiamsanctorum \
 			   inmatutinis deusmeusadiutormeus ipseliberavitme scapulissuis \
-			   christefilidei-tq deoreleonis deoreleonis-feriale erueaframea) \
+			   christefilidei-tq deoreleonis deoreleonis-feriale erueaframea \
+			   erueaframea-feriale) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis solemnis-tq alter-tq communis-tq \
 				       solemnis-quad alter-quad communis-quad) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
@@ -368,7 +370,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 				  dominica-advequad feria-advequad) \
 	 $(addprefix inv-,alleluiachristumdominum regemmagnum dominumquifecit adoremusdominum \
 			  dominumdeum veniteexsultemus jubilemusdeo avemaria christummariaefilium \
-			  hodiesivocem nonsitvobisvanum hodiesivocem-CROCHU) \
+			  hodiesivocem nonsitvobisvanum hodiesivocem-CROCHU hodiesivocem-CROCHU-sinedox \
+			  christumdominum) \
 	 dominelabiamea tonusprecum dominusnosbenedicat \
 	 $(addprefix capitulum-,tuautem BenedictusDeus AbInitio Hortamur InterVestibulum \
 				FratresRogamus FratresEstote FratresScriptum FratresChristus \
@@ -480,7 +483,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   populemeusquidfeci-CROCHU eccemittoangelummeum-CROCHU-cumdox \
 			   istisuntdies-CROCHU multiplicatisunt-CROCHU quicustodiebant-CROCHU \
 			   deusmeusestune-CROCHU inteiactatussum-CROCHU inproximoest-CROCHU \
-			   adiutoretsusceptormeus-CROCHU) \
+			   adiutoretsusceptormeus-CROCHU doceaminiquosviastuas-CROCHU \
+			   neperdascumimpiis-CROCHU totadiecontristatus-CROCHU) \
 	 $(addprefix oratio,-visita bmv 1 2 3 4 5) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
