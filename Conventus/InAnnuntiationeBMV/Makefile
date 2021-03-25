@@ -24,18 +24,18 @@ MODUS-2 = v-a
 MODUS-18i = v-a
 MODUS-44 = iii-a
 MODUS-62 = viii-G5
-MODUS-109 = iii-b
-MODUS-112 = i-f
+MODUS-109 = viii-G5
+MODUS-112 = i-g
 MODUS-116 = ii_-B
-MODUS-121 = iii-b
-MODUS-126 = viii-a
+MODUS-121 = viii-G
+MODUS-126 = i-f
 MODUS-145 = i-f
 MODUS-146 = viii-G
-MODUS-147 = iii-e
+MODUS-147 = iii-e viii-c
 MODUS-149 = viii-G
 MODUS-dan3 = iv-e2
 MODUS-benedictus = viisoll-a
-MODUS-magnificat = viiisoll-G
+MODUS-magnificat = viisoll-d viiisoll-G
 CANTICIS = dan3
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -63,8 +63,9 @@ SCORES = $(addprefix ant-,oadmirabile quandonatuses rubumquemviderat eccemariage
 			  netimeasmaria orietursicutsol spiritussanctus \
 			  orietursicutsol-tq spiritussanctusetvirtus-tq \
 			  ingressusangelusadmariam ecceiamveniet insoleposuit \
-			  netimeasmariainvenisti quomodofiet venielectamea) \
-	 $(addprefix hym-,AveMarisStella-iv IamCaeca OLuxSalutis) \
+			  netimeasmariainvenisti quomodofiet venielectamea \
+			  gabrielangelus) \
+	 $(addprefix hym-,AveMarisStella-iv AveMarisStella IamCaeca OLuxSalutis) \
 	 $(addprefix resp-,avemaria-alt notumfecitdominus adoratedominum angelusdomini) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis solemnis-tq alter-tq communis-tq \
 				       solemnis-quad alter-quad) \
