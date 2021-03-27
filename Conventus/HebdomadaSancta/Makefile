@@ -28,10 +28,10 @@ MODUS-5 = viii-A
 MODUS-6 = iv-E
 MODUS-8 = i-f i-g
 MODUS-9ii_xi = viii-G
-MODUS-9xii_xxi = i-g3
+MODUS-9xii_xxi = i-g i-g3
 MODUS-9xxii_xxxii = ii-D
-MODUS-9xxxiii_xxxix = iv_-e
-MODUS-10 = ii_-f
+MODUS-9xxxiii_xxxix = iv_-e v-a
+MODUS-10 = i-g ii_-f
 MODUS-11 = viii-G
 MODUS-17ii_vii = vi-F
 MODUS-17viii_xx = i-g
@@ -340,7 +340,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  numquidredditurprobono populemeusquidfeci videdomineafflictionem \
 			  siquissitit inclinavitseiesus egoprincipiumquietloquor \
 			  vosascenditeaddiem sivosmanseritis multabonaopera \
-			  principessacerdotum fulcitemefloribus) \
+			  principessacerdotum fulcitemefloribus beatusvir-cgp \
+			  exsurgedominedeus-cgp exsurgedominesalvum-cgp quamadmirabileest-cgp) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
