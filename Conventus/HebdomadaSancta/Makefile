@@ -402,6 +402,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   indiequainvocavi noliessemihi salvummefac \
 			   insurrexeruntinme opprobriumfactussum viriimpiidixerunt) \
 	 oratio $(addprefix oratio,2) \
+	 $(addprefix lam,4_1 4_2 4_3 5_1 5_2 5_3 6_1 6_2 6_3) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 $(addprefix ant-avereginacaelorum-,simplex solemnis) benedictio-noctemquietam \
@@ -421,7 +422,7 @@ GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PS
 	     [ $(2) = "dir" ] && cd .. && $(SED) -i -e '/(::)$$$$/{/(,) (::)$$$$/!{s/<b>//g;s/<\/b>//g}}' $(3) || :
 FERIAE = ii iii iv v vi
 PDFI = $(patsubst %,feria%-mh.pdf,$(FERIAE))
-PDFII = sabbatosancto.pdf
+PDFII = feriavidemortedomini.pdf sabbatosancto.pdf
 PDFIII = dominicainpalmis.pdf
 PDF = $(PDFI) $(PDFII) $(PDFIII)
 all: $(PDF)
