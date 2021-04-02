@@ -402,7 +402,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   indiequainvocavi noliessemihi salvummefac \
 			   insurrexeruntinme opprobriumfactussum viriimpiidixerunt) \
 	 oratio $(addprefix oratio,2) \
-	 $(addprefix lam,4_1 4_2 4_3 5_1 5_2 5_3 6_1 6_2 6_3) \
+	 $(addprefix lam,4_1 4_2 4_3 5_1 5_2 5_3 6_1 6_2 6_3 7_1 7_2 7_3 8_1 8_2 8_3 8_4 \
+			 9_1 9_2 9_3 9_4) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 $(addprefix ant-avereginacaelorum-,simplex solemnis) benedictio-noctemquietam \
