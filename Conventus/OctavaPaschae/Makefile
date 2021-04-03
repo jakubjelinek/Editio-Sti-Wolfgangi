@@ -63,9 +63,9 @@ ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(patsubst %,ant-%,jesusjunxit quisunt stetitjesus videte mittite dixit \
 			    maria tulerunt undecim dataest currebant \
 			    angelusautemdomini respondensautemangelus \
-			    etecceterraemotus eratautem praetimoreautem) \
+			    etecceterraemotus eratautem praetimoreautem \
+			    egosumquisum postulavi egodormivi) \
 	 $(addprefix magnificat-initium-,viii-G viii-G2 viii-g vii-d) \
-	 $(patsubst %,an-%,egosumquisum postulavi egodormivi) \
 	 dominelabiamea inv-surrexitdominusvere \
 	 $(patsubst %,absolutio-%,ipsius avinculis exaudi) \
 	 $(patsubst %,resp-%,virtutemagna deoreprudentis eccevicitleo egosumvitisvera \
