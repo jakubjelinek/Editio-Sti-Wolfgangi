@@ -353,7 +353,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  principessacerdotum fulcitemefloribus \
 			  angelusautemdomini etecceterraemotus eratautem praetimoreautem \
 			  respondensautemangelus angelusautemdomini etecceterraemotus \
-			  eratautem respondensautemangelus) \
+			  eratautem respondensautemangelus etrespicientes etvaldemane) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -377,7 +377,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   benedictusdominus inmedioecclesiae sapientiamsanctorum \
 			   inmatutinis deusmeusadiutormeus ipseliberavitme scapulissuis \
 			   christefilidei-tq deoreleonis deoreleonis-feriale erueaframea \
-			   erueaframea-feriale surrexitdominusdesepulcro surrexitdominusvere) \
+			   erueaframea-feriale surrexitdominusdesepulcro surrexitdominusvere \
+			   surrexitdominusvere-solemnis) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis solemnis-tq alter-tq communis-tq \
 				       solemnis-quad alter-quad communis-quad) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
