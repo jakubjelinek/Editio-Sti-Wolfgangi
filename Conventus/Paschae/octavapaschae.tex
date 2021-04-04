@@ -1,7 +1,7 @@
 % LuaLaTeX
 
 \documentclass[a4paper, twoside, 12pt]{article}
-\usepackage[latin]{babel} 
+\usepackage[latin]{babel}
 %\usepackage[landscape, left=3cm, right=1.5cm, top=2cm, bottom=1cm]{geometry} % okraje stranky
 %\usepackage[landscape, a4paper, mag=1166, truedimen, left=2cm, right=1.5cm, top=1.6cm, bottom=0.95cm]{geometry} % okraje stranky
 \usepackage[landscape, a4paper, mag=1400, truedimen, left=0.5cm, right=0.5cm, top=0.5cm, bottom=0.5cm]{geometry} % okraje stranky
@@ -12,10 +12,6 @@
 
 % shortcut for Junicode without ligatures (for the Czech texts)
 \newfontfamily\nlfont[FeatureFile={junicode.fea}, Ligatures={Common, TeX}, RawFeature=+fixi]{Junicode}
-
-% Hebrew font:
-% http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=SILHebrUnic2
-\newfontfamily\hebfont[Scale=1]{Ezra SIL}
 
 \usepackage{multicol}
 \usepackage{color}
@@ -38,13 +34,8 @@
 \setlength{\headheight}{14.5pt}
 
 \input{conventuscommune.tex} % Often used macros
-\input{translationes_cs.tex} % Czech translations of the proper texts
 
-\newcommand{\annusEditionis}{2020}
-
-\def\hebinitial#1{%
-\leavevmode{\newbox\hebbox\setbox\hebbox\hbox{\hebfont{#1}\hskip 1mm}\kern -\wd\hebbox\hbox{\hebfont{#1}\hskip 1mm}}%
-}
+\newcommand{\annusEditionis}{2021}
 
 %%%% Vicekrat opakovane kousky
 
@@ -77,8 +68,7 @@
 % Please report to http://home.gna.org/gregorio/gregoriotex/details for more details and options
 \grechangedim{afterinitialshift}{2.2mm}{scalable}
 \grechangedim{beforeinitialshift}{2.2mm}{scalable}
-
-\grechangedim{interwordspacetext}{0.32 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \grechangedim{annotationraise}{-0.2cm}{scalable}
 
 % Here we set the initial font. Change 38 if you want a bigger initial.
@@ -89,34 +79,104 @@
 
 %%%% Titulni stranka
 \begin{titulusOfficii}
-\nomenFesti{\feria{}}
-\celebratio{Duplex 1. classis.}
+\titulus{}
 \end{titulusOfficii}
+
+\scriptura{}
+
+\pars{}
+
+\vfill
+
+\begin{center}
+%Ad usum et secundum consuetudines chori \guillemotright{}Conventus Choralis\guillemotleft.
+
+%Editio Sancti Wolfgangi \annusEditionis
+\end{center}
 
 \pagebreak
 
-% graphic
 \renewcommand{\headrulewidth}{0pt} % no horiz. rule at the header
 \fancyhf{}
 \pagestyle{fancy}
 
+\pars{Oratio ante divinum Officium.}
+
+\lettrine{{\color{red}A}}{peri,} Dómine, os meum ad benedicéndum nomen sanctum tuum:
+munda quoque cor meum ab ómnibus vanis, pervérsis, et aliénis
+cogitatiónibus:
+intelléctum illúmina, afféctum inflámma,
+ut digne, atténte ac devóte hoc Offícium recitáre váleam,
+et exaudíri mérear ante conspéctum Divínæ Maiestátis tuæ.
+Per Christum, Dóminum nostrum.
+\Rbardot{} Amen.
+
+Dómine, in unióne illíus divínæ intentiónis,
+qua ipse in terris laudes Deo persolvísti,
+has tibi Horas \rubricatum{(vel \textnormal{hanc tibi Horam})} persólvo.
+
+\vfill
+
+\pars{Oratio post divinum Officium.} \scriptura{}
+
+\rubrica{
+  Orationem sequentem devote post Officium recitantibus
+  Leo Papa X. defectus, et culpas in eo persolvendo ex humana
+  fragilitate contractas, indulsit, et dicitur flexis genibus.
+}
+
+\lettrine{{\color{red}S}}{acrosánctæ} et indivíduæ Trinitáti,
+crucifíxi Dómini nostri Iesu Christi humanitáti,
+beatíssimæ et gloriosíssimæ sempérque Vírginis Maríæ
+fecúndæ integritáti, 
+et ómnium Sanctórum universitáti
+sit sempitérna laus, honor, virtus et glória
+ab omni creatúra,
+nobísque remíssio ómnium peccatórum,
+per infiníta sǽcula sæculórum.
+\Rbardot{} Amen.
+
+\noindent \Vbardot{} Beáta víscera Maríæ Virginis, quæ portavérunt
+ætérni Patris Fílium.\\
+\Rbardot{} Et beáta úbera, quæ lactavérunt Christum Dominum.
+
+\rubrica{Et dicitur secreto \textnormal{Pater noster.} et \textnormal{Ave María.}}
+
 \cantusSineNeumas
 
-\hora{Ad Matutinum.}
+\vfill
+
+\vspace{-5mm}
+
+\hora{Ad Matutinum.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \vspace{2mm}
 
 \cuminitiali{}{temporalia/dominelabiamea.gtex}
 
-\vspace{2mm}
+%\vspace{2mm}
+\vfill
+\pagebreak
 
+\ifx\invitatorium\undefined
 \pars{Invitatorium.} \scriptura{Lc. 24, 34; Psalmus 94; \textbf{H232}}
 
 \vspace{-6mm}
 
 \antiphona{VI}{temporalia/inv-surrexitdominusvere.gtex}
 
-\rubrica{Hymnus non dicatur.}
+\rubrica{Hymnus omittitur.}
+\else
+\invitatorium
+\fi
+
+\vfill
+\pagebreak
+
+\ifx\hymnusmatutinum\undefined
+\else
+\hymnusmatutinum
+\fi
 
 \vfill
 \pagebreak
@@ -125,9 +185,9 @@
 
 \vspace{-5mm}
 
-\antiphona{I f}{temporalia/an-egosumquisum.gtex}
+\antiphona{II D}{temporalia/ant-egosumquisum.gtex}
 
-%\vspace{-5mm}
+%\vspace{-2mm}
 
 \scriptura{Ps. 1}
 
@@ -135,26 +195,24 @@
 
 \initiumpsalmi{temporalia/ps1-initium-ii-D-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps1-comb.tex}{10cm}
-\input{temporalia/ps1.tex} \Abardot{}
+\input{temporalia/ps1-ii-D.tex} \Abardot{}
 
 \vfill
 \pagebreak
 
 \pars{Psalmus 2.} \scriptura{\Abardot{} Ps. 2, 8; \textbf{H226}}
 
-\vspace{-2mm}
+\vspace{-4mm}
 
-\antiphona{I f}{temporalia/an-postulavi.gtex}
+\antiphona{I f}{temporalia/ant-postulavi.gtex}
 
-\vspace{-2mm}
+%\vspace{-2mm}
 
 \scriptura{Ps. 2}
 
 \initiumpsalmi{temporalia/ps2-initium-i-f-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps2-comb.tex}{10cm}
-\input{temporalia/ps2.tex} \Abardot{}
+\input{temporalia/ps2-i-f.tex} \Abardot{}
 
 \vfill
 \pagebreak
@@ -163,21 +221,24 @@
 
 %\vspace{-4mm}
 
-\antiphona{VIII C}{temporalia/an-egodormivi.gtex}
+\antiphona{VIII C}{temporalia/ant-egodormivi.gtex}
 
-%\vspace{-0.3cm}
+%\vspace{-2mm}
 
 \scriptura{Ps. 3}
 
 \initiumpsalmi{temporalia/ps3-initium-viii-c-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps3-comb.tex}{10cm}
-\input{temporalia/ps3.tex} \Abardot{}
+\input{temporalia/ps3-viii-c.tex} \Abardot{}
 
 \vfill
 \pagebreak
 
-\versusMatutinum
+\pars{Versus.}
+
+\noindent \Vbardot{} Surréxit Dóminus de sepúlcro, allelúia.
+
+\noindent \Rbardot{} Qui pro nobis pepéndit in ligno, allelúia.
 
 \vspace{5mm}
 
@@ -192,7 +253,7 @@
 \vfill
 \pagebreak
 
-\cuminitiali{}{temporalia/benedictio-solemn-evangelica.gtex}
+\cuminitiali{}{temporalia/benedictio-solemn-benedictione.gtex}
 
 \vspace{7mm}
 
@@ -209,7 +270,7 @@
 \vfill
 \pagebreak
 
-\cuminitiali{}{temporalia/benedictio-solemn-divinum.gtex}
+\cuminitiali{}{temporalia/benedictio-solemn-unigenitus.gtex}
 
 \vspace{7mm}
 
@@ -226,13 +287,11 @@
 \vfill
 \pagebreak
 
-\cuminitiali{}{temporalia/benedictio-solemn-adsocietatem.gtex}
+\cuminitiali{}{temporalia/benedictio-solemn-spiritus.gtex}
 
 \vspace{7mm}
 
-\pars{Lectio III.}
-
-\noindent Et quóniam sermo huc noster evásit, considerémus qua grátia secúndum Ioánnem credíderint Apóstoli, qui gavísi sunt; secúndum Lucam quasi incréduli redarguántur: ibi Spíritum Sanctum accéperint, hic sedére in civitáte iubeántur, quoadúsque induántur virtúte ex alto. Et vidétur mihi ille quasi Apóstolus maióra et altióra tetigísse, hic sequéntia et humánis próxima: hic histórico usus circúitu, ille compéndio: quia et de illo dubitári non potest, qui testimónium pérhibet de iis, quibus ipse intérfuit, et verum est testimónium eius: et ab hoc quoque, qui Evangelísta esse méruit, vel negligéntiæ, vel mendácii suspiciónem æquum est propulsári. Et ídeo verum putámus utrúmque, non sententiárum varietáte, nec personárum diversitáte distínctum. Nam etsi primo Lucas eos non credidísse dicat, póstea tamen credidísse demónstrat: et si prima considerémus, contrária sunt: si sequéntia, certum est conveníre.
+\lectioiii
 
 \noindent \Vbardot{} Tu autem, Dómine, miserére nobis.
 \noindent \Rbardot{} Deo grátias.
@@ -240,16 +299,26 @@
 \vfill
 \pagebreak
 
-% Te Deum
+\ifx\responsoriumiii\undefined
+\else
+\responsoriumiii
 
-%\pars{Hymnus Ambrosianus}
+\vfill
+\pagebreak
+\fi
+
+% Te Deum
 
 \vspace{-5mm}
 
+\pars{Hymnus Ambrosianus} \scriptura{Tonus Solemnis}
+
+\vspace{-2mm}
+
 {
+\grechangedim{interwordspacetext}{0.26 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{III}{temporalia/tedeum-solemnis-gn.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
-\cuminitiali{III}{temporalia/tedeum-solemnis.gtex}
-\grechangedim{interwordspacetext}{0.32 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 }
 
 \vfill
@@ -265,9 +334,7 @@
 
 Orémus:
 
-\oratioMatutinum
-
-\noindent \Rbardot{} Amen.
+\oratioLaudes
 
 \vspace{7mm}
 
@@ -277,9 +344,9 @@ Orémus:
 
 \noindent \Rbardot{} Et clamor meus ad te véniat.
 
-\noindent \Vbardot{} Benedicámus Dómino, allelúia, allelúia.
+\noindent \Vbardot{} Benedicámus Dómino.
 
-\noindent \Rbardot{} Deo grátias, allelúia, allelúia.
+\noindent \Rbardot{} Deo grátias.
 
 \noindent \Vbardot{} Fidélium ánimæ per misericórdiam Dei requiéscant in pace.
 
@@ -289,7 +356,6 @@ Orémus:
 \pagebreak
 
 \hora{Ad Laudes.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\sideThumbs{Laudes}
 
 \cantusSineNeumas
 
@@ -299,11 +365,10 @@ Orémus:
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 
 \vfill
-%\pagebreak
 
 \pars{Psalmus 1.} \scriptura{Mt. 28, 2; \textbf{H230}}
 
-\vspace{-0.4cm}
+\vspace{-4mm}
 
 \antiphona{VIII G}{temporalia/ant-angelusautemdomini.gtex}
 
@@ -311,8 +376,7 @@ Orémus:
 
 \initiumpsalmi{temporalia/ps92-initium-viii-G-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps92-comb.tex}{10cm}
-\input{temporalia/ps92.tex}
+\input{temporalia/ps92-viii-G.tex}
 
 \vfill
 
@@ -333,8 +397,7 @@ Orémus:
 
 \initiumpsalmi{temporalia/ps99-initium-vii-c-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps99-comb.tex}{10cm}
-\input{temporalia/ps99.tex} \Abardot{}
+\input{temporalia/ps99-vii-c.tex} \Abardot{}
 
 \vfill
 \pagebreak
@@ -349,8 +412,7 @@ Orémus:
 
 \initiumpsalmi{temporalia/ps62-initium-viii-C-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps62-comb.tex}{10cm}
-\input{temporalia/ps62.tex} \Abardot{}
+\input{temporalia/ps62-viii-C.tex} \Abardot{}
 
 \vfill
 \pagebreak
@@ -365,8 +427,7 @@ Orémus:
 
 \initiumpsalmi{temporalia/dan3-initium-vii-a-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/dan3-comb.tex}{10cm}
-\input{temporalia/dan3.tex}
+\input{temporalia/dan3-vii-a-sinedox.tex}
 
 \rubrica{Hic non dicitur Gloria Patri, neque Amen.}
 
@@ -391,34 +452,29 @@ Orémus:
 
 \initiumpsalmi{temporalia/ps148-initium-viii-g-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps148-comb.tex}{10cm}
-\input{temporalia/ps148.tex}
+\input{temporalia/ps148-viii-g-sinedox.tex}
 
 \rubrica{Hic non dicitur Gloria Patri.}
 
 \vfill
 \pagebreak
 
-%
 \scriptura{Psalmus 149.}
 
 \initiumpsalmi{temporalia/ps149-initium-viii-g-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps149-comb.tex}{10cm}
-\input{temporalia/ps149.tex}
+\input{temporalia/ps149-viii-g-sinedox.tex}
 
 \rubrica{Hic non dicitur Gloria Patri.}
 
 \vfill
 \pagebreak
 
-%
 \scriptura{Psalmus 150.}
 
 \initiumpsalmi{temporalia/ps150-initium-viii-g-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps150-comb.tex}{10cm}
-\input{temporalia/ps150.tex}
+\input{temporalia/ps150-viii-g.tex}
 
 \vfill
 
@@ -436,16 +492,11 @@ Orémus:
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}}
 \capitulumLaudes
 
-% preklad Jeruz. bible
-%\trCapituliI
-
 \vfill
 
 \pars{Responsorium breve.} \scriptura{Cf. Mt. 28, 6; Cf. Gal. 3, 13}
 
-\cuminitiali{VI}{temporalia/respbr-laud.gtex}
-
-%\trResp
+\cuminitiali{VI}{temporalia/resp-surrexitdominusdesepulcro.gtex}
 
 \vfill
 \pagebreak
@@ -454,17 +505,12 @@ Orémus:
 
 \cuminitiali{VIII}{temporalia/hym-AuroraLucis.gtex}
 \vspace{-3mm}
-%\input{hym-AuroraLucis-bohtext.tex}
 
 \vfill
-%\pagebreak
 
 \pars{Versus.} \scriptura{Ps. 117, 24}
 
-% Versus. %%%
 \sineinitiali{temporalia/versus-haecdies.gtex}
-
-%\noindent \trVersus
 
 \vfill
 \pagebreak
@@ -476,17 +522,13 @@ Orémus:
 \vfill
 \pagebreak
 
-%\sideThumbs{{\scriptsize{}Fine horarum}}
-
 \anteOrationem
 
 \pagebreak
 
-% Oratio. %%%
 \oratioLaudes
 
 \vspace{-1mm}
-%\trOrationisI
 
 \vfill
 
@@ -504,13 +546,10 @@ Orémus:
 
 \vspace{1mm}
 
-\ifx\magnificat\undefined
-\else
 \vfill
 \pagebreak
 
 \hora{Ad Vesperas.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\sideThumbs{Vesperæ}
 
 \cantusSineNeumas
 
@@ -520,7 +559,6 @@ Orémus:
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 
 \vfill
-%\pagebreak
 
 \vspace{-2mm}
 
@@ -534,8 +572,7 @@ Orémus:
 
 \initiumpsalmi{temporalia/ps109-initium-viii-G-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps109-comb.tex}{10cm}
-\input{temporalia/ps109.tex}
+\input{temporalia/ps109-viii-G.tex}
 
 \antiphona{}{temporalia/ant-angelusautemdomini.gtex}
 
@@ -554,8 +591,7 @@ Orémus:
 
 \initiumpsalmi{temporalia/ps110-initium-vii-c-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps110-comb.tex}{10cm}
-\input{temporalia/ps110.tex} \Abardot{}
+\input{temporalia/ps110-vii-c.tex} \Abardot{}
 
 \vfill
 \pagebreak
@@ -570,8 +606,7 @@ Orémus:
 
 \initiumpsalmi{temporalia/ps111-initium-viii-C-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps111-comb.tex}{10cm}
-\input{temporalia/ps111.tex} \Abardot{}
+\input{temporalia/ps111-viii-C.tex} \Abardot{}
 
 \vfill
 \pagebreak
@@ -586,24 +621,22 @@ Orémus:
 
 \initiumpsalmi{temporalia/ps112-initium-viii-g-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps112-comb.tex}{10cm}
-\input{temporalia/ps112.tex} \Abardot{}
+\input{temporalia/ps112-viii-g.tex} \Abardot{}
 
 \vfill
 \pagebreak
 
 \capitulumLaudes
 
-% preklad Jeruz. bible
-%\trCapituliI
-
 \vfill
 
 \pars{Responsorium breve.} \scriptura{Lc. 24, 34}
 
-\cuminitiali{VI}{temporalia/respbr-vesp.gtex}
-
-%\trResp
+\ifx\dominicaresurrectionis\undefined
+\cuminitiali{VI}{temporalia/resp-surrexitdominusvere.gtex}
+\else
+\cuminitiali{VI}{temporalia/resp-surrexitdominusvere-solemnis.gtex}
+\fi
 
 \vfill
 \pagebreak
@@ -612,17 +645,13 @@ Orémus:
 
 \cuminitiali{VIII}{temporalia/hym-AdCoenam.gtex}
 \vspace{-3mm}
-%\input{hym-AdCoenam-bohtext.tex}
 
 \vfill
 \pagebreak
 
 \pars{Versus.} \scriptura{Ps. 117, 24}
 
-% Versus. %%%
 \sineinitiali{temporalia/versus-haecdies.gtex}
-
-%\noindent \trVersus
 
 \vfill
 \pagebreak
@@ -634,17 +663,13 @@ Orémus:
 \vfill
 \pagebreak
 
-%\sideThumbs{{\scriptsize{}Fine horarum}}
-
 \anteOrationem
 
 \pagebreak
 
-% Oratio. %%%
 \oratioLaudes
 
 \vspace{-1mm}
-%\trOrationisI
 
 \vfill
 
@@ -661,6 +686,5 @@ Orémus:
 \cuminitiali{VIII}{temporalia/benedicamus-octava-paschae.gtex}
 
 \vspace{1mm}
-\fi
 
 \end{document}
