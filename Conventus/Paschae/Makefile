@@ -355,8 +355,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  respondensautemangelus angelusautemdomini etecceterraemotus \
 			  eratautem respondensautemangelus etrespicientes etvaldemane \
 			  egosumquisum postulavi egodormivi surrexitenimsicutdixit quisunt \
-			  mariastabatadmonumentum videte jesusjunxit stetitjesus) \
-	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
+			  mariastabatadmonumentum videte jesusjunxit stetitjesus \
+			  alleluia-completorium salvanos-antiquo-tp reginacaeli-monasticum) \
+	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
 				       TellurisIngens) \
@@ -374,7 +375,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  VitaSanctorum QuemTerra AudiBenigne ExMore PrecemurOmnes \
 			  VexillaRegis PangeLingua HicAccetum AuroraLucis AdCoenam) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
-			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
+			   sanaanimammeam avemaria inmanus-tp clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
 			   benedictusdominus inmedioecclesiae sapientiamsanctorum \
 			   inmatutinis deusmeusadiutormeus ipseliberavitme scapulissuis \
@@ -403,8 +404,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   dumtransisset-CROCHU-cumdox mariamagdalena-CROCHU \
 			   surgensjesus-CROCHU congratulamini-CROCHU-cumdox \
 			   virtutemagna-CROCHU tuleruntdominum-CROCHU expurgate-CROCHU-cumdox) \
-	 oratio $(addprefix oratio,2 3 5 6 7) \
-	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii \
+	 oratio $(addprefix oratio,2 3 5 6 7 -visita) \
+	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 $(addprefix ant-avereginacaelorum-,simplex solemnis) benedictio-noctemquietam \
 	 habacuc-initium-iv_-e $(addsuffix -initium-e,ps48ii ps65i ps105i) ps10-initium-ii_-f \
@@ -425,7 +426,7 @@ FERIAE = ii iii iv v vi
 PDFI = $(patsubst %,feria%-op.pdf,$(FERIAE))
 PDFII = 
 PDFIII = dominicaresurrectionis.pdf
-PDF = $(PDFI) $(PDFII) $(PDFIII)
+PDF = $(PDFI) $(PDFII) $(PDFIII) completorium.pdf
 all: $(PDF)
 iter = $(patsubst %,iterator.mk,$(iter-left))
 define iter-doit
