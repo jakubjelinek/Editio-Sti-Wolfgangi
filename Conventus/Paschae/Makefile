@@ -355,7 +355,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  respondensautemangelus angelusautemdomini etecceterraemotus \
 			  eratautem respondensautemangelus etrespicientes etvaldemane \
 			  egosumquisum postulavi egodormivi surrexitenimsicutdixit quisunt \
-			  mariastabatadmonumentum videte) \
+			  mariastabatadmonumentum videte jesusjunxit stetitjesus) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -393,7 +393,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 				FratresRogamus FratresEstote FratresScriptum FratresChristus \
 				TuAutemDomineSabaoth FratresExpurgate) \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
-	 $(addprefix versus-,custodi gaude dirigatur diffusa-tq angelis eripe eripemede haecdies) \
+	 $(addprefix versus-,custodi gaude dirigatur diffusa-tq angelis eripe eripemede haecdies \
+			     haecdies-communis) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
 					evangelica divinum adsocietatem ille \
