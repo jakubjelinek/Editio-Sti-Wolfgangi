@@ -494,9 +494,15 @@ Orémus:
 
 \vfill
 
+\ifx\dominicaresurrectionis\undefined
+\rubrica{Loco responsorii brevis dicitur:} \scriptura{Ps. 117, 24; \textbf{C107}}
+
+\cuminitiali{II}{temporalia/ant-haecdiesquamfecit.gtex}
+\else
 \pars{Responsorium breve.} \scriptura{Cf. Mt. 28, 6; Cf. Gal. 3, 13}
 
 \cuminitiali{VI}{temporalia/resp-surrexitdominusdesepulcro.gtex}
+\fi
 
 \vfill
 \pagebreak
@@ -634,11 +640,19 @@ Orémus:
 
 \vfill
 
+\ifx\dominicaresurrectionis\undefined
+\iftrue
+\rubrica{Loco responsorii brevis dicitur:} \scriptura{Ps. 117, 24; \textbf{C107}}
+
+\cuminitiali{II}{temporalia/ant-haecdiesquamfecit.gtex}
+\else
 \pars{Responsorium breve.} \scriptura{Lc. 24, 34}
 
-\ifx\dominicaresurrectionis\undefined
 \cuminitiali{VI}{temporalia/resp-surrexitdominusvere.gtex}
+\fi
 \else
+\pars{Responsorium breve.} \scriptura{Lc. 24, 34}
+
 \cuminitiali{VI}{temporalia/resp-surrexitdominusvere-solemnis.gtex}
 \fi
 
