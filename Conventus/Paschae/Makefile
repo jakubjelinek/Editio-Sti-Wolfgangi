@@ -217,7 +217,7 @@ MODUS-dan3 = i-a4 ii-D ii_-a vii-a viii-G
 MODUS-dan32 = i-f
 MODUS-nuncdimittis = iii-a
 MODUS-magnificat = isoll-f isoll-g i-f i-g i-g2 i-g4 i-a i-D2 ii-D ii_-B iisoll-D iii-a iiisoll-a iv-A iv-A_ iv-d v-a vii-b vii-c vii-c2 viisoll-b viisoll-d viii-G viii-G2 viiisoll-G viiisoll-G2 viiisoll-g viiisoll-g5
-MODUS-benedictus = i-a4 i-d i-f i-g i-g4 i-g5 isoll-a5 isoll-d3 iisoll-A ii_-a ii_-d ii_-B iii-a4 iii-b iv-E iv-e2 v-a vsoll-g vi-F vii-a viisoll-a vii-b viisoll-c vii-c2 vii-d2 viii-g viii-G viii-G2 viii-G5 viii-C2 viiisoll-G
+MODUS-benedictus = i-a4 i-d i-f i-g i-g4 i-g5 isoll-a5 isoll-d3 isoll-f iisoll-A ii_-a ii_-d ii_-B iii-a4 iii-b iv-E iv-e2 v-a vsoll-g vi-F vii-a viisoll-a vii-b viisoll-c vii-c2 vii-d2 viii-g viii-G viii-G2 viii-G5 viii-C2 viiisoll-G
 CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae8 isaiae9 isaiae10 isaiae11 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david nuncdimittis ezechiae2 lamentatio dan3 dan32 iudith2
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -357,7 +357,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  egosumquisum postulavi egodormivi surrexitenimsicutdixit quisunt \
 			  mariastabatadmonumentum videte jesusjunxit stetitjesus \
 			  alleluia-completorium salvanos-antiquo-tp reginacaeli-monasticum \
-			  mittite dixit haecdiesquamfecit maria tulerunt undecim dataest) \
+			  mittite dixit haecdiesquamfecit maria tulerunt undecim dataest \
+			  currebant) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -426,7 +427,7 @@ LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PSALMTONES_DIR)/$(2)-auto.gabc; \
 	     [ $(2) = "dir" ] && cd .. && $(SED) -i -e '/(::)$$$$/{/(,) (::)$$$$/!{s/<b>//g;s/<\/b>//g}}' $(3) || :
 FERIAE = ii iii iv v vi
-PDFI = $(patsubst %,feria%-op.pdf,$(FERIAE))
+PDFI = $(patsubst %,feria%-op.pdf,$(FERIAE)) sabbato-op.pdf
 PDFII = 
 PDFIII = dominicaresurrectionis.pdf
 PDF = $(PDFI) $(PDFII) $(PDFIII) completorium.pdf
