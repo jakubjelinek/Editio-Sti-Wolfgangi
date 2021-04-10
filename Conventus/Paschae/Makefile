@@ -83,11 +83,11 @@ MODUS-54i = viii-c
 MODUS-54ii = vii-c2
 MODUS-54iii = viii-G
 MODUS-56 = viii-g
-MODUS-62 = i-g ii_-B vii-a viii-G viii-C e
+MODUS-62 = i-g ii_-B vii-a viii-G viii-C viii-g e
 MODUS-64 = viii-A
 MODUS-65i = vi-F
 MODUS-65ii = ii_-a
-MODUS-66 = e dir
+MODUS-66 = viii-g e dir
 MODUS-67i = vii-a
 MODUS-67ii = i-f
 MODUS-67iii = d-g2
@@ -118,19 +118,19 @@ MODUS-88xlvii_liii = vi-F
 MODUS-89 = i-g vi-F
 MODUS-90 = viii-G
 MODUS-91 = viii-g e
-MODUS-92 = viii-G
+MODUS-92 = viii-G viii-g
 MODUS-95 = ii-D
 MODUS-96 = iii-a2
 MODUS-97 = e
 MODUS-98 = e
-MODUS-99 = iv_-e vii-c e
+MODUS-99 = iv_-e vii-c viii-g e
 MODUS-100 = viii-G
 MODUS-101ii_xii = i-a
 MODUS-101xiii_xxiii = viii-G
 MODUS-101iii = i-g
-MODUS-102i = viii-C
-MODUS-102ii = i-d
-MODUS-102iii = iii-g
+MODUS-102i = vi-F viii-C
+MODUS-102ii = i-d vi-F
+MODUS-102iii = iii-g vi-F
 MODUS-103i = iii-a
 MODUS-103ii = ii-D
 MODUS-103iii = e
@@ -186,9 +186,9 @@ MODUS-144xiv_xxi = viii-a
 MODUS-145 = iv-E iv_-e
 MODUS-146 = viii-g viii-A
 MODUS-147 = vi-F e
-MODUS-148 = i-a i-g ii-D ii_-B vii-a viii-g
-MODUS-149 = i-a i-g ii-D ii_-B vii-a viii-g
-MODUS-150 = i-a i-g ii-D ii_-B vii-a viii-g
+MODUS-148 = i-a i-g ii-D ii_-B vi-F vii-a viii-g
+MODUS-149 = i-a i-g ii-D ii_-B vi-F vii-a viii-g
+MODUS-150 = i-a i-g ii-D ii_-B vi-F vii-a viii-g
 MODUS-anna = ii-D
 MODUS-david = i-f
 MODUS-ecclesiastici = iii-a
@@ -204,6 +204,7 @@ MODUS-isaiae8 = viii-g
 MODUS-isaiae9 = ii-D
 MODUS-isaiae10 = vi-F
 MODUS-isaiae11 = viii-g
+MODUS-isaiae12 = iv-E
 MODUS-iudith2 = ii_-d
 MODUS-jeremiae2 = i-d viii-G
 MODUS-jeremiae3 = iv_-e
@@ -213,12 +214,14 @@ MODUS-moysis2i_xii = vi-F
 MODUS-sapientia = v-a
 MODUS-tobiae = vii-a
 MODUS-tobiae2 = ii-D
-MODUS-dan3 = i-a4 ii-D ii_-a vii-a viii-G
+MODUS-dan3 = i-a4 ii-D ii_-a vi-F vii-a viii-G
 MODUS-dan32 = i-f
+MODUS-oseae = iv-E
+MODUS-sophoniae = iv-E
 MODUS-nuncdimittis = iii-a
 MODUS-magnificat = isoll-f isoll-g i-f i-g i-g2 i-g4 i-a i-D2 ii-D ii_-B iisoll-D iii-a iiisoll-a iv-A iv-A_ iv-d v-a vii-b vii-c vii-c2 viisoll-b viisoll-d viii-G viii-G2 viiisoll-G viiisoll-G2 viiisoll-g viiisoll-g5
-MODUS-benedictus = i-a4 i-d i-f i-g i-g4 i-g5 isoll-a5 isoll-d3 isoll-f iisoll-A ii_-a ii_-d ii_-B iii-a4 iii-b iv-E iv-e2 v-a vsoll-g vi-F vii-a viisoll-a vii-b viisoll-c vii-c2 vii-d2 viii-g viii-G viii-G2 viii-G5 viii-C2 viiisoll-G
-CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae8 isaiae9 isaiae10 isaiae11 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david nuncdimittis ezechiae2 lamentatio dan3 dan32 iudith2
+MODUS-benedictus = i-a4 i-d i-f i-g i-g4 i-g5 isoll-a5 isoll-d3 isoll-f iisoll-A ii_-a ii_-d ii_-B iii-a4 iii-b iv-E iv-e2 v-a vsoll-g vi-F vii-a viisoll-a vii-b viisoll-c vii-c2 vii-d2 viii-g viii-G viii-G2 viii-G5 viii-C2 viiisoll-G viiisoll-G5
+CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae8 isaiae9 isaiae10 isaiae11 isaiae12 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david nuncdimittis ezechiae2 lamentatio dan3 dan32 iudith2 oseae sophoniae
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
 	   && $(SED) -i -e 's/\*/\\grestar{}/g' $@
@@ -234,10 +237,10 @@ LAPSALMOPTSACC = --accents $(word 1,$(TONUS)):$(word 3,$(TONUS)) \
 LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-$(M).tex))
 LAPSALMSEXTRA = $(foreach C,benedictus magnificat $(CANTICIS),$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/$(C)-$(M).tex))
-LAPSALMSSINEDOX = $(foreach P,115 148 149,$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-$(M)-sinedox.tex)) \
+LAPSALMSSINEDOX = $(foreach P,62 115 148 149,$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-$(M)-sinedox.tex)) \
 		  $(foreach C,dan3,$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/$(C)-$(M)-sinedox.tex))
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
-SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo \
+SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore aviroiniquo \
 			  beatadeigenitrix beatamater benedictusdeusisrael benedictusdominus \
 			  benignefac bonumestconfiteri caelicaelorum cantemusdomino conversusest \
 			  credidi cunctisdiebus datemagnitudinem deledomine demanuomnium deonostro \
@@ -358,7 +361,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  mariastabatadmonumentum videte jesusjunxit stetitjesus \
 			  alleluia-completorium salvanos-antiquo-tp reginacaeli-monasticum \
 			  mittite dixit haecdiesquamfecit maria tulerunt undecim dataest \
-			  currebant) \
+			  currebant gavisisuntdiscipuli veniteomnesadoremus paxvobis \
+			  cognoveruntdominum mittemanum surrexitchristus) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -375,7 +379,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  IamChriste NuncTempus EcceJamNoctis AEterneRerum OGloriosaDomina \
 			  AdPrecesNostras ChristeLuxVera AmorisSensusErige AdestoChriste SalveDies \
 			  VitaSanctorum QuemTerra AudiBenigne ExMore PrecemurOmnes \
-			  VexillaRegis PangeLingua HicAccetum AuroraLucis AdCoenam) \
+			  VexillaRegis PangeLingua HicAccetum AuroraLucis AdCoenam \
+			  AuroraLucis-alt HicEstDies) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus-tp clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -389,7 +394,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,feria-laudes feria-vesperae minor officium-bmv festis-bmv \
-				  dominica-advequad feria-advequad octava-paschae) \
+				  dominica-advequad feria-advequad octava-paschae tempore-paschali) \
 	 $(addprefix inv-,surrexitdominusvere) \
 	 dominelabiamea tonusprecum dominusnosbenedicat \
 	 $(addprefix capitulum-,tuautem BenedictusDeus AbInitio Hortamur InterVestibulum \
@@ -397,7 +402,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 				TuAutemDomineSabaoth FratresExpurgate) \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix versus-,custodi gaude dirigatur diffusa-tq angelis eripe eripemede haecdies \
-			     haecdies-communis) \
+			     haecdies-communis inresurrectione) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
 					evangelica divinum adsocietatem ille \
@@ -407,8 +412,10 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   surgensjesus-CROCHU congratulamini-CROCHU-cumdox \
 			   virtutemagna-CROCHU tuleruntdominum-CROCHU expurgate-CROCHU-cumdox \
 			   eccevicitleo-CROCHU istisuntagninovelli-CROCHU \
-			   deoreprudentis-CROCHU-cumdox surrexitpastor-CROCHU-cumdox) \
-	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita) \
+			   deoreprudentis-CROCHU-cumdox surrexitpastor-CROCHU-cumdox \
+			   surrexitpastor-CROCHU virtutemagna-CROCHU-cumdox \
+			   surgensjesus-CROCHU-cumdox) \
+	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 $(addprefix ant-avereginacaelorum-,simplex solemnis) benedictio-noctemquietam \
@@ -429,7 +436,7 @@ GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PS
 FERIAE = ii iii iv v vi
 PDFI = $(patsubst %,feria%-op.pdf,$(FERIAE)) sabbato-op.pdf
 PDFII = 
-PDFIII = dominicaresurrectionis.pdf
+PDFIII = dominicaresurrectionis.pdf dominicainalbis.pdf
 PDF = $(PDFI) $(PDFII) $(PDFIII) completorium.pdf
 all: $(PDF)
 iter = $(patsubst %,iterator.mk,$(iter-left))
