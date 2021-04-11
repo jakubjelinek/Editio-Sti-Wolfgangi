@@ -91,6 +91,9 @@
 %Editio Sancti Wolfgangi \annusEditionis
 \end{center}
 
+\scriptura{}
+\pars{}
+
 \pagebreak
 
 \renewcommand{\headrulewidth}{0pt} % no horiz. rule at the header
@@ -163,11 +166,15 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
+\ifx\invitatorium\undefined
 \pars{Invitatorium.} \scriptura{\textbf{Aug. LX 182r}}
 
 \vspace{-2mm}
 
 \antiphona{II}{temporalia/inv-exsultemusdomino.gtex}
+\else
+\invitatorium
+\fi
 
 \vfill
 \pagebreak
@@ -181,20 +188,18 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
+\ifx\matutinum\undefined
 \pars{Psalmus 1.} \scriptura{Ps. 23, 7; \textbf{H327}}
 
 \vspace{-4mm}
 
 \antiphona{III a}{temporalia/ant-tolliteportas.gtex}
 
-%\trMatAntI
-
 \scriptura{Psalmus 23.}
 
 \initiumpsalmi{temporalia/ps23-initium-iii-a-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps23-comb.tex}{10cm}
-\input{temporalia/ps23.tex} \Abardot{}
+\input{temporalia/ps23-iii-a.tex} \Abardot{}
 
 \vfill
 \pagebreak
@@ -205,14 +210,11 @@ per infiníta sǽcula sæculórum.
 
 \antiphona{II* b}{temporalia/ant-eritmihi.gtex}
 
-%\trMatAntII
-
 \scriptura{Psalmus 45.}
 
 \initiumpsalmi{temporalia/ps45-initium-ii_-B-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps45-comb.tex}{10cm}
-\input{temporalia/ps45.tex} \Abardot{}
+\input{temporalia/ps45-ii_-B.tex} \Abardot{}
 
 \vfill
 \pagebreak
@@ -223,14 +225,11 @@ per infiníta sǽcula sæculórum.
 
 \antiphona{VI F}{temporalia/ant-aedificavitmoyses.gtex}
 
-%\trMatAntIII
-
 \scriptura{Psalmus 47.}
 
 \initiumpsalmi{temporalia/ps47-initium-vi-F-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps47-comb.tex}{10cm}
-\input{temporalia/ps47.tex} \Abardot{}
+\input{temporalia/ps47-vi-F.tex} \Abardot{}
 
 \vfill
 \pagebreak
@@ -241,14 +240,11 @@ per infiníta sǽcula sæculórum.
 
 \antiphona{VII c}{temporalia/ant-nonesthic.gtex}
 
-%\trMatAntIV
-
 \scriptura{Psalmus 83.}
 
 \initiumpsalmi{temporalia/ps83-initium-vii-c-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps83-comb.tex}{10cm}
-\input{temporalia/ps83.tex} \Abardot{}
+\input{temporalia/ps83-vii-c.tex} \Abardot{}
 
 \vfill
 \pagebreak
@@ -259,14 +255,11 @@ per infiníta sǽcula sæculórum.
 
 \antiphona{VII a}{temporalia/ant-viditjacobscalam.gtex}
 
-%\trMatAntV
-
 \scriptura{Psalmus 86.}
 
 \initiumpsalmi{temporalia/ps86-initium-vii-a-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps86-comb.tex}{10cm}
-\input{temporalia/ps86.tex} \Abardot{}
+\input{temporalia/ps86-vii-a.tex} \Abardot{}
 
 \vfill
 \pagebreak
@@ -276,8 +269,6 @@ per infiníta sǽcula sæculórum.
 \vspace{-4mm}
 
 \antiphona{VI F}{temporalia/ant-respicedomine.gtex}
-
-%\trMatAntVI
 
 %\vspace{-2mm}
 
@@ -289,8 +280,7 @@ per infiníta sǽcula sæculórum.
 
 %\vspace{-1mm}
 
-%\psalmusEtTranslatioT{temporalia/ps87-comb.tex}{10cm}
-\input{temporalia/ps87.tex}
+\input{temporalia/ps87-vi-F.tex}
 
 \vfill
 
@@ -298,10 +288,17 @@ per infiníta sǽcula sæculórum.
 
 \vfill
 \pagebreak
+\else
+\matutinum
+\fi
 
+\ifx\matversus\undefined
 \pars{Versus.} \scriptura{Ps. 92, 5}
 
 \sineinitiali{temporalia/versus-domumtuam-communis.gtex}
+\else
+\matversus
+\fi
 
 \vspace{5mm}
 
@@ -332,18 +329,20 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
+\ifx\responsoriumi\undefined
 \pars{Responsorium 1.} \scriptura{\Rbardot{} Cf. 2 Chr. 7, 6 \Vbardot{} Is. 2, 2; \textbf{H327}}
 
 \vspace{-5mm}
 
 \responsorium{I}{temporalia/resp-indedicationetempli-CROCHU.gtex}{}
+\else
+\responsoriumi
+\fi
 
 \vfill
 \pagebreak
 
 \cuminitiali{}{temporalia/benedictio-solemn-unigenitus.gtex}
-
-%\trMatBenedictioII
 
 \vspace{7mm}
 
@@ -355,18 +354,20 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
+\ifx\responsoriumii\undefined
 \pars{Responsorium 2.} \scriptura{\Rbardot{} Is. 2, 2 \Vbardot{} Ps. 125, 6; \textbf{H328}}
 
 \vspace{-5mm}
 
 \responsorium{II}{temporalia/resp-fundataest-CROCHU.gtex}{}
+\else
+\responsoriumii
+\fi
 
 \vfill
 \pagebreak
 
 \cuminitiali{}{temporalia/benedictio-solemn-spiritus.gtex}
-
-%\trMatBenedictioIII
 
 \vspace{7mm}
 
@@ -378,11 +379,15 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
+\ifx\responsoriumiii\undefined
 \pars{Responsorium 3.} \scriptura{\Rbardot{} 1 Sam. 7, 29 \Vbardot{} Ps. 92, 5; \textbf{H328}}
 
 \vspace{-5mm}
 
 \responsorium{VIII}{temporalia/resp-benedicdominedomum-CROCHU.gtex}{}
+\else
+\responsoriumiii
+\fi
 
 \vfill
 \pagebreak
@@ -390,6 +395,10 @@ per infiníta sǽcula sæculórum.
 \ifx\duplexmaius\undefined
 % Te Deum
 
+\ifx\tedeumromanum\undefined
+\ifx\tedeumsimplex\undefined
+\ifx\tedeummonasticum\undefined
+{
 \pars{Hymnus Ambrosianus} \scriptura{Tonus Solemnis}
 
 \vspace{-2mm}
@@ -397,8 +406,40 @@ per infiníta sǽcula sæculórum.
 \grechangedim{interwordspacetext}{0.26 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \cuminitiali{III}{temporalia/tedeum-solemnis-gn.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+\else
+{
+\pars{Hymnus Ambrosianus} \scriptura{Tonus Monasticus}
 
-%\trTeDeum
+\vspace{-2mm}
+
+\grechangedim{interwordspacetext}{0.26 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{III}{temporalia/tedeum-monasticum-am34.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+\fi
+\else
+{
+\pars{Hymnus Ambrosianus} \scriptura{Tonus Simplex}
+
+\vspace{-2mm}
+
+\grechangedim{interwordspacetext}{0.30 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{III}{temporalia/tedeum-simplex-gn.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+\fi
+\else
+{
+\pars{Hymnus Ambrosianus} \scriptura{Alio modo, iuxta morem Romanum}
+
+\vspace{-2mm}
+
+\grechangedim{interwordspacetext}{0.26 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{III}{temporalia/tedeum-romanum-gn.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+\fi
 
 \vfill
 \pagebreak
@@ -471,8 +512,7 @@ per infiníta sǽcula sæculórum.
 
 %\vspace{-1.5mm}
 
-%\psalmusEtTranslatioT{temporalia/ps92-comb.tex}{10cm}
-\input{temporalia/ps92.tex} \Abardot{}
+\input{temporalia/ps92-vii-a.tex} \Abardot{}
 
 \vfill
 \pagebreak
@@ -487,8 +527,7 @@ per infiníta sǽcula sæculórum.
 
 \initiumpsalmi{temporalia/ps99-initium-i-f-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps99-comb.tex}{10cm}
-\input{temporalia/ps99.tex} \Abardot{}
+\input{temporalia/ps99-i-f.tex} \Abardot{}
 
 \vfill
 \pagebreak
@@ -509,8 +548,7 @@ per infiníta sǽcula sæculórum.
 
 %\vspace{-6mm}
 
-%\psalmusEtTranslatioT{temporalia/ps62-comb.tex}{10cm}
-\input{temporalia/ps62.tex} \Abardot{}
+\input{temporalia/ps62-i-D.tex} \Abardot{}
 
 \vfill
 \pagebreak
@@ -531,8 +569,7 @@ per infiníta sǽcula sæculórum.
 
 \initiumpsalmi{temporalia/dan3-initium-viii-c-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/dan3-comb.tex}{10cm}
-\input{temporalia/dan3.tex}
+\input{temporalia/dan3-viii-c-sinedox.tex}
 
 \rubrica{Hic non dicitur Gloria Patri, neque Amen.}
 \vspace{1cm}
@@ -560,8 +597,7 @@ per infiníta sǽcula sæculórum.
 
 %\vspace{-1.5mm}
 
-%\psalmusEtTranslatioT{temporalia/ps148-comb.tex}{10cm}
-\input{temporalia/ps148.tex}
+\input{temporalia/ps148-i-g-sinedox.tex}
 
 \rubrica{Hic non dicitur Gloria Patri.}
 
@@ -575,8 +611,7 @@ per infiníta sǽcula sæculórum.
 
 \initiumpsalmi{temporalia/ps149-initium-i-g-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps149-comb.tex}{10cm}
-\input{temporalia/ps149.tex}
+\input{temporalia/ps149-i-g-sinedox.tex}
 
 \rubrica{Hic non dicitur Gloria Patri.}
 
@@ -588,8 +623,7 @@ per infiníta sǽcula sæculórum.
 
 \initiumpsalmi{temporalia/ps150-initium-i-g-auto.gtex}
 
-%\psalmusEtTranslatioT{temporalia/ps150-comb.tex}{10cm}
-\input{temporalia/ps150.tex}
+\input{temporalia/ps150-i-g.tex}
 
 \antiphona{}{temporalia/ant-lapidespretiosi.gtex} % repeat the antiphon - new page
 
@@ -627,7 +661,6 @@ per infiníta sǽcula sæculórum.
 \fi
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 }
-%\input{cantus/amon33/hym-TibiChriste-bohtext.tex}
 
 \vfill
 
@@ -659,8 +692,7 @@ per infiníta sǽcula sæculórum.
 
 %\vspace{-1.5mm}
 
-%\psalmusEtTranslatioT{temporalia/benedictus-comb.tex}{10cm}
-\input{temporalia/benedictus.tex}
+\input{temporalia/benedictus-ivsoll-E.tex}
 
 \vfill
 
@@ -739,8 +771,7 @@ per infiníta sǽcula sæculórum.
 
 \vspace{-1mm}
 
-%\psalmusEtTranslatioT{temporalia/ps109-comb.tex}{10cm}
-\input{temporalia/ps109.tex} \Abardot{}
+\input{temporalia/ps109-vii-a.tex} \Abardot{}
 
 \vfill
 \pagebreak
@@ -754,8 +785,8 @@ per infiníta sǽcula sæculórum.
 \scriptura{Ps. 121}
 
 \initiumpsalmi{temporalia/ps121-initium-i-f-auto.gtex}
-%\psalmusEtTranslatioT{temporalia/ps121-comb.tex}{10cm}
-\input{temporalia/ps121.tex} \Abardot{}
+
+\input{temporalia/ps121-i-f.tex} \Abardot{}
 
 \vfill
 \pagebreak
@@ -769,8 +800,8 @@ per infiníta sǽcula sæculórum.
 \scriptura{Ps. 126}
 
 \initiumpsalmi{temporalia/ps126-initium-i-D-auto.gtex}
-%\psalmusEtTranslatioT{temporalia/ps126-comb.tex}{10cm}
-\input{temporalia/ps126.tex} \Abardot{}
+
+\input{temporalia/ps126-i-D.tex} \Abardot{}
 
 \vfill
 \pagebreak
@@ -784,8 +815,8 @@ per infiníta sǽcula sæculórum.
 \scriptura{Ps. 147}
 
 \initiumpsalmi{temporalia/ps147-initium-i-g-auto.gtex}
-%\psalmusEtTranslatioT{temporalia/ps147-comb.tex}{10cm}
-\input{temporalia/ps147.tex} \Abardot{}
+
+\input{temporalia/ps147-i-g.tex} \Abardot{}
 
 \vfill
 \pagebreak
@@ -818,7 +849,6 @@ per infiníta sǽcula sæculórum.
 \cuminitiali{IV}{temporalia/hym-UrbsBeata.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 }
-%\input{cantus/amon33/hym-UrbsBeata-bohtext.tex}
 
 \vfill
 %\pagebreak
@@ -851,8 +881,7 @@ per infiníta sǽcula sæculórum.
 
 \vspace{-1.5mm}
 
-%\psalmusEtTranslatioT{temporalia/magnificat-comb.tex}{10.3cm}
-\input{temporalia/magnificat.tex} \Abardot{}
+\input{temporalia/magnificat-viiisoll-G2.tex} \Abardot{}
 
 \vfill
 \pagebreak
