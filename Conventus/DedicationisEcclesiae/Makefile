@@ -26,7 +26,7 @@ include $(PSALMTONES_DIR)/tonus.mk
 MODUS-23 = iii-a
 MODUS-45 = ii_-B
 MODUS-47 = vi-F
-MODUS-62 = i-D
+MODUS-62 = i-D i-d
 MODUS-83 = vii-c
 MODUS-86 = vii-a
 MODUS-87 = vi-F
@@ -34,7 +34,7 @@ MODUS-92 = vii-a
 MODUS-99 = i-f
 MODUS-109 = vii-a
 MODUS-121 = i-f
-MODUS-126 = i-D
+MODUS-126 = i-D i-d
 MODUS-147 = i-g
 MODUS-148 = i-g
 MODUS-149 = i-g viii-G
