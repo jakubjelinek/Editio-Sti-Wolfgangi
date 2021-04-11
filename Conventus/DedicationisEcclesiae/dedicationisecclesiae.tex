@@ -451,10 +451,14 @@ per infiníta sǽcula sæculórum.
 
 \pars{Oratio.}
 
+\ifx\oratioLaudes\undefined
 \ifx\duplexmaius\undefined
 \cuminitiali{}{temporalia/oratio.gtex}
 \else
 \cuminitiali{}{temporalia/oratio2.gtex}
+\fi
+\else
+\oratioLaudes
 \fi
 %\trOrationis
 
@@ -491,6 +495,8 @@ per infiníta sǽcula sæculórum.
 %\vspace{1cm}
 
 \cantusSineNeumas
+
+\ifx\laudes\undefined
 
 \vspace{4mm}
 
@@ -739,6 +745,9 @@ per infiníta sǽcula sæculórum.
 
 \vfill
 \pagebreak
+\else
+\laudes
+\fi
 
 \hora{Ad Vesperas.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\sideThumbs{II. Vesperæ}
@@ -757,7 +766,11 @@ per infiníta sǽcula sæculórum.
 
 \vspace{-5mm}
 
+\ifx\temporepaschalis\undefined
 \antiphona{VII a}{temporalia/ant-domumtuam.gtex}
+\else
+\antiphona{VII a}{temporalia/ant-domumtuam-tp.gtex}
+\fi
 
 \vspace{-2mm}
 
@@ -778,7 +791,11 @@ per infiníta sǽcula sæculórum.
 
 \pars{Psalmus 2.} \scriptura{Mt. 7, 24.25; \textbf{H329}}
 
+\ifx\temporepaschalis\undefined
 \antiphona{I f}{temporalia/ant-haecestdomus.gtex}
+\else
+\antiphona{I f}{temporalia/ant-haecestdomus-tp.gtex}
+\fi
 
 %\trAntII
 
@@ -793,7 +810,11 @@ per infiníta sǽcula sæculórum.
 
 \pars{Psalmus 3.} \scriptura{Is. 56, 7; Mt. 21, 13; Mc. 11, 17; \textbf{H329}}
 
+\ifx\temporepaschalis\undefined
 \antiphona{I D}{temporalia/ant-domusmea.gtex}
+\else
+\antiphona{I D}{temporalia/ant-domusmea-tp.gtex}
+\fi
 
 %\trAntIII
 
@@ -808,7 +829,11 @@ per infiníta sǽcula sæculórum.
 
 \pars{Psalmus 4.} \scriptura{Ap. 21, 18.19; \textbf{H329}}
 
+\ifx\temporepaschalis\undefined
 \antiphona{I g}{temporalia/ant-lapidespretiosi.gtex}
+\else
+\antiphona{I g}{temporalia/ant-lapidespretiosi-tp.gtex}
+\fi
 
 %\trAntIV
 
@@ -834,7 +859,11 @@ per infiníta sǽcula sæculórum.
 
 \vspace{-5mm}
 
+\ifx\temporepaschalis\undefined
 \responsorium{VI}{temporalia/resp-domumtuam.gtex}{}
+\else
+\responsorium{VI}{temporalia/resp-domumtuam-tp.gtex}{}
+\fi
 
 %\trRespVesp
 
@@ -863,6 +892,7 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
+\ifx\magnificat\undefined
 \pars{Canticum B. Mariæ V.} \scriptura{Lc. 19, 5.6.9; \textbf{H330}}
 
 \vspace{-6mm}
@@ -882,6 +912,9 @@ per infiníta sǽcula sæculórum.
 \vspace{-1.5mm}
 
 \input{temporalia/magnificat-viiisoll-G2.tex} \Abardot{}
+\else
+\magnificat
+\fi
 
 \vfill
 \pagebreak
@@ -893,10 +926,14 @@ per infiníta sǽcula sæculórum.
 %% Oratio. %%%
 \pars{Oratio.}
 
+\ifx\oratioLaudes\undefined
 \ifx\duplexmaius\undefined
 \cuminitiali{}{temporalia/oratio.gtex}
 \else
 \cuminitiali{}{temporalia/oratio2.gtex}
+\fi
+\else
+\oratioLaudes
 \fi
 %\trOrationis
 
@@ -912,10 +949,14 @@ per infiníta sǽcula sæculórum.
 
 \vspace{2mm}
 
+\ifx\temporepaschalis\undefined
 \ifx\duplexmaius\undefined
 \cuminitiali{II}{temporalia/benedicamus-solemnism-2vesp.gtex}
 \else
 \cuminitiali{II}{temporalia/benedicamus-duplexmajus-vesperae.gtex}
+\fi
+\else
+\cuminitiali{VII}{temporalia/benedicamus-tempore-paschali.gtex}
 \fi
 
 \vspace{1mm}

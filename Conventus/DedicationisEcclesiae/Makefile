@@ -37,11 +37,11 @@ MODUS-121 = i-f
 MODUS-126 = i-D
 MODUS-147 = i-g
 MODUS-148 = i-g
-MODUS-149 = i-g
+MODUS-149 = i-g viii-G
 MODUS-150 = i-g
-MODUS-benedictus = ivsoll-E
-MODUS-magnificat = viiisoll-G2
-MODUS-dan3 = viii-c
+MODUS-benedictus = ivsoll-E viiisoll-G5
+MODUS-magnificat = isoll-g viiisoll-G2
+MODUS-dan3 = viii-c viii-G
 CANTICIS = dan3
 MODUSLIST = $(sort $(foreach P,$(PSALMS) benedictus magnificat $(CANTICIS),$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -66,6 +66,7 @@ SCORES = $(addprefix versus-,domumtuam domumtuam-communis haecest) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
 	 $(addprefix benedicamus-duplexmajus-,laudes vesperae) \
 	 $(addprefix deusinadiutorium-,communis solemnis alter) supplicatiolitaniae oratiodominica \
+	 oratiodominicaalt dominusnosbenedicat \
 	 dominusvobiscum-solemnis domineexaudi $(addprefix magnificat-initium-,viiisoll-G2) \
 	 $(addprefix capitulum-,VidiCivitatem) \
 	 oratio oratio2 oratiodominica-mat benedicamus-minor \
@@ -75,14 +76,16 @@ SCORES = $(addprefix versus-,domumtuam domumtuam-communis haecest) \
 			  haecestdomus lapidespretiosi manesurgensjacob nonesthic \
 			  respicedomine tolliteportas viditjacobscalam zachaeefestinans \
 			  benedictusesintemplo-tp domusmea-tp lausdeiinecclesia nonesthic-tp \
-			  sanctificavitdominus viditjacobscalam-tp tolliteportas-tp) \
-	 $(addprefix resp-,domumtuam magnusdominus-tp) \
+			  sanctificavitdominus viditjacobscalam-tp tolliteportas-tp \
+			  domumtuam-tp haecestdomus-tp lapidespretiosi-tp) \
+	 $(addprefix resp-,domumtuam magnusdominus-tp domumtuam-tp) \
 	 $(addprefix inv-,exsultemusdomino christumdominumquidilexit-tp) tonus-lectionis-solemnis \
-	 benedicamus-solemnis-laud tedeum-solemnis-gn tedeum-romanum-gn tuautem \
+	 benedicamus-solemnis-laud benedicamus-tempore-paschali \
+	 tedeum-solemnis-gn tedeum-romanum-gn tuautem \
 	 $(addprefix resp-,benedicdominedomum-CROCHU fundataest-CROCHU \
 			   indedicationetempli-CROCHU dumexiretiacob-CROCHU \
 			   exaudisti-CROCHU-cumdox sidominusdeusmeus-CROCHU) \
-	 benedictus-initium-ivsoll-E
+	 tonusprecum benedictus-initium-ivsoll-E
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
