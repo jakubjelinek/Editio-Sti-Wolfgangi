@@ -123,3 +123,4 @@ TONUS-d-g = 1 2 1 3
 TONUS-d-g2 = 1 2 1 1
 TONUS-e = 1 0 2 0
 TONUS-e-a = 1 0 1 1
+TONUS-e-e = 1 0 2 0

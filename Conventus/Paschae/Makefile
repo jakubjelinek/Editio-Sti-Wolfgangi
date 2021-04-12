@@ -60,7 +60,7 @@ MODUS-34ii = viii-G
 MODUS-34iii = viii-G
 MODUS-35 = ii-D
 MODUS-36i_xi = vi-F
-MODUS-36xii_xxix = ii-D
+MODUS-36xii_xxix = ii-D vi-F
 MODUS-36iii = vi-F
 MODUS-37ii_v = viii-C
 MODUS-37vi_xiii = ii_-a
@@ -68,7 +68,7 @@ MODUS-37xiv_xxiii = ii-A
 MODUS-38i = iv-E
 MODUS-38ii = vii-c
 MODUS-41 = ii-D
-MODUS-42 = vi-F
+MODUS-42 = vi-F e-e
 MODUS-43i = viii-G
 MODUS-43ii = ii_-a viii-C
 MODUS-43iii = i-g3 ii-D
@@ -84,7 +84,7 @@ MODUS-54ii = vii-c2
 MODUS-54iii = viii-G
 MODUS-56 = viii-g
 MODUS-62 = i-g ii_-B vii-a viii-G viii-C viii-g e
-MODUS-64 = viii-A
+MODUS-64 = viii-A viii-C
 MODUS-65i = vi-F
 MODUS-65ii = ii_-a
 MODUS-66 = viii-g e dir
@@ -192,7 +192,7 @@ MODUS-150 = i-a i-g ii-D ii_-B vi-F vii-a viii-g
 MODUS-anna = ii-D
 MODUS-david = i-f
 MODUS-ecclesiastici = iii-a
-MODUS-ezechiae = e
+MODUS-ezechiae = v-a e
 MODUS-ezechiae2 = i-d
 MODUS-habacuc = iv_-e
 MODUS-isaiae = viii-G
@@ -362,7 +362,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  alleluia-completorium salvanos-antiquo-tp reginacaeli-monasticum \
 			  mittite dixit haecdiesquamfecit maria tulerunt undecim dataest \
 			  currebant gavisisuntdiscipuli veniteomnesadoremus paxvobis \
-			  cognoveruntdominum mittemanum surrexitchristus) \
+			  cognoveruntdominum mittemanum surrexitchristus \
+			  alleluia-praglia-e alleluia-turco16 alleluia-turco6 \
+			  fulgebuntiusti ierusalemluce nonmirerisquiadixi) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -380,7 +382,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  AdPrecesNostras ChristeLuxVera AmorisSensusErige AdestoChriste SalveDies \
 			  VitaSanctorum QuemTerra AudiBenigne ExMore PrecemurOmnes \
 			  VexillaRegis PangeLingua HicAccetum AuroraLucis AdCoenam \
-			  AuroraLucis-alt HicEstDies) \
+			  AuroraLucis-alt HicEstDies ChorusNovae ChorusNovae-praglia \
+			  LaetareCaelum) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus-tp clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -414,7 +417,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   eccevicitleo-CROCHU istisuntagninovelli-CROCHU \
 			   deoreprudentis-CROCHU-cumdox surrexitpastor-CROCHU-cumdox \
 			   surrexitpastor-CROCHU virtutemagna-CROCHU-cumdox \
-			   surgensjesus-CROCHU-cumdox) \
+			   surgensjesus-CROCHU-cumdox eccevicitleo-CROCHU-cumdox) \
 	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
@@ -434,7 +437,8 @@ LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PSALMTONES_DIR)/$(2)-auto.gabc; \
 	     [ $(2) = "dir" ] && cd .. && $(SED) -i -e '/(::)$$$$/{/(,) (::)$$$$/!{s/<b>//g;s/<\/b>//g}}' $(3) || :
 FERIAE = ii iii iv v vi
-PDFI = $(patsubst %,feria%-op.pdf,$(FERIAE)) sabbato-op.pdf
+HEBDOMADAE = ii iii iv v vi
+PDFI = $(patsubst %,feria%-op.pdf,$(FERIAE)) $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE))) sabbato-op.pdf
 PDFII = 
 PDFIII = dominicaresurrectionis.pdf dominicainalbis.pdf
 PDF = $(PDFI) $(PDFII) $(PDFIII) completorium.pdf
