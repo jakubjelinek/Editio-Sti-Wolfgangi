@@ -192,7 +192,7 @@ MODUS-150 = i-a i-g ii-D ii_-B vi-F vii-a viii-g
 MODUS-anna = ii-D
 MODUS-david = i-f
 MODUS-ecclesiastici = iii-a
-MODUS-ezechiae = v-a e
+MODUS-ezechiae = i-g v-a e
 MODUS-ezechiae2 = i-d
 MODUS-habacuc = iv_-e
 MODUS-isaiae = viii-G
@@ -364,7 +364,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  currebant gavisisuntdiscipuli veniteomnesadoremus paxvobis \
 			  cognoveruntdominum mittemanum surrexitchristus \
 			  alleluia-praglia-e alleluia-turco16 alleluia-turco6 \
-			  fulgebuntiusti ierusalemluce nonmirerisquiadixi) \
+			  fulgebuntiusti ierusalemluce nonmirerisquiadixi eruistidomine-tp) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
