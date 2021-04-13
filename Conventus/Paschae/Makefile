@@ -419,7 +419,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   eccevicitleo-CROCHU istisuntagninovelli-CROCHU \
 			   deoreprudentis-CROCHU-cumdox surrexitpastor-CROCHU-cumdox \
 			   surrexitpastor-CROCHU virtutemagna-CROCHU-cumdox \
-			   surgensjesus-CROCHU-cumdox eccevicitleo-CROCHU-cumdox) \
+			   surgensjesus-CROCHU-cumdox eccevicitleo-CROCHU-cumdox \
+			   christusresurgensexmortuis) \
 	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
