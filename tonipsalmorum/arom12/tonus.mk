@@ -15,6 +15,7 @@ TONUS-i-g2 = 2 0 1 2
 TONUS-i-g3 = 2 0 1 2
 TONUS-i-g4 = 2 0 1 2
 TONUS-i-g5 = 2 0 1 1
+TONUS-i-g6 = 2 0 1 2
 TONUS-isoll-D = 1 3 1 2
 TONUS-isoll-D2 = 1 3 1 2
 TONUS-isoll-D_ = 1 3 1 2
