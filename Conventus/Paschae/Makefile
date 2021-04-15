@@ -62,9 +62,9 @@ MODUS-35 = ii-D
 MODUS-36i_xi = vi-F
 MODUS-36xii_xxix = ii-D vi-F
 MODUS-36iii = vi-F
-MODUS-37ii_v = viii-C
-MODUS-37vi_xiii = ii_-a
-MODUS-37xiv_xxiii = ii-A
+MODUS-37ii_v = viii-C d-g
+MODUS-37vi_xiii = ii_-a d-g
+MODUS-37xiv_xxiii = ii-A d-g
 MODUS-38i = iv-E iv_-e
 MODUS-38ii = iv_-e vii-c
 MODUS-41 = ii-D
@@ -367,7 +367,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  fulgebuntiusti ierusalemluce nonmirerisquiadixi eruistidomine-tp \
 			  alleluia-turco11 alleluia-turco12 alleluia-turco25 \
 			  dominusiudicabit-tp sicdeusdilexitmundum alleluia-turco15 \
-			  alleluia-turco18 alleluia-turco22 paterdiligitfilium haurietisaquas) \
+			  alleluia-turco18 alleluia-turco22 paterdiligitfilium haurietisaquas \
+			  alleluia-turco2 alleluia-turco29 alleluia-turco4 accepitergoiesus \
+			  domineaudivi-tp) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
