@@ -26,7 +26,7 @@ MODUS-3 = vi-F viii-G5 viii-c
 MODUS-4 = viii-G
 MODUS-5 = viii-A
 MODUS-6 = iv-E
-MODUS-8 = i-f i-g
+MODUS-8 = i-a2 i-f i-g
 MODUS-9ii_xi = viii-G
 MODUS-9xii_xxi = i-g i-g3
 MODUS-9xxii_xxxii = ii-D
@@ -165,9 +165,9 @@ MODUS-133 = viii-G
 MODUS-134 = iii-g
 MODUS-134i = i-a
 MODUS-135 = iii-g
-MODUS-135i = iiir-g
-MODUS-135ii = iiir-g
-MODUS-135iii = c-c2
+MODUS-135i = iiir-g d-g
+MODUS-135ii = iiir-g d-g
+MODUS-135iii = c-c2 d-g
 MODUS-136 = viii-G
 MODUS-137 = v-a
 MODUS-138i = iii-g
@@ -210,7 +210,7 @@ MODUS-jeremiae2 = i-d viii-G
 MODUS-jeremiae3 = iv_-e
 MODUS-lamentatio = i-d
 MODUS-moysis = e
-MODUS-moysis2i_xii = vi-F
+MODUS-moysis2i_xii = vi-F vii-c2
 MODUS-sapientia = v-a
 MODUS-tobiae = vii-a
 MODUS-tobiae2 = ii-D
@@ -369,7 +369,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  dominusiudicabit-tp sicdeusdilexitmundum alleluia-turco15 \
 			  alleluia-turco18 alleluia-turco22 paterdiligitfilium haurietisaquas \
 			  alleluia-turco2 alleluia-turco29 alleluia-turco4 accepitergoiesus \
-			  domineaudivi-tp) \
+			  domineaudivi-tp alleluia-praglia-e2 alleluia-turco23 alleluia-turco3 \
+			  alleluiapaxvobis effrondeteingratia oculituisanctadeigenetrix) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -444,7 +445,7 @@ GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PS
 	     [ $(2) = "dir" ] && cd .. && $(SED) -i -e '/(::)$$$$/{/(,) (::)$$$$/!{s/<b>//g;s/<\/b>//g}}' $(3) || :
 FERIAE = ii iii iv v vi
 HEBDOMADAE = ii iii iv v vi
-PDFI = $(patsubst %,feria%-op.pdf,$(FERIAE)) $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE))) sabbato-op.pdf
+PDFI = $(foreach H,op $(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE))) $(patsubst %,sabbato-%.pdf,op $(HEBDOMADAE))
 PDFII = 
 PDFIII = dominicaresurrectionis.pdf dominicainalbis.pdf
 PDF = $(PDFI) $(PDFII) $(PDFIII) completorium.pdf
