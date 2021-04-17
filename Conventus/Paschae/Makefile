@@ -21,8 +21,8 @@ PSSKIP = 1
 PSALMS = 1 2 3 4 5 6 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 10 11 13 14 16 17i 17ii 17iii 17ii_vii 17viii_xx 17xxi_xxx 17xxxi_xxxv 17xxxvi_xlvi 17xlvii_li 18i 19 20 23 28 29 30i 30ii 30iii 32 34i 34ii 34iii 35 36i_xi 36xii_xxix 36iii 37ii_v 37vi_xiii 37xiv_xxiii 38i 38ii 41 42 43i 43ii 43iii 46 47 49i_vi 49vii_xv 49xvi_xxiii 50 51 54i 54ii 54iii 56 62 64 65i 65ii 66 67i 67ii 67iii 68ii_xiii 68xiv_xxii 68iii 72i 72ii 72iii 76 77i_xvi 77iii 77xxxii_xxxix 77xl_li 77lii_lxiv 77lxv_lxxii 79 80 83 84 85 86 88ii_xix 88xx_xxx 88xxxi_xxxviii 88xxxix_xlvi 88xlvii_liii 89 90 91 92 95 96 97 98 99 100 101ii_xii 101xiii_xxiii 101iii 102i 102ii 102iii 103i 103ii 103iii 104i 104ii 104iii 105i 105ii 105iii 106i 106ii 106iii 107 109 110 111 112 113 114 115 116 117 118xix 128 129 130 131 131i 131ii 132 133 134 134i 135 135i 135ii 135iii 136 137 138i 138ii 139 140 141 142 143i 143i_x 143ii 144i 144ii 144x_xiii 144xiv_xxi 145 146 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-1 = i-F i-g ii-D viii-G
-MODUS-2 = i-f i-a4 vii-a
-MODUS-3 = vi-F viii-G5 viii-c
+MODUS-2 = i-f i-a4 vii-a viii-c
+MODUS-3 = vi-F viii-G5 viii-c viii-G2
 MODUS-4 = viii-G
 MODUS-5 = viii-A
 MODUS-6 = iv-E
@@ -179,10 +179,10 @@ MODUS-142 = viii-G
 MODUS-143i = vi-F
 MODUS-143i_x = vi-F
 MODUS-143ii = vi-F
-MODUS-144i = viii-A viii-G
+MODUS-144i = vii-a viii-A viii-G
 MODUS-144ii = vii-c2
-MODUS-144x_xiii = vii-c
-MODUS-144xiv_xxi = viii-a
+MODUS-144x_xiii = vii-c viii-G5
+MODUS-144xiv_xxi = vii-a viii-a
 MODUS-145 = iv-E iv_-e
 MODUS-146 = viii-g viii-A
 MODUS-147 = vi-F e
@@ -370,7 +370,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  alleluia-turco18 alleluia-turco22 paterdiligitfilium haurietisaquas \
 			  alleluia-turco2 alleluia-turco29 alleluia-turco4 accepitergoiesus \
 			  domineaudivi-tp alleluia-praglia-e2 alleluia-turco23 alleluia-turco3 \
-			  alleluiapaxvobis effrondeteingratia oculituisanctadeigenetrix) \
+			  alleluiapaxvobis effrondeteingratia oculituisanctadeigenetrix \
+			  alleluia-bv21-n1 alleluia-bv21-n2 alleluia-bv21-n3 marianoliiamflere \
+			  alleluialapisrevolutus spirituscarnemetossa venitmarianuntians) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -397,7 +399,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   inmatutinis deusmeusadiutormeus ipseliberavitme scapulissuis \
 			   christefilidei-tq deoreleonis deoreleonis-feriale erueaframea \
 			   erueaframea-feriale surrexitdominusdesepulcro surrexitdominusvere \
-			   surrexitdominusvere-solemnis) \
+			   surrexitdominusvere-solemnis christefilideivivi-tp) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis solemnis-tq alter-tq communis-tq \
 				       solemnis-quad alter-quad communis-quad) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
@@ -425,7 +427,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   surrexitpastor-CROCHU virtutemagna-CROCHU-cumdox \
 			   surgensjesus-CROCHU-cumdox eccevicitleo-CROCHU-cumdox \
 			   christusresurgensexmortuis) \
-	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2) \
+	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 $(addprefix ant-avereginacaelorum-,simplex solemnis) benedictio-noctemquietam \
@@ -434,7 +436,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 	 ps131i-initium-e ps96-initium-iii-a2 ps147-initium-e ps91-initium-e ps66-initium-e \
 	 isaiae3-initium-vii-d ps88xxxi_xxxviii-initium-viii-G_ ps97-initium-e ps98-initium-e \
 	 jeremiae2-initium-viii-G ps99-initium-e ps72iii-initium-iii-b ps102iii-initium-iii-g \
-	 ps103iii-initium-e ps47-initium-iv-a ps101ii_xii-initium-i-a ps62-initium-ii_-B
+	 ps103iii-initium-e ps47-initium-iv-a ps101ii_xii-initium-i-a ps62-initium-ii_-B \
+	 ps1-initium-ii-D ps3-initium-viii-G3
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
@@ -447,7 +450,7 @@ FERIAE = ii iii iv v vi
 HEBDOMADAE = ii iii iv v vi
 PDFI = $(foreach H,op $(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE))) $(patsubst %,sabbato-%.pdf,op $(HEBDOMADAE))
 PDFII = 
-PDFIII = dominicaresurrectionis.pdf dominicainalbis.pdf
+PDFIII = dominicaresurrectionis.pdf dominicainalbis.pdf $(patsubst %,dominica%postpascha.pdf,$(HEBDOMADAE))
 PDF = $(PDFI) $(PDFII) $(PDFIII) completorium.pdf
 all: $(PDF)
 iter = $(patsubst %,iterator.mk,$(iter-left))
