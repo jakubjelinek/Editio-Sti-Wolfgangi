@@ -74,9 +74,9 @@ MODUS-43ii = ii_-a viii-C
 MODUS-43iii = i-g3 ii-D viii-C
 MODUS-46 = viii-c
 MODUS-47 = iv-a
-MODUS-49i_vi = i-g2 viii-A
-MODUS-49vii_xv = viii-G e
-MODUS-49xvi_xxiii = vii-c e
+MODUS-49i_vi = i-g2 viii-A viii-G2
+MODUS-49vii_xv = viii-G viii-G2 e
+MODUS-49xvi_xxiii = vii-c viii-G2 e
 MODUS-50 = i-a2 iii-a vi-F vii-a vii-c viii-G viii-G2
 MODUS-51 = iv_-e
 MODUS-54i = viii-c
@@ -203,7 +203,7 @@ MODUS-isaiae5 = iv-E iv_-e
 MODUS-isaiae8 = viii-g
 MODUS-isaiae9 = ii-D
 MODUS-isaiae10 = vi-F
-MODUS-isaiae11 = viii-g
+MODUS-isaiae11 = viii-g viii-g5
 MODUS-isaiae12 = iv-E
 MODUS-iudith2 = ii_-d
 MODUS-jeremiae2 = i-d viii-G
@@ -372,7 +372,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  domineaudivi-tp alleluia-praglia-e2 alleluia-turco23 alleluia-turco3 \
 			  alleluiapaxvobis effrondeteingratia oculituisanctadeigenetrix \
 			  alleluia-bv21-n1 alleluia-bv21-n2 alleluia-bv21-n3 marianoliiamflere \
-			  alleluialapisrevolutus spirituscarnemetossa venitmarianuntians) \
+			  alleluialapisrevolutus spirituscarnemetossa venitmarianuntians \
+			  alleluia-auxlx alleluia-bv21-n4 alleluia-bv21-n5 alleluia-turco8 \
+			  operamininoncibum veniteascendamus-tp) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -426,7 +428,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   deoreprudentis-CROCHU-cumdox surrexitpastor-CROCHU-cumdox \
 			   surrexitpastor-CROCHU virtutemagna-CROCHU-cumdox \
 			   surgensjesus-CROCHU-cumdox eccevicitleo-CROCHU-cumdox \
-			   christusresurgensexmortuis) \
+			   christusresurgensexmortuis paschanostrum) \
 	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
@@ -437,7 +439,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 	 isaiae3-initium-vii-d ps88xxxi_xxxviii-initium-viii-G_ ps97-initium-e ps98-initium-e \
 	 jeremiae2-initium-viii-G ps99-initium-e ps72iii-initium-iii-b ps102iii-initium-iii-g \
 	 ps103iii-initium-e ps47-initium-iv-a ps101ii_xii-initium-i-a ps62-initium-ii_-B \
-	 ps1-initium-ii-D ps3-initium-viii-G3
+	 ps1-initium-ii-D ps3-initium-viii-G3 ps49i_vi-initium-viii-G3 \
+	 ps49vii_xv-initium-viii-G3 ps49xvi_xxiii-initium-viii-G3
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
