@@ -88,9 +88,9 @@ MODUS-64 = viii-A viii-C
 MODUS-65i = vi-F
 MODUS-65ii = ii_-a
 MODUS-66 = viii-g e dir
-MODUS-67i = vii-a
-MODUS-67ii = i-f
-MODUS-67iii = d-g2
+MODUS-67i = i-g vii-a
+MODUS-67ii = i-f i-g
+MODUS-67iii = i-g d-g2
 MODUS-68ii_xiii = viii-c
 MODUS-68xiv_xxii = viii-c
 MODUS-68iii = viii-G
@@ -373,8 +373,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  alleluiapaxvobis effrondeteingratia oculituisanctadeigenetrix \
 			  alleluia-bv21-n1 alleluia-bv21-n2 alleluia-bv21-n3 marianoliiamflere \
 			  alleluialapisrevolutus spirituscarnemetossa venitmarianuntians \
-			  alleluia-auxlx alleluia-bv21-n4 alleluia-bv21-n5 alleluia-turco8 \
-			  operamininoncibum veniteascendamus-tp) \
+			  alleluia-auglx1 alleluia-bv21-n4 alleluia-bv21-n5 alleluia-turco8 \
+			  operamininoncibum veniteascendamus-tp alleluia-auglx2 alleluia-turco5 \
+			  amenamendicononmoyses denoctespiritusmeus-tp) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -440,7 +441,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 	 jeremiae2-initium-viii-G ps99-initium-e ps72iii-initium-iii-b ps102iii-initium-iii-g \
 	 ps103iii-initium-e ps47-initium-iv-a ps101ii_xii-initium-i-a ps62-initium-ii_-B \
 	 ps1-initium-ii-D ps3-initium-viii-G3 ps49i_vi-initium-viii-G3 \
-	 ps49vii_xv-initium-viii-G3 ps49xvi_xxiii-initium-viii-G3
+	 ps49vii_xv-initium-viii-G3 ps49xvi_xxiii-initium-viii-G3 \
+	 ps67i-initium-i-g5 ps67ii-initium-i-g5 ps67iii-initium-i-g5
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
