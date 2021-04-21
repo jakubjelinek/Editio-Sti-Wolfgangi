@@ -109,20 +109,20 @@ MODUS-80 = i-a2 i-g5
 MODUS-83 = viii-G
 MODUS-84 = vi-F viii-G
 MODUS-85 = ii-D
-MODUS-86 = i-g
+MODUS-86 = i-g i-a4
 MODUS-88ii_xix = iv-e viii-G
 MODUS-88xx_xxx = iv-e viii-G
 MODUS-88xxxi_xxxviii = iv-e viii-G
-MODUS-88xxxix_xlvi = vii-a
-MODUS-88xlvii_liii = vi-F
-MODUS-89 = i-g vi-F
+MODUS-88xxxix_xlvi = vii-a viii-G5
+MODUS-88xlvii_liii = vi-F viii-G5
+MODUS-89 = i-g vi-F viii-G5
 MODUS-90 = viii-G
 MODUS-91 = viii-g e
 MODUS-92 = viii-G viii-g
 MODUS-95 = ii-D
 MODUS-96 = iii-a iii-a2
 MODUS-97 = e
-MODUS-98 = e
+MODUS-98 = iv_-e e
 MODUS-99 = iv_-e vii-c viii-g e
 MODUS-100 = viii-G
 MODUS-101ii_xii = i-a
@@ -377,7 +377,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  operamininoncibum veniteascendamus-tp alleluia-auglx2 alleluia-turco5 \
 			  amenamendicononmoyses denoctespiritusmeus-tp alleluia-auglx3 \
 			  alleluia-turco7 beatiquiambulant-tp dixitdominusiesusegosumpanis \
-			  inmedioecclesiae) \
+			  inmedioecclesiae alleluia-auglx4 alleluia-turco10 alleluia-turco21 \
+			  eccedominusnoster-tp nemopotestvenire) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -432,7 +433,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   surrexitpastor-CROCHU virtutemagna-CROCHU-cumdox \
 			   surgensjesus-CROCHU-cumdox eccevicitleo-CROCHU-cumdox \
 			   christusresurgensexmortuis paschanostrum \
-			   christusresurgensexmortuis-cumdox) \
+			   christusresurgensexmortuis-cumdox deoreprudentis-CROCHU) \
 	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
@@ -446,7 +447,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 	 ps1-initium-ii-D ps3-initium-viii-G3 ps49i_vi-initium-viii-G3 \
 	 ps49vii_xv-initium-viii-G3 ps49xvi_xxiii-initium-viii-G3 \
 	 ps67i-initium-i-g5 ps67ii-initium-i-g5 ps67iii-initium-i-g5 \
-	 ps88ii_xix-initium-iv-e ps88xx_xxx-initium-iv-e ps88xxxi_xxxviii-initium-iv-e
+	 ps88ii_xix-initium-iv-e ps88xx_xxx-initium-iv-e ps88xxxi_xxxviii-initium-iv-e \
+	 ps88xxxix_xlvi-initium-viii-G5 ps88xlvii_liii-initium-viii-G5 ps89-initium-viii-G5
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
