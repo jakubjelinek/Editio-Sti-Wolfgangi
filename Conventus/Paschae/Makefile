@@ -140,9 +140,9 @@ MODUS-104iii = iv-E
 MODUS-105i = e
 MODUS-105ii = viii-G
 MODUS-105iii = vii-a
-MODUS-106i = iv_-e
-MODUS-106ii = c-c2
-MODUS-106iii = iii-a2
+MODUS-106i = iv-e iv_-e
+MODUS-106ii = iv-e c-c2
+MODUS-106iii = iii-a2 iv-e
 MODUS-107 = viii-G
 MODUS-109 = vii-c2 viii-G
 MODUS-110 = iv-g vii-c
@@ -151,7 +151,7 @@ MODUS-112 = vii-c viii-g
 MODUS-113 = per
 MODUS-114 = i-g2
 MODUS-115 = viii-A
-MODUS-116 = ii_-B viii-A e
+MODUS-116 = ii_-a ii_-B viii-A e
 MODUS-117 = ii-D vii-c viii-C viii-G
 MODUS-118xix = vii-a e
 MODUS-128 = ii-D
@@ -379,7 +379,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  alleluia-turco7 beatiquiambulant-tp dixitdominusiesusegosumpanis \
 			  inmedioecclesiae alleluia-auglx4 alleluia-turco10 alleluia-turco21 \
 			  eccedominusnoster-tp nemopotestvenire alleluia-turco13 alleluia-auglx5 \
-			  beatusgeorgius nonnosderelinquas-tp) \
+			  beatusgeorgius nonnosderelinquas-tp alleluia-fo2 mecumsitdomine-tp \
+			  sanctadeigenetrix verbaquaelocutussum) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -452,7 +453,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 	 ps67i-initium-i-g5 ps67ii-initium-i-g5 ps67iii-initium-i-g5 \
 	 ps88ii_xix-initium-iv-e ps88xx_xxx-initium-iv-e ps88xxxi_xxxviii-initium-iv-e \
 	 ps88xxxix_xlvi-initium-viii-G5 ps88xlvii_liii-initium-viii-G5 ps89-initium-viii-G5 \
-	 ps68ii_xiii-initium-i-d2 ps68xiv_xxii-initium-i-d2 ps68iii-initium-i-d2
+	 ps68ii_xiii-initium-i-d2 ps68xiv_xxii-initium-i-d2 ps68iii-initium-i-d2 \
+	 ps106i-initium-iv-e ps106ii-initium-iv-e ps106iii-initium-iv-e
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
