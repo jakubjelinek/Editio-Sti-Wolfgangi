@@ -1,7 +1,7 @@
 name:Locutus est ad me unus;
 office-part:Responsorium;
 mode:2;
-book: CROCHU;
+book:Nocturnale Romanum, 2002, p. 447;
 transcriber:Marek Klein;
 commentary:ꝶ Apoc. 21,9.2 ꝟ ibid. 21,10; H247;;
 cantusindex:007096;
@@ -9,24 +9,26 @@ nabc-lines:1;
 source:http://www.e-codices.unifr.ch/fr/csg/0391/53;
 %%
 (f3)
-LO(f|ta)cú(h|vi)tus(g!ho1|vs) est(f|ta) ad(fe~|cl~) me(f|vi) u(f!gwh|viqlhi|/ihhs|///clsthh)nus(hg|/cl-) (,)
-ex(e|ta) sep(f|vi)tem(h|vi) An(hghe~|/cl/vi>)ge(f|vi)lis,(f!gwh|viqlhi|/ih/hog|///clS/cl-)
-di(fg!hvGFg|//vi-hhpp2su2/vi)cens:(gf|/cl-) (:)
-Ve(fh!i!jo1|vspp2lsc2)ni,(i|ta) (,) o(ig|/cllsc3)stén(i>|vi>)dam(h|ta) ti(hg|/cl)bi(f|ta) no(h|vi)vam(hih|//to) nup(hvGFg|//ci-/vi)tam,(ffoe|pr) (,)
-spon(hfgwhgh~|/cl-ql!po~)sam(f|ta) A(fg!hvGFg|//vi-hhpp2su2/vi)gni:(gf|/cl-) +(;)
+LO(f|ta)cú(h|vi)tus(g!ho1|vs) est(f|ta) *()
+ad(fe~|cl~) me(f|vi) (;) u(f!gwh|viqlhi|/ihhs|///clsthh)nus(hg|/cl-)
+ex(e|ta) sep(f|vi)tem(h|vi)
+An(hg/h>|/cl/vi>)ge(f|vi)lis,(f!gwh|viqlhi|/ih/hg|///clS/cl-)
+di(FGhvGFg|//vi-hhpp2su2/vi)cens:(gf|/cl-) (:)
+Ve(FHi!jo1|vspp2lsc2)ni,(i|ta) o(ih|/cllsc3)stén(i>|vi>)dam(g|ta) ti(hg|/cl)bi(f|ta) no(h|vi)vam(hih|//to) nup(hvGFg|//ci-/vi)tam,(ffO1e|pr) (,)
+spon(hfgwhg<|/cl-ql!po~)sam(f|ta) A(FGhvGFg|//vi-hhpp2su2/vi)gni:(gf|/cl-) +(;)
 
-Et(ef>|pe>1) vi(hi!jv|vippt2)di(i|ta) Ie(ig|/cllsc3)rú(i|vi)sa(hg|/cl)lem(hho|vs)
-de(g|ta)scen(h|vi)dén(ij>|pe>)tem(i>|vi>) de(h|ta) cœ(hg|/cllsc3)lo,(f|ta) (,)
+Et(e!f>|pe>1) vi(HIjv|vippt2)di(i|ta) Je(ig|/cllsc3)rú(i|vi)sa(hf|/cl)lem(g!ho1|vs)
+de(g|ta)scen(h|vi)dén(i!j>|pe>)tem(i>|vi>) de(h|ta) cœ(hg|/cllsc3)lo,(f|ta) (,)
 or(fe~|cl~)ná(fg|pe)tam(f|ta)
 mo(f|ta)ní(FGhvGFE|//vihhpp2su3)li(f|vi)bus(hg|/cl|/hih|//to)
-su(hvGFg|//ci-/vi)is,(ffOe|pr) (;)
-al(ef>|pe>1)le(h|vi)lú(ih~|vi>)ia,(i|vi) (,)
-al(io~|or)le(h|ta)lú(i>|vi>)ia,(ivHG|//ciG|hvGFEfe|//vi-sut1su2/cl-) (,)
-al(f!gwh|viqlhi)le(hvGFgwh|//vi-sut2ql|/ih|/clS-|/hog|/cl-)lú(fg!hGFg|//vihhpp2su2/vi)ia.(gf|/cl-) <sp>V/</sp>.(::)
+su(hvGFg|//ci-/vi)is,(ffO1e|pr) (;)
+al(e!f>|pe>1)le(h|vi)lú(i>|vi>)ia,(i|vi) (,)
+al(io~|or)le(h|ta)lú(i>|vi>)ia,(iV!h!g|//ciG|hvGFEfe|//vi-sut1su2/cl-) (,)
+al(f!gwh|viqlhi)le(hvGFgwh|//vi-sut2ql|/ih|/clS-|/hg|/cl-)lú(FGhvGFg|//vihhpp2su2/vi)ia.(gf|/cl-) <sp>V/</sp>.(::)
 
-E(ef!gwh/hi|qlhhppt2pehk)go(h) di(ij)li(i)gen(hg~)tes(hi)me(gh) 
-di(f)lí(f!gwhg|ql!cl-ppt1)go(gf|/cl-) (;)
-et(f) qui(ef) ma(fg)ne(f) vi(f)gi(f)lá(fg)ve(f)rint(f) ad(fg~) me(f) (`) 
-in(f!gwhGFE|ql-ppt1su3) ve(f|vi)ni(hg|/cl|/hih|//to)ent(hvGFg>|//ci-/vi) me.(ffO1e|pr) +(::)
+Et(EFgwhhi~|qlhhppt2pehk) sú(h)stu(h)lit(hg) me(hi)
+in(gh) spí(f)ri(f!gwhg|ql!cl-ppt1)tu(gf|/cl-) (;)
+in(f) mon(ef~)tem(f) ma(f!gwhGFE|ql-ppt1su3)gnum(f|vi)
+et(hg|/cl|/hih|//to) al(hvGFg|//ci-/vi)tum.(ffO1e|pr) +(::)
 
-Et(ef>|pe>1) vi(hi!jv|vippt2)di(i|ta) (::)
+Et.(e!f>|pe>1) (::)
