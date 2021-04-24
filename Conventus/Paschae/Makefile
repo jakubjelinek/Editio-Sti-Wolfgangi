@@ -48,7 +48,7 @@ MODUS-17xlvii_li = vii-c2
 MODUS-18i = ii-D
 MODUS-19 = viii-G
 MODUS-20 = viii-G
-MODUS-23 = iv_-e viii-G
+MODUS-23 = iv_-e vii-a viii-G
 MODUS-28 = vii-a
 MODUS-29 = viii-G
 MODUS-30i = viii-G
@@ -85,8 +85,8 @@ MODUS-54iii = viii-G
 MODUS-56 = viii-g
 MODUS-62 = i-g ii_-B vii-a viii-G viii-C viii-g e
 MODUS-64 = viii-A viii-C
-MODUS-65i = vi-F
-MODUS-65ii = ii_-a
+MODUS-65i = vi-F viii-G5
+MODUS-65ii = ii_-a vii-a
 MODUS-66 = viii-g e dir
 MODUS-67i = i-g vii-a
 MODUS-67ii = i-f i-g
@@ -380,7 +380,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  inmedioecclesiae alleluia-auglx4 alleluia-turco10 alleluia-turco21 \
 			  eccedominusnoster-tp nemopotestvenire alleluia-turco13 alleluia-auglx5 \
 			  beatusgeorgius nonnosderelinquas-tp alleluia-fo2 mecumsitdomine-tp \
-			  sanctadeigenetrix verbaquaelocutussum) \
+			  sanctadeigenetrix verbaquaelocutussum egosumpastorovium) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -437,8 +437,11 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   christusresurgensexmortuis paschanostrum \
 			   christusresurgensexmortuis-cumdox deoreprudentis-CROCHU \
 			   beatusvir-CROCHU pretiosa-CROCHU tristitiavestra-CROCHU \
-			   pretiosa-CROCHU-cumdox) \
-	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3) \
+			   pretiosa-CROCHU-cumdox audivivocemincaeloangelorum-CROCHU \
+			   audivivocemincaelotamquam-CROCHU-cumdox dignusesdomine-CROCHU \
+			   egosicutvitis-CROCHU locutusestadmeunus-CROCHU \
+			   decantabatpopulus-CROCHU-cumdox) \
+	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3 d4) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 $(addprefix ant-avereginacaelorum-,simplex solemnis) benedictio-noctemquietam \

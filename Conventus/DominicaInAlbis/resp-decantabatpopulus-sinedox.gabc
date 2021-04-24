@@ -1,7 +1,7 @@
 name:Decantabat populus;
 office-part:Responsorium;
 mode:6;
-book: CROCHU;
+book:Nocturnale Romanum, 2002, p. 449;
 transcriber:Marek Klein;
 commentary:ꝶ I. Paralip. 15,28.27 ꝟ ibid. 15,14.28; H248;
 cantusindex:006400;
@@ -9,21 +9,23 @@ nabc-lines:1;
 source:http://www.e-codices.unifr.ch/en/csg/0391/054;
 %%
 (c2)
-DE(bxb|ta)can(d|vi)tá(ffg|vi-pehh)bat(f|ta) pó(g|vi)pu(f|ta)lus(ge|/cl|/fOg|pq)
-in(d|vi) Is(bxcb|/cl)ra(d|vi)ël,(fvv|/bv-) al(fefo~|pr~)le(-ghgh|tr)lú(hg/gof/gv|//cl!pi/vi)ia:(gf|/cl-) (;)
-et(fd|/cllsc2) u(f|vi)ni(-ghg|//to)vér(hf|/cl-|/gh~|pe~)sa(gf|/cl-)
-mul(f|ta)ti(f|ta)tú(fg|pe)do(fe|/cllsc3) Ia(d|ta)cob(df!gh|pe-hhpp2|/hg|/cl-hi)
-ca(g|ta)né(ixig!hwiHGF|cl-ql!vssu2)bat(gfge~|//po>) le(fg>|pe>)gí(f|ta)ti(fg|pe-|/gf|/cl-)me:(f|ta) +(:)
+DE(b|ta)can(d|vi)tá(ffg|vi-pehh)bat(f|ta) pó(g|vi)pu(f|ta)lus(ge|/cl|/fo0g|pq)
+in(d|vi) Is(cb|/cl)ra(d|vi)ël,(fvv|/bv-) *(,)
+al(fef>|pr~)le(ghgh|tr)lú(hg/gO1f/g|//cl!pi/vi)ia:(gf|/cl-) (;)
+et(fd|/cllsc2) u(f|vi)ni(ghg|//to)vér(hf|/cl-|/hi~|pe~)sa(gf|/cl-)
+mul(f|ta)ti(f|ta)tú(fg|pe)do(fe|/cllsc3) Ja(d|ta)cob(FGhi|pe-hhpp2|/ih|/cl-hi)
+ca(g|ta)né(ighwihGFg|cl-ql!vssu2)bat(gfg>|//po>) le(fg>|pe>)gí(f|ta)ti(fg|pe-|/gf|/cl-)me:(f|ta) +(:)
 
-Et(f|ta) Da(gh|pe)vid(ghGF|pe-1su2) cum(gh|pe) can(h>|vi>)tó(g|vi)ri(ghGFg|pe-1su2/vi)bus(gf|/cl-) (,)
-cí(g|vi)tha(f|ta)ram(gfg|//po) per(d|ta)cu(fe|/cl)ti(f|tavi)é(fg|pe)bat(f|ta)
-in(f|ta) do(fg|pe)mo(f|ta) Dó(fe|/cl|/fOg|pq)mi(d!ewfeDCde|ql!vsppt1su2peS)ni,(dc|/cl-) (;)
-et(f|vi-) lau(cd!ewf/fg>|``ql-hhppt2`pe>)des(f|ta) De(g|vi)o(fd|/cllsc3) ca(f|vi)né(ixfh|pe-|/ivHG|ci-)bat,(hg|/cl-) (,)
-al(h|vi)le(ixi|vi)lú(ih>|/cl>)ia,(g|ta) (,)
-al(ixhhOi>|sa>)le(g!hwi/ivHGF|ql-ppt1``vi-hhsu1sut2)lú(f!gwhgh>|qlhe!clheppt1vi>)ia.(gf|/cl-) <sp>V/</sp>.(::)
+Et(f|ta) Da(gh|pe)vid(ghGF|pe-1su2) cum(gh|pe) can(h>|vi>)tó(h|vi)ri(ghGFg|pe-1su2/vi)bus(gf|/cl-) (,)
+cí(fg|vi)tha(f|ta)ram(gfg|//po) per(d|ta)cu(fe|/cl)ti(f|tavi)é(fg|pe)bat(f|ta)
+in(f|ta) do(fg|pe)mo(f|ta) Dó(ge|/cl|/fo0g|pq)mi(d!ewfeDCd|ql!vsppt1su2peS)ni,(dc|/cl-) (;)
+et(f|vi-) lau(CDewf/fg>|``ql-hhppt2`pe>)des(f|ta) De(g|vi)o(fe|/cllsc3) ca(f|vi)né(fh|pe-|!ivHG|ci-)bat,(hg|/cl-) (,)
+al(i|vi)le(i|vi)lú(ih>|/cl>)ia,(f|ta) (,)
+al(hho1i|sa>)le(g!hwiivHGF|ql-ppt1``vi-hhsu1sut2)lú(f!gwhg/h>|qlhe!clheppt1vi>)ia.(gf|/cl-) <sp>V/</sp>.(::)
 
-Mó(f!goh|sa)y(h)ses(ixihivHGhg|cl-/ci-/cl-) et(ixh!iwj/kv) A(j|vi)a(j|vi)ron(j|vi) in(j|vi)
-sa(j|vi)cer(j|vi)dó(jh|cl)ti(ixi|vi)bus(gh|pe) su(f!gwhg|qlhe!cl-heppt1)is,(gf|/cl-) (;)
-et(f|vi) Sa(df|pe)mu(f|vi)el(ghf|tolss2) in(gf~)ter(f!goh|sa) e(ixig!hwiHG|cl-qi-su2)os.(ghGFgf|pe-1su2/cl-) +(::)
+San(f)cti(f)fi(f)cá(f!go1!hv|sa)ti(ihivHGhg|cl-/ci-/cl-) sunt(h) er(hi~)go(h)
+sa(h)cer(h)dó(h)tes(jh|/cl) et(i|vi) le(gh|pe)ví(f!gwhg|qlhe!cl-heppt1)tæ:(gf|/cl-) (;)
+et(f) u(df)ni(f)vér(fg~)sus(f) Is(f)ra(f)ël(f) de(f)du(f)cé(fg)bat(f) ar(f)cam(f)
+fœ́(fg)de(f)ris(f) Dó(fg)mi(f)ni(ghf|//to) in(fe|/cl) jú(f!go1!hv|sa)bi(ighwiHG|cl-qi-su2)lo.(ghGFgf|pe-1su2/cl-) +(::)
 
-+ Et(f|ta) Da(gh|pe)vid(ghGF|pe-1su2) (::)
+Et.(f|ta) (::)
