@@ -94,9 +94,9 @@ MODUS-67iii = i-g d-g2
 MODUS-68ii_xiii = i-g viii-c
 MODUS-68xiv_xxii = i-g viii-c
 MODUS-68iii = i-g viii-G
-MODUS-72i = viii-c
-MODUS-72ii = ii-D
-MODUS-72iii = iii-b
+MODUS-72i = vi-F viii-c
+MODUS-72ii = ii-D vi-F
+MODUS-72iii = iii-b vi-F
 MODUS-76 = viii-G
 MODUS-77i_xvi = i-g3
 MODUS-77iii = ii-D
@@ -115,7 +115,7 @@ MODUS-88xx_xxx = iv-e viii-G
 MODUS-88xxxi_xxxviii = iv-e viii-G
 MODUS-88xxxix_xlvi = vii-a viii-G5
 MODUS-88xlvii_liii = vi-F viii-G5
-MODUS-89 = i-g vi-F viii-G5
+MODUS-89 = i-g vi-F viii-G5 c-c2
 MODUS-90 = viii-G
 MODUS-91 = viii-g e
 MODUS-92 = viii-G viii-g
@@ -163,7 +163,7 @@ MODUS-131ii = vii-c
 MODUS-132 = i-a
 MODUS-133 = viii-G
 MODUS-134 = iii-g
-MODUS-134i = i-a
+MODUS-134i = i-a i-a2
 MODUS-135 = iii-g
 MODUS-135i = iiir-g d-g
 MODUS-135ii = iiir-g d-g
@@ -202,7 +202,7 @@ MODUS-isaiae4 = vii-c
 MODUS-isaiae5 = iv-E iv_-e
 MODUS-isaiae8 = viii-g viii-G5
 MODUS-isaiae9 = ii-D
-MODUS-isaiae10 = vi-F
+MODUS-isaiae10 = vi-F vii-b
 MODUS-isaiae11 = viii-g viii-g5
 MODUS-isaiae12 = iv-E
 MODUS-iudith2 = ii_-d
@@ -380,7 +380,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  inmedioecclesiae alleluia-auglx4 alleluia-turco10 alleluia-turco21 \
 			  eccedominusnoster-tp nemopotestvenire alleluia-turco13 alleluia-auglx5 \
 			  beatusgeorgius nonnosderelinquas-tp alleluia-fo2 mecumsitdomine-tp \
-			  sanctadeigenetrix verbaquaelocutussum egosumpastorovium) \
+			  sanctadeigenetrix verbaquaelocutussum egosumpastorovium \
+			  alleluia-turco1 amenamendicovobisquinon cantatedominocanticum-tp) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -440,7 +441,11 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   pretiosa-CROCHU-cumdox audivivocemincaeloangelorum-CROCHU \
 			   audivivocemincaelotamquam-CROCHU-cumdox dignusesdomine-CROCHU \
 			   egosicutvitis-CROCHU locutusestadmeunus-CROCHU \
-			   decantabatpopulus-CROCHU-cumdox) \
+			   decantabatpopulus-CROCHU-cumdox indiademate-CROCHU-cumdox \
+			   ostenditmihiangelus-CROCHU-cumdox plateaetuaeierusalem-CROCHU \
+			   veniensalibano-CROCHU vidijerusalemdescendentem-CROCHU \
+			   vidiportamcivitatis-CROCHU audivivocemincaeloangelorum-CROCHU-cumdox \
+			   ostenditmihiangelus-CROCHU) \
 	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3 d4) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
