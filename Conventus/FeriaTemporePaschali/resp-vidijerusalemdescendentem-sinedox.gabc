@@ -1,7 +1,7 @@
 name:Vidi Ierusalem descendentem;
 office-part:Responsorium;
 mode:1;
-book:Nocturnale Romanum, 2002, p. 453;
+book: CROCHU;
 transcriber:Marek Klein;
 commentary:ꝶ Apoc. 21,2 et Judith 10,9 ꝟ Apoc. 21,18; H248;
 cantusindex:007876;
@@ -9,20 +9,17 @@ nabc-lines:1;
 source:http://www.e-codices.unifr.ch/en/csg/0391/054;
 %%
 (c4)
-VI(ghi|ta-pe)di(h|ta) Ie(h|ta)rú(h|ta)sa(h|ta)lem(hjh|//toS2|/hg|/cl-) *()
-de(h|vi)scen(i|vi)dén(j>|vi>)tem(h|ta)
+VI(g/hi|ta-pe)di(h|ta) Ie(h|ta)rú(h|ta)sa(h|ta)lem(hjh|//toS2|/hg|/cl-)
+de(h|vi)scen(j|vi)dén(k>|vi>)tem(h|ta)
 de(jvIGh|//ci-/vi) cœ(h!iwjij|ql!poppt1)lo,(ih|/cl-) (;)
-or(gh>|pe>1)ná(JKlv|``vihhppt2)tam(k|tahi)
-au(k|tahi)ro(kj|/clhilsc3) mun(kvljk>|vi-hh/po>hk)do,(h|vi) +(:)
+or(gh>|pe>1)ná(jk!lv|``vihhppt2)tam(k|tahi)
+au(k|tahi)ro(kj|/clhilsc3) mun(k/ljk>|vi-hh/po>hk)do,(h|vi) +(:)
 
-Et(g|ta) la(h|vi)pí(jvv|/bv-)di(hiHGh|pe-1su2/vi)bus(hg|/cl-) pre(h|vi)ti(g|ta)ó(gf!gwhgh|cl-qi!po)sis(hg|/cl-) in(h>|vi>)téx(GIjvIHi|//vi-hhpp2su2/vi)tam:(ih|/cl-) (;)
-al(f|ta)le(ghg|//to)lú(h>|cl~)ia,(f!gwhGFE|ql-ppt1su1sut2|fvEDed|//ci-/cl-) (,)
-al(gffs|/clsthh)le(f|vi)lú(efEDe|pe-1su2/vi)ia.(ed|/cl-) <sp>V/</sp>.(::)
+Et(g|ta) la(h|vi)pí(jvv|/bv-)di(ixhiHGh|pe-1su2/vi)bus(hg|/cl-) pre(h|vi)ti(g|ta)ó(gf!gwhgh|cl-qi!po)sis(hg|/cl-) in(h>|vi>)téx(ixgh!ivHGh|//vi-hhpp2su2/vi)tam:(hg|/cl-) (;)
+al(f|ta)le(-ghg|//to)lú(h>|cl~)ia,(f!gwhGFE|ql-ppt1su1sut2|fvEDed|//ci-/cl-) (,)
+al(gffd~|/clsthh)le(f|vi)lú(efEDe|pe-1su2/vi)ia.(ed|/cl-) <sp>V/</sp>.(::)
+Ab(h|ta) in(h|ta)tus(hg|/cl|/hg/gof|//cl!pilsm2) in(g|vi)
+fim(hf~|/cl~)bri(gh|pe)is(gh|pe) áu(h|vi)re(ixh/iioh|////vi-pr)is;(h|ta) (;)
+cir(gf~|cl~)cum(gh|pe)a(h|vi)mí(ixhi|pe)cta(h) va(hg/hg|//cl/cl)ri(hf|/cl)e(ixf!gwhg/hih|////ql!clppt1tohk)tá(hvGFEfwg/hv|vi-hhsu1sut2qi-vihi)te.(gf|/cl-) +(::)
 
-Et(h|ta) e(h|ta)rat(hg|/cl|/hg/gO1f|//cl!pilsm2) stru(g)ctú(g)ra(g) mu(g)ri(g) e(gh~)jus(g) ex(g)
-lá(hf|/cl)pi(gh|pe)de(gh|pe) iá(h|ta)spi(ixh/iiO1h|////vi-pr)de;(h) (;)
-i(gf)psa(gh) ve(h)ro(h) au(h)rum(h) mun(ixhi~)dum,(h) (,)
-sí(h)mi(h)le(hg/hg|//cl/cl) vi(gf|/cl)tro(ixf!gwhg/hih|////ql!clppt1tohk)
-mun(hvGFEfwg!hv|vi-hhsu1sut2qi-vihi)do.(gf|/cl-) +(::)
-
-Et.(g|ta) (::)
+Et(g|ta) la(h|vi)pí(jvv|/bv-)di(ixhiHGh|pe-1su2/vi)bus.(hg|/cl-)  (::)
