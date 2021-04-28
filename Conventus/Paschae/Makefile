@@ -69,9 +69,9 @@ MODUS-38i = iv-E iv_-e
 MODUS-38ii = iv_-e vii-c
 MODUS-41 = ii-D
 MODUS-42 = vi-F e-e
-MODUS-43i = viii-G viii-C
-MODUS-43ii = ii_-a viii-C
-MODUS-43iii = i-g3 ii-D viii-C
+MODUS-43i = iv-e viii-G viii-C
+MODUS-43ii = ii_-a iv-e viii-C
+MODUS-43iii = i-g3 ii-D iv-e viii-C
 MODUS-46 = viii-c
 MODUS-47 = iv-a
 MODUS-49i_vi = i-g2 viii-A viii-G2
@@ -175,7 +175,7 @@ MODUS-138ii = iii-g
 MODUS-139 = iv-g
 MODUS-140 = viii-A
 MODUS-141 = viii-A
-MODUS-142 = viii-G
+MODUS-142 = viii-G viii-g
 MODUS-143i = vi-F
 MODUS-143i_x = vi-F
 MODUS-143ii = vi-F
@@ -199,7 +199,7 @@ MODUS-isaiae = viii-G viii-g
 MODUS-isaiae2 = v-a
 MODUS-isaiae3 = vii-d
 MODUS-isaiae4 = vii-c
-MODUS-isaiae5 = iv-E iv_-e
+MODUS-isaiae5 = iv-E iv_-e vii-c
 MODUS-isaiae8 = viii-g viii-G5
 MODUS-isaiae9 = ii-D
 MODUS-isaiae10 = vi-F vii-b
@@ -383,7 +383,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  sanctadeigenetrix verbaquaelocutussum egosumpastorovium \
 			  alleluia-turco1 amenamendicovobisquinon cantatedominocanticum-tp \
 			  alleluia-auglx6 ovesmeae sacrificiumdeo-tp alleluia-auglx7 \
-			  alleluia-turco14 egosumluxmundi induitmedominus-tp) \
+			  alleluia-turco14 egosumluxmundi induitmedominus-tp vincentidaboei \
+			  nonestdiscipulus alleluia-turco19 alleluia-turco17 alleluia-auglx8) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -467,7 +468,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 	 ps88xxxix_xlvi-initium-viii-G5 ps88xlvii_liii-initium-viii-G5 ps89-initium-viii-G5 \
 	 ps68ii_xiii-initium-i-d2 ps68xiv_xxii-initium-i-d2 ps68iii-initium-i-d2 \
 	 ps106i-initium-iv-e ps106ii-initium-iv-e ps106iii-initium-iv-e \
-	 ps102i-initium-viii-G5 ps102ii-initium-viii-G5 ps102iii-initium-viii-G5
+	 ps102i-initium-viii-G5 ps102ii-initium-viii-G5 ps102iii-initium-viii-G5 \
+	 ps43i-initium-iv-e ps43ii-initium-iv-e ps43iii-initium-iv-e
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
