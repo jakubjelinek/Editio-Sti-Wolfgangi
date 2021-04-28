@@ -220,7 +220,7 @@ MODUS-oseae = iv-E
 MODUS-sophoniae = iv-E
 MODUS-nuncdimittis = iii-a
 MODUS-magnificat = isoll-f isoll-g i-f i-g i-g2 i-g4 i-a i-D2 ii-D ii_-B iisoll-D iii-a iiisoll-a iv-A iv-A_ iv-d v-a vii-b vii-c vii-c2 viisoll-b viisoll-d viii-G viii-G2 viiisoll-G viiisoll-G2 viiisoll-g viiisoll-g5
-MODUS-benedictus = i-a4 i-d i-f i-g i-g4 i-g5 isoll-a5 isoll-d3 isoll-f iisoll-A ii_-a ii_-d ii_-B iii-a4 iii-b iv-E iv-e2 v-a vsoll-g vi-F vii-a viisoll-a vii-b viisoll-c vii-c2 vii-d2 viii-g viii-G viii-G2 viii-G5 viii-C2 viiisoll-G viiisoll-G5
+MODUS-benedictus = i-a4 i-d i-f i-g i-g4 i-g5 isoll-a5 isoll-d3 isoll-f iisoll-A ii-D ii_-a ii_-d ii_-B iii-a4 iii-b iv-E iv-e2 v-a vsoll-g vi-F vii-a viisoll-a vii-b viisoll-c vii-c2 vii-d2 viii-g viii-G viii-G2 viii-G5 viii-C2 viiisoll-G viiisoll-G5
 CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae8 isaiae9 isaiae10 isaiae11 isaiae12 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david nuncdimittis ezechiae2 lamentatio dan3 dan32 iudith2 oseae sophoniae
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -384,7 +384,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  alleluia-turco1 amenamendicovobisquinon cantatedominocanticum-tp \
 			  alleluia-auglx6 ovesmeae sacrificiumdeo-tp alleluia-auglx7 \
 			  alleluia-turco14 egosumluxmundi induitmedominus-tp vincentidaboei \
-			  nonestdiscipulus alleluia-turco19 alleluia-turco17 alleluia-auglx8) \
+			  nonestdiscipulus alleluia-turco19 alleluia-turco17 alleluia-auglx8 \
+			  adiurovosfiliae) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -403,7 +404,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  VitaSanctorum QuemTerra AudiBenigne ExMore PrecemurOmnes \
 			  VexillaRegis PangeLingua HicAccetum AuroraLucis AdCoenam \
 			  AuroraLucis-alt HicEstDies ChorusNovae ChorusNovae-praglia \
-			  LaetareCaelum) \
+			  LaetareCaelum TeCatharina) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus-tp clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -411,7 +412,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   inmatutinis deusmeusadiutormeus ipseliberavitme scapulissuis \
 			   christefilidei-tq deoreleonis deoreleonis-feriale erueaframea \
 			   erueaframea-feriale surrexitdominusdesepulcro surrexitdominusvere \
-			   surrexitdominusvere-solemnis christefilideivivi-tp) \
+			   surrexitdominusvere-solemnis christefilideivivi-tp audifilia-tp) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis solemnis-tq alter-tq communis-tq \
 				       solemnis-quad alter-quad communis-quad) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
