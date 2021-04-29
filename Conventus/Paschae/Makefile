@@ -77,11 +77,11 @@ MODUS-47 = iv-a
 MODUS-49i_vi = i-g2 viii-A viii-G2
 MODUS-49vii_xv = viii-G viii-G2 e
 MODUS-49xvi_xxiii = vii-c viii-G2 e
-MODUS-50 = i-a2 iii-a vi-F vii-a vii-c viii-G viii-G2 viii-G5
+MODUS-50 = i-a2 i-f iii-a vi-F vii-a vii-c viii-G viii-G2 viii-G5
 MODUS-51 = iv_-e
-MODUS-54i = viii-c
-MODUS-54ii = vii-c2
-MODUS-54iii = viii-G
+MODUS-54i = i-a4 viii-c
+MODUS-54ii = i-a4 vii-c2
+MODUS-54iii = i-a4 viii-G
 MODUS-56 = viii-g
 MODUS-62 = i-g ii_-B vii-a viii-G viii-C viii-g e
 MODUS-64 = viii-A viii-C
@@ -213,7 +213,7 @@ MODUS-moysis = e
 MODUS-moysis2i_xii = vi-F vii-c2
 MODUS-sapientia = v-a
 MODUS-tobiae = vii-a
-MODUS-tobiae2 = ii-D
+MODUS-tobiae2 = ii-D viii-G
 MODUS-dan3 = i-a4 ii-D ii_-a vi-F vii-a viii-G
 MODUS-dan32 = i-f
 MODUS-oseae = iv-E
@@ -385,7 +385,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  alleluia-auglx6 ovesmeae sacrificiumdeo-tp alleluia-auglx7 \
 			  alleluia-turco14 egosumluxmundi induitmedominus-tp vincentidaboei \
 			  nonestdiscipulus alleluia-turco19 alleluia-turco17 alleluia-auglx8 \
-			  adiurovosfiliae) \
+			  adiurovosfiliae alleluia-turco20 alleluia-turco24 beatiquilavantstolas \
+			  eccesacerdosmagnus vadopararevobis) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -451,7 +452,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   vidiportamcivitatis-CROCHU audivivocemincaeloangelorum-CROCHU-cumdox \
 			   ostenditmihiangelus-CROCHU veniensalibano-CROCHU-cumdox \
 			   indiademate-CROCHU decantabatpopulus-CROCHU \
-			   vidiportamcivitatis-CROCHU-cumdox) \
+			   vidiportamcivitatis-CROCHU-cumdox audivivocemincaelotamquam-CROCHU) \
 	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3 d4) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
