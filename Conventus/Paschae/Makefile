@@ -128,9 +128,9 @@ MODUS-100 = viii-G
 MODUS-101ii_xii = i-a i-d3
 MODUS-101xiii_xxiii = i-d3 viii-G
 MODUS-101iii = i-d3 i-g
-MODUS-102i = vi-F viii-C viii-G5
+MODUS-102i = vi-F vii-a viii-C viii-G5
 MODUS-102ii = i-d vi-F viii-G5
-MODUS-102iii = iii-g vi-F viii-G5
+MODUS-102iii = iii-g vi-F vii-a viii-G5
 MODUS-103i = iii-a
 MODUS-103ii = ii-D
 MODUS-103iii = e
@@ -387,7 +387,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  nonestdiscipulus alleluia-turco19 alleluia-turco17 alleluia-auglx8 \
 			  adiurovosfiliae alleluia-turco20 alleluia-turco24 beatiquilavantstolas \
 			  eccesacerdosmagnus vadopararevobis alleluia-turco26 etdicebantunde \
-			  iesuschristusheriethodie sicognovissetisme) \
+			  iesuschristusheriethodie sicognovissetisme egosumvitisvera) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -454,8 +454,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   ostenditmihiangelus-CROCHU veniensalibano-CROCHU-cumdox \
 			   indiademate-CROCHU decantabatpopulus-CROCHU \
 			   vidiportamcivitatis-CROCHU-cumdox audivivocemincaelotamquam-CROCHU \
-			   vidijerusalemdescendentem-CROCHU-cumdox) \
-	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3 d4) \
+			   vidijerusalemdescendentem-CROCHU-cumdox haecestierusalem-CROCHU-cumdox) \
+	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3 d4 d5) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 $(addprefix ant-avereginacaelorum-,simplex solemnis) benedictio-noctemquietam \
