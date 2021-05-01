@@ -454,7 +454,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   ostenditmihiangelus-CROCHU veniensalibano-CROCHU-cumdox \
 			   indiademate-CROCHU decantabatpopulus-CROCHU \
 			   vidiportamcivitatis-CROCHU-cumdox audivivocemincaelotamquam-CROCHU \
-			   vidijerusalemdescendentem-CROCHU-cumdox haecestierusalem-CROCHU-cumdox) \
+			   vidijerusalemdescendentem-CROCHU-cumdox haecestierusalem-CROCHU-cumdox \
+			   egosicutvitis-CROCHU-cumdox) \
 	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3 d4 d5) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
