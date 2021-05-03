@@ -30,9 +30,9 @@ MODUS-8 = i-a2 i-a4 i-f i-g
 MODUS-9ii_xi = viii-G
 MODUS-9xii_xxi = i-g i-g3
 MODUS-9xxii_xxxii = ii-D
-MODUS-9xxxiii_xxxix = iv_-e v-a
+MODUS-9xxxiii_xxxix = ii-D iv_-e v-a
 MODUS-10 = i-g ii_-f
-MODUS-11 = viii-G
+MODUS-11 = ii-D viii-G
 MODUS-13 = ii-D
 MODUS-14 = iv-E
 MODUS-16 = vii-c
@@ -55,7 +55,7 @@ MODUS-29 = viii-G
 MODUS-30i = viii-G
 MODUS-30ii = e-a
 MODUS-30iii = ii-D
-MODUS-32 = iv-E
+MODUS-32 = iv-E e
 MODUS-34i = iv-g
 MODUS-34ii = viii-G
 MODUS-34iii = viii-G
@@ -214,7 +214,7 @@ MODUS-lamentatio = i-d
 MODUS-moysis = e
 MODUS-moysis2i_xii = vi-F vii-c2
 MODUS-sapientia = v-a
-MODUS-tobiae = vii-a
+MODUS-tobiae = vii-a viii-g
 MODUS-tobiae2 = ii-D viii-G
 MODUS-dan3 = i-a4 ii-D ii_-a iii-a vi-F vii-a viii-G
 MODUS-dan32 = i-f
@@ -392,7 +392,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  iesuschristusheriethodie sicognovissetisme egosumvitisvera \
 			  domineostende egosumvia intabernaculisiustorum nonturbeturcor \
 			  sanctituidomine sidiligitisme tantotemporevobiscum \
-			  voxlaetitiaeintabernaculis) \
+			  voxlaetitiaeintabernaculis pacemrelinquovobis benedicitedominumomneselecti \
+			  alleluia-turco9) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
