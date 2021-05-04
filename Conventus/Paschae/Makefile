@@ -40,8 +40,8 @@ MODUS-17i = vi-F
 MODUS-17ii = iv-E
 MODUS-17iii = vii-c2
 MODUS-17ii_vii = vi-F
-MODUS-17viii_xx = i-g
-MODUS-17xxi_xxx = iv_-e
+MODUS-17viii_xx = i-g vi-F
+MODUS-17xxi_xxx = iv_-e vi-F
 MODUS-17xxxi_xxxv = viii-G
 MODUS-17xxxvi_xlvi = vii-c
 MODUS-17xlvii_li = vii-c2
@@ -73,7 +73,7 @@ MODUS-42 = vi-F e-e
 MODUS-43i = iv-e viii-G viii-C
 MODUS-43ii = ii_-a iv-e viii-C
 MODUS-43iii = i-g3 ii-D iv-e viii-C
-MODUS-46 = viii-c
+MODUS-46 = viii-c viii-G5
 MODUS-47 = iv-a
 MODUS-49i_vi = i-g2 viii-A viii-G2
 MODUS-49vii_xv = viii-G viii-G2 e
@@ -393,7 +393,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  domineostende egosumvia intabernaculisiustorum nonturbeturcor \
 			  sanctituidomine sidiligitisme tantotemporevobiscum \
 			  voxlaetitiaeintabernaculis pacemrelinquovobis benedicitedominumomneselecti \
-			  alleluia-turco9) \
+			  alleluia-turco9 alleluia-praglia-viii alleluiaegosumvitisvera \
+			  dominemagnusestu-tp) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -462,7 +463,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   indiademate-CROCHU decantabatpopulus-CROCHU \
 			   vidiportamcivitatis-CROCHU-cumdox audivivocemincaelotamquam-CROCHU \
 			   vidijerusalemdescendentem-CROCHU-cumdox haecestierusalem-CROCHU-cumdox \
-			   egosicutvitis-CROCHU-cumdox filiaeierusalem-CROCHU-cumdox) \
+			   egosicutvitis-CROCHU-cumdox filiaeierusalem-CROCHU-cumdox \
+			   docetefiliosvestros-CROCHU) \
 	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3 d4 d5) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
@@ -482,7 +484,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 	 ps106i-initium-iv-e ps106ii-initium-iv-e ps106iii-initium-iv-e \
 	 ps102i-initium-viii-G5 ps102ii-initium-viii-G5 ps102iii-initium-viii-G5 \
 	 ps43i-initium-iv-e ps43ii-initium-iv-e ps43iii-initium-iv-e \
-	 benedictus-initium-vii-a-trans dan3-initium-iii-a-trans
+	 benedictus-initium-vii-a-trans dan3-initium-iii-a-trans ps46-initium-viii-G5
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
