@@ -42,9 +42,9 @@ MODUS-17iii = vii-c2
 MODUS-17ii_vii = vi-F
 MODUS-17viii_xx = i-g vi-F
 MODUS-17xxi_xxx = iv_-e vi-F
-MODUS-17xxxi_xxxv = viii-G
-MODUS-17xxxvi_xlvi = vii-c
-MODUS-17xlvii_li = vii-c2
+MODUS-17xxxi_xxxv = vii-d2 viii-G
+MODUS-17xxxvi_xlvi = vii-c vii-d2
+MODUS-17xlvii_li = vii-c2 vii-d2
 MODUS-18 = i-a
 MODUS-18i = ii-D
 MODUS-19 = viii-G
@@ -74,7 +74,7 @@ MODUS-43i = iv-e viii-G viii-C
 MODUS-43ii = ii_-a iv-e viii-C
 MODUS-43iii = i-g3 ii-D iv-e viii-C
 MODUS-46 = viii-c viii-G5
-MODUS-47 = iv-a
+MODUS-47 = ii_-a iv-a
 MODUS-49i_vi = i-g2 viii-A viii-G2
 MODUS-49vii_xv = viii-G viii-G2 e
 MODUS-49xvi_xxiii = vii-c viii-G2 e
@@ -83,7 +83,7 @@ MODUS-51 = iv_-e
 MODUS-54i = i-a4 viii-c
 MODUS-54ii = i-a4 vii-c2
 MODUS-54iii = i-a4 viii-G
-MODUS-56 = viii-g
+MODUS-56 = viii-g viii-G
 MODUS-62 = i-g ii_-B vii-a vii-c2 viii-G viii-C viii-g e
 MODUS-63 = i-d
 MODUS-64 = i-d viii-A viii-C
@@ -394,7 +394,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  sanctituidomine sidiligitisme tantotemporevobiscum \
 			  voxlaetitiaeintabernaculis pacemrelinquovobis benedicitedominumomneselecti \
 			  alleluia-turco9 alleluia-praglia-viii alleluiaegosumvitisvera \
-			  dominemagnusestu-tp) \
+			  dominemagnusestu-tp maneteindilectionemea populusmeusait-tp alleluia-turco31) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
