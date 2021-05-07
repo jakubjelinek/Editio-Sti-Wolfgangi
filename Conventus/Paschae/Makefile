@@ -136,9 +136,9 @@ MODUS-102iii = iii-g vi-F vii-a viii-G5
 MODUS-103i = iii-a
 MODUS-103ii = ii-D
 MODUS-103iii = e
-MODUS-104i = d-g
-MODUS-104ii = viii-a
-MODUS-104iii = iv-E
+MODUS-104i = viii-g d-g
+MODUS-104ii = viii-a viii-g
+MODUS-104iii = iv-E viii-g
 MODUS-105i = e
 MODUS-105ii = viii-G
 MODUS-105iii = vii-a
@@ -211,7 +211,7 @@ MODUS-iudith2 = ii_-d
 MODUS-jeremiae2 = i-d viii-G
 MODUS-jeremiae3 = iv_-e
 MODUS-lamentatio = i-d
-MODUS-moysis = e
+MODUS-moysis = iv-e2 e
 MODUS-moysis2i_xii = vi-F vii-c2
 MODUS-sapientia = v-a
 MODUS-tobiae = vii-a viii-g
@@ -395,7 +395,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  voxlaetitiaeintabernaculis pacemrelinquovobis benedicitedominumomneselecti \
 			  alleluia-turco9 alleluia-praglia-viii alleluiaegosumvitisvera \
 			  dominemagnusestu-tp maneteindilectionemea populusmeusait-tp alleluia-turco31 \
-			  indominoiustificabitur-tp hocestpraeceptummeum) \
+			  indominoiustificabitur-tp hocestpraeceptummeum egovoselegidemundo \
+			  fortitudomeaetlausmea) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -485,7 +486,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 	 ps106i-initium-iv-e ps106ii-initium-iv-e ps106iii-initium-iv-e \
 	 ps102i-initium-viii-G5 ps102ii-initium-viii-G5 ps102iii-initium-viii-G5 \
 	 ps43i-initium-iv-e ps43ii-initium-iv-e ps43iii-initium-iv-e \
-	 benedictus-initium-vii-a-trans dan3-initium-iii-a-trans ps46-initium-viii-G5
+	 benedictus-initium-vii-a-trans dan3-initium-iii-a-trans ps46-initium-viii-G5 \
+	 ps104i-initium-viii-g5 ps104ii-initium-viii-g5 ps104iii-initium-viii-g5
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
