@@ -133,9 +133,9 @@ MODUS-101iii = i-d3 i-g
 MODUS-102i = vi-F vii-a viii-C viii-G5
 MODUS-102ii = i-d vi-F viii-G5
 MODUS-102iii = iii-g vi-F vii-a viii-G5
-MODUS-103i = iii-a
-MODUS-103ii = ii-D
-MODUS-103iii = e
+MODUS-103i = iii-a vii-a
+MODUS-103ii = ii-D viii-G5
+MODUS-103iii = vii-a e
 MODUS-104i = viii-g d-g
 MODUS-104ii = viii-a viii-g
 MODUS-104iii = iv-E viii-g
@@ -396,7 +396,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  alleluia-turco9 alleluia-praglia-viii alleluiaegosumvitisvera \
 			  dominemagnusestu-tp maneteindilectionemea populusmeusait-tp alleluia-turco31 \
 			  indominoiustificabitur-tp hocestpraeceptummeum egovoselegidemundo \
-			  fortitudomeaetlausmea) \
+			  fortitudomeaetlausmea vosautemdixiamicos) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -466,8 +466,12 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   vidiportamcivitatis-CROCHU-cumdox audivivocemincaelotamquam-CROCHU \
 			   vidijerusalemdescendentem-CROCHU-cumdox haecestierusalem-CROCHU-cumdox \
 			   egosicutvitis-CROCHU-cumdox filiaeierusalem-CROCHU-cumdox \
-			   docetefiliosvestros-CROCHU docetefiliosvestros-CROCHU-cumdox) \
-	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3 d4 d5) \
+			   docetefiliosvestros-CROCHU docetefiliosvestros-CROCHU-cumdox \
+			   deuscanticumnovum-CROCHU-cumdox hymnumcantatenobis-CROCHU-cumdox \
+			   inecclesiisbenedicite-CROCHU intotocordemeo-CROCHU \
+			   narrabonomentuum-CROCHU-cumdox sioblitusfuero-CROCHU \
+			   videruntteaquae-CROCHU) \
+	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3 d4 d5 d6) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 $(addprefix ant-avereginacaelorum-,simplex solemnis) benedictio-noctemquietam \
