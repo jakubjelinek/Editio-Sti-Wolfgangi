@@ -46,15 +46,15 @@ MODUS-17xxxi_xxxv = vii-d2 viii-G
 MODUS-17xxxvi_xlvi = vii-c vii-d2
 MODUS-17xlvii_li = vii-c2 vii-d2
 MODUS-18 = i-a
-MODUS-18i = ii-D
+MODUS-18i = ii-D ii_-a
 MODUS-19 = viii-G
 MODUS-20 = viii-G
 MODUS-23 = iv_-e vii-a viii-G
 MODUS-28 = vii-a
 MODUS-29 = viii-G
 MODUS-30i = viii-G
-MODUS-30ii = e-a
-MODUS-30iii = ii-D
+MODUS-30ii = viii-G e-a
+MODUS-30iii = ii-D viii-G
 MODUS-32 = iv-E e
 MODUS-34i = i-a5 iv-g
 MODUS-34ii = i-a5 viii-G
@@ -472,7 +472,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   narrabonomentuum-CROCHU-cumdox sioblitusfuero-CROCHU \
 			   videruntteaquae-CROCHU alleluiaaudivimusea-CROCHU \
 			   bonumestconfiteri-CROCHU-cumdox cantatedeoalleluia-CROCHU-cumdox \
-			   dicantnuncquiredempti-CROCHU deducmeinsemitam-CROCHU) \
+			   dicantnuncquiredempti-CROCHU deducmeinsemitam-CROCHU \
+			   alleluiaaudivimusea-CROCHU-cumdox alleluiadelectatiobona-CROCHU) \
 	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3 d4 d5 d6) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
@@ -493,7 +494,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 	 ps102i-initium-viii-G5 ps102ii-initium-viii-G5 ps102iii-initium-viii-G5 \
 	 ps43i-initium-iv-e ps43ii-initium-iv-e ps43iii-initium-iv-e \
 	 benedictus-initium-vii-a-trans dan3-initium-iii-a-trans ps46-initium-viii-G5 \
-	 ps104i-initium-viii-g5 ps104ii-initium-viii-g5 ps104iii-initium-viii-g5
+	 ps104i-initium-viii-g5 ps104ii-initium-viii-g5 ps104iii-initium-viii-g5 \
+	 ps30i-initium-viii-G5 ps30ii-initium-viii-G5 ps30iii-initium-viii-G5
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
