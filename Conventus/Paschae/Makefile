@@ -396,7 +396,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  alleluia-turco9 alleluia-praglia-viii alleluiaegosumvitisvera \
 			  dominemagnusestu-tp maneteindilectionemea populusmeusait-tp alleluia-turco31 \
 			  indominoiustificabitur-tp hocestpraeceptummeum egovoselegidemundo \
-			  fortitudomeaetlausmea vosautemdixiamicos) \
+			  fortitudomeaetlausmea vosautemdixiamicos dumveneritparaclitus ostendenobis-tp) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -470,7 +470,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   deuscanticumnovum-CROCHU-cumdox hymnumcantatenobis-CROCHU-cumdox \
 			   inecclesiisbenedicite-CROCHU intotocordemeo-CROCHU \
 			   narrabonomentuum-CROCHU-cumdox sioblitusfuero-CROCHU \
-			   videruntteaquae-CROCHU) \
+			   videruntteaquae-CROCHU alleluiaaudivimusea-CROCHU \
+			   bonumestconfiteri-CROCHU-cumdox cantatedeoalleluia-CROCHU-cumdox \
+			   dicantnuncquiredempti-CROCHU deducmeinsemitam-CROCHU) \
 	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3 d4 d5 d6) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
