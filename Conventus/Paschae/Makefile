@@ -222,7 +222,7 @@ MODUS-oseae = iv-E
 MODUS-sophoniae = iv-E
 MODUS-nuncdimittis = iii-a
 MODUS-magnificat = isoll-f isoll-g i-f i-g i-g2 i-g4 i-a i-D2 ii-D ii_-B iisoll-D iii-a iiisoll-a iv-A iv-A_ iv-d v-a vii-b vii-c vii-c2 viisoll-b viisoll-d viii-G viii-G2 viiisoll-G viiisoll-G2 viiisoll-g viiisoll-g5
-MODUS-benedictus = i-a4 i-d i-f i-g i-g4 i-g5 isoll-a5 isoll-d3 isoll-f iisoll-A ii-D ii_-a ii_-d ii_-B iii-a4 iii-b iv-E iv-e2 v-a vsoll-g vi-F vii-a viisoll-a vii-b viisoll-c vii-c2 vii-d2 viii-g viii-G viii-G2 viii-G5 viii-C viii-C2 viii-c viiisoll-G viiisoll-G5
+MODUS-benedictus = i-a4 i-d i-f i-g i-g4 i-g5 isoll-a5 isoll-d3 isoll-f iisoll-A ii-D ii_-a ii_-d ii_-B iii-a4 iii-b iv-E iv-e2 v-a v-g vsoll-g vi-F vii-a viisoll-a vii-b viisoll-c vii-c2 vii-d2 viii-g viii-G viii-G2 viii-G5 viii-C viii-C2 viii-c viiisoll-G viiisoll-G5
 CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae8 isaiae9 isaiae10 isaiae11 isaiae12 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david nuncdimittis ezechiae2 lamentatio dan3 dan32 iudith2 oseae sophoniae
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -396,7 +396,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  alleluia-turco9 alleluia-praglia-viii alleluiaegosumvitisvera \
 			  dominemagnusestu-tp maneteindilectionemea populusmeusait-tp alleluia-turco31 \
 			  indominoiustificabitur-tp hocestpraeceptummeum egovoselegidemundo \
-			  fortitudomeaetlausmea vosautemdixiamicos dumveneritparaclitus ostendenobis-tp) \
+			  fortitudomeaetlausmea vosautemdixiamicos dumveneritparaclitus ostendenobis-tp \
+			  vadoadeumquimisit adhucmultahabeo) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -473,7 +474,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   videruntteaquae-CROCHU alleluiaaudivimusea-CROCHU \
 			   bonumestconfiteri-CROCHU-cumdox cantatedeoalleluia-CROCHU-cumdox \
 			   dicantnuncquiredempti-CROCHU deducmeinsemitam-CROCHU \
-			   alleluiaaudivimusea-CROCHU-cumdox alleluiadelectatiobona-CROCHU) \
+			   alleluiaaudivimusea-CROCHU-cumdox alleluiadelectatiobona-CROCHU \
+			   alleluiaiudicaiudicium-CROCHU-cumdox bonumestconfiteri-CROCHU \
+			   cantatedeoalleluia-CROCHU) \
 	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3 d4 d5 d6) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
