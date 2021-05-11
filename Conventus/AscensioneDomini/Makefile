@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 4 8 10 18 20 29 46 62 90 92 96 98 99 102 109 110 111 112 133 148 149 150
+PSALMS = 4 8 10 18 20 29 46 62 90 92 96 98 99 102 109 110 111 112 116 133 145 146 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-4 = viii-G
 MODUS-8 = iv-A_
@@ -40,7 +40,11 @@ MODUS-109 = vii-a
 MODUS-110 = viii-G2
 MODUS-111 = iv-A_
 MODUS-112 = viii-G
+MODUS-116 = i-g
 MODUS-133 = viii-G
+MODUS-145 = i-g5
+MODUS-146 = vii-a
+MODUS-147 = iv-e2
 MODUS-148 = viii-G
 MODUS-149 = viii-G
 MODUS-150 = viii-G
@@ -76,8 +80,10 @@ SCORES = $(addprefix ant-,ascenditdeus ascendoadpatrem asummocoeloegressioejus \
 			  oportebatpatichristum orexgloriae patermanifestavi \
 			  patervenithora petiteetaccipietisquaerite \
 			  videntibusillis virigalilaeiquidaspicitis \
-			  alleluia-compl salvanos-antiquo-tp) \
-	 $(addprefix hym-,AEterneRexAltissime JesuNostraRedemptio TeLucis) \
+			  alleluia-compl salvanos-antiquo-tp \
+			  exiviapatre-praglia nuncclarificatusest dominusquidemiesus \
+			  nemoascendit patermanifestavi-praglia sicvenietquemadmodum) \
+	 $(addprefix hym-,AEterneRexAltissime JesuNostraRedemptio TeLucis IesuNostraRedemptio) \
 	 $(addprefix resp-,ascendenschristusinaltum ascendenschristusinaltum-simplex \
 			   ascenditdeus inmanus-tp subvenite subvenite-gn) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
@@ -97,7 +103,8 @@ SCORES = $(addprefix ant-,ascenditdeus ascendoadpatrem asummocoeloegressioejus \
 			   ponitnubem-cumdox omnispulchritudodomini-sinedox \
 			   ascendensinaltum-cumdox nonconturbetur-sinedox \
 			   tempusest-sinedox postpassionemsuam-sinedox \
-			   sienimnonabiero-cumdox) \
+			   sienimnonabiero-cumdox tempusest-CROCHU \
+			   tempusest-CROCHU-cumdox) \
 	 tedeum-solemnis an_regina_caeli_simplex convertenosdeus \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 benedictio-noctemquietam
@@ -109,7 +116,7 @@ LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PSALMTONES_DIR)/$(2)-auto.gabc; \
 	     [ $(2) = "dir" ] && cd .. && $(SED) -i -e '/(::)$$$$/{/(,) (::)$$$$/!{s/<b>//g;s/<\/b>//g}}' $(3) || :
-PDF = ascensionedomini.pdf $(patsubst %,feria%-oa.pdf,ii iii iv v vi) $(patsubst %,sabbato-%.pdf,oa poa) feriavi-poa.pdf dominicainfraoctavamascensionis.pdf subvenite.pdf
+PDF = ascensionedomini.pdf ascensionedomini-breviori.pdf $(patsubst %,feria%-oa.pdf,ii iii iv v vi) $(patsubst %,sabbato-%.pdf,oa poa) feriavi-poa.pdf dominicainfraoctavamascensionis.pdf subvenite.pdf
 all: $(PDF)
 iter = $(patsubst %,iterator.mk,$(iter-left))
 define iter-doit

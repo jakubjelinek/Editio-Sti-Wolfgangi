@@ -1,15 +1,9 @@
-name: h--Iesu-nostra-redemptio-PRAGLIA;
-user-notes: ;
-commentary: Praglia I p, 372;
-annotation: iv ;
-centering-scheme: english;
-%fontsize: 12;
-%spacing: vichi;
-%font: OFLSortsMillGoudy;
-%width: 4.5;
-%height: 11;
+name: Iesu nostra redemptio;
+book: Antiphonale Monasticum I, Praglia, p. 372;
+mode: 4;
 %%
-(c4) Ie(f)su(e!fw!gh) nos(g)tra(fd) red(e)émp(fg)ti(fe)o,(e_) (,)
+(c4)
+IE(f)su(e!fw!gh) nos(g)tra(fd) red(e)émp(fg)ti(fe)o,(e_) (,)
 a(g)mor(hj) et(h) de(gf)si(g)dé(g)ri(f)um,(ed..) (;)
 De(cd)us(d) cre(dc)á(d)tor(fe) óm(de)ni(e)um,(e_) (,)
 ho(g)mo(gh) in(g) fi(fd)ne(e) tém(fg)po(fe)rum.(e.) (::)
