@@ -29,7 +29,7 @@ MODUS-18 = iv-A_
 MODUS-20 = iv-A_
 MODUS-29 = viii-G
 MODUS-46 = iv-A_
-MODUS-62 = iv-A_
+MODUS-62 = ii_-B iv-A_
 MODUS-90 = viii-G
 MODUS-92 = vii-a
 MODUS-96 = vi-F
@@ -82,8 +82,10 @@ SCORES = $(addprefix ant-,ascenditdeus ascendoadpatrem asummocoeloegressioejus \
 			  videntibusillis virigalilaeiquidaspicitis \
 			  alleluia-compl salvanos-antiquo-tp \
 			  exiviapatre-praglia nuncclarificatusest dominusquidemiesus \
-			  nemoascendit patermanifestavi-praglia sicvenietquemadmodum) \
-	 $(addprefix hym-,AEterneRexAltissime JesuNostraRedemptio TeLucis IesuNostraRedemptio) \
+			  nemoascendit patermanifestavi-praglia sicvenietquemadmodum \
+			  elevatismanibus-praglia) \
+	 $(addprefix hym-,AEterneRexAltissime JesuNostraRedemptio TeLucis \
+			  IesuNostraRedemptio AEterneRex) \
 	 $(addprefix resp-,ascendenschristusinaltum ascendenschristusinaltum-simplex \
 			   ascenditdeus inmanus-tp subvenite subvenite-gn) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
@@ -104,8 +106,11 @@ SCORES = $(addprefix ant-,ascenditdeus ascendoadpatrem asummocoeloegressioejus \
 			   ascendensinaltum-cumdox nonconturbetur-sinedox \
 			   tempusest-sinedox postpassionemsuam-sinedox \
 			   sienimnonabiero-cumdox tempusest-CROCHU \
-			   tempusest-CROCHU-cumdox) \
-	 tedeum-solemnis an_regina_caeli_simplex convertenosdeus \
+			   tempusest-CROCHU-cumdox ponitnubem-CROCHU-cumdox nonconturbetur-CROCHU \
+			   iteinorbemuniversum-CROCHU-cumdox exaltaredomine-CROCHU-cumdox \
+			   ascendensinaltum-CROCHU-cumdox ascendensinaltum-CROCHU \
+			   iteinorbemuniversum-CROCHU) \
+	 tedeum-solemnis tedeum-solemnis-gn an_regina_caeli_simplex convertenosdeus \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 benedictio-noctemquietam
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
@@ -132,7 +137,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes
+iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../CorpusChristi
 include $(iter)
 
 $(LAPSALMSSINEDOX): $(TMP_DIR)/%-sinedox.tex: $(TMP_DIR)/%.tex
