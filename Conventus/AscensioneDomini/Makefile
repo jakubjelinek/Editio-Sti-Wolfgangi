@@ -109,7 +109,8 @@ SCORES = $(addprefix ant-,ascenditdeus ascendoadpatrem asummocoeloegressioejus \
 			   tempusest-CROCHU-cumdox ponitnubem-CROCHU-cumdox nonconturbetur-CROCHU \
 			   iteinorbemuniversum-CROCHU-cumdox exaltaredomine-CROCHU-cumdox \
 			   ascendensinaltum-CROCHU-cumdox ascendensinaltum-CROCHU \
-			   iteinorbemuniversum-CROCHU) \
+			   iteinorbemuniversum-CROCHU postpassionemsuam-CROCHU \
+			   omnispulchritudodomini-CROCHU) \
 	 tedeum-solemnis tedeum-solemnis-gn an_regina_caeli_simplex convertenosdeus \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 benedictio-noctemquietam
