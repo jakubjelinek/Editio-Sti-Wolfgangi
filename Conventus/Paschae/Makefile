@@ -84,7 +84,7 @@ MODUS-54i = i-a4 viii-c
 MODUS-54ii = i-a4 vii-c2
 MODUS-54iii = i-a4 viii-G
 MODUS-56 = viii-g viii-G
-MODUS-62 = i-g ii_-B vii-a vii-c2 viii-G viii-C viii-g e
+MODUS-62 = i-g ii_-B vii-a vii-c2 viii-G viii-C viii-g viii-c e
 MODUS-63 = i-d
 MODUS-64 = i-d viii-A viii-C
 MODUS-65i = vi-F viii-G5
@@ -189,7 +189,7 @@ MODUS-145 = iv-E iv_-e
 MODUS-146 = viii-g viii-A
 MODUS-147 = vi-F e
 MODUS-148 = i-a i-g ii-D ii_-B vi-F vii-a viii-g
-MODUS-149 = i-a i-g ii-D ii_-B iii-a vi-F vii-a viii-g
+MODUS-149 = i-a i-a2 i-g ii-D ii_-B iii-a vi-F vii-a viii-g
 MODUS-150 = i-a i-g ii-D ii_-B vi-F vii-a viii-g
 MODUS-anna = i-g6 ii-D
 MODUS-david = i-f
@@ -216,7 +216,7 @@ MODUS-moysis2i_xii = vi-F vii-c2
 MODUS-sapientia = v-a
 MODUS-tobiae = vii-a viii-g
 MODUS-tobiae2 = ii-D viii-G
-MODUS-dan3 = i-a4 ii-D ii_-a iii-a vi-F vii-a viii-G
+MODUS-dan3 = i-a4 i-g ii-D ii_-a iii-a vi-F vii-a viii-G
 MODUS-dan32 = i-f
 MODUS-oseae = iv-E
 MODUS-sophoniae = iv-E
@@ -397,7 +397,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  dominemagnusestu-tp maneteindilectionemea populusmeusait-tp alleluia-turco31 \
 			  indominoiustificabitur-tp hocestpraeceptummeum egovoselegidemundo \
 			  fortitudomeaetlausmea vosautemdixiamicos dumveneritparaclitus ostendenobis-tp \
-			  vadoadeumquimisit adhucmultahabeo) \
+			  vadoadeumquimisit adhucmultahabeo dumsteteritis-tp maioremcaritatem-tp \
+			  sanctietiusti-tp vosamicimei-tp) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -476,7 +477,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   dicantnuncquiredempti-CROCHU deducmeinsemitam-CROCHU \
 			   alleluiaaudivimusea-CROCHU-cumdox alleluiadelectatiobona-CROCHU \
 			   alleluiaiudicaiudicium-CROCHU-cumdox bonumestconfiteri-CROCHU \
-			   cantatedeoalleluia-CROCHU) \
+			   cantatedeoalleluia-CROCHU luxperpetualucebit-CROCHU laetabituriustus-CROCHU \
+			   laetabituriustus-CROCHU-cumdox) \
 	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3 d4 d5 d6) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
