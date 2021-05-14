@@ -139,9 +139,9 @@ MODUS-103iii = vii-a e
 MODUS-104i = viii-g d-g
 MODUS-104ii = viii-a viii-g
 MODUS-104iii = iv-E viii-g
-MODUS-105i = e
-MODUS-105ii = viii-G
-MODUS-105iii = vii-a
+MODUS-105i = d-g e
+MODUS-105ii = viii-G d-g
+MODUS-105iii = vii-a d-g
 MODUS-106i = iv-e iv_-e
 MODUS-106ii = iv-e c-c2
 MODUS-106iii = iii-a2 iv-e
@@ -398,7 +398,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  indominoiustificabitur-tp hocestpraeceptummeum egovoselegidemundo \
 			  fortitudomeaetlausmea vosautemdixiamicos dumveneritparaclitus ostendenobis-tp \
 			  vadoadeumquimisit adhucmultahabeo dumsteteritis-tp maioremcaritatem-tp \
-			  sanctietiusti-tp vosamicimei-tp) \
+			  sanctietiusti-tp vosamicimei-tp amenamendicovobissiquid reginacaeli-praglia) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -417,7 +417,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  VitaSanctorum QuemTerra AudiBenigne ExMore PrecemurOmnes \
 			  VexillaRegis PangeLingua HicAccetum AuroraLucis AdCoenam \
 			  AuroraLucis-alt HicEstDies ChorusNovae ChorusNovae-praglia \
-			  LaetareCaelum TeCatharina ClaroPaschali MatthiaSacratissimo PhilippeSummae) \
+			  LaetareCaelum TeCatharina ClaroPaschali MatthiaSacratissimo PhilippeSummae \
+			  OptatusVotis AEterneRex) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus-tp clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -426,14 +427,14 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   christefilidei-tq deoreleonis deoreleonis-feriale erueaframea \
 			   erueaframea-feriale surrexitdominusdesepulcro surrexitdominusvere \
 			   surrexitdominusvere-solemnis christefilideivivi-tp audifilia-tp \
-			   constitueseosprincipes-tp) \
+			   constitueseosprincipes-tp ascendenschristus) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis solemnis-tq alter-tq communis-tq \
 				       solemnis-quad alter-quad communis-quad) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,feria-laudes feria-vesperae minor officium-bmv festis-bmv \
 				  dominica-advequad feria-advequad octava-paschae tempore-paschali) \
-	 $(addprefix inv-,surrexitdominusvere regemapostolorum-tp) \
+	 $(addprefix inv-,surrexitdominusvere regemapostolorum-tp christumdominumquisanctum) \
 	 dominelabiamea tonusprecum dominusnosbenedicat \
 	 $(addprefix capitulum-,tuautem BenedictusDeus AbInitio Hortamur InterVestibulum \
 				FratresRogamus FratresEstote FratresScriptum FratresChristus \
@@ -478,7 +479,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   alleluiaaudivimusea-CROCHU-cumdox alleluiadelectatiobona-CROCHU \
 			   alleluiaiudicaiudicium-CROCHU-cumdox bonumestconfiteri-CROCHU \
 			   cantatedeoalleluia-CROCHU luxperpetualucebit-CROCHU laetabituriustus-CROCHU \
-			   laetabituriustus-CROCHU-cumdox) \
+			   laetabituriustus-CROCHU-cumdox patercumessem-CROCHU-cumdox \
+			   psallitedomino-CROCHU iteinorbemuniversum-CROCHU) \
 	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3 d4 d5 d6) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
