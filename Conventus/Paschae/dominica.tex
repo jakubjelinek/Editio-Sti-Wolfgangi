@@ -992,17 +992,25 @@ Orémus:
 \vfill
 \pagebreak
 
+\ifx\hymnuslaudes\undefined
 \pars{Hymnus}
 
 \cuminitiali{VIII}{temporalia/hym-AuroraLucis-alt.gtex}
 \vspace{-3mm}
+\else
+\hymnuslaudes
+\fi
 
 \vfill
 %\pagebreak
 
+\ifx\versuslaudes\undefined
 \pars{Versus.}
 
 \sineinitiali{temporalia/versus-inresurrectione.gtex}
+\else
+\versuslaudes
+\fi
 
 \vfill
 \pagebreak

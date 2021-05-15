@@ -442,7 +442,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 				TuAutemDomineSabaoth FratresExpurgate) \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix versus-,custodi gaude dirigatur diffusa-tq angelis eripe eripemede haecdies \
-			     haecdies-communis inresurrectione) \
+			     haecdies-communis inresurrectione ascenditdeus-communis) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
 					evangelica divinum adsocietatem ille \
