@@ -183,8 +183,8 @@ MODUS-143i_x = vi-F
 MODUS-143ii = vi-F
 MODUS-144i = vii-a viii-A viii-G
 MODUS-144ii = vii-c2
-MODUS-144x_xiii = vii-c viii-G5
-MODUS-144xiv_xxi = vii-a viii-a
+MODUS-144x_xiii = iii-a4 vii-c viii-G5
+MODUS-144xiv_xxi = vii-a viii-a viii-G5
 MODUS-145 = iv-E iv_-e
 MODUS-146 = viii-g viii-A
 MODUS-147 = vi-F e
@@ -206,7 +206,7 @@ MODUS-isaiae8 = viii-g viii-G5
 MODUS-isaiae9 = ii-D
 MODUS-isaiae10 = vi-F vii-b
 MODUS-isaiae11 = viii-g viii-g5
-MODUS-isaiae12 = iv-E
+MODUS-isaiae12 = iii-b iv-E
 MODUS-iudith2 = ii_-d
 MODUS-jeremiae2 = i-d viii-G
 MODUS-jeremiae3 = iv_-e
@@ -218,11 +218,11 @@ MODUS-tobiae = vii-a viii-g
 MODUS-tobiae2 = ii-D viii-G
 MODUS-dan3 = i-a4 i-g ii-D ii_-a iii-a vi-F vii-a viii-G
 MODUS-dan32 = i-f
-MODUS-oseae = iv-E
-MODUS-sophoniae = iv-E
+MODUS-oseae = iii-b iv-E
+MODUS-sophoniae = iii-b iv-E
 MODUS-nuncdimittis = iii-a
 MODUS-magnificat = isoll-f isoll-g i-f i-g i-g2 i-g4 i-a i-D2 ii-D ii_-B iisoll-D iii-a iiisoll-a iv-A iv-A_ iv-d v-a vii-b vii-c vii-c2 viisoll-b viisoll-d viii-G viii-G2 viiisoll-G viiisoll-G2 viiisoll-g viiisoll-g5
-MODUS-benedictus = i-a4 i-d i-f i-g i-g4 i-g5 isoll-a5 isoll-d3 isoll-f iisoll-A ii-D ii_-a ii_-d ii_-B iii-a4 iii-b iv-E iv-e2 v-a v-g vsoll-g vi-F vii-a viisoll-a vii-b viisoll-c vii-c2 vii-d2 viii-g viii-G viii-G2 viii-G5 viii-C viii-C2 viii-c viiisoll-G viiisoll-G5
+MODUS-benedictus = i-a4 i-d i-f i-g i-g4 i-g5 isoll-a5 isoll-d3 isoll-f iisoll-A ii-D ii_-a ii_-d ii_-B iii-a4 iii-b iv-E iv-e2 ivsoll-e2 v-a v-g vsoll-g vi-F vii-a viisoll-a vii-b viisoll-c vii-c2 vii-d2 viii-g viii-G viii-G2 viii-G5 viii-C viii-C2 viii-c viiisoll-G viiisoll-G5
 CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae8 isaiae9 isaiae10 isaiae11 isaiae12 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david nuncdimittis ezechiae2 lamentatio dan3 dan32 iudith2 oseae sophoniae
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -398,7 +398,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  indominoiustificabitur-tp hocestpraeceptummeum egovoselegidemundo \
 			  fortitudomeaetlausmea vosautemdixiamicos dumveneritparaclitus ostendenobis-tp \
 			  vadoadeumquimisit adhucmultahabeo dumsteteritis-tp maioremcaritatem-tp \
-			  sanctietiusti-tp vosamicimei-tp amenamendicovobissiquid reginacaeli-praglia) \
+			  sanctietiusti-tp vosamicimei-tp amenamendicovobissiquid reginacaeli-praglia \
+			  christodatusest dataestmihi laetenturetexultentomnes patersancte) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -418,7 +419,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  VexillaRegis PangeLingua HicAccetum AuroraLucis AdCoenam \
 			  AuroraLucis-alt HicEstDies ChorusNovae ChorusNovae-praglia \
 			  LaetareCaelum TeCatharina ClaroPaschali MatthiaSacratissimo PhilippeSummae \
-			  OptatusVotis AEterneRex) \
+			  OptatusVotis AEterneRex IesuNostraRedemptio) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus-tp clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -480,8 +481,12 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   alleluiaiudicaiudicium-CROCHU-cumdox bonumestconfiteri-CROCHU \
 			   cantatedeoalleluia-CROCHU luxperpetualucebit-CROCHU laetabituriustus-CROCHU \
 			   laetabituriustus-CROCHU-cumdox patercumessem-CROCHU-cumdox \
-			   psallitedomino-CROCHU iteinorbemuniversum-CROCHU) \
-	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3 d4 d5 d6) \
+			   psallitedomino-CROCHU iteinorbemuniversum-CROCHU tempusest-CROCHU \
+			   tempusest-CROCHU-cumdox ponitnubem-CROCHU-cumdox nonconturbetur-CROCHU \
+			   iteinorbemuniversum-CROCHU-cumdox exaltaredomine-CROCHU-cumdox \
+			   ascendensinaltum-CROCHU-cumdox ascendensinaltum-CROCHU \
+			   postpassionemsuam-CROCHU omnispulchritudodomini-CROCHU) \
+	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3 d4 d5 d6 d7) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 $(addprefix ant-avereginacaelorum-,simplex solemnis) benedictio-noctemquietam \
