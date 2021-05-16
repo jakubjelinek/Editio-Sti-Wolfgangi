@@ -399,7 +399,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  fortitudomeaetlausmea vosautemdixiamicos dumveneritparaclitus ostendenobis-tp \
 			  vadoadeumquimisit adhucmultahabeo dumsteteritis-tp maioremcaritatem-tp \
 			  sanctietiusti-tp vosamicimei-tp amenamendicovobissiquid reginacaeli-praglia \
-			  christodatusest dataestmihi laetenturetexultentomnes patersancte) \
+			  christodatusest dataestmihi laetenturetexultentomnes patersancte \
+			  eccenuncpalam) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -485,7 +486,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   tempusest-CROCHU-cumdox ponitnubem-CROCHU-cumdox nonconturbetur-CROCHU \
 			   iteinorbemuniversum-CROCHU-cumdox exaltaredomine-CROCHU-cumdox \
 			   ascendensinaltum-CROCHU-cumdox ascendensinaltum-CROCHU \
-			   postpassionemsuam-CROCHU omnispulchritudodomini-CROCHU) \
+			   postpassionemsuam-CROCHU omnispulchritudodomini-CROCHU \
+			   eduxitdominusiesus-CROCHU nonconturbeturetmittam-CROCHU \
+			   pacemmeamdovobis-CROCHU nonconturbeturetmittam-CROCHU-cumdox) \
 	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3 d4 d5 d6 d7) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
@@ -517,7 +520,7 @@ LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PSALMTONES_DIR)/$(2)-auto.gabc; \
 	     [ $(2) = "dir" ] && cd .. && $(SED) -i -e '/(::)$$$$/{/(,) (::)$$$$/!{s/<b>//g;s/<\/b>//g}}' $(3) || :
 FERIAE = ii iii iv v vi
-HEBDOMADAE = ii iii iv v vi
+HEBDOMADAE = ii iii iv v vi vii
 PDFI = $(foreach H,op $(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE))) $(patsubst %,sabbato-%.pdf,op $(HEBDOMADAE))
 PDFII = 
 PDFIII = dominicaresurrectionis.pdf dominicainalbis.pdf $(patsubst %,dominica%postpascha.pdf,$(HEBDOMADAE))
