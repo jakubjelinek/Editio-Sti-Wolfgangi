@@ -43,7 +43,7 @@ MODUS-150 = vii-c2
 MODUS-nuncdimittis = iii-a
 MODUS-dan3 = i-a2
 MODUS-benedictus-I = viisoll-a
-MODUS-magnificat-I = isoll-D_
+MODUS-magnificat-I = isoll-d3
 MODUS-benedictus-II = viiisoll-G
 MODUS-magnificat-II = iiisoll-a
 MODUS-benedictus-III = viiisoll-g
@@ -98,7 +98,7 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 	 convertenosdeus ant-alleluia-compl deusinadiutorium-solemnis \
 	 resp-inmanus-tp ant-salvanos-antiquo-tp \
 	 oratio-visita $(addprefix benedicamus-,minor tempore-paschali octava-paschae) an_regina_caeli_simplex \
-	 oratiodominica-mat $(addprefix absolutio-,exaudi ipsius avinculis) tedeum-solemnis \
+	 oratiodominica-mat $(addprefix absolutio-,exaudi ipsius avinculis) tedeum-solemnis tedeum-solemnis-gn \
 	 $(addprefix benedictio-solemn-,evangelica divinum adsocietatem) \
 	 $(addprefix benedicamus-solemnism-,laud 1vesp 2vesp) tonus-lectionis-solemnis tuautem \
 	 benedicamus-solemnis-laud dominelabiamea inv-alleluiaspiritus \
@@ -123,7 +123,7 @@ define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
 iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) \
-	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 triplex76) ../Pentecostes ../AscensioneDomini
+	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 triplex76) ../Pentecostes ../AscensioneDomini ../CorpusChristi
 include $(iter)
 
 PDF = pentecostes.pdf $(patsubst %,feria%-ope.pdf,ii iii iv v vi) sabbato-ope.pdf
