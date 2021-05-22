@@ -1,33 +1,32 @@
-﻿name: h-Lux-iucunda-lux-insignis;
-user-notes: ;
-commentary: LH p.98;
-annotation: vii;
-centering-scheme: english;
-%fontsize: 12;
-%spacing: vichi;
-%font: OFLSortsMillGoudy;
-%width: 4.5;
-%height: 11;
+name: Lux iucunda lux insignis;
+book: Liber Hymnarius, 1983, p. 98;
+mode: 7;
 %%
-(c4) (c3)Lux(c) iu(e)cún(f)da,(e) lux(h) in(g)sí(f)gnis,(e.) (;)
+(c3)
+LUX(c) iu(e)cún(f)da,(e) lux(h) in(g)sí(f)gnis,(e.) (;)
 qua(f) de(g) thro(e)no(c) mis(d)sus(c) i(bc)gnis(e.) (;)
 in(f) Chri(g)sti(f) di(e)scí(d)pu(e)los,(e.) (::)
+
 Cor(c)da(e) re(f)plet,(e) lin(h)guas(g) di(f)tat,(e.) (;)
 ad(f) con(g)cór(e)des(c) nos(d) in(c)ví(bc)tat(e.) (;)
 cor(f)dis,(g) lin(f)guæ(e) mó(d)du(e)los.(e.) (::)
+
 Con(i)so(h)lá(i)tor(g) al(h)me,(f) ve(d)ni,(e.) (;)
 lin(e)guas(g) re(i)ge,(i) cor(j)da(h) le(i)ni:(i.) (;)
 ni(j)hil(k) fel(l)lis(k) aut(ji) ve(h)né(i)ni(i.) (;)
 sub(i) tu(g)a(h) præ(fe)sén(d)ti(e)a.(e.) (::)
+
 No(i)va(h) fa(i)cti(g) cre(h)a(f)tú(d)ra,(e.) (;)
 te(e) lau(g)dá(i)mus(i) men(j)te(h) pu(i)ra,(i.) (;)
 grá(j)ti(k)æ(l) nunc,(k) sed(ji) na(h)tú(i)ra(i.) (;)
 pri(i)us(g) i(h)ræ(fe) fí(d)li(e)i.(e.) (::)
+
 Tu(e) qui(e) da(f)tor(e) es(g) et(h) do(ij)num,(i.) (;)
 no(j)stri(k) cor(j)dis(i) om(j)ne(gf) bo(h)num,(i.) (;)
 cor(e) ad(g) lau(i)dem(i) red(j)de(h) pro(i)num,(i.) (;)
 no(i)stræ(j) lin(h)guæ(f) for(h)mans(g) so(f)num(e.) (;)
 in(d) tu(f)a(hi) præ(e)có(f)ni(e)a.(e.) (::)
+
 Tu(e) nos(e) pur(f)ges(e) a(g) pec(h)cá(ij)tis,(i.) (;)
 au(j)ctor(k) i(j)pse(i) pi(j)e(gf)tá(h)tis,(i.) (;)
 et(e) in(g) Chri(i)sto(i) re(j)no(h)vá(i)tis(i.) (;)

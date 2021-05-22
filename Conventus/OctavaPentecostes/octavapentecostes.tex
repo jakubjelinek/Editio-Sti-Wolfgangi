@@ -514,7 +514,11 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 
 \vspace{-5mm}
 
+\ifx\festum\undefined
 \antiphona{VIII}{temporalia/hym-JamChristus.gtex}
+\else
+\antiphona{VII}{temporalia/hym-LuxIucunda.gtex}
+\fi
 
 \vfill
 \pagebreak
@@ -636,6 +640,14 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \vfill
 \pagebreak
 
+\ifx\responsoriumiii\undefined
+\else
+\responsoriumiii
+
+\vfill
+\pagebreak
+\fi
+
 % Te Deum
 
 \pars{Hymnus Ambrosianus}
@@ -731,7 +743,26 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \initiumpsalmi{temporalia/ps62-initium-viii-G-auto.gtex}
 
 %\psalmusEtTranslatioT{temporalia/ps62-comb.tex}{10cm}
+\ifx\festum\undefined
 \input{temporalia/ps62.tex} \Abardot{}
+\else
+\input{temporalia/ps62-sinedox.tex}
+
+\rubrica{Hic non dicitur Gloria Patri.}
+
+\vfill
+\pagebreak
+
+\scriptura{Psalmus 66.}
+
+\initiumpsalmi{temporalia/ps66-initium-viii-G-auto.gtex}
+
+\input{temporalia/ps66.tex}
+
+\vfill
+
+\antiphona{}{temporalia/ant3.gtex}
+\fi
 
 \vfill
 \pagebreak
@@ -805,9 +836,15 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \vfill
 \pagebreak
 
+\ifx\festum\undefined
 \pars{Capitulum.} \scriptura{Ac. 2, 1-2}
 
 \cuminitiali{}{temporalia/capitulum-CumComplerentur.gtex}
+\else
+\pars{Capitulum.} \scriptura{Ap. 1, 4}
+
+\cuminitiali{}{temporalia/capitulum-GratiaVobis.gtex}
+\fi
 
 \vspace{1cm}
 \pars{Responsorium breve.} \scriptura{Sap. 1, 7}
@@ -819,7 +856,11 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 
 \pars{Hymnus.}
 
+\ifx\festum\undefined
 \cuminitiali{I}{temporalia/hym-BeataNobis.gtex}
+\else
+\cuminitiali{I}{temporalia/hym-BeataNobis-LH.gtex}
+\fi
 
 \vfill
 
@@ -861,10 +902,14 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 
 \vspace{2mm}
 
+\ifx\festum\undefined
 \ifx\duplexiclassis\undefined
 \cuminitiali{VII}{temporalia/benedicamus-tempore-paschali.gtex}
 \else
 \cuminitiali{II}{temporalia/benedicamus-solemnism-laud.gtex}
+\fi
+\else
+\cuminitiali{VIII}{temporalia/benedicamus-octava-paschae.gtex}
 \fi
 
 \ifx\sabbato\undefined
