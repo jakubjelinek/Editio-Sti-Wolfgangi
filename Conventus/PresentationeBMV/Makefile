@@ -75,10 +75,11 @@ SCORES = $(addprefix versus-,elegit regina specie) \
 	 $(addprefix matant,2 4 5 6) \
 	 inv-avemaria \
 	 $(addprefix resp-,avemaria diffusaest) \
-	 $(addprefix resp-,beatammedicent felixnamquees-CROCHU-sinedox sicutcedrus) \
+	 $(addprefix resp-,beatammedicent felixnamquees-CROCHU-sinedox sicutcedrus \
+			   quaeestista-CROCHU venielectamea-CROCHU istaestspeciosa) \
 	 tonus-lectionis-solemnis \
 	 benedicamus-solemnis-laud tedeum-solemnis tedeum-solemnis-gn tuautem \
-	 ps8-initium-ii_-a ps23-initium-iv-c
+	 ps8-initium-ii_-a ps23-initium-iv-c tonusprecum oratiodominicaalt dominusnosbenedicat
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
@@ -98,10 +99,10 @@ $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e 
 endef
 iter-left := . $(TMP_DIR) $(addprefix ../InNativitateBMV/cantus/,amon33 triplex76 nrom02) \
 	     $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) \
-	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 triplex76) ../CorpusChristi ../InNativitateBMV
+	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 triplex76) ../CorpusChristi ../InNativitateBMV ../InAssumptioneBMV
 include $(iter)
 
-all: presentationebmv.pdf
+all: presentationebmv.pdf bmvmaterecclesiae.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
 $(TMP_DIR)/magnificat.tex $(TMP_DIR)/magnificativE.tex: PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --flex-underline --skip-verses 2 $(LAPSALMOPTSACC)
@@ -122,7 +123,7 @@ $(LAPSALMSEXTRA): $(TMP_DIR)/%.tex: $(PSALMS_DIR)/%.pslm
 $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
 	$(GENPSCOMB)
 $(TMP_DIR)/magnificat-comb.tex: PSSKIP = 2
-presentationebmv.pdf: presentationebmv.tex conventuscommune.tex translationes_cs.tex \
+presentationebmv.pdf bmvmaterecclesiae.pdf: %.pdf: %.tex conventuscommune.tex translationes_cs.tex \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
