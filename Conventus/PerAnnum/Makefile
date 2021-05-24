@@ -245,14 +245,16 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  dominemagnuses rexomnisterrae extendedomine confundanturqui mementodomine \
 			  tuamdomineexcita conversusestfuror veniteascendamus dixiiniquis \
 			  cantatedominoetbenedicite benedixistidomine cantaboetpsalmum sacrificiumdeo \
-			  benedictusdominusdeusmeus clamormeus1 respicehumilitatem iusticonfitebuntur1) \
+			  benedictusdominusdeusmeus clamormeus1 respicehumilitatem iusticonfitebuntur1 \
+			  beatusilleservus exsultabuntsanctiingloria iustuscorsuum sacerdotesdeibenedicite \
+			  serveboneetfidelis vosestisluxhuiusmundi) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
 			  AEterneLucis OSatorRerum FulgentisAuctor DeusQui GalliCantu \
 			  OVirgoMater QuaeCaritatis SomnoRefectis SplendorPaternae-hiemalis \
 			  RerumCreator NoxEtTenebrae AveMarisStella IamLucis AlesDiei \
-			  ConsorsPaterni PergrataMundo) \
+			  ConsorsPaterni PergrataMundo LaetiColentes ORedemptorisPietas) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -263,7 +265,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,feria-laudes feria-vesperae minor officium-bmv festis-bmv dominica-perannum) \
 	 $(addprefix inv-,alleluiachristumdominum regemmagnum dominumquifecit adoremusdominum \
-			  dominumdeum veniteexsultemus jubilemusdeo avemaria christummariaefilium) \
+			  dominumdeum veniteexsultemus jubilemusdeo avemaria christummariaefilium \
+			  mirabileminsanctis) \
 	 dominelabiamea tonusprecum dominusnosbenedicat \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
@@ -339,7 +342,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   conceptiogloriosae-CROCHU conceptiotua-CROCHU-cumdox \
 			   egressonoedearcha vocavitangelusdomini-CROCHU \
 			   deusdominimeiabraham-CROCHU venihodieadfontemaquae-CROCHU-cumdox \
-			   dumstaretabrahamadradicem-CROCHU-cumdox) \
+			   dumstaretabrahamadradicem-CROCHU-cumdox amaviteumdominus-CROCHU \
+			   eugeservebone-CROCHU invenidavidservum-CROCHU) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \

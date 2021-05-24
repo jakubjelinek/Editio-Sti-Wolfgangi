@@ -1,17 +1,10 @@
-﻿name: hy--O-Redemptoris-pietas;
-user-notes: ;
-commentary: LH p.325-326;
-annotation: viii;
-centering-scheme: english;
-%fontsize: 12;
-%spacing: vichi;
-%font: OFLSortsMillGoudy;
-%width: 4.5;
-%height: 11;
+name: O Redemptoris pietas;
+book: Liber Hymnarius, 1983, p. 325;
+mode: 8;
 %%
 (c4)
 O(ghg) Re(e)dem(f)ptó(ed)ris(de) pí(c)e(e)tas(g) co(h)lén(h.)da(g.) (;)
-quæ(ghg) Pa(e)tr<e>i</e> e(f)xóp(ed)tans(de) hó(c)mi(e)nes(g) di(h)cá(h.)ri,(g.) (:)
+quæ(ghg) Pa(e)tr<e>i</e> {e}(f)xóp(ed)tans(de) hó(c)mi(e)nes(g) di(h)cá(h.)ri,(g.) (:)
 Spí(ji)ri(h)tus(j) mi(ih)ro(gf) va(h)ri(j)ó(i)que(h) du(g)cis(hih_15) (,)
 pé(g_)cto(e)ra(f) nu(g.)tu!(g.) (::)
 
@@ -26,7 +19,7 @@ cal(ji)le(h) re(j)gá(ih)li(gf) cru(h)cis,(j) us(i)que(h) so(g)lum(hih_15) (,)
 quǽ(g_)re(e)re(f) Pa(g.)trem.(g.) (::)
 
 Cǽ(ghg)li(e)tus(f) fer(ed)vens(de) i(c)ta(e) san(g)ctus(h) i(h.)ste(g.) (;)
-ví(ghg)ri(e)bus(f) to(ed)tis(de) ti(c)b<e>i</e> a(e)mán(g)ter(h) hæ(h.)sit,(g.) (:)
+ví(ghg)ri(e)bus(f) to(ed)tis(de) ti(c)b<e>i</e> {a}(e)mán(g)ter(h) hæ(h.)sit,(g.) (:)
 at(ji)que(h) vir(j)tú(ih)tum(gf) cú(h)pi(j)it(i) te(h)né(g)re(hih_15) (,)
 cúl(g_)mi(e)na(f) læ(g.)ta.(g.) (::)
 
