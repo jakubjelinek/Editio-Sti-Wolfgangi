@@ -162,6 +162,18 @@
 \pagebreak
 
 \ifx\hymnusmatutinum\undefined
+\ifx\hiemalis\undefined
+\ifx\matubd\undefined
+\else
+\pars{Hymnus.}
+
+{
+\grechangedim{interwordspacetext}{0.10 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{II}{temporalia/hym-AdestoRerum.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+\fi
+\else
 \ifx\matuac\undefined
 \else
 \pars{Hymnus.} \scriptura{Gregorius Magnus (+604)}
@@ -181,6 +193,7 @@
 \antiphona{II}{temporalia/hym-GalliCantu.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 }
+\fi
 \fi
 \else
 \hymnusmatutinum
