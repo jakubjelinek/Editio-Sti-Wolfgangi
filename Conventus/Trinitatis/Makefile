@@ -90,7 +90,8 @@ SCORES = $(addprefix ant-,benedictasitcreatrix exquoomnia glorialaudisresonet \
 			   benedictusdominusdeus-sinedox duoseraphim-cumdox \
 			   magnusdominus-cumdox quisdeusmagnus-sinedox \
 			   tibilaustibigloria-sinedox vididominumsedentem-sinedox \
-			   honorvirtus-CROCHU-cumdox) \
+			   honorvirtus-CROCHU-cumdox gloriapatri-CROCHU \
+			   tedeumpatremingenitum-CROCHU) \
 	 tedeum-solemnis ps47-initium-v-A
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(foreach B,visoll-C viiisoll-G,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex)
