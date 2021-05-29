@@ -1,15 +1,9 @@
-﻿name: h--Adesto-sancta-Trinitas ;
-user-notes: ;
-commentary: Praglia I p. 515;
-annotation: viii ;
-centering-scheme: english;
-%fontsize: 12;
-%spacing: vichi;
-%font: OFLSortsMillGoudy;
-%width: 4.5;
-%height: 11;
+name: Adesto sancta Trinitas;
+book: Antiphonale Monasticum I, Praglia, p. 515;
+mode: 8;
 %%
-(c4) A(h)dé(gf)sto,(d) san(e)cta(f) Trí(gh)ni(ho)tas,(g_) (,)
+(c4)
+A(h)dé(gf)sto,(d) san(e)cta(f) Trí(gh)ni(ho)tas,(g_) (,)
 par(h) splen(gf)dor,(d) u(e)na(f) Dé(gh)i(ho)tas(g.) (;)
 quae(h) ex(j)tas(ij) re(h)rum(gf) óm(h)ni(gh)um(e_) (,)
 si(g)ne(gf) fi(d)ne(e) prin(f)cí(gh)pi(ho)um.(g.) (::)
@@ -35,4 +29,3 @@ laus(h) sit(j) San(ij)cto(h) Spi(gf)rí(h)tu(gh)i,(e_) (,)
 tri(g)no(gf) De(d)o(e) et(f) sím(gh)pli(ho)ci.(g.) (::)
 
 A(ghg)men.(fg..) (::)
-

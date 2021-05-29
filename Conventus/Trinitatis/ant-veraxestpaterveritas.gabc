@@ -1,16 +1,12 @@
-﻿name: an--Verax-est-ASyn;
-user-notes: ;
+name: Verax est;
 commentary: antiphonale synopticum;
+book: H103;
 annotation: viii g;
-centering-scheme: english;
-%fontsize: 12;
-%spacing: vichi;
-%font: OFLSortsMillGoudy;
-%width: 4.5;
-%height: 11;
+mode: 8;
+nabc-lines: 1;
 %%
 (c4)
 VE(jjoi|pr)rax(hg|/cllsc3) est(hi|pe) Pa(h|vi)ter,(g|ta) *()
 vé(h|vi)ri(h|vi)tas(hg|/cl) Fí(fe|/cllsc3)li(fg|pe)us,(g|ta) (;)
 vé(hk|peShi)ri(ji|/clhglsc3)tas(h|ta) Spí(ji|/clhglsc2)ri(hg|/cllsc3)tus(gh|peS) San(hggo~|/clorhh)ctus,(f|ta) (,)
-o(ghggof|//toSpi) be(gh!iwj|vi-qlhj)á(ji|/cl)ta(hg|/cl) Trí(hi|pe)ni(hg|/cllsc3)tas.(g|ta) (::g+)
+o(ghggof|//toSpi) be(gh!iwj|vi-qlhj)á(ji|/cl)ta(hg|/cl) Trí(hi|pe)ni(hg|/cllsc3)tas.(g|ta) (::)
