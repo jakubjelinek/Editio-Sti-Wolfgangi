@@ -89,7 +89,8 @@ SCORES = $(addprefix ant-,benedictasitcreatrix exquoomnia glorialaudisresonet \
 	 $(addprefix resp-,benedicamuspatrietfilio benedicatnosdeus-cumdox \
 			   benedictusdominusdeus-sinedox duoseraphim-cumdox \
 			   magnusdominus-cumdox quisdeusmagnus-sinedox \
-			   tibilaustibigloria-sinedox vididominumsedentem-sinedox) \
+			   tibilaustibigloria-sinedox vididominumsedentem-sinedox \
+			   honorvirtus-CROCHU-cumdox) \
 	 tedeum-solemnis ps47-initium-v-A
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(foreach B,visoll-C viiisoll-G,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex)
@@ -110,7 +111,7 @@ endef
 iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini
 include $(iter)
 
-PDF = trinitatis.pdf
+PDF = trinitatis.pdf trinitatis-breviori.pdf
 all: $(PDF)
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
