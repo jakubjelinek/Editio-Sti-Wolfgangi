@@ -189,6 +189,7 @@
 \vfill
 \pagebreak
 
+\ifx\matutinum\undefined
 \ifx\matua\undefined
 \else
 % MAT A
@@ -433,6 +434,9 @@
 \vfill
 \pagebreak
 \fi
+\else
+\matutinum
+\fi
 
 \pars{Versus.}
 
@@ -584,6 +588,7 @@
 \vfill
 \pagebreak
 
+\ifx\laudes\undefined
 \ifx\lauda\undefined
 \else
 \pars{Psalmus 1.} \scriptura{Ps. 5, 2; \textbf{H93}}
@@ -820,6 +825,9 @@
 \vfill
 \pagebreak
 \fi
+\else
+\laudes
+\fi
 
 \ifx\lectiobrevis\undefined
 \ifx\lauda\undefined
@@ -1042,7 +1050,11 @@
 
 \vspace{2mm}
 
+\ifx\benedicamuslaudes\undefined
 \cuminitiali{IV}{temporalia/benedicamus-feria-laudes.gtex}
+\else
+\benedicamuslaudes
+\fi
 
 \vspace{1mm}
 
