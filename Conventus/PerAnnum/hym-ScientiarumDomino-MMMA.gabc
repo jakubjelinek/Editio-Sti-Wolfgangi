@@ -1,30 +1,26 @@
-﻿name: hy-Scientiarum-Domino-Zist-MMMA-26;
-user-notes: ;
-commentary: LH 199 + tone MMMA26;
-annotation: ii;
-centering-scheme: english;
-%fontsize: 12;
-%spacing: vichi;
-%font: OFLSortsMillGoudy;
-%width: 4.5;
-%height: 11;
+name: Scientiarum Domino;
+book: Liber Hymnarius, 1983, p. 199 + tone MMMA26;
+mode: 2;
 %%
-initial-style: 1;
-%%
-(f3)Sci(f)en(f)ti(c)á(e)rum(e) Dó(gf)mi(ef)no,(f) (,)
+(f3)
+SCi(f)en(f)ti(c)á(e)rum(e) Dó(gf)mi(ef)no,(f) (,)
 sit(i) ti(i)bi(g) iu(h)bi(f)lá(gf)ti(ef)o,(f) (;)
 qui(i) no(i)stra(g) vi(i)des(j) ín(i)ti(g)ma(f,)
 tu(f)á(g)que(h) fo(g)ves(f) grá(gf)ti(ef)a.(f) (::)
+
 Qui(f) bo(f)num,(c) pa(e)stor(e) óp(gf)ti(ef)me,(f) (,)
 dum(i) ser(i)vas,(g) quæ(h)ris(f) pér(gf)di(ef)tum,(f) (;)
 in(i) pá(i)scu(g)is(i) u(j)bér(i)ri(g)mis(f,)
 nos(f) iun(g)ge(h) pi(g)is(f) gré(gf)gi(ef)bus,(f) (::)
+
 Ne(f) ter(f)ror(c) i(e)ræ(e) iú(gf)di(ef)cis(f) (,)
 nos(i) hæ(i)dis(g) iun(h)gat(f) ré(gf)pro(ef)bis,(f) (;)
 sed(i) si(i)mus(g) te(i)met(j) iú(i)di(g)ce(f,)
 o(f)ves(g) æ(h)tér(g)næ(f) pá(gf)scu(ef)æ.(f) (::)
+
 Ti(f)bi,(f) Re(c)dém(e)ptor,(e) gló(gf)ri(ef)a,(f) (,)
 ho(i)nor,(i) vir(g)tus,(h) vi(f)ctó(gf)ri(ef)a,(f) (;)
 re(i)gnán(i)ti(g) su(i)per(j) óm(i)ni(g)a(f,)
 per(f) sæ(g)cu(h)ló(g)rum(f) sǽ(gf)cu(ef)la.(f) (::)
+
 A(fgf)men.(ef..) (::)

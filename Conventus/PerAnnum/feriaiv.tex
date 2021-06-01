@@ -164,6 +164,14 @@
 \pagebreak
 
 \ifx\hymnusmatutinum\undefined
+\ifx\hiemalis\undefined
+\ifx\matuac\undefined
+\else
+\pars{Hymnus}
+
+\cuminitiali{II}{temporalia/hym-ScientiarumDomino-MMMA.gtex}
+\fi
+\else
 \ifx\matuac\undefined
 \else
 \pars{Hymnus}
@@ -179,6 +187,7 @@
 \antiphona{I}{temporalia/hym-OSatorRerum.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 }
+\fi
 \fi
 \else
 \hymnusmatutinum
