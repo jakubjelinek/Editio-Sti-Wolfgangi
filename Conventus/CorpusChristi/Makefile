@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 1 4 15 19 22 41 42 62 80 83 90 92 99 109 110 115 127 133 147 148 149 150
+PSALMS = 1 4 15 19 22 41 42 62 66 80 83 90 92 99 109 110 115 127 133 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-1 = i-D_
 MODUS-4 = viii-G
@@ -30,6 +30,7 @@ MODUS-22 = v-a
 MODUS-41 = vi-F
 MODUS-42 = vii-a
 MODUS-62 = iii-a
+MODUS-66 = iii-a
 MODUS-80 = viii-G
 MODUS-83 = vi-F
 MODUS-90 = viii-G
@@ -84,7 +85,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 			  memorsit-FKP paraturnobis-FKP exicitoinplateas) \
 	 $(addprefix hym-,AEterneRexAltissime JesuNostraRedemptio \
 			  PangeLingua VerbumSupernum TeLucis SacrisSolemniis) \
-	 $(addprefix resp-,inmanus cibavit cibavit-simplex panemcaeli) \
+	 $(addprefix resp-,inmanus cibavit cibavit-simplex panemcaeli educaspanem) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(foreach M,visoll-F vsoll-a viisoll-a isoll-a v-a vsoll-a_ v-a_,magnificat-initium-$(M)) \
 	 $(addprefix capitulum-,tuautem FratresEgo CarissimiNolite) \
@@ -111,7 +112,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo \
 	 benedictio-noctemquietam an_salve_regina ps22-initium-v-a
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(foreach B,isoll-a2 iiisoll-g2 i-a2,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex) \
-	    $(TMP_DIR)/ps4-initium-ii-D-auto.gtex $(TMP_DIR)/ps4iiD.tex
+	    $(TMP_DIR)/ps4-initium-ii-D-auto.gtex $(TMP_DIR)/ps4iiD.tex $(TMP_DIR)/ps62-sinedox.tex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3 nuncdimittis,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
@@ -129,7 +130,7 @@ endef
 iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../PostPentecosten
 include $(iter)
 
-PDF = corpuschristi.pdf $(patsubst %,feria%-ocx.pdf,ii iii iv v vi) sabbato-ocx.pdf dominicainfraoctavamcorporischristi.pdf
+PDF = corpuschristi.pdf corpuschristi-breviori.pdf $(patsubst %,feria%-ocx.pdf,ii iii iv v vi) sabbato-ocx.pdf dominicainfraoctavamcorporischristi.pdf
 all: $(PDF)
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 ps149 dan3): PSALMOPTS = $(LAPSALMOPTS)
@@ -167,6 +168,8 @@ $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
 	$(GENPSCOMB)
 $(patsubst %,$(TMP_DIR)/%-boh.tex,$(MAGNIFICAT)): $(TMP_DIR)/%-boh.tex: $(TMP_DIR)/magnificat-boh.tex
 	$(CP) -a $< $@
+$(TMP_DIR)/ps62-sinedox.tex: $(TMP_DIR)/ps62.tex
+	sed -e '/^Gló.*ri.*a.*Pa.*tri.*et.*Fí.*li.*o/d;/^et.*Spi.*rí.*tu.*i.*Sanc.*to/d;/^Sicut.*erat.*in.*princí.*pi.*o,.*et.*nunc.*et.*sem.*per,/d;/^et.*in.*sǽcu.*la.*sæ.*cu.*ló.*rum.*A.*men/d' < $^ > $@
 $(patsubst %,$(TMP_DIR)/%-comb.tex,$(MAGNIFICAT)): PSSKIP = 2
 $(PDF): %.pdf: %.tex corpusx.tex conventuscommune.tex translationes_cs.tex \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
