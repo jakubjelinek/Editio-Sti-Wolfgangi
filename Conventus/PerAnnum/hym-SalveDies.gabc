@@ -1,16 +1,9 @@
-﻿name: hy--Salve-dies-dierum-gloria-LH;
-user-notes: ;
-commentary: LH 210;
-annotation: vii;
-centering-scheme: english;
-%fontsize: 12;
-%spacing: vichi;
-%font: OFLSortsMillGoudy;
-%width: 4.5;
-%height: 11;
+name: Salve dies dierum gloria;
+book: Liber Hymnarius, 1983, p. 210;
+mode: 7;
 %%
-(c4) 
-Sal(g)ve(g) di(h)es,(g) di(h)é(i)rum(g) gló(h)ri(f)a,(g.) (,)
+(c4)
+SAl(g)ve(g) di(h)es,(g) di(h)é(i)rum(g) gló(h)ri(f)a,(g.) (,)
 di(h)es(j) fe(i)lix(g) Chri(h)sti(i) vi(g)ctó(h)ri(i)a,(i.) (;)
 di(j)es(k) di(jvIH)gna(g) iu(h)gi(f) læ(g)tí(f)ti(e)a,(d.) (,)
 di(e)es(g) pri(h)ma.(g.) (::)
