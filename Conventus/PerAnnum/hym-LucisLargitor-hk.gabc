@@ -1,33 +1,31 @@
-name: hy--Lucis-largitor-HK;
-user-notes: ;
-commentary: texte : LH; MMMA I p. 26, Heiligenkreuz;
-annotation: I ;
-centering-scheme: english;
-%fontsize: 12;
-%spacing: vichi;
-%font: OFLSortsMillGoudy;
-%width: 4.5;
-%height: 11;
+name: Lucis largitor;
+book: Liber Hymnarius; MMMA I p. 26, Heiligenkreuz;
+mode: 1;
 %%
 (c4)
-Lu(d)cis(d) lar(f)gí(d)tor(c) splén(f)di(gh)de,(h) (,)
+LU(d)cis(d) lar(f)gí(d)tor(c) splén(f)di(gh)de,(h) (,)
 cu(hg)ius(j) se(jk)ré(ji)no(h) lú(h)mi(g)ne(h) (;)
 post(dh) la(h)psa(ixhih) no(g)ctis(ge) tém(f)po(ed)ra(de,)
 di(c)es(e) re(g)fú(ghg)sus(fe) pán(d)di(cd)tur,(d) (::)
+
 Tu(d) ve(d)rus(f) mun(d)di(c) lú(f)ci(gh)fer,(h) (,)
 non(hg) is(j) qui(jk) par(ji)vi(h) sí(h)de(g)ris(h) (;)
 ven(dh)tú(h)ræ(ixhih) lu(g)cis(ge) nún(f)ti(ed)us(de,)
 an(c)gú(e)sto(g) ful(ghg)get(fe) lú(d)mi(cd)ne,(d) (::)
+
 Sed(d) to(d)to(f) so(d)le(c) clá(f)ri(gh)or,(h) (,)
 lux(hg) i(j)pse(jk) to(ji)tus(h) et(h) di(g)es,(h) (;)
 in(dh)tér(h)na(ixhih) no(g)stri(ge) pé(f)cto(ed)ris(de,)
 il(c)lú(e)mi(g)nans(ghg) præ(fe)cór(d)di(cd)a.(d) (::)
+
 E(d)vín(d)cat(f) men(d)tis(c) cá(f)sti(gh)tas(h) (,)
 quæ(hg) ca(j)ro(jk) cu(ji)pit(h) ár(h)ro(g)gans,(h) (;)
 san(dh)ctúm(h)que(ixhih) pu(g)ri(ge) cór(f)po(ed)ris(de,)
 de(c)lú(e)brum(g) ser(ghg)vet(fe) Spí(d)ri(cd)tus.(d) (::)
+
 Sit,(d) Chri(d)ste,(f) rex(d) pi(c)ís(f)si(gh)me,(h) (,)
 ti(hg)bi(j) Pa(jk)trí(ji)que(h) gló(h)ri(g)a(h) (;)
 cum(dh) Spí(h)ri(ixhih)tu(g) Pa(ge)rá(f)cli(ed)to(de,)
 in(c) sem(e)pi(g)tér(ghg)na(fe) sǽ(d)cu(cd)la.(d) (::)
+
 A(ded)men.(cd..) (::)
