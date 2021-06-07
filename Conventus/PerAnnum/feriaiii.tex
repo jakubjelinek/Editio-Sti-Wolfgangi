@@ -165,6 +165,14 @@
 \pagebreak
 
 \ifx\hymnusmatutinum\undefined
+\ifx\hiemalis\undefined
+\ifx\matubd\undefined
+\else
+\pars{Hymnus.}
+
+\antiphona{VIII}{temporalia/hym-AdPrecesNostras-kempten.gtex}
+\fi
+\else
 \ifx\matuac\undefined
 \else
 \pars{Hymnus}
@@ -180,6 +188,7 @@
 \antiphona{I}{temporalia/hym-NocteSurgentes.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 }
+\fi
 \fi
 \else
 \hymnusmatutinum
@@ -562,6 +571,14 @@
 \pagebreak
 
 \ifx\hymnuslaudes\undefined
+\ifx\hiemalis\undefined
+\ifx\laudbd\undefined
+\else
+\pars{Hymnus}
+
+\cuminitiali{I}{temporalia/hym-AEterneLucis-hk.gtex}
+\fi
+\else
 \ifx\laudac\undefined
 \else
 \pars{Hymnus}
@@ -576,6 +593,7 @@
 \cuminitiali{IV}{temporalia/hym-AEterneLucis.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \vspace{-3mm}
+\fi
 \fi
 \else
 \hymnuslaudes
