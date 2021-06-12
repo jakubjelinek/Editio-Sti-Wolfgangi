@@ -1,32 +1,31 @@
-﻿name: hy--Dies-ætasque-ceteris-Kempten;
-user-notes: ;
-commentary: LH 183+ MMMA I p. 250;
-annotation: iv;
-centering-scheme: english;
-%fontsize: 12;
-%spacing: vichi;
-%font: OFLSortsMillGoudy;
-%width: 4.5;
-%height: 11;
+name: Dies aetasque ceteris;
+book: Liber Hymnarius, 1983, p. 183; MMMA I p. 250;
+mode: 4;
 %%
-(c4) Di(d)es(e) æ(f)tás(g)que(fg) cé(f)te(e)ris(f) (,)
+(c4)
+DI(d)es(e) æ(f)tás(g)que(fg) cé(f)te(e)ris(f) (,)
 o(d)ctá(e)va(f) splen(g)det(fg) sán(f)cti(e)or(ded) (;)
 in(e) te(d) quam,(e) Ie(gh)su,(h) cón(h)se(g)cras,(f) (,)
 pri(g)mí(h)ti(h)æ(g) sur(ef)gén(g)ti(f)um.(e) (::)
+
 Tu(d) ti(e)bi(f) no(g)stras(fg) á(f)ni(e)mas(f) (,)
 nunc(d) pri(e)mo(f) con(g)re(fg)sú(f)sci(e)ta;(ded) (;)
 ti(e)bi(d) con(e)súr(gh)gant(h) cór(h)po(g)ra(f) (,)
 se(g)cún(h)da(h) mor(g)te(ef) lí(g)be(f)ra.(e) (::)
+
 Ti(d)bí(e)que(f) mox(g) in(fg) nú(f)bi(e)bus,(f) (,)
 Chri(d)ste,(e) fe(f)rá(g)mur(fg) ób(f)vi(e)am(ded) (;)
 te(e)cum(d) vi(e)ctú(gh)ri(h) pér(h)pe(g)tim:(f) (,)
 tu(g) vi(h)ta,(h) re(g)sur(ef)ré(g)cti(f)o.(e) (::)
+
 Cu(d)ius(e) vi(f)dén(g)tes(fg) fá(f)ci(e)em,(f) (,)
 con(d)fi(e)gu(f)ré(g)mur(fg) gló(f)ri(e)æ;(ded) (;)
 te(e) co(d)gno(e)scá(gh)mus(h) si(h)cut(g) es,(f) (,)
 lux(g) ve(h)ra(h) et(g) su(ef)á(g)vi(f)tas.(e) (::)
+
 Re(d)gnum,(e) cum(f) Pa(g)tri(fg) trá(f)di(e)tos,(f) (,)
 ple(d)nos(e) sep(f)té(g)no(fg) chrís(f)ma(e)te,(ded) (;)
 in(e) te(d)met(e) nos(gh) læ(h)tí(h)fi(g)cas,(f) (,)
 con(g)súm(h)met(h) San(g)cta(ef) Trí(g)ni(f)tas.(e) (::)
+
 A(efe)men.(de..) (::)
