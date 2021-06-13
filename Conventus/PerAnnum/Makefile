@@ -293,7 +293,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  BeateMartyr MartyrDei ScientiarumDomino-MMMA EcceIam EcceIam-praglia \
 			  SalveDies VitaSanctorum-kempten LucisLargitor-hk AdPrecesNostras-kempten \
 			  AEterneLucis-hk AmorisSensuErige-kn IamLucis-hk DiesAEtasque-kempten \
-			  AEterneRerum) \
+			  AEterneRerum AEternaLux-kempten OSacrosanctaTrinitas-kempten \
+			  PergrataMundo-einsiedeln SplendorPaternae-einsiedeln) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
