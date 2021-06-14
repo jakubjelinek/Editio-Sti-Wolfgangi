@@ -127,6 +127,16 @@
 
 \noindent \Rbardot{} Amen.}
 \fi
+\ifx\laudc\undefined
+\else
+\newcommand{\oratio}{\pars{Oratio.}
+
+\noindent Deus omnípotens, cuius est bona rerum et speciósa creátio, da nobis hunc diem in nómine tuo lætánter incípere et in operósa tui fratrúmque dilectióne complére.
+
+\noindent Per Dóminum nostrum Iesum Christum, Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.
+
+\noindent \Rbardot{} Amen.}
+\fi
 \fi
 
 \hora{Ad Matutinum.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -166,6 +176,12 @@
 
 \ifx\hymnusmatutinum\undefined
 \ifx\hiemalis\undefined
+\ifx\matuac\undefined
+\else
+\pars{Hymnus.}
+
+\antiphona{IV}{temporalia/hym-OSacrosanctaTrinitas-kempten.gtex}
+\fi
 \ifx\matubd\undefined
 \else
 \pars{Hymnus.}
@@ -572,6 +588,12 @@
 
 \ifx\hymnuslaudes\undefined
 \ifx\hiemalis\undefined
+\ifx\laudac\undefined
+\else
+\pars{Hymnus}
+
+\cuminitiali{VIII}{temporalia/hym-PergrataMundo-einsiedeln.gtex}
+\fi
 \ifx\laudbd\undefined
 \else
 \pars{Hymnus}
@@ -1001,6 +1023,28 @@
 \noindent Da, Dómine, sic lucére lucem nostram coram homínibus, \gredagger{} ut vídeant ópera nostra bona et Patrem gloríficent.
 
 \Rbardot{} Salva nos, Dómine, in sémita tua.
+\fi
+\ifx\laudc\undefined
+\else
+\noindent Christum, qui sibi pópulum novum acquisívit in sánguine suo, \gredagger{} adorémus et rogémus supplíciter:
+
+\Rbardot{} Meménto pópuli tui, Dómine.
+
+\noindent Rex et Redémptor noster, audi Ecclésiam tuam, huius diéi inítio te laudántem, \gredagger{} doce eam sine intermissióne glorificáre maiestátem tuam.
+
+\Rbardot{} Meménto pópuli tui, Dómine.
+
+\noindent Spes et fírmitas nostra, in te confídimus, \gredagger{} neque umquam confundémur.
+
+\Rbardot{} Meménto pópuli tui, Dómine.
+
+\noindent Infirmitátem nostram réspice et in adiutórium nostrum festína, \gredagger{} quia sine te nihil póssumus fácere.
+
+\Rbardot{} Meménto pópuli tui, Dómine.
+
+\noindent Páuperum et derelictórum meménto, ne dies novus sit eis pondus, \gredagger{} sed solámen et gáudium.
+
+\Rbardot{} Meménto pópuli tui, Dómine.
 \fi
 \else
 \preces
