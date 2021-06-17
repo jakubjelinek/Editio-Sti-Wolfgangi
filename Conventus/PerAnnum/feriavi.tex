@@ -163,10 +163,8 @@
 
 \ifx\hymnusmatutinum\undefined
 \ifx\hiemalis\undefined
-\ifx\matuac\undefined
+\ifx\matua\undefined
 \else
-\fi
-\ifx\matubd\undefined
 \pars{Hymnus.}
 
 {
@@ -174,12 +172,24 @@
 \antiphona{II}{temporalia/hym-AdestoChriste-MMMA.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 }
+\fi
+\ifx\matubd\undefined
 \else
 \pars{Hymnus.}
 
 {
 \grechangedim{interwordspacetext}{0.10 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \antiphona{II}{temporalia/hym-AdestoRerum.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+\fi
+\ifx\matuc\undefined
+\else
+\pars{Hymnus.}
+
+{
+\grechangedim{interwordspacetext}{0.10 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{IV}{temporalia/hym-AdestoChriste-kempten.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 }
 \fi
@@ -597,6 +607,17 @@
 \pagebreak
 
 \ifx\hymnuslaudes\undefined
+\ifx\hiemalis\undefined
+\ifx\laudac\undefined
+\else
+\pars{Hymnus}
+
+\grechangedim{interwordspacetext}{0.16 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{VIII}{temporalia/hym-AEternaCaeli-einsiedeln.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\vspace{-3mm}
+\fi
+\else
 \ifx\laudac\undefined
 \else
 \pars{Hymnus}
@@ -614,6 +635,7 @@
 \cuminitiali{IV}{temporalia/hym-DeusQui.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \vspace{-3mm}
+\fi
 \fi
 \else
 \hymnuslaudes

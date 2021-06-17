@@ -1,28 +1,26 @@
-name: hy--Adesto-Christe-Kempten;
-user-notes: ;
-commentary: LH 204 + MMMA I p. 250;
-annotation: iv;
-centering-scheme: english;
-%fontsize: 12;
-%spacing: vichi;
-%font: OFLSortsMillGoudy;
-%width: 4.5;
-%height: 11;
+name: Adesto Christe;
+book: Liber Hymnarius, 1983, p. 204; MMMA I, p. 250;
+mode: 4;
 %%
-(c4)A(d)dé(e)sto,(f) Chri(g)ste,(fg) cór(f)di(e)bus,(f) (,)
+(c4)
+A(d)dé(e)sto,(f) Chri(g)ste,(fg) cór(f)di(e)bus,(f) (,)
 cel(d)sa(e) re(f)dém(g)ptis(fg) cá(f)ri(e)tas;(ded) (;)
 in(e)fún(d)de(e) no(gh)stris(h) fér(h)vi(g)dos(f) (,)
 fle(g)tus,(h) ro(h)gá(g)mus,(ef) vó(g)ci(f)bus.(e) (::)
+
 Ad(d) te(e) pre(f)ces,(g) pi(fg)ís(f)si(e)me(f) (,)
 Ie(d)su,(e) fi(f)de(g) pro(fg)fún(f)di(e)mus;(ded) (;)
 di(e)mít(d)te,(e) Chri(gh)ste,(h) quǽ(h)su(g)mus,(f) (,)
 fa(g)ctis(h) ma(h)lum(g) quod(ef) fé(g)ci(f)mus.(e) (::)
+
 San(d)ctæ(e) cru(f)cis(g) si(fg)gná(f)cu(e)lo,(f) (,)
 tu(d)o(e) sa(f)crá(g)to(fg) cór(f)po(e)re,(ded) (;)
 de(e)fén(d)de(e) nos(gh) ut(h) fí(h)li(g)os(f) (,)
 om(g)nes,(h) ro(h)gá(g)mus,(ef) ún(g)di(f)que.(e) (::)
+
 Sit,(d) Chri(e)ste,(f) rex(g) pi(fg)ís(f)si(e)me,(f) (,)
 ti(d)bi(e) Pa(f)trí(g)que(fg) gló(f)ri(e)a(ded) (;)
 cum(e) Spí(d)ri(e)tu(gh) Pa(h)rá(h)cli(g)to,(f) (,)
 in(g) sem(h)pi(h)tér(g)na(ef) sǽ(g)cu(f)la.(e) (::)
+
 A(efe)men.(de..) (::)
