@@ -213,7 +213,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  diligamusnos exaudiatdominusorationes magisterquodest \
 			  dumautemirent murotuo quimajor quinqueprudentes unusestenim \
 			  vididominumsedentem dominequinquetalenta quicaelorumcontines \
-			  serveboneetfidelisquia) \
+			  serveboneetfidelisquia praeceptorpertotamnoctem praevaluitdavid) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -233,7 +233,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			     diffusa cognoscantquia deusnesileas exaltentdominum laudabonomen \
 			     medianocte memorfui praevenerunt psallitedomino sacrificiumlaudis \
 			     benedictatu) \
-	 $(addprefix oratio,5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 6pe 24 bmv -franciscus) \
+	 $(addprefix oratio,4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 6pe 24 bmv -franciscus) \
 	 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,feria-laudes feria-vesperae minor officium-bmv dominica-perannum) \
@@ -319,11 +319,13 @@ iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 aro
 include $(iter)
 
 FERIAE = ii iii iv v vi
-HEBDOMADAE = v vi vii viii ix x xi xii xiii xiv xv xvi xvii xviii xix xx xxi xxii xxiii vipe xxiv
+HEBDOMADAE = iv v vi vii viii ix x xi xii xiii xiv xv xvi xvii xviii xix xx xxi xxii xxiii vipe xxiv
 PDFI = $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE)))
 PDFII = $(foreach H,$(HEBDOMADAE),sabbato-$(H).pdf)
 PDFIII = $(foreach H,$(HEBDOMADAE),dominica-$(H).pdf)
-PDF = completorium.pdf $(PDFI) $(PDFII) $(PDFIII)
+PDFIV = $(foreach H,$(HEBDOMADAE),$(patsubst %,vferia%-$(H).pdf,$(FERIAE)))
+PDFV = $(foreach H,$(HEBDOMADAE),vdominica-$(H).pdf)
+PDF = completorium.pdf $(PDFI) $(PDFII) $(PDFIII) $(PDFIV) $(PDFV)
 all: $(PDF)
 define iter-doit
 $(patsubst %.pdf,%.tex,$(i)): feria$(word 1,$(subst -, ,$(patsubst feria%.pdf,%,$(i)))).tex hebdomada$(word 2,$(subst -, ,$(patsubst feria%.pdf,%,$(i)))).tex ; touch $$@
@@ -339,6 +341,16 @@ define iter-doit
 $(patsubst %.pdf,%.tex,$(i)): dominica.tex hebdomada$(patsubst dominica-%.pdf,%,$(i)).tex ; touch $$@
 endef
 iter-left := $(PDFIII)
+include $(iter)
+define iter-doit
+$(patsubst %.pdf,%.tex,$(i)): vferia$(word 1,$(subst -, ,$(patsubst vferia%.pdf,%,$(i)))).tex hebdomada$(word 2,$(subst -, ,$(patsubst vferia%.pdf,%,$(i)))).tex ; touch $$@
+endef
+iter-left := $(PDFIV)
+include $(iter)
+define iter-doit
+$(patsubst %.pdf,%.tex,$(i)): vdominica.tex hebdomada$(patsubst vdominica-%.pdf,%,$(i)).tex ; touch $$@
+endef
+iter-left := $(PDFV)
 include $(iter)
 $(LAPSALMSSINEDOX): $(TMP_DIR)/%-sinedox.tex: $(TMP_DIR)/%.tex
 	sed -e '/^Gló.*ri.*a.*Pa.*tri.*et.*Fí.*li.*o/d;/^et.*Spi.*rí.*tu.*i.*Sanc.*to/d;/^Sicut.*erat.*in.*princí.*pi.*o,.*et.*nunc.*et.*sem.*per,/d;/^et.*in.*sǽcu.*la.*sæ.*cu.*ló.*rum.*A.*men/d' < $^ > $@
