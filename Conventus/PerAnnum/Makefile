@@ -173,7 +173,7 @@ MODUS-tobiae2 = ii-D
 MODUS-dan3 = ii_-a vii-a vii-c
 MODUS-dan32 = i-f
 MODUS-dan33 = i-g viii-G
-MODUS-benedictus = i-d i-f i-g i-g5 ii_-d iii-a iii-b iiisoll-a iv-E v-a vi-F vii-a vii-c2 vii-d2 viisoll-a viii-g viii-G viii-G2
+MODUS-benedictus = i-a i-d i-f i-g i-g5 ii_-d iii-a iii-b iiisoll-a iv-E v-a vi-F vii-a vii-c2 vii-d2 viisoll-a viii-g viii-G viii-G2
 CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae7 isaiae8 isaiae9 isaiae10 isaiae11 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david dan3 dan32 dan33 iudith2 ecclesiasticus36
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -284,7 +284,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  benediciteomniaopera regnavitdominusdecorem semencecidit \
 			  eccedeusmeus regnumtuumdomine inaeternumet trespueriiussuregis \
 			  confitebortibidominequoniam ascendenteiesuinnaviculam \
-			  dominiestterra benedicitegentes introiboindomumtuam) \
+			  dominiestterra benedicitegentes introiboindomumtuam \
+			  beatimundocorde) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -413,7 +414,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   inconspectuangelorum-CROCHU tudomineuniversorum-CROCHU-cumdox \
 			   deusintesperavi-CROCHU quimanducat-E611-cumdox tupuerpropheta-CROCHU \
 			   obsecrodomine-CROCHU adaperiatdominus-CROCHU-cumdox \
-			   totadiecontristatus-CROCHU  quicustodiebant-CROCHU  tempusest-CROCHU-cumdox) \
+			   totadiecontristatus-CROCHU quicustodiebant-CROCHU tempusest-CROCHU-cumdox \
+			   dominusquieripuitme-sinedox invenidavidservum-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
