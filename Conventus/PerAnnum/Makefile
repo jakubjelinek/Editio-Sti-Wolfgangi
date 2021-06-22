@@ -302,7 +302,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  PergrataMundo-einsiedeln SplendorPaternae-einsiedeln \
 			  NoxEtTenebrae-einsiedeln ScientiarumDomino-kempten \
 			  ChristePrecamur-kempten SolEcce-einsiedeln \
-			  AEternaCaeli-einsiedeln AdestoChriste-kempten) \
+			  AEternaCaeli-einsiedeln AdestoChriste-kempten ChristeLuxVera) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
