@@ -111,7 +111,7 @@
 \else
 \newcommand{\oratio}{\pars{Oratio.}
 
-\noindent 
+\noindent Deus, qui, per adoptiónem grátiæ, lucis nos esse fílios voluísti, præsta, quǽsumus, ut errórum non involvámur ténebris, sed in splendóre veritátis semper maneámus conspícui.
 
 \noindent Per Dóminum nostrum Iesum Christum, Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.
 
@@ -167,7 +167,15 @@
 \pagebreak
 
 \ifx\hymnusmatutinum\undefined
-\ifx\matuac\undefined
+\ifx\matua\undefined
+\else
+\pars{Hymnus.}
+
+\vspace{-5mm}
+
+\antiphona{II}{temporalia/hym-DiesAEtasque-zist.gtex}
+\fi
+\ifx\matuc\undefined
 \else
 \pars{Hymnus.}
 
@@ -696,6 +704,71 @@
 \pagebreak
 
 \ifx\laudes\undefined
+\ifx\lauda\undefined
+\else
+\pars{Psalmus 1.} \scriptura{Ps. 62, 2.3; \textbf{H142}}
+
+\vspace{-4mm}
+
+\antiphona{VII a}{temporalia/ant-adtedeluce.gtex}
+
+%\vspace{-2mm}
+
+\scriptura{Psalmus 62}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps62-initium-vii-a-auto.gtex}
+
+%\vspace{-1.5mm}
+
+\input{temporalia/ps62-vii-a.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 2.} \scriptura{Idt. 16, 15}
+
+\vspace{-4mm}
+
+\antiphona{VIII G}{temporalia/ant-hymnumdicamus.gtex}
+
+\scriptura{Canticum trium puerorum, Dan. 3, 57-88 et 56}
+
+\initiumpsalmi{temporalia/dan3-initium-viii-G-auto.gtex}
+
+\input{temporalia/dan3-viii-G.tex}
+
+\rubrica{Hic non dicitur Gloria Patri, neque Amen.}
+
+\vfill
+
+\vspace{-6mm}
+
+\antiphona{}{temporalia/ant-hymnumdicamus.gtex} % repeat the antiphon - new page
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 3.} \scriptura{Ps. 149, 5; \textbf{H370}}
+
+\vspace{-4mm}
+
+\antiphona{IV* e}{temporalia/ant-exsultabuntsancti.gtex}
+
+\scriptura{Psalmus 149.}
+
+\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps149-initium-iv_-E.gtex}
+
+\vspace{-1.5mm}
+
+\input{temporalia/ps149-iv-c.tex} \Abardot{}
+
+\vfill
+\pagebreak
+\fi
 \ifx\laudb\undefined
 \else
 \pars{Psalmus 1.} \scriptura{Ps. 117, 6; \textbf{H156}}
@@ -892,9 +965,9 @@
 \ifx\lectiobrevis\undefined
 \ifx\lauda\undefined
 \else
-\pars{Lectio Brevis.} \scriptura{2 Th. 3, 10-13}
+\pars{Lectio Brevis.} \scriptura{Ap. 7, 10,12}
 
-\noindent 
+\noindent Salus Deo nostro, qui sedet super thronum, et Agno. Benedíctio et glória et sapiéntia et gratiárum áctio et honor et virtus et fortitúdo Deo nostro in sǽcula sæculórum. Amen.
 \fi
 \ifx\laudb\undefined
 \else
@@ -954,6 +1027,25 @@
 \ifx\preces\undefined
 \ifx\lauda\undefined
 \else
+\noindent Christum Dóminum, diem et solem nostrum, qui illúminat omnem hóminem, et qui nescit occásum, \gredagger{} laudémus clamántes:
+
+\Rbardot{} O Dómine, vita et salus nostra!
+
+\noindent Primítias huius diéi, síderum Creátor, a tua pietáte gratánter suscípimus. \gredagger{} Resurrectiónem tuam commemorámus.
+
+\Rbardot{} O Dómine, vita et salus nostra!
+
+\noindent Spíritus tuus bonus hódie nos tuum fácere dóceat beneplácitum, \gredagger{} et tua Sapiéntia dedúcat nos semper.
+
+\Rbardot{} O Dómine, vita et salus nostra!
+
+\noindent Magno cum gáudio cœ́tui dominicáli da nobis interésse, \gredagger{} in circúitu mensæ verbi et córporis tui.
+
+\Rbardot{} O Dómine, vita et salus nostra!
+
+\noindent Grátias agunt tibi ánimæ nostræ, \gredagger{} pro innúmeris benefíciis tuis.
+
+\Rbardot{} O Dómine, vita et salus nostra!
 \fi
 \ifx\laudb\undefined
 \else
