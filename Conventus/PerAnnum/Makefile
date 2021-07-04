@@ -309,7 +309,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  NoxEtTenebrae-einsiedeln ScientiarumDomino-kempten \
 			  ChristePrecamur-kempten SolEcce-einsiedeln DieiLuce-hk \
 			  AEternaCaeli-einsiedeln AdestoChriste-kempten ChristeLuxVera \
-			  DiesAEtasque-zist AEternaChristi RexGloriose ExsultetCaelum QuiLuce) \
+			  DiesAEtasque-zist AEternaChristi RexGloriose ExsultetCaelum QuiLuce \
+			  ChristeLuxVera-kempten) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -429,7 +430,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   istecognovit-CROCHU gloriaethonore-CROCHU gloriaethonore-CROCHU-cumdox \
 			   certamenmagnum-CROCHU certamenmagnum-CROCHU-cumdox \
 			   dumexiretiacob-CROCHU-cumdox suscipeverbum-CROCHU-cumdox \
-			   ecceegomittovos tollite dumsteteritis gloriapatri-CROCHU-cumdox) \
+			   ecceegomittovos tollite dumsteteritis gloriapatri-CROCHU-cumdox \
+			   praebefili-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
