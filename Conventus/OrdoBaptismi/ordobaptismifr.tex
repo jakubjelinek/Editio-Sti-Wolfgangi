@@ -30,7 +30,9 @@
 \usepackage{calc}
 \usepackage{longtable}
 \newif\ifparvulus
+\newif\ifsimeon
 \parvulustrue
+\simeontrue
 
 \setlength{\headheight}{12pt}
 
@@ -106,8 +108,13 @@
 \vspace{0.5cm}
 
 \ifparvulus
+\ifsimeon
+{\Large Simeon Srovnal\\
+25. Iulii MMXXI}
+\else
 {\Large Angelus Benedictus-Ioseph Srovnal\\
 19. Ianuarii MMXIX}
+\fi
 \else
 {\Large Myrrha Liesse Srovnalová\\
 18. Februarii MMXVII}
@@ -116,7 +123,10 @@
 \vspace{1cm}
 
 \ifparvulus
+\ifsimeon
+\else
 \includegraphics[width=5cm]{benedictlabre.png}
+\fi
 \else
 \includegraphics[width=5cm]{ordobaptismi.jpg}
 \fi
