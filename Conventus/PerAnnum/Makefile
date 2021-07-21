@@ -325,7 +325,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   benedictusdominus inmedioecclesiae sapientiamsanctorum \
 			   inmatutinis deusmeusadiutormeus amaviteum elegiteamdeus \
 			   fortitudomea confitebimurtibi iustiautem constitueseos \
-			   tibidixitcormeum) \
+			   tibidixitcormeum marianoliiamflere) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
