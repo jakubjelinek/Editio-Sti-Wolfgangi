@@ -108,6 +108,7 @@ TONUS-viii-c = 1 0 1 2
 TONUS-viii-g = 1 0 1 2
 TONUS-viii-g2 = 1 0 1 2
 TONUS-viii-g5 = 1 0 1 2
+TONUS-viii-g6 = 1 0 1 2
 TONUS-viiisoll-A = 1 3 1 2
 TONUS-viiisoll-C = 1 3 1 2
 TONUS-viiisoll-G = 1 3 1 2
