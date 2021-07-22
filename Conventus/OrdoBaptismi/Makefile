@@ -43,7 +43,7 @@ LAPSALMSEXTRA =
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = litaniae introitus-Sitientes alleluia-DominusInSina communio-OmnesQui \
 	 alleluia communio-versus-Confitemini-initium terogamus svatyvaclave \
-	 communio-versus-Vox-initium
+	 communio-versus-Vox-initium ant-adornathalamum alleluia-SenexPuerum
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(patsubst %,$(TMP_DIR)/communio-versus-Confitemini-%.tex,comb combfr)
 ALLCOMBTEXTS = $(patsubst %,$(TMP_DIR)/%-comb.tex,ritusrecipiendi \
@@ -94,7 +94,7 @@ $(TMP_DIR)/communio-versus-Confitemini-combfr.tex: $(patsubst %,communio-versus-
 	$(GENPSCOMB)
 $(patsubst %,ordobaptismi%pdf,. -celebrans. fr. -litaniae.): %.pdf: %.tex conventuscommune.tex \
 	translationes_cs.tex translationes_fr.tex \
-	ordobaptismi.jpg $(ALLCOMBTEXTS) $(ALLFRCOMBTEXTS) $(ALLLATEXTS) \
+	ordobaptismi.jpg siena.jpg $(ALLCOMBTEXTS) $(ALLFRCOMBTEXTS) $(ALLLATEXTS) \
 	$(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<

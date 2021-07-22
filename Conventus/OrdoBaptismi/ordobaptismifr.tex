@@ -109,7 +109,7 @@
 
 \ifparvulus
 \ifsimeon
-{\Large Simeon Srovnal\\
+{\Large Simeon Rochus Srovnal\\
 25. Iulii MMXXI}
 \else
 {\Large Angelus Benedictus-Ioseph Srovnal\\
@@ -124,6 +124,7 @@
 
 \ifparvulus
 \ifsimeon
+\includegraphics[width=5cm]{siena.jpg}
 \else
 \includegraphics[width=5cm]{benedictlabre.png}
 \fi
@@ -137,6 +138,9 @@
 
 \vfill
 
+\ifsimeon
+\vfill
+\else
 \gresetnabcfont{grelaon}{8}
 
 \pars{Antiphona ad introitum} \scriptura{Cf. Is. 55, 1; Ps. 77, 1; \textbf{L75}}
@@ -149,6 +153,7 @@
 
 \vfill
 \pagebreak
+\fi
 
 \pars{\textsc{Ritus recipiendi parvulum}}
 
@@ -156,10 +161,29 @@
 
 \psalmusEtTranslatioT{temporalia/ritusrecipiendi-combfr.tex}{6cm}
 
+\ifsimeon
+\pars{\textsc{Antiphona}} \scriptura{E72}
+
+\antiphona{VI}{temporalia/ant-adornathalamum.gtex}
+
+\vfill
+\pagebreak
+\fi
+
 \pars{\textsc{Sacra verbi Dei celebratio}}
 
 \gresetnabcfont{gregall}{8}
 
+\ifsimeon
+\pars{Alleluia}
+
+\vspace{-0.3cm}
+
+\antiphona{I}{temporalia/alleluia-SenexPuerum.gtex}
+
+\vspace{-0.3cm}
+
+\else
 \pars{Alleluia} \scriptura{Ps. 67, 18.19; \textbf{C116}}
 
 \vspace{-0.6cm}
@@ -169,6 +193,7 @@
 \vspace{-0.3cm}
 
 \trAlleluia
+\fi
 
 \gresetnabcfont{grelaon}{8}
 
