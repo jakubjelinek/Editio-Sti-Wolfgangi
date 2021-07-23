@@ -166,6 +166,8 @@
 
 \antiphona{VI}{temporalia/ant-adornathalamum.gtex}
 
+\trAdorna
+
 \vfill
 \pagebreak
 \fi
@@ -180,6 +182,8 @@
 \vspace{-0.3cm}
 
 \antiphona{I}{temporalia/alleluia-SenexPuerum.gtex}
+
+\trSenex
 
 \vspace{-0.3cm}
 
@@ -204,11 +208,19 @@
 \vspace{-0.2cm}
 
 \ifparvulus
+\ifsimeon
+\pars{Léctio sancti Evángelii secúndum Lucam.} \scriptura{Lc. 2, 22-40}
+
+\vspace{-0.2cm}
+
+\psalmusEtTranslatioT{temporalia/evangelium3-combfr.tex}{6cm}
+\else
 \pars{Léctio sancti Evángelii secúndum Marcum.} \scriptura{Mc. 10, 13-16}
 
 \vspace{-0.2cm}
 
 \psalmusEtTranslatioT{temporalia/evangelium2-combfr.tex}{6cm}
+\fi
 \else
 \pars{Léctio sancti Evángelii secúndum Ioánnem.} \scriptura{Io. 19, 38-42}
 
@@ -228,6 +240,14 @@
 \sineinitiali{temporalia/terogamus.gtex}
 
 \psalmusEtTranslatioT{temporalia/oratiofidelium-2-combfr.tex}{6cm}
+
+\ifsimeon
+\pars{Hymnus}
+
+\antiphona{VIII}{temporalia/hym-VeniCreator.gtex}
+
+\vpace{0.3cm}
+\fi
 
 \sineinitiali{temporalia/litaniae.gtex}
 
@@ -263,19 +283,35 @@
 
 \vspace{-0.5cm}
 
+\ifsimeon
+\scriptura{Lc. 2, 32; \textbf{H120}}
+
+\vspace{-4mm}
+
+\antiphona{VIII a}{temporalia/ant-lumenadrevelationem.gtex}
+
+\trLumen
+\else
 \scriptura{Gal. 3, 27; \textbf{L112}}
 
 \vspace{-0.6cm}
 
 \antiphona{II}{temporalia/communio-OmnesQui.gtex}
+\fi
 
 \ifparvulus
+\ifsimeon
+\else
 \scriptura{Ps. 28, 3}
 
 \initiumpsalmi{temporalia/communio-versus-Vox-initium.gtex}
 \fi
+\fi
 
+\ifsimeon
+\else
 \trCommunio
+\fi
 
 \vspace{-0.3cm}
 
@@ -286,8 +322,22 @@
 \vspace{-0.3cm}
 
 \ifparvulus
+\ifsimeon
+\antiphona{V}{temporalia/ant-salveregina-simplex.gtex}
+
+\antiphona{VI}{temporalia/alleluia.gtex}
+
+\scriptura{Ps. 117, 1-6}
+
+\initiumpsalmi{temporalia/communio-versus-Confitemini-initium.gtex}
+
+\vspace{-1cm}
+
+\psalmusEtTranslatioTS{temporalia/communio-versus-Confitemini-combfr.tex}{6cm}
+\else
 \vspace{-0.3cm}
 \antiphona{}{temporalia/svatyvaclave.gtex}
+\fi
 \else
 \antiphona{VI}{temporalia/alleluia.gtex}
 

@@ -43,12 +43,14 @@ LAPSALMSEXTRA =
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = litaniae introitus-Sitientes alleluia-DominusInSina communio-OmnesQui \
 	 alleluia communio-versus-Confitemini-initium terogamus svatyvaclave \
-	 communio-versus-Vox-initium ant-adornathalamum alleluia-SenexPuerum
+	 communio-versus-Vox-initium ant-adornathalamum alleluia-SenexPuerum \
+	 ant-lumenadrevelationem hym-VeniCreator ant-salveregina-simplex
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(patsubst %,$(TMP_DIR)/communio-versus-Confitemini-%.tex,comb combfr)
 ALLCOMBTEXTS = $(patsubst %,$(TMP_DIR)/%-comb.tex,ritusrecipiendi \
 		 oratiofidelium oratiofidelium-2 exorcismus celebratio-baptismi \
-		 ritus-explanativi conclusio-ritus evangelium evangelium2 evangelium-initium)
+		 ritus-explanativi conclusio-ritus evangelium evangelium2 evangelium3 \
+		 evangelium-initium)
 ALLFRCOMBTEXTS = $(patsubst %-comb.tex,%-combfr.tex,$(ALLCOMBTEXTS))
 ALLLAPARVULUSTEXTS = $(patsubst %-comb.tex,%-parvulus.tex,$(ALLCOMBTEXTS))
 ALLLAPARVULATEXTS = $(patsubst %-comb.tex,%-parvula.tex,$(ALLCOMBTEXTS))
