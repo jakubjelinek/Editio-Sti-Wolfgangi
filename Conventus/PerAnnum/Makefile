@@ -177,7 +177,7 @@ MODUS-tobiae2 = ii-D
 MODUS-dan3 = i-f ii_-a vii-a vii-c viii-G
 MODUS-dan32 = i-f
 MODUS-dan33 = i-g viii-G
-MODUS-benedictus = i-a i-a4 i-d i-f i-g i-g5 isoll-D isoll-g ii-D ii_-d iii-a iii-b iiisoll-a iv-E v-a vi-F vii-a vii-c vii-c2 vii-d2 vii-d3 viisoll-a viii-g viii-G viii-G2 viii-G5 viiisoll-G
+MODUS-benedictus = i-a i-a4 i-d i-f i-g i-g5 isoll-D isoll-g ii-D ii_-d iii-a iii-b iiisoll-a iv-E v-a vi-F vii-a vii-c vii-c2 vii-d2 vii-d3 viisoll-a viii-g viii-C viii-G viii-G2 viii-G5 viiisoll-G
 CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae7 isaiae8 isaiae9 isaiae10 isaiae11 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david dan3 dan32 dan33 iudith2 ecclesiasticus36
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -299,7 +299,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  dicitjesusmariaconversa dumtransissetsabbatum ardensestcormeum \
 			  inclinavitsemaria surgensjesusmaneprima dilexistiiustitiam dumessetrex \
 			  laevaeius trahemepostte egochristumconfiteor inventabonamargarita \
-			  iamhiemstransiit cumsublevassetoculos) \
+			  iamhiemstransiit cumsublevassetoculos indomodavidpuerisui) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -320,14 +320,15 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  DiesAEtasque-zist AEternaChristi RexGloriose ExsultetCaelum QuiLuce \
 			  ChristeLuxVera-kempten AdestoRerum-kn DeusQui-hk \
 			  IesuCorona IesuRedemptor VitaSanctorum AdPrecesNostras \
-			  MagdalaeSidus AuroraSurgit IubiloCordis) \
+			  MagdalaeSidus AuroraSurgit IubiloCordis DumTuas NoctiSuccedit) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
 			   benedictusdominus inmedioecclesiae sapientiamsanctorum \
 			   inmatutinis deusmeusadiutormeus amaviteum elegiteamdeus \
 			   fortitudomea confitebimurtibi iustiautem constitueseos \
-			   tibidixitcormeum marianoliiamflere adiuvabiteam christefilidei) \
+			   tibidixitcormeum marianoliiamflere adiuvabiteam christefilidei \
+			   laetaminidomino) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
@@ -455,7 +456,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   delectareindomino-CROCHU statuitdominussupra-CROCHU-cumdox \
 			   ecceodorfiliimei-CROCHU expurgate-CROCHU proptertestamentumdomini-CROCHU-cumdox \
 			   mariamagdalena-CROCHU mariaplorans congratulamini-CROCHU-cumdox caelestis \
-			   venielectamea-CROCHU diffusaestgratia-CROCHU-cumdox) \
+			   venielectamea-CROCHU diffusaestgratia-CROCHU-cumdox \
+			   statuitdominussupra-CROCHU nativitasgloriosae-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
