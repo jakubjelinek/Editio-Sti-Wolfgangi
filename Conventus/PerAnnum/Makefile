@@ -299,7 +299,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  dicitjesusmariaconversa dumtransissetsabbatum ardensestcormeum \
 			  inclinavitsemaria surgensjesusmaneprima dilexistiiustitiam dumessetrex \
 			  laevaeius trahemepostte egochristumconfiteor inventabonamargarita \
-			  iamhiemstransiit cumsublevassetoculos indomodavidpuerisui) \
+			  iamhiemstransiit cumsublevassetoculos indomodavidpuerisui \
+			  intrantemiesum) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -320,7 +321,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  DiesAEtasque-zist AEternaChristi RexGloriose ExsultetCaelum QuiLuce \
 			  ChristeLuxVera-kempten AdestoRerum-kn DeusQui-hk \
 			  IesuCorona IesuRedemptor VitaSanctorum AdPrecesNostras \
-			  MagdalaeSidus AuroraSurgit IubiloCordis DumTuas NoctiSuccedit) \
+			  MagdalaeSidus AuroraSurgit IubiloCordis DumTuas NoctiSuccedit \
+			  FlagransAmore QuasTibi) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -328,7 +330,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   inmatutinis deusmeusadiutormeus amaviteum elegiteamdeus \
 			   fortitudomea confitebimurtibi iustiautem constitueseos \
 			   tibidixitcormeum marianoliiamflere adiuvabiteam christefilidei \
-			   laetaminidomino) \
+			   laetaminidomino mirabilisdeus) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
@@ -460,7 +462,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   statuitdominussupra-CROCHU nativitasgloriosae-CROCHU-cumdox \
 			   eramquasiagnus-cumdox eramquasiagnus-sinedox tentavitdeusabraham-CROCHU \
 			   locutusestdominusadmoysen-CROCHU iteinorbemuniversum-CROCHU \
-			   locutusestdominusadabraham-CROCHU) \
+			   locutusestdominusadabraham-CROCHU cibavitillum-CROCHU) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
