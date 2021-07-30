@@ -300,7 +300,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  inclinavitsemaria surgensjesusmaneprima dilexistiiustitiam dumessetrex \
 			  laevaeius trahemepostte egochristumconfiteor inventabonamargarita \
 			  iamhiemstransiit cumsublevassetoculos indomodavidpuerisui \
-			  intrantemiesum infideetlenitate) \
+			  intrantemiesum infideetlenitate ignemvenimittere) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -322,7 +322,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  ChristeLuxVera-kempten AdestoRerum-kn DeusQui-hk \
 			  IesuCorona IesuRedemptor VitaSanctorum AdPrecesNostras \
 			  MagdalaeSidus AuroraSurgit IubiloCordis DumTuas NoctiSuccedit \
-			  FlagransAmore QuasTibi ChristePastorum InclitusPastor) \
+			  FlagransAmore QuasTibi ChristePastorum InclitusPastor \
+			  ChristePastorum-presbytero InclitusRector-presbytero) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -339,7 +340,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 $(addprefix inv-,alleluiachristumdominum regemmagnum dominumquifecit adoremusdominum \
 			  dominumdeum veniteexsultemus jubilemusdeo avemaria christummariaefilium \
 			  mirabileminsanctis visitationemvirginis regemmartyrumsimplex \
-			  regemapostolorum stellam fontemsapientiae) \
+			  regemapostolorum stellam fontemsapientiae christumpastorumprincipem) \
 	 $(addprefix versus-,memorfui medianocte praevenerunt) \
 	 dominelabiamea tonusprecum dominusnosbenedicat \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
