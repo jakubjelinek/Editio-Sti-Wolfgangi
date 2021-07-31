@@ -300,7 +300,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  inclinavitsemaria surgensjesusmaneprima dilexistiiustitiam dumessetrex \
 			  laevaeius trahemepostte egochristumconfiteor inventabonamargarita \
 			  iamhiemstransiit cumsublevassetoculos indomodavidpuerisui \
-			  intrantemiesum infideetlenitate ignemvenimittere) \
+			  intrantemiesum infideetlenitate ignemvenimittere operamininoncibum) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -464,7 +464,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   eramquasiagnus-cumdox eramquasiagnus-sinedox tentavitdeusabraham-CROCHU \
 			   locutusestdominusadmoysen-CROCHU iteinorbemuniversum-CROCHU \
 			   locutusestdominusadabraham-CROCHU cibavitillum-CROCHU \
-			   dominusquielegit-CROCHU-cumdox) \
+			   dominusquielegit-CROCHU-cumdox audifilimihidisciplinam-CROCHU \
+			   aversioparvulorum-CROCHU aversioparvulorum-CROCHU-cumdox \
+			   damihidominesedium-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
@@ -483,7 +485,7 @@ LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PSALMTONES_DIR)/$(2)-auto.gabc; \
 	     [ $(2) = "dir" ] && cd .. && $(SED) -i -e '/(::)$$$$/{/(,) (::)$$$$/!{s/<b>//g;s/<\/b>//g}}' $(3) || :
 FERIAE = ii iii iv v vi
-HEBDOMADAE = i ii iii iv v vi viii ix x xi xii xiii xiv xv xvi xvii
+HEBDOMADAE = i ii iii iv v vi viii ix x xi xii xiii xiv xv xvi xvii xviii
 PDFI = $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE)))
 PDFII = $(foreach H,$(HEBDOMADAE),sabbato-$(H).pdf)
 PDFIII = $(foreach H,$(HEBDOMADAE),dominica-$(H).pdf)
