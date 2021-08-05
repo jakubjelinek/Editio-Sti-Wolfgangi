@@ -78,7 +78,7 @@ MODUS-54i = viii-c
 MODUS-54ii = vii-c2
 MODUS-54iii = viii-G
 MODUS-56 = viii-g
-MODUS-62 = iii-e iv-E vii-a viii-g5 viii-G6 viii-g6
+MODUS-62 = iii-e iv-E vii-a viii-G5 viii-g5 viii-G6 viii-g6
 MODUS-63 = viii-G
 MODUS-64 = viii-A
 MODUS-65i = vi-F
@@ -485,7 +485,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 isaiae3-initium-vii-d ps88xxxi_xxxviii-initium-viii-G_ ps97-initium-e ps98-initium-e \
 	 jeremiae2-initium-viii-G ps99-initium-e ps72iii-initium-iii-b ps102iii-initium-iii-g \
 	 ps47-initium-iv-a ps101ii_xii-initium-i-a ps86-initium-iv-c ps149-initium-ii_-f \
-	 ps103iii-initium-e ps117-initium-viii-G5 ps150-initium-viii-g4 ps149-initium-iv_-E
+	 ps103iii-initium-e ps117-initium-viii-G5 ps150-initium-viii-g4 ps149-initium-iv_-E \
+	 benedictus-initium-viisoll-a
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
