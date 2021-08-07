@@ -50,6 +50,7 @@ TONUS-iii-e = 2 0 2 0
 TONUS-iii-g = 2 0 2 0
 TONUS-iii-g2 = 2 0 2 0
 TONUS-iiisoll-a = 2 0 2 0
+TONUS-iiisoll-a4 = 2 0 2 0
 TONUS-iiisoll-e = 2 0 2 0
 TONUS-iiisoll-g = 2 0 2 0
 TONUS-iiisoll-g2 = 2 0 2 0
