@@ -187,6 +187,7 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
+\if\mmxxi\undefined
 \pars{Psalmus 2.} \scriptura{Ap. 12, 1}
 
 \vspace{-4mm}
@@ -228,15 +229,87 @@ per infiníta sǽcula sæculórum.
 \initiumpsalmi{temporalia/ps147-initium-i-f-auto.gtex}
 
 \input{temporalia/ps147-i-f.tex} \Abardot{}
+\else
+\pars{Psalmus 2.}
+
+\antiphona{VIII G\textsuperscript{3}}{temporalia/ant-omniumrerumcreator.gtex}
+
+\scriptura{Ps. 116}
+
+\initiumpsalmi{temporalia/ps116-initium-viii-G6-auto.gtex}
+
+\input{temporalia/ps116-viii-G6.tex} \Abardot{}
 
 \vfill
 \pagebreak
 
+\pars{Psalmus 3.} \scriptura{Ct. 6, 10.12; \textbf{H309}}
+
+\vspace{-4mm}
+
+\antiphona{VII a}{temporalia/ant-descendiinhortum.gtex}
+
+\scriptura{Ps. 145}
+
+\initiumpsalmi{temporalia/ps145-initium-vii-a.gtex}
+
+\input{temporalia/ps145-vii-a.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 4.} \scriptura{Ct. 5, 6-8; \textbf{H310}}
+
+\vspace{-4mm}
+
+\antiphona{VII a}{temporalia/ant-animamealiquefacta.gtex}
+
+\scriptura{Ps. 146}
+
+\initiumpsalmi{temporalia/ps146-initium-vii-a.gtex}
+
+\input{temporalia/ps146-vii-a.tex}
+
+\vfill
+
+\antiphona{}{temporalia/ant-animamealiquefacta.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 5.} \scriptura{Ct. 4, 7.11; \textbf{H310}}
+
+\vspace{-4mm}
+
+\antiphona{IV E}{temporalia/ant-totapulchraes.gtex}
+
+\scriptura{Ps. 147}
+
+\initiumpsalmi{temporalia/ps147-initium-iv-E.gtex}
+
+\input{temporalia/ps147-iv-E.tex}
+
+\vfill
+
+\antiphona{}{temporalia/ant-totapulchraes.gtex}
+\fi
+
+\vfill
+\pagebreak
+
+\ifx\mmxxi\undefined
 \pars{Capitulum.} \scriptura{Iudt. 13, 22}
 
 \grechangedim{interwordspacetext}{0.12 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \cuminitiali{}{temporalia/capitulum-BenedixitTe.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}
+\else
+\pars{Capitulum.} \scriptura{Eccli. 24, 11-13}
+
+\grechangedim{interwordspacetext}{0.12 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{}{temporalia/capitulum-InOmnibus.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}
+\fi
 
 % preklad Jeruz. bible
 %\trCapituliI
@@ -248,9 +321,15 @@ per infiníta sǽcula sæculórum.
 
 \cuminitiali{VI}{temporalia/resp-inomnemterram.gtex}
 \else
+\ifx\mmxxi\undefined
 \pars{Responsorium.} \scriptura{\Vbardot{} Ct. 3, 6; \textbf{H296}}
 
 \cuminitiali{III}{temporalia/resp-vidispeciosam.gtex}
+\else
+\pars{Responsorium.} \scriptura{\Rbardot{} Ct. 6, 9 \Vbardot{} ibid. 3, 6; \textbf{H297}}
+
+\cuminitiali{IV}{temporalia/resp-quaeestista-CROCHU-cumdox.gtex}
+\fi
 \fi
 
 %\trResp
@@ -270,7 +349,7 @@ per infiníta sǽcula sæculórum.
 \pars{Versus.}
 
 % Versus. %%%
-\sineinitiali{temporalia/versus-elegit.gtex}
+\sineinitiali{temporalia/versus-elegit-solemnis.gtex}
 
 %\noindent \trVersus
 
@@ -279,7 +358,7 @@ per infiníta sǽcula sæculórum.
 
 \pars{Canticum B. Mariæ V.} \scriptura{Cf. Ct. 6, 9; 1, 4; \textbf{H298}}
 
-\vspace{-6mm}
+\vspace{-4mm}
 
 {
 \grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
@@ -289,18 +368,24 @@ per infiníta sǽcula sæculórum.
 
 %\trAntIMagnificat
 
-\vspace{-3mm}
+%\vspace{-2mm}
 
 \scriptura{Lc. 1, 46-55}
 
-\vspace{-2mm}
+%\vspace{-2mm}
 
 \cantusSineNeumas
 \initiumpsalmi{temporalia/magnificat-initium-isoll-g4.gtex}
 
 \vspace{-1mm}
 
-\input{temporalia/magnificat-isoll-g.tex} \Abardot{}
+\input{temporalia/magnificat-isoll-g.tex}
+
+{
+\grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{}{temporalia/ant-virgoprudentissima.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
 
 %\vspace{-1cm}
 
@@ -314,7 +399,11 @@ per infiníta sǽcula sæculórum.
 \pagebreak
 
 % Oratio. %%%
+\ifx\mmxxi\undefined
 \cuminitiali{}{temporalia/oratio.gtex}
+\else
+\cuminitiali{}{temporalia/oratio2.gtex}
+\fi
 
 \vspace{-1mm}
 %\trOrationisI

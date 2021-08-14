@@ -43,13 +43,13 @@ MODUS-99 = viii-G
 MODUS-109 = vii-a
 MODUS-112 = i-g viii-G
 MODUS-115 = i-g
-MODUS-116 = viii-G
+MODUS-116 = viii-G viii-G6
 MODUS-121 = ii_-a
 MODUS-126 = i-g3
 MODUS-138 = viii-g
-MODUS-145 = i-g
-MODUS-146 = i-f
-MODUS-147 = i-f
+MODUS-145 = i-g vii-a
+MODUS-146 = i-f vii-a
+MODUS-147 = i-f iv-E
 MODUS-148 = i-g3
 MODUS-149 = i-g3
 MODUS-150 = i-g3
@@ -81,13 +81,13 @@ SCORES = $(addprefix ant-,animamealiquefacta assumptaestmaria benedictafilia com
 			  mariavirgoassumptaest mulieramictasole osculeturme \
 			  paradisiportaperevam pulchraesetdecora sicutlilium \
 			  talisestdilectus totapulchraes veniinhortum virgoprudentissima \
-			  quaeestista) \
+			  quaeestista omniumrerumcreator) \
 	 $(addprefix hym-,AuroraVelut GaudiumMundi SolisOVirgo) \
 	 $(addprefix resp-,hodiemariavirgo mariavirgoexaltataest vidispeciosam) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
-	 $(addprefix capitulum-,BenedixitTe) \
-	 $(addprefix versus-,elegit exaltata assumpta maria) \
-	 oratio supplicatiolitaniae oratiodominica oratiodominica-mat \
+	 $(addprefix capitulum-,BenedixitTe InOmnibus) \
+	 $(addprefix versus-,elegit exaltata assumpta maria elegit-solemnis) \
+	 oratio oratio2 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,festis-bmv) \
 	 dominelabiamea inv-cuiushodie benedicamus-solemnis-laud \
@@ -97,11 +97,12 @@ SCORES = $(addprefix ant-,animamealiquefacta assumptaestmaria benedictafilia com
 					evangelica quorum adsocietatem) \
 	 $(addprefix resp-,vidispeciosam-sinedox beataesvirgomariadei beatammedicent \
 			   diffusaestgratia istaestspeciosa ornataminmonilibus \
-			   sicutcedrus supersalutem) \
+			   sicutcedrus supersalutem quaeestista-CROCHU-cumdox) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
 	 magnificat-initium-isoll-g4 ps112-initium-i-g4 ps62-initium-ii_-a \
 	 ps8-initium-i-g4 ps23-initium-iii-a2 ps44-initium-iv-E ps45-initium-v-a \
-	 ps95-initium-vii-a ps97-initium-vii-a
+	 ps95-initium-vii-a ps97-initium-vii-a ps145-initium-vii-a ps146-initium-vii-a \
+	 ps147-initium-iv-E
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
@@ -110,7 +111,7 @@ LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PSALMTONES_DIR)/$(2)-auto.gabc; \
 	     [ $(2) = "dir" ] && cd .. && $(SED) -i -e '/(::)$$$$/{/(,) (::)$$$$/!{s/<b>//g;s/<\/b>//g}}' $(3) || :
-PDF = inassumptionebmv.pdf $(patsubst %,die%-abmv.pdf,iii iv v vi vii viii)
+PDF = inassumptionebmv.pdf inassumptionebmv-mmxxi.pdf $(patsubst %,die%-abmv.pdf,iii iv v vi vii viii)
 all: $(PDF)
 iter = $(patsubst %,iterator.mk,$(iter-left))
 define iter-doit
@@ -126,7 +127,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../PostPentecosten ../CorpusChristi
+iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../PostPentecosten ../CorpusChristi ../InNativitateBMV ../PresentationeBMV
 include $(iter)
 
 $(LAPSALMSSINEDOX): $(TMP_DIR)/%-sinedox.tex: $(TMP_DIR)/%.tex
