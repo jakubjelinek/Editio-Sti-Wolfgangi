@@ -323,7 +323,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  ChristePrecamur-MMMA RerumCreator-MMMA VeniPraecelsa VeniensMater \
 			  BeateMartyr MartyrDei ScientiarumDomino-MMMA EcceIam EcceIam-praglia \
 			  SalveDies VitaSanctorum-kempten LucisLargitor-hk AdPrecesNostras-kempten \
-			  AEterneLucis-hk AmorisSensuErige-kn IamLucis-hk DiesAEtasque-kempten \
+			  AEterneLucis-hk AmorisSensusErige-kn IamLucis-hk DiesAEtasque-kempten \
 			  AEterneRerum AEternaLux-kempten OSacrosanctaTrinitas-kempten \
 			  PergrataMundo-einsiedeln SplendorPaternae-einsiedeln \
 			  NoxEtTenebrae-einsiedeln ScientiarumDomino-kempten \
@@ -337,7 +337,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  ChristePastorum-presbytero InclitusRector-presbytero \
 			  CaelestisFormam DulcisIesuMemoria OChristeFlos OCastitatis \
 			  MartyrisChristi InMartyrisLaurentii OClaraLuce GeneratVirgo \
-			  AuctorPerennis-kempten AuroraIamSpargit) \
+			  AuctorPerennis-kempten AuroraIamSpargit AmorisSensusErige) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -493,7 +493,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   beatuslaurentiusoravitetdixit-CROCHU levitalaurentius-CROCHU \
 			   puermeusnolitimere-CROCHU beatuslaurentiusoravitetdixit-CROCHU-cumdox \
 			   haecpaupertatistitulo francisciprimaplantula vivensinmundo \
-			   redemitdominus-CROCHU-cumdox dixeruntimpii supersalutem-CROCHU) \
+			   redemitdominus-CROCHU-cumdox dixeruntimpii supersalutem-CROCHU \
+			   supersalutem-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
