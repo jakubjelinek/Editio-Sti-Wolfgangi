@@ -339,7 +339,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  CaelestisFormam DulcisIesuMemoria OChristeFlos OCastitatis \
 			  MartyrisChristi InMartyrisLaurentii OClaraLuce GeneratVirgo \
 			  AuctorPerennis-kempten AuroraIamSpargit AmorisSensusErige \
-			  ArcanaSacrae BernhardusDoctor ChristePastorum-papa) \
+			  ArcanaSacrae BernhardusDoctor ChristePastorum-papa SplendorPaternae) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
