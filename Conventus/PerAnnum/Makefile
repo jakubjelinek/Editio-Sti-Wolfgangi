@@ -341,7 +341,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  MartyrisChristi InMartyrisLaurentii OClaraLuce GeneratVirgo \
 			  AuctorPerennis-kempten AuroraIamSpargit AmorisSensusErige \
 			  ArcanaSacrae BernhardusDoctor ChristePastorum-papa SplendorPaternae \
-			  OSempiternaeCuriae RelucensInter HaecFemina) \
+			  OSempiternaeCuriae RelucensInter HaecFemina FulgentisAuctor-hk) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -501,7 +501,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   redemitdominus-CROCHU-cumdox dixeruntimpii supersalutem-CROCHU \
 			   supersalutem-CROCHU-cumdox dumsteteritis-sinedox beatieritis-cumdox \
 			   beatipauperesspiritu-CROCHU acceptabaptismigratia \
-			   nocteosmeum-CROCHU-sinedox sciodomine-CROCHU-cumdox) \
+			   nocteosmeum-CROCHU-sinedox sciodomine-CROCHU-cumdox \
+			   mementomeideusquiaventus-CROCHU) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
