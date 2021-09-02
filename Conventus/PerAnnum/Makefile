@@ -178,7 +178,7 @@ MODUS-tobiae2 = ii-D
 MODUS-dan3 = i-d i-f i-g ii_-a v-a vii-a vii-c vii-c2 viii-G per
 MODUS-dan32 = i-f
 MODUS-dan33 = i-g viii-G
-MODUS-benedictus = i-a i-a4 i-d i-f i-g i-g5 isoll-D isoll-g isoll-d3 isoll-a ii-D ii_-d iii-a iii-b iiisoll-a iiisoll-a4 iv-E iv-e2 v-a vi-F vi-C vii-a vii-c vii-c2 vii-d2 vii-d3 viisoll-a viii-g viii-C viii-G viii-G2 viii-G5 viiisoll-G
+MODUS-benedictus = i-a i-a4 i-a5 i-d i-f i-g i-g5 isoll-D isoll-g isoll-d3 isoll-a ii-D ii_-d iii-a iii-b iiisoll-a iiisoll-a4 iv-E iv-e2 v-a vi-F vi-C vii-a vii-c vii-c2 vii-d2 vii-d3 viisoll-a viii-g viii-C viii-G viii-G2 viii-G5 viiisoll-G
 CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae7 isaiae8 isaiae9 isaiae10 isaiae11 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david dan3 dan32 dan33 iudith2 ecclesiasticus36
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -313,7 +313,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  sicutsorore honoratchristi laudanslaudare novumsydusemicuit \
 			  majoremcaritatem istecognovitiustitiam replevitsanctumsuum \
 			  sacerdosetpontifex verbaquaelocutussum eccevereisraelita \
-			  hocestpraeceptum vosamicimei petiteetdabitur) \
+			  hocestpraeceptum vosamicimei petiteetdabitur \
+			  istesanctusdumprocolligendis) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -341,7 +342,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  MartyrisChristi InMartyrisLaurentii OClaraLuce GeneratVirgo \
 			  AuctorPerennis-kempten AuroraIamSpargit AmorisSensusErige \
 			  ArcanaSacrae BernhardusDoctor ChristePastorum-papa SplendorPaternae \
-			  OSempiternaeCuriae RelucensInter HaecFemina FulgentisAuctor-hk) \
+			  OSempiternaeCuriae RelucensInter HaecFemina FulgentisAuctor-hk \
+			  AnglorumIam FulgetInCaelis) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -502,7 +504,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   supersalutem-CROCHU-cumdox dumsteteritis-sinedox beatieritis-cumdox \
 			   beatipauperesspiritu-CROCHU acceptabaptismigratia \
 			   nocteosmeum-CROCHU-sinedox sciodomine-CROCHU-cumdox \
-			   mementomeideusquiaventus-CROCHU quaredetraxistis-CROCHU-sinedox) \
+			   mementomeideusquiaventus-CROCHU quaredetraxistis-CROCHU-sinedox \
+			   beatissimuspontifex-CROCHU-cumdox hicinannis-CROCHU) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
