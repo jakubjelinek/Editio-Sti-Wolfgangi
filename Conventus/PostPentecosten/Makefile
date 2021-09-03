@@ -144,7 +144,7 @@ MODUS-moysis2i = vi-F
 MODUS-moysis = e
 MODUS-nuncdimittis = iii-a
 MODUS-benedictus = i-g5 isoll-D isoll-D_ isoll-f isoll-g iisoll-D ivsoll-E vi-F visoll-C vii-a viisoll-a viisoll-d viii-G viiisoll-G 
-MODUS-magnificat = isoll-a isoll-D isoll-D2 isoll-f isoll-g ii-D iiisoll-a ivsoll-d ivsoll-E ivsoll-E2 v-a vsoll-g vii-c visoll-C visoll-F viisoll-a viisoll-d viii-G viii-G2 viiisoll-C viiisoll-g viiisoll-G viiisoll-G2
+MODUS-magnificat = isoll-a isoll-D isoll-D2 isoll-f isoll-g ii-D iiisoll-a ivsoll-A ivsoll-d ivsoll-E ivsoll-E2 v-a vsoll-g vii-c visoll-C visoll-F viisoll-a viisoll-d viii-G viii-G2 viiisoll-C viiisoll-g viiisoll-G viiisoll-G2
 include $(PSALMTONES_DIR)/tonus.mk
 CANTICIS = isaiae ezechiae anna moysis habacuc moysis2i moysis2ii nuncdimittis dan3
 MODUSLIST = $(sort $(foreach P,$(PSALMS) benedictus magnificat $(CANTICIS),$(MODUS-$(P))))
@@ -215,7 +215,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  vididominumsedentem dominequinquetalenta quicaelorumcontines \
 			  serveboneetfidelisquia praeceptorpertotamnoctem praevaluitdavid \
 			  montesgelboe sioffersmunus dumtolleretdominus beneomniafecit \
-			  unusautemexillis quaeriteprimum) \
+			  unusautemexillis quaeriteprimum prophetamagnus) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \

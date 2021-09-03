@@ -72,6 +72,7 @@ TONUS-iv-e2 = 1 2 1 3
 TONUS-iv-g = 1 2 1 0
 TONUS-iv_-E = 1 2 2 0
 TONUS-iv_-e = 1 2 2 0
+TONUS-ivsoll-A = 1 3 1 3
 TONUS-ivsoll-E = 1 3 1 3
 TONUS-ivsoll-E2 = 1 3 1 3
 TONUS-ivsoll-d = 1 3 1 3
