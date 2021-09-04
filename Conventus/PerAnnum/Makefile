@@ -178,7 +178,7 @@ MODUS-tobiae2 = ii-D
 MODUS-dan3 = i-d i-f i-g ii_-a v-a vii-a vii-c vii-c2 viii-G per
 MODUS-dan32 = i-f
 MODUS-dan33 = i-g viii-G
-MODUS-benedictus = i-a i-a4 i-a5 i-d i-f i-g i-g5 isoll-D isoll-g isoll-d3 isoll-a ii-D ii_-d iii-a iii-b iiisoll-a iiisoll-a4 iv-E iv-e2 v-a vi-F vi-C vii-a vii-c vii-c2 vii-d2 vii-d3 viisoll-a viii-g viii-C viii-G viii-G2 viii-G5 viiisoll-G
+MODUS-benedictus = i-a i-a4 i-a5 i-d i-f i-g i-g5 isoll-D isoll-g isoll-d3 isoll-a ii-D ii_-d iii-a iii-b iiisoll-a iiisoll-a4 iv-E iv-e2 v-a vsoll-g vi-F vi-C vii-a vii-c vii-c2 vii-d2 vii-d3 viisoll-a viii-g viii-C viii-G viii-G2 viii-G5 viiisoll-G
 CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae7 isaiae8 isaiae9 isaiae10 isaiae11 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david dan3 dan32 dan33 iudith2 ecclesiasticus36
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -314,7 +314,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  majoremcaritatem istecognovitiustitiam replevitsanctumsuum \
 			  sacerdosetpontifex verbaquaelocutussum eccevereisraelita \
 			  hocestpraeceptum vosamicimei petiteetdabitur \
-			  istesanctusdumprocolligendis) \
+			  istesanctusdumprocolligendis dumtransiretdominus) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -506,7 +506,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   nocteosmeum-CROCHU-sinedox sciodomine-CROCHU-cumdox \
 			   mementomeideusquiaventus-CROCHU quaredetraxistis-CROCHU-sinedox \
 			   beatissimuspontifex-CROCHU-cumdox hicinannis-CROCHU \
-			   neabscondasame-CROCHU quismihitribuat-CROCHU-cumdox) \
+			   neabscondasame-CROCHU quismihitribuat-CROCHU-cumdox \
+			   quiconsolabatur-CROCHU-sinedox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
@@ -526,7 +527,7 @@ LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PSALMTONES_DIR)/$(2)-auto.gabc; \
 	     [ $(2) = "dir" ] && cd .. && $(SED) -i -e '/(::)$$$$/{/(,) (::)$$$$/!{s/<b>//g;s/<\/b>//g}}' $(3) || :
 FERIAE = ii iii iv v vi
-HEBDOMADAE = i ii iii iv v vi viii ix x xi xii xiii xiv xv xvi xvii xviii xix xx xxi xxii
+HEBDOMADAE = i ii iii iv v vi viii ix x xi xii xiii xiv xv xvi xvii xviii xix xx xxi xxii xxiii
 PDFI = $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE)))
 PDFII = $(foreach H,$(HEBDOMADAE),sabbato-$(H).pdf)
 PDFIII = $(foreach H,$(HEBDOMADAE),dominica-$(H).pdf)
