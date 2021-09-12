@@ -15,7 +15,56 @@
 \newcommand{\hymnusmatutinum}{\pars{Hymnus.}
 
 \cuminitiali{II}{temporalia/hym-BeataDeiGenetrix.gtex}}
-\newcommand{\matutinum}{\pars{Psalmus 1.} \scriptura{\textbf{H307}}
+\newcommand{\matutinum}{
+\iffalse
+\pars{Psalmus 1.} \scriptura{Lc. 1, 42; \textbf{H21}}
+
+\vspace{-4mm}
+
+\antiphona{II* a}{temporalia/ant-benedictatu.gtex}
+
+\scriptura{Psalmus 8.}
+
+\initiumpsalmi{temporalia/ps8-initium-ii_-a-auto.gtex}
+
+\input{temporalia/ps8-ii_-a.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 2.} \scriptura{Cf. Sir. 24, 20; \textbf{H115}}
+
+\vspace{-4mm}
+
+\antiphona{IV A}{temporalia/ant-sicutmyrrha.gtex}
+
+\scriptura{Psalmus 18.}
+
+\initiumpsalmi{temporalia/ps18-initium-iv-A-auto.gtex}
+
+\input{temporalia/ps18-iv-A.tex}
+
+\antiphona{}{temporalia/ant-sicutmyrrha.gtex} % repeat the antiphon - new page
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 3.} \scriptura{\textbf{H115}}
+
+\vspace{-4mm}
+
+\antiphona{IV c}{temporalia/ant-antethorum-FKP.gtex}
+
+\scriptura{Psalmus 23.}
+
+\initiumpsalmi{temporalia/ps23-initium-iv-c-auto.gtex}
+
+\input{temporalia/ps23-iv-c.tex} \Abardot{}
+
+\vfill
+\pagebreak
+\else
+\pars{Psalmus 1.} \scriptura{\textbf{H307}}
 
 \vspace{-4mm}
 
@@ -74,7 +123,8 @@
 \input{temporalia/ps86-viii-G.tex} \Abardot{}
 
 \vfill
-\pagebreak}
+\pagebreak
+\fi}
 \newcommand{\matversus}{\noindent \Vbardot{} María conservábat ómnia verba hæc.
 
 \noindent \Rbardot{} Cónferens in corde suo.}

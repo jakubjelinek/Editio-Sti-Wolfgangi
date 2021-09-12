@@ -25,7 +25,7 @@ MODUS-2 = i-a4 i-f vii-a viii-G5
 MODUS-3 = vi-F viii-G5
 MODUS-5 = viii-A
 MODUS-6 = iv-E viii-G
-MODUS-8 = i-f i-g vi-F
+MODUS-8 = i-f i-g ii_-a vi-F
 MODUS-9ii_xi = viii-G
 MODUS-9xii_xxi = i-g3
 MODUS-9xxii_xxxii = ii-D
@@ -39,10 +39,10 @@ MODUS-17xxi_xxx = iv_-e
 MODUS-17xxxi_xxxv = viii-G
 MODUS-17xxxvi_xlvi = vii-c
 MODUS-17xlvii_li = vii-c2
-MODUS-18 = i-D_ ii-D iii-a
+MODUS-18 = i-D_ ii-D iii-a iv-A
 MODUS-18i = ii-D
 MODUS-20 = viii-G
-MODUS-23 = iv_-e vii-c viii-G
+MODUS-23 = iv-c iv_-e vii-c viii-G
 MODUS-28 = vii-a
 MODUS-30i = viii-G
 MODUS-30ii = e-a
@@ -316,7 +316,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  hocestpraeceptum vosamicimei petiteetdabitur \
 			  istesanctusdumprocolligendis dumtransiretdominus \
 			  cordeetanimo cumiucunditate nativitasesthodie nativitasgloriosae \
-			  nativitastua quandonataest regaliexprogenie quiperdideritanimam) \
+			  nativitastua quandonataest regaliexprogenie quiperdideritanimam \
+			  sicutmyrrha) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
