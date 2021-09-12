@@ -317,7 +317,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  istesanctusdumprocolligendis dumtransiretdominus \
 			  cordeetanimo cumiucunditate nativitasesthodie nativitasgloriosae \
 			  nativitastua quandonataest regaliexprogenie quiperdideritanimam \
-			  sicutmyrrha) \
+			  sicutmyrrha quidoctifuerint) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -346,7 +346,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  AuctorPerennis-kempten AuroraIamSpargit AmorisSensusErige \
 			  ArcanaSacrae BernhardusDoctor ChristePastorum-papa SplendorPaternae \
 			  OSempiternaeCuriae RelucensInter HaecFemina FulgentisAuctor-hk \
-			  AnglorumIam FulgetInCaelis BeataDeiGenetrix OSanctaMundiDomina) \
+			  AnglorumIam FulgetInCaelis BeataDeiGenetrix OSanctaMundiDomina \
+			  LaudeTeCives AEterneSol) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -513,7 +514,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   neabscondasame-CROCHU quismihitribuat-CROCHU-cumdox \
 			   quiconsolabatur-CROCHU-sinedox desideriummeum-CROCHU-cumdox \
 			   inclinansfaciem-CROCHU-cumdox gloriosaevirginis-CROCHU-sinedox \
-			   hodienataest-CROCHU nativitastua-CROCHU audituauris-CROCHU-sinedox) \
+			   hodienataest-CROCHU nativitastua-CROCHU audituauris-CROCHU-sinedox \
+			   isteestquiantedeum-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
@@ -524,7 +526,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 jeremiae2-initium-viii-G ps99-initium-e ps72iii-initium-iii-b ps102iii-initium-iii-g \
 	 ps47-initium-iv-a ps101ii_xii-initium-i-a ps86-initium-iv-c ps149-initium-ii_-f \
 	 ps103iii-initium-e ps117-initium-viii-G5 ps150-initium-viii-g4 ps149-initium-iv_-E \
-	 benedictus-initium-viisoll-a ps62-initium-iv-E ps44i-initium-iv-d
+	 benedictus-initium-viisoll-a ps62-initium-iv-E ps44i-initium-iv-d benedictus-initium-vii-a-trans
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \

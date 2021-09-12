@@ -1,41 +1,36 @@
-﻿name: hy--Æterne-sol-qui-lumine;
-user-notes: ;
-commentary: LH p. 303;
-annotation: iv;
-centering-scheme: english;
-%fontsize: 12;
-%spacing: vichi;
-%font: OFLSortsMillGoudy;
-%width: 4.5;
-%height: 11;
+name: AEterne sol qui lumine;
+book: Liber Hymnarius, 1983, p. 303;
+mode: 4;
 %%
-(c4)Æ(f)tér(ffe)ne(d) sol,(f) qui(g) lú(gh)mi(f)ne(e_) (,)
+(c4)
+Æ(f)tér(ffe)ne(d) sol,(f) qui(g) lú(gh)mi(f)ne(e_) (,)
 cre(g)á(h)ta(g) com(h!iwji)ples(g) óm(g)ni(f)a,(h.) (;)
 su(h)pré(h)ma(g) lux(h!iwji) et(gf) mén(h)ti(h)um,(d!ewfe.) (,)
 te(e) cor(c)da(e) nos(gfh)tra(gf) cón(g)ci(fe)nunt.(e.) (::)
 
-2. Tu(f)o(ffe) fo(d)vén(f)te(g) Spí(gh)ri(f)tu,(e_) (,)
+Tu(f)o(ffe) fo(d)vén(f)te(g) Spí(gh)ri(f)tu,(e_) (,)
 hic(g) vi(h)va(g) lu(h!iwji)mi(g)ná(g)ri(f)a(h.) (;)
 ful(h)sé(h)re,(g) per(h!iwji) quæ(gf) sǽ(h)cu(h)lis(d!ewfe.) (,)
 pa(e)tent(c) sa(e)lú(gfh)tis(gf) sé(g)mi(fe)tæ.(e.) (::)
 
-3. Quod(f) ver(ffe)ba(d) mis(f)sa(g) cǽ(gh)li(f)tus,(e_) (,)
+Quod(f) ver(ffe)ba(d) mis(f)sa(g) cǽ(gh)li(f)tus,(e_) (,)
 na(g)tí(h)va(g) mens(h!iwji) quod(g) éx(g)hi(f)bet,(h.) (;)
 per(h) hos(h) mi(g)nís(h!iwji)tros(gf) grá(h)ti(h)æ(d!ewfe.) (,)
 no(e)vo(c) ni(e)tó(gfh)re(gf) clá(g)ru(fe)it.(e.) (::)
 
-4. Ho(f)rum(ffe) co(d)ró(f)næ(g) pár(gh)ti(f)ceps,(e_) (,)
-doc(g)tri(h)n<i>a</i>() ho(g)nés(h!iwji)tus(g) lú(g)ci(f)da,(h.) (;)
+Ho(f)rum(ffe) co(d)ró(f)næ(g) pár(gh)ti(f)ceps,(e_) (,)
+doc(g)tri(h)n<e>a</e> h{o}(g)nés(h!iwji)tus(g) lú(g)ci(f)da,(h.) (;)
 hic(h) vir(h) be(g)á(h!iwji)tus(gf) splén(h)du(h)it(d!ewfe.) (,)
 quem(e) præ(c)di(e)cá(gfh)mus(gf) láu(g)di(fe)bus.(e.) (::)
 
-5. Ip(f)so(ffe) fa(d)vén(f)te,(g) quǽ(gh)su(f)mus,(e_) (,)
+Ip(f)so(ffe) fa(d)vén(f)te,(g) quǽ(gh)su(f)mus,(e_) (,)
 no(g)bis,(h) De(g)us,(h!iwji) per(g)cúr(g)re(f)re(h.) (;)
 da(h) ve(h)ri(g)tá(h!iwji)tis(gf) trá(h)mi(h)tem,(d!ewfe.) (,)
 pos(e)sí(c)mus(e) ut(gfh) te(gf) cón(g)se(fe)qui.(e.) (::)
 
-6. Præ(f)sta,(ffe) Pa(d)ter(f) pi(g)ís(gh)si(f)me,(e_) (,)
+Præ(f)sta,(ffe) Pa(d)ter(f) pi(g)ís(gh)si(f)me,(e_) (,)
 Pa(g)trí(h)que(g) com(h!iwji)par(g) U(g)ni(f)ce,(h.) (;)
 cum(h) Spí(h)ri(g)tu(h!iwji) Pa(gf)rá(h)cli(h)to(d!ewfe.) (,)
 re(e)gnans(c) per(e) om(gfh)ne(gf) sǽ(g)cu(fe)lum.(e.) (::)
+
 A(efe)men.(de..) (::)
