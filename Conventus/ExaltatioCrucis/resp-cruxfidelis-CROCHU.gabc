@@ -1,17 +1,19 @@
 name: Crux fidelis;
 %commentary: D. Crochu;
+book:H256;
 mode:2;
 transcriber:Isabelle Valloton;
+nabc-lines:1;
 %%
 (f3)
-CRux(f) fi(fe)dé(e!fwg/hvGFg)lis,(gf) (;)
-in(fg~)ter(f) om(fshshs>)nes(fgFEfe) (,)
-ar(h)bor(hi) u(ih)na(gf) nó(h)bi(gef)lis;(gf) (:)
-Nul(-fihi/j>)la(i) sil(-hjhi/j>)va(i) ta(hg)lem(f>) pro(f/gvFE)fert(ffo1e) (,)
-fron(h)de, (hi) flo(ih)re(gf) gér(h)mi(gef)ne;(gf) +(:)
-Dul(f)ce(hg) li(h>)gnum,(f) dul(i>)ces(hg) cla(f/gvFE)vos,(ffo1e) (,)
-dul(h)ce(-iji) pon(jvIHij>)dus(i) sús(igh)ti(fe!fwg/hvGFg)nes.(gf) <sp>V/</sp>.(::)
-O(ef!gwh/hi) crux(h) ad(ij)mi(i)rá(hi)bi(h)lis,(h) (,)
-e(h)va(h)cu(h)á(hg)ti(hi)o(gh) vúl(f)ne(f!gwhg)ris(gf) (;)
-et(f) res(ef)ti(f)tú(f)ti(f)o(f!gwhvGFE) sa(f)ni(hg/hih)tá(hvGFg)tis.(ffo1e) +(::)
-Dul(f)ce.(hg) (::)
+CRux(f|ta) fi(fe|cl)dé(e!fwg/hvGFg|qlppt1ci-hivihh)lis,(gf|cl-) (;)
+in(fg~|ta>)ter(f|ta) om(fshshs>|tsM)nes(fgFEfe|pe-1su2cl-) (,)
+ar(h|vi)bor(hi|pe) u(ih|cllsc3)na(gf|cllsc3) nó(h|vi)bi(gef|po)lis;(gf|cl-) (:)
+Nul(-fihi/j>|tr-1vi>hi)la(i|vi) sil(-hjhi/j>|tr-1vi>hi)va(i|vi) ta(hg|cl)lem(f>|vi>) pro(f/gvFE|ta-hhcihh)fert(ffo1e|pr) (,)
+fron(h|vi)de, (hi|pe) flo(ih|cl)re(gf|cl) gér(h|vi)mi(gef|po)ne;(gf|cl-) +(:)
+Dul(f|ta)ce(hg|cllsc3) li(h>|vi>)gnum,(f|ta) dul(i>|vi>)ces(hg|cl) cla(f/gvFE|ta-cihglsc3)vos,(ffo1e|pr) (,)
+dul(h|vi)ce(-iji|to) pon(jvIH|ci-|ij>|pe>1)dus(i|ta) sús(igh|po)ti(fe!fwg/hvGFg|cl-qici-hivihi)nes.(gf|cl-) <sp>V/</sp>.(::)
+O(ef!gwh/hi|qlppt2pehj) crux(h|ta) ad(ij|pe)mi(i|vi)rá(hi|pe)bi(h|ta)lis,(h|ta) (,)
+e(h|ta)va(h|ta)cu(h|ta)á(hg|cl-)ti(hi|pe)o(gh|pe) vúl(f|ta)ne(f!gwhg|qi!clppt1)ris(gf|cl-) (;)
+et(f|vi) res(ef|pe)ti(f|ta)tú(f|ta)ti(f|ta)o(f!gwhvGFE|ql-ppt1su1sut2) sa(f|vi)ni(hg/hih|cltohg)tá(hvGFg|ci-vi)tis.(ffo1e|pr) +(::)
+Dul(f|ta)ce.(hg|cllsc3) (::)

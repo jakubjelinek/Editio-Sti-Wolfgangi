@@ -1,14 +1,16 @@
 name: O crux benedicta, quæ sola;
 %commentary: R. Crochu;
 mode:2;
+book:H256;
 transcriber:Isabelle Valloton;
+nabc-lines:1;
 %%
 (f3)
-O(cfe/fg) Crux(f) be(f)ne(hvv)dí(h)cta,(f!gwhGFEfe) +(,)
-Quæ(h) so(ixh!iwjij/kv)la(j) fu(ig)í(i)sti(hg/hOi) di(f!gwhgh>)gna(gf) (,)
-por(fg~)tá(ffe/f/fef)re(fc) (,)
-Re(ef~)gem(f) cæ(hvhv)ló(h)rum(f!gwhGFEfe) (`)
-et(ef~) Dó(f)mi(fg!hvGFg)num.(gf) <sp>V/</sp>.(::)
-Mi(ef!gwh/hi)hi(h) au(ij~)tem(i>) ab(hi)sit(hg) glo(hi)ri(gh)á(f!gwhg)ri,(gf) (;)
-ni(f)si(ef) in(f) cru(fg)ce(f) Dó(f)mi(f)ni(f) nos(f)tri(f!gwhGFE) Je(f)su(hg/hih) Chri(hvGFg)sti.(ffo1e) +(::)
-Quæ.(h) (::)
+O(cfe/fg|tope) Crux(f|ta) be(f|ta)ne(hvv|bv-)dí(h|vihg)cta,(f!gwhGFEfe|ql!vsppt1su2cl-hg) +(,)
+Quæ(h|vi) so(ixh!iwjij/kv|//vi-qlhi!po-1hivihl)la(j|vi) fu(ig|cl)í(i|vi)sti(hg/hOi|clpq) di(f!gwhgh>|ql!po>ppt1)gna(gf|cl-) (,)
+por(fg~|ta>)tá(ffe/f/fef|ta-clvi-pohg)re(fc|clM-) (,)
+Re(ef~|ta>)gem(f|ta) cæ(hvhv|bv-)ló(h|vi)rum(f!gwhGFEfe|qi!vsppt1su2cl-) (`)
+et(ef~|ta>) Dó(f|ta)mi(fg!hvGFg|vi-pp2su2vihh)num.(gf|cl-) <sp>V/</sp>.(::)
+Mi(ef!gwh/hi|qlppt2pehj)hi(h|ta) au(ij~|ta>)tem(i>|vi>) ab(hi|pe)sit(hg|cllsc3) glo(hi|pe)ri(gh|pe)á(f!gwhg|qi!clppt1)ri,(gf|cl-) (;)
+ni(f|vi)si(ef|pe) in(f|vi) cru(fg|pe)ce(f|ta) Dó(f|ta)mi(f|ta)ni(f|ta) nos(f|ta)tri(f!gwhGFE|qi-ppt1su1sut2) Je(f|vi)su(hg/hih|cltohg) Chri(hvGFg|ci-vi)sti.(ffo1e|pr) +(::)
+Quæ.(h|vi) (::)
