@@ -30,7 +30,9 @@
 \usepackage{calc}
 \usepackage{longtable}
 \newif\ifparvulus
+\newif\ifsimeon
 \parvulustrue
+\simeontrue
 
 \setlength{\headheight}{12pt}
 
@@ -106,8 +108,13 @@
 \vspace{0.5cm}
 
 \ifparvulus
+\ifsimeon
+{\Large Simeon Rochus Srovnal\\
+25. Iulii MMXXI}
+\else
 {\Large Angelus Benedictus-Ioseph Srovnal\\
 19. Ianuarii MMXIX}
+\fi
 \else
 {\Large Myrrha Liesse Srovnalová\\
 18. Februarii MMXVII}
@@ -116,7 +123,11 @@
 \vspace{1cm}
 
 \ifparvulus
+\ifsimeon
+\includegraphics[width=5cm]{siena.jpg}
+\else
 \includegraphics[width=5cm]{benedictlabre.png}
+\fi
 \else
 \includegraphics[width=5cm]{ordobaptismi.jpg}
 \fi
@@ -127,6 +138,9 @@
 
 \vfill
 
+\ifsimeon
+\vfill
+\else
 \gresetnabcfont{grelaon}{8}
 
 \pars{Antiphona ad introitum} \scriptura{Cf. Is. 55, 1; Ps. 77, 1; \textbf{L75}}
@@ -139,6 +153,7 @@
 
 \vfill
 \pagebreak
+\fi
 
 \pars{\textsc{Ritus recipiendi parvulum}}
 
@@ -146,10 +161,33 @@
 
 \psalmusEtTranslatioT{temporalia/ritusrecipiendi-combfr.tex}{6cm}
 
+\ifsimeon
+\pars{\textsc{Antiphona}} \scriptura{E72}
+
+\antiphona{VI}{temporalia/ant-adornathalamum.gtex}
+
+\trAdorna
+
+\vfill
+\pagebreak
+\fi
+
 \pars{\textsc{Sacra verbi Dei celebratio}}
 
 \gresetnabcfont{gregall}{8}
 
+\ifsimeon
+\pars{Alleluia}
+
+\vspace{-0.3cm}
+
+\antiphona{I}{temporalia/alleluia-SenexPuerum.gtex}
+
+\trSenex
+
+\vspace{-0.3cm}
+
+\else
 \pars{Alleluia} \scriptura{Ps. 67, 18.19; \textbf{C116}}
 
 \vspace{-0.6cm}
@@ -159,6 +197,7 @@
 \vspace{-0.3cm}
 
 \trAlleluia
+\fi
 
 \gresetnabcfont{grelaon}{8}
 
@@ -169,11 +208,22 @@
 \vspace{-0.2cm}
 
 \ifparvulus
+\ifsimeon
+\pars{Léctio sancti Evángelii secúndum Lucam.} \scriptura{Lc. 2, 22-40}
+
+%\vspace{-0.2cm}
+
+%\psalmusEtTranslatioT{temporalia/evangelium3-combfr.tex}{6cm}
+\input{evangelium3-fra.tex}
+
+\vspace{0.2cm}
+\else
 \pars{Léctio sancti Evángelii secúndum Marcum.} \scriptura{Mc. 10, 13-16}
 
 \vspace{-0.2cm}
 
 \psalmusEtTranslatioT{temporalia/evangelium2-combfr.tex}{6cm}
+\fi
 \else
 \pars{Léctio sancti Evángelii secúndum Ioánnem.} \scriptura{Io. 19, 38-42}
 
@@ -183,6 +233,14 @@
 \fi
 
 \vspace{-0.2cm}
+
+\ifsimeon
+\pars{Hymnus}
+
+\antiphona{VIII}{temporalia/hym-VeniCreator.gtex}
+
+\vspace{0.3cm}
+\fi
 
 \noindent\pars{Oratio fidelium}
 
@@ -228,19 +286,35 @@
 
 \vspace{-0.5cm}
 
+\ifsimeon
+\scriptura{Lc. 2, 32; \textbf{H120}}
+
+\vspace{-4mm}
+
+\antiphona{VIII a}{temporalia/ant-lumenadrevelationem.gtex}
+
+\trLumen
+\else
 \scriptura{Gal. 3, 27; \textbf{L112}}
 
 \vspace{-0.6cm}
 
 \antiphona{II}{temporalia/communio-OmnesQui.gtex}
+\fi
 
 \ifparvulus
+\ifsimeon
+\else
 \scriptura{Ps. 28, 3}
 
 \initiumpsalmi{temporalia/communio-versus-Vox-initium.gtex}
 \fi
+\fi
 
+\ifsimeon
+\else
 \trCommunio
+\fi
 
 \vspace{-0.3cm}
 
@@ -251,8 +325,22 @@
 \vspace{-0.3cm}
 
 \ifparvulus
+\ifsimeon
+\antiphona{V}{temporalia/ant-salveregina-simplex.gtex}
+
+\antiphona{VI}{temporalia/alleluia.gtex}
+
+\scriptura{Ps. 117, 1-6}
+
+\initiumpsalmi{temporalia/communio-versus-Confitemini-initium.gtex}
+
+\vspace{-1cm}
+
+\psalmusEtTranslatioTS{temporalia/communio-versus-Confitemini-combfr.tex}{6cm}
+\else
 \vspace{-0.3cm}
 \antiphona{}{temporalia/svatyvaclave.gtex}
+\fi
 \else
 \antiphona{VI}{temporalia/alleluia.gtex}
 

@@ -127,6 +127,26 @@
 
 \noindent \Rbardot{} Amen.}
 \fi
+\ifx\laudc\undefined
+\else
+\newcommand{\oratio}{\pars{Oratio.}
+
+\noindent Deus omnípotens, cuius est bona rerum et speciósa creátio, da nobis hunc diem in nómine tuo lætánter incípere et in operósa tui fratrúmque dilectióne complére.
+
+\noindent Per Dóminum nostrum Iesum Christum, Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.
+
+\noindent \Rbardot{} Amen.}
+\fi
+\ifx\laudd\undefined
+\else
+\newcommand{\oratio}{\pars{Oratio.}
+
+\noindent Auge in nobis, quǽsumus, Dómine, fidem tuam, ut in ore nostro perfécta laus tua cæléstes iúgiter áfferat fructus.
+
+\noindent Per Dóminum nostrum Iesum Christum, Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.
+
+\noindent \Rbardot{} Amen.}
+\fi
 \fi
 
 \hora{Ad Matutinum.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -165,6 +185,26 @@
 \pagebreak
 
 \ifx\hymnusmatutinum\undefined
+\ifx\hiemalis\undefined
+\ifx\matuac\undefined
+\else
+\pars{Hymnus.}
+
+\antiphona{IV}{temporalia/hym-OSacrosanctaTrinitas-kempten.gtex}
+\fi
+\ifx\matub\undefined
+\else
+\pars{Hymnus.}
+
+\antiphona{VIII}{temporalia/hym-AdPrecesNostras-kempten.gtex}
+\fi
+\ifx\matud\undefined
+\else
+\pars{Hymnus.}
+
+\antiphona{I}{temporalia/hym-AdPrecesNostras.gtex}
+\fi
+\else
 \ifx\matuac\undefined
 \else
 \pars{Hymnus}
@@ -181,6 +221,7 @@
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 }
 \fi
+\fi
 \else
 \hymnusmatutinum
 \fi
@@ -190,6 +231,7 @@
 \vfill
 \pagebreak
 
+\ifx\matutinum\undefined
 \ifx\matua\undefined
 \else
 % MAT A
@@ -429,6 +471,9 @@
 \vfill
 \pagebreak
 \fi
+\else
+\matutinum
+\fi
 
 \pars{Versus.}
 
@@ -450,6 +495,12 @@
 \noindent \Vbardot{} Audiam quid loquátur Dóminus Deus.
 
 \noindent \Rbardot{} Loquétur pacem ad plebem suam.
+\fi
+\ifx\matud\undefined
+\else
+\noindent \Vbardot{} Atténdite, pópule meus, doctrínam meam.
+
+\noindent \Rbardot{} Inclináte aurem vestram in verba oris mei.
 \fi
 \else
 \matversus
@@ -550,14 +601,38 @@
 \cantusSineNeumas
 
 \vspace{0.5cm}
+\ifx\deusinadiutorium\undefined
 \grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \cuminitiali{}{temporalia/deusinadiutorium-communis.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\else
+\deusinadiutorium
+\fi
 
 \vfill
 \pagebreak
 
 \ifx\hymnuslaudes\undefined
+\ifx\hiemalis\undefined
+\ifx\laudac\undefined
+\else
+\pars{Hymnus}
+
+\cuminitiali{VIII}{temporalia/hym-PergrataMundo-einsiedeln.gtex}
+\fi
+\ifx\laudb\undefined
+\else
+\pars{Hymnus}
+
+\cuminitiali{I}{temporalia/hym-AEterneLucis-hk.gtex}
+\fi
+\ifx\laudd\undefined
+\else
+\pars{Hymnus}
+
+\cuminitiali{IV}{temporalia/hym-AEterneLucis.gtex}
+\fi
+\else
 \ifx\laudac\undefined
 \else
 \pars{Hymnus}
@@ -573,6 +648,7 @@
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \vspace{-3mm}
 \fi
+\fi
 \else
 \hymnuslaudes
 \fi
@@ -580,6 +656,7 @@
 \vfill
 \pagebreak
 
+\ifx\laudes\undefined
 \ifx\lauda\undefined
 \else
 \pars{Psalmus 1.} \scriptura{Ps. 23, 4.3}
@@ -826,6 +903,9 @@
 \vfill
 \pagebreak
 \fi
+\else
+\laudes
+\fi
 
 \ifx\lectiobrevis\undefined
 \ifx\lauda\undefined
@@ -845,6 +925,12 @@
 \pars{Lectio Brevis.} \scriptura{1 Io. 4, 14-15}
 
 \noindent Nos vídimus et testificámur quóniam Pater misit Fílium salvatórem mundi. Quisque conféssus fúerit: Iesus est Fílius Dei, Deus in ipso manet, et ipse in Deo.
+\fi
+\ifx\laudd\undefined
+\else
+\pars{Lectio Brevis.} \scriptura{Is. 55, 1}
+
+\noindent Omnes sitiéntes, veníte ad aquas; et, qui non habétis argéntum, properáte, émite et comédite, veníte, émite absque argénto et absque ulla commutatióne vinum et lac.
 \fi
 \else
 \lectiobrevis
@@ -976,6 +1062,50 @@
 
 \Rbardot{} Salva nos, Dómine, in sémita tua.
 \fi
+\ifx\laudc\undefined
+\else
+\noindent Christum, qui sibi pópulum novum acquisívit in sánguine suo, \gredagger{} adorémus et rogémus supplíciter:
+
+\Rbardot{} Meménto pópuli tui, Dómine.
+
+\noindent Rex et Redémptor noster, audi Ecclésiam tuam, huius diéi inítio te laudántem, \gredagger{} doce eam sine intermissióne glorificáre maiestátem tuam.
+
+\Rbardot{} Meménto pópuli tui, Dómine.
+
+\noindent Spes et fírmitas nostra, in te confídimus, \gredagger{} neque umquam confundémur.
+
+\Rbardot{} Meménto pópuli tui, Dómine.
+
+\noindent Infirmitátem nostram réspice et in adiutórium nostrum festína, \gredagger{} quia sine te nihil póssumus fácere.
+
+\Rbardot{} Meménto pópuli tui, Dómine.
+
+\noindent Páuperum et derelictórum meménto, ne dies novus sit eis pondus, \gredagger{} sed solámen et gáudium.
+
+\Rbardot{} Meménto pópuli tui, Dómine.
+\fi
+\ifx\laudd\undefined
+\else
+\noindent Deus, lætítiam nobis concédens hoc matutíno témpore eum laudándi, spem róborat nostram. \gredagger{} Ideo fidénter ipsi supplicémus:
+
+\Rbardot{} Ad glóriam nóminis tui, audi nos, Dómine.
+
+\noindent Grátias ágimus tibi, Deus et Pater Salvatóris nostri Iesu, \gredagger{} pro cognitióne et immortalitáte, quas dedísti nobis per ipsum.
+
+\Rbardot{} Ad glóriam nóminis tui, audi nos, Dómine.
+
+\noindent Concéde humilitátem córdibus nostris, \gredagger{} ut subiécti simus ínvicem in timóre Christi.
+
+\Rbardot{} Ad glóriam nóminis tui, audi nos, Dómine.
+
+\noindent Spíritum tuum nobis fámulis tuis infúnde, \gredagger{} ut diléctio nostra fratérna sine simulatióne fiat.
+
+\Rbardot{} Ad glóriam nóminis tui, audi nos, Dómine.
+
+\noindent Qui hómini labórem præcepísti in mundi dominatiónem, \gredagger{} concéde, ut labor noster te célebret fratrésque nostros sanctíficet.
+
+\Rbardot{} Ad glóriam nóminis tui, audi nos, Dómine.
+\fi
 \else
 \preces
 \fi
@@ -1021,7 +1151,11 @@
 
 \vspace{2mm}
 
+\ifx\benedicamuslaudes\undefined
 \cuminitiali{IV}{temporalia/benedicamus-feria-laudes.gtex}
+\else
+\benedicamuslaudes
+\fi
 
 \vspace{1mm}
 

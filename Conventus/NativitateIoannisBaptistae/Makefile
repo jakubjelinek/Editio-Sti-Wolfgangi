@@ -48,7 +48,7 @@ MODUS-148 = iii-b
 MODUS-149 = iii-b
 MODUS-150 = iii-b
 MODUS-dan3 = iii-b
-MODUS-magnificat-I = viiisoll-G
+MODUS-magnificat-I = viiisoll-g
 MODUS-magnificat-II = viisoll-a
 MODUS-magnificat-III = vii-a
 MODUS-benedictus-I = viiisoll-g2
@@ -83,7 +83,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo miserere salveregina-simplex subtuum 
 	 $(addprefix hym-,UtQueant ONimis) \
 	 $(addprefix resp-,internatos internatos-communis) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
-	 $(foreach M,viiisoll-G viisoll-a vii-a,magnificat-initium-$(M)) \
+	 $(foreach M,viiisoll-g viisoll-a vii-a,magnificat-initium-$(M)) \
 	 $(addprefix capitulum-,HaecDicit PriusquamTe RegesVidebunt) \
 	 $(addprefix versus-,gloria iustus posuisti elisabeth) \
 	 oratio oratio2 supplicatiolitaniae oratiodominica oratiodominica-mat \

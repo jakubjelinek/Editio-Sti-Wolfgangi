@@ -21,11 +21,12 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 4 47 62 67 90 92 99 103 109 110 111 112 133 148 149 150
+PSALMS = 4 47 62 66 67 90 92 99 103 109 110 111 112 133 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-4 = viii-G
 MODUS-47 = viii-C
 MODUS-62 = viii-G
+MODUS-66 = viii-G
 MODUS-67 = viii-C
 MODUS-90 = viii-G
 MODUS-92 = iii-a2
@@ -42,7 +43,7 @@ MODUS-150 = vii-c2
 MODUS-nuncdimittis = iii-a
 MODUS-dan3 = i-a2
 MODUS-benedictus-I = viisoll-a
-MODUS-magnificat-I = isoll-D_
+MODUS-magnificat-I = isoll-d3
 MODUS-benedictus-II = viiisoll-G
 MODUS-magnificat-II = iiisoll-a
 MODUS-benedictus-III = viiisoll-g
@@ -75,12 +76,13 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 	 $(addprefix ant-,caritasdei convocatisjesusduodecimapostolis dixitjesusutsciatis \
 			  egosumostium egosumpanisetpanis egosumpanis magn-vesp1 \
 			  pacemrelinquovobis paraclitusautem sicdeusdilexitmundum \
-			  siquisdiligitme spiritusquiapatreprocedit) \
+			  siquisdiligitme spiritusquiapatreprocedit accipitespiritum) \
 	 $(addprefix matant,1 2 3) $(addprefix matresp,1 2) \
 	 $(addprefix versus-,spiritus repleti loquebantur custodi gaude \
 			     spiritus-simplex repleti-simplex spiritusparaclitus-communis \
 			     repleti-communis loquebantur-communis) \
-	 $(addprefix hym-,VeniCreator BeataNobis TeLucis JamChristus RectorPotens RerumDeus) \
+	 $(addprefix hym-,VeniCreator BeataNobis TeLucis JamChristus RectorPotens RerumDeus \
+			  BeataNobis-LH LuxIucunda) \
 	 deusinadiutorium-solemnis deusinadiutorium-communis \
 	 supplicatiolitaniae oratiodominica resp1v resp2v respl \
 	 $(addprefix resp-,spiritus-simplex apparueruntapostolis-sinedox \
@@ -88,20 +90,21 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 			   iteinorbemuniversum-cumdox repletisuntomnes-cumdox \
 			   repletisuntomnes-sinedox spiritussanctusprocedens-cumdox \
 			   inprincipiodeuscreavit-sinedox spiritusdominireplevit-cumdox \
-			   dumcomplerentur-joppich-sinedox iamnondicam-cumdox) \
+			   dumcomplerentur-joppich-sinedox iamnondicam-cumdox \
+			   apparueruntapostolis-cumdox) \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
-	 $(addprefix capitulum-,CumComplerentur tuautem Facta Judaei) oratio $(addprefix oratio,2 3 4 5 6) \
+	 $(addprefix capitulum-,CumComplerentur tuautem Facta Judaei GratiaVobis) oratio $(addprefix oratio,2 3 4 5 6) \
 	 benedictio-noctemquietam jubedomnebenedicere lectiobrevis-fratressobrii \
 	 convertenosdeus ant-alleluia-compl deusinadiutorium-solemnis \
 	 resp-inmanus-tp ant-salvanos-antiquo-tp \
-	 oratio-visita $(addprefix benedicamus-,minor tempore-paschali) an_regina_caeli_simplex \
-	 oratiodominica-mat $(addprefix absolutio-,exaudi ipsius avinculis) tedeum-solemnis \
+	 oratio-visita $(addprefix benedicamus-,minor tempore-paschali octava-paschae) an_regina_caeli_simplex \
+	 oratiodominica-mat $(addprefix absolutio-,exaudi ipsius avinculis) tedeum-solemnis tedeum-solemnis-gn \
 	 $(addprefix benedictio-solemn-,evangelica divinum adsocietatem) \
 	 $(addprefix benedicamus-solemnism-,laud 1vesp 2vesp) tonus-lectionis-solemnis tuautem \
 	 benedicamus-solemnis-laud dominelabiamea inv-alleluiaspiritus \
 	 tedecetlaus
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = 
+OTHERDEPS = $(TMP_DIR)/ps62-sinedox.tex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3 nuncdimittis,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach B,$(sort $(foreach P,$(BENEDICTUS),$(MODUS-$(P)))),$(TMP_DIR)/benedictus-initium-$(B)-auto.gabc) \
@@ -120,7 +123,7 @@ define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
 iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) \
-	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 triplex76) ../Pentecostes ../AscensioneDomini
+	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 triplex76) ../Pentecostes ../AscensioneDomini ../CorpusChristi
 include $(iter)
 
 PDF = pentecostes.pdf $(patsubst %,feria%-ope.pdf,ii iii iv v vi) sabbato-ope.pdf
@@ -157,6 +160,8 @@ $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
 $(patsubst %,$(TMP_DIR)/%-boh.tex,$(MAGNIFICAT)): $(TMP_DIR)/%-boh.tex: $(TMP_DIR)/magnificat-boh.tex
 	$(CP) -a $< $@
 $(TMP_DIR)/magnificat-comb.tex: PSSKIP = 2
+$(TMP_DIR)/ps62-sinedox.tex: $(TMP_DIR)/ps62.tex
+	sed -e '/^Gló.*ri.*a.*Pa.*tri.*et.*Fí.*li.*o/d;/^et.*Spi.*rí.*tu.*i.*Sanc.*to/d;/^Sicut.*erat.*in.*princí.*pi.*o,.*et.*nunc.*et.*sem.*per,/d;/^et.*in.*sǽcu.*la.*sæ.*cu.*ló.*rum.*A.*men/d' < $^ > $@
 $(patsubst %,$(TMP_DIR)/ps%-comb.tex,90 118vii_viii 118ix_x 118xiii_xiv 118xv_xvi 118xix_xx 118xxi_xxii 133): PSSKIP = 0
 $(TMP_DIR)/communio-versus-Exsurgat-comb.tex: $(patsubst %,communio-versus-Exsurgat%tex,. -boh.)
 	$(GENPSCOMB)

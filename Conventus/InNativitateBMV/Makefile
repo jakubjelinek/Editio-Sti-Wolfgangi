@@ -111,7 +111,8 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 			   beatammedicent-CROCHU felixnamquees-CROCHU) \
 	 $(patsubst %,ps%-initium-viii-G3,112 116) magnificat-initium-ivsoll-E3 \
 	 $(patsubst %,ps%-initium-vii-a,145 146) ps147-initium-iv-E ps23-initium-iv-c \
-	 $(patsubst %,ps%-initium-ii_-a,8 95 96 97) $(patsubst %,ps%-initium-vi-C,62 121)
+	 $(patsubst %,ps%-initium-ii_-a,8 95 96 97) $(patsubst %,ps%-initium-vi-C,62 121) \
+	 magnificat-initium-viiisoll-G-v1 magnificat-initium-viiisoll-G-v3
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(addprefix cantus/amon33/hym-,$(addsuffix -bohtext.tex,AveMarisStella OGloriosaDomina TeLucis NuncSancte RectorPotens RerumDeus)) \
 	    cantus/nrom02/hym-QuemTerra-bohtext.tex \
@@ -185,7 +186,7 @@ $(TMP_DIR)/magnificat-comb.tex: PSSKIP = 2
 $(patsubst %,$(TMP_DIR)/ps%-comb.tex,90 118vii_viii 118ix_x 118xiii_xiv 118xv_xvi 118xix_xx 118xxi_xxii 133): PSSKIP = 0
 #$(TMP_DIR)/communio-versus-Exsurgat-comb.tex: $(patsubst %,communio-versus-Exsurgat%tex,. -boh.)
 #	$(GENPSCOMB)
-innativitatebmv.pdf nativitatebmv.pdf: %.pdf: %.tex conventuscommune.tex translationes_cs.tex \
+innativitatebmv.pdf nativitatebmv.pdf innativitatebmvivesp.pdf: %.pdf: %.tex conventuscommune.tex translationes_cs.tex \
 	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS) \
 	       imagines/imago_nativitas.jpg imagines/giotto.jpg
 	$(LUALATEX) -interaction=nonstopmode $<

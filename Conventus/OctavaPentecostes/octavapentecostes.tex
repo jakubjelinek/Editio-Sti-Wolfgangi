@@ -250,13 +250,13 @@ per infiníta sǽcula sæculórum.
 
 \vspace{-4mm}
 
-\antiphona{I D\textsuperscript{*}}{temporalia/ant-magn-vesp1.gtex}
+\antiphona{I d}{temporalia/ant-magn-vesp1.gtex}
 
 \vfill
 
 \scriptura{Lc. 1, 46-55}
 
-\initiumpsalmi{temporalia/magnificat-initium-isoll-D_.gtex}
+\initiumpsalmi{temporalia/magnificat-initium-isoll-d3.gtex}
 
 %\psalmusEtTranslatioT{temporalia/magnificat-I-comb.tex}{10.3cm}
 \input{temporalia/magnificat-I.tex} \Abardot{}
@@ -514,7 +514,11 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 
 \vspace{-5mm}
 
+\ifx\festum\undefined
 \antiphona{VIII}{temporalia/hym-JamChristus.gtex}
+\else
+\antiphona{VII}{temporalia/hym-LuxIucunda.gtex}
+\fi
 
 \vfill
 \pagebreak
@@ -636,13 +640,23 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \vfill
 \pagebreak
 
+\ifx\responsoriumiii\undefined
+\else
+\responsoriumiii
+
+\vfill
+\pagebreak
+\fi
+
 % Te Deum
 
-\pars{Hymnus Ambrosianus}
+\pars{Hymnus Ambrosianus} \scriptura{Tonus Solemnis}
 
-\vspace{-5mm}
+\vspace{-2mm}
 
-\cuminitiali{III}{temporalia/tedeum-solemnis.gtex}
+\grechangedim{interwordspacetext}{0.26 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{III}{temporalia/tedeum-solemnis-gn.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 
 \vfill
 \pagebreak
@@ -731,7 +745,26 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \initiumpsalmi{temporalia/ps62-initium-viii-G-auto.gtex}
 
 %\psalmusEtTranslatioT{temporalia/ps62-comb.tex}{10cm}
+\ifx\festum\undefined
 \input{temporalia/ps62.tex} \Abardot{}
+\else
+\input{temporalia/ps62-sinedox.tex}
+
+\rubrica{Hic non dicitur Gloria Patri.}
+
+\vfill
+\pagebreak
+
+\scriptura{Psalmus 66.}
+
+\initiumpsalmi{temporalia/ps66-initium-viii-G-auto.gtex}
+
+\input{temporalia/ps66.tex}
+
+\vfill
+
+\antiphona{}{temporalia/ant3.gtex}
+\fi
 
 \vfill
 \pagebreak
@@ -805,9 +838,15 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \vfill
 \pagebreak
 
+\ifx\festum\undefined
 \pars{Capitulum.} \scriptura{Ac. 2, 1-2}
 
 \cuminitiali{}{temporalia/capitulum-CumComplerentur.gtex}
+\else
+\pars{Capitulum.} \scriptura{Ap. 1, 4}
+
+\cuminitiali{}{temporalia/capitulum-GratiaVobis.gtex}
+\fi
 
 \vspace{1cm}
 \pars{Responsorium breve.} \scriptura{Sap. 1, 7}
@@ -819,7 +858,11 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 
 \pars{Hymnus.}
 
+\ifx\festum\undefined
 \cuminitiali{I}{temporalia/hym-BeataNobis.gtex}
+\else
+\cuminitiali{I}{temporalia/hym-BeataNobis-LH.gtex}
+\fi
 
 \vfill
 
@@ -861,10 +904,14 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 
 \vspace{2mm}
 
+\ifx\festum\undefined
 \ifx\duplexiclassis\undefined
 \cuminitiali{VII}{temporalia/benedicamus-tempore-paschali.gtex}
 \else
 \cuminitiali{II}{temporalia/benedicamus-solemnism-laud.gtex}
+\fi
+\else
+\cuminitiali{VIII}{temporalia/benedicamus-octava-paschae.gtex}
 \fi
 
 \ifx\sabbato\undefined

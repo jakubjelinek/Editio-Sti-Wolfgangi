@@ -651,23 +651,24 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \vfill
 \pagebreak
 
+\ifx\breviori\undefined
 \pars{Hymnus.} \scriptura{\textbf{LH120}}
 
 \vspace{-5mm}
 
 \antiphona{III}{temporalia/hym-JesuAuctor.gtex}
-%{
-%\vspace{-5mm}
-%\setlength{\columnsep}{0pt} % prostor mezi sloupci
-%\input{hym-JesuAuctor-bohtext.tex}
-%\setlength{\columnsep}{30pt} % prostor mezi sloupci
-%}
+\else
+\pars{Hymnus}
+
+\cuminitiali{I}{temporalia/hym-CorArca.gtex}
+\fi
 
 \vfill
 \pagebreak
 
 \subhora{In I. Nocturno}
 
+\ifx\breviori\undefined
 \pars{Psalmus 1.} \scriptura{Ps. 8, 6-7}
 
 \vspace{-2mm}
@@ -733,6 +734,76 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 
 \vfill
 \pagebreak
+\else
+\pars{Psalmus 1.} \scriptura{Ps. 18, 15}
+
+\vspace{-4mm}
+
+\antiphona{I g\textsuperscript{3}}{temporalia/ant-meditatiocordismei.gtex}
+
+\vspace{-2mm}
+
+\scriptura{Ps. 18}
+
+\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps18-initium-i-g3-auto.gtex}
+
+%\vspace{-1.5mm}
+
+\input{temporalia/ps18.tex}
+
+\vfill
+
+\antiphona{}{temporalia/ant-meditatiocordismei.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 2.} \scriptura{Ps. 35, 9-10}
+
+\vspace{-4mm}
+
+\antiphona{III a}{temporalia/ant-apudteestfonsvitae.gtex}
+
+\vspace{-2mm}
+
+\scriptura{Ps. 35}
+
+\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps35-initium-iii-a-auto.gtex}
+
+%\vspace{-1.5mm}
+
+\input{temporalia/ps35.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 3.} \scriptura{Ps. 45, 5}
+
+\vspace{-2mm}
+
+\antiphona{V a}{temporalia/ant-sanctificavittabernaculum.gtex}
+
+%\vspace{-3mm}
+
+\scriptura{Ps. 45}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps45-initium-v-a_.gtex}
+
+%\vspace{-1.5mm}
+
+\input{temporalia/ps45.tex} \Abardot{}
+
+\vspace{-1cm}
+
+\vfill
+\pagebreak
+\fi
 
 \pars{Versus.} \scriptura{Is. 26, 12}
 
@@ -764,11 +835,19 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \vfill
 \pagebreak
 
+\ifx\breviori\undefined
 \pars{Responsorium 1.} \scriptura{\Rbardot{} Io. 6, 48 \Vbardot{} ibid. 6, 51.52}
 
 \vspace{-2mm}
 
 \responsorium{VII}{temporalia/resp-egosumpanisvitae-E611.gtex}{}
+\else
+\pars{Responsorium 1.} \scriptura{\Rbardot{} Io. 6, 58 \Vbardot{} Eccli. 15, 3}
+
+\vspace{-2mm}
+
+\responsorium{VIII}{temporalia/resp-misitmevivenspater2.gtex}{}
+\fi
 
 \vfill
 \pagebreak
@@ -785,11 +864,19 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \vfill
 \pagebreak
 
+\ifx\breviori\undefined
 \pars{Responsorium 2.} \scriptura{\Rbardot{} Is. 53, 2.5 \Vbardot{} ibid., 4; \textbf{H178}}
 
 \vspace{-2mm}
 
 \responsorium{V}{temporalia/resp-eccevidimus-CROCHU.gtex}{}
+\else
+\pars{Responsorium 2.} \scriptura{\Rbardot{} Is. 53, 7 \Vbardot{} ibid. 53, 12; \textbf{H224}}
+
+\vspace{-2mm}
+
+\responsorium{IV}{temporalia/resp-sicutovis-CROCHU.gtex}{}
+\fi
 
 \vfill
 \pagebreak
@@ -806,17 +893,26 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \vfill
 \pagebreak
 
+\ifx\breviori\undefined
 \pars{Responsorium 3.} \scriptura{\Rbardot{} Ps. 71, 18 \Vbardot{} ibid., 19; \textbf{H102}}
 
 \vspace{-2mm}
 
 \responsorium{II}{temporalia/resp-benedictus-dominus-deus2-cumdox.gtex}{}
+\else
+\pars{Responsorium 3.} \scriptura{\Rbardot{} Ps. 146, 5 \Vbardot{} ibid., 6; \textbf{H101}}
+
+\vspace{-2mm}
+
+\responsorium{II}{temporalia/resp-magnusdominusnoster-CROCHU-cumdox.gtex}{}
+\fi
 
 \vfill
 \pagebreak
 
 \subhora{In II. Nocturno}
 
+\ifx\breviori\undefined
 \pars{Psalmus 4.} \scriptura{Ps. 44, 18}
 
 \vspace{-2mm}
@@ -880,6 +976,59 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 
 \vfill
 \pagebreak
+\else
+\pars{Psalmus 4.} \scriptura{Ps. 60, 3}
+
+\vspace{-2mm}
+
+\antiphona{IV* e}{temporalia/ant-dumanxiareturcorinpetra.gtex}
+
+%\vspace{-5mm}
+
+\scriptura{Ps. 60}
+
+\initiumpsalmi{temporalia/ps60-initium-iv_-e-auto.gtex}
+
+\input{temporalia/ps60.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 5.} \scriptura{Ps. 86, 7}
+
+\vspace{-2mm}
+
+\antiphona{VII c}{temporalia/ant-sicutlaetantium.gtex}
+
+%\vspace{-5mm}
+
+\scriptura{Ps. 86}
+
+\initiumpsalmi{temporalia/ps86-initium-vii-c-auto.gtex}
+
+\input{temporalia/ps86.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 6.} \scriptura{Ps. 97, 3}
+
+\vspace{-2mm}
+
+\antiphona{I a\textsuperscript{2}}{temporalia/ant-videruntomnes.gtex}
+
+\vspace{-2mm}
+
+\scriptura{Ps. 97}
+
+\initiumpsalmi{temporalia/ps97-initium-i-a2-auto.gtex}
+
+%\psalmusEtTranslatioT{temporalia/ps97-comb.tex}{10cm}
+\input{temporalia/ps97.tex} \Abardot{}
+
+\vfill
+\pagebreak
+\fi
 
 \pars{Versus.} \scriptura{Is. 12, 1}
 
@@ -932,11 +1081,19 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \vfill
 \pagebreak
 
+\ifx\breviori\undefined
 \pars{Responsorium 5.} \scriptura{\Rbardot{} Is. 53, 7 \Vbardot{} ibid. 53, 12; \textbf{H224}}
 
 \vspace{-2mm}
 
 \responsorium{IV}{temporalia/resp-sicutovis-CROCHU.gtex}{}
+\else
+\pars{Responsorium 5.} \scriptura{\Rbardot{} Io. 6, 48 \Vbardot{} ibid. 6, 51.52}
+
+\vspace{-2mm}
+
+\responsorium{VII}{temporalia/resp-egosumpanisvitae-E611.gtex}{}
+\fi
 
 \vfill
 \pagebreak
@@ -953,17 +1110,26 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \vfill
 \pagebreak
 
+\ifx\breviori\undefined
 \pars{Responsorium 6.} \scriptura{\Rbardot{} Ps. 146, 5 \Vbardot{} ibid., 6; \textbf{H101}}
 
 \vspace{-2mm}
 
 \responsorium{II}{temporalia/resp-magnusdominusnoster-CROCHU-cumdox.gtex}{}
+\else
+\pars{Responsorium 6.} \scriptura{\Rbardot{} Ap. 22, 1; \Vbardot{} ibid. 14, 6; \textbf{H248}}
+
+\vspace{-5mm}
+
+\responsorium{VII}{temporalia/resp-ostenditmihiangelus-CROCHU-cumdox.gtex}{}
+\fi
 
 \vfill
 \pagebreak
 
 \subhora{In III. Nocturno}
 
+\ifx\breviori\undefined
 \pars{Psalmus 7.} \scriptura{Ps. 95, 2}
 
 \vspace{-2mm}
@@ -1023,6 +1189,56 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 
 \vfill
 \pagebreak
+\else
+\pars{Psalmus 7.} \scriptura{Mt. 11, 29; \textbf{H364}}
+
+\vspace{-2mm}
+
+\antiphona{III a}{temporalia/ant-tolliteiugum.gtex}
+
+\vspace{-2mm}
+
+\scriptura{Canticum Isaiæ Prophetæ, Is. 12, 1-7}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/isaiae-initium-iii-a-auto.gtex}
+
+\input{temporalia/isaiae.tex}
+
+\vfill
+\pagebreak
+
+\scriptura{Canticum Annæ, 1 Reg. 2, 1-5}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/annai-initium-iii-a-auto.gtex}
+
+%\vspace{-1mm}
+
+\input{temporalia/annai.tex}
+
+\vfill
+\pagebreak
+
+\scriptura{Canticum Annæ, 1 Reg. 2, 6-10}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/annaii-initium-iii-a-auto.gtex}
+
+%\vspace{-1mm}
+
+\input{temporalia/annaii.tex}
+
+\vfill
+
+\antiphona{}{temporalia/ant-tolliteiugum.gtex}
+
+\vfill
+\pagebreak
+\fi
 
 \pars{Versus.} \scriptura{Ps. 49, 2-3}
 
@@ -1054,15 +1270,24 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \vfill
 \pagebreak
 
+\ifx\breviori\undefined
 \pars{Responsorium 7.} \scriptura{\Rbardot{} Io. 6, 58 \Vbardot{} Eccli. 15, 3}
 
 \vspace{-2mm}
 
 \responsorium{VIII}{temporalia/resp-misitmevivenspater2.gtex}{}
+\else
+\pars{Responsorium 7.} \scriptura{\Rbardot{} Cantor \Vbardot{} ibidem; \textbf{H223}}
+
+\vspace{-2mm}
+
+\responsorium{VII}{temporalia/resp-recesitpastornoster-CROCHU-cumdox.gtex}{}
+\fi
 
 \vfill
 \pagebreak
 
+\ifx\breviori\undefined
 \cuminitiali{}{temporalia/benedictio-solemn-divinum.gtex}
 
 \vspace{7mm}
@@ -1092,6 +1317,7 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 
 \noindent \Vbardot{} Tu autem, Dómine, miserére nobis.
 \noindent \Rbardot{} Deo grátias.
+\fi
 
 \vfill
 \pagebreak
@@ -1188,6 +1414,7 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 
 \vfill
 %\pagebreak
+\ifx\breviori\undefined
 
 \pars{Psalmus 1.} \scriptura{Io. 19, 34}
 
@@ -1310,6 +1537,83 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \pagebreak
 
 \capitulumLaudes
+\else
+\pagebreak
+
+\pars{Hymnus.} \scriptura{\textbf{LH120}}
+
+\vspace{-5mm}
+
+\antiphona{III}{temporalia/hym-JesuAuctor.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 1.} \scriptura{Io. 7, 37}
+
+\vspace{-0.4cm}
+
+\antiphona{VIII G\textsuperscript{5}}{temporalia/ant-indiemagno.gtex}
+
+\scriptura{Psalmus 62.}
+
+\initiumpsalmi{temporalia/ps62-initium-viii-g5.gtex}
+
+\input{temporalia/ps62.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 2.} \scriptura{Mt. 11, 28}
+
+\vspace{-0.4cm}
+
+\antiphona{IV E}{temporalia/ant-veniteadmeomnesqui.gtex}
+
+\scriptura{Canticum trium puerorum, Dan. 3, 57-88 et 56}
+
+\initiumpsalmi{temporalia/dan3-initium-iv-E-auto.gtex}
+
+\input{temporalia/dan3.tex}
+
+\rubrica{Hic non dicitur Gloria Patri, neque Amen.}
+
+\vfill
+
+\vspace{-6mm}
+
+\antiphona{}{temporalia/ant-veniteadmeomnesqui.gtex} % repeat the antiphon - new page
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 3.} \scriptura{Prv. 23, 26}
+
+\vspace{-0.4cm}
+
+\antiphona{I g}{temporalia/ant-filipraebe.gtex}
+
+\scriptura{Psalmus 149.}
+
+\initiumpsalmi{temporalia/ps149-initium-i-g-auto.gtex}
+
+\input{temporalia/ps149.tex}
+
+\begin{psalmus}
+Glória \textbf{Pa}\-tri et \textbf{Fí}\-lio,~\grestar{}
+et Spirí\emph{\-tui }\textbf{Sanc}\-to.
+
+Sicut erat in princípio, et \textbf{nunc} et \textbf{sem}\-per,~\grestar{}
+et in sǽcula sæcu\emph{ló\-rum. }\textbf{A}\-men.
+\end{psalmus} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Lectio brevis.} \scriptura{Ier. 31, 33}
+
+\noindent Hoc erit pactum, quod fériam cum domo Israel post dies illos, dicit Dóminus: Dabo legem meam in viscéribus eórum et in corde eórum scribam eam; et ero eis in Deum, et ipsi erunt mihi in pópulum.
+\fi
 
 % preklad Jeruz. bible
 %\trCapituliI
@@ -1325,6 +1629,7 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \vfill
 \pagebreak
 
+\ifx\breviori\undefined
 \pars{Hymnus}
 
 \cuminitiali{I}{temporalia/hym-CorArca.gtex}
@@ -1343,8 +1648,10 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 
 \vfill
 \pagebreak
+\fi
 
 \ifx\dominica\undefined
+\ifx\breviori\undefined
 \pars{Canticum Zachariæ.} \scriptura{Io. 19, 36-37}
 
 \vspace{-4mm}
@@ -1354,6 +1661,17 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \antiphona{VIII G}{temporalia/ant-factasuntenimhaec.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 }
+\else
+\pars{Canticum Zachariæ.} \scriptura{Lc. 1, 78}
+
+\vspace{-4mm}
+
+{
+\grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{VIII G}{temporalia/ant-pervisceramisericordiae.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+\fi
 
 %\trAntIMagnificat
 
@@ -1414,6 +1732,7 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 
 %\sideThumbs{{\scriptsize{}Fine horarum}}
 
+\ifx\breviori\undefined
 \anteOrationem
 
 \pagebreak
@@ -1439,6 +1758,80 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \rubrica{Postea cantatur a cantore:}
 
 \vspace{2mm}
+\else
+\pars{Preces.}
+
+\sineinitiali{}{temporalia/tonusprecum.gtex}
+
+\noindent Iesum, qui est mitis et húmilis corde, deprecémur, fratres, \gredagger{} eíque supplicémus:
+
+\Rbardot{} Rex amantíssime, miserére.
+
+\noindent Iesu, in quo hábitat omnis plenitúdo divinitátis, \gredagger{} divínæ consórtes natúræ tuæ nos éffice.
+
+\Rbardot{} Rex amantíssime, miserére.
+
+\noindent Iesu, in quo sunt omnes thesáuri sapiéntiæ et sciéntiæ, \gredagger{} multifórmem sapiéntiam Dei per Ecclésiam nobis revéla.
+
+\Rbardot{} Rex amantíssime, miserére.
+
+\noindent Iesu, in quo Pater sibi bene complácuit, \gredagger{} prædicatiónis tuæ fac nos auditóres perseverántes.
+
+\Rbardot{} Rex amantíssime, miserére.
+
+\noindent Iesu, de cuius plenitúdine omnes nos accépimus, \gredagger{} grátiam et veritátem Patris nobis abundánter largíre.
+
+\Rbardot{} Rex amantíssime, miserére.
+
+\noindent Iesu, fons vitæ et sanctitátis, \gredagger{} sanctos et immaculátos in caritáte nos redde.
+
+\Rbardot{} Rex amantíssime, miserére.
+
+\vfill
+
+\pars{Oratio Dominica.}
+
+\cuminitiali{}{temporalia/oratiodominicaalt.gtex}
+
+\vfill
+\pagebreak
+
+\rubrica{vel:}
+
+\pars{Supplicatio Litaniæ.}
+
+\cuminitiali{}{temporalia/supplicatiolitaniae.gtex}
+
+\vfill
+
+\pars{Oratio Dominica.}
+
+\cuminitiali{}{temporalia/oratiodominica.gtex}
+
+\vfill
+\pagebreak
+
+% Oratio. %%%
+\pars{Oratio.}
+
+\noindent Concéde, quǽsumus, omnípotens Deus, ut, qui dilécti Fílii tui corde gloriántes, eius præcípua in nos benefícia recólimus caritátis, de illo donórum fonte cælésti supereffluéntem grátiam mereámur accípere.
+
+\noindent Per Dóminum nostrum Iesum Christum, Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.
+
+\noindent \Rbardot{} Amen.
+
+\vfill
+
+\rubrica{Hebdomadarius dicit Dominus vobiscum, vel, absente sacerdote vel diacono, sic concluditur:}
+
+\vspace{2mm}
+
+\antiphona{C}{temporalia/dominusnosbenedicat.gtex}
+
+\rubrica{Postea cantatur a cantore:}
+
+\vspace{2mm}
+\fi
 
 \ifx\festum\undefined
 \ifx\octava\undefined

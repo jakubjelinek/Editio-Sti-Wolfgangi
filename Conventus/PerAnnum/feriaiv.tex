@@ -107,6 +107,16 @@
 \cantusSineNeumas
 
 \ifx\oratio\undefined
+\ifx\lauda\undefined
+\else
+\newcommand{\oratio}{\pars{Oratio.}
+
+\noindent Exáudi nos, Deus, salutáris noster et nos pérfice sectatóres lucis et operários veritátis, ut, qui ex te nati sumus lucis fílii, tui testes coram homínibus esse valeámus.
+
+\noindent Per Dóminum nostrum Iesum Christum, Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.
+
+\noindent \Rbardot{} Amen.}
+\fi
 \ifx\laudb\undefined
 \else
 \newcommand{\oratio}{\pars{Oratio.}
@@ -164,6 +174,32 @@
 \pagebreak
 
 \ifx\hymnusmatutinum\undefined
+\ifx\hiemalis\undefined
+\ifx\matua\undefined
+\else
+\pars{Hymnus}
+
+\cuminitiali{II}{temporalia/hym-ScientiarumDomino-MMMA.gtex}
+\fi
+\ifx\matub\undefined
+\else
+\pars{Hymnus.}
+
+\antiphona{VIII}{temporalia/hym-ChristeLuxVera-kempten.gtex}
+\fi
+\ifx\matuc\undefined
+\else
+\pars{Hymnus}
+
+\cuminitiali{IV}{temporalia/hym-ScientiarumDomino-kempten.gtex}
+\fi
+\ifx\matud\undefined
+\else
+\pars{Hymnus.}
+
+\antiphona{I}{temporalia/hym-ChristeLuxVera.gtex}
+\fi
+\else
 \ifx\matuac\undefined
 \else
 \pars{Hymnus}
@@ -180,6 +216,7 @@
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 }
 \fi
+\fi
 \else
 \hymnusmatutinum
 \fi
@@ -189,6 +226,7 @@
 \vfill
 \pagebreak
 
+\ifx\matutinum\undefined
 \ifx\matua\undefined
 \else
 % MAT A
@@ -437,6 +475,9 @@
 \vfill
 \pagebreak
 \fi
+\else
+\matutinum
+\fi
 
 \pars{Versus.}
 
@@ -471,12 +512,20 @@
 
 \pars{Absolutio.}
 
+\ifx\absolutio\undefined
 \cuminitiali{}{temporalia/absolutio-avinculis.gtex}
+\else
+\absolutio
+\fi
 
 \vfill
 \pagebreak
 
+\ifx\benedictioi\undefined
 \cuminitiali{}{temporalia/benedictio-solemn-ille.gtex}
+\else
+\benedictioi
+\fi
 
 \vspace{7mm}
 
@@ -493,7 +542,11 @@
 \vfill
 \pagebreak
 
+\ifx\benedictioii\undefined
 \cuminitiali{}{temporalia/benedictio-solemn-divinum.gtex}
+\else
+\benedictioii
+\fi
 
 \vspace{7mm}
 
@@ -510,7 +563,11 @@
 \vfill
 \pagebreak
 
+\ifx\benedictioiii\undefined
 \cuminitiali{}{temporalia/benedictio-solemn-adsocietatem.gtex}
+\else
+\benedictioiii
+\fi
 
 \vspace{7mm}
 
@@ -558,21 +615,37 @@
 \cantusSineNeumas
 
 \vspace{0.5cm}
+\ifx\deusinadiutorium\undefined
 \grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \cuminitiali{}{temporalia/deusinadiutorium-communis.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\else
+\deusinadiutorium
+\fi
 
 \vfill
 \pagebreak
 
 \ifx\hymnuslaudes\undefined
-\ifx\laudac\undefined
+\ifx\lauda\undefined
 \else
 \pars{Hymnus} \scriptura{Prudentius (\olddag{} 413)}
 
 \cuminitiali{I}{temporalia/hym-NoxEtTenebrae.gtex}
 \fi
-\ifx\laudbd\undefined
+\ifx\laudb\undefined
+\else
+\pars{Hymnus}
+
+\cuminitiali{I}{temporalia/hym-FulgentisAuctor-hk.gtex}
+\fi
+\ifx\laudc\undefined
+\else
+\pars{Hymnus} \scriptura{Prudentius (\olddag{} 413)}
+
+\cuminitiali{VIII}{temporalia/hym-NoxEtTenebrae-einsiedeln.gtex}
+\fi
+\ifx\laudd\undefined
 \else
 \pars{Hymnus}
 
@@ -588,6 +661,7 @@
 \vfill
 \pagebreak
 
+\ifx\laudes\undefined
 \ifx\lauda\undefined
 \else
 \pars{Psalmus 1.} \scriptura{Ps. 35, 6}
@@ -818,8 +892,17 @@
 \vfill
 \pagebreak
 \fi
+\else
+\laudes
+\fi
 
 \ifx\lectiobrevis\undefined
+\ifx\lauda\undefined
+\else
+\pars{Lectio Brevis.} \scriptura{Tob. 4, 14-15.16.19}
+
+\noindent Atténde tibi, fili, in ómnibus opéribus tuis et esto sápiens in ómnibus sermónibus tuis et, quod óderis, némini féceris. De pane tuo commúnica esuriénti et de vestiméntis tuis nudis; ex ómnibus, quæcúmque tibi abundáverint, fac eleemósynam. Omni témpore bénedic Dóminum et póstula ab illo, ut dirigántur viæ tuæ et omnes sémitæ tuæ et consília bene disponántur.
+\fi
 \ifx\laudb\undefined
 \else
 \pars{Lectio Brevis.} \scriptura{Rom. 8, 35.37}
@@ -922,21 +1005,47 @@
 \sineinitiali{}{temporalia/tonusprecum.gtex}
 
 \ifx\preces\undefined
+\ifx\lauda\undefined
+\else
+\noindent Grátias agámus Christo eúmque semper laudémus, quia non dedignátur fratres vocáre quos sanctíficat. \gredagger{} Ideo ei supplicémus:
+
+\Rbardot{} Sanctífica fratres tuos, Dómine.
+
+\noindent Fac ut huius diéi inítia in honórem resurrectiónis tuæ puris tibi córdibus consecrémus, \gredagger{} et diem totum tibi gratum sanctificatiónis opéribus faciámus.
+
+\Rbardot{} Sanctífica fratres tuos, Dómine.
+
+\noindent Qui diem, amóris tui signum, ad salútem et lætítiam nobis renovásti, \gredagger{} rénova nos cotídie ad glóriam tuam.
+
+\Rbardot{} Sanctífica fratres tuos, Dómine.
+
+\noindent Doce nos hódie te in ómnibus præséntem agnóscere, \gredagger{} teque in mæréntibus præsértim et paupéribus inveníre.
+
+\Rbardot{} Sanctífica fratres tuos, Dómine.
+
+\noindent Da nos hódie cum ómnibus pacem habére, \gredagger{} némini vero malum réddere pro malo.
+
+\Rbardot{} Sanctífica fratres tuos, Dómine.
+\fi
 \ifx\laudb\undefined
 \else
 \noindent Benedíctus Deus salvátor noster, qui usque ad consummatiónem sǽculi se ómnibus diébus cum Ecclésia sua mansúrum promísit. \gredagger{} Ideo ei grátias agéntes clamémus:
 
 \Rbardot{} Mane nobíscum, Dómine.
-Mane nobíscum, Dómine, toto die, \gredagger{} numquam declínet a nobis sol grátiæ tuæ.
+
+\noindent Mane nobíscum, Dómine, toto die, \gredagger{} numquam declínet a nobis sol grátiæ tuæ.
 
 \Rbardot{} Mane nobíscum, Dómine.
-Hunc diem tibi tamquam oblatiónem consecrámus, \gredagger{} dum nos nihil pravi factúros aut probatúros pollicémur.
+
+\noindent Hunc diem tibi tamquam oblatiónem consecrámus, \gredagger{} dum nos nihil pravi factúros aut probatúros pollicémur.
 
 \Rbardot{} Mane nobíscum, Dómine.
-Fac, Dómine, ut donum lucis hic totus dies evádat, \gredagger{} ut simus sal terræ et lux mundi.
+
+\noindent Fac, Dómine, ut donum lucis hic totus dies evádat, \gredagger{} ut simus sal terræ et lux mundi.
 
 \Rbardot{} Mane nobíscum, Dómine.
-Spíritus Sancti tui cáritas dírigat corda et lábia nostra, \gredagger{} ut in tua iustítia semper et laude maneámus.
+
+\noindent Spíritus Sancti tui cáritas dírigat corda et lábia nostra, \gredagger{} ut in tua iustítia semper et laude maneámus.
 
 \Rbardot{} Mane nobíscum, Dómine.
 \fi
@@ -1029,7 +1138,11 @@ Spíritus Sancti tui cáritas dírigat corda et lábia nostra, \gredagger{} ut i
 
 \vspace{2mm}
 
+\ifx\benedicamuslaudes\undefined
 \cuminitiali{IV}{temporalia/benedicamus-feria-laudes.gtex}
+\else
+\benedicamuslaudes
+\fi
 
 \vspace{1mm}
 

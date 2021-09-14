@@ -18,24 +18,31 @@ COMMON_CHANTS_DIR = $(EDITIO_ROOTDIR)/cantuscommunes
 PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
-PSALMS = 5 6 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 11 17xxxi_xxxv 17xxxvi_xlvi 17xlvii_li 18i 23 28 30i 30ii 30iii 32 34i 34ii 34iii 36i_xi 36xii_xxix 36iii 37ii_v 37vi_xiii 37xiv_xxiii 38i 38ii 41 42 43i 43ii 43iii 47 49i_vi 49vii_xv 49xvi_xxiii 50 51 54i 54ii 54iii 56 64 66 67i 67ii 67iii 68ii_xiii 68xiv_xxii 68iii 72i 72ii 72iii 76 79 80 83 84 85 86 88ii_xix 88xx_xxx 88xxxi_xxxviii 88xxxix_xlvi 88xlvii_liii 89 91 95 96 97 98 99 100 101ii_xii 101xiii_xxiii 101iii 102i 102ii 102iii 106i 106ii 106iii 107 116 118xix 130 131i 131ii 134i 135i 135ii 135iii 142 143i_x 145 146 147
+PSALMS = 1 2 3 5 6 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 10 11 16 17ii_vii 17viii_xx 17xxi_xxx 17xxxi_xxxv 17xxxvi_xlvi 17xlvii_li 18 18i 20 23 28 30i 30ii 30iii 32 34i 34ii 34iii 35 36i_xi 36xii_xxix 36iii 37ii_v 37vi_xiii 37xiv_xxiii 38i 38ii 41 42 43i 43ii 43iii 44i 44ii 45 46 47 49i_vi 49vii_xv 49xvi_xxiii 50 51 54i 54ii 54iii 56 62 63 64 65i 65ii 66 67i 67ii 67iii 68ii_xiii 68xiv_xxii 68iii 72i 72ii 72iii 76 79 80 83 84 85 86 88ii_xix 88xx_xxx 88xxxi_xxxviii 88xxxix_xlvi 88xlvii_liii 89 91 91i 91ii 92 95 96 97 98 99 100 101ii_xii 101xiii_xxiii 101iii 102i 102ii 102iii 103i 103ii 103iii 106i 106ii 106iii 107 116 117 118xix 130 131i 131ii 134i 135i 135ii 135iii 142 143i_x 144i 144x_xiii 144xiv_xxi 145 146 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
+MODUS-1 = i-g ii-D viii-G
+MODUS-2 = i-a4 i-f vii-a viii-G5
+MODUS-3 = vi-F viii-G5
 MODUS-5 = viii-A
-MODUS-6 = iv-E
-MODUS-8 = i-f i-g
+MODUS-6 = iv-E viii-G
+MODUS-8 = i-f i-g ii_-a vi-F viii-G
 MODUS-9ii_xi = viii-G
 MODUS-9xii_xxi = i-g3
 MODUS-9xxii_xxxii = ii-D
 MODUS-9xxxiii_xxxix = iv_-e
+MODUS-10 = i-d ii_-f viii-G5
 MODUS-11 = viii-G
+MODUS-16 = vii-c viii-G6
 MODUS-17ii_vii = vi-F
 MODUS-17viii_xx = i-g
 MODUS-17xxi_xxx = iv_-e
 MODUS-17xxxi_xxxv = viii-G
 MODUS-17xxxvi_xlvi = vii-c
 MODUS-17xlvii_li = vii-c2
+MODUS-18 = i-D_ ii-D iii-a iv-A
 MODUS-18i = ii-D
-MODUS-23 = iv_-e
+MODUS-20 = viii-G
+MODUS-23 = iv-c iv_-e vii-c viii-G
 MODUS-28 = vii-a
 MODUS-30i = viii-G
 MODUS-30ii = e-a
@@ -58,6 +65,9 @@ MODUS-42 = vi-F
 MODUS-43i = viii-G
 MODUS-43ii = ii_-a viii-C
 MODUS-43iii = i-g3 ii-D
+MODUS-44i = iv-d iv-e2 vii-d
+MODUS-44ii = ii_-B iv-E vii-d
+MODUS-45 = ii-D vi-C
 MODUS-46 = viii-c
 MODUS-47 = iv-a
 MODUS-49i_vi = i-g2 viii-A
@@ -69,7 +79,11 @@ MODUS-54i = viii-c
 MODUS-54ii = vii-c2
 MODUS-54iii = viii-G
 MODUS-56 = viii-g
+MODUS-62 = i-d3 ii-D iii-e iv-E vii-a viii-c viii-G viii-G5 viii-g5 viii-G6 viii-g6
+MODUS-63 = viii-G
 MODUS-64 = viii-A
+MODUS-65i = vi-F
+MODUS-65ii = ii_-a
 MODUS-66 = e
 MODUS-67i = vii-a
 MODUS-67ii = i-f
@@ -83,10 +97,10 @@ MODUS-72iii = iii-b
 MODUS-76 = viii-G
 MODUS-79 = ii_-B
 MODUS-80 = i-g5
-MODUS-83 = viii-G
+MODUS-83 = i-g3 viii-G
 MODUS-84 = vi-F viii-G
 MODUS-85 = ii-D
-MODUS-86 = i-g
+MODUS-86 = i-g iv-A viii-G
 MODUS-88ii_xix = viii-G
 MODUS-88xx_xxx = viii-G
 MODUS-88xxxi_xxxviii = viii-G
@@ -94,10 +108,13 @@ MODUS-88xxxix_xlvi = vii-a
 MODUS-88xlvii_liii = vi-F
 MODUS-89 = i-g vi-F
 MODUS-91 = viii-g e
-MODUS-95 = ii-D
-MODUS-96 = iii-a2
+MODUS-91i = vii-a
+MODUS-91ii = iii-a
+MODUS-92 = i-g
+MODUS-95 = i-d ii-D
+MODUS-96 = iii-a2 vi-F
 MODUS-97 = e
-MODUS-98 = e
+MODUS-98 = iv-e2 e
 MODUS-99 = iv_-e e
 MODUS-100 = viii-G
 MODUS-101ii_xii = i-a
@@ -106,11 +123,15 @@ MODUS-101iii = i-g
 MODUS-102i = viii-C
 MODUS-102ii = i-d
 MODUS-102iii = iii-g
+MODUS-103i = iii-a
+MODUS-103ii = ii-D
+MODUS-103iii = e
 MODUS-106i = iv_-e
 MODUS-106ii = c-c2
 MODUS-106iii = iii-a2
 MODUS-107 = viii-G
 MODUS-116 = ii_-B e
+MODUS-117 = viii-G viii-G5
 MODUS-118xix = vii-a e
 MODUS-130 = e
 MODUS-131i = e
@@ -121,12 +142,19 @@ MODUS-135ii = iiir-g
 MODUS-135iii = c-c2
 MODUS-142 = viii-G
 MODUS-143i_x = vi-F
+MODUS-144i = viii-G
+MODUS-144x_xiii = vii-c
+MODUS-144xiv_xxi = viii-a
 MODUS-145 = iv-E iv_-e
 MODUS-146 = viii-g
 MODUS-147 = vi-F e
+MODUS-148 = i-a
+MODUS-149 = i-a4 i-f i-g ii_-f iv-c iv_-e vi-F vii-a vii-c viii-G viii-G5 viii-g
+MODUS-150 = viii-G
 MODUS-anna = ii-D
 MODUS-david = i-f
 MODUS-ecclesiastici = iii-a
+MODUS-ecclesiasticus36 = d-g
 MODUS-ezechiae = e
 MODUS-habacuc = iv_-e
 MODUS-isaiae = viii-G
@@ -134,7 +162,8 @@ MODUS-isaiae2 = v-a
 MODUS-isaiae3 = vii-d
 MODUS-isaiae4 = vii-c
 MODUS-isaiae5 = iv-E iv_-e
-MODUS-isaiae8 = viii-g
+MODUS-isaiae7 = d-g
+MODUS-isaiae8 = viii-g d-g
 MODUS-isaiae9 = ii-D
 MODUS-isaiae10 = vi-F
 MODUS-isaiae11 = viii-g
@@ -146,9 +175,11 @@ MODUS-moysis2i_xii = vi-F
 MODUS-sapientia = v-a
 MODUS-tobiae = vii-a
 MODUS-tobiae2 = ii-D
+MODUS-dan3 = i-d i-f i-g ii_-a iii-e v-a vii-a vii-c vii-c2 viii-G per
 MODUS-dan32 = i-f
-MODUS-benedictus = i-d i-f i-g5 ii_-d iii-b iv-E v-a vi-F vii-a vii-c2 vii-d2 viii-g viii-G viii-G2
-CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae8 isaiae9 isaiae10 isaiae11 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david dan32 iudith2
+MODUS-dan33 = i-g viii-G
+MODUS-benedictus = i-a i-a4 i-a5 i-d i-f i-g i-g5 isoll-D isoll-D_ isoll-f isoll-g isoll-d3 isoll-a ii-D ii_-d ii_soll-c iii-a iii-b iiisoll-a iiisoll-a4 iv-E iv-e2 v-a vsoll-g vi-F vi-C vii-a vii-c vii-c2 vii-d2 vii-d3 viisoll-a viii-g viii-C viii-G viii-G2 viii-G5 viiisoll-G
+CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae7 isaiae8 isaiae9 isaiae10 isaiae11 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david dan3 dan32 dan33 iudith2 ecclesiasticus36
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
 	   && $(SED) -i -e 's/\*/\\grestar{}/g' $@
@@ -164,6 +195,8 @@ LAPSALMOPTSACC = --accents $(word 1,$(TONUS)):$(word 3,$(TONUS)) \
 LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-$(M).tex))
 LAPSALMSEXTRA = $(foreach C,benedictus $(CANTICIS),$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/$(C)-$(M).tex))
+LAPSALMSSINEDOX = $(foreach P,62 115 148 149,$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-$(M)-sinedox.tex)) \
+		  $(foreach C,dan3,$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/$(C)-$(M)-sinedox.tex))
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo \
 			  beatadeigenitrix beatamater benedictusdeusisrael benedictusdominus \
@@ -245,25 +278,99 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  dominemagnuses rexomnisterrae extendedomine confundanturqui mementodomine \
 			  tuamdomineexcita conversusestfuror veniteascendamus dixiiniquis \
 			  cantatedominoetbenedicite benedixistidomine cantaboetpsalmum sacrificiumdeo \
-			  benedictusdominusdeusmeus clamormeus1 respicehumilitatem iusticonfitebuntur1) \
+			  benedictusdominusdeusmeus clamormeus1 respicehumilitatem iusticonfitebuntur1 \
+			  beatusilleservus exsultabuntsanctiingloria iustuscorsuum sacerdotesdeibenedicite \
+			  serveboneetfidelis vosestisluxhuiusmundi quicumquevoluerit caritasdeidiffusaest \
+			  semenceciditaliud beataesmariaquaecredisti exquofactaestvox exsurgensmaria \
+			  intravitmaria utaudivitsalutationem antethorum-FKP benedictatu \
+			  beatusiustinus sanguissanctorummartyrum dumfortisarmatus \
+			  spiritusomnis confessionemetdecorem dominumdeumadoremus \
+			  eccedeusnoster tresexunoore mariaautemconservabat \
+			  benediciteomniaopera regnavitdominusdecorem semencecidit \
+			  eccedeusmeus regnumtuumdomine inaeternumet trespueriiussuregis \
+			  confitebortibidominequoniam ascendenteiesuinnaviculam \
+			  dominiestterra benedicitegentes introiboindomumtuam \
+			  beatimundocorde siculmenveri exsultabuntsancti dicebatenimintrase \
+			  inlegedomini praedicanspraeceptum tuesgloriamea hymnumdicamus \
+			  quimeconfessusfuerit hisuntquivenerunt mittemanumtuam \
+			  quiavidistime stetitiesus thomasquidicitur inomnemterram-FKP \
+			  anuntiaverunt-FKP luxortaestiustis-FKP etdicebantunde \
+			  deditiesusvirtutem scimusquoniam spiritusapientiae \
+			  caputtuumutcarmelus abiitiesustransmare incendit tuleruntdominummeum \
+			  dicitjesusmariaconversa dumtransissetsabbatum ardensestcormeum \
+			  inclinavitsemaria surgensjesusmaneprima dilexistiiustitiam dumessetrex \
+			  laevaeius trahemepostte egochristumconfiteor inventabonamargarita \
+			  iamhiemstransiit cumsublevassetoculos indomodavidpuerisui \
+			  intrantemiesum infideetlenitate ignemvenimittere operamininoncibum \
+			  eccesacerdosmagnus hicestfratrumamator mentesnostrascastifica \
+			  dominebonumest adhuceoloquente voxdecaelissonuit hodiedominusiesus \
+			  hodietransfigurato lexpermoysen eteccevoxdenube nemopotestvenire \
+			  existimoomnia martyresdomini nosautemgloriari siquisperseveraverit \
+			  fratresexistimoenim tamquamauruminfornace quiameliorest quivicerit \
+			  ignemeexaminasti nonmederelinquepater beatuslaurentiusclamavit \
+			  adhaesitanimameapostte misitdominus beatuslaurentiusorabat \
+			  incraticula oblatapergregorium excelsiservus corverbissapientiae \
+			  sicutsorore honoratchristi laudanslaudare novumsydusemicuit \
+			  majoremcaritatem istecognovitiustitiam replevitsanctumsuum \
+			  sacerdosetpontifex verbaquaelocutussum eccevereisraelita \
+			  hocestpraeceptum vosamicimei petiteetdabitur \
+			  istesanctusdumprocolligendis dumtransiretdominus \
+			  cordeetanimo cumiucunditate nativitasesthodie nativitasgloriosae \
+			  nativitastua quandonataest regaliexprogenie quiperdideritanimam \
+			  sicutmyrrha quidoctifuerint eccecrucem propterlignum ocruxbenedicta \
+			  crucemsanctam cruxbenedictanitet cruxalmafulget superomnia) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
 			  AEterneLucis OSatorRerum FulgentisAuctor DeusQui GalliCantu \
 			  OVirgoMater QuaeCaritatis SomnoRefectis SplendorPaternae-hiemalis \
 			  RerumCreator NoxEtTenebrae AveMarisStella IamLucis AlesDiei \
-			  ConsorsPaterni PergrataMundo) \
+			  ConsorsPaterni PergrataMundo LaetiColentes ORedemptorisPietas \
+			  AEternaLux-MMMA AdestoChriste-MMMA AdestoRerum AuctorPerennis-MMMA \
+			  ChristePrecamur-MMMA RerumCreator-MMMA VeniPraecelsa VeniensMater \
+			  BeateMartyr MartyrDei ScientiarumDomino-MMMA EcceIam EcceIam-praglia \
+			  SalveDies VitaSanctorum-kempten LucisLargitor-hk AdPrecesNostras-kempten \
+			  AEterneLucis-hk AmorisSensusErige-kn IamLucis-hk DiesAEtasque-kempten \
+			  AEterneRerum AEternaLux-kempten OSacrosanctaTrinitas-kempten \
+			  PergrataMundo-einsiedeln SplendorPaternae-einsiedeln \
+			  NoxEtTenebrae-einsiedeln ScientiarumDomino-kempten \
+			  ChristePrecamur-kempten SolEcce-einsiedeln DieiLuce-hk \
+			  AEternaCaeli-einsiedeln AdestoChriste-kempten ChristeLuxVera \
+			  DiesAEtasque-zist AEternaChristi RexGloriose ExsultetCaelum QuiLuce \
+			  ChristeLuxVera-kempten AdestoRerum-kn DeusQui-hk \
+			  IesuCorona IesuRedemptor VitaSanctorum AdPrecesNostras \
+			  MagdalaeSidus AuroraSurgit IubiloCordis DumTuas NoctiSuccedit \
+			  FlagransAmore QuasTibi ChristePastorum InclitusPastor \
+			  ChristePastorum-presbytero InclitusRector-presbytero \
+			  CaelestisFormam DulcisIesuMemoria OChristeFlos OCastitatis \
+			  MartyrisChristi InMartyrisLaurentii OClaraLuce GeneratVirgo \
+			  AuctorPerennis-kempten AuroraIamSpargit AmorisSensusErige \
+			  ArcanaSacrae BernhardusDoctor ChristePastorum-papa SplendorPaternae \
+			  OSempiternaeCuriae RelucensInter HaecFemina FulgentisAuctor-hk \
+			  AnglorumIam FulgetInCaelis BeataDeiGenetrix OSanctaMundiDomina \
+			  LaudeTeCives AEterneSol SalveCruxSancta SignumCrucis) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
 			   benedictusdominus inmedioecclesiae sapientiamsanctorum \
-			   inmatutinis deusmeusadiutormeus) \
+			   inmatutinis deusmeusadiutormeus amaviteum elegiteamdeus \
+			   fortitudomea confitebimurtibi iustiautem constitueseos \
+			   tibidixitcormeum marianoliiamflere adiuvabiteam christefilidei \
+			   laetaminidomino mirabilisdeus gloriaethonore fortitudomeaetlausmea \
+			   exsultabuntlabiamea adoramustechriste) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
-	 $(addprefix benedicamus-,feria-laudes feria-vesperae minor officium-bmv festis-bmv dominica-perannum) \
+	 $(addprefix benedicamus-,feria-laudes feria-vesperae minor officium-bmv festis-bmv \
+				  dominica-perannum duplex-laudes solemnism-laud \
+				  adlaudes-festis duplexmajus-laudes) \
 	 $(addprefix inv-,alleluiachristumdominum regemmagnum dominumquifecit adoremusdominum \
-			  dominumdeum veniteexsultemus jubilemusdeo avemaria christummariaefilium) \
+			  dominumdeum veniteexsultemus jubilemusdeo avemaria christummariaefilium \
+			  mirabileminsanctis visitationemvirginis regemmartyrumsimplex \
+			  regemapostolorum stellam fontemsapientiae christumpastorumprincipem \
+			  summumregem regemmartyrum regiquicarneminduit regemapostolorum-iv \
+			  nativitatemvirginis christumregem) \
+	 $(addprefix versus-,memorfui medianocte praevenerunt) \
 	 dominelabiamea tonusprecum dominusnosbenedicat \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
@@ -339,7 +446,77 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   conceptiogloriosae-CROCHU conceptiotua-CROCHU-cumdox \
 			   egressonoedearcha vocavitangelusdomini-CROCHU \
 			   deusdominimeiabraham-CROCHU venihodieadfontemaquae-CROCHU-cumdox \
-			   dumstaretabrahamadradicem-CROCHU-cumdox) \
+			   dumstaretabrahamadradicem-CROCHU-cumdox amaviteumdominus-CROCHU \
+			   eugeservebone-CROCHU invenidavidservum-CROCHU \
+			   eugeservebone-CROCHU-cumdox dominusquielegit-CROCHU iamnondicam-cumdox \
+			   nonvosrelinquam-CROCHU-cumdox disciplinametsapientiam-sinedox \
+			   spiritussanctusprocedens-sinedox deuscanticumnovum-CROCHU \
+			   dicantnuncquiredempti-CROCHU nonvosrelinquam-CROCHU \
+			   quaeestista-CROCHU beatammedicent-CROCHU diffusaestgratia-CROCHU \
+			   magnusdominus-sinedox gloriapatri-CROCHU tedeumpatremingenitum-CROCHU-cumdox \
+			   benedicamuspatrietfilio quisdeusmagnus-sinedox honorvirtus-CROCHU-cumdox \
+			   benedictusdominusdeus-sinedox quammagnamultitudo-sinedox respexitelias \
+			   gaudeteiusti-CROCHU benedictaetvenerabilis-CROCHU \
+			   quaeestista-CROCHU-cumdox egosumpanisvitae deducmeinsemitam-CROCHU-cumdox \
+			   sicutfuicummoyse-CROCHU tristitiavestra-CROCHU luxperpetualucebit-CROCHU-cumdox \
+			   adiutormeustibipsallam-CROCHU cibavitillum-CROCHU-cumdox \
+			   deducmeinsemitam-CROCHU audivivocemincaelotamquam-CROCHU \
+			   audiisraelpraecepta-CROCHU sanctaetimmaculata-CROCHU-cumdox \
+			   peccatamea-CROCHU fiatmanustua-CROCHU domineneiniratua-CROCHU \
+			   peccatamea-CROCHU-cumdox fiatmanustua-CROCHU-cumdox \
+			   narrabonomentuum-CROCHU-cumdox adduxivosperdesertum-CROCHU \
+			   inconspectuangelorum-CROCHU tudomineuniversorum-CROCHU-cumdox \
+			   deusintesperavi-CROCHU quimanducat-E611-cumdox tupuerpropheta-CROCHU \
+			   obsecrodomine-CROCHU adaperiatdominus-CROCHU-cumdox \
+			   totadiecontristatus-CROCHU quicustodiebant-CROCHU tempusest-CROCHU-cumdox \
+			   dominusquieripuitme-sinedox invenidavidservum-CROCHU-cumdox \
+			   orantesanctoclemente-CROCHU-cumdox egotetuli-CROCHU gyrumcaeli-CROCHU-cumdox \
+			   recordaredomine-CROCHU-cumdox dominesiconversus-CROCHU-cumdox \
+			   istecognovit-CROCHU gloriaethonore-CROCHU gloriaethonore-CROCHU-cumdox \
+			   certamenmagnum-CROCHU certamenmagnum-CROCHU-cumdox \
+			   dumexiretiacob-CROCHU-cumdox suscipeverbum-CROCHU-cumdox \
+			   ecceegomittovos tollite dumsteteritis gloriapatri-CROCHU-cumdox \
+			   praebefili-CROCHU-cumdox neperdiderisme-CROCHU \
+			   dominiestterra-CROCHU-cumdox doceaminiquosviastuas-CROCHU \
+			   respexitelias-sinedox egosumpanisvitae-E611-cumdox \
+			   praecursordomini-FKP splendidafactaestfacies-CROCHU \
+			   factumestdumtolleret-CROCHU-cumdox priusquamteformarem-FKP \
+			   emissitnoecolumbam-cumdox vineamea-cumdox speminalionumquamhabui-CROCHU \
+			   indiequainvocavi descenditdecaelis-CROCHU-cumdox tollite-cumdox \
+			   misericordiatuadomine-CROCHU-cumdox adtedominelevavi-CROCHU-cumdox \
+			   deusquisedes-CROCHU notasmihifecisti-CROCHU proptertestamentumdomini-CROCHU \
+			   delectareindomino-CROCHU statuitdominussupra-CROCHU-cumdox \
+			   ecceodorfiliimei-CROCHU expurgate-CROCHU proptertestamentumdomini-CROCHU-cumdox \
+			   mariamagdalena-CROCHU mariaplorans congratulamini-CROCHU-cumdox caelestis \
+			   venielectamea-CROCHU diffusaestgratia-CROCHU-cumdox \
+			   statuitdominussupra-CROCHU nativitasgloriosae-CROCHU-cumdox \
+			   eramquasiagnus-cumdox eramquasiagnus-sinedox tentavitdeusabraham-CROCHU \
+			   locutusestdominusadmoysen-CROCHU iteinorbemuniversum-CROCHU \
+			   locutusestdominusadabraham-CROCHU cibavitillum-CROCHU \
+			   dominusquielegit-CROCHU-cumdox audifilimihidisciplinam-CROCHU \
+			   aversioparvulorum-CROCHU aversioparvulorum-CROCHU-cumdox \
+			   damihidominesedium-CROCHU-cumdox filinolideficere-CROCHU \
+			   magnaenimsunt-CROCHU-cumdox elegittedominus-CROCHU \
+			   elegittedominus-CROCHU-cumdox sanctaetimmaculata-CROCHU \
+			   congratulaminiquiacum-CROCHU-cumdox splendidafactaest \
+			   assumensiesus-sinedox videnspetrusmoysen-cumdox \
+			   verbuminiquum-CROCHU-sinedox nesciensmatervirgo-CROCHU-cumdox \
+			   quaesuntincorde-CROCHU-sinedox filinolideficere-CROCHU-cumdox \
+			   desideriumanimaeeius-CROCHU ocruxgloriosa-CROCHU \
+			   beatuslaurentiusoravitetdixit-CROCHU levitalaurentius-CROCHU \
+			   puermeusnolitimere-CROCHU beatuslaurentiusoravitetdixit-CROCHU-cumdox \
+			   haecpaupertatistitulo francisciprimaplantula vivensinmundo \
+			   redemitdominus-CROCHU-cumdox dixeruntimpii supersalutem-CROCHU \
+			   supersalutem-CROCHU-cumdox dumsteteritis-sinedox beatieritis-cumdox \
+			   beatipauperesspiritu-CROCHU acceptabaptismigratia \
+			   nocteosmeum-CROCHU-sinedox sciodomine-CROCHU-cumdox \
+			   mementomeideusquiaventus-CROCHU quaredetraxistis-CROCHU-sinedox \
+			   beatissimuspontifex-CROCHU-cumdox hicinannis-CROCHU \
+			   neabscondasame-CROCHU quismihitribuat-CROCHU-cumdox \
+			   quiconsolabatur-CROCHU-sinedox desideriummeum-CROCHU-cumdox \
+			   inclinansfaciem-CROCHU-cumdox gloriosaevirginis-CROCHU-sinedox \
+			   hodienataest-CROCHU nativitastua-CROCHU audituauris-CROCHU-sinedox \
+			   isteestquiantedeum-CROCHU-cumdox ocruxbenedicta-CROCHU cruxfidelis-CROCHU) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
@@ -348,7 +525,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 ps131i-initium-e ps96-initium-iii-a2 ps147-initium-e ps91-initium-e ps66-initium-e \
 	 isaiae3-initium-vii-d ps88xxxi_xxxviii-initium-viii-G_ ps97-initium-e ps98-initium-e \
 	 jeremiae2-initium-viii-G ps99-initium-e ps72iii-initium-iii-b ps102iii-initium-iii-g \
-	 ps47-initium-iv-a ps101ii_xii-initium-i-a
+	 ps47-initium-iv-a ps101ii_xii-initium-i-a ps86-initium-iv-c ps149-initium-ii_-f \
+	 ps103iii-initium-e ps117-initium-viii-G5 ps150-initium-viii-g4 ps149-initium-iv_-E \
+	 benedictus-initium-viisoll-a ps62-initium-iv-E ps44i-initium-iv-d benedictus-initium-vii-a-trans
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
@@ -357,7 +536,7 @@ LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PSALMTONES_DIR)/$(2)-auto.gabc; \
 	     [ $(2) = "dir" ] && cd .. && $(SED) -i -e '/(::)$$$$/{/(,) (::)$$$$/!{s/<b>//g;s/<\/b>//g}}' $(3) || :
 FERIAE = ii iii iv v vi
-HEBDOMADAE = i ii iii iv v vi
+HEBDOMADAE = i ii iii iv v vi viii ix x xi xii xiii xiv xv xvi xvii xviii xix xx xxi xxii xxiii xxiv
 PDFI = $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE)))
 PDFII = $(foreach H,$(HEBDOMADAE),sabbato-$(H).pdf)
 PDFIII = $(foreach H,$(HEBDOMADAE),dominica-$(H).pdf)
@@ -377,7 +556,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../PostPentecosten ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../InNativitateBMV/cantus/amon33 ../CorpusChristi ../InNativitateBMV/cantus/nrom02 ../InAssumptioneBMV ../InConceptioneBMV
+iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../PostPentecosten ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../InNativitateBMV/cantus/amon33 ../CorpusChristi ../InNativitateBMV/cantus/nrom02 ../InAssumptioneBMV ../InConceptioneBMV ../OctavaPentecostes ../PresentationeBMV ../InNativitateBMV ../Trinitatis ../Paschae ../Quadragesimae ../Adventus ../Septuagesimae ../Apostolorum ../CordisIesu ../NativitateIoannisBaptistae ../OctavaNativitatis ../MariaeMagdalenae ../Transfiguratio ../Catharinae ../ExaltatioCrucis ../Laurentii ../Clarae ../Iacobi ../OmniumSanctorum
 include $(iter)
 define iter-doit
 $(patsubst %.pdf,%.tex,$(i)): feria$(word 1,$(subst -, ,$(patsubst feria%.pdf,%,$(i)))).tex hebdomada$(word 2,$(subst -, ,$(patsubst feria%.pdf,%,$(i)))).tex ; touch $$@
@@ -394,10 +573,11 @@ $(patsubst %.pdf,%.tex,$(i)): dominica.tex hebdomada$(patsubst dominica-%.pdf,%,
 endef
 iter-left := $(PDFIII)
 include $(iter)
+$(LAPSALMSSINEDOX): $(TMP_DIR)/%-sinedox.tex: $(TMP_DIR)/%.tex
+	sed -e '/^Gló.*ri.*a.*Pa.*tri.*et.*Fí.*li.*o/d;/^et.*Spi.*rí.*tu.*i.*Sanc.*to/d;/^Sicut.*erat.*in.*princí.*pi.*o,.*et.*nunc.*et.*sem.*per,/d;/^et.*in.*sǽcu.*la.*sæ.*cu.*ló.*rum.*A.*men/d' < $^ > $@
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
-#$(foreach C,ps148 ps149 dan3,$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/$(C)-$(M).tex)): PSALMOPTS = $(LAPSALMOPTS)
 $(PDF): %.pdf: %.tex conventuscommune.tex \
-	       $(ALLLAPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
+	       $(ALLLAPSALMS) $(LAPSALMSSINEDOX) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
 clean:

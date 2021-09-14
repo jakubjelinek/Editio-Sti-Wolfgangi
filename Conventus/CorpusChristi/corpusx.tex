@@ -1269,6 +1269,7 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \vfill
 \pagebreak
 
+\ifx\laudespsalmusiii\indefined
 \pars{Psalmus 3.} \scriptura{Gn. 48, 20}
 
 \vspace{-0.4cm}
@@ -1281,6 +1282,9 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 
 %\psalmusEtTranslatioT{temporalia/ps62-comb.tex}{10cm}
 \input{temporalia/ps62.tex} \Abardot{}
+\else
+\laudespsalmusiii
+\fi
 
 \vfill
 \pagebreak
@@ -1357,16 +1361,24 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \vfill
 \pagebreak
 
+\ifx\lectiobrevis\undefined
 \capitulumLaudes
+\else
+\lectiobrevis
+\fi
 
 % preklad Jeruz. bible
 %\trCapituliI
 
 \vfill
 
+\ifx\responsoriumbreve\undefined
 \pars{Responsorium breve.} \scriptura{Ps. 77, 24-25}
 
 \cuminitiali{VI}{temporalia/resp-panemcaeli.gtex}
+\else
+\responsoriumbreve
+\fi
 
 %\trResp
 

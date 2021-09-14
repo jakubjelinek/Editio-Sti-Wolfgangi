@@ -195,6 +195,7 @@
 \vfill
 \pagebreak
 
+\ifx\matutinum\undefined
 \ifx\matua\undefined
 \else
 % MAT A
@@ -439,6 +440,9 @@
 \vfill
 \pagebreak
 \fi
+\else
+\matutinum
+\fi
 
 \pars{Versus.}
 
@@ -479,12 +483,20 @@
 
 \pars{Absolutio.}
 
+\ifx\sineobmv\undefined
 \cuminitiali{}{temporalia/absolutio-precibus.gtex}
+\else
+\cuminitiali{}{temporalia/absolutio-avinculis.gtex}
+\fi
 
 \vfill
 \pagebreak
 
+\ifx\sineobmv\undefined
 \cuminitiali{}{temporalia/benedictio-solemn-noscum.gtex}
+\else
+\cuminitiali{}{temporalia/benedictio-solemn-ille.gtex}
+\fi
 
 \vspace{7mm}
 
@@ -501,7 +513,11 @@
 \vfill
 \pagebreak
 
+\ifx\sineobmv\undefined
 \cuminitiali{}{temporalia/benedictio-solemn-ipsavirgo.gtex}
+\else
+\cuminitiali{}{temporalia/benedictio-solemn-divinum.gtex}
+\fi
 
 \vspace{7mm}
 
@@ -518,7 +534,11 @@
 \vfill
 \pagebreak
 
+\ifx\sineobmv\undefined
 \cuminitiali{}{temporalia/benedictio-solemn-pervirginem.gtex}
+\else
+\cuminitiali{}{temporalia/benedictio-solemn-adsocietatem.gtex}
+\fi
 
 \vspace{7mm}
 
@@ -566,9 +586,13 @@
 \cantusSineNeumas
 
 \vspace{0.5cm}
+\ifx\deusinadiutorium\undefined
 \grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \cuminitiali{}{temporalia/deusinadiutorium-communis.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\else
+\deusinadiutorium
+\fi
 
 \vfill
 \pagebreak
@@ -602,6 +626,7 @@
 \vfill
 \pagebreak
 
+\ifx\laudes\undefined
 \ifx\lauda\undefined
 \else
 \pars{Psalmus 1.} \scriptura{Ps. 62, 2.3; \textbf{H142}}
@@ -840,6 +865,9 @@
 \vfill
 \pagebreak
 \fi
+\else
+\laudes
+\fi
 
 \ifx\lectiobrevis\undefined
 \ifx\lauda\undefined
@@ -848,7 +876,7 @@
 
 \noindent Ubi venit plenitúdo témporis, misit Deus Fílium suum, factum ex mulíere, factum sub lege, ut eos, qui sub lege erant, redímeret, ut adoptiónem filiórum reciperémus.
 \fi
-\ifx\laudb\undefined
+\ifx\laudbd\undefined
 \else
 \pars{Lectio Brevis.} \scriptura{Cf. Is. 61, 10}
 
@@ -860,6 +888,12 @@
 
 \noindent Signum magnum appáruit in cælo: múlier amícta sole, et luna sub pédibus eius, et super caput eius coróna stellárum duódecim.
 \fi
+%\ifx\laudd\undefined
+%\else
+%\pars{Lectio Brevis.} \scriptura{2 Petr. 3, 13-15}
+%
+%\noindent Novos cælos et terram novam secúndum promíssum Dómini exspectámus, in quibus iustítia hábitat. Propter quod, caríssimi, hæc exspectántes satágite immaculáti et invioláti ei inveníri in pace et Dómini nostri longanimitátem salútem arbitrámini.
+%\fi
 \else
 \lectiobrevis
 \fi
@@ -1062,7 +1096,11 @@
 
 \vspace{2mm}
 
+\ifx\sineobmv\undefined
 \cuminitiali{VIII}{temporalia/benedicamus-officium-bmv.gtex}
+\else
+\cuminitiali{IV}{temporalia/benedicamus-feria-laudes.gtex}
+\fi
 
 \vspace{1mm}
 
