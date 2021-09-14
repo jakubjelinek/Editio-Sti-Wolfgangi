@@ -42,7 +42,7 @@ MODUS-17xlvii_li = vii-c2
 MODUS-18 = i-D_ ii-D iii-a iv-A
 MODUS-18i = ii-D
 MODUS-20 = viii-G
-MODUS-23 = iv-c iv_-e vii-c viii-G
+MODUS-23 = iv-c iv_-e vii-c vii-d2 viii-G
 MODUS-28 = vii-a
 MODUS-30i = viii-G
 MODUS-30ii = e-a
@@ -100,7 +100,7 @@ MODUS-80 = i-g5
 MODUS-83 = i-g3 viii-G
 MODUS-84 = vi-F viii-G
 MODUS-85 = ii-D
-MODUS-86 = i-g iv-A viii-G
+MODUS-86 = i-g iv-A viii-G viii-C2
 MODUS-88ii_xix = viii-G
 MODUS-88xx_xxx = viii-G
 MODUS-88xxxi_xxxviii = viii-G
@@ -149,7 +149,7 @@ MODUS-145 = iv-E iv_-e
 MODUS-146 = viii-g
 MODUS-147 = vi-F e
 MODUS-148 = i-a
-MODUS-149 = i-a4 i-f i-g ii_-f iv-c iv_-e vi-F vii-a vii-c viii-G viii-G5 viii-g
+MODUS-149 = i-a4 i-f i-g i-d ii_-f iv-c iv_-e vi-F vii-a vii-c viii-G viii-G5 viii-g
 MODUS-150 = viii-G
 MODUS-anna = ii-D
 MODUS-david = i-f
@@ -318,7 +318,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  cordeetanimo cumiucunditate nativitasesthodie nativitasgloriosae \
 			  nativitastua quandonataest regaliexprogenie quiperdideritanimam \
 			  sicutmyrrha quidoctifuerint eccecrucem propterlignum ocruxbenedicta \
-			  crucemsanctam cruxbenedictanitet cruxalmafulget superomnia) \
+			  crucemsanctam cruxbenedictanitet cruxalmafulget superomnia \
+			  adhaesitanimamea aquaemultae attenditeuniversi fasciculusmyrrhae \
+			  mortuussum tuamipsiusanimam mihivivere) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -348,7 +350,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  ArcanaSacrae BernhardusDoctor ChristePastorum-papa SplendorPaternae \
 			  OSempiternaeCuriae RelucensInter HaecFemina FulgentisAuctor-hk \
 			  AnglorumIam FulgetInCaelis BeataDeiGenetrix OSanctaMundiDomina \
-			  LaudeTeCives AEterneSol SalveCruxSancta SignumCrucis) \
+			  LaudeTeCives AEterneSol SalveCruxSancta SignumCrucis \
+			  StabatMater EiaMater) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -357,7 +360,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   fortitudomea confitebimurtibi iustiautem constitueseos \
 			   tibidixitcormeum marianoliiamflere adiuvabiteam christefilidei \
 			   laetaminidomino mirabilisdeus gloriaethonore fortitudomeaetlausmea \
-			   exsultabuntlabiamea adoramustechriste) \
+			   exsultabuntlabiamea adoramustechriste pertesalutem) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
@@ -369,7 +372,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  mirabileminsanctis visitationemvirginis regemmartyrumsimplex \
 			  regemapostolorum stellam fontemsapientiae christumpastorumprincipem \
 			  summumregem regemmartyrum regiquicarneminduit regemapostolorum-iv \
-			  nativitatemvirginis christumregem) \
+			  nativitatemvirginis christumregem salvatoremmundi) \
 	 $(addprefix versus-,memorfui medianocte praevenerunt) \
 	 dominelabiamea tonusprecum dominusnosbenedicat \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
@@ -516,7 +519,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   quiconsolabatur-CROCHU-sinedox desideriummeum-CROCHU-cumdox \
 			   inclinansfaciem-CROCHU-cumdox gloriosaevirginis-CROCHU-sinedox \
 			   hodienataest-CROCHU nativitastua-CROCHU audituauris-CROCHU-sinedox \
-			   isteestquiantedeum-CROCHU-cumdox ocruxbenedicta-CROCHU cruxfidelis-CROCHU) \
+			   isteestquiantedeum-CROCHU-cumdox ocruxbenedicta-CROCHU cruxfidelis-CROCHU \
+			   ovosomnes caligaverunt-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
