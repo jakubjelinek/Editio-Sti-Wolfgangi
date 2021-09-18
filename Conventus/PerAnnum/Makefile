@@ -320,7 +320,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  sicutmyrrha quidoctifuerint eccecrucem propterlignum ocruxbenedicta \
 			  crucemsanctam cruxbenedictanitet cruxalmafulget superomnia \
 			  adhaesitanimamea aquaemultae attenditeuniversi fasciculusmyrrhae \
-			  mortuussum tuamipsiusanimam mihivivere astiteruntiusti) \
+			  mortuussum tuamipsiusanimam mihivivere astiteruntiusti \
+			  tradeturenim) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -521,7 +522,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   hodienataest-CROCHU nativitastua-CROCHU audituauris-CROCHU-sinedox \
 			   isteestquiantedeum-CROCHU-cumdox ocruxbenedicta-CROCHU cruxfidelis-CROCHU \
 			   ovosomnes caligaverunt-cumdox tradideruntcorpora-CROCHU \
-			   beatiquipersecutionem-CROCHU-cumdox) \
+			   beatiquipersecutionem-CROCHU-cumdox vosquitransituriestis-CROCHU \
+			   adonai-CROCHU-cumdox nosaliumdeumnescimus-CROCHU-cumdox \
+			   laudatedominumdeumnostrum-CROCHU) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
@@ -541,7 +544,7 @@ LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PSALMTONES_DIR)/$(2)-auto.gabc; \
 	     [ $(2) = "dir" ] && cd .. && $(SED) -i -e '/(::)$$$$/{/(,) (::)$$$$/!{s/<b>//g;s/<\/b>//g}}' $(3) || :
 FERIAE = ii iii iv v vi
-HEBDOMADAE = i ii iii iv v vi viii ix x xi xii xiii xiv xv xvi xvii xviii xix xx xxi xxii xxiii xxiv
+HEBDOMADAE = i ii iii iv v vi viii ix x xi xii xiii xiv xv xvi xvii xviii xix xx xxi xxii xxiii xxiv xxv
 PDFI = $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE)))
 PDFII = $(foreach H,$(HEBDOMADAE),sabbato-$(H).pdf)
 PDFIII = $(foreach H,$(HEBDOMADAE),dominica-$(H).pdf)
