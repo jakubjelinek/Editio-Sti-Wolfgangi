@@ -321,7 +321,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  crucemsanctam cruxbenedictanitet cruxalmafulget superomnia \
 			  adhaesitanimamea aquaemultae attenditeuniversi fasciculusmyrrhae \
 			  mortuussum tuamipsiusanimam mihivivere astiteruntiusti \
-			  tradeturenim) \
+			  tradeturenim vosquisecutiestisme) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -352,7 +352,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  OSempiternaeCuriae RelucensInter HaecFemina FulgentisAuctor-hk \
 			  AnglorumIam FulgetInCaelis BeataDeiGenetrix OSanctaMundiDomina \
 			  LaudeTeCives AEterneSol SalveCruxSancta SignumCrucis \
-			  StabatMater EiaMater) \
+			  StabatMater EiaMater PraeclaraQua) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -525,7 +525,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   beatiquipersecutionem-CROCHU-cumdox vosquitransituriestis-CROCHU \
 			   adonai-CROCHU-cumdox nosaliumdeumnescimus-CROCHU-cumdox \
 			   laudatedominumdeumnostrum-CROCHU vosquiinturribus-CROCHU \
-			   dominatordomine-CROCHU-cumdox) \
+			   dominatordomine-CROCHU-cumdox istisuntvirisancti) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
