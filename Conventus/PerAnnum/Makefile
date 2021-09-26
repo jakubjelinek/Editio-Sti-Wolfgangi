@@ -322,7 +322,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  adhaesitanimamea aquaemultae attenditeuniversi fasciculusmyrrhae \
 			  mortuussum tuamipsiusanimam mihivivere astiteruntiusti \
 			  tradeturenim vosquisecutiestisme sanctusmauritius sanctalegio \
-			  sanctorumcorpora flagrabatinbeatissimis quienimnonest) \
+			  sanctorumcorpora flagrabatinbeatissimis quienimnonest \
+			  absconditeeleemosynam) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
