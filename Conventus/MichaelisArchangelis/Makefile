@@ -71,7 +71,7 @@ SCORES = $(addprefix versus-,ascendit inconspectu inconspectu-solemnis stetit) \
 	 oratio oratiodominica-mat benedicamus-minor \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) dominelabiamea \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus deus christus ignem evangelica quorum adsocietatem) \
-	 $(addprefix ant-,angeliarchangeli angelidomini archangelemichael ascenditfumus concussumest datasuntei \
+	 $(addprefix ant-,angeliarchangelilaudate angelidomini archangelemichael ascenditfumus concussumest datasuntei \
 			  dumpraeliaretur etomnesangeli factumest gloriosusapparuisti laudemusdominum michaelarchangelus \
 			  michaelgabriel michaelpraepositus princepsgloriosissime stetitangelus) \
 	 $(addprefix resp-,stetitangelus) \

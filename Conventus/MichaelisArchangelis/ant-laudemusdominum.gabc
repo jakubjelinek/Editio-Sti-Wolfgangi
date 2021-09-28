@@ -1,6 +1,10 @@
 transcriber: Isabelle Valloton;
+book: H314;
+mode: 2;
+annotation: ii D;
+nabc-lines: 1;
 %%
 (f3)
-LAu(f)dé(e)mus(fh~) Dó(h)mi(hvGF)num,(f!gwh) *()
-quem(f) lau(e)dant(fh~) án(h)ge(hvGF)li,(f!gwh) (:)
-quem(hf~) ché(h)ru(i)bim(j) et(i) sé(h)ra(i)phim(h) San(hi>)ctus,(h) San(h)ctus,(i) San(g>)ctus(fe) pro(f)clá(hg)mant.(f) (::)
+LAu(f|vihg)dé(e|gr)mus(fh~|ta>) Dó(h|vi)mi(hvGF|ci-hh)num,(f!gwh|qlhhppt1) *()
+quem(f|vihh) lau(e|tahg)dant(fh~|ta>hg) án(h|vihg)ge(hvGF|ci-hi)li,(f!gwh|qlhhppt1) (:)
+quem(hf~|vi>hhlsal2lsi6) ché(h|vihi)ru(i|vihk)bim(j|vihl) et(i|vihi) sé(h|ta)ra(i|vi)phim(h|ta) San(hi>|pe>1)ctus,(h|tahg) San(h|tahg)ctus,(i|vihh) San(g>|vi>hh)ctus(fe|clhi) pro(f|vihi)clá(hg|clhj)mant.(f|tahi) (::)
