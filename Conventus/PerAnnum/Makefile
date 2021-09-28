@@ -326,7 +326,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  tradeturenim vosquisecutiestisme sanctusmauritius sanctalegio \
 			  sanctorumcorpora flagrabatinbeatissimis quienimnonest \
 			  absconditeeleemosynam laudemotus morbidisrefugium \
-			  laudantdominum hicdives concussumest descenditangelus \
+			  laudantdominum hicdives concussumest descenditangelus-praglia \
 			  tempusestutrevertar laudemusdominum angelidomini angeliarchangelilaudate \
 			  factumest) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
