@@ -79,7 +79,7 @@ MODUS-54i = viii-c
 MODUS-54ii = vii-c2
 MODUS-54iii = viii-G
 MODUS-56 = viii-g
-MODUS-62 = i-d3 i-g ii-D iii-e iv-E vii-a viii-c viii-G viii-G5 viii-g5 viii-G6 viii-g6
+MODUS-62 = i-d3 i-g ii-D iii-e iv-E vii-a viii-c viii-g viii-G viii-G5 viii-g5 viii-G6 viii-g6
 MODUS-63 = viii-G
 MODUS-64 = viii-A
 MODUS-65i = vi-F
@@ -177,7 +177,7 @@ MODUS-moysis2i_xii = vi-F
 MODUS-sapientia = v-a
 MODUS-tobiae = vii-a
 MODUS-tobiae2 = ii-D
-MODUS-dan3 = i-d i-f i-g ii_-a iii-a iii-e iv-E v-a vii-a vii-c vii-c2 viii-G per
+MODUS-dan3 = i-d i-f i-g ii_-a iii-a iii-e iv-E v-a v-g vii-a vii-c vii-c2 viii-G per
 MODUS-dan32 = i-f
 MODUS-dan33 = i-g viii-G
 MODUS-benedictus = i-a i-a4 i-a5 i-d i-f i-g i-g5 i-D_ isoll-D isoll-D_ isoll-f isoll-g isoll-d3 isoll-a ii-D ii_-d ii_soll-c iii-a iii-b iiisoll-a iiisoll-a4 iv-E iv-e2 v-a vsoll-g vi-F vi-C visoll-F vii-a vii-c vii-c2 vii-d2 vii-d3 viisoll-a viii-g viii-C viii-G viii-G2 viii-G5 viiisoll-G viiisoll-G5
@@ -328,7 +328,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  absconditeeleemosynam laudemotus morbidisrefugium \
 			  laudantdominum hicdives concussumest descenditangelus-praglia \
 			  tempusestutrevertar laudemusdominum angelidomini angeliarchangelilaudate \
-			  factumest cibaviteumdominus nisiefficiaminisicutparvuli) \
+			  factumest cibaviteumdominus nisiefficiaminisicutparvuli \
+			  omnessuntadministratorii angelietomnesvirtutes angelissuisdeus \
+			  benedictusdeusquimisit) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -361,7 +363,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  LaudeTeCives AEterneSol SalveCruxSancta SignumCrucis \
 			  StabatMater EiaMater PraeclaraQua MartyrumRector AlmaChristi \
 			  DeusTuorum DiesVenit FestivaVos TibiChriste FestivaCanimus \
-			  DulciDepromat AptataVirgo) \
+			  DulciDepromat AptataVirgo AEterneRerumConditor OrbisPatrator) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -371,7 +373,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   tibidixitcormeum marianoliiamflere adiuvabiteam christefilidei \
 			   laetaminidomino mirabilisdeus gloriaethonore fortitudomeaetlausmea \
 			   exsultabuntlabiamea adoramustechriste pertesalutem \
-			   laetabiturjustus stetitangelus) \
+			   laetabiturjustus stetitangelus inconspectuangelorum) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
@@ -541,7 +543,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   confortamerexsanctorum-CROCHU-cumdox danobisdominelocum-CROCHU \
 			   misereredominepopulotuo-CROCHU-cumdox recordaremeidomine-CROCHU \
 			   wencezlausduxgratiae noctesurgensagrum factumest-CROCHU \
-			   annuntiatumest-CROCHU ipsisumdesponsata-CROCHU-cumdox) \
+			   annuntiatumest-CROCHU ipsisumdesponsata-CROCHU-cumdox \
+			   misereredominepopulotuo-CROCHU inconspectugentium-CROCHU \
+			   angelissuismandavit-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \

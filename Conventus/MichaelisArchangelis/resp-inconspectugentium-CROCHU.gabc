@@ -1,10 +1,14 @@
 transcriber: Isabelle Valloton;
+book: H313;
+mode: 1;
+nabc-lines: 1;
 %%
 (c4)
-IN(d!ewf/gf) con(fd~)spéc(fgf)tu(g) gén(ghGF)ti(ix-ghgh/iv)um(h) no(h)lí(g/hvGE)te(f) me(ghffo!e)tu(d)é(d!ewfef)re;(ed) (:)
-vos(d) e(fvfv)nim(dfddc) in(f) cór(f!goh>)di(g)bus(f) ve(ixf!gwhgh/iv)stris(h) a(h)do(g/hvGE/FGhffoe)rá(d!ewfef)te(ed) (;)
-et(ixhi~) ti(h)mé(hggof)te(-fg) Dó(gf/gffs)mi(fvdf!gvFEf)num:(eeo!fv) +(:)
-An(fed~)ge(e)lus(f) e(ghGF)nim(ix-ghg/hi) e(ixhi>)jus(h) vo(h)bís(g/hvGE/FGhffe)cum(d!ewfef) est.(ed) <sp>V/</sp>.(::)
-Ste(h)tit(hg/hggof) án(gh~)ge(g)lus(g) jux(g)ta(g) a(g)ram(g) tem(gh~)pli,(g) (,)
-ha(g)bens(g) thu(g)rí(gh)bu(g)lum(g) áu(gh~)re(g)um(g) in(hf~) ma(gh)nu(gh) su(ixh/iio!h)a,(h) (;) et(hf~) da(gh)ta(h) sunt(h) e(ixhi)i(h) in(hg/hg)cén(hf~)sa(ixf!gwhg/hih) mul(hvGFEfwg/h>)ta.(gf) +(::)
-An(fed~)ge(e)lus.(f) (::)
+IN(d!ewf/gf|qlppt1clhilsc3) con(fd~|vi>)spéc(fgf|tohg)tu(g|vihg) gén(ghGF|pe-1su2)ti(ix-ghgh/iv|///tr-1vihi)um(h|tahh) no(h|vihg)lí(g/hvGE|ta-cihhlsc2)te(f|vihg) me(ghffo!e|```toS2lsl1pi)tu(d|ta)é(d!ewfef|ql!poppt1)re;(ed|cl-) (:)
+vos(d|tahg) e(fvfv|bv-hh)nim(dfddc|toS2lsl2cl-) in(f|vilsal3lse3) cór(f!goh>|sa>)di(g|vihh)bus(f|tahglse6) ve(ixf!gwhgh/iv|///ql!po-1ppt1vihi)stris(h|ta) a(h|vihg)do(g/hvGE/FGhffoe|ta-vihhsu1sut1lsc2clShkpp2pihk)rá(d!ewfef|ta-ql!po)te(ed|cl-) (;)
+et(ixhi~|///ta>) ti(h|ta)mé(hggof|cl!pi)te(-fg|pe) Dó(gf/gffs|pfsthh)mi(fvdf!gvFEf|vi-hhvi-hjpp2su2vihk)num:(eeOf|sa) +(:)
+An(fed~|cl->)ge(e|vi)lus(f|vihh) e(ghGF|pe-1su2)nim(ix-ghg/hi|///topehh) e(ixhi>|///pe>)jus(h|ta) vo(h|vi)bís(g/hvGE/FGhffe|ta-vihhsu1suu1lsc3clShjpp2cl-hj)cum(d!ewfef|ql!poppt1) est.(ed|cl-) <sp>V/</sp>.(::)
+Ste(h|vi)tit(hg/hggof|pfpi) án(gh~|ta>)ge(g|ta)lus(g|ta) jux(g|ta)ta(g|ta) a(g|ta)ram(g|ta) tem(gh~|ta>)pli,(g|ta) (,)
+ha(g|ta)bens(g|ta) thu(g|ta)rí(gh|pe)bu(g|ta)lum(g|ta) áu(gh~|ta>)re(g|ta)um(g|ta) in(hf~|vi>) ma(gh|pe)nu(gh|pe) su(ixh/iio!h|vi-pr-hg)a,(h|ta) (;)
+et(hf~|vi>hg) da(gh|pe)ta(h|vi) sunt(h|vi) e(ixhi|pe)i(h|ta) in(hg/hg|pf)cén(hf~|vi>)sa(ixf!gwhg/hih|qlhg!clhgppt1tohi) mul(hvGFEfwg/h>|vi-hhsu1sut2qlhhvi>hk)ta.(gf|cl-) +(::)
+An(fed~|cl->)ge(e|vi)lus.(f|vihh) (::)
