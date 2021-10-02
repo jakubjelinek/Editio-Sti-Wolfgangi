@@ -680,6 +680,7 @@
 \pagebreak
 
 \ifx\hymnuslaudes\undefined
+\ifx\hiemalis\undefined
 \ifx\laudac\undefined
 \else
 \pars{Hymnus} \scriptura{Ambrosius (\olddag{} 397)}
@@ -694,6 +695,14 @@
 \cuminitiali{IV}{temporalia/hym-EcceIam.gtex}
 \else
 \cuminitiali{IV}{temporalia/hym-EcceIam-praglia.gtex}
+\fi
+\fi
+\else
+\ifx\laudac\undefined
+\else
+\pars{Hymnus} \scriptura{Ambrosius (\olddag{} 397)}
+
+\cuminitiali{I}{temporalia/hym-AEterneRerum-plh.gtex}
 \fi
 \fi
 \else

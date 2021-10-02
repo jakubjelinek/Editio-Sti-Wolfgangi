@@ -330,7 +330,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  tempusestutrevertar laudemusdominum angelidomini angeliarchangelilaudate \
 			  factumest cibaviteumdominus nisiefficiaminisicutparvuli \
 			  omnessuntadministratorii angelietomnesvirtutes angelissuisdeus \
-			  benedictusdeusquimisit) \
+			  benedictusdeusquimisit auditeetintelligite) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -363,7 +363,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  LaudeTeCives AEterneSol SalveCruxSancta SignumCrucis \
 			  StabatMater EiaMater PraeclaraQua MartyrumRector AlmaChristi \
 			  DeusTuorum DiesVenit FestivaVos TibiChriste FestivaCanimus \
-			  DulciDepromat AptataVirgo AEterneRerumConditor OrbisPatrator) \
+			  DulciDepromat AptataVirgo AEterneRerumConditor OrbisPatrator \
+			  AEterneRerum-plh) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -545,7 +546,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   wencezlausduxgratiae noctesurgensagrum factumest-CROCHU \
 			   annuntiatumest-CROCHU ipsisumdesponsata-CROCHU-cumdox \
 			   misereredominepopulotuo-CROCHU inconspectugentium-CROCHU \
-			   angelissuismandavit-CROCHU-cumdox) \
+			   angelissuismandavit-CROCHU-cumdox asolisortu-CROCHU-cumdox \
+			   adextrisestmihi-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
@@ -567,7 +569,7 @@ LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PSALMTONES_DIR)/$(2)-auto.gabc; \
 	     [ $(2) = "dir" ] && cd .. && $(SED) -i -e '/(::)$$$$/{/(,) (::)$$$$/!{s/<b>//g;s/<\/b>//g}}' $(3) || :
 FERIAE = ii iii iv v vi
-HEBDOMADAE = i ii iii iv v vi viii ix x xi xii xiii xiv xv xvi xvii xviii xix xx xxi xxii xxiii xxiv xxv xxvi
+HEBDOMADAE = i ii iii iv v vi viii ix x xi xii xiii xiv xv xvi xvii xviii xix xx xxi xxii xxiii xxiv xxv xxvi xxvii
 PDFI = $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE)))
 PDFII = $(foreach H,$(HEBDOMADAE),sabbato-$(H).pdf)
 PDFIII = $(foreach H,$(HEBDOMADAE),dominica-$(H).pdf)
