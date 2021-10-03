@@ -79,7 +79,7 @@ MODUS-54i = viii-c
 MODUS-54ii = vii-c2
 MODUS-54iii = viii-G
 MODUS-56 = viii-g
-MODUS-62 = i-d3 i-g ii-D iii-e iv-E vii-a viii-c viii-g viii-G viii-G5 viii-g5 viii-G6 viii-g6
+MODUS-62 = i-d3 i-g ii-D iii-e iv-E vii-a viii-c viii-g viii-G viii-G5 viii-g5 viii-G6 viii-g6 viii-C2
 MODUS-63 = viii-G
 MODUS-64 = viii-A
 MODUS-65i = vi-F
@@ -330,7 +330,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  tempusestutrevertar laudemusdominum angelidomini angeliarchangelilaudate \
 			  factumest cibaviteumdominus nisiefficiaminisicutparvuli \
 			  omnessuntadministratorii angelietomnesvirtutes angelissuisdeus \
-			  benedictusdeusquimisit auditeetintelligite) \
+			  benedictusdeusquimisit auditeetintelligite sanctusfranciscus \
+			  omartyrdesiderii laudanslaudare doctusdoctrinaegratia) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -364,7 +365,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  StabatMater EiaMater PraeclaraQua MartyrumRector AlmaChristi \
 			  DeusTuorum DiesVenit FestivaVos TibiChriste FestivaCanimus \
 			  DulciDepromat AptataVirgo AEterneRerumConditor OrbisPatrator \
-			  AEterneRerum-plh) \
+			  AEterneRerum-plh InCaelestiCollegio PlaudeTurba) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -380,7 +381,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,feria-laudes feria-vesperae minor officium-bmv festis-bmv \
 				  dominica-perannum duplex-laudes solemnism-laud \
-				  adlaudes-festis duplexmajus-laudes) \
+				  adlaudes-festis duplexmajus-laudes festis-sanctorum) \
 	 $(addprefix inv-,alleluiachristumdominum regemmagnum dominumquifecit adoremusdominum \
 			  dominumdeum veniteexsultemus jubilemusdeo avemaria christummariaefilium \
 			  mirabileminsanctis visitationemvirginis regemmartyrumsimplex \
@@ -547,7 +548,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   annuntiatumest-CROCHU ipsisumdesponsata-CROCHU-cumdox \
 			   misereredominepopulotuo-CROCHU inconspectugentium-CROCHU \
 			   angelissuismandavit-CROCHU-cumdox asolisortu-CROCHU-cumdox \
-			   adextrisestmihi-CROCHU-cumdox) \
+			   adextrisestmihi-CROCHU-cumdox franciscusutinpublicum) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
@@ -560,7 +561,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 ps103iii-initium-e ps117-initium-viii-G5 ps150-initium-viii-g4 ps149-initium-iv_-E \
 	 benedictus-initium-viisoll-a ps62-initium-iv-E ps44i-initium-iv-d \
 	 benedictus-initium-vii-a-trans dan3-initium-iv-E benedictus-initium-visoll-F \
-	 ps62-initium-i-g ps102xiv_xxii-initium-viii-G4
+	 ps62-initium-i-g ps102xiv_xxii-initium-viii-G4 ps62-initium-ii-D dan3-initium-v-g
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
