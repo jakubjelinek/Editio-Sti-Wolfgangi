@@ -331,7 +331,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  factumest cibaviteumdominus nisiefficiaminisicutparvuli \
 			  omnessuntadministratorii angelietomnesvirtutes angelissuisdeus \
 			  benedictusdeusquimisit auditeetintelligite sanctusfranciscus \
-			  omartyrdesiderii laudanslaudare doctusdoctrinaegratia) \
+			  omartyrdesiderii laudanslaudare doctusdoctrinaegratia \
+			  vosquireliquistisomnia) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -365,7 +366,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  StabatMater EiaMater PraeclaraQua MartyrumRector AlmaChristi \
 			  DeusTuorum DiesVenit FestivaVos TibiChriste FestivaCanimus \
 			  DulciDepromat AptataVirgo AEterneRerumConditor OrbisPatrator \
-			  AEterneRerum-plh InCaelestiCollegio PlaudeTurba ConsorsPaterni-MMMA) \
+			  AEterneRerum-plh InCaelestiCollegio PlaudeTurba ConsorsPaterni-MMMA \
+			  IesuCorona-praglia) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
