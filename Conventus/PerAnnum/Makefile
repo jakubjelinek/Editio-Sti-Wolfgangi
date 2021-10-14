@@ -333,7 +333,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  benedictusdeusquimisit auditeetintelligite sanctusfranciscus \
 			  omartyrdesiderii laudanslaudare doctusdoctrinaegratia \
 			  vosquireliquistisomnia exaltataestvirgomaria infloremater \
-			  sanctamariasuccurre magisterbonequidfaciam quisequiturmenonambulat) \
+			  sanctamariasuccurre magisterbonequidfaciam quisequiturmenonambulat \
+			  obeataanima) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -368,7 +369,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  DeusTuorum DiesVenit FestivaVos TibiChriste FestivaCanimus \
 			  DulciDepromat AptataVirgo AEterneRerumConditor OrbisPatrator \
 			  AEterneRerum-plh InCaelestiCollegio PlaudeTurba ConsorsPaterni-MMMA \
-			  IesuCorona-praglia TeGestientem) \
+			  IesuCorona-praglia TeGestientem RegisSuperni) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -558,7 +559,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   germinaveruntcampi-CROCHU votameadomino-CROCHU \
 			   inillodiesuscipiam-CROCHU-cumdox istisuntduaeolivae-CROCHU \
 			   incircuitutuodomine-CROCHU-cumdox docebitnos-CROCHU \
-			   jerusalemcito-CROCHU laetenturcaeli-CROCHU-cumdox) \
+			   jerusalemcito-CROCHU laetenturcaeli-CROCHU-cumdox \
+			   gentipeccatrici-CROCHU asolisortu-CROCHU) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
