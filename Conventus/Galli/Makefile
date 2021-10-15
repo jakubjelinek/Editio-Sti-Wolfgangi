@@ -88,6 +88,8 @@ LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
 LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,benedictus magnificat dan3 beatitudosapientis jeremiae ecclesiasticus31)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud terant \
+	 $(addprefix ant-,corpusauteminspicientes dehacverovita devulneribusquoque habuitvirdei huiusipseclavem \
+			  superpositoequis) \
 	 $(addprefix versus-,amavit justum magna os custodi orapronobis amavit-simplex os-simplex lex) \
 	 $(addprefix hym-,IsteConfessor IsteConfessor-alt VitaSanctorum TeLucis NuncSancte RectorPotens RerumDeus) \
 	 benedicamus-duplex-laudes benedicamus-duplex-vesperae \
