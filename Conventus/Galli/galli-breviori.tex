@@ -1074,6 +1074,7 @@ per infiníta sǽcula sæculórum.
 \pagebreak
 \fi
 
+\iffalse
 % Te Deum
 
 {
@@ -1088,6 +1089,7 @@ per infiníta sǽcula sæculórum.
 
 \vfill
 \pagebreak
+\fi
 
 \iffalse
 % Evangelium
@@ -1161,12 +1163,21 @@ per infiníta sǽcula sæculórum.
 
 %\trAntI
 
+\iffalse
 \scriptura{Ps. 50}
 
 \initiumpsalmi{temporalia/ps50-initium-vi-F-auto.gtex}
 
 %\psalmusEtTranslatioT{temporalia/ps50-comb.tex}{10cm}
 \input{temporalia/ps50.tex}
+\else
+\scriptura{Ps. 92}
+
+\initiumpsalmi{temporalia/ps92-initium-vi-F-auto.gtex}
+
+\input{temporalia/ps92.tex}
+\fi
+
 \antiphona{}{temporalia/ant1.gtex} % repeat the antiphon - new page
 
 \vfill
@@ -1180,6 +1191,7 @@ per infiníta sǽcula sæculórum.
 
 %\trAntII
 
+\iffalse
 \scriptura{Ps. 117}
 
 \initiumpsalmi{temporalia/ps117-initium-vii-a-auto.gtex}
@@ -1191,6 +1203,13 @@ per infiníta sǽcula sæculórum.
 \pagebreak
 
 \antiphona{}{temporalia/ant2.gtex} % repeat the antiphon - new page
+\else
+\scriptura{Ps. 99}
+
+\initiumpsalmi{temporalia/ps99-initium-vii-a-auto.gtex}
+
+\input{temporalia/ps99.tex} \Abardot{}
+\fi
 
 \vfill
 \pagebreak
@@ -1212,11 +1231,31 @@ per infiníta sǽcula sæculórum.
 %\vspace{-7mm}
 
 %\psalmusEtTranslatioT{temporalia/ps62-comb.tex}{10cm}
+\iffalse
 \input{temporalia/ps62.tex} \Abardot{}
+\else
+\input{temporalia/ps62alt.tex}
+\fi
 %\antiphona{}{temporalia/ant3.gtex} % repeat the antiphon - new page
 
 \vfill
 \pagebreak
+
+\iffalse
+\else
+\scriptura{Ps. 66.}
+
+\initiumpsalmi{temporalia/ps66-initium-i-g-auto.gtex}
+
+%\vspace{-7mm}
+
+\input{temporalia/ps66alt.tex}
+
+\antiphona{}{temporalia/ant3.gtex}
+
+\vfill
+\pagebreak
+\fi
 
 \pars{Psalmus 4.} \scriptura{Vita S. Galli XXXII, 2; \textbf{H326}}
 
@@ -1374,7 +1413,11 @@ per infiníta sǽcula sæculórum.
 % Oratio. %%%
 \pars{Oratio.}
 
+\iffalse
 \cuminitiali{}{temporalia/oratio2.gtex}
+\else
+\cuminitiali{}{temporalia/oratio5.gtex}
+\fi
 %\trOrationis
 
 \vfill
