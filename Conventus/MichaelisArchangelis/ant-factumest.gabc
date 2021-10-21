@@ -1,8 +1,11 @@
 transcriber: Isabelle Valloton;
+book: H317;
+annotation: viii g2;
+nabc-lines: 1;
 %%
 (c4)
-FAc(f)tum(fg) est(g) *()
-si(h!iwj)lén(j)ti(i)um(jkj) in(hg~) cæ(h)lo,(g) (,)
-dum(g>) dra(fe)co(f) com(d)mít(ef)te(gh)ret(h) bel(g)lum:(g) (;)
-et(gjih~) Mi(j)cha(jk)el(kko) pu(i)gná(j)vit(h) cum(g) e(hi/ggo!f)o,(f) (,)
-et(f) fe(g)cit(h) vi(i)ctó(h)ri(g)am,(gfd~) al(f)le(fg)lú(g)ia.(g) (::)
+FAc(f|ta)tum(fg|pe) est(g|vi-) *()
+si(h!iwj|vi-qlhi)lén(j|vihh)ti(i|tahh)um(jkj|toS3hklss3) in(hg~|vi>) cæ(h|vihh)lo,(g|tahhlse6) (,)
+dum(g>|vi>hg) dra(fe|cl-hi)co(f|vihh) com(d|ta)mít(ef|peS)te(gh|pe)ret(h|vi) bel(g|tahh)lum:(g|tahh) (;)
+et(gjih~|to>hi) Mi(j|vihi)cha(jk|pehk)el(kko|vs-hk) pu(i|ta)gná(j|vihh)vit(h|vi) cum(g|ta) e(hi/ggo!f|pe-1pr-hh)o,(f|ta) (,)
+et(f|vi) fe(g|vi-hh)cit(h|vihh) vi(i|vihg)ctó(h|vihi)ri(g|ta)am,(gfd~|cl>) al(f|vihg)le(fg|pehg)lú(g|vi)ia.(g|vi) (::)
