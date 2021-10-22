@@ -479,6 +479,7 @@
 \matversus
 \fi
 
+\ifx\sineabsolutio\undefined
 \vspace{5mm}
 
 \sineinitiali{temporalia/oratiodominica-mat.gtex}
@@ -501,13 +502,16 @@
 \else
 \cuminitiali{}{temporalia/benedictio-solemn-ille.gtex}
 \fi
+\fi
 
 \vspace{7mm}
 
 \lectioi
 
+\ifx\sineabsolutio\undefined
 \noindent \Vbardot{} Tu autem, Dómine, miserére nobis.
 \noindent \Rbardot{} Deo grátias.
+\fi
 
 \vfill
 \pagebreak
@@ -517,18 +521,22 @@
 \vfill
 \pagebreak
 
+\ifx\sineabsolutio\undefined
 \ifx\sineobmv\undefined
 \cuminitiali{}{temporalia/benedictio-solemn-ipsavirgo.gtex}
 \else
 \cuminitiali{}{temporalia/benedictio-solemn-divinum.gtex}
+\fi
 \fi
 
 \vspace{7mm}
 
 \lectioii
 
+\ifx\sineabsolutio\undefined
 \noindent \Vbardot{} Tu autem, Dómine, miserére nobis.
 \noindent \Rbardot{} Deo grátias.
+\fi
 
 \vfill
 \pagebreak
@@ -538,18 +546,22 @@
 \vfill
 \pagebreak
 
+\ifx\sineabsolutio\undefined
 \ifx\sineobmv\undefined
 \cuminitiali{}{temporalia/benedictio-solemn-pervirginem.gtex}
 \else
 \cuminitiali{}{temporalia/benedictio-solemn-adsocietatem.gtex}
+\fi
 \fi
 
 \vspace{7mm}
 
 \lectioiii
 
+\ifx\sineabsolutio\undefined
 \noindent \Vbardot{} Tu autem, Dómine, miserére nobis.
 \noindent \Rbardot{} Deo grátias.
+\fi
 
 \vfill
 \pagebreak
@@ -1100,10 +1112,14 @@
 
 \vspace{2mm}
 
+\ifx\benedicamuslaudes\undefined
 \ifx\sineobmv\undefined
 \cuminitiali{VIII}{temporalia/benedicamus-officium-bmv.gtex}
 \else
 \cuminitiali{IV}{temporalia/benedicamus-feria-laudes.gtex}
+\fi
+\else
+\benedicamuslaudes
 \fi
 
 \vspace{1mm}

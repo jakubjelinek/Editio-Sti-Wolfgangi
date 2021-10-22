@@ -394,7 +394,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,feria-laudes feria-vesperae minor officium-bmv festis-bmv \
 				  dominica-perannum duplex-laudes solemnism-laud \
-				  adlaudes-festis duplexmajus-laudes festis-sanctorum) \
+				  adlaudes-festis duplexmajus-laudes festis-sanctorum \
+				  feria-advequad) \
 	 $(addprefix inv-,alleluiachristumdominum regemmagnum dominumquifecit adoremusdominum \
 			  dominumdeum veniteexsultemus jubilemusdeo avemaria christummariaefilium \
 			  mirabileminsanctis visitationemvirginis regemmartyrumsimplex \
@@ -402,7 +403,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  summumregem regemmartyrum regiquicarneminduit regemapostolorum-iv \
 			  nativitatemvirginis christumregem salvatoremmundi regemangelorum \
 			  regemvirginum dominumloquenteminevangelio regemcuiomnia) \
-	 $(addprefix versus-,memorfui medianocte praevenerunt aporta-alt) \
+	 $(addprefix versus-,memorfui medianocte praevenerunt aporta-alt misericordiaetuae) \
 	 dominelabiamea dominelabiamea-praglia tonusprecum dominusnosbenedicat \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
