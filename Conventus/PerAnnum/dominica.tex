@@ -167,6 +167,7 @@
 \pagebreak
 
 \ifx\hymnusmatutinum\undefined
+\ifx\hiemalis\undefined
 \ifx\matua\undefined
 \else
 \pars{Hymnus.}
@@ -192,6 +193,16 @@
 \antiphona{VII}{temporalia/hym-SalveDies.gtex}
 
 \scriptura{Non dicitur \textnormal{Amen} in fine.}
+\fi
+\else
+\ifx\matub\undefined
+\else
+\pars{Hymnus.}
+
+\vspace{-5mm}
+
+\antiphona{II}{temporalia/hym-MediaeNoctis.gtex}
+\fi
 \fi
 \else
 \hymnusmatutinum
@@ -680,7 +691,7 @@
 \pagebreak
 
 \ifx\hymnuslaudes\undefined
-\ifx\hiemalis\undefined
+\ifx\hiemalislaudes\undefined
 \ifx\laudac\undefined
 \else
 \pars{Hymnus} \scriptura{Ambrosius (\olddag{} 397)}
