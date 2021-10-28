@@ -377,7 +377,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  DulciDepromat AptataVirgo AEterneRerumConditor OrbisPatrator \
 			  AEterneRerum-plh InCaelestiCollegio PlaudeTurba ConsorsPaterni-MMMA \
 			  IesuCorona-praglia TeGestientem RegisSuperni IamNunc-Luca OVirBeate \
-			  ChristeRex QuiVivis MediaeNoctis) \
+			  ChristeRex QuiVivis MediaeNoctis CommuneVos) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
