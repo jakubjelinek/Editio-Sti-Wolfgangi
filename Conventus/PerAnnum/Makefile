@@ -349,7 +349,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  hymnusomnibus sigloriamdignitatum tolliteportas nonesthic \
 			  viditjacobscalam domusmea benefundataest lapidespretiosi \
 			  manesurgensjacob martinusadhuc beatusmartinus egosignocrucis \
-			  dixeruntdiscipuli oculisacmanibus martinusabrahae obeatumvirum) \
+			  dixeruntdiscipuli oculisacmanibus martinusabrahae obeatumvirum \
+			  abarboreautemfici) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -387,7 +388,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  IesuCorona-praglia TeGestientem RegisSuperni IamNunc-Luca OVirBeate \
 			  ChristeRex QuiVivis MediaeNoctis CommuneVos ChristeCaelorum IesuSalvator \
 			  QuiVivis-pluribus UrbsBeata UrbsJerusalem AngularisFundamentum \
-			  InclitusPastor-doctorum IsteConfessorColentes MartinePar) \
+			  InclitusPastor-doctorum IsteConfessorColentes MartinePar \
+			  PrimoDierum-kempten) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -602,7 +604,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   verefamulusdei-CROCHU-cumdox hicestmartinus-CROCHU \
 			   dominesiadhuc-CROCHU martinusabrahae-CROCHU venitmichael-CROCHU-cumdox \
 			   intemporeillo-CROCHU-sinedox misitdominusangelumsuum-CROCHU \
-			   aspiciebam-CROCHU-cumdox) \
+			   aspiciebam-CROCHU-cumdox supermurostuos-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
@@ -625,7 +627,7 @@ LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PSALMTONES_DIR)/$(2)-auto.gabc; \
 	     [ $(2) = "dir" ] && cd .. && $(SED) -i -e '/(::)$$$$/{/(,) (::)$$$$/!{s/<b>//g;s/<\/b>//g}}' $(3) || :
 FERIAE = ii iii iv v vi
-HEBDOMADAE = i ii iii iv v vi viii ix x xi xii xiii xiv xv xvi xvii xviii xix xx xxi xxii xxiii xxiv xxv xxvi xxvii xxviii xxix xxx xxxi xxxii
+HEBDOMADAE = i ii iii iv v vi viii ix x xi xii xiii xiv xv xvi xvii xviii xix xx xxi xxii xxiii xxiv xxv xxvi xxvii xxviii xxix xxx xxxi xxxii xxxiii
 PDFI = $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE)))
 PDFII = $(foreach H,$(HEBDOMADAE),sabbato-$(H).pdf)
 PDFIII = $(foreach H,$(HEBDOMADAE),dominica-$(H).pdf)
