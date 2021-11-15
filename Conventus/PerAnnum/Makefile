@@ -350,7 +350,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  viditjacobscalam domusmea benefundataest lapidespretiosi \
 			  manesurgensjacob martinusadhuc beatusmartinus egosignocrucis \
 			  dixeruntdiscipuli oculisacmanibus martinusabrahae obeatumvirum \
-			  abarboreautemfici) \
+			  abarboreautemfici adiurovosfiliae) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -389,7 +389,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  ChristeRex QuiVivis MediaeNoctis CommuneVos ChristeCaelorum IesuSalvator \
 			  QuiVivis-pluribus UrbsBeata UrbsJerusalem AngularisFundamentum \
 			  InclitusPastor-doctorum IsteConfessorColentes MartinePar \
-			  PrimoDierum-kempten) \
+			  PrimoDierum-kempten AdSacrosVirgo MiraNocturnis) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -604,7 +604,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   verefamulusdei-CROCHU-cumdox hicestmartinus-CROCHU \
 			   dominesiadhuc-CROCHU martinusabrahae-CROCHU venitmichael-CROCHU-cumdox \
 			   intemporeillo-CROCHU-sinedox misitdominusangelumsuum-CROCHU \
-			   aspiciebam-CROCHU-cumdox supermurostuos-CROCHU-cumdox) \
+			   aspiciebam-CROCHU-cumdox supermurostuos-CROCHU-cumdox \
+			   induitmedominus-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
