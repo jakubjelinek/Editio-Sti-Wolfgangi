@@ -1,32 +1,31 @@
-﻿name: hy--Primo-dierum-Kempten;
-user-notes: ;
-commentary: LH + MMMA I p. 250;
-annotation: iv;
-centering-scheme: english;
-%fontsize: 12;
-%spacing: vichi;
-%font: OFLSortsMillGoudy;
-%width: 4.5;
-%height: 11;
+name: Primo dierum;
+book: Liber Hymnarius; MMMA I p. 250;
+mode: 4;
 %%
-(c4) Pri(d)mo(e) di(f)é(g)rum(fg) óm(f)ni(e)um,(f) (,)
+(c4)
+PRi(d)mo(e) di(f)é(g)rum(fg) óm(f)ni(e)um,(f) (,)
 quo(d) mun(e)dus(f) ex(g)stat(fg) cón(f)di(e)tus(ded) (;)
 vel(e) quo(d) re(e)súr(gh)gens(h) cón(h)di(g)tor(f) (,)
 nos,(g) mor(h)te(h) vi(g)cta,(ef) lí(g)be(f)rat,(e) (::)
+
 Pul(d)sis(e) pro(f)cul(g) tor(fg)pó(f)ri(e)bus,(f) (,)
 sur(d)gá(e)mus(f) om(g)nes(fg) ó(f)ci(e)us,(ded) (;)
 et(e) no(d)cte(e) quæ(gh)rá(h)mus(h) pi(g)um,(f) (,)
 si(g)cut(h) Pro(h)phé(g)tam(ef) nó(g)vi(f)mus,(e) (::)
+
 No(d)stras(e) pre(f)ces(g) ut(fg) áu(f)di(e)at(f) (,)
 su(d)ám(e)que(f) dex(g)tram(fg) pór(f)ri(e)gat,(ded) (;)
 et(e) hic(d) pi(e)á(gh)tos(h) sór(h)di(g)bus(f) (,)
 red(g)dat(h) po(h)ló(g)rum(ef) sé(g)di(f)bus,(e) (::)
+
 Ut,(d) qui(e)que(f) sa(g)cra(fg)tís(f)si(e)mo(f) (,)
 hu(d)ius(e) di(f)é(g)i(fg) tém(f)po(e)re(ded) (;)
 ho(e)ris(d) qui(e)é(gh)tis(h) psál(h)li(g)mus,(f) (,)
 do(g)nis(h) be(h)á(g)tis(ef) mú(g)ne(f)ret.(e) (::)
+
 De(d)o(e) Pa(f)tri(g) sit(fg) gló(f)ri(e)a(f) (,)
 e(d)iús(e)que(f) so(g)li(fg) Fí(f)li(e)o(ded) (;)
 cum(e) Spí(d)ri(e)tu(gh) Pa(h)rá(h)cli(g)to,(f) (,)
 in(g) sem(h)pi(h)tér(g)na(ef) sǽ(g)cu(f)la.(e) (::)
+
 A(efe)men.(de..) (::)
