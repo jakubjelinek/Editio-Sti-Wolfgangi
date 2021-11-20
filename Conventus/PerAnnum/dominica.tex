@@ -157,11 +157,15 @@
 
 \vspace{2mm}
 
+\ifx\invitatorium\undefined
 \pars{Invitatorium.} \scriptura{Ps. 94, 1; Psalmus 94}
 
 \vspace{-6mm}
 
 \antiphona{E}{temporalia/inv-veniteexsultemus.gtex}
+\else
+\invitatorium
+\fi
 
 \vfill
 \pagebreak
@@ -280,10 +284,14 @@
 \nocturnoi
 \fi
 
+\ifx\matversusi\undefined
 \pars{Versus.} \scriptura{Ps. 118, 55}
 
 % Versus. %%%
 \sineinitiali{temporalia/versus-memorfui.gtex}
+\else
+\matversusi
+\fi
 
 \vspace{5mm}
 
@@ -408,10 +416,14 @@
 \nocturnoii
 \fi
 
+\ifx\matversusii\undefined
 \pars{Versus.} \scriptura{Ps. 118, 62}
 
 % Versus. %%%
 \sineinitiali{temporalia/versus-medianocte.gtex}
+\else
+\matversusii
+\fi
 
 \vspace{5mm}
 
@@ -538,10 +550,14 @@
 
 \ifx\lectiovii\undefined
 \else
+\ifx\matversusiii\undefined
 \pars{Versus.} \scriptura{Ps. 118, 148}
 
 % Versus. %%%
 \sineinitiali{temporalia/versus-praevenerunt.gtex}
+\else
+\matversusiii
+\fi
 
 \vspace{5mm}
 
