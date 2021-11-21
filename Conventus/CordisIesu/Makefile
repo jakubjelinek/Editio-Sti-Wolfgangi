@@ -87,7 +87,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo miserere salveregina-simplex subtuum 
 			  factasuntenimhaec filipraebe ignemvenimittere incaritateperpetua \
 			  misericorsetmiserator stansjesus suavijugo unusmilitum \
 			  veniteadmeomnesqui quisititveniat \
-			  gloriaethonore meditatiocordismei elevamini confitebuntur \
+			  gloriaethonorecoronasti meditatiocordismei elevamini confitebuntur \
 			  sanctificavittabernaculum sicutlaetantium annuntiate \
 			  laetamini videruntomnes cognoveruntomnes quaemulier quisexvobishomo \
 			  apudteestfonsvitae dumanxiareturcorinpetra indiemagno \
