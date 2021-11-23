@@ -398,7 +398,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  QuiVivis-pluribus UrbsBeata UrbsJerusalem AngularisFundamentum \
 			  InclitusPastor-doctorum IsteConfessorColentes MartinePar \
 			  PrimoDierum-kempten AdSacrosVirgo MiraNocturnis NobilemChristi \
-			  IamBone IesuRex AEternaImago OCastitatisSignifer) \
+			  IamBone IesuRex AEternaImago OCastitatisSignifer DiesIrae QuidSum) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
