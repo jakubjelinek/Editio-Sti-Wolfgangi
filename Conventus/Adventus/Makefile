@@ -20,339 +20,249 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 1 2 3 4 5 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 10 11 13 14 16 17i 17ii 17iii 19 20 23 29 32 34i 34ii 34iii 35 36i_xi 36xii_xxix 36iii 37ii_v 37vi_xiii 37xiv_xxiii 38 38i 38ii 42 43i 43ii 43iii 44i 44ii 45 47 48i 48ii 49i_vi 49vii_xv 49xvi_xxiii 50 51 56 61 62 63 64 65i 65ii 66 67i 67ii 67iii 68i 68ii 68iii 68ii_xiii 68xiv_xxii 77i_xvi 77iii 77xxxii_xxxix 84 87 89 90 91 92 99 100 101ii_xii 101xiii_xxiii 101iii 102i 102ii 102iii 104i 104ii 104iii 105i 105ii 105iii 106i 106ii 106iii 107 109 110 111 112 113 114 115 116 117 120 121 122 128 129 130 131 132 133 134 135 136 137 138i 138ii 139 140 141 142 143i 143ii 143i_x 144i 144ii 145 146 147 148 149 150
+PSALMS = 1 2 3 4 5 6 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 10 11 13 14 15 16 17i 17ii 17iii 17ii_vii 17viii_xx 17xxi_xxx 17xxxi_xxxv 17xxxvi_xlvi 17xlvii_li 18 18i 19 20 23 28 29 30i 30ii 30iii 32 34i 34ii 34iii 35 36i_xi 36xii_xxix 36iii 37ii_v 37vi_xiii 37xiv_xxiii 38 38i 38ii 39 39i 39ii 40 41 42 43i 43ii 43iii 44i 44ii 45 46 47 48i 48ii 49i_vi 49vii_xv 49xvi_xxiii 50 51 54i 54ii 54iii 56 61 62 63 64 65i 65ii 66 67i 67ii 67iii 68i 68ii 68iii 68ii_xiii 68xiv_xxii 71i 71ii 72i 72ii 72iii 76 77i_xvi 77iii 77xxxii_xxxix 79 80 83 84 85 86 87 88ii_xix 88xx_xxx 88xxxi_xxxviii 88xxxix_xlvi 88xlvii_liii 89 90 91 91i 91ii 92 95 96 97 98 99 100 101ii_xii 101xiii_xxiii 101iii 102i 102ii 102iii 102i_xiv 102xiv_xxii 103i 103ii 103iii 104i 104ii 104iii 105i 105ii 105iii 106i 106ii 106iii 107 109 110 111 112 113 114 115 116 117 118xix 120 121 122 128 129 130 131 131i 131ii 134 134i 135 135i 135ii 135iii 136 137 138i 138ii 139 140 141 142 143i 143ii 143i_x 144i 144ii 144x_xiii 144xiv_xxi 145 146 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
-MODUS-1-I = i-g
-MODUS-2-I = ii-D
-MODUS-3-I = iii-a
-MODUS-8-I = iv-E
-MODUS-9ii_xi-I = v-a
-MODUS-9xii_xxi-I = vi-F
-MODUS-9xxii_xxxii-I = vii-d
-MODUS-9xxxiii_xxxix-I = viii-g
-MODUS-10-I = iv-E
-MODUS-92-I = viii-G
-MODUS-99-I = viii-G2
-MODUS-62-I = v-a
-MODUS-66-I = i-g
-MODUS-dan3 = vii-c
-MODUS-148-I = iv-A
-MODUS-149-I = iv-A
-MODUS-150-I = iv-A
-MODUS-109-I = viii-G
-MODUS-110-I = viii-G2
-MODUS-111-I = v-a
-MODUS-112-I = iv-A
-MODUS-4-I = viii-G
-MODUS-90-I = viii-G
-MODUS-133-I = viii-G
-MODUS-nuncdimittis = iii-a
-MODUS-142-I = iii-a
-MODUS-146-I = viii-c
-MODUS-13-II = ii-D
-MODUS-14-II = iv_-e
-MODUS-16-II = vii-c
-MODUS-17i-II = vi-F
-MODUS-17ii-II = iv_-e
-MODUS-17iii-II = vii-c2
-MODUS-19-II = viii-G
-MODUS-20-II = viii-G
-MODUS-29-II = viii-G
-MODUS-50-II = vi-F
-MODUS-5-II = viii-A
-MODUS-35-II = viii-A
-MODUS-isaiae = viii-G
-MODUS-148-II = i-a
-MODUS-149-II = i-a
-MODUS-150-II = i-a
-MODUS-benedictus-II = vi-F
-MODUS-113-II = per
-MODUS-114-II = i-g2
-MODUS-115-II = viii-A
-MODUS-116-II = viii-A
-MODUS-128-II = ii-D
-MODUS-magnificat-II = viii-G
-MODUS-9xxii_xxxii-III = ii-D
-MODUS-9xxxiii_xxxix-III = iv_-e
-MODUS-11-III = viii-G
-MODUS-36i_xi-III = vi-F
-MODUS-36xii_xxix-III = ii-D
-MODUS-36iii-III = vi-F
-MODUS-23-III = iv_-e
-MODUS-ezechiae = vii-a
-MODUS-tobiae = vii-a
-MODUS-32-III = iv-E
-MODUS-benedictus-III = vii-a
-MODUS-129-III = viii-A
-MODUS-130-III = e
-MODUS-131-III = e
-MODUS-132-III = i-a
-MODUS-magnificat-III = v-a
-MODUS-67i-III = vii-a
-MODUS-67ii-III = i-f
-MODUS-67iii-III = d-g2
-MODUS-84-III = viii-G
-MODUS-isaiae3 = vii-d
-MODUS-66-III = ii-D
-MODUS-148-III = ii-D
-MODUS-149-III = ii-D
-MODUS-150-III = ii-D
-MODUS-50-III = ii_-B
-MODUS-5-III = viii-C
-MODUS-35-III = viii-G
-MODUS-113-III = ii_-B
-MODUS-114-III = viii-C
-MODUS-115-III = viii-G
-MODUS-116-III = viii-G
-MODUS-128-III = ii_-a
-MODUS-101ii_xii-III = i-a
-MODUS-101xiii_xxiii-III = viii-G
-MODUS-101iii-III = i-g
-MODUS-100-III = ii_-a
-MODUS-dan32 = vii-d
-MODUS-143i_x-III = ii_-a
-MODUS-44i-IV = vi-F
-MODUS-44ii-IV = i-g
-MODUS-45-IV = e
-MODUS-47-IV = iv-a
-MODUS-48i-IV = vii-c
-MODUS-48ii-IV = e
-MODUS-49i_vi-IV = viii-A
-MODUS-49vii_xv-IV = e
-MODUS-49xvi_xxiii-IV = viii-c
-MODUS-50-IV = vii-a
-MODUS-63-IV = ii-D
-MODUS-64-IV = viii-A
-MODUS-anna = i-g2
-MODUS-148-IV = ii-D
-MODUS-149-IV = ii-D
-MODUS-150-IV = ii-D
-MODUS-benedictus-IV = i-g5
-MODUS-134-IV = iii-g
-MODUS-135-IV = iii-g
-MODUS-136-IV = viii-G
-MODUS-137-IV = v-a
-MODUS-magnificat-IV = viii-G2
-MODUS-129-IV = ii_-a
-MODUS-130-IV = viii-g
-MODUS-131-IV = ii_-a
-MODUS-132-IV = i-g
-MODUS-38i-IV = iv-E
-MODUS-38ii-IV = vii-c
-MODUS-51-IV = iv-e
-MODUS-102i-IV = viii-C
-MODUS-102ii-IV = i-d
-MODUS-102iii-IV = iii-g
-MODUS-107-IV = i-g3
-MODUS-isaiae4 = ii_-B
-MODUS-145-IV = ii-D
-MODUS-61-V = iii-g
-MODUS-65i-V = e
-MODUS-65ii-V = i-g
-MODUS-67i-V = vii-a
-MODUS-67ii-V = ii-D
-MODUS-67iii-V = d-g2
-MODUS-68i-V = viii-c
-MODUS-68ii-V = viii-c
-MODUS-68iii-V = viii-G
-MODUS-50-V = viii-G2
-MODUS-87-V = v-a
-MODUS-89-V = vi-F
-MODUS-moysis = e
-MODUS-148-V = vi-F
-MODUS-149-V = vi-F
-MODUS-150-V = vi-F
-MODUS-benedictus-V = vii-a
-MODUS-138i-V = iii-g
-MODUS-138ii-V = iii-g
-MODUS-139-V = iv-g
-MODUS-140-V = viii-A
-MODUS-magnificat-V = vii-c
-MODUS-134-V = i-g3
-MODUS-135-V = ii-D
-MODUS-136-V = ii_-B
-MODUS-137-V = v-a
-MODUS-34i-VI = iv-g
-MODUS-34ii-VI = viii-G
-MODUS-34iii-VI = viii-G
-MODUS-37ii_v-VI = viii-C
-MODUS-37vi_xiii-VI = ii_-a
-MODUS-37xiv_xxiii-VI = ii-A
-MODUS-50-VI = viii-G
-MODUS-isaiae2 = v-a
+MODUS-1 = i-g ii-D viii-G
+MODUS-2 = i-a4 i-f ii-D iii-g vii-a viii-G viii-G5
+MODUS-3 = iii-a vi-F viii-G5
+MODUS-4 = viii-G
+MODUS-5 = viii-A viii-C
+MODUS-6 = iv-E viii-G
+MODUS-8 = i-f i-g ii_-a iv-E vi-F viii-G viii-G2
+MODUS-9ii_xi = v-a viii-G
+MODUS-9xii_xxi = i-g3 vi-F
+MODUS-9xxii_xxxii = ii-D vii-d
+MODUS-9xxxiii_xxxix = iv_-e viii-g
+MODUS-10 = i-d ii_-f iv-E viii-G viii-G5
+MODUS-11 = viii-G
+MODUS-13 = ii-D
+MODUS-14 = iv_-e vi-F
+MODUS-15 = iv_-e
+MODUS-16 = iv-e2 vii-c viii-G6
+MODUS-17i = vi-F
+MODUS-17ii = iv_-e
+MODUS-17iii = vii-c2
+MODUS-17ii_vii = vi-F
+MODUS-17viii_xx = i-g
+MODUS-17xxi_xxx = iv_-e
+MODUS-17xxxi_xxxv = viii-G
+MODUS-17xxxvi_xlvi = vii-c
+MODUS-17xlvii_li = vii-c2
+MODUS-18 = i-D_ ii-D iii-a iv-A
+MODUS-18i = ii-D
+MODUS-19 = viii-G
+MODUS-20 = vii-a viii-G
+MODUS-23 = iii-a iv-c iv_-e v-a vii-c vii-d2 viii-G
+MODUS-28 = vii-a
+MODUS-29 = viii-G
+MODUS-30i = viii-G
+MODUS-30ii = e-a
+MODUS-30iii = ii-D
+MODUS-32 = iv-E
+MODUS-34i = iv-g
+MODUS-34ii = viii-G
+MODUS-34iii = viii-G
+MODUS-35 = ii-D viii-A viii-G
+MODUS-36i_xi = vi-F
+MODUS-36xii_xxix = ii-D
+MODUS-36iii = vi-F
+MODUS-37ii_v = viii-C
+MODUS-37vi_xiii = ii_-a
+MODUS-37xiv_xxiii = ii-A
+MODUS-38i = iv-E
+MODUS-38ii = vii-c
+MODUS-39 = vii-c2
+MODUS-39i = vii-c2
+MODUS-39ii = ii-D
+MODUS-40 = ii-D
+MODUS-41 = ii-D
+MODUS-42 = vi-F
+MODUS-43i = viii-G
+MODUS-43ii = ii_-a viii-a viii-C
+MODUS-43iii = i-g3 ii-D ii_-a
+MODUS-44i = iv-d iv-e2 vi-F vii-d
+MODUS-44ii = i-g ii_-B iv-E vii-d
+MODUS-45 = ii-D vi-C e
+MODUS-46 = i-a viii-c
+MODUS-47 = iv-a
+MODUS-48i = vii-c
+MODUS-48ii = e
+MODUS-49i_vi = i-g2 viii-A
+MODUS-49vii_xv = viii-G e
+MODUS-49xvi_xxiii = vii-c viii-c e
+MODUS-50 = i-a2 i-f i-g i-g3 ii_-B ii_-a iv-E vi-F vii-a viii-G viii-G2
+MODUS-51 = iv_-e
+MODUS-54i = viii-c
+MODUS-54ii = vii-c2
+MODUS-54iii = viii-G
+MODUS-56 = viii-g
+MODUS-61 = iii-g
+MODUS-62 = i-d i-d3 i-f i-g ii-D iii-e iv-d iv-E iv-e2 v-a vii-a vii-c2 viii-c viii-g viii-G viii-G5 viii-g5 viii-G6 viii-g6 viii-C2
+MODUS-63 = ii-D viii-G
+MODUS-64 = viii-A
+MODUS-65i = vi-F e
+MODUS-65ii = i-g ii_-a
+MODUS-66 = i-g ii-D ii_-B vi-F vii-b e
+MODUS-67i = vii-a
+MODUS-67ii = i-f ii-D
+MODUS-67iii = d-g2
+MODUS-68i = viii-c
+MODUS-68ii = viii-c
+MODUS-68ii_xiii = viii-c
+MODUS-68xiv_xxii = viii-c
+MODUS-68iii = viii-G
+MODUS-71i = viii-G6
+MODUS-71ii = ii_-a
+MODUS-72i = viii-c
+MODUS-72ii = ii-D
+MODUS-72iii = iii-b
+MODUS-76 = viii-G
+MODUS-77iii = ii-D
+MODUS-77i_xvi = i-g3
+MODUS-77xxxii_xxxix = viii-G
+MODUS-79 = ii_-B
+MODUS-80 = i-g5
+MODUS-83 = i-g3 vii-c viii-G
+MODUS-84 = vi-F viii-G
+MODUS-85 = ii-D
+MODUS-86 = i-g iv-A vii-a viii-G viii-C2
+MODUS-87 = i-g3 v-a
+MODUS-88ii_xix = viii-G
+MODUS-88xx_xxx = viii-G
+MODUS-88xxxi_xxxviii = viii-G
+MODUS-88xxxix_xlvi = vii-a
+MODUS-88xlvii_liii = vi-F
+MODUS-89 = i-g ii_-B vi-F
+MODUS-90 = viii-G
+MODUS-91 = viii-g e
+MODUS-91i = vii-a viii-G2
+MODUS-91ii = iii-a vii-c2
+MODUS-92 = i-g i-a viii-G
+MODUS-95 = i-d ii-D
+MODUS-96 = iii-a2 vi-F viii-g
+MODUS-97 = e
+MODUS-98 = iv-e2 e
+MODUS-99 = i-f ii_-B iv_-e vii-a vii-d viii-G2 e
+MODUS-100 = ii_-a viii-G
+MODUS-101ii_xii = i-a
+MODUS-101xiii_xxiii = viii-G
+MODUS-101iii = i-g
+MODUS-102i = viii-C
+MODUS-102ii = i-d
+MODUS-102iii = iii-g
+MODUS-102i_xiv = vii-a
+MODUS-102xiv_xxii = viii-G
+MODUS-103i = iii-a
+MODUS-103ii = ii-D
+MODUS-103iii = e
+MODUS-104i = d-g
+MODUS-104ii = viii-a
+MODUS-104iii = iv-E
+MODUS-105i = e
+MODUS-105ii = viii-G
+MODUS-105iii = vii-a
+MODUS-106i = iv_-e
+MODUS-106ii = c-c2
+MODUS-106iii = iii-a2
+MODUS-107 = i-g3 viii-G
+MODUS-109 = i-a i-g viii-G
+MODUS-110 = i-f vii-a vii-d viii-G2
+MODUS-111 = i-g v-a vii-a viii-G
+MODUS-112 = ii-D iii-a iv-A
+MODUS-113 = ii_-B per
+MODUS-114 = i-g2 viii-C
+MODUS-115 = viii-A viii-G
+MODUS-116 = ii_-B viii-A viii-G e
+MODUS-117 = viii-G viii-G5
+MODUS-118xix = vii-a e
+MODUS-120 = vii-b
+MODUS-121 = v-g
+MODUS-122 = ii_-B
+MODUS-128 = ii_-a ii-D
+MODUS-129 = ii_-a viii-A
+MODUS-130 = viii-g e
+MODUS-131 = ii_-a e
+MODUS-131i = e
+MODUS-131ii = vii-c
+MODUS-132 = i-a i-g
+MODUS-133 = viii-G
+MODUS-134 = i-g3 iii-g
+MODUS-134i = i-a
+MODUS-135 = ii-D iii-g
+MODUS-135i = iiir-g
+MODUS-135ii = iiir-g
+MODUS-135iii = c-c2
+MODUS-136 = ii_-B viii-G
+MODUS-137 = v-a
+MODUS-138i = i-f iii-g
+MODUS-138ii = i-g3 iii-g
+MODUS-139 = ii_-B iv-g
+MODUS-140 = i-g3 viii-A
+MODUS-141 = ii-D viii-A
+MODUS-142 = ii_-c iii-a viii-G
+MODUS-143i = ii_-c vi-F
+MODUS-143ii = ii_-B vi-F
+MODUS-143i_x = ii_-a vi-F
+MODUS-144i = ii_-B viii-A viii-G
+MODUS-144ii = i-a i-g viii-G
+MODUS-144x_xiii = vii-c
+MODUS-144xiv_xxi = viii-a
+MODUS-145 = i-f ii-D iv-E iv_-e vii-a vii-d viii-G2
+MODUS-146 = i-g v-a vii-a viii-c viii-g viii-G
+MODUS-147 = ii-D iii-a iv-A vi-F e
+MODUS-148 = i-a i-g3 ii-D ii_-a iii-a iv-A iv-E vi-F
+MODUS-149 = i-a i-a4 i-f i-g i-g3 i-d ii-D ii_-a ii_-f iii-a iii-e iv-c iv-A iv-E iv_-e v-a vi-F vii-a vii-c viii-G viii-G5 viii-g
+MODUS-150 = i-a i-g3 ii-D ii_-a iii-a iv-A iv-E vi-F viii-G
+MODUS-anna = i-g2 ii-D
+MODUS-david = i-f viii-G6 viii-g2
+MODUS-ecclesiastici = iii-a
+MODUS-ecclesiasticus36 = d-g
+MODUS-ezechiae = ii-D vii-a e
 MODUS-habacuc = iv_-e
-MODUS-99-VI = iv_-e
-MODUS-benedictus-VI = viii-G
-MODUS-141-VI = viii-A
-MODUS-143i-VI = vi-F
-MODUS-143ii-VI = vi-F
-MODUS-144i-VI = viii-A
-MODUS-magnificat-VI = ii-D
-MODUS-77i_xvi-VI = i-g3
-MODUS-77iii-VI = ii-D
-MODUS-77xxxii_xxxix-VI = viii-G
-MODUS-147-VI = e
-MODUS-68ii_xiii-VI = viii-c
-MODUS-68xiv_xxii-VI = viii-c
-MODUS-68iii-VI = viii-G
-MODUS-jeremiae2 = ii-D
-MODUS-104i-VII = d-g
-MODUS-104ii-VII = viii-a
-MODUS-104iii-VII = iv-E
-MODUS-105i-VII = e
-MODUS-105ii-VII = viii-G
-MODUS-105iii-VII = vii-a
-MODUS-106i-VII = iv_-e
-MODUS-106ii-VII = c-c2
-MODUS-106iii-VII = iii-a2
-MODUS-50-VII = iv-E
-MODUS-142-VII = viii-G
-MODUS-moysis2i = vi-F
-MODUS-moysis2ii = vi-F
-MODUS-148-VII = iv-E
-MODUS-149-VII = iv-E
-MODUS-150-VII = iv-E
-MODUS-benedictus-VII = viii-G
-MODUS-144ii-VII = viii-G
-MODUS-145-VII = viii-G2
-MODUS-146-VII = v-a
-MODUS-147-VII = iv-A
-MODUS-91-VII = e
+MODUS-isaiae = viii-G viii-G6 viii-g2
+MODUS-isaiae2 = v-a
+MODUS-isaiae3 = vii-d
+MODUS-isaiae4 = ii_-B vii-c viii-G6 viii-g2
+MODUS-isaiae5 = i-g iv-E iv_-e
+MODUS-isaiae7 = d-g
+MODUS-isaiae8 = viii-g d-g
+MODUS-isaiae9 = ii-D
+MODUS-isaiae10 = vi-F
+MODUS-isaiae11 = viii-g
+MODUS-iudith2 = ii_-d
+MODUS-jeremiae2 = ii-D viii-G
+MODUS-jeremiae3 = iv_-e
+MODUS-moysis = v-g e
+MODUS-moysis2i = vi-F viii-G
+MODUS-moysis2ii = ii_-B vi-F
 MODUS-moysis2i_xii = vi-F
-MODUS-8-VII = i-g
-MODUS-99-VII = ii_-B
-MODUS-141-VII = ii-D
-MODUS-143i-VII = ii_-c
-MODUS-143ii-VII = ii_-B
-MODUS-144i-VII = ii_-B
-MODUS-43i-VII = viii-G
-MODUS-43ii-VII = viii-a
-MODUS-43iii-VII = ii_-a
-MODUS-120-VII = vii-b
-MODUS-121-VII = v-g
-MODUS-122-VII = ii_-B
-MODUS-isaiae5 = i-g
-MODUS-144ii-VIII = i-g
-MODUS-145-VIII = vii-d
-MODUS-146-VIII = vii-a
-MODUS-147-VIII = iii-a
-MODUS-92-VIII = i-g
-MODUS-99-VIII = vii-d
-MODUS-62-VIII = vii-a
-MODUS-66-VIII = vi-F
-MODUS-148-VIII = iii-a
-MODUS-149-VIII = iii-a
-MODUS-150-VIII = iii-a
-MODUS-109-VIII = i-g
-MODUS-110-VIII = vii-d
-MODUS-111-VIII = vii-a
-MODUS-112-VIII = iii-a
-MODUS-50-VIII = i-f
-MODUS-87-VIII = i-g3
-MODUS-89-VIII = ii_-B
-MODUS-138i-VIII = i-f
-MODUS-138ii-VIII = i-g3
-MODUS-139-VIII = ii_-B
-MODUS-140-VIII = i-g3
-MODUS-144ii-IX = i-a
-MODUS-145-IX = vii-a
-MODUS-146-IX = viii-G
-MODUS-147-IX = ii-D
-MODUS-92-IX = i-a
-MODUS-99-IX = vii-a
-MODUS-62-IX = viii-G
-MODUS-66-IX = vii-b
-MODUS-148-IX = ii_-a
-MODUS-149-IX = ii_-a
-MODUS-150-IX = ii_-a
-MODUS-109-IX = i-a
-MODUS-110-IX = vii-a
-MODUS-111-IX = viii-G
-MODUS-112-IX = ii-D
-MODUS-50-IX = ii_-a
-MODUS-142-IX = ii_-c
-MODUS-144ii-X = i-g
-MODUS-145-X = i-f
-MODUS-146-X = i-g
-MODUS-92-X = i-g
-MODUS-99-X = i-f
-MODUS-62-X = i-g
-MODUS-66-X = ii_-B
-MODUS-109-X = i-g
-MODUS-110-X = i-f
-MODUS-111-X = i-g
-MODUS-benedictus-VIII = viiisoll-G
-MODUS-benedictus-IX = isoll-f
-MODUS-benedictus-X = isoll-g
-MODUS-benedictus-XI = iisoll-D
-MODUS-benedictus-XII = isoll-D
-MODUS-benedictus-XIII = ivsoll-E
-MODUS-benedictus-XIV = viisoll-a
-MODUS-benedictus-XV = isoll-D_
-MODUS-benedictus-XVI = viisoll-d
-MODUS-benedictus-XVII = visoll-C
-MODUS-benedictus-XVIII = i-f
-MODUS-benedictus-XIX = viii-g
-MODUS-benedictus-XX = ii_-B
-MODUS-benedictus-XXI = i-a2
-MODUS-benedictus-XXII = iv-D
-MODUS-benedictus-XXIII = i-D
-MODUS-benedictus-XXIV = viii-G2
-MODUS-benedictus-XXV = i-g
-MODUS-benedictus-XXVI = vii-b
-MODUS-benedictus-XXVII = ii-D
-MODUS-benedictus-XXVIII = i-D2
-MODUS-benedictus-XXIX = iv-e
-MODUS-benedictus-XXX = viii-c
-MODUS-magnificat-VIII = isoll-f
-MODUS-magnificat-IX = viisoll-d
-MODUS-magnificat-X = viiisoll-G
-MODUS-magnificat-XI = isoll-D
-MODUS-magnificat-XII = viisoll-a
-MODUS-magnificat-XIII = ivsoll-E2
-MODUS-magnificat-XIV = viiisoll-G2
-MODUS-magnificat-XV = viiisoll-C
-MODUS-magnificat-XVI = visoll-F
-MODUS-magnificat-XVII = isoll-g
-MODUS-magnificat-XVIII = ivsoll-d
-MODUS-magnificat-XIX = visoll-C
-MODUS-magnificat-XX = isoll-D2
-MODUS-magnificat-XXI = viiisoll-g
-MODUS-magnificat-XXII = iiisoll-a
-MODUS-magnificat-XXIII = isoll-a
-MODUS-magnificat-XXIV = ivsoll-E
-MODUS-magnificat-XXV = iv-A
-MODUS-magnificat-XXVI = ii_-B
-MODUS-magnificat-XXVII = ii_-c
-MODUS-magnificat-XXVIII = iv-D
-MODUS-magnificat-XXIX = vii-b
-MODUS-magnificat-XXX = ii_soll-f
-MODUS-magnificat-XXXI = i-f
-MODUS-magnificat-XXXII = iisoll-D
-CANTICIS = isaiae ezechiae tobiae anna moysis habacuc moysis2i moysis2ii moysis2i_xii nuncdimittis dan3 dan32 isaiae2 isaiae3 isaiae4 isaiae5 jeremiae2
-NUMSI = I II III IV V VI VII VIII IX X
-NUMSII = II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI XXVII XXVIII XXIX XXX
-NUMSIII = II III IV V VI VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI XXVII XXVIII XXIX XXX XXXI XXXII
-PSALMSALT = $(foreach V,$(NUMSI),$(addsuffix -$(V),$(PSALMS)))
-BENEDICTUS = $(foreach B,$(NUMSII),benedictus-$(B))
-MAGNIFICAT = $(foreach M,$(NUMSIII),magnificat-$(M))
-MODUSLIST = $(sort $(foreach P,$(PSALMSALT) $(MAGNIFICAT) $(CANTICIS) $(BENEDICTUS),$(MODUS-$(P)))) v-g
-CZPSALMOPTS = --accents 0:0 --title-pattern " " --no-paragraph
-CZPSALMS = $(patsubst %,$(TMP_DIR)/ps%-boh.tex,$(PSALMS))
-ALLCZPSALMS = $(CZPSALMS) $(patsubst %,$(TMP_DIR)/%-boh.tex,magnificat benedictus $(CANTICIS))
-ALLCOMBPSALMS = $(patsubst %,$(TMP_DIR)/%-comb.tex,$(addprefix ps,$(PSALMSALT)) $(MAGNIFICAT) \
-						   $(CANTICIS) $(BENEDICTUS))
+MODUS-sapientia = v-a
+MODUS-tobiae = vii-a
+MODUS-tobiae2 = ii-D
+MODUS-dan3 = i-d i-f i-g ii_-a iii-a iii-e iv-E iv-e2 v-a v-g vii-a vii-c vii-c2 vii-d2 viii-G viii-G5 viii-c per
+MODUS-dan32 = i-f vii-d
+MODUS-dan33 = i-g viii-G
+MODUS-benedictus = i-a i-a2 i-a4 i-a5 i-d i-f i-g i-g5 i-D i-D2 i-D_ isoll-D isoll-D_ isoll-f isoll-g isoll-d3 isoll-a ii-D iisoll-D ii_-B ii_-d ii_soll-c iii-a iii-b iiisoll-a iiisoll-a4 iv-d iv-D iv-E iv-e iv-e2 ivsoll-E v-a vsoll-g vsoll-a vsoll-a2 vi-F vi-C visoll-C visoll-F vii-a vii-b vii-c vii-c2 vii-d2 vii-d3 viisoll-a viisoll-c viisoll-d viii-c viii-g viii-C viii-G viii-G2 viii-G5 viiisoll-G viiisoll-G5 viiisoll-g
+MODUS-magnificat = i-f isoll-a isoll-D isoll-D2 isoll-f isoll-g ii-D iisoll-D ii_-B ii_-c ii_soll-f iiisoll-a iv-A iv-D ivsoll-d ivsoll-E ivsoll-E2 v-a visoll-C visoll-F vii-b vii-c viisoll-a viisoll-d viii-G viii-G2 viiisoll-C viiisoll-g viiisoll-G viiisoll-G2 
+MODUS-nuncdimittis = iii-a
+CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae7 isaiae8 isaiae9 isaiae10 isaiae11 habacuc jeremiae2 jeremiae3 moysis moysis2i moysis2ii moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david dan3 dan32 dan33 iudith2 ecclesiasticus36 nuncdimittis
+MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
 	   && $(SED) -i -e 's/\*/\\grestar{}/g' $@
-TONUS = $(TONUS-$(MODUS-$*))
+EMPTY :=
+SPACE := $(EMPTY) $(EMPTY)
+TONUS-WORDS = $(subst -, ,$(basename $(notdir $*)))
+TONUS = $(TONUS-$(subst $(SPACE),-,$(filter-out $(firstword $(TONUS-WORDS)),$(TONUS-WORDS))))
 GLORIAPATRI = $(PSALMS_DIR)/gloriapatri.pslm
 APPENDGLORIAPATRI = --append "`cat $(GLORIAPATRI)`"
 LAPSALMOPTS_COMMON = --accents-style bold --flex-underline --skip-verses 1
 LAPSALMOPTSACC = --accents $(word 1,$(TONUS)):$(word 3,$(TONUS)) \
 		 --preparatory-syllables $(word 2,$(TONUS)):$(word 4,$(TONUS))
 LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
-LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMSALT))
-LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT) $(BENEDICTUS) $(CANTICIS))
+LAPSALMS = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-$(M).tex))
+LAPSALMSEXTRA = $(foreach C,benedictus magnificat $(CANTICIS),$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/$(C)-$(M).tex))
+LAPSALMSSINEDOX = $(foreach P,62 115 148 149,$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-$(M)-sinedox.tex)) \
+		  $(foreach C,dan3,$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/$(C)-$(M)-sinedox.tex))
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  alleluia1 alleluia2 ampliuslavame atimore aviroiniquo \
@@ -508,16 +418,10 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 	 ps91-initium-e ps66-initium-e isaiae3-initium-vii-d benedictus-initium-iv-e \
 	 ps101ii_xii-initium-i-a ps102iii-initium-iii-g
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = $(TMP_DIR)/dan3if.tex $(TMP_DIR)/dan3va.tex $(TMP_DIR)/dan3-initium-i-f-auto.gtex \
-	    $(TMP_DIR)/dan3-initium-v-a-auto.gtex $(TMP_DIR)/moysis-initium-v-g-auto.gtex \
-	    $(TMP_DIR)/ps148-initium-i-g3-auto.gtex $(TMP_DIR)/ps149-initium-i-g3-auto.gtex \
-	    $(TMP_DIR)/ps150-initium-i-g3-auto.gtex $(TMP_DIR)/ps50-initium-i-g3-auto.gtex \
-	    $(TMP_DIR)/moysis2i-initium-viii-G-auto.gtex $(TMP_DIR)/moysis2ii-initium-ii_-B-auto.gtex \
-	    $(TMP_DIR)/moysis2iviiiG.tex $(TMP_DIR)/moysis2iiii_B.tex
-LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach V,$(NUMSI),$(if $(MODUS-$(P)-$(V)),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P)-$(V))-auto.gabc))) \
-		   $(foreach V,$(NUMSII),$(if $(MODUS-benedictus-$(V)),$(TMP_DIR)/benedictus-initium-$(MODUS-benedictus-$(V))-auto.gabc)) \
-		   $(foreach V,$(NUMSIII),$(if $(MODUS-magnificat-$(V)),$(TMP_DIR)/magnificat-initium-$(MODUS-magnificat-$(V)).gabc)) \
-		   $(foreach P,$(CANTICIS),$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
+OTHERDEPS = 
+LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
+		   $(foreach C,benedictus $(CANTICIS),$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/$(C)-initium-$(M)-auto.gabc)) \
+		   $(foreach M,$(MODUS-magnificat),$(TMP_DIR)/magnificat-initium-$(M).gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PSALMTONES_DIR)/$(2)-auto.gabc; \
 	     [ $(2) = "dir" ] && cd .. && $(SED) -i -e '/(::)$$$$/{/(,) (::)$$$$/!{s/<b>//g;s/<\/b>//g}}' $(3) || :
@@ -528,88 +432,15 @@ endef
 iter-left := $(MODUSLIST)
 include $(iter)
 define iter-doit
+$(i): $(PSALMS_DIR)/$(firstword $(subst -, ,$(basename $(notdir $(i))))).pslm; $$(GENPSALM) && $$(SED) -i -e 'y/Jj/Ii/' $$@
+endef
+iter-left := $(ALLLAPSALMS)
+include $(iter)
+define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
 iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../InNativitateBMV/cantus/amon33 ../CorpusChristi ../InNativitateBMV/cantus/nrom02 ../PostPentecosten
 include $(iter)
-$(TMP_DIR)/%-I.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-II.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-III.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-IV.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-V.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-VI.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-VII.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-VIII.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-IX.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-X.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XI.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XII.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XIII.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XIV.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XV.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XVI.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XVII.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XVIII.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XIX.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XX.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXI.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXII.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXIII.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXIV.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXV.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXVI.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXVII.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXVIII.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXIX.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXX.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXXI.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXXII.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXXIII.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXXIV.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXXV.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXXVI.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXXVII.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXXVIII.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXXIX.pslm: $(PSALMS_DIR)/%.pslm ; $(CP) -a $< $@
-$(TMP_DIR)/%-I-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-II-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-III-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-IV-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-V-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-VI-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-VII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-VIII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-IX-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-X-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XI-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XIII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XIV-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XV-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XVI-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XVII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XVIII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XIX-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XX-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXI-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXIII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXIV-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXV-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXVI-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXVII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXVIII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXIX-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXX-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXXI-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXXII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXXIII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXXIV-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXXV-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXXVI-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXXVII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXXVIII-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
-$(TMP_DIR)/%-XXXIX-boh.tex: $(TMP_DIR)/%-boh.tex ; $(CP) -a $< $@
 
 FERIAE = ii iii iv v vi
 HEBDOMADAE = i ii iii iv
@@ -633,56 +464,12 @@ $(patsubst %.pdf,%.tex,$(i)): dominica.tex hebdomada$(patsubst dominica-%.pdf,%,
 endef
 iter-left := $(PDFIII)
 include $(iter)
-$(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
-$(foreach V,$(NUMSI),$(patsubst %,$(TMP_DIR)/%-$(V).tex,ps115 ps148 ps149)): PSALMOPTS = $(LAPSALMOPTS)
-$(patsubst %,$(TMP_DIR)/%.tex,dan3 dan3if dan3va): PSALMOPTS = $(LAPSALMOPTS)
-$(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
-$(TMP_DIR)/dan3if.tex: TONUS = 2 0 1 2
-$(TMP_DIR)/dan3va.tex: TONUS = 1 0 2 0
-$(TMP_DIR)/moysis2iviiiG.tex: TONUS = 1 0 1 2
-$(TMP_DIR)/moysis2iiii_B.tex: TONUS = 1 2 1 3
-$(TMP_DIR)/ps101ii_xii-III.tex: TONUS = 2 0 1 0
-$(CZPSALMS) $(patsubst %,$(TMP_DIR)/%-boh.tex,benedictus $(filter-out dan3 nuncdimittis,$(CANTICIS))): $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/Hejcl1922/%.pslm
-	$(GENPSALM)
-$(TMP_DIR)/dan3-boh.tex: $(CZECH_PSALMS_DIR)/Pavlik/dan3.pslm
-	$(GENPSALM)
-$(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT)): PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --flex-underline --skip-verses 2 $(LAPSALMOPTSACC)
-$(TMP_DIR)/nuncdimittis-boh.tex $(TMP_DIR)/magnificat-boh.tex: $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/DMC199x/%.pslm
-	$(GENPSALM)
-$(LAPSALMS): $(TMP_DIR)/ps%.tex: $(TMP_DIR)/ps%.pslm
-	$(GENPSALM)
-	$(SED) -i -e 'y/Jj/Ii/' $@
-$(patsubst %,$(TMP_DIR)/%.tex,$(CANTICIS)): \
-$(TMP_DIR)/%.tex: $(PSALMS_DIR)/%.pslm
-	$(GENPSALM)
-	$(SED) -i -e 'y/Jj/Ii/' $@
-$(patsubst %,$(TMP_DIR)/%.tex,$(MAGNIFICAT)): \
-$(TMP_DIR)/%.tex: $(PSALMS_DIR)/magnificat.pslm
-	$(GENPSALM)
-	$(SED) -i -e 'y/Jj/Ii/' $@
-$(patsubst %,$(TMP_DIR)/%.tex,$(BENEDICTUS)): \
-$(TMP_DIR)/%.tex: $(PSALMS_DIR)/benedictus.pslm
-	$(GENPSALM)
-	$(SED) -i -e 'y/Jj/Ii/' $@
-$(TMP_DIR)/dan3if.tex $(TMP_DIR)/dan3va.tex: \
-$(TMP_DIR)/%.tex: $(PSALMS_DIR)/dan3.pslm
-	$(GENPSALM)
-	$(SED) -i -e 'y/Jj/Ii/' $@
-$(TMP_DIR)/moysis2iviiiG.tex: \
-$(TMP_DIR)/%.tex: $(PSALMS_DIR)/moysis2i.pslm
-	$(GENPSALM)
-	$(SED) -i -e 'y/Jj/Ii/' $@
-$(TMP_DIR)/moysis2iiii_B.tex: \
-$(TMP_DIR)/%.tex: $(PSALMS_DIR)/moysis2ii.pslm
-	$(GENPSALM)
-	$(SED) -i -e 'y/Jj/Ii/' $@
-$(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
-	$(GENPSCOMB)
-$(patsubst %,$(TMP_DIR)/%-boh.tex,$(MAGNIFICAT)): $(TMP_DIR)/%-boh.tex: $(TMP_DIR)/magnificat-boh.tex
-	$(CP) -a $< $@
-$(patsubst %,$(TMP_DIR)/%-comb.tex,$(MAGNIFICAT)): PSSKIP = 2
+$(LAPSALMSSINEDOX): $(TMP_DIR)/%-sinedox.tex: $(TMP_DIR)/%.tex
+	sed -e '/^Gló.*ri.*a.*Pa.*tri.*et.*Fí.*li.*o/d;/^et.*Spi.*rí.*tu.*i.*Sanc.*to/d;/^Sicut.*erat.*in.*princí.*pi.*o,.*et.*nunc.*et.*sem.*per,/d;/^et.*in.*sǽcu.*la.*sæ.*cu.*ló.*rum.*A.*men/d' < $^ > $@
+$(filter-out $(TMP_DIR)/magnificat%,$(ALLLAPSALMS)): PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
+$(foreach M,$(MODUS-magnificat),$(TMP_DIR)/magnificat-$(M).tex): PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --flex-underline --skip-verses 2 $(LAPSALMOPTSACC)
 $(PDF): %.pdf: %.tex conventuscommune.tex translationes_cs.tex \
-	       $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
+	       $(ALLLAPSALMS) $(LAPSALMSSINEDOX) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
 clean:
