@@ -1,20 +1,15 @@
-﻿name: an--Montesetcolles-PRAGLIA;
-user-notes: Praglia I p. 30;
-commentary: Is 55,12 ;
+name: Montes et colles;
+book: Antiphonale Monasticum I, Praglia, p. 30; H24;
+commentary: Is 55,12;
 annotation: i f;
-centering-scheme: english;
-%fontsize: 12;
-%spacing: vichi;
-%font: OFLSortsMillGoudy;
-%width: 4.5;
-%height: 11;
-%nabc-lines: 1;
+mode: 1;
+nabc-lines: 1;
 %%
 (c4)
-Mon(dc~|vi>)tes(f|vihh) et(g|vihi) col(f_h|peS)les(h|vihg)
+MOn(dc~|vi>)tes(f|vihh) et(g|vihi) col(f_h|peS)les(h|vihg) *()
 can(h|``vihglssta1)tá(h|vihi)bunt(g|vihg) co(e|ta)ram(f|vi) De(g|vihh)o(fe|cl) lau(d|ta)dem,(d.|ta-) (;)
 et(d|``talse4) óm(f|vi)ni(fg|pehg)a(g_|vi-hh) lig(h>|vi>hg)na(g|ta) sil(g>|vi>)vá(f_g|peS)rum(g_|vi-)
 plau(hj~|ta>lsl3)dent(ji~|vi>) má(g|ta)ni(iwj|qlhg)bus:(h.|vi-) (:)
 quó(f|ta)ni(gh|pe)am(hg>__|cl>lst3) vé(e|tahg)ni(fg|pehg)et(gf__|cl-hg) Dó(d|tahg)mi(f|vi)nus(e|ta) Do(f|vi)mi(d|tahg)ná(ddo|vs)tor(c_|tahg)
 in(d|``vilssta1) reg(ddo>|vs>)num(c|ta) æ(e|vihg)tér(ge~|vi>hg)num,(f_g|peS) (,)
-al(e>|vi>)le(c|tahg)lú(d|vihg)ia,(g|vihh) al(e|tahg)le(fe|cl)lú(d.|tahg)ia.(d.|tahg) (::) E(h) u(h) o(g) u(f) a(gh) e(gf) (::)
+al(e>|vi>)le(c|tahg)lú(d|vihg)ia,(g|vihh) al(e|tahg)le(fe|cl)lú(d.|tahg)ia.(d.|tahg) (::)
