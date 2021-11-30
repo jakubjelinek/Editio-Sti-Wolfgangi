@@ -342,7 +342,11 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  veniteascendamus levaierusalemoculos benedictusdominusdeusmeus \
 			  benedixistidomine cantaboetpsalmum sacrificiumdeo \
 			  dignumsibi egosipatibulum beatusandreas unusexduobus \
-			  dilexitandream dixitandreas salvecruxpretiosa quaeritedominum) \
+			  dilexitandream dixitandreas salvecruxpretiosa quaeritedominum \
+			  beatiquiambulant defructuventris deusinsancto deusquiglorificatur \
+			  dominemagnuses exsultavitcormeum factusestadiutormeus \
+			  inclinadomineaurem induitmedominus paratumcormeum potensinterra \
+			  quiamirabiliafecit rexomnisterrae ierusalemrespice) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
