@@ -355,7 +355,11 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  recordaremei tuamdomineexcita aedificansierusalem \
 			  avertanturretrorsum benedixitfiliistuis cogitaveruntimpii \
 			  cormundumcrea iustusnonconturbabitur nosnosderelinquas \
-			  servitedominoinlaetitia euntesinmundumdoceteomnes) \
+			  servitedominoinlaetitia euntesinmundumdoceteomnes \
+			  adtedeluce attenditepopulemeus confiteminidomino \
+			  dabovobiscor exoreinfantium haecrequiesmea inmatutinis \
+			  laudatedominumomnes mecumsitdomine veritasdomini \
+			  laushonorbenedictiobarbaram) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -365,10 +369,11 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  VitaSanctorum QuemTerra OGloriosaFemina QuemTerra-alt \
 			  ConditorAlme VerbumSupernum VoxClara AmbrosiDoctor \
 			  MagnisProphetae VeniRedemptor VerbumSalutis VoxClara-aromi \
-			  OSempiternaeCuriae CaptatorOlim) \
+			  OSempiternaeCuriae CaptatorOlim BarbaraVirgo) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus ostendenobis veni superte \
-			   christe crastinadie christefilideivivi-advdom constitueseos) \
+			   christe crastinadie christefilideivivi-advdom constitueseos \
+			   fortitudomeaetlausmea) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(addprefix capitulum-,Benedictio BenedictusDeus NoxPraecessit OAltitudo AbInitio \
 				tuautem FratresHora GaudeteInDomino HoraEst IpseDeus \
@@ -445,7 +450,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 	 benedictus-initium-viisoll-d tonusprecum dominusnosbenedicat ps147-initium-e \
 	 ps91-initium-e ps66-initium-e isaiae3-initium-vii-d benedictus-initium-iv-e \
 	 ps101ii_xii-initium-i-a ps102iii-initium-iii-g ps17xxxvi_xlvi-initium-vii-c-trans \
-	 ps47-initium-iv-a
+	 ps47-initium-iv-a ps116-initium-e
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
