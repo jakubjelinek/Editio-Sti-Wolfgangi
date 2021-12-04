@@ -97,7 +97,7 @@ MODUS-54ii = vii-c2
 MODUS-54iii = viii-G
 MODUS-56 = viii-g
 MODUS-61 = iii-g
-MODUS-62 = i-d i-d3 i-f i-g ii-D iii-e iv-d iv-E iv-e2 v-a vii-a vii-c2 viii-c viii-g viii-G viii-G5 viii-g5 viii-G6 viii-g6 viii-C2
+MODUS-62 = i-d i-d3 i-f i-g ii-D iii-e iv-d iv-E iv-e2 v-a vii-a vii-c2 vii-d viii-c viii-g viii-G viii-G5 viii-g5 viii-G6 viii-g6 viii-C2
 MODUS-63 = ii-D vii-c viii-G
 MODUS-64 = viii-A
 MODUS-65i = vi-F e
@@ -152,9 +152,9 @@ MODUS-102ii = i-d v-a
 MODUS-102iii = iii-g vii-c
 MODUS-102i_xiv = vii-a
 MODUS-102xiv_xxii = viii-G
-MODUS-103i = iii-a
-MODUS-103ii = ii-D
-MODUS-103iii = e
+MODUS-103i = i-g iii-a
+MODUS-103ii = i-f ii-D
+MODUS-103iii = vii-a e
 MODUS-104i = d-g
 MODUS-104ii = viii-a
 MODUS-104iii = iv-E
@@ -243,7 +243,7 @@ MODUS-tobiae2 = ii-D
 MODUS-dan3 = i-d i-f i-g ii_-a iii-a iii-e iv-E iv-e2 v-a v-g vii-a vii-c vii-c2 vii-d2 viii-g viii-G viii-G5 viii-c per
 MODUS-dan32 = i-f vii-d
 MODUS-dan33 = i-g viii-G
-MODUS-benedictus = i-a i-a2 i-a4 i-a5 i-d i-f i-g i-g5 i-D i-D2 i-D_ isoll-D isoll-D_ isoll-f isoll-g isoll-d3 isoll-a ii-D iisoll-D ii_-B ii_-d ii_soll-c iii-a iii-b iiisoll-a iiisoll-a4 iv-d iv-D iv-E iv-e iv-e2 ivsoll-E v-a vsoll-g vsoll-a vsoll-a2 vi-F vi-C visoll-C visoll-F vii-a vii-b vii-c vii-c2 vii-d2 vii-d3 viisoll-a viisoll-c viisoll-d viii-c viii-g viii-C viii-G viii-G2 viii-G5 viiisoll-G viiisoll-G5 viiisoll-g
+MODUS-benedictus = i-a i-a2 i-a4 i-a5 i-d i-f i-g i-g5 i-D i-D2 i-D_ isoll-D isoll-D_ isoll-f isoll-g isoll-d3 isoll-a ii-D iisoll-D ii_-B ii_-d ii_soll-c iii-a iii-b iiisoll-a iiisoll-a4 iv-d iv-D iv-E iv-e iv-e2 ivsoll-E v-a vsoll-g vsoll-a vsoll-a2 vi-F vi-C visoll-C visoll-F vii-a vii-b vii-c vii-c2 vii-d2 vii-d3 viisoll-a viisoll-c viisoll-d viii-c viii-g viii-C viii-G viii-G2 viii-G5 viiisoll-G viiisoll-G5 viiisoll-g viiisoll-g5
 MODUS-magnificat = i-f i-a4 isoll-a isoll-D isoll-D2 isoll-f isoll-g ii-D iisoll-D ii_-B ii_-c ii_soll-f iiisoll-a iv-A iv-D ivsoll-d ivsoll-E ivsoll-E2 v-a visoll-C visoll-F vii-b vii-c viisoll-a viisoll-d viii-G viii-G2 viiisoll-C viiisoll-g viiisoll-G viiisoll-G2 
 MODUS-nuncdimittis = iii-a
 CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae7 isaiae8 isaiae9 isaiae10 isaiae11 isaiae13 habacuc jeremiae2 jeremiae3 moysis moysis2i moysis2ii moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david dan3 dan32 dan33 iudith2 ecclesiasticus36 nuncdimittis
@@ -359,7 +359,9 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  adtedeluce attenditepopulemeus confiteminidomino \
 			  dabovobiscor exoreinfantium haecrequiesmea inmatutinis \
 			  laudatedominumomnes mecumsitdomine veritasdomini \
-			  laushonorbenedictiobarbaram) \
+			  laushonorbenedictiobarbaram ecceapparebitdominus \
+			  eccedominusnostercum ecceinnubibuscaeli urbsfortitudinisnostrae \
+			  factumestverbum) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -442,7 +444,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			   videbuntgentesiustumtuum-CROCHU-cumdox videbuntgentesiustumtuum-CROCHU \
 			   annuntiatumest-CROCHU-cumdox deillaocculta-CROCHU-cumdox \
 			   sanctificaminifilii-CROCHU sanctificaminihodie-CROCHU \
-			   doctorbonusetamicusdei-CROCHU obonacrux-CROCHU salvecrux-CROCHU-cumdox) \
+			   doctorbonusetamicusdei-CROCHU obonacrux-CROCHU salvecrux-CROCHU-cumdox \
+			   civitasjerusalem-CROCHU sicutmater-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_alma_redemptoris_mater an_alma_redemptoris_mater-simplex benedictio-noctemquietam \
