@@ -244,7 +244,7 @@ MODUS-dan3 = i-d i-f i-g ii_-a iii-a iii-e iv-E iv-e2 v-a v-g vii-a vii-c vii-c2
 MODUS-dan32 = i-f vii-d
 MODUS-dan33 = i-g vii-c viii-G
 MODUS-benedictus = i-a i-a2 i-a4 i-a5 i-d i-f i-g i-g5 i-D i-D2 i-D_ isoll-D isoll-D_ isoll-f isoll-g isoll-d3 isoll-a ii-D iisoll-D ii_-B ii_-d ii_soll-c iii-a iii-b iiisoll-a iiisoll-a4 iv-d iv-D iv-E iv-e iv-e2 ivsoll-E v-a vsoll-g vsoll-a vsoll-a2 vi-F vi-C visoll-C visoll-F vii-a vii-b vii-c vii-c2 vii-d2 vii-d3 viisoll-a viisoll-c viisoll-d viii-c viii-g viii-C viii-G viii-G2 viii-G5 viiisoll-G viiisoll-G5 viiisoll-g viiisoll-g5
-MODUS-magnificat = i-f i-a4 isoll-a isoll-D isoll-D2 isoll-f isoll-g ii-D iisoll-D ii_-B ii_-c ii_soll-f iiisoll-a iv-A iv-D ivsoll-d ivsoll-E ivsoll-E2 v-a visoll-C visoll-F vii-b vii-c viisoll-a viisoll-d viii-G viii-G2 viiisoll-C viiisoll-g viiisoll-G viiisoll-G2 
+MODUS-magnificat = i-f i-a4 isoll-a isoll-D isoll-D2 isoll-f isoll-g ii-D iisoll-D ii_-B ii_-c ii_soll-f iiisoll-a iv-A iv-D ivsoll-d ivsoll-E ivsoll-E2 v-a v-g visoll-C visoll-F vii-b vii-c viisoll-a viisoll-d viii-G viii-G2 viiisoll-C viiisoll-g viiisoll-G viiisoll-G2 
 MODUS-nuncdimittis = iii-a
 CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae7 isaiae8 isaiae9 isaiae10 isaiae11 isaiae13 habacuc jeremiae2 jeremiae3 moysis moysis2i moysis2ii moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david dan3 dan32 dan33 iudith2 ecclesiasticus36 nuncdimittis
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
@@ -361,7 +361,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  laudatedominumomnes mecumsitdomine veritasdomini \
 			  laushonorbenedictiobarbaram ecceapparebitdominus \
 			  eccedominusnostercum ecceinnubibuscaeli urbsfortitudinisnostrae \
-			  factumestverbum statuitilli dicitdominuspaenitentiam) \
+			  factumestverbum statuitilli dicitdominuspaenitentiam \
+			  odoctoroptime voxclamantisindeserto) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -371,11 +372,11 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  VitaSanctorum QuemTerra OGloriosaFemina QuemTerra-alt \
 			  ConditorAlme VerbumSupernum VoxClara AmbrosiDoctor \
 			  MagnisProphetae VeniRedemptor VerbumSalutis VoxClara-aromi \
-			  OSempiternaeCuriae CaptatorOlim BarbaraVirgo) \
+			  OSempiternaeCuriae CaptatorOlim BarbaraVirgo FortemPiumque) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus ostendenobis veni superte \
 			   christe crastinadie christefilideivivi-advdom constitueseos \
-			   fortitudomeaetlausmea) \
+			   fortitudomeaetlausmea sapientiamsanctorum) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(addprefix capitulum-,Benedictio BenedictusDeus NoxPraecessit OAltitudo AbInitio \
 				tuautem FratresHora GaudeteInDomino HoraEst IpseDeus \
@@ -392,7 +393,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 	 $(addprefix inv-,alleluiachristumdominum regemmagnum dominumquifecit adoremusdominum \
 			  dominumdeum veniteexsultemus jubilemusdeo avemaria regemventurum \
 			  regemventurumsimplex propeestiam propeestiamsimplex hodiescietis \
-			  regemapostolorum-iv) \
+			  regemapostolorum-iv fontemsapientiae) \
 	 dominelabiamea \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
@@ -445,7 +446,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			   annuntiatumest-CROCHU-cumdox deillaocculta-CROCHU-cumdox \
 			   sanctificaminifilii-CROCHU sanctificaminihodie-CROCHU \
 			   doctorbonusetamicusdei-CROCHU obonacrux-CROCHU salvecrux-CROCHU-cumdox \
-			   civitasjerusalem-CROCHU sicutmater-CROCHU-cumdox) \
+			   civitasjerusalem-CROCHU sicutmater-CROCHU-cumdox \
+			   iuravitdominus-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_alma_redemptoris_mater an_alma_redemptoris_mater-simplex benedictio-noctemquietam \
