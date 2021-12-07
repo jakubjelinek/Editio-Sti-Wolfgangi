@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 1 2 3 4 5 6 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 10 11 13 14 15 16 17i 17ii 17iii 17ii_vii 17viii_xx 17xxi_xxx 17xxxi_xxxv 17xxxvi_xlvi 17xlvii_li 18 18i 19 20 23 28 29 30i 30ii 30iii 32 34i 34ii 34iii 35 36i_xi 36xii_xxix 36iii 37ii_v 37vi_xiii 37xiv_xxiii 38 38i 38ii 39 39i 39ii 40 41 42 43i 43ii 43iii 44i 44ii 45 46 47 48i 48ii 49i_vi 49vii_xv 49xvi_xxiii 50 51 54i 54ii 54iii 56 61 62 63 64 65i 65ii 66 67i 67ii 67iii 68i 68ii 68iii 68ii_xiii 68xiv_xxii 71i 71ii 72i 72ii 72iii 76 77i_xvi 77iii 77xxxii_xxxix 79 80 83 84 85 86 87 88ii_xix 88xx_xxx 88xxxi_xxxviii 88xxxix_xlvi 88xlvii_liii 89 90 91 91i 91ii 92 95 96 97 98 99 100 101ii_xii 101xiii_xxiii 101iii 102i 102ii 102iii 102i_xiv 102xiv_xxii 103i 103ii 103iii 104i 104ii 104iii 105i 105ii 105iii 106i 106ii 106iii 107 109 110 111 112 113 114 115 116 117 118xix 120 121 122 128 129 130 131 131i 131ii 132 134 134i 135 135i 135ii 135iii 136 137 138i 138ii 139 140 141 142 143i 143ii 143i_x 144i 144ii 144x_xiii 144xiv_xxi 145 146 147 148 149 150
+PSALMS = 1 2 3 4 5 6 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 10 11 13 14 15 16 17i 17ii 17iii 17ii_vii 17viii_xx 17xxi_xxx 17xxxi_xxxv 17xxxvi_xlvi 17xlvii_li 18 18i 19 20 23 28 29 30i 30ii 30iii 32 34i 34ii 34iii 35 36i_xi 36xii_xxix 36iii 37ii_v 37vi_xiii 37xiv_xxiii 38 38i 38ii 39 39i 39ii 40 41 42 43i 43ii 43iii 44 44i 44ii 45 46 47 48i 48ii 49i_vi 49vii_xv 49xvi_xxiii 50 51 54i 54ii 54iii 56 61 62 63 64 65i 65ii 66 67i 67ii 67iii 68i 68ii 68iii 68ii_xiii 68xiv_xxii 71i 71ii 72i 72ii 72iii 76 77i_xvi 77iii 77xxxii_xxxix 79 80 83 84 85 86 87 88ii_xix 88xx_xxx 88xxxi_xxxviii 88xxxix_xlvi 88xlvii_liii 89 90 91 91i 91ii 92 95 96 97 98 99 100 101ii_xii 101xiii_xxiii 101iii 102i 102ii 102iii 102i_xiv 102xiv_xxii 103i 103ii 103iii 104i 104ii 104iii 105i 105ii 105iii 106i 106ii 106iii 107 109 110 111 112 113 114 115 116 117 118xix 120 121 122 128 129 130 131 131i 131ii 132 134 134i 135 135i 135ii 135iii 136 137 138i 138ii 139 140 141 142 143i 143ii 143i_x 144i 144ii 144x_xiii 144xiv_xxi 145 146 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-1 = i-g ii-D viii-G
 MODUS-2 = i-a4 i-f ii-D iii-g iv-E vii-a viii-G viii-G5
@@ -80,9 +80,10 @@ MODUS-42 = vi-F
 MODUS-43i = viii-G
 MODUS-43ii = ii_-a viii-a viii-C
 MODUS-43iii = i-g3 ii-D ii_-a
+MODUS-44 = i-g
 MODUS-44i = iv-d iv-e2 vi-F vii-d
 MODUS-44ii = i-g ii_-B iv-E vii-d
-MODUS-45 = ii-D vi-C e
+MODUS-45 = ii-D v-a vi-C e
 MODUS-46 = i-a viii-c
 MODUS-47 = iv-a
 MODUS-48i = vii-c
@@ -97,7 +98,7 @@ MODUS-54ii = vii-c2
 MODUS-54iii = viii-G
 MODUS-56 = viii-g
 MODUS-61 = iii-g
-MODUS-62 = i-d i-d3 i-f i-g ii-D iii-e iv-d iv-E iv-e2 v-a vii-a vii-c2 vii-d viii-c viii-g viii-G viii-G5 viii-g5 viii-G6 viii-g6 viii-C2
+MODUS-62 = i-d i-d3 i-f i-g ii-D iii-a2 iii-a4 iii-e iv-d iv-E iv-e2 v-a vii-a vii-c2 vii-d viii-c viii-g viii-G viii-G5 viii-g5 viii-G6 viii-g6 viii-C2
 MODUS-63 = ii-D vii-c viii-G
 MODUS-64 = viii-A
 MODUS-65i = vi-F e
@@ -125,7 +126,7 @@ MODUS-80 = i-g5
 MODUS-83 = i-g3 vii-c viii-G
 MODUS-84 = vi-F viii-G
 MODUS-85 = ii-D
-MODUS-86 = i-g iv-A vii-a viii-G viii-C2
+MODUS-86 = i-g iv-A vi-F vii-a viii-G viii-C2
 MODUS-87 = i-g3 v-a
 MODUS-88ii_xix = viii-G
 MODUS-88xx_xxx = viii-G
@@ -217,12 +218,13 @@ MODUS-anna = i-g2 ii-D
 MODUS-david = i-f viii-G6 viii-g2
 MODUS-ecclesiastici = iii-a
 MODUS-ecclesiasticus36 = d-g
+MODUS-ecclesiasticus39 = vii-a
 MODUS-ezechiae = ii-D vii-a e
 MODUS-habacuc = iv_-e
 MODUS-isaiae = viii-G viii-G6 viii-g2
 MODUS-isaiae2 = v-a
 MODUS-isaiae3 = vii-d
-MODUS-isaiae4 = ii_-B vii-c viii-G6 viii-g2
+MODUS-isaiae4 = ii_-B vii-a vii-c viii-G6 viii-g2
 MODUS-isaiae5 = i-g iv-E iv_-e
 MODUS-isaiae7 = d-g
 MODUS-isaiae8 = viii-g d-g
@@ -230,6 +232,8 @@ MODUS-isaiae9 = i-g ii-D
 MODUS-isaiae10 = i-g vi-F
 MODUS-isaiae11 = viii-g
 MODUS-isaiae13 = i-g
+MODUS-isaiae14 = vii-a
+MODUS-isaiae15 = vii-a
 MODUS-iudith2 = ii_-d
 MODUS-jeremiae2 = ii-D viii-G
 MODUS-jeremiae3 = iv_-e
@@ -246,7 +250,7 @@ MODUS-dan33 = i-g vii-c viii-G
 MODUS-benedictus = i-a i-a2 i-a4 i-a5 i-d i-f i-g i-g5 i-D i-D2 i-D_ isoll-D isoll-D_ isoll-f isoll-g isoll-d3 isoll-a ii-D iisoll-D ii_-B ii_-d ii_soll-c iii-a iii-b iiisoll-a iiisoll-a4 iv-d iv-D iv-E iv-e iv-e2 ivsoll-E v-a vsoll-g vsoll-a vsoll-a2 vi-F vi-C visoll-C visoll-F vii-a vii-b vii-c vii-c2 vii-d2 vii-d3 viisoll-a viisoll-c viisoll-d viii-c viii-g viii-C viii-G viii-G2 viii-G5 viiisoll-G viiisoll-G5 viiisoll-g viiisoll-g5
 MODUS-magnificat = i-f i-a4 isoll-a isoll-D isoll-D2 isoll-f isoll-g ii-D iisoll-D ii_-B ii_-c ii_soll-f iiisoll-a iv-A iv-D ivsoll-d ivsoll-E ivsoll-E2 v-a v-g visoll-C visoll-F vii-b vii-c viisoll-a viisoll-d viii-G viii-G2 viiisoll-C viiisoll-g viiisoll-G viiisoll-G2 
 MODUS-nuncdimittis = iii-a
-CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae7 isaiae8 isaiae9 isaiae10 isaiae11 isaiae13 habacuc jeremiae2 jeremiae3 moysis moysis2i moysis2ii moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david dan3 dan32 dan33 iudith2 ecclesiasticus36 nuncdimittis
+CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae7 isaiae8 isaiae9 isaiae10 isaiae11 isaiae13 isaiae14 isaiae15 habacuc jeremiae2 jeremiae3 moysis moysis2i moysis2ii moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david dan3 dan32 dan33 iudith2 ecclesiasticus36 ecclesiasticus39 nuncdimittis
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
 	   && $(SED) -i -e 's/\*/\\grestar{}/g' $@
@@ -362,7 +366,9 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  laushonorbenedictiobarbaram ecceapparebitdominus \
 			  eccedominusnostercum ecceinnubibuscaeli urbsfortitudinisnostrae \
 			  factumestverbum statuitilli dicitdominuspaenitentiam \
-			  odoctoroptime voxclamantisindeserto) \
+			  odoctoroptime voxclamantisindeserto inconceptionesua \
+			  adiuviteam gloriosadictasunt virgomarianonesttibisimilis \
+			  vidispeciosam benedictaestu trahenos aitdominusdeus) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -372,11 +378,12 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  VitaSanctorum QuemTerra OGloriosaFemina QuemTerra-alt \
 			  ConditorAlme VerbumSupernum VoxClara AmbrosiDoctor \
 			  MagnisProphetae VeniRedemptor VerbumSalutis VoxClara-aromi \
-			  OSempiternaeCuriae CaptatorOlim BarbaraVirgo FortemPiumque) \
+			  OSempiternaeCuriae CaptatorOlim BarbaraVirgo FortemPiumque \
+			  TeDicimus InPlausuGrati) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus ostendenobis veni superte \
 			   christe crastinadie christefilideivivi-advdom constitueseos \
-			   fortitudomeaetlausmea sapientiamsanctorum) \
+			   fortitudomeaetlausmea sapientiamsanctorum deusomnipotens) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(addprefix capitulum-,Benedictio BenedictusDeus NoxPraecessit OAltitudo AbInitio \
 				tuautem FratresHora GaudeteInDomino HoraEst IpseDeus \
@@ -389,11 +396,12 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 	 $(addprefix oratio,1 1vo 2vo 3vo 4vo bmv) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
-	 $(addprefix benedicamus-,feria-advequad minor officium-bmv dominica-advequad solemnism-laud) \
+	 $(addprefix benedicamus-,feria-advequad minor officium-bmv dominica-advequad \
+				  solemnism-laud festis-bmv solemnitatibus-bmv) \
 	 $(addprefix inv-,alleluiachristumdominum regemmagnum dominumquifecit adoremusdominum \
 			  dominumdeum veniteexsultemus jubilemusdeo avemaria regemventurum \
 			  regemventurumsimplex propeestiam propeestiamsimplex hodiescietis \
-			  regemapostolorum-iv fontemsapientiae) \
+			  regemapostolorum-iv fontemsapientiae immaculatamconceptionem) \
 	 dominelabiamea \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
@@ -447,7 +455,9 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			   sanctificaminifilii-CROCHU sanctificaminihodie-CROCHU \
 			   doctorbonusetamicusdei-CROCHU obonacrux-CROCHU salvecrux-CROCHU-cumdox \
 			   civitasjerusalem-CROCHU sicutmater-CROCHU-cumdox \
-			   iuravitdominus-CROCHU-cumdox) \
+			   iuravitdominus-CROCHU-cumdox hodieconceptaest-CROCHU \
+			   conceptiogloriosae-CROCHU conceptiotua-CROCHU-cumdox \
+			   gloriosaevirginisconceptione-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_alma_redemptoris_mater an_alma_redemptoris_mater-simplex benedictio-noctemquietam \
@@ -478,7 +488,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../InNativitateBMV/cantus/amon33 ../CorpusChristi ../InNativitateBMV/cantus/nrom02 ../PostPentecosten ../PerAnnum ../Andreae ../Paschae
+iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../InNativitateBMV/cantus/amon33 ../CorpusChristi ../InNativitateBMV/cantus/nrom02 ../PostPentecosten ../PerAnnum ../Andreae ../Paschae ../InConceptioneBMV
 include $(iter)
 
 FERIAE = ii iii iv v vi
