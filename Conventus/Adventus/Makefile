@@ -368,7 +368,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  factumestverbum statuitilli dicitdominuspaenitentiam \
 			  odoctoroptime voxclamantisindeserto inconceptionesua \
 			  adiuviteam gloriosadictasunt virgomarianonesttibisimilis \
-			  vidispeciosam benedictaestu trahenos aitdominusdeus) \
+			  vidispeciosam benedictaestu trahenos aitdominusdeus \
+			  beatimundocorde) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
