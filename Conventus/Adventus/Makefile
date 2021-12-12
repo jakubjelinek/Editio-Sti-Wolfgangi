@@ -371,7 +371,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  vidispeciosam benedictaestu trahenos aitdominusdeus \
 			  beatimundocorde dabosanctismeis iusteetpie ierusalemgaude \
 			  horaestiam venietdominuset montesetomnescolleshumiliabuntur \
-			  daboinsionsalutem gaudeteindominosemper) \
+			  daboinsionsalutem gaudeteindominosemper egohumilisancilla) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -382,7 +382,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  ConditorAlme VerbumSupernum VoxClara AmbrosiDoctor \
 			  MagnisProphetae VeniRedemptor VerbumSalutis VoxClara-aromi \
 			  OSempiternaeCuriae CaptatorOlim BarbaraVirgo FortemPiumque \
-			  TeDicimus InPlausuGrati) \
+			  TeDicimus InPlausuGrati OChristeFlos OCastitatisSignifer) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus ostendenobis veni superte \
 			   christe crastinadie christefilideivivi-advdom constitueseos \
@@ -404,7 +404,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 	 $(addprefix inv-,alleluiachristumdominum regemmagnum dominumquifecit adoremusdominum \
 			  dominumdeum veniteexsultemus jubilemusdeo avemaria regemventurum \
 			  regemventurumsimplex propeestiam propeestiamsimplex hodiescietis \
-			  regemapostolorum-iv fontemsapientiae immaculatamconceptionem) \
+			  regemapostolorum-iv fontemsapientiae immaculatamconceptionem \
+			  regemvirginum) \
 	 dominelabiamea \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
@@ -460,7 +461,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			   civitasjerusalem-CROCHU sicutmater-CROCHU-cumdox \
 			   iuravitdominus-CROCHU-cumdox hodieconceptaest-CROCHU \
 			   conceptiogloriosae-CROCHU conceptiotua-CROCHU-cumdox \
-			   gloriosaevirginisconceptione-CROCHU-cumdox) \
+			   gloriosaevirginisconceptione-CROCHU-cumdox  gratafactaest-CROCHU-cumdox \
+			   luciavirgo-CROCHU) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_alma_redemptoris_mater an_alma_redemptoris_mater-simplex benedictio-noctemquietam \
@@ -491,7 +493,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../InNativitateBMV/cantus/amon33 ../CorpusChristi ../InNativitateBMV/cantus/nrom02 ../PostPentecosten ../PerAnnum ../Andreae ../Paschae ../InConceptioneBMV
+iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../InNativitateBMV/cantus/amon33 ../CorpusChristi ../InNativitateBMV/cantus/nrom02 ../PostPentecosten ../PerAnnum ../Andreae ../Paschae ../InConceptioneBMV ../Catharinae ../Scholasticae
 include $(iter)
 
 FERIAE = ii iii iv v vi
