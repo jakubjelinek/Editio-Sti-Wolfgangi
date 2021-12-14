@@ -372,7 +372,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  beatimundocorde dabosanctismeis iusteetpie ierusalemgaude \
 			  horaestiam venietdominuset montesetomnescolleshumiliabuntur \
 			  daboinsionsalutem gaudeteindominosemper egohumilisancilla \
-			  quivultvenire) \
+			  quivultvenire consurgeconsurgeinduere) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -468,11 +468,12 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_alma_redemptoris_mater an_alma_redemptoris_mater-simplex benedictio-noctemquietam \
-	 habacuc-initium-iv_-e $(addsuffix -initium-e,ps48ii ps65i ps105i) ps10-initium-ii_-f \
+	 habacuc-initium-iv_-e $(addsuffix -initium-e,ps48ii ps65i ps97 ps105i) ps10-initium-ii_-f \
 	 benedictus-initium-viisoll-d tonusprecum dominusnosbenedicat ps147-initium-e \
 	 ps91-initium-e ps66-initium-e isaiae3-initium-vii-d benedictus-initium-iv-e \
 	 ps101ii_xii-initium-i-a ps102iii-initium-iii-g ps17xxxvi_xlvi-initium-vii-c-trans \
-	 ps47-initium-iv-a ps116-initium-e ps144i-initium-vii-b-trans
+	 ps47-initium-iv-a ps116-initium-e ps144i-initium-vii-b-trans \
+	 ps88xxxi_xxxviii-initium-viii-G_
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
