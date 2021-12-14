@@ -371,7 +371,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  vidispeciosam benedictaestu trahenos aitdominusdeus \
 			  beatimundocorde dabosanctismeis iusteetpie ierusalemgaude \
 			  horaestiam venietdominuset montesetomnescolleshumiliabuntur \
-			  daboinsionsalutem gaudeteindominosemper egohumilisancilla) \
+			  daboinsionsalutem gaudeteindominosemper egohumilisancilla \
+			  quivultvenire) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -382,7 +383,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  ConditorAlme VerbumSupernum VoxClara AmbrosiDoctor \
 			  MagnisProphetae VeniRedemptor VerbumSalutis VoxClara-aromi \
 			  OSempiternaeCuriae CaptatorOlim BarbaraVirgo FortemPiumque \
-			  TeDicimus InPlausuGrati OChristeFlos OCastitatisSignifer) \
+			  TeDicimus InPlausuGrati OChristeFlos OCastitatisSignifer \
+			  AEterneSol DoctorAEternus) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus ostendenobis veni superte \
 			   christe crastinadie christefilideivivi-advdom constitueseos \
@@ -462,7 +464,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			   iuravitdominus-CROCHU-cumdox hodieconceptaest-CROCHU \
 			   conceptiogloriosae-CROCHU conceptiotua-CROCHU-cumdox \
 			   gloriosaevirginisconceptione-CROCHU-cumdox  gratafactaest-CROCHU-cumdox \
-			   luciavirgo-CROCHU) \
+			   luciavirgo-CROCHU amaviteumdominus-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_alma_redemptoris_mater an_alma_redemptoris_mater-simplex benedictio-noctemquietam \
