@@ -173,9 +173,9 @@ MODUS-112 = ii-D iii-a iv-A
 MODUS-113 = ii_-B per
 MODUS-114 = i-g2 viii-C
 MODUS-115 = viii-A viii-G
-MODUS-116 = ii_-B viii-A viii-G e
+MODUS-116 = ii-D ii_-B viii-A viii-G e
 MODUS-117 = vii-d viii-G viii-G5
-MODUS-118xix = vii-a e
+MODUS-118xix = i-g vii-a e
 MODUS-120 = vii-b
 MODUS-121 = v-g
 MODUS-122 = ii_-B
@@ -241,7 +241,7 @@ MODUS-moysis = v-g e
 MODUS-moysis2i = vi-F viii-G
 MODUS-moysis2ii = ii_-B vi-F
 MODUS-moysis2i_xii = vi-F
-MODUS-sapientia = v-a
+MODUS-sapientia = ii_-a v-a
 MODUS-tobiae = vii-a
 MODUS-tobiae2 = ii-D
 MODUS-dan3 = i-d i-f i-g ii_-a iii-a iii-e iv-E iv-e2 v-a v-g vii-a vii-c vii-c2 vii-d2 viii-g viii-G viii-G5 viii-c per
@@ -372,7 +372,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  beatimundocorde dabosanctismeis iusteetpie ierusalemgaude \
 			  horaestiam venietdominuset montesetomnescolleshumiliabuntur \
 			  daboinsionsalutem gaudeteindominosemper egohumilisancilla \
-			  quivultvenire consurgeconsurgeinduere laetaminicumjerusalem) \
+			  quivultvenire consurgeconsurgeinduere laetaminicumjerusalem \
+			  deusalibanoveniet) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
