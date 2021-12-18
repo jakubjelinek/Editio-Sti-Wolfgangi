@@ -1,16 +1,11 @@
-﻿name: ant--Dominusvenietoccurite-PRAGLIA;
-user-notes: ;
-commentary: Praglia I p. 50;
+name: Dominus veniet occurite;
+book: Antiphonale Monasticum I, Praglia, p. 50; H33;
 annotation: I f;
-centering-scheme: english;
-%fontsize: 12;
-%spacing: vichi;
-%font: OFLSortsMillGoudy;
-%width: 4.5;
-%height: 11;
+mode: 1;
+nabc-lines: 1;
 %%
-(c4) 
-Do(d_c_|cl-)mi(f|vi)nus(g|vihi) vé(f|ta)ni(gh|pe)et,(h_|vi-) *(,)
+(c4)
+DO(d_c_|cl-)mi(f|vi)nus(g|vihi) vé(f|ta)ni(gh|pe)et,(h_|vi-) *(,)
 oc(h|``vihhlse7)cúr(hj>|pe>hh)ri(h|vihg)te(g|tahg) il(h>|vi>lss2lsal3)li,(g|vi) di(e|ta)cén(f>|vi>)tes:(d.|ta-) (;)
 Ma(ixhih>___|///to>)gnum(g|ta) prin(hj~|ta>lss3)cí(j|vihh)pi(jv_IH|ci-hh)um,(h|ta) (,)
 et(h_g_go|cl-or) re(f|ta)gni(gh|pe) e(g_f_g_|cl-vi)ius(g_|vi-) non(h|vihg) e(g|vi)rit(f|ta) fi(g|vi)nis:(d.|ta) (;)

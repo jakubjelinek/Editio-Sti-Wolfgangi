@@ -52,7 +52,7 @@ MODUS-18 = i-D_ ii-D iii-a iv-A vii-c
 MODUS-18i = ii-D
 MODUS-19 = viii-G
 MODUS-20 = vii-a viii-G
-MODUS-23 = i-g iii-a iv-c iv_-e v-a vii-c vii-d2 viii-G
+MODUS-23 = i-f i-g iii-a iv-c iv_-e v-a vii-c vii-d2 viii-G
 MODUS-28 = vii-a
 MODUS-29 = viii-G
 MODUS-30i = viii-G
@@ -101,8 +101,8 @@ MODUS-61 = iii-g
 MODUS-62 = i-d i-d3 i-f i-g ii-D iii-a2 iii-a4 iii-e iv-d iv-E iv-e2 v-a vii-a vii-c2 vii-d viii-c viii-g viii-G viii-G5 viii-g5 viii-G6 viii-g6 viii-C2
 MODUS-63 = ii-D vii-c viii-G
 MODUS-64 = viii-A
-MODUS-65i = vi-F e
-MODUS-65ii = i-g ii_-a
+MODUS-65i = i-a4 vi-F e
+MODUS-65ii = i-f i-g ii_-a
 MODUS-66 = i-g ii-D ii_-B vi-F vii-b e
 MODUS-67i = vii-a
 MODUS-67ii = i-f ii-D
@@ -174,7 +174,7 @@ MODUS-113 = ii_-B per
 MODUS-114 = i-g2 viii-C
 MODUS-115 = viii-A viii-G
 MODUS-116 = ii-D ii_-B viii-A viii-G e
-MODUS-117 = vii-d viii-G viii-G5
+MODUS-117 = i-g vii-d viii-G viii-G5
 MODUS-118xix = i-g vii-a e
 MODUS-120 = vii-b
 MODUS-121 = v-g
@@ -246,8 +246,8 @@ MODUS-tobiae = vii-a
 MODUS-tobiae2 = ii-D
 MODUS-dan3 = i-d i-f i-g ii_-a iii-a iii-e iv-E iv-e2 v-a v-g vii-a vii-c vii-c2 vii-d2 viii-g viii-G viii-G5 viii-c per
 MODUS-dan32 = i-f vii-d
-MODUS-dan33 = i-g vii-c viii-G
-MODUS-benedictus = i-a i-a2 i-a4 i-a5 i-d i-f i-g i-g5 i-D i-D2 i-D_ isoll-D isoll-D_ isoll-f isoll-g isoll-d3 isoll-a ii-D iisoll-D ii_-B ii_-d ii_soll-c iii-a iii-b iiisoll-a iiisoll-a4 iv-d iv-D iv-E iv-e iv-e2 ivsoll-E ivsoll-e2 v-a vsoll-g vsoll-a vsoll-a2 vi-F vi-C visoll-C visoll-F vii-a vii-b vii-c vii-c2 vii-d2 vii-d3 viisoll-a viisoll-c viisoll-d viii-c viii-g viii-C viii-G viii-G2 viii-G5 viiisoll-G viiisoll-G5 viiisoll-g viiisoll-g5
+MODUS-dan33 = i-f i-g vii-c viii-G
+MODUS-benedictus = i-a i-a2 i-a4 i-a5 i-d i-f i-g i-g5 i-D i-D2 i-D_ isoll-D isoll-D_ isoll-f isoll-g isoll-d3 isoll-a ii-D iisoll-D ii_-B ii_-d ii_soll-c ii_soll-f iii-a iii-b iiisoll-a iiisoll-a4 iv-d iv-D iv-E iv-e iv-e2 ivsoll-E ivsoll-e2 v-a vsoll-g vsoll-a vsoll-a2 vi-F vi-C visoll-C visoll-F vii-a vii-b vii-c vii-c2 vii-d2 vii-d3 viisoll-a viisoll-c viisoll-d viii-c viii-g viii-C viii-G viii-G2 viii-G5 viiisoll-G viiisoll-G5 viiisoll-g viiisoll-g5
 MODUS-magnificat = i-f i-a4 isoll-a isoll-D isoll-D2 isoll-f isoll-g ii-D iisoll-D ii_-B ii_-c ii_soll-f iiisoll-a iv-A iv-D ivsoll-d ivsoll-E ivsoll-E2 v-a v-g visoll-C visoll-F vii-b vii-c viisoll-a viisoll-d viii-G viii-G2 viiisoll-C viiisoll-g viiisoll-G viiisoll-G2 
 MODUS-nuncdimittis = iii-a
 CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae7 isaiae8 isaiae9 isaiae10 isaiae11 isaiae13 isaiae14 isaiae15 habacuc jeremiae2 jeremiae3 moysis moysis2i moysis2ii moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david dan3 dan32 dan33 iudith2 ecclesiasticus36 ecclesiasticus39 nuncdimittis
@@ -373,7 +373,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  horaestiam venietdominuset montesetomnescolleshumiliabuntur \
 			  daboinsionsalutem gaudeteindominosemper egohumilisancilla \
 			  quivultvenire consurgeconsurgeinduere laetaminicumjerusalem \
-			  deusalibanoveniet) \
+			  deusalibanoveniet canitetubainsion dominusvenietoccurite \
+			  exquofactaestvox) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -474,7 +475,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 	 ps91-initium-e ps66-initium-e isaiae3-initium-vii-d benedictus-initium-iv-e \
 	 ps101ii_xii-initium-i-a ps102iii-initium-iii-g ps17xxxvi_xlvi-initium-vii-c-trans \
 	 ps47-initium-iv-a ps116-initium-e ps144i-initium-vii-b-trans \
-	 ps88xxxi_xxxviii-initium-viii-G_
+	 ps88xxxi_xxxviii-initium-viii-G_ benedictus-initium-ii_soll-f
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
