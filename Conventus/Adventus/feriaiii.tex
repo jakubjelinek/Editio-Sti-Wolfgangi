@@ -865,6 +865,7 @@
 \vfill
 %\pagebreak
 
+\ifx\vesperas\undefined
 %\vspace{4mm}
 
 \pars{Psalmus 1.} \scriptura{Ps. 129, 1.2; \textbf{H96}}
@@ -940,6 +941,9 @@
 
 \vfill
 \pagebreak
+\else
+\vesperas
+\fi
 
 \pars{Capitulum.} \scriptura{Gen. 49, 10}
 
@@ -956,11 +960,14 @@
 \vfill
 \pagebreak
 
+\ifx\hymnusvesperas\undefined
 \pars{Hymnus} \scriptura{Ambrosius (\olddag{} 397)}
 
 \cuminitiali{IV}{temporalia/hym-ConditorAlme.gtex}
 \vspace{-3mm}
-%\input{hym-ConditorAlme-bohtext.tex}
+\else
+\hymnusvesperas
+\fi
 
 \vfill
 %\pagebreak

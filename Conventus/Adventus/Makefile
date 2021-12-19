@@ -188,7 +188,7 @@ MODUS-131ii = vii-c
 MODUS-132 = i-a i-g
 MODUS-133 = viii-G
 MODUS-134 = i-g3 iii-g
-MODUS-134i = i-a
+MODUS-134i = i-a viii-C viii-C2
 MODUS-135 = ii-D iii-g
 MODUS-135i = iiir-g
 MODUS-135ii = iiir-g
@@ -229,7 +229,7 @@ MODUS-isaiae5 = i-g iv-E iv_-e
 MODUS-isaiae7 = d-g
 MODUS-isaiae8 = viii-g d-g
 MODUS-isaiae9 = i-g ii-D
-MODUS-isaiae10 = i-g vi-F
+MODUS-isaiae10 = i-g vi-F vii-b
 MODUS-isaiae11 = viii-g
 MODUS-isaiae13 = i-g
 MODUS-isaiae14 = vii-a
@@ -374,7 +374,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  daboinsionsalutem gaudeteindominosemper egohumilisancilla \
 			  quivultvenire consurgeconsurgeinduere laetaminicumjerusalem \
 			  deusalibanoveniet canitetubainsion dominusvenietoccurite \
-			  exquofactaestvox) \
+			  exquofactaestvox missusestgabriel) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -475,7 +475,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 	 ps91-initium-e ps66-initium-e isaiae3-initium-vii-d benedictus-initium-iv-e \
 	 ps101ii_xii-initium-i-a ps102iii-initium-iii-g ps17xxxvi_xlvi-initium-vii-c-trans \
 	 ps47-initium-iv-a ps116-initium-e ps144i-initium-vii-b-trans \
-	 ps88xxxi_xxxviii-initium-viii-G_ benedictus-initium-ii_soll-f
+	 ps88xxxi_xxxviii-initium-viii-G_ benedictus-initium-ii_soll-f ps72iii-initium-iii-b
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
@@ -498,7 +498,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../InNativitateBMV/cantus/amon33 ../CorpusChristi ../InNativitateBMV/cantus/nrom02 ../PostPentecosten ../PerAnnum ../Andreae ../Paschae ../InConceptioneBMV ../Catharinae ../Scholasticae
+iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../InNativitateBMV/cantus/amon33 ../CorpusChristi ../InNativitateBMV/cantus/nrom02 ../PostPentecosten ../PerAnnum ../Andreae ../Paschae ../InConceptioneBMV ../Catharinae ../Scholasticae ../InAnnuntiationeBMV
 include $(iter)
 
 FERIAE = ii iii iv v vi
