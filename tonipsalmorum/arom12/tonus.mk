@@ -27,6 +27,7 @@ TONUS-isoll-a4 = 1 3 1 2
 TONUS-isoll-a5 = 1 3 1 2
 TONUS-isoll-f = 1 3 1 2
 TONUS-isoll-g = 1 3 1 2
+TONUS-isoll-g2 = 1 3 1 2
 TONUS-isoll-g3 = 1 3 1 2
 TONUS-ii-A = 1 0 1 1
 TONUS-ii-D = 1 0 1 1
