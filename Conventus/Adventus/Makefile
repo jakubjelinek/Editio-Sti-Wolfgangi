@@ -225,7 +225,7 @@ MODUS-isaiae = viii-G viii-G6 viii-g2
 MODUS-isaiae2 = v-a
 MODUS-isaiae3 = vii-d
 MODUS-isaiae4 = ii_-B vii-a vii-c viii-G6 viii-g2
-MODUS-isaiae5 = i-g iv-E iv_-e
+MODUS-isaiae5 = i-g ii_-B iv-E iv_-e
 MODUS-isaiae7 = d-g
 MODUS-isaiae8 = viii-g d-g
 MODUS-isaiae9 = i-g ii-D
@@ -374,7 +374,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  daboinsionsalutem gaudeteindominosemper egohumilisancilla \
 			  quivultvenire consurgeconsurgeinduere laetaminicumjerusalem \
 			  deusalibanoveniet canitetubainsion dominusvenietoccurite \
-			  exquofactaestvox missusestgabriel quidoctifuerint) \
+			  exquofactaestvox missusestgabriel quidoctifuerint inhoccognoscentomnes) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -466,7 +466,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			   iuravitdominus-CROCHU-cumdox hodieconceptaest-CROCHU \
 			   conceptiogloriosae-CROCHU conceptiotua-CROCHU-cumdox \
 			   gloriosaevirginisconceptione-CROCHU-cumdox  gratafactaest-CROCHU-cumdox \
-			   luciavirgo-CROCHU amaviteumdominus-CROCHU-cumdox) \
+			   luciavirgo-CROCHU amaviteumdominus-CROCHU-cumdox annuntiatumest-CROCHU) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_alma_redemptoris_mater an_alma_redemptoris_mater-simplex benedictio-noctemquietam \
