@@ -91,7 +91,7 @@ MODUS-48ii = e
 MODUS-49i_vi = i-g2 viii-A
 MODUS-49vii_xv = viii-G e
 MODUS-49xvi_xxiii = vii-c viii-c e
-MODUS-50 = i-a2 i-f i-g i-g3 ii_-B ii_-a iv-E vi-F vii-a viii-G viii-G2
+MODUS-50 = i-a2 i-f i-g i-g3 ii_-B ii_-a iii-a iv-E vi-F vii-a viii-G viii-G2
 MODUS-51 = iv_-e
 MODUS-54i = viii-c
 MODUS-54ii = vii-c2
@@ -118,9 +118,9 @@ MODUS-72i = viii-c
 MODUS-72ii = ii-D
 MODUS-72iii = iii-b
 MODUS-76 = viii-G
-MODUS-77iii = ii-D
-MODUS-77i_xvi = i-g3
-MODUS-77xxxii_xxxix = viii-G
+MODUS-77iii = ii-D viii-a
+MODUS-77i_xvi = i-g3 viii-G
+MODUS-77xxxii_xxxix = ii_-B viii-G
 MODUS-79 = ii_-B
 MODUS-80 = i-g5
 MODUS-83 = i-g3 vii-c viii-G
@@ -210,7 +210,7 @@ MODUS-144x_xiii = ii-D vii-c
 MODUS-144xiv_xxi = viii-a viii-G5
 MODUS-145 = i-f ii-D iv-E iv_-e vii-a vii-d viii-G2
 MODUS-146 = i-g v-a vii-a viii-c viii-g viii-G
-MODUS-147 = ii-D iii-a iv-A vi-F e
+MODUS-147 = ii-D iii-a iv-A vi-F viii-c e
 MODUS-148 = i-a i-g3 ii-D ii_-a iii-a iv-A iv-E vi-F viii-G
 MODUS-149 = i-a i-a4 i-f i-g i-g3 i-d ii-D ii_-a ii_-f ii_-B iii-a iii-e iv-c iv-A iv-E iv_-e v-a vi-F vii-a vii-c viii-G viii-G5 viii-g
 MODUS-150 = i-a i-g3 ii-D ii_-a iii-a iv-A iv-E vi-F viii-G
@@ -243,7 +243,7 @@ MODUS-moysis2ii = ii_-B vi-F
 MODUS-moysis2i_xii = vi-F
 MODUS-sapientia = ii_-a v-a
 MODUS-tobiae = vii-a
-MODUS-tobiae2 = ii-D
+MODUS-tobiae2 = i-g ii-D
 MODUS-dan3 = i-d i-f i-g ii_-a iii-a iii-e iv-E iv-e2 v-a v-g vii-a vii-c vii-c2 vii-d2 viii-g viii-G viii-G5 viii-c per
 MODUS-dan32 = i-f vii-d vii-d3
 MODUS-dan33 = i-f i-g vii-c viii-G
@@ -466,7 +466,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			   iuravitdominus-CROCHU-cumdox hodieconceptaest-CROCHU \
 			   conceptiogloriosae-CROCHU conceptiotua-CROCHU-cumdox \
 			   gloriosaevirginisconceptione-CROCHU-cumdox  gratafactaest-CROCHU-cumdox \
-			   luciavirgo-CROCHU amaviteumdominus-CROCHU-cumdox annuntiatumest-CROCHU) \
+			   luciavirgo-CROCHU amaviteumdominus-CROCHU-cumdox annuntiatumest-CROCHU \
+			   constantesestote-CROCHU) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_alma_redemptoris_mater an_alma_redemptoris_mater-simplex benedictio-noctemquietam \
