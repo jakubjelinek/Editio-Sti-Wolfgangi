@@ -78,7 +78,7 @@ MODUS-isaiae3 = viii-G
 MODUS-isaiae5 = viii-G
 MODUS-isaiae6 = viii-G
 MODUS-magnificat = isoll-a5 iisoll-A iiisoll-e iv-E vi-F viiisoll-G viii-g
-MODUS-benedictus = vii-b vii-c2 vii-d viiisoll-G viii-G viii-G2 
+MODUS-benedictus = vii-b vii-c2 vii-d viiisoll-G viiisoll-G5 viii-G viii-G2
 MAGNIFICAT = $(foreach M,I II III IV V VI VII,magnificat-$(M))
 BENEDICTUS = $(foreach B,I II III IV V VI,benedictus-$(B))
 CANTICIS = dan3 isaiae3 isaiae5 isaiae6
@@ -118,7 +118,8 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			  dominumdeumadoremus quammagnificatasunt vocabiturnomeneius \
 			  diligitedominum faciemtuam christusdeusnoster salusaeterna intuaiustitia \
 			  visitavitnos reveladomino iuniorfui speraindomino tamquamsponsus \
-			  dominusdixitad diffusaestgratia suscepimusdeus) \
+			  dominusdixitad diffusaestgratia suscepimusdeus inprincipioetante \
+			  gloriainexcelsisdeo) \
 	 $(addprefix capitulum-,Multifariam ApparuitGratia) \
 	 $(addprefix hym-,ASolisOrtus ChristeRedemptor CandorAEternae CandorAEternae-simplex \
 			  CordeNatus FitPorta RadixIesse) \
@@ -127,6 +128,7 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 	 $(addprefix versus-,notumfecit-communis tamquam verbumcaro) \
 	 oratio oratiobmv oratiodomii supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex annuntiationativitatisdomini \
+	 genealogiadnic genealogiadnic-initium \
 	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor festis-bmv \
 				  feria-laudes feria-vesperae dominica-perannum) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
