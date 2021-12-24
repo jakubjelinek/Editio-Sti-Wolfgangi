@@ -77,7 +77,7 @@ MODUS-dan3 = i-g vi-F vii-d
 MODUS-isaiae3 = viii-G
 MODUS-isaiae5 = viii-G
 MODUS-isaiae6 = viii-G
-MODUS-magnificat = isoll-a5 iisoll-A iiisoll-e iv-E vi-F viiisoll-G viii-g
+MODUS-magnificat = isoll-g2 isoll-a5 iisoll-A iiisoll-e iv-E vi-F viiisoll-G viii-g
 MODUS-benedictus = vii-b vii-c2 vii-d viiisoll-G viiisoll-G5 viii-G viii-G2
 MAGNIFICAT = $(foreach M,I II III IV V VI VII,magnificat-$(M))
 BENEDICTUS = $(foreach B,I II III IV V VI,benedictus-$(B))
@@ -120,13 +120,13 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			  visitavitnos reveladomino iuniorfui speraindomino tamquamsponsus \
 			  dominusdixitad diffusaestgratia suscepimusdeus inprincipioetante \
 			  gloriainexcelsisdeo cumortusfueritsol levatecapitavestra magnificatusest \
-			  rexpacificus scitotequiapropeest) \
+			  rexpacificus scitotequiapropeest hodiechristusnatusest) \
 	 $(addprefix capitulum-,Multifariam ApparuitGratia ApparuitBenignitas) \
 	 $(addprefix hym-,ASolisOrtus ChristeRedemptor CandorAEternae CandorAEternae-simplex \
 			  CordeNatus FitPorta RadixIesse) \
 	 $(addprefix resp-,notumfecit verbumcaro-simplex verbumcaro hodiescietis) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
-	 $(addprefix versus-,notumfecit-communis tamquam verbumcaro crastinadie) \
+	 $(addprefix versus-,notumfecit-communis notumfecit tamquam verbumcaro crastinadie) \
 	 oratio oratiobmv oratiodomii supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 orationativitas \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex annuntiationativitatisdomini \
