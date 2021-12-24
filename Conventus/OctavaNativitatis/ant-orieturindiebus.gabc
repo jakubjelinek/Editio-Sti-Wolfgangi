@@ -1,8 +1,10 @@
 name: Orietur in diebus Domini;
+book: H46;
 mode: 3;
 transcriber: Isabelle Valloton;
+nabc-lines: 1;
 %%
 (c4)
-O(g)ri(g)é(i)tur(j) in(g) di(g)é(i)bus(j) Dó(h)mi(g)ni(i.) (,)
-a(i)bun(j)dán(h)ti(h)a(g) pa(h)cis,(g_) (;)
-et(g) do(g)mi(f)ná(g)bi(f)tur.(e.) (::)
+O(g|ta)ri(g|ta)é(i|vi)tur(j|vihg) in(g|ta) di(g|vi)é(i|vihg)bus(j|vihh) Dó(h|vihh)mi(g|ta)ni(i.|vi-lsx6) (,)
+a(i|vi)bun(j|vihh)dán(h|vi)ti(h|vi)a(g|ta) pa(h|vi)cis,(g_|talsc3) (;)
+et(g|ta) do(g|vi)mi(f|ta)ná(g|vi)bi(f|ta)tur.(e.|ta) (::)

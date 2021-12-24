@@ -20,10 +20,10 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 2 18i 23 30i 30ii 30iii 36i_xi 36xii_xxix 36iii 45 62 66 71i 71ii 84 88ii_xix 88xx_xxx 92 95 96 97 98 99 103i 103ii 103iii 104i 104ii 104iii 105i 105ii 105iii 109 110 111 112 116 121 126 129 131 144ii 145 146 147 148 149 150
+PSALMS = 2 18i 23 30i 30ii 30iii 36i_xi 36xii_xxix 36iii 44 45 47 62 66 71 71i 71ii 84 88ii_xix 88xx_xxx 92 95 96 97 98 99 103i 103ii 103iii 104i 104ii 104iii 105i 105ii 105iii 109 110 111 112 116 121 126 129 131 144ii 145 146 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
-MODUS-2 = viii-C
-MODUS-18i = v-a
+MODUS-2 = viii-c viii-C
+MODUS-18i = v-a viii-G
 MODUS-23 = v-a
 MODUS-30i = viii-G
 MODUS-30ii = viii-G
@@ -31,9 +31,12 @@ MODUS-30iii = ii-D
 MODUS-36i_xi = vi-F
 MODUS-36xii_xxix = ii-D
 MODUS-36iii = vi-F
+MODUS-44 = i-g3
 MODUS-45 = viii-G
+MODUS-47 = viii-G
 MODUS-62 = ii-D iv-E viii-G
 MODUS-66 = i-d
+MODUS-71 = iii-b
 MODUS-71i = iii-b
 MODUS-71ii = ii_-a
 MODUS-84 = viii-a
@@ -114,7 +117,8 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			  verbumcaro exsultemusindomino interrisnatusest confessionemetdecorem \
 			  dominumdeumadoremus quammagnificatasunt vocabiturnomeneius \
 			  diligitedominum faciemtuam christusdeusnoster salusaeterna intuaiustitia \
-			  visitavitnos reveladomino iuniorfui speraindomino) \
+			  visitavitnos reveladomino iuniorfui speraindomino tamquamsponsus \
+			  dominusdixitad diffusaestgratia suscepimusdeus) \
 	 $(addprefix capitulum-,Multifariam ApparuitGratia) \
 	 $(addprefix hym-,ASolisOrtus ChristeRedemptor CandorAEternae CandorAEternae-simplex \
 			  CordeNatus FitPorta RadixIesse) \
@@ -122,7 +126,7 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(addprefix versus-,notumfecit-communis tamquam verbumcaro) \
 	 oratio oratiobmv oratiodomii supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
-	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
+	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex annuntiationativitatisdomini \
 	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor festis-bmv \
 				  feria-laudes feria-vesperae dominica-perannum) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
@@ -137,7 +141,8 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			   oregemcaeli-CROCHU ecceagnusdei-CROCHU hodienobiscaelorum-CROCHU-cumdox \
 			   beatadeigenitrix-CROCHU beataviscera-CROCHU-cumdox continetingremio-CROCHU \
 			   sanctaetimmaculata-CROCHU nesciensmatervirgo-CROCHU-cumdox verbumcarofactumest-CROCHU \
-			   omagnummysterium-CROCHU descenditdecaelis-CROCHU-cumdox) \
+			   omagnummysterium-CROCHU descenditdecaelis-CROCHU-cumdox hodienobiscaelorum-CROCHU \
+			   quemvidistis-CROCHU) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
 	 an_regina_caeli_simplex convertenosdeus dominusnosbenedicat \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
@@ -170,7 +175,7 @@ endef
 iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../PostPentecosten ../CorpusChristi ../PetriEtPauli ../Adventus
 include $(iter)
 
-PDF = dievpostnativitatem.pdf dievipostnativitatem.pdf dieviipostnativitatem.pdf sdeigenetricismariae.pdf \
+PDF = indienativitatis.pdf dievpostnativitatem.pdf dievipostnativitatem.pdf dieviipostnativitatem.pdf sdeigenetricismariae.pdf \
       iiianuarii.pdf dominicaiipostnativitatem.pdf ivianuarii.pdf vianuarii.pdf
 all: $(PDF)
 $(LAPSALMSSINEDOX): $(TMP_DIR)/%-sinedox.tex: $(TMP_DIR)/%.tex
