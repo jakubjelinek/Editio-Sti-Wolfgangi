@@ -101,7 +101,7 @@ LAPSALMSSINEDOX = $(foreach P,62 115 148 149,$(foreach M,$(MODUS-$(P)),$(TMP_DIR
 		  $(foreach C,dan3,$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/$(C)-$(M)-sinedox.tex))
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defructuventris \
-			  dominusvirtutum exortumest gaudeamusomnesfideles orieturindiebus \
+			  dominusvirtutum exortumest gaudeamusomnesfideles orieturdiebus \
 			  parvulusfilius pastoresloquebantur quemvidistis redemptionemmisit \
 			  tecumprincipium egoprimogenitum misericordiaetveritas glorificamuste \
 			  natodomino veritasdeterra luxortaestiusto notumfecitdominus \
