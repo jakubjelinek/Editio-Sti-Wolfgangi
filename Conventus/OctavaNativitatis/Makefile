@@ -59,8 +59,8 @@ MODUS-105ii = viii-G
 MODUS-105iii = vii-a
 MODUS-109 = i-g vi-F viii-G 
 MODUS-110 = vii-a
-MODUS-111 = vii-d
-MODUS-112 = iii-a2 vi-F viii-G
+MODUS-111 = vii-d viii-G
+MODUS-112 = i-g iii-a2 vi-F viii-G
 MODUS-116 = iii-a2
 MODUS-121 = iv-E viii-G2
 MODUS-126 = i-g ii-D
@@ -78,7 +78,7 @@ MODUS-isaiae3 = viii-G
 MODUS-isaiae5 = viii-G
 MODUS-isaiae6 = viii-G
 MODUS-magnificat = isoll-a5 iisoll-A iiisoll-e iv-E vi-F viiisoll-G viii-g
-MODUS-benedictus = vii-b vii-c2 vii-d viiisoll-G viii-G viii-G2 
+MODUS-benedictus = vii-b vii-c2 vii-d viiisoll-G viiisoll-G5 viii-G viii-G2
 MAGNIFICAT = $(foreach M,I II III IV V VI VII,magnificat-$(M))
 BENEDICTUS = $(foreach B,I II III IV V VI,benedictus-$(B))
 CANTICIS = dan3 isaiae3 isaiae5 isaiae6
@@ -118,15 +118,19 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			  dominumdeumadoremus quammagnificatasunt vocabiturnomeneius \
 			  diligitedominum faciemtuam christusdeusnoster salusaeterna intuaiustitia \
 			  visitavitnos reveladomino iuniorfui speraindomino tamquamsponsus \
-			  dominusdixitad diffusaestgratia suscepimusdeus) \
-	 $(addprefix capitulum-,Multifariam ApparuitGratia) \
+			  dominusdixitad diffusaestgratia suscepimusdeus inprincipioetante \
+			  gloriainexcelsisdeo cumortusfueritsol levatecapitavestra magnificatusest \
+			  rexpacificus scitotequiapropeest) \
+	 $(addprefix capitulum-,Multifariam ApparuitGratia ApparuitBenignitas) \
 	 $(addprefix hym-,ASolisOrtus ChristeRedemptor CandorAEternae CandorAEternae-simplex \
 			  CordeNatus FitPorta RadixIesse) \
-	 $(addprefix resp-,notumfecit verbumcaro-simplex verbumcaro) \
+	 $(addprefix resp-,notumfecit verbumcaro-simplex verbumcaro hodiescietis) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
-	 $(addprefix versus-,notumfecit-communis tamquam verbumcaro) \
+	 $(addprefix versus-,notumfecit-communis tamquam verbumcaro crastinadie) \
 	 oratio oratiobmv oratiodomii supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
+	 orationativitas \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex annuntiationativitatisdomini \
+	 genealogiadnic genealogiadnic-initium \
 	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor festis-bmv \
 				  feria-laudes feria-vesperae dominica-perannum) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
