@@ -124,7 +124,7 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 	 $(addprefix capitulum-,Multifariam ApparuitGratia ApparuitBenignitas) \
 	 $(addprefix hym-,ASolisOrtus ChristeRedemptor CandorAEternae CandorAEternae-simplex \
 			  CordeNatus FitPorta RadixIesse) \
-	 $(addprefix resp-,notumfecit verbumcaro-simplex verbumcaro hodiescietis) \
+	 $(addprefix resp-,notumfecit verbumcaro-simplex verbumcaro hodiescietis notumfecit-solemnis) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(addprefix versus-,notumfecit-communis notumfecit tamquam verbumcaro crastinadie) \
 	 oratio oratiobmv oratiodomii supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
