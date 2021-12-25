@@ -161,16 +161,20 @@ per infiníta sǽcula sæculórum.
 
 \vspace{2mm}
 
+\ifx\invitatorium\undefined
 \pars{Invitatorium.}
 
 \vspace{-6mm}
 
-%\antiphona{IV**}{temporalia/inv-christusnatusest.gtex}
 \antiphona{E}{temporalia/inv-christusnatusest-simplex.gtex}
+\else
+\invitatorium
+\fi
 
 \vfill
 \pagebreak
 
+\ifx\hymnusmatutinum\undefined
 \pars{Hymnus.}
 
 {
@@ -180,6 +184,9 @@ per infiníta sǽcula sæculórum.
 }
 
 \vspace{-3mm}
+\else
+\hymnusmatutinum
+\fi
 
 \vfill
 \pagebreak
@@ -250,18 +257,23 @@ per infiníta sǽcula sæculórum.
 \vfill
 %\pagebreak
 
+\ifx\hymnuslaudes\undefined
 \pars{Hymnus} \scriptura{Sedulius}
 
 \grechangedim{interwordspacetext}{0.16 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \cuminitiali{III}{temporalia/hym-ASolisOrtus.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \vspace{-3mm}
+\else
+\hymnuslaudes
+\fi
 \vfill
 %\pagebreak
 
 \vfill
 \pagebreak
 
+\ifx\laudes\undefined
 \pars{Psalmus 1.} \scriptura{Lc. 2, 8.11.13.18; \textbf{H50}}
 
 \vspace{-4mm}
@@ -318,14 +330,21 @@ per infiníta sǽcula sæculórum.
 
 \vfill
 \pagebreak
+\else
+\laudes
+\fi
 
 \lectiobrevis
 
 \vfill
 
+\ifx\responsoriumbreve\undefined
 \pars{Responsorium breve.} \scriptura{Ps. 97, 2}
 
 \cuminitiali{VI}{temporalia/resp-notumfecit.gtex}
+\else
+\responsoriumbreve
+\fi
 
 \vfill
 \pagebreak
@@ -339,7 +358,7 @@ per infiníta sǽcula sæculórum.
 
 \pars{Preces.}
 
-\sineinitiali{}{temporalia/tonusprecum.gtex}
+\sineinitiali{}{temporalia/tonusprecumnovum.gtex}
 
 \preces
 
@@ -499,11 +518,15 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
+\ifx\capitulum\undefined
 \pars{Capitulum.} \scriptura{Hebr. 1, 1-2}
 
 \grechangedim{interwordspacetext}{0.12 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \cuminitiali{}{temporalia/capitulum-Multifariam.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}
+\else
+\capitulum
+\fi
 
 \vfill
 
@@ -540,7 +563,11 @@ per infiníta sǽcula sæculórum.
 \pagebreak
 
 % Oratio. %%%
+\ifx\oratioVesperas\undefined
 \cuminitiali{}{temporalia/oratio.gtex}
+\else
+\oratioVesperas
+\fi
 
 \vspace{-1mm}
 
