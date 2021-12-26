@@ -102,52 +102,6 @@
 
 \cantusSineNeumas
 
-\pars{Oratio ante divinum Officium.}
-
-\lettrine{{\color{red}A}}{peri,} Dómine, os meum ad benedicéndum nomen sanctum tuum:
-munda quoque cor meum ab ómnibus vanis, pervérsis, et aliénis
-cogitatiónibus:
-intelléctum illúmina, afféctum inflámma,
-ut digne, atténte ac devóte hoc Offícium recitáre váleam,
-et exaudíri mérear ante conspéctum Divínæ Maiestátis tuæ.
-Per Christum, Dóminum nostrum.
-\Rbardot{} Amen.
-
-Dómine, in unióne illíus divínæ intentiónis,
-qua ipse in terris laudes Deo persolvísti,
-has tibi Horas \rubricatum{(vel \textnormal{hanc tibi Horam})} persólvo.
-
-\vfill
-
-\pars{Oratio post divinum Officium.}
-
-\rubrica{
-  Orationem sequentem devote post Officium recitantibus
-  Leo Papa X. defectus, et culpas in eo persolvendo ex humana
-  fragilitate contractas, indulsit, et dicitur flexis genibus.
-}
-
-\lettrine{{\color{red}S}}{acrosánctæ} et indivíduæ Trinitáti,
-crucifíxi Dómini nostri Iesu Christi humanitáti,
-beatíssimæ et gloriosíssimæ sempérque Vírginis Maríæ
-fecúndæ integritáti, 
-et ómnium Sanctórum universitáti
-sit sempitérna laus, honor, virtus et glória
-ab omni creatúra,
-nobísque remíssio ómnium peccatórum,
-per infiníta sǽcula sæculórum.
-\Rbardot{} Amen.
-
-\noindent \Vbardot{} Beáta víscera Maríæ Virginis, quæ portavérunt
-ætérni Patris Fílium.\\
-\Rbardot{} Et beáta úbera, quæ lactavérunt Christum Dominum.
-
-\rubrica{Et dicitur secreto \textnormal{Pater noster.} et \textnormal{Ave María.}}
-
-\vfill
-
-\cantusSineNeumas
-
 \pars{} \scriptura{}
 
 \hora{Ad Matutinum.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -157,7 +111,7 @@ per infiníta sǽcula sæculórum.
 \cuminitiali{}{temporalia/dominelabiamea.gtex}
 
 \vfill
-\pagebreak
+%\pagebreak
 
 \vspace{2mm}
 
@@ -530,9 +484,13 @@ per infiníta sǽcula sæculórum.
 
 \vfill
 
+\ifx\responsoriumbrevevesp\undefined
 \pars{Responsorium breve.} \scriptura{Io. 1, 14}
 
 \cuminitiali{VI}{temporalia/resp-verbumcaro-simplex.gtex}
+\else
+\responsoriumbrevevesp
+\fi
 
 \vfill
 \pagebreak
@@ -545,10 +503,14 @@ per infiníta sǽcula sæculórum.
 \vfill
 %\pagebreak
 
+\ifx\vespversus\undefined
 \pars{Versus.} \scriptura{Ps. 97, 2}
 
 % Versus. %%%
 \sineinitiali{temporalia/versus-notumfecit-communis.gtex}
+\else
+\vespversus
+\fi
 
 \vfill
 \pagebreak
