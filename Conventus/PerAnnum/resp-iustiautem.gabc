@@ -1,14 +1,15 @@
 name: Iusti autem;
-book: Antiphonale Monasticum II, Praglia, p. 416;
-annotation: vi;
+book: Antiphonale Monasticum II, Praglia, p. 416; H189;
 mode: 6;
+transcriber: Jakub Jelínek;
+nabc-lines: 1;
 %%
 (c4)
-IU(f)sti(f) au(g_h)tem(hg__) *(,)
-in(f) per(gh>)pé(gf)tu(f)um(g) vi(g)vent(f.) (::)
-Iu(f)sti.(f) <sp>V/</sp>.(::)
-Et(f) a(g)pud(h) Dó(h)mi(h)num(h) est(h_) mer(h)ces(g) e(f)ó(g_h)rum.(hg__) *(::)
-In.(f) <sp>V/</sp>.(::)
-Gló(f)ri(f)a(f) Pa(gh)tri,(h) et(h) Fí(ixhi)li(h)o,(h_) (,)
+IUs(f|ta)ti(f|ta) au(g_h|peS)tem(hg__|cl-) *(;)
+In(f|ta) per(g!h>|pe>)pé(gf|cl)tu(f|ta)um(g|vi) vi(g|vihh)vent.(f.|ta) (::)
+Ius(f|ta)ti.(f|ta) <sp>V/</sp>.(::)
+Et(f|ta) a(g|vi)pud(h|vihg) Dó(h|vihg)mi(h|vihh)num(h|vihi) est(h_|vi-) mer(h|vi)ces(g|vihh) e(f|ta)ó(g_h|peS)rum.(hg__|cl-) *(::)
+In.(f|ta) <sp>V/</sp>.(::)
+Gló(f)ri(f)a(f) Pa(gh)tri(h) et(h) Fí(ixhi)li(h)o(h_) (,)
 et(h) Spi(h)rí(h)tu(g)i(h) Sanc(g>)to.(f.) (::)
-Iu(f)sti.(f) (::)
+Ius(f|ta)ti.(f|ta) (::)
