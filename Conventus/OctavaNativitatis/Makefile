@@ -130,7 +130,8 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			  ioannesapostolusetevangelista isteestioannescuichristus \
 			  isteestioannesquisupra verbumcarofactumest exiitsermointerfratres \
 			  ambulabuntmecum auditaestvox dicuntinfantesdomino exoreinfantium \
-			  hiemptisunt innocentesprochristo laetitiasempiternasupercapita) \
+			  hiemptisunt innocentesprochristo laetitiasempiternasupercapita \
+			  quioditanimamsuam) \
 	 $(addprefix capitulum-,Multifariam ApparuitGratia ApparuitBenignitas FratresQuanto \
 				QuiTimet VidiSupra) \
 	 $(addprefix hym-,ASolisOrtus ChristeRedemptor CandorAEternae CandorAEternae-simplex \
@@ -164,8 +165,8 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			   quemvidistis-CROCHU hicquiadvenit-CROCHU congratulaminiquiacum-CROCHU-cumdox \
 			   isteestioannesquisuprapectus-CROCHU eccepuermeus-CROCHU-cumdox \
 			   inmedioecclesiae-CROCHU subaltaredei-CROCHU cantabantsancti-CROCHU \
-			   eccevidiagnum-CROCHU-cumdox) \
-	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
+			   eccevidiagnum-CROCHU-cumdox ecceagnusdei-CROCHU-cumdox) \
+	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_regina_caeli_simplex convertenosdeus dominusnosbenedicat \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 benedictio-noctemquietam an_salve_regina tonusprecum tonusprecumnovum \

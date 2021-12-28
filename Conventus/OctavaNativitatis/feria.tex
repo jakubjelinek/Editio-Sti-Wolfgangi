@@ -118,7 +118,7 @@
 \ifx\invitatorium\undefined
 \pars{Invitatorium.}
 
-\vspace{-6mm}
+\vspace{-2mm}
 
 \antiphona{E}{temporalia/inv-christusnatusest-simplex.gtex}
 \else
@@ -150,19 +150,53 @@
 \ifx\postoctavam\undefined
 % Te Deum
 
-%\pars{Hymnus Ambrosianus}
-
 \vspace{-5mm}
 
+\ifx\tedeumsolemnis\undefined
+\ifx\tedeumsimplex\undefined
+\ifx\tedeummonasticum\undefined
+{
 \pars{Hymnus Ambrosianus} \scriptura{Alio modo, iuxta morem Romanum}
 
 \vspace{-2mm}
 
-{
 \grechangedim{interwordspacetext}{0.26 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \cuminitiali{III}{temporalia/tedeum-romanum-gn.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 }
+\else
+{
+\pars{Hymnus Ambrosianus} \scriptura{Tonus Monasticus}
+
+\vspace{-2mm}
+
+\grechangedim{interwordspacetext}{0.26 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{III}{temporalia/tedeum-monasticum-am34.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+\fi
+\else
+{
+\pars{Hymnus Ambrosianus} \scriptura{Tonus Simplex}
+
+\vspace{-2mm}
+
+\grechangedim{interwordspacetext}{0.30 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{III}{temporalia/tedeum-simplex-gn.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+\fi
+\else
+{
+\pars{Hymnus Ambrosianus} \scriptura{Tonus Solemnis}
+
+\vspace{-2mm}
+
+\grechangedim{interwordspacetext}{0.26 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{III}{temporalia/tedeum-solemnis-gn.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+\fi
 
 \vfill
 \pagebreak
@@ -212,6 +246,7 @@
 %\pagebreak
 
 \ifx\hymnuslaudes\undefined
+\pagebreak
 \pars{Hymnus} \scriptura{Sedulius}
 
 \grechangedim{interwordspacetext}{0.16 cm plus 0.15 cm minus 0.05 cm}{scalable}%
@@ -221,8 +256,6 @@
 \else
 \hymnuslaudes
 \fi
-\vfill
-%\pagebreak
 
 \vfill
 \pagebreak
