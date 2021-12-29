@@ -165,7 +165,8 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			   quemvidistis-CROCHU hicquiadvenit-CROCHU congratulaminiquiacum-CROCHU-cumdox \
 			   isteestioannesquisuprapectus-CROCHU eccepuermeus-CROCHU-cumdox \
 			   inmedioecclesiae-CROCHU subaltaredei-CROCHU cantabantsancti-CROCHU \
-			   eccevidiagnum-CROCHU-cumdox ecceagnusdei-CROCHU-cumdox) \
+			   eccevidiagnum-CROCHU-cumdox ecceagnusdei-CROCHU-cumdox beataviscera-CROCHU \
+			   confirmatumest-CROCHU-cumdox) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_regina_caeli_simplex convertenosdeus dominusnosbenedicat \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
