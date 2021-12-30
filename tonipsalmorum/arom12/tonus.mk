@@ -80,6 +80,7 @@ TONUS-ivsoll-d = 1 3 1 3
 TONUS-ivsoll-e2 = 1 3 1 3
 TONUS-v-a = 1 0 2 0
 TONUS-v-g = 1 0 2 0
+TONUS-v-d = 1 0 0 1
 TONUS-vsoll-a = 1 3 2 0
 TONUS-vsoll-g = 1 3 2 0
 TONUS-vsoll-a2 = 1 3 2 0
