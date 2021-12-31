@@ -37,21 +37,21 @@ MODUS-36iii = vi-F
 MODUS-44 = i-g3
 MODUS-45 = iii-a viii-G
 MODUS-47 = viii-G
-MODUS-62 = i-d ii-D iv-E vii-d viii-G
+MODUS-62 = i-d i-g ii-D iv-E vii-d viii-G
 MODUS-63 = iii-b
 MODUS-66 = i-d
 MODUS-71 = iii-b
 MODUS-71i = iii-b
 MODUS-71ii = ii_-a
 MODUS-84 = viii-a
-MODUS-86 = iii-a
+MODUS-86 = iii-a vii-c
 MODUS-88ii_xix = i-a2
 MODUS-88xx_xxx = ii-D
 MODUS-92 = i-g vi-F
 MODUS-95 = ii_-a
 MODUS-96 = vi-F viii-G
 MODUS-97 = v-a v-d viii-C2 viii-G
-MODUS-98 = i-g viii-G2
+MODUS-98 = i-g ii-D viii-G2
 MODUS-99 = iii-a2 viii-G
 MODUS-103i = iii-a
 MODUS-103ii = ii-D
@@ -78,10 +78,10 @@ MODUS-147 = ii-D
 MODUS-148 = i-f ii-D
 MODUS-149 = i-f i-g ii-D viii-G2
 MODUS-150 = i-f ii-D
-MODUS-dan3 = i-g vi-F vii-a vii-d
-MODUS-isaiae3 = iv-E viii-G
-MODUS-isaiae5 = iv-E viii-G
-MODUS-isaiae6 = iv-E viii-G
+MODUS-dan3 = i-g ii-D vi-F vii-a vii-d
+MODUS-isaiae3 = i-d iv-E viii-G
+MODUS-isaiae5 = i-d iv-E viii-G
+MODUS-isaiae6 = i-d iv-E viii-G
 MODUS-magnificat = isoll-g isoll-g2 isoll-a5 ii-D iisoll-A iiisoll-e iv-E vi-F visoll-F viiisoll-G viii-g
 MODUS-benedictus = isoll-g ii-D vsoll-g vii-b vii-c2 vii-d viiisoll-G viiisoll-G5 viii-G viii-G2
 CANTICIS = dan3 isaiae3 isaiae5 isaiae6
@@ -131,7 +131,8 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			  isteestioannesquisupra verbumcarofactumest exiitsermointerfratres \
 			  ambulabuntmecum auditaestvox dicuntinfantesdomino exoreinfantium \
 			  hiemptisunt innocentesprochristo laetitiasempiternasupercapita \
-			  quioditanimamsuam luxortaestiustoet nonenimvosestis) \
+			  quioditanimamsuam luxortaestiustoet nonenimvosestis homonatusestinea \
+			  anteluciferumgenitus virgodeigenetrix genuitpuerpera) \
 	 $(addprefix capitulum-,Multifariam ApparuitGratia ApparuitBenignitas FratresQuanto \
 				QuiTimet VidiSupra) \
 	 $(addprefix hym-,ASolisOrtus ChristeRedemptor CandorAEternae CandorAEternae-simplex \
@@ -166,7 +167,8 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			   isteestioannesquisuprapectus-CROCHU eccepuermeus-CROCHU-cumdox \
 			   inmedioecclesiae-CROCHU subaltaredei-CROCHU cantabantsancti-CROCHU \
 			   eccevidiagnum-CROCHU-cumdox ecceagnusdei-CROCHU-cumdox beataviscera-CROCHU \
-			   confirmatumest-CROCHU-cumdox) \
+			   confirmatumest-CROCHU-cumdox beataetvenerabilisvirgo-CROCHU \
+			   sanctaetimmaculata-CROCHU-cumdox) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_regina_caeli_simplex convertenosdeus dominusnosbenedicat \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
@@ -174,7 +176,7 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 	 ps88ii_xix-initium-i-a2 ps88xx_xxx-initium-ii-D benedictus-initium-viii-G2 \
 	 ps97-initium-viii-d dan3-initium-i-g-trans ps126-initium-i-g-trans \
 	 ps105i-initium-e ps103iii-initium-e magnificat-initium-isoll-a5 \
-	 ps18-initium-iii-b-trans
+	 ps18-initium-iii-b-trans ps62-initium-i-g-trans
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
