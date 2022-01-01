@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 2 18 18i 23 30i 30ii 30iii 32i 32ii 36i_xi 36xii_xxix 36iii 44 45 47 62 63 66 71 71i 71ii 84 86 88ii_xix 88xx_xxx 92 95 96 97 98 99 103i 103ii 103iii 104i 104ii 104iii 105i 105ii 105iii 109 110 111 112 116 121 126 129 131 144ii 145 146 147 148 149 150
+PSALMS = 2 18 18i 23 30i 30ii 30iii 32i 32ii 36i_xi 36xii_xxix 36iii 44 45 47 62 63 66 71 71i 71ii 84 86 88ii_xix 88xx_xxx 92 95 96 97 98 99 103i 103ii 103iii 104i 104ii 104iii 105i 105ii 105iii 109 110 111 112 116 117 121 126 129 131 144ii 145 146 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-2 = i-d viii-c viii-C
 MODUS-18 = iii-b
@@ -67,6 +67,7 @@ MODUS-110 = vii-a
 MODUS-111 = vii-d viii-G
 MODUS-112 = i-g iii-a2 vi-F viii-G
 MODUS-116 = iii-a2
+MODUS-117 = i-g
 MODUS-121 = iv-E viii-G2
 MODUS-126 = i-g ii-D
 MODUS-129 = ii_-B
@@ -78,12 +79,12 @@ MODUS-147 = ii-D
 MODUS-148 = i-f ii-D
 MODUS-149 = i-f i-g ii-D viii-G2
 MODUS-150 = i-f ii-D
-MODUS-dan3 = i-g ii-D vi-F vii-a vii-d
+MODUS-dan3 = i-d i-g ii-D vi-F vii-a vii-d
 MODUS-isaiae3 = i-d iv-E viii-G
 MODUS-isaiae5 = i-d iv-E viii-G
 MODUS-isaiae6 = i-d iv-E viii-G
 MODUS-magnificat = isoll-g isoll-g2 isoll-a5 ii-D iisoll-A iiisoll-e iv-E vi-F visoll-F viiisoll-G viii-g
-MODUS-benedictus = isoll-g ii-D vsoll-g vii-b vii-c2 vii-d viiisoll-G viiisoll-G5 viii-G viii-G2
+MODUS-benedictus = isoll-g ii-D vsoll-g visoll-F vii-b vii-c2 vii-d viiisoll-G viiisoll-G5 viii-G viii-G2
 CANTICIS = dan3 isaiae3 isaiae5 isaiae6
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -139,7 +140,7 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			  CordeNatus FitPorta RadixIesse ChristeSplendor DulceFit CohorsBeata \
 			  VirginisVirgo HymnumCanentes SalveteFlores TyrannusAnxius) \
 	 $(addprefix resp-,notumfecit verbumcaro-simplex verbumcaro hodiescietis notumfecit-solemnis \
-			   christefilidei-familiae constitueseos exsultentiusti iustiautem) \
+			   christefilidei-familiae constitueseos exsultentiusti iustiautem christefilidei-nat) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(addprefix versus-,notumfecit-communis notumfecit tamquam verbumcaro crastinadie \
 			     subthrono) \
@@ -148,7 +149,7 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex annuntiationativitatisdomini \
 	 genealogiadnic genealogiadnic-initium \
 	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor festis-bmv \
-				  feria-laudes feria-vesperae dominica-perannum) \
+				  feria-laudes feria-vesperae dominica-perannum tempore-nativitatis) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
 	 dominelabiamea $(addprefix inv-,christusnatusest christusnatusest-simplex maternitatemvirginis \
 					 christumdeifilium regemapostolorum-iv christumnatumquiinnocentes) \
