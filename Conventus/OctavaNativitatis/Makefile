@@ -20,20 +20,21 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 2 18 18i 23 30i 30ii 30iii 32i 32ii 36i_xi 36xii_xxix 36iii 44 45 47 62 63 66 71 71i 71ii 84 86 88ii_xix 88xx_xxx 92 95 96 97 98 99 103i 103ii 103iii 104i 104ii 104iii 105i 105ii 105iii 109 110 111 112 116 117 121 126 129 131 144ii 145 146 147 148 149 150
+PSALMS = 2 18 18i 23 30i 30ii 30iii 32i 32ii 36i_xi 36xii_xxix 36iii 41 44 45 47 62 63 66 71 71i 71ii 84 86 88ii_xix 88xx_xxx 92 95 96 97 98 99 103i 103ii 103iii 104i 104ii 104iii 105i 105ii 105iii 109 110 111 112 113 114 115 116 117 121 126 128 129 131 144ii 145 146 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-2 = i-d viii-c viii-C
 MODUS-18 = iii-b
-MODUS-18i = v-a viii-G
+MODUS-18i = ii-D v-a viii-G
 MODUS-23 = iii-b v-a
 MODUS-30i = viii-G
-MODUS-30ii = viii-G
+MODUS-30ii = viii-G e-a
 MODUS-30iii = ii-D
 MODUS-32i = viii-G
 MODUS-32ii = viii-G
 MODUS-36i_xi = vi-F
 MODUS-36xii_xxix = ii-D
 MODUS-36iii = vi-F
+MODUS-41 = ii-D
 MODUS-44 = i-g3
 MODUS-45 = iii-a viii-G
 MODUS-47 = viii-G
@@ -66,10 +67,14 @@ MODUS-109 = i-g vi-F viii-G
 MODUS-110 = vii-a
 MODUS-111 = vii-d viii-G
 MODUS-112 = i-g iii-a2 vi-F viii-G
-MODUS-116 = iii-a2
+MODUS-113 = per
+MODUS-114 = i-g2
+MODUS-115 = viii-A
+MODUS-116 = iii-a2 viii-A
 MODUS-117 = i-g
 MODUS-121 = iv-E viii-G2
 MODUS-126 = i-g ii-D
+MODUS-128 = ii-D
 MODUS-129 = ii_-B
 MODUS-131 = viii-G
 MODUS-144ii = viii-G
@@ -83,9 +88,10 @@ MODUS-dan3 = i-d i-g ii-D vi-F vii-a vii-d
 MODUS-isaiae3 = i-d iv-E viii-G
 MODUS-isaiae5 = i-d iv-E viii-G
 MODUS-isaiae6 = i-d iv-E viii-G
-MODUS-magnificat = isoll-g isoll-g2 isoll-a5 ii-D iisoll-A iiisoll-e iv-E vi-F visoll-F viiisoll-G viii-g
+MODUS-ecclesiastici = iii-a
+MODUS-magnificat = isoll-g isoll-g2 isoll-a5 i-a4 ii-D iisoll-A iiisoll-e iv-E vi-F visoll-F viiisoll-G viii-g
 MODUS-benedictus = isoll-g ii-D vsoll-g visoll-F vii-b vii-c2 vii-d viiisoll-G viiisoll-G5 viii-G viii-G2
-CANTICIS = dan3 isaiae3 isaiae5 isaiae6
+CANTICIS = dan3 isaiae3 isaiae5 isaiae6 ecclesiastici
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
 	   && $(SED) -i -e 's/\*/\\grestar{}/g' $@
@@ -133,7 +139,10 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			  ambulabuntmecum auditaestvox dicuntinfantesdomino exoreinfantium \
 			  hiemptisunt innocentesprochristo laetitiasempiternasupercapita \
 			  quioditanimamsuam luxortaestiustoet nonenimvosestis homonatusestinea \
-			  anteluciferumgenitus virgodeigenetrix genuitpuerpera) \
+			  anteluciferumgenitus virgodeigenetrix genuitpuerpera benedictumnomengloriae \
+			  illuminadomine operamanuumeius ostendenobisdomine sitivitanima \
+			  hisuntquicummulieribus credidi inclinavitdominus nosquivivimus \
+			  saepeexpugnaveruntme) \
 	 $(addprefix capitulum-,Multifariam ApparuitGratia ApparuitBenignitas FratresQuanto \
 				QuiTimet VidiSupra) \
 	 $(addprefix hym-,ASolisOrtus ChristeRedemptor CandorAEternae CandorAEternae-simplex \
@@ -204,7 +213,7 @@ iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 aro
 include $(iter)
 
 PDF = indienativitatis.pdf sanctaefamiliae.pdf dievpostnativitatem.pdf dievipostnativitatem.pdf dieviipostnativitatem.pdf sdeigenetricismariae.pdf \
-      iiianuarii.pdf dominicaiipostnativitatem.pdf ivianuarii.pdf vianuarii.pdf sioannis.pdf sanctoruminnocentium.pdf
+      iiianuarii.pdf iiiianuarii.pdf dominicaiipostnativitatem.pdf ivianuarii.pdf vianuarii.pdf sioannis.pdf sanctoruminnocentium.pdf
 all: $(PDF)
 $(LAPSALMSSINEDOX): $(TMP_DIR)/%-sinedox.tex: $(TMP_DIR)/%.tex
 	sed -e '/^Gló.*ri.*a.*Pa.*tri.*et.*Fí.*li.*o/d;/^et.*Spi.*rí.*tu.*i.*Sanc.*to/d;/^Sicut.*erat.*in.*princí.*pi.*o,.*et.*nunc.*et.*sem.*per,/d;/^et.*in.*sǽcu.*la.*sæ.*cu.*ló.*rum.*A.*men/d' < $^ > $@
