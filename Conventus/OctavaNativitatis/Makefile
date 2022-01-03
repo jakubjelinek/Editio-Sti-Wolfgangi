@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 2 18 18i 23 30i 30ii 30iii 32i 32ii 36i_xi 36xii_xxix 36iii 41 44 45 47 62 63 66 71 71i 71ii 84 86 88ii_xix 88xx_xxx 92 95 96 97 98 99 103i 103ii 103iii 104i 104ii 104iii 105i 105ii 105iii 109 110 111 112 113 114 115 116 117 121 126 128 129 131 144ii 145 146 147 148 149 150
+PSALMS = 2 18 18i 23 30i 30ii 30iii 32i 32ii 36i_xi 36xii_xxix 36iii 41 42 44 45 47 62 63 64 66 71 71i 71ii 84 86 88ii_xix 88xx_xxx 92 95 96 97 98 99 103i 103ii 103iii 104i 104ii 104iii 105i 105ii 105iii 109 110 111 112 113 114 115 116 117 121 126 128 129 131 144ii 145 146 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-2 = i-d viii-c viii-C
 MODUS-18 = iii-b
@@ -35,11 +35,13 @@ MODUS-36i_xi = vi-F
 MODUS-36xii_xxix = ii-D
 MODUS-36iii = vi-F
 MODUS-41 = ii-D
+MODUS-42 = vi-F
 MODUS-44 = i-g3
 MODUS-45 = iii-a viii-G
 MODUS-47 = viii-G
 MODUS-62 = i-d i-g ii-D iv-E vii-d viii-G
 MODUS-63 = iii-b
+MODUS-64 = viii-A
 MODUS-66 = i-d
 MODUS-71 = iii-b
 MODUS-71i = iii-b
@@ -89,9 +91,10 @@ MODUS-isaiae3 = i-d iv-E viii-G
 MODUS-isaiae5 = i-d iv-E viii-G
 MODUS-isaiae6 = i-d iv-E viii-G
 MODUS-ecclesiastici = iii-a
+MODUS-ezechiae = e
 MODUS-magnificat = isoll-g isoll-g2 isoll-a5 i-a4 ii-D iisoll-A iiisoll-e iv-E vi-F visoll-F viiisoll-G viii-g
 MODUS-benedictus = isoll-g ii-D vsoll-g visoll-F vii-b vii-c2 vii-d viiisoll-G viiisoll-G5 viii-G viii-G2
-CANTICIS = dan3 isaiae3 isaiae5 isaiae6 ecclesiastici
+CANTICIS = dan3 isaiae3 isaiae5 isaiae6 ecclesiastici ezechiae
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
 	   && $(SED) -i -e 's/\*/\\grestar{}/g' $@
@@ -142,7 +145,7 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			  anteluciferumgenitus virgodeigenetrix genuitpuerpera benedictumnomengloriae \
 			  illuminadomine operamanuumeius ostendenobisdomine sitivitanima \
 			  hisuntquicummulieribus credidi inclinavitdominus nosquivivimus \
-			  saepeexpugnaveruntme) \
+			  saepeexpugnaveruntme cunctisdiebus salutarevultusmei tedecet) \
 	 $(addprefix capitulum-,Multifariam ApparuitGratia ApparuitBenignitas FratresQuanto \
 				QuiTimet VidiSupra) \
 	 $(addprefix hym-,ASolisOrtus ChristeRedemptor CandorAEternae CandorAEternae-simplex \
