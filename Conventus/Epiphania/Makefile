@@ -142,7 +142,7 @@ SCORES = alleluia-VidimusStellam ant1 ant2 ant3 ant4 ant5 ant-ben-laud ant-magn-
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus deus christus ignem evangelica divinum perevangelica) \
 	 $(addprefix benedicamus-solemnis-,laud 1vesp 2vesp) \
 	 $(addprefix benedicamus-,solemnism-laud feria-laudes feria-vesperae) \
-	 $(addprefix versus-,adorate adorate-simplex reges reges-simplex omnes reges-communis omnis-simplex) \
+	 $(addprefix versus-,adorate adorate-simplex reges reges-simplex omnes reges-communis omnis-simplex venientadte) \
 	 $(addprefix capitulum-,Surge Leva Omnes) tedecetlaus tonus-evangelii-b \
 	 tonus-lectionis-solemnis \
 	 $(addprefix resp-,benedictusdominus deusmeusadiutormeus inclinacormeum) \
@@ -157,7 +157,8 @@ SCORES = alleluia-VidimusStellam ant1 ant2 ant3 ant4 ant5 ant-ben-laud ant-magn-
 			   emittedominesapientiam-CROCHU-sinedox initiumsapientiae-CROCHU \
 			   quisdeusmagnus-CROCHU-cumdox sibonasuscepimus-CROCHU sicutcedrus \
 			   istaestspeciosa inprincipiodeusantequam-CROCHU gyrumcaeli-CROCHU \
-			   damihidominesedium-CROCHU-cumdox) \
+			   damihidominesedium-CROCHU-cumdox stellaquamviderunt-CROCHU-cumdox \
+			   incolumbaespecie-CROCHU-cumdox magiveniunt-CROCHU) \
 	 $(addprefix ant-,anteluciferum stellaista venitlumentuum magividentes \
 			  tribusmiraculis fluminisimpetus psallitedeo hodiecaelestisponso \
 			  omnisterra omnesgentes aboriente confundanturqui conversusestfuror \
