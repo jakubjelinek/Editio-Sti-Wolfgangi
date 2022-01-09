@@ -108,7 +108,7 @@ MODUS-ezechiae = e
 MODUS-anna = ii-D
 MODUS-habacuc = iv_-e
 MODUS-moysis2i_xii = vi-F
-MODUS-magnificat = isoll-g isoll-g2 isoll-a5 i-a4 ii-D iisoll-A iiisoll-e iv-E vi-F visoll-F vii-a viiisoll-G viii-g
+MODUS-magnificat = isoll-g isoll-g2 isoll-a5 i-a4 ii-D iisoll-A iiisoll-e iv-E vi-F visoll-F vii-a viiisoll-G viii-g viii-a
 MODUS-benedictus = isoll-g ii-D iv-E vsoll-g visoll-F vii-b vii-c2 vii-d viisoll-a viiisoll-G viiisoll-G5 viii-G viii-G2
 CANTICIS = dan3 isaiae3 isaiae5 isaiae6 ecclesiastici ezechiae anna habacuc moysis2i_xii
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
@@ -168,7 +168,8 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			  aboriente videntesstellammagi infideetlenitate anteluciferum \
 			  apertisthesauris mariaetflumina triasuntmunera datemagnitudinem \
 			  quamadmirabileest baptizatmiles baptizaturchristus fontesaquarum \
-			  omnisterra ordinesangelorum tequiinspiritu votameadomino voxdominisuperaquas) \
+			  omnisterra ordinesangelorum tequiinspiritu votameadomino voxdominisuperaquas \
+			  omnesdesaba) \
 	 $(addprefix capitulum-,Multifariam ApparuitGratia ApparuitBenignitas FratresQuanto \
 				QuiTimet VidiSupra Surge) \
 	 $(addprefix hym-,ASolisOrtus ChristeRedemptor CandorAEternae CandorAEternae-simplex \
@@ -249,7 +250,7 @@ include $(iter)
 
 PDF = indienativitatis.pdf sanctaefamiliae.pdf dievpostnativitatem.pdf dievipostnativitatem.pdf dieviipostnativitatem.pdf sdeigenetricismariae.pdf \
       iiianuarii.pdf iiiianuarii.pdf dominicaiipostnativitatem.pdf ivianuarii.pdf vianuarii.pdf sioannis.pdf sanctoruminnocentium.pdf \
-      dieiiinfraoctavamepiphaniae.pdf dieiiiinfraoctavamepiphaniae.pdf inbaptismatedomini.pdf
+      dieiiinfraoctavamepiphaniae.pdf dieiiiinfraoctavamepiphaniae.pdf inbaptismatedomini.pdf dievinfraoctavamepiphaniae.pdf
 all: $(PDF)
 $(LAPSALMSSINEDOX): $(TMP_DIR)/%-sinedox.tex: $(TMP_DIR)/%.tex
 	sed -e '/^Gló.*ri.*a.*Pa.*tri.*et.*Fí.*li.*o/d;/^et.*Spi.*rí.*tu.*i.*Sanc.*to/d;/^Sicut.*erat.*in.*princí.*pi.*o,.*et.*nunc.*et.*sem.*per,/d;/^et.*in.*sǽcu.*la.*sæ.*cu.*ló.*rum.*A.*men/d' < $^ > $@
