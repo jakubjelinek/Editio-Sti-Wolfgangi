@@ -428,7 +428,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  deumquiglorificatur domumdeidecet regemconfessorum iesumchristum) \
 	 $(addprefix versus-,memorfui medianocte praevenerunt aporta-alt misericordiaetuae \
 			     dataest-communis afferte adorabunt) \
-	 dominelabiamea dominelabiamea-praglia tonusprecum dominusnosbenedicat \
+	 dominelabiamea dominelabiamea-praglia tonusprecum tonusprecumnovum dominusnosbenedicat \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
