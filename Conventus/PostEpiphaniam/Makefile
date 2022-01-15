@@ -245,7 +245,8 @@ PDFI = $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE)))
 PDFII = $(foreach H,$(HEBDOMADAE),sabbato-$(H).pdf)
 PDFIII = $(foreach H,$(HEBDOMADAE),dominica-$(H).pdf)
 PDFIV = $(foreach H,$(HEBDOMADAE),$(patsubst %,vferia%-$(H).pdf,$(FERIAE)))
-PDF = $(PDFI) $(PDFII) $(PDFIII) $(PDFIV)
+PDFV = $(foreach H,$(HEBDOMADAE),vdominica-$(H).pdf)
+PDF = $(PDFI) $(PDFII) $(PDFIII) $(PDFIV) $(PDFV)
 all: $(PDF)
 iter = $(patsubst %,iterator.mk,$(iter-left))
 define iter-doit
@@ -282,6 +283,11 @@ define iter-doit
 $(patsubst %.pdf,%.tex,$(i)): vferia$(word 1,$(subst -, ,$(patsubst vferia%.pdf,%,$(i)))).tex hebdomada$(word 2,$(subst -, ,$(patsubst vferia%.pdf,%,$(i)))).tex ; touch $$@
 endef
 iter-left := $(PDFIV)
+include $(iter)
+define iter-doit
+$(patsubst %.pdf,%.tex,$(i)): vdominica.tex hebdomada$(patsubst vdominica-%.pdf,%,$(i)).tex ; touch $$@
+endef
+iter-left := $(PDFV)
 include $(iter)
 $(filter-out $(TMP_DIR)/ps115% $(TMP_DIR)/ps148% $(TMP_DIR)/ps149% $(TMP_DIR)/dan3% $(TMP_DIR)/magnificat%,$(ALLLAPSALMS)): PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(foreach M,$(MODUS-magnificat),$(TMP_DIR)/magnificat-$(M).tex): PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --flex-underline --skip-verses 2 $(LAPSALMOPTSACC)
