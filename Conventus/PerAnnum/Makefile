@@ -359,7 +359,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  caeciliafamulatua cantantibusorganis domineiesuchriste \
 			  estsecretumvaleriane expansismanibusorabat triduanasadomino \
 			  dumauroranocti volopaterutubiegosum desponsatasumchristo \
-			  nonenimvosestis deficientevino) \
+			  nonenimvosestis deficientevino hicvirdespiciens) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -399,7 +399,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  QuiVivis-pluribus UrbsBeata UrbsJerusalem AngularisFundamentum \
 			  InclitusPastor-doctorum IsteConfessorColentes MartinePar \
 			  PrimoDierum-kempten AdSacrosVirgo MiraNocturnis NobilemChristi \
-			  IamBone IesuRex AEternaImago OCastitatisSignifer DiesIrae QuidSum) \
+			  IamBone IesuRex AEternaImago OCastitatisSignifer DiesIrae QuidSum \
+			  IesuCoronaCaelitum SalveteCedri) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -418,7 +419,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 $(addprefix benedicamus-,feria-laudes feria-vesperae minor officium-bmv festis-bmv \
 				  dominica-perannum duplex-laudes solemnism-laud \
 				  adlaudes-festis duplexmajus-laudes festis-sanctorum \
-				  feria-advequad) \
+				  feria-advequad memoria-laudes) \
 	 $(addprefix inv-,alleluiachristumdominum regemmagnum dominumquifecit adoremusdominum \
 			  dominumdeum veniteexsultemus jubilemusdeo avemaria christummariaefilium \
 			  mirabileminsanctis visitationemvirginis regemmartyrumsimplex \
