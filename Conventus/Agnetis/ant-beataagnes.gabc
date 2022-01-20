@@ -1,19 +1,20 @@
 name: Beata Agnes;
-book: Antiphonale Monasticum II, Praglia, p. 13;
+book: Antiphonale Monasticum II, Praglia, p. 13; H114;
 annotation: viii g;
 mode: 8;
+nabc-lines: 1;
 %%
 (c4)
-BE(g)á(gj)ta(hv_GF) A(g_0h>_0)gnes,(g_) *(,)
-in(g) mé(h_k)di(j)o(i) flam(g)má(h)rum,(g_) (,)
-ex(g)pán(h_k>)sis(j_) má(ji)ni(h)bus(iwj) o(h)rá(g.)bat:(g.) (:)
-Te(gj_j_i_) dé(j)pre(h!iwj)cor,(j_g_) ve(i)ne(j)rán(k_)de,(j) co(h)lén(jjo)de,(i_) (,)
-Pa(j)ter(j) me(j)tu(j)én(jkJI__/kwlj~)de:(kj..) (;)
-qui(j)a(j) per(k) san(m_l>)ctum(j) Fí(k)li(j)um(j) tu(ji__!jwkj)um(kkoj) (;)
-mi(kko)nas(g) e(h)vá(hk)si(j) sa(i)cri(j)lé(h)gi(g) ty(f)rán(g_0h>_0)ni,(g.) (;)
-et(h) car(f_g)nis(g) spur(h)cí(f)ti(fg)as(g_) (,)
-im(h)ma(h)cu(k)lá(j_i_)to(g_h) cal(jh~)le(i) tran(h)sí(g.)vi:(g.) (:)
-et(d) ec(f/gh)ce(g) vé(g_h)ni(fe)o(d) ad(f) te,(ghgh) (;)
-quem(h) a(k)má(j_i)vi,(gOh) (,)
-quem(j_h~) quae(i)sí(h)vi,(g_f_) (,)
-quem(hg~) sem(hk>)per(j) op(ih)tá(g.)vi.(g.) (::)
+BE(g|ta)á(gj|pelsal3)ta(hv_GF|ci-) A(g_0h>_0|pe>1)gnes,(g_|ta-lse6) *(,)
+in(g|ta) mé(h_k|```peShmlsal1lss3)di(j|vihj)o(i|vihj) flam(g|ta)má(h|vi)rum,(g_|ta-) (,)
+ex(g|```talse4)pán(h_k>|```pe>1hklsal4)sis(j_|vi-hi) má(ji|clhilsc3)ni(h|ta)bus(iwj|ql) o(h|vi)rá(g.|ta)bat:(g.|ta) (:)
+Te(gj_j_i_|pe-hicl-hjhg) dé(j|vihj)pre(h!iwj|qlhippt1)cor,(j_g_|clM-hi) ve(i|vihi)ne(j|vihj)rán(k_|vi-hk)de,(j|vihj) co(h|ta)lén(jjo|vslsc2)de,(i_|ta-) (,)
+Pa(j|vi)ter(j|vihg) me(j|vihg)tu(j|vihh)én(jkJI__/kwlj~|toS2hksut1qi>hk)de:(kj..|cl-hj) (;)
+qui(j|tahi)a(j|tahi) per(k|vihklsl2) san(m_l>|cl->hplss3)ctum(j|tahi) Fí(k|vihk)li(j|tahi)um(j|tahi) tu(ji__!jwkj|cl-hkqlhk!clhk)um(kkoj|prhk) (;)
+mi(kko|vshklsal3)nas(g|talsi8) e(h|vilsl3)vá(hk|```pehjlse7)si(j|vihi) sa(i|ta)cri(j|vi)lé(h|vi)gi(g|vi) ty(f|ta)rán(g_0h>_0|pe>1)ni,(g.|ta-lsx6) (;)
+et(h|vi) car(f_g|peS)nis(g|vilssta6) spur(h|vihh)cí(f|ta)ti(fg|pe)as(g_|vi-) (,)
+im(h|vi)ma(h|vihg)cu(k|vihklss3)lá(j_i_|cl-hi)to(g_h|peS) cal(jh~|```vi>lss1)le(i|vi) tran(h>|vi>)sí(g.|ta)vi:(g.|ta-) (:)
+et(d|grlsi8) ec(f/gh|vi-pehi)ce(g|tahg) vé(g_h|peS)ni(fe|cllsc3)o(d|ta) ad(f|vi) te,(ghgh|trhg) (;)
+quem(h|```vihhlse4) a(k|vihklss3)má(j_i|cl-hi)vi,(gOh|pq) (,)
+quem(j_h~|vi->hi) quæ(i|vi)sí(h|vi)vi,(g_f_|cl-) (,)
+quem(hg~|vi>) sem(hk>|pe>lsal3)per(j|vi) op(ih|cl)tá(g.|ta)vi.(g.|ta) (::)

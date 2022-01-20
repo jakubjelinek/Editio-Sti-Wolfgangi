@@ -1,10 +1,11 @@
 name: Congaudete mecum;
-book: Antiphonale Monasticum II, Praglia, p. 12;
+book: Antiphonale Monasticum II, Praglia, p. 12; H114;
 annotation: VIII g;
 mode: 8;
+nabc-lines: 1;
 %%
 (c4)
-COn(g_)gau(fd~)dé(e)te(f) me(gh)cum(g_) *(,)
-et(g) con(i)gra(k)tu(jh)lá(j)mi(j)ni,(i.) (;)
-qui(k)a(k) cum(j) his(j) ó(kl>)mni(k)bus(ji/jkj) (,)
-lú(h)ci(gh)das(h_) se(h_)des(j) ac(i)cé(g.)pi.(g.) (::)
+COn(g_|vi-)gau(fd~|vi>)dé(e|vihg)te(f|vihh) me(gh|pe)cum(g_|ta-) *(,)
+et(g|ta) con(i|vi)gra(k|vihh)tu(jh|cllsc3)lá(j|vihg)mi(j|vihg)ni,(i.|ta) (;)
+qui(k|vihj)a(k|vihl) cum(j|ta) his(j|ta) ó(kl>|pe>hplsal2)mni(k|vihk)bus(ji/jkj|clhktohk) (,)
+lú(h|vi)ci(gh|pe)das(h_|vi-) se(h_|vi-)des(j|vihi) ac(i|vihi)cé(g.|ta)pi.(g.|ta) (::)

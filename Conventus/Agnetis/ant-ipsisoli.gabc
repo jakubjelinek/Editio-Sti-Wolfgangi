@@ -1,9 +1,10 @@
 name: Ipsi soli;
-book: Antiphonale Monasticum II, Praglia, p. 11;
+book: Antiphonale Monasticum II, Praglia, p. 11; H111;
 annotation: I g;
 mode: 1;
+nabc-lines: 1;
 %%
 (c4)
-I(f)psi(fg) so(gff)li(d!ewf_EC) *()
-ser(f)vo(g) fi(ixh_iHG)dem,(hg__) (;)
-i(f)psi(fe) me(d) to(f_g)ta(g_) de(f)vo(f)ti(f)ó(fe__)ne(g) com(fe~)mít(d.)to.(d.) (::)
+I(f|vi)psi(fg|pe) so(gff|po)li(d!ewf_EC|ql-ppt1su2) *()
+ser(f|vi)vo(g|vihh) fi(ixh_iHG|//pe-hhsu2lsl1)dem,(hg__|cl-) (;)
+i(f|ta)psi(fe|cllsc3) me(d|ta) to(f_g|peS)ta(g_|vi-) de(f|ta)vo(f|ta)ti(f|ta)ó(fe__|cl-)ne(g|vi) com(fe~|vi>)mít(d.|ta)to.(d.|ta) (::)

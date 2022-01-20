@@ -1,9 +1,10 @@
 name: Christi virgo nec terrore;
-book: Antiphonale Monasticum II, Praglia, p. 12;
+book: Antiphonale Monasticum II, Praglia, p. 12; H110;
 annotation: I g;
 mode: 1;
+nabc-lines: 1;
 %%
 (c4)
-CHri(f)sti(fg) vir(gff)go(d!ewf_EC) *()
-nec(f) ter(g)ró(h)re(g) con(f)cú(g)ti(f)tur(f) (;)
-nec(g) blan(fe~)di(dc)mén(d_g>)to(e) se(fe)dú(d)ci(cd)tur.(d) (::)
+CHri(f|vi)sti(fg|pehg) vir(gff|pohh)go(d!ewf_EC|ql-pt1su2) *()
+nec(f|vi) ter(g|vihh)ró(h|vihj)re(g|vihh) con(f|ta)cú(g|vi)ti(f|ta)tur(f|ta-lsx6) (;)
+nec(g|vi) blan(fe~|vi>)di(dc|cllsc3)mén(d_g>|pe>1)to(e|ta) se(fe|cllsc3)dú(d|vi)ci(cd|pe)tur.(d|ta) (::)

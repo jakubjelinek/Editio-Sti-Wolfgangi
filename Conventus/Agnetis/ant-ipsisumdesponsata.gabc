@@ -1,9 +1,10 @@
 name: Ipsi sum desponsata;
-book: Antiphonale Monasticum II, Praglia, p. 11;
+book: Antiphonale Monasticum II, Praglia, p. 11; H112;
 annotation: VII c;
 mode: 7;
+nabc-lines: 1;
 %%
 (c3)
-I(i)psi(i) sum(g) de(i)spon(j>)sá(i)ta(i) *()
-cu(i)i(i) án(g_h)ge(i)li(f) sér(e)vi(e)unt:(e) (;)
-cu(g)ius(g) pul(g)chri(h)tú(f)di(h)nem(g_) sol(e) et(f) lu(f_)na(h) mi(g)rán(e)tur.(e) (::)
+I(i|vi)psi(i|vi) sum(g|ta) de(i|vi)spon(j>|vi>)sá(i|ta)ta(i|ta) *()
+cu(i|ta)i(i|vi) án(g_h|peS)ge(i|vihh)li(f|vihg) sér(e|ta)vi(e|ta)unt:(e|ta) (;)
+cu(g|vi)ius(g|vihh) pul(g|vihi)chri(h|vihj)tú(f|ta)di(h|vi)nem(g_|vi-hg) sol(e|ta) et(f|vi) lu(f_|vi-hg)na(h|vihh) mi(g|vihg)rán(e|ta)tur.(e|ta) (::)

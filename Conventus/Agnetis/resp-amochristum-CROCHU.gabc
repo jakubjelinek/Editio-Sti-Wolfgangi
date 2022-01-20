@@ -1,22 +1,24 @@
 name:Amo Christum (Resp.);
 office-part:Responsorium;
+book: H111;
 mode:7;
 transcriber:Dominique CROCHU;
+nabc-lines:1;
 %%
 (c3)
-A(e)mo(gxge) Chris(f)tum,(gxfhGFgvFEfe) (,)
-in(gxge~) cu(gx-egf)jus(g) thá(h)la(gxgef/gv)mum(f) in(f)tro(gxFGivHGhih)í(fhggs)vi;(ffog) (;)
-cu(e)jus(h) ma(i)ter(ih~) vir(ij>)go(gxhiHGFg) est,(gf) (,)
-cu(h>)ius(fh) pa(gxgf)ter(e!fgf) fé(d)mi(gxfgf)nam(ed~) ne(gxe!fwgfg)scit,(fe) (;)
-cu(e>)jus(h) mi(i)hi(ih) ór(ikj/ko!l>)ga(ijIHi)na(h!iji) (,)
-mo(h)du(i)lá(kl)tis(-klk) vó(k)ci(kj)bus(HIkjk) can(iji)tant:(i) +(:)
-Quem(i) cum(i) a(ij)má(i)ve(ijIHi)ro(ih) (,)
-cas(ij)ta(ghGFEf) sum,(fe) (;)
-cum(e) te(f)tí(h)ge(hg)ro(f) (,)
-mun(h!io!j>)da(hhog/hv) sum,(hg) (;)
-cum(g) ac(h)cé(-iji/jkj)pe(ig)ro(giHGhvGFEfe) (,)
-vir(ge/f!gwhGHjvIHhvGF)go(hf!gwhGFEf) sum.(fe) <sp>V/</sp>.(::)
-Mel(i!jwkJI) et(hi/hhog~) lac(h) (,)
-ex(h) e(hi~)jus(h) o(ig)re(hi) su(hi)scé(i!jwkj)pi,(ji) (;)
-et(hi/hhog~) san(hih~)guis(i) e(ij~)jus(i) or(i)ná(i)vit(-ijijIH) ge(ih)nas(h!iwji/jkj) me(ih!iwjij)as.(ivHGhg) +(::)
-Quem.(i) (::)
+A(e|ta)mo(gxge|///cllsc3) Chris(f|vi)tum,(gxfhGFgvFEfe|////toS2hhsut1ci-hhcl-hh) (,)
+in(gxge~|///vi>lss3) cu(gx-egf|////to)jus(g|vihg) thá(h|vihi)la(gxgef/gv|////po-1vihi)mum(f|ta) in(f|ta)tro(gxFGivHG|///vihhpp2su2lsc2|hih|tohi)í(fhggs|tosthg)vi;(ffOg|sa) (;)
+cu(e|ta)jus(h|vi) ma(i|vihi)ter(ih~|vi>hh) vir(ij>|pe>1)go(gxhiHGFg|////toSsu2vi) est,(gf|cl-) (,)
+cu(h>|vi>)ius(fh|peS) pa(gxgf|////cllsc3)ter(e!fgf|cl-hippu2) fé(d|ta)mi(gxfgf|////to)nam(ed~|vi>) ne(gxe!fwgfg|///ql!poppt1)scit,(fe|cl-) (;)
+cu(e>|```vi>lse4)jus(h|vi) mi(i|vihhlss2)hi(ih|cllsc3) ór(ikj/ko!l>|tohkpq>hl)ga(ijIHi|pe-1su2vi)na(h!iji|cl-hippu2) (,)
+mo(h|ta)du(i|vi)lá(kl|```peShmlss4)tis(-klk|tohm) vó(k|vihk)ci(kj|clhklsc3)bus(HIkjk|pohlpp2) can(iji|toShi)tant:(i|tahi) +(:)
+Quem(i|ta) cum(i|ta) a(ij|pe)má(i|vihh)ve(ijIHi|pe-1hisu2vihi)ro(ih|cl-) (,)
+cas(ij|peSlsal3)ta(ghGFEf|toSsu2vi) sum,(fe|cl-) (;)
+cum(e|vihg) te(f|vihh)tí(h|vihh)ge(hg|clhhlsc3)ro(f|ta) (,)
+mun(h!io!j>|vipq>hi)da(hhog/hv|prlsc3vihh) sum,(hg|cl-) (;)
+cum(g|ta) ac(h|vi)cé(-iji/jkj|tohitohklss2lsc2)pe(ig|cllsc3)ro(giHGhvGFEfe|toS2sut1vi-suu1su2cl-) (,)
+vir(ge/f!gwhGHjvIHhvGF|cl-ql-ppt1vihipp2su1suu1lsc3ci-hj)go(hf!gwhGFEf|cl-qi!vssu2vi) sum.(fe|cl-) <sp>V/</sp>.(::)
+Mel(i!jwkJI|vihhql-hksu2) et(hi/hhog~|peSvs>) lac(h|ta) (,)
+ex(h|ta) e(hi~|ta>)jus(h|ta) o(ig|cl)re(hi|pe) su(hi|pe)scé(i!jwkj|qlhk!clhkppt1)pi,(ji|cl-hi) (;)
+et(hi/hhog~|peSvs>) san(hih~|pe>)guis(i|vi) e(ij~|ta>)jus(i|ta) or(i|ta)ná(i|ta)vit(-ijijIH|tohgci-hh) ge(ih|cllsc3)nas(h!iwji/jkj|qlhh!clhhppt1tohklss2lsc2) me(ih!iwjij|cl-ql!po)as.(ivHGhg|ci-cl-) +(::)
+Quem.(i|ta) (::)

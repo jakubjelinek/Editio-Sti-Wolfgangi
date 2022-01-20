@@ -1,10 +1,11 @@
 name: Stat a dextris;
-book: Antiphonale Monasticum II, Praglia, p. 14;
+book: Antiphonale Monasticum II, Praglia, p. 14; H112;
 annotation: I f;
 mode: 1;
+nabc-lines: 1;
 %%
 (c4)
-STat(d) a(dc) de(f)xtris(g) e(f_h)ius(h_) *(,)
-A(ixi_h>_)gnus(ggo) ni(e_f)ve(g) can(fe~)dí(d)di(do)or:(c.) (;)
-Chri(c)stus(d) si(ffo)bi(e_) (,)
-spon(f_)sam(e) et(f) már(d)ty(c)rem(e_f) con(g)se(fe)crá(d.)vit.(d.) (::)
+STat(d|ta) a(dc|cllsc3) de(f|vi)xtris(g|vihh) e(f_h|peS)ius(h_|vi-) *(,)
+A(ixi_h>_|///cl->)gnus(ggo|vs) ni(e_f|peS)ve(g|vi) can(fe~|vi>)dí(d|ta)di(do|or)or:(c.|ta) (;)
+Chri(c|```talse4)stus(d|vi) si(ffo|vs)bi(e_|ta-lsx6) (,)
+spon(f_|vi-)sam(e|ta) et(f|vilssta2) már(d|vi)ty(c|ta)rem(e_f|peS) con(g|vi)se(fe|cllsc3)crá(d.|ta)vit.(d.|ta) (::)
