@@ -23,7 +23,7 @@ include $(PSALMTONES_DIR)/tonus.mk
 MODUS-18 = i-d3
 MODUS-62 = i-a
 MODUS-63 = vii-a
-MODUS-96 = i-g
+MODUS-96 = i-g vii-c2
 MODUS-109 = viii-G
 MODUS-112 = viii-G
 MODUS-115 = viii-G
@@ -52,7 +52,8 @@ ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant-,saulesaule vadeanania mihivivere sciocuicredidi \
 			  nemagnitudorevelationum gratiadeiinme achristodecaelo \
 			  libentergloriabor egoplantaviapollorigavit \
-			  damascipraepositus tervirgiscaesus sanctepauleapostole) \
+			  damascipraepositus tervirgiscaesus sanctepauleapostole \
+			  achristodecaelovocatus ingressuspaulus sciocuicredidiet) \
 	 $(addprefix hym-,PressiMalorum DoctorEgregie ExcelsamPauli) \
 	 $(addprefix resp-,tuesvaselectionis constitueseos) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
@@ -61,13 +62,15 @@ SCORES = $(addprefix ant-,saulesaule vadeanania mihivivere sciocuicredidi \
 	 $(addprefix benedicamus-,duplexmajus-laudes duplexmajus-vesperae) \
 	 $(addprefix inv-,laudemusdeumnostrum) \
 	 $(addprefix capitulum-,SaulusAdhuc) $(addprefix versus-,tuesvas) \
-	 dominelabiamea tonusprecum dominusnosbenedicat \
+	 dominelabiamea tonusprecum tonusprecumnovum dominusnosbenedicat \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
 					evangelica divinum adsocietatem ille \
 					noscum ipsavirgo pervirginem) \
-	 $(addprefix resp-,ecceegomittovos tollite dumsteteritis) oratio \
+	 $(addprefix resp-,ecceegomittovos tollite dumsteteritis \
+			   audistisenim-CROCHU cumautemplacuitei-CROCHU \
+			   magnussanctuspaulus-CROCHU-cumdox) oratio \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
@@ -93,7 +96,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../PetriEtPauli ../Apostolorum ../PostPentecosten ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../InNativitateBMV/cantus/amon33 ../CorpusChristi ../PerAnnum
+iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../PetriEtPauli ../Apostolorum ../PostPentecosten ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../InNativitateBMV/cantus/amon33 ../CorpusChristi ../PerAnnum ../OctavaNativitatis
 include $(iter)
 $(filter-out $(TMP_DIR)/dan3% $(TMP_DIR)/magnificat%,$(ALLLAPSALMS)): PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(foreach M,$(MODUS-magnificat),$(TMP_DIR)/magnificat-$(M).tex): PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --flex-underline --skip-verses 2 $(LAPSALMOPTSACC)
