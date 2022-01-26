@@ -360,7 +360,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  estsecretumvaleriane expansismanibusorabat triduanasadomino \
 			  dumauroranocti volopaterutubiegosum desponsatasumchristo \
 			  nonenimvosestis deficientevino hicvirdespiciens armisdivinis \
-			  regressusiesus dabovobispastores) \
+			  regressusiesus dabovobispastores simileestregnumnegotiatori) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -401,7 +401,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  InclitusPastor-doctorum IsteConfessorColentes MartinePar \
 			  PrimoDierum-kempten AdSacrosVirgo MiraNocturnis NobilemChristi \
 			  IamBone IesuRex AEternaImago OCastitatisSignifer DiesIrae QuidSum \
-			  IesuCoronaCaelitum SalveteCedri DiesAEtasque InclitusRector-episcopo) \
+			  IesuCoronaCaelitum SalveteCedri DiesAEtasque InclitusRector-episcopo \
+			  ChristePrecamur) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
