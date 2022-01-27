@@ -54,7 +54,8 @@ SCORES = ant1 ant2 ant3 ant4 ant5 ant-ben respbr \
 	 deusinadiutorium-communis supplicatiolitaniae oratiodominica \
 	 dominusvobiscum-solemnis domineexaudi benedicamus-feria-laudes \
 	 capitulum-Nox versus-repleti oratio ant-salveregina-simplex \
-	 $(addprefix deprecatio,1 2 3 4)
+	 $(addprefix deprecatio,1 2 3 4) habacuc-initium-iv_-e \
+	 ant-salveregina-cluniacensis
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = hym-AEternaCaeli-bohtext.tex
 LILYPONDSCORES = benedicamus-tropus
