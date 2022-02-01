@@ -63,10 +63,10 @@ SCORES = $(addprefix ant-,oadmirabile quandonatuses rubumquemviderat eccemariage
 	 $(addprefix deusinadiutorium-,solemnis alter communis solemnis-tq alter-tq communis-tq) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
-	 $(addprefix benedicamus-,festis-bmv) \
+	 $(addprefix benedicamus-,festis-bmv solemnitatibus-bmv) \
 	 $(addprefix inv-,eccevenitadtemplum) \
 	 $(addprefix capitulum-,EcceEgo) $(addprefix versus-,responsum) \
-	 dominelabiamea tonusprecum dominusnosbenedicat \
+	 dominelabiamea tonusprecum tonusprecumnovum dominusnosbenedicat \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \

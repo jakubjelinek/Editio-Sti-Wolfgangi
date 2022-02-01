@@ -1,9 +1,10 @@
 name: Super te Ierusalem;
-book: Antiphonale Monasticum I, Praglia, p. 38;
+book: Antiphonale Monasticum I, Praglia, p. 38; H24;
 annotation: II* b;
 mode: 2;
+nabc-lines: 1;
 %%
 (c3)
-SU(e)per(f) te(h) Ie(h)rú(h)sa(ij)lem(iio) *()
-o(h)ri(i)é(j)tur(ih~) Dó(i)mi(i)nus,(i) (,)
-et(i) gló(f_i)ri(h)a(g) e(fe~)ius(f_e_) in(d_e) te(f) vi(h)dé(f)bi(ef)tur.(f.) (::)
+SU(e|ta)per(f|vi) te(h|vihg) Ie(h|vihh)rú(h|vihi)sa(ij|pehi)lem(iio|vshi) *()
+o(h|ta)ri(i|vi)é(j|vihh)tur(ih~|vi>) Dó(i|vi)mi(i|vi)nus,(i|vihglssta6) (,)
+et(i|vihh) gló(f_i|peShh)ri(h|vihh)a(g|tahg) e(fe~|vi>)ius(f_e_|cl-) in(d_e|peShg) te(f|vihg) vi(h|vihi)dé(f|vihh)bi(ef|pehh)tur.(f.|tahi) (::)
