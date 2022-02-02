@@ -35,7 +35,7 @@
 
 \input{conventuscommune.tex} % Often used macros
 
-\newcommand{\annusEditionis}{2021}
+\newcommand{\annusEditionis}{2022}
 
 %%%% Vicekrat opakovane kousky
 
@@ -147,7 +147,7 @@ per infiníta sǽcula sæculórum.
 
 \cantusSineNeumas
 
-\newcommand{\tempquad}{Tempore Septuagesimae}
+%\newcommand{\tempquad}{Tempore Septuagesimae}
 
 \newcommand{\lectioi}{\pars{Lectio I.} \scriptura{Ex. 13, 1-3a.11-16}
 
@@ -375,7 +375,7 @@ per infiníta sǽcula sæculórum.
 
 \vspace{2mm}
 
-\cuminitiali{I}{temporalia/benedicamus-festis-bmv.gtex}
+\cuminitiali{I}{temporalia/benedicamus-solemnitatibus-bmv.gtex}
 
 \vspace{1mm}
 
@@ -383,7 +383,6 @@ per infiníta sǽcula sæculórum.
 \pagebreak
 
 \hora{Ad Matutinum.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\sideThumbs{Matutinum}
 
 \vspace{2mm}
 
@@ -435,7 +434,7 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
-\pars{Psalmus 2.} \scriptura{Is. 60, 2}
+\pars{Psalmus 2.} \scriptura{Is. 60, 2; \textbf{H22}}
 
 \vspace{-4mm}
 
@@ -587,7 +586,6 @@ per infiníta sǽcula sæculórum.
 \pagebreak
 
 \hora{Ad Laudes.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\sideThumbs{Laudes}
 
 \cantusSineNeumas
 
@@ -723,30 +721,28 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
-%\sideThumbs{{\scriptsize{}Fine horarum}}
-
 \pars{Preces.}
 
-\sineinitiali{}{temporalia/tonusprecum.gtex}
+\sineinitiali{}{temporalia/tonusprecumnovum.gtex}
 
-\noindent Salvatórem nostrum in templo præsentátum adorémus, \gredagger{} ab ipso postulántes:
-
-\Rbardot{} Oculi nostri vídeant salútem tuam, Dómine.
-
-\noindent Christe Iesu, qui secúndum legem Patri in templo præsentári voluísti, \gredagger{} doce nos in sacrifício Ecclésiæ tuæ tecum nosmetípsos offérri.
+\noindent Salvatórem nostrum in templo præsentátum adorémus, \gredagger{} ab ipso postulántes: \grestar{}
 
 \Rbardot{} Oculi nostri vídeant salútem tuam, Dómine.
 
-\noindent Israel consolátio, cui Símeon iustus in templo occúrrit, \gredagger{} fac nos tibi occúrrere étiam in frátribus nostris.
+\noindent Christe Iesu, \gredagger{} qui secúndum legem Patri in templo præsentári voluísti, \grestar{} doce nos in sacrifício Ecclésiæ tuæ tecum nosmetípsos offérri.
 
 \Rbardot{} Oculi nostri vídeant salútem tuam, Dómine.
 
-\noindent Exspectátio géntium, de quo Anna prophetíssa ómnibus loquebátur qui exspectábant redemptiónem Israel, \gredagger{} doce nos digne de te ómnibus loqui.
+\noindent Israel consolátio, \gredagger{} cui Símeon iustus in templo occúrrit, \grestar{} fac nos tibi occúrrere étiam in frátribus nostris.
 
 \Rbardot{} Oculi nostri vídeant salútem tuam, Dómine.
 
-\noindent Caput ánguli regni Dei, quod in signum contradictiónis pósitum es, \gredagger{} fac ut hómines per fidem et caritátem teípsum in resurrectiónem hábeant.
+\noindent Exspectátio géntium, \gredagger{} de quo Anna prophetíssa ómnibus loquebátur qui exspectábant redemptiónem Israel, \grestar{} doce nos digne de te ómnibus loqui.
 
+\Rbardot{} Oculi nostri vídeant salútem tuam, Dómine.
+
+\noindent Caput ánguli regni Dei, \gredagger{} quod in signum contradictiónis pósitum es, \grestar{} fac ut hómines per fidem et caritátem teípsum in resurrectiónem hábeant.
+ 
 \Rbardot{} Oculi nostri vídeant salútem tuam, Dómine.
 
 \vfill
@@ -791,7 +787,7 @@ per infiníta sǽcula sæculórum.
 
 \vspace{2mm}
 
-\cuminitiali{I}{temporalia/benedicamus-festis-bmv.gtex}
+\cuminitiali{I}{temporalia/benedicamus-solemnitatibus-bmv.gtex}
 
 \vspace{1mm}
 
@@ -806,15 +802,17 @@ per infiníta sǽcula sæculórum.
 \grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \ifx\tempquad\undefined
 \cuminitiali{}{temporalia/deusinadiutorium-solemnis.gtex}
-\else
-\cuminitiali{}{temporalia/deusinadiutorium-solemnis-tq.gtex}
-\fi
-\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 
 \vfill
-%\pagebreak
+\else
+\cuminitiali{}{temporalia/deusinadiutorium-solemnis-tq.gtex}
+
+\vfill
 
 \vspace{2mm}
+
+\fi
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 
 \pars{Psalmus 1.} \scriptura{Lc. 2, 25; \textbf{H119}}
 
@@ -826,10 +824,17 @@ per infiníta sǽcula sæculórum.
 
 \scriptura{Psalmus 109.}
 
-%\vspace{-1mm}
+\ifx\tempquad\undefined
+\vspace{-1mm}
+\fi
 
 \initiumpsalmi{temporalia/ps109-initium-iii-b-trans.gtex}
 
+\ifx\tempquad\undefined
+\vspace{-1mm}
+
+\input{temporalia/ps109-iii-b.tex} \Abardot{}
+\else
 \input{temporalia/ps109-iii-b.tex}
 
 \vfill
@@ -837,6 +842,8 @@ per infiníta sǽcula sæculórum.
 \antiphona{}{temporalia/ant-simeoniustus.gtex}
 
 \vspace{-1cm}
+
+\fi
 
 \vfill
 \pagebreak
@@ -981,7 +988,7 @@ per infiníta sǽcula sæculórum.
 
 \vspace{2mm}
 
-\cuminitiali{I}{temporalia/benedicamus-festis-bmv.gtex}
+\cuminitiali{I}{temporalia/benedicamus-solemnitatibus-bmv.gtex}
 
 \vspace{1mm}
 
