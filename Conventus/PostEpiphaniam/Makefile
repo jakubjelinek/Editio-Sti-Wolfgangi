@@ -76,7 +76,7 @@ MODUS-isaiae7 = d-g
 MODUS-isaiae8 = d-g
 MODUS-ecclesiasticus36 = d-g
 MODUS-benedictus = viiisoll-g2 viiisoll-G2 viiisoll-G5
-MODUS-magnificat = isoll-d3 isoll-f isoll-g2 ii-D v-a viisoll-a vii-c viiisoll-g viii-G viii-G2
+MODUS-magnificat = isoll-d3 isoll-f isoll-g isoll-g2 ii-D v-a viisoll-a vii-c viiisoll-g viii-G viii-G2
 CANTICIS = dan3 isaiae7 isaiae8 ecclesiasticus36
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -146,7 +146,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  dominumdeumadoremus eccedeusnoster quammagnificatasunt \
 			  dicitandreas eratandreas agitepaenitentiam inaeternumet \
 			  regnumtuumdomine ambulansiesus eccedeusmeus deficientevino \
-			  dominesituvis dominesalvanos) \
+			  dominesituvis dominesalvanos colligiteprimum) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -169,7 +169,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 $(addprefix capitulum-,OAltitudo Benedictio BenedictusDeus AbInitio) \
 	 $(addprefix versus-,vespertina memorfui medianocte praevenerunt dominusregnavit dirigatur \
 			     diffusa) \
-	 $(addprefix oratio,1 2 3 4 bmv) \
+	 $(addprefix oratio,1 2 3 4 5 bmv) \
 	 dominelabiamea \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
@@ -241,7 +241,7 @@ LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PSALMTONES_DIR)/$(2)-auto.gabc; \
 	     [ $(2) = "dir" ] && cd .. && $(SED) -i -e '/(::)$$$$/{/(,) (::)$$$$/!{s/<b>//g;s/<\/b>//g}}' $(3) || :
 FERIAE = ii iii iv v vi
-HEBDOMADAE = i ii iii iv
+HEBDOMADAE = i ii iii iv v
 PDFI = $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE)))
 PDFII = $(foreach H,$(HEBDOMADAE),sabbato-$(H).pdf)
 PDFIII = $(foreach H,$(HEBDOMADAE),dominica-$(H).pdf)
