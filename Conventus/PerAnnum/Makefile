@@ -141,7 +141,7 @@ MODUS-106ii = c-c2
 MODUS-106iii = iii-a2
 MODUS-107 = viii-G
 MODUS-116 = ii_-B e
-MODUS-117 = viii-G viii-G5
+MODUS-117 = viii-G viii-G2 viii-G5
 MODUS-118xix = vii-a e
 MODUS-130 = e
 MODUS-131i = e
@@ -164,7 +164,7 @@ MODUS-150 = viii-G
 MODUS-anna = ii-D
 MODUS-david = i-f viii-G6 viii-g2
 MODUS-ecclesiastici = iii-a
-MODUS-ecclesiasticus36 = d-g
+MODUS-ecclesiasticus36 = i-f d-g
 MODUS-ezechiae = ii-D e
 MODUS-habacuc = iv_-e
 MODUS-isaiae = viii-G viii-G6 viii-g2
@@ -172,8 +172,8 @@ MODUS-isaiae2 = v-a
 MODUS-isaiae3 = vii-d
 MODUS-isaiae4 = vii-c viii-G6 viii-g2
 MODUS-isaiae5 = iv-E iv_-e
-MODUS-isaiae7 = d-g
-MODUS-isaiae8 = viii-g d-g
+MODUS-isaiae7 = i-f d-g
+MODUS-isaiae8 = i-f viii-g d-g
 MODUS-isaiae9 = ii-D
 MODUS-isaiae10 = vi-F
 MODUS-isaiae11 = viii-g
@@ -185,7 +185,7 @@ MODUS-moysis2i_xii = vi-F
 MODUS-sapientia = v-a
 MODUS-tobiae = vii-a
 MODUS-tobiae2 = ii-D
-MODUS-dan3 = i-d i-f i-g ii_-a iii-a iii-e iv-E iv-e2 v-a v-g vii-a vii-c vii-c2 vii-d2 viii-G viii-G5 viii-c per
+MODUS-dan3 = i-d i-f i-g i-a2 ii_-a iii-a iii-e iv-E iv-e2 v-a v-g vii-a vii-c vii-c2 vii-d2 viii-G viii-G5 viii-c per
 MODUS-dan32 = i-f
 MODUS-dan33 = i-g viii-G
 MODUS-benedictus = i-a i-a4 i-a5 i-d i-f i-g i-g5 i-D_ isoll-D isoll-D_ isoll-D2 isoll-f isoll-g isoll-d3 isoll-a ii-D iisoll-D ii_-d ii_soll-c iii-a iii-b iiisoll-a iiisoll-a4 iv-d iv-E iv-e iv-e2 ivsoll-E v-a vsoll-g vsoll-a vsoll-a2 vi-F vi-C visoll-F vii-a vii-c vii-c2 vii-d2 vii-d3 viisoll-a viisoll-c viii-g viii-C viii-G viii-G2 viii-G5 viiisoll-G viiisoll-G5 viiisoll-g
@@ -362,7 +362,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  nonenimvosestis deficientevino hicvirdespiciens armisdivinis \
 			  regressusiesus dabovobispastores simileestregnumnegotiatori \
 			  mirabanturomnes praebefilicortuum hicestvir-certaminis \
-			  agathalaetissime ascendensiesusinnavim) \
+			  agathalaetissime ascendensiesusinnavim deusdeusmeus \
+			  confitebortibidomine benedictusesinfirmamento beatipauperesspiritu) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
