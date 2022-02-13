@@ -159,7 +159,7 @@ MODUS-145 = iv-E iv_-e
 MODUS-146 = viii-g
 MODUS-147 = vi-F e
 MODUS-148 = i-a
-MODUS-149 = i-a4 i-f i-g i-d ii_-f iii-a iii-e iv-c iv_-e v-a vi-F vii-a vii-c viii-G viii-G5 viii-g
+MODUS-149 = i-a4 i-f i-g i-d ii-D ii_-f iii-a iii-e iv-c iv_-e v-a vi-F vii-a vii-c viii-G viii-G5 viii-g
 MODUS-150 = viii-G
 MODUS-anna = ii-D
 MODUS-david = i-f viii-G6 viii-g2
@@ -363,7 +363,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  regressusiesus dabovobispastores simileestregnumnegotiatori \
 			  mirabanturomnes praebefilicortuum hicestvir-certaminis \
 			  agathalaetissime ascendensiesusinnavim deusdeusmeus \
-			  confitebortibidomine benedictusesinfirmamento beatipauperesspiritu) \
+			  confitebortibidomine benedictusesinfirmamento beatipauperesspiritu \
+			  fulgebuntiusti-inregno insanctitateetiustitia) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -405,7 +406,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  PrimoDierum-kempten AdSacrosVirgo MiraNocturnis NobilemChristi \
 			  IamBone IesuRex AEternaImago OCastitatisSignifer DiesIrae QuidSum \
 			  IesuCoronaCaelitum SalveteCedri DiesAEtasque InclitusRector-episcopo \
-			  ChristePrecamur DoctorAEternus PrimoDierum) \
+			  ChristePrecamur DoctorAEternus PrimoDierum DumSacerdotum HiSacerdotes) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -640,7 +641,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   misericordiametiudicium-CROCHU-cumdox gaudeamusomnes-CROCHU-cumdox \
 			   egoautemadjuvata-CROCHU velociterexaudime-CROCHU \
 			   gratiadeisumidquodsum-CROCHU quioperatusestpetro-CROCHU \
-			   audistisenim-CROCHU) \
+			   audistisenim-CROCHU incircuitutuodomine-CROCHU \
+			   sanctituidomine-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
