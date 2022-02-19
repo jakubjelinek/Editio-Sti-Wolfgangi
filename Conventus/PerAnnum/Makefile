@@ -158,7 +158,7 @@ MODUS-144xiv_xxi = viii-a
 MODUS-145 = iv-E iv_-e
 MODUS-146 = viii-g
 MODUS-147 = vi-F e
-MODUS-148 = i-a
+MODUS-148 = i-a v-g
 MODUS-149 = i-a4 i-f i-g i-d ii-D ii_-f iii-a iii-e iv-c iv_-e v-a vi-F vii-a vii-c viii-G viii-G5 viii-g
 MODUS-150 = viii-G
 MODUS-anna = ii-D
@@ -364,7 +364,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  mirabanturomnes praebefilicortuum hicestvir-certaminis \
 			  agathalaetissime ascendensiesusinnavim deusdeusmeus \
 			  confitebortibidomine benedictusesinfirmamento beatipauperesspiritu \
-			  fulgebuntiusti-inregno insanctitateetiustitia eccequambonumet) \
+			  fulgebuntiusti-inregno insanctitateetiustitia eccequambonumet \
+			  estoteergomisericordesalleluia) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -642,7 +643,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   egoautemadjuvata-CROCHU velociterexaudime-CROCHU \
 			   gratiadeisumidquodsum-CROCHU quioperatusestpetro-CROCHU \
 			   audistisenim-CROCHU incircuitutuodomine-CROCHU \
-			   sanctituidomine-CROCHU-cumdox) \
+			   sanctituidomine-CROCHU-cumdox dixitdominusadnoe noeviriustus) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
@@ -665,7 +666,7 @@ LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
 GENINITIUM = cd $(TMP_DIR) && $(RUBY_COMMAND) ../$(INITIUM_TOOL) ../$(1) ../$(PSALMTONES_DIR)/$(2)-auto.gabc; \
 	     [ $(2) = "dir" ] && cd .. && $(SED) -i -e '/(::)$$$$/{/(,) (::)$$$$/!{s/<b>//g;s/<\/b>//g}}' $(3) || :
 FERIAE = ii iii iv v vi
-HEBDOMADAE = i ii iii iv v vi viii ix x xi xii xiii xiv xv xvi xvii xviii xix xx xxi xxii xxiii xxiv xxv xxvi xxvii xxviii xxix xxx xxxi xxxii xxxiii xxxiv
+HEBDOMADAE = i ii iii iv v vi vii viii ix x xi xii xiii xiv xv xvi xvii xviii xix xx xxi xxii xxiii xxiv xxv xxvi xxvii xxviii xxix xxx xxxi xxxii xxxiii xxxiv
 PDFI = $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE)))
 PDFII = $(foreach H,$(HEBDOMADAE),sabbato-$(H).pdf)
 PDFIII = $(foreach H,$(HEBDOMADAE),dominica-$(H).pdf)
