@@ -408,7 +408,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  IamBone IesuRex AEternaImago OCastitatisSignifer DiesIrae QuidSum \
 			  IesuCoronaCaelitum SalveteCedri DiesAEtasque InclitusRector-episcopo \
 			  ChristePrecamur DoctorAEternus PrimoDierum DumSacerdotum HiSacerdotes \
-			  AEternaLux) \
+			  AEternaLux AdestoChriste) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
