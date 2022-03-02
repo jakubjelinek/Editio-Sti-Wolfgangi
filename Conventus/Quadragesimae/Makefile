@@ -375,7 +375,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  dominumdeum veniteexsultemus jubilemusdeo avemaria christummariaefilium \
 			  hodiesivocem nonsitvobisvanum hodiesivocem-CROCHU hodiesivocem-CROCHU-sinedox \
 			  christumdominum) \
-	 dominelabiamea tonusprecum tonusprecumnovum dominusnosbenedicat \
+	 dominelabiamea tonusprecum tonusprecumnovum dominusnosbenedicat dominusnosbenedicat-d \
 	 $(addprefix capitulum-,tuautem BenedictusDeus AbInitio Hortamur InterVestibulum \
 				FratresRogamus FratresEstote FratresScriptum FratresChristus \
 				TuAutemDomineSabaoth) \
