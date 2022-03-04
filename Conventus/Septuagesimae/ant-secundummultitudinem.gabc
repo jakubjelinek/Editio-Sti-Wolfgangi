@@ -1,10 +1,10 @@
 name:Secundum multitudinem;
 office-part:Antiphona;
 mode:1;
-book:Antiphonale Monasticum, 1934, p. 326;
+book:Antiphonale Monasticum, 1934, p. 326; H142;
+nabc-lines:1;
 %%
 (c4)
-SE(d)cun(d)dum(dc~) mul(f)ti(g')tú(f)di(gh)nem(h_') *(,)
-mi(h)se(h)ra(h')ti(h)ó(hj)num(h) tu(g')á(h)rum(gf~) Dó(g')mi(h)ne,(g.) (;)
-de(h)le(g') i(f)ni(e')qui(f)tá(g)tem(fe~) me(d.)am.(d.) (::)
-E(h) u(h) o(g) u(f) a(gh) e.(gf..) (::)
+SE(d|ta)cun(d|ta)dum(dc~|vi>) mul(f|vi)ti(g'|vihh)tú(f|ta)di(gh|pe)nem(h_'|vi-) *(,)
+mi(h|vi)se(h|vi)ra(h'|vi)ti(h|vi)ó(hj|pehglss3)num(h|vihg) tu(g'|ta)á(h|vi)rum(gf~|vi>) Dó(g'|ta)mi(h|vi)ne,(g.|ta) (;)
+de(h|vihg)le(g'|vi) i(f|vi)ni(e'|or)qui(f|ta)tá(g|vi)tem(fe~|vi>) me(d.|ta)am.(d.|ta) (::)
