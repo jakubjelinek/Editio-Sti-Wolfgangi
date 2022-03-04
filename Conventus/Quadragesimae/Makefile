@@ -202,7 +202,7 @@ MODUS-moysis2i_xii = vi-F
 MODUS-sapientia = v-a
 MODUS-tobiae = vii-a
 MODUS-tobiae2 = ii-D
-MODUS-dan3 = i-a4 ii-D ii_-a viii-G
+MODUS-dan3 = i-a4 ii-D ii_-a iv-e2 viii-G
 MODUS-dan32 = i-f
 MODUS-nuncdimittis = iii-a
 MODUS-magnificat = isoll-f isoll-g i-f i-g i-g2 i-g4 i-a i-D2 ii-D ii_-B iisoll-D iii-a iiisoll-a iv-A iv-A_ iv-d v-a vii-b vii-c vii-c2 viisoll-b viii-G viii-G2 viiisoll-G viiisoll-g viiisoll-g5
@@ -340,7 +340,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  siquissitit inclinavitseiesus egoprincipiumquietloquor \
 			  vosascenditeaddiem sivosmanseritis multabonaopera \
 			  principessacerdotum fulcitemefloribus dapacemdomine \
-			  secundummultitudinem) \
+			  secundummultitudinem hymnumdiciteetsuperexaltate \
+			  beneplacitumestdomino) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -364,7 +365,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   benedictusdominus inmedioecclesiae sapientiamsanctorum \
 			   inmatutinis deusmeusadiutormeus ipseliberavitme scapulissuis \
 			   christefilidei-tq deoreleonis deoreleonis-feriale erueaframea \
-			   erueaframea-feriale) \
+			   erueaframea-feriale christefilideiquiattritus-tq) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis solemnis-tq alter-tq communis-tq \
 				       solemnis-quad alter-quad communis-quad) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
