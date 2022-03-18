@@ -58,7 +58,8 @@ ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant-,cumessetdesponsata exsurgensiosephasomno iacobautemgenuit \
 			  iosephfilidavid iosephvireius missusestangelus \
 			  ibantparentesiesu noninvenientesiesum dixitmatereius \
-			  eratiosephetmaria fidelisservusetprudens eccefidelis) \
+			  eratiosephetmaria fidelisservusetprudens eccefidelis \
+			  dapacemdomine) \
 	 $(addprefix hym-,TeIoseph CaelitumIoseph IsteQuem) \
 	 $(addprefix resp-,invocavidominum constituiteum) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis solemnis-tq alter-tq communis-tq \
@@ -68,7 +69,8 @@ SCORES = $(addprefix ant-,cumessetdesponsata exsurgensiosephasomno iacobautemgen
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
 	 $(addprefix inv-,laudemusdeumioseph) \
 	 $(addprefix capitulum-,VirFidelis) $(addprefix versus-,constituit) \
-	 dominelabiamea tonusprecum dominusnosbenedicat \
+	 dominelabiamea tonusprecum dominusnosbenedicat deprecatio4-propace \
+	 oratiodominica-d dominusnosbenedicat-d \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
