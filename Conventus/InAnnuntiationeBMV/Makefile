@@ -81,7 +81,7 @@ SCORES = $(addprefix ant-,oadmirabile quandonatuses rubumquemviderat eccemariage
 					evangelica divinum adsocietatem ille \
 					noscum ipsavirgo pervirginem) \
 	 $(addprefix resp-,missusestgabriel-CROCHU avemaria-CROCHU \
-			   suscipeverbum-CROCHU-cumdox) oratio \
+			   suscipeverbum-CROCHU-cumdox confirmatumest-CROCHU-cumdox) oratio \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 ps109-initium-iii-b-trans ps121-initium-iii-b-trans \
