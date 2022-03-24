@@ -35,7 +35,7 @@
 
 \input{conventuscommune.tex} % Often used macros
 
-\newcommand{\annusEditionis}{2021}
+\newcommand{\annusEditionis}{2022}
 
 %%%% Vicekrat opakovane kousky
 
@@ -734,8 +734,7 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
-%\sideThumbs{{\scriptsize{}Fine horarum}}
-
+\iffalse
 \pars{Preces.}
 
 \sineinitiali{}{temporalia/tonusprecum.gtex}
@@ -760,7 +759,6 @@ per infiníta sǽcula sæculórum.
 
 \Rbardot{} Pro nobis intercédat Sancta Dei Génetrix.
 
-
 \vfill
 
 \pars{Oratio Dominica.}
@@ -782,12 +780,42 @@ per infiníta sǽcula sæculórum.
 
 \cuminitiali{}{temporalia/oratiodominica.gtex}
 
+\else
+\pars{Deprecatio Gelasii}
+
+\vspace{-5mm}
+
+\grechangedim{interwordspacetext}{0.16 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{D\textsuperscript{1}}{temporalia/deprecatio4-propace.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+
+\vfill
+
+\pars{Oratio Dominica.}
+
+\cuminitiali{D}{temporalia/oratiodominica-d.gtex}
+
+\fi
 \vfill
 \pagebreak
 
 \pars{Oratio.}
 
 \noindent Deus, qui Verbum tuum in útero Vírginis Maríæ veritátem carnis humánæ suscípere voluísti, concéde, quǽsumus, ut, qui Redemptórem nostrum Deum et hóminem confitémur, ipsíus étiam divínæ natúræ mereámur esse consórtes.
+
+\iftrue
+\vfill
+
+\pars{Pro pace in Ucraina.} \scriptura{Sir. 50, 25; 2 Esdr. 4, 20; \textbf{H416}}
+
+\vspace{-4mm}
+
+\antiphona{II D}{temporalia/ant-dapacemdomine.gtex}
+
+\vfill
+
+\noindent Deus, a quo sancta desidéria, recta consília et iusta sunt ópera: da servis tuis illam, quam mundus dare non potest, pacem; ut et corda nostra mandátis tuis dédita, et hóstium subláta formídine, témpora sint tua protectióne tranquílla.
+\fi
 
 \noindent Per Dóminum nostrum Iesum Christum, Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.
 
@@ -799,7 +827,11 @@ per infiníta sǽcula sæculórum.
 
 \vspace{2mm}
 
+\iffalse
 \antiphona{C}{temporalia/dominusnosbenedicat.gtex}
+\else
+\antiphona{D}{temporalia/dominusnosbenedicat-d.gtex}
+\fi
 
 \rubrica{Postea cantatur a cantore:}
 

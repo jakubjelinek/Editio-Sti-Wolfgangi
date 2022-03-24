@@ -64,7 +64,7 @@ SCORES = $(addprefix ant-,oadmirabile quandonatuses rubumquemviderat eccemariage
 			  orietursicutsol-tq spiritussanctusetvirtus-tq \
 			  ingressusangelusadmariam ecceiamveniet insoleposuit \
 			  netimeasmariainvenisti quomodofiet venielectamea \
-			  gabrielangelus) \
+			  gabrielangelus dapacemdomine) \
 	 $(addprefix hym-,AveMarisStella-iv AveMarisStella IamCaeca OLuxSalutis) \
 	 $(addprefix resp-,avemaria-alt notumfecitdominus adoratedominum angelusdomini) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis solemnis-tq alter-tq communis-tq \
@@ -74,7 +74,8 @@ SCORES = $(addprefix ant-,oadmirabile quandonatuses rubumquemviderat eccemariage
 	 $(addprefix benedicamus-,festis-bmv) \
 	 $(addprefix inv-,verbumcarofactumest) \
 	 $(addprefix capitulum-,EcceVirgo) $(addprefix versus-,avemaria) \
-	 dominelabiamea tonusprecum dominusnosbenedicat \
+	 dominelabiamea tonusprecum dominusnosbenedicat dominusnosbenedicat-d \
+	 deprecatio4-propace oratiodominica-d \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
