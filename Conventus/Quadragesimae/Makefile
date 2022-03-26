@@ -178,7 +178,7 @@ MODUS-146 = viii-g viii-A
 MODUS-147 = vi-F e
 MODUS-148 = i-a i-g ii-D ii_-B vii-a
 MODUS-149 = i-a i-g ii-D ii_-B vii-a
-MODUS-150 = i-a i-g ii-D ii_-B vii-a
+MODUS-150 = i-a i-g ii-D ii_-B vii-a e-e
 MODUS-anna = ii-D
 MODUS-david = i-f
 MODUS-ecclesiastici = iii-a
@@ -345,7 +345,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  secundummultitudinem hymnumdiciteetsuperexaltate \
 			  beneplacitumestdomino venitebenedictipatris quoduniexminimis \
 			  dimittenobisdomine infirmamento dixitautemdominusadcultorem \
-			  regnavitdominusdecorem siindigitodei) \
+			  regnavitdominusdecorem siindigitodei incymbalisbenesonantibus \
+			  deusmeusestu) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
