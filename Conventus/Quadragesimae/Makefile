@@ -183,7 +183,7 @@ MODUS-anna = ii-D
 MODUS-david = i-f
 MODUS-ecclesiastici = iii-a
 MODUS-ezechiae = e
-MODUS-ezechiae2 = i-d
+MODUS-ezechiae2 = i-d iv_-e
 MODUS-habacuc = iv_-e
 MODUS-isaiae = viii-G
 MODUS-isaiae2 = v-a
@@ -500,7 +500,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   usquequoexaltabitur-CROCHU deoreleonisliberame-CROCHU \
 			   pacificeloquebantur-CROCHU cantemusdominogloriose-CROCHU \
 			   quipersequebanturpopulum-CROCHU-cumdox moysesfamulusdomini-CROCHU \
-			   attenditepopulemeus-CROCHU-cumdox) \
+			   attenditepopulemeus-CROCHU-cumdox sicutfuicummoyse-CROCHU \
+			   adduxivosperdesertum-CROCHU-cumdox) \
 	 $(addprefix oratio,-visita bmv 1 2 3 4 5) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
