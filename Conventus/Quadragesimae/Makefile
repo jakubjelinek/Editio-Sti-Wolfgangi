@@ -177,7 +177,7 @@ MODUS-145 = iv-E iv_-e
 MODUS-146 = viii-g viii-A
 MODUS-147 = vi-F e
 MODUS-148 = i-a i-g ii-D ii_-B vii-a
-MODUS-149 = i-a i-g i-g5 ii-D ii_-B vii-a
+MODUS-149 = i-a i-g i-g3 i-g5 ii-D ii_-B vii-a
 MODUS-150 = i-a i-g ii-D ii_-B vii-a e-e
 MODUS-anna = ii-D
 MODUS-david = i-f
@@ -502,7 +502,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   pacificeloquebantur-CROCHU cantemusdominogloriose-CROCHU \
 			   quipersequebanturpopulum-CROCHU-cumdox moysesfamulusdomini-CROCHU \
 			   attenditepopulemeus-CROCHU-cumdox sicutfuicummoyse-CROCHU \
-			   adduxivosperdesertum-CROCHU-cumdox) \
+			   adduxivosperdesertum-CROCHU-cumdox quicustodiebant-CROCHU-cumdox \
+			   inproximoest-CROCHU-cumdox adiutoretsusceptormeus-CROCHU-cumdox) \
 	 $(addprefix oratio,-visita bmv 1 2 3 4 5) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
