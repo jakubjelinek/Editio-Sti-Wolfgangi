@@ -73,7 +73,7 @@ MODUS-54i = viii-c
 MODUS-54ii = vii-c2
 MODUS-54iii = viii-G
 MODUS-56 = viii-g
-MODUS-62 = i-g ii_-B vii-a viii-G e
+MODUS-62 = i-f i-g ii_-B vii-a viii-G e
 MODUS-64 = viii-A
 MODUS-65i = vi-F
 MODUS-65ii = ii_-a
@@ -177,7 +177,7 @@ MODUS-145 = iv-E iv_-e
 MODUS-146 = viii-g viii-A
 MODUS-147 = vi-F e
 MODUS-148 = i-a i-g ii-D ii_-B vii-a
-MODUS-149 = i-a i-g ii-D ii_-B vii-a
+MODUS-149 = i-a i-g i-g5 ii-D ii_-B vii-a
 MODUS-150 = i-a i-g ii-D ii_-B vii-a e-e
 MODUS-anna = ii-D
 MODUS-david = i-f
@@ -346,7 +346,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  beneplacitumestdomino venitebenedictipatris quoduniexminimis \
 			  dimittenobisdomine infirmamento dixitautemdominusadcultorem \
 			  regnavitdominusdecorem siindigitodei incymbalisbenesonantibus \
-			  deusmeusestu etmescitis) \
+			  deusmeusestu etmescitis liberanosdeus alligadomine \
+			  deusdeusmeus) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
