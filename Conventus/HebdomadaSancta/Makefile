@@ -77,7 +77,7 @@ MODUS-47 = iv-a
 MODUS-49i_vi = i-g2 viii-A
 MODUS-49vii_xv = viii-G e
 MODUS-49xvi_xxiii = vii-c e
-MODUS-50 = i-a2 iii-a vi-F vii-a vii-c viii-G viii-G2
+MODUS-50 = i-a2 ii-D iii-a vi-F vii-a vii-c viii-G viii-G2
 MODUS-51 = iv_-e
 MODUS-54i = viii-c
 MODUS-54ii = vii-c2
@@ -144,14 +144,14 @@ MODUS-106ii = c-c2
 MODUS-106iii = iii-a2
 MODUS-107 = viii-G
 MODUS-109 = vii-c2
-MODUS-110 = iv-g
-MODUS-111 = iv-a
+MODUS-110 = iiir-b iv-g
+MODUS-111 = iv-a iv-g
 MODUS-112 = vii-c
 MODUS-113 = per
 MODUS-114 = i-g2
 MODUS-115 = viii-A
 MODUS-116 = ii_-B viii-A e
-MODUS-117 = ii-D vii-c viii-C viii-G
+MODUS-117 = i-a2 ii-D vii-c viii-C viii-G
 MODUS-118xix = vii-a e
 MODUS-128 = ii-D
 MODUS-129 = viii-A
@@ -185,9 +185,9 @@ MODUS-144xiv_xxi = viii-a
 MODUS-145 = iv-E iv_-e
 MODUS-146 = viii-g viii-A
 MODUS-147 = vi-F e
-MODUS-148 = i-a i-g ii-D ii_-B vii-a
-MODUS-149 = i-a i-g ii-D ii_-B vii-a
-MODUS-150 = i-a i-g ii-D ii_-B vii-a
+MODUS-148 = i-a i-g ii-D ii_-B iv-A_ vii-a
+MODUS-149 = i-a i-g ii-D ii_-B iv-A_ vii-a
+MODUS-150 = i-a i-g ii-D ii_-B iv-A_ vii-a
 MODUS-anna = ii-D
 MODUS-david = i-f
 MODUS-ecclesiastici = iii-a
@@ -212,11 +212,11 @@ MODUS-moysis2i_xii = vi-F
 MODUS-sapientia = v-a
 MODUS-tobiae = vii-a
 MODUS-tobiae2 = ii-D
-MODUS-dan3 = i-a4 ii-D ii_-a viii-G
+MODUS-dan3 = i-a4 ii-D ii_-a vii-a viii-G
 MODUS-dan32 = i-f
 MODUS-nuncdimittis = iii-a
-MODUS-magnificat = isoll-f isoll-g i-f i-g i-g2 i-g4 i-a i-D2 ii-D ii_-B iisoll-D iii-a iiisoll-a iv-A iv-A_ iv-d v-a vii-b vii-c vii-c2 viisoll-b viii-G viii-G2 viiisoll-G viiisoll-g viiisoll-g5
-MODUS-benedictus = i-a4 i-d i-f i-g i-g4 i-g5 isoll-a5 isoll-d3 iisoll-A ii_-a ii_-d ii_-B iii-a4 iii-b iv-E v-a vsoll-g vi-F vii-a vii-c2 vii-d2 viii-g viii-G viii-G2 viii-G5 viii-C2 viiisoll-G
+MODUS-magnificat = isoll-f isoll-g i-f i-g i-g2 i-g4 i-a i-D2 ii-D ii_-B iisoll-D iii-a iiisoll-a iv-A iv-A_ iv-d ivsoll-E v-a vii-b vii-c vii-c2 viisoll-b viii-G viii-G2 viiisoll-G viiisoll-G2 viiisoll-g viiisoll-g5
+MODUS-benedictus = i-a4 i-d i-f i-g i-g4 i-g5 isoll-a5 isoll-d3 iisoll-A ii_-a ii_-d ii_-B iii-a4 iii-b iv-E ivsoll-E v-a vsoll-g vi-F vii-a vii-c2 vii-d2 viii-g viii-G viii-G2 viii-G5 viii-C2 viiisoll-G
 CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae8 isaiae9 isaiae10 isaiae11 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david nuncdimittis ezechiae2 lamentatio dan3 dan32 iudith2
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -352,7 +352,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  principessacerdotum fulcitemefloribus beatusvir-cgp \
 			  exsurgedominedeus-cgp exsurgedominesalvum-cgp quamadmirabileest-cgp \
 			  diligamtedomine-cgp domineinvirtute dominusdecaelo-cgp exaltabote-cgp \
-			  exaudiatte inclinadomine-cgp quioperatur-cgp retribuetmihi-cgp vivitdominus) \
+			  exaudiatte inclinadomine-cgp quioperatur-cgp retribuetmihi-cgp vivitdominus \
+			  pateriuste dominusdeus circumdantescircumdederunt cumangelis \
+			  turbamulta magnaopera quitimet scriptumestenim) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -382,7 +384,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,feria-laudes feria-vesperae minor officium-bmv festis-bmv \
-				  dominica-advequad feria-advequad) \
+				  dominica-advequad feria-advequad solemnism-1vesp \
+				  solemnism-laud solemnism-2vesp) \
 	 $(addprefix inv-,alleluiachristumdominum regemmagnum dominumquifecit adoremusdominum \
 			  dominumdeum veniteexsultemus jubilemusdeo avemaria christummariaefilium \
 			  hodiesivocem nonsitvobisvanum hodiesivocem-CROCHU hodiesivocem-CROCHU-sinedox \
@@ -390,7 +393,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 dominelabiamea tonusprecum dominusnosbenedicat \
 	 $(addprefix capitulum-,tuautem BenedictusDeus AbInitio Hortamur InterVestibulum \
 				FratresRogamus FratresEstote FratresScriptum FratresChristus \
-				TuAutemDomineSabaoth) \
+				TuAutemDomineSabaoth FratresHoc) \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix versus-,custodi gaude dirigatur diffusa-tq angelis eripe eripemede) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
