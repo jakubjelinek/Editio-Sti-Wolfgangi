@@ -24,7 +24,7 @@ MODUS-1 = i-g viii-G
 MODUS-2 = i-a4 vii-a
 MODUS-3 = vi-F viii-G5
 MODUS-4 = viii-G
-MODUS-5 = viii-A
+MODUS-5 = ii-D viii-A
 MODUS-6 = iv-E
 MODUS-8 = i-f i-g
 MODUS-9ii_xi = viii-G
@@ -58,7 +58,7 @@ MODUS-32 = iv-E
 MODUS-34i = iv-g
 MODUS-34ii = viii-G
 MODUS-34iii = viii-G
-MODUS-35 = ii-D
+MODUS-35 = ii-D iv-E
 MODUS-36i_xi = vi-F
 MODUS-36xii_xxix = ii-D
 MODUS-36iii = vi-F
@@ -77,7 +77,7 @@ MODUS-47 = iv-a
 MODUS-49i_vi = i-g2 viii-A
 MODUS-49vii_xv = viii-G e
 MODUS-49xvi_xxiii = vii-c e
-MODUS-50 = i-a2 ii-D iii-a vi-F vii-a vii-c viii-G viii-G2
+MODUS-50 = i-a2 ii-D iii-a iv-A vi-F vii-a vii-c viii-G viii-G2
 MODUS-51 = iv_-e
 MODUS-54i = viii-c
 MODUS-54ii = vii-c2
@@ -185,9 +185,9 @@ MODUS-144xiv_xxi = viii-a
 MODUS-145 = iv-E iv_-e
 MODUS-146 = viii-g viii-A
 MODUS-147 = vi-F e
-MODUS-148 = i-a i-g ii-D ii_-B iv-A_ vii-a
-MODUS-149 = i-a i-g ii-D ii_-B iv-A_ vii-a
-MODUS-150 = i-a i-g ii-D ii_-B iv-A_ vii-a
+MODUS-148 = i-a i-g ii-D ii_-B iv-A_ vii-a viii-G
+MODUS-149 = i-a i-g ii-D ii_-B iv-A_ vii-a viii-G
+MODUS-150 = i-a i-g ii-D ii_-B iv-A_ vii-a viii-G
 MODUS-anna = ii-D
 MODUS-david = i-f
 MODUS-ecclesiastici = iii-a
@@ -354,7 +354,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  diligamtedomine-cgp domineinvirtute dominusdecaelo-cgp exaltabote-cgp \
 			  exaudiatte inclinadomine-cgp quioperatur-cgp retribuetmihi-cgp vivitdominus \
 			  pateriuste dominusdeus circumdantescircumdederunt cumangelis \
-			  turbamulta magnaopera quitimet scriptumestenim) \
+			  turbamulta magnaopera quitimet scriptumestenim \
+			  appenderunt clarificame faciemmeam frameasuscitare inundaverunt \
+			  labiainsurgentium nonhaberes) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -393,7 +395,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 dominelabiamea tonusprecum dominusnosbenedicat \
 	 $(addprefix capitulum-,tuautem BenedictusDeus AbInitio Hortamur InterVestibulum \
 				FratresRogamus FratresEstote FratresScriptum FratresChristus \
-				TuAutemDomineSabaoth FratresHoc) \
+				TuAutemDomineSabaoth FratresHoc VeniteMittamus) \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix versus-,custodi gaude dirigatur diffusa-tq angelis eripe eripemede) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
@@ -404,7 +406,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   dixeruntimpii dominusmecumesttamquam fratresmei \
 			   indiequainvocavi noliessemihi salvummefac \
 			   insurrexeruntinme opprobriumfactussum viriimpiidixerunt) \
-	 oratio $(addprefix oratio,2) \
+	 oratio $(addprefix oratio,2 2v) \
 	 $(addprefix lam,4_1 4_2 4_3 5_1 5_2 5_3 6_1 6_2 6_3 7_1 7_2 7_3 8_1 8_2 8_3 8_4 \
 			 9_1 9_2 9_3 9_4) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii \
