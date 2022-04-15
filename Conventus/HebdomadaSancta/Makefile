@@ -443,7 +443,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   unahora unusexdiscipulis) \
 	 gr-christusfactus $(addprefix gr-christusfactus-feria,v vi) \
 	 oratio $(addprefix oratio,2 2v 3 3v 4 4v) \
-	 $(addprefix lam,4_1 4_2 4_3 5_1 5_2 5_3 6_1 6_2 6_3 7_1 7_2 7_3 8_1 8_2 8_3 8_4 \
+	 $(addprefix lam,1_1 1_2 1_3 1_4 1_5 1_6 2_1 2_2 2_3 2_4 2_5 3_1 3_2 3_3 \
+			 4_1 4_2 4_3 5_1 5_2 5_3 6_1 6_2 6_3 7_1 7_2 7_3 8_1 8_2 8_3 8_4 \
 			 9_1 9_2 9_3 9_4) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
