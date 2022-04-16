@@ -18,10 +18,10 @@ COMMON_CHANTS_DIR = $(EDITIO_ROOTDIR)/cantuscommunes
 PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
-PSALMS = 1 2 3 4 5 6 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 10 11 13 14 16 17i 17ii 17iii 17ii_vii 17viii_xx 17xxi_xxx 17xxxi_xxxv 17xxxvi_xlvi 17xlvii_li 18i 19 20 23 28 29 30i 30ii 30iii 32 34i 34ii 34iii 35 36i 36ii 36i_xi 36xii_xxix 36iii 37i 37ii 37ii_v 37vi_xiii 37xiv_xxiii 38 38i 38ii 41 42 43i 43ii 43iii 44i 44ii 45 46 47 48i 48ii 49i_vi 49vii_xv 49xvi_xxiii 50 51 54i 54ii 54iii 56 62 63 64 65i 65ii 66 67i 67ii 67iii 68 68ii_xiii 68xiv_xxii 68iii 69 70 71 72 72i 72ii 72iii 73 74 75 76 77i_xvi 77iii 77xxxii_xxxix 77xl_li 77lii_lxiv 77lxv_lxxii 79 80 83 84 85 86 88ii_xix 88xx_xxx 88xxxi_xxxviii 88xxxix_xlvi 88xlvii_liii 89 90 91 95 96 97 98 99 100 101ii_xii 101xiii_xxiii 101iii 102i 102ii 102iii 103i 103ii 103iii 104i 104ii 104iii 105i 105ii 105iii 106i 106ii 106iii 107 109 110 111 112 113 114 115 116 117 118xix 128 129 130 131 131i 131ii 132 133 134 134i 135 135i 135ii 135iii 136 137 138i 138ii 139 140 141 142 143i 143i_x 143ii 144i 144ii 144x_xiii 144xiv_xxi 145 146 147 148 149 150
+PSALMS = 1 2 3 4 5 6 8 9ii_xi 9xii_xxi 9xxii_xxxii 9xxxiii_xxxix 10 11 13 14 16 17i 17ii 17iii 17ii_vii 17viii_xx 17xxi_xxx 17xxxi_xxxv 17xxxvi_xlvi 17xlvii_li 18i 19 20 21 23 26 28 29 30i 30ii 30iii 32 34i 34ii 34iii 35 36i 36ii 36i_xi 36xii_xxix 36iii 37 37i 37ii 37ii_v 37vi_xiii 37xiv_xxiii 38 38i 38ii 39 41 42 43i 43ii 43iii 44i 44ii 45 46 47 48i 48ii 49i_vi 49vii_xv 49xvi_xxiii 50 51 53 54i 54ii 54iii 56 58 62 63 64 65i 65ii 66 67i 67ii 67iii 68 68ii_xiii 68xiv_xxii 68iii 69 70 71 72 72i 72ii 72iii 73 74 75 76 77i_xvi 77iii 77xxxii_xxxix 77xl_li 77lii_lxiv 77lxv_lxxii 79 80 83 84 85 86 87 88ii_xix 88xx_xxx 88xxxi_xxxviii 88xxxix_xlvi 88xlvii_liii 89 90 91 93 95 96 97 98 99 100 101ii_xii 101xiii_xxiii 101iii 102i 102ii 102iii 103i 103ii 103iii 104i 104ii 104iii 105i 105ii 105iii 106i 106ii 106iii 107 109 110 111 112 113 114 115 116 117 118xix 128 129 130 131 131i 131ii 132 133 134 134i 135 135i 135ii 135iii 136 137 138i 138ii 139 140 141 142 143i 143i_x 143ii 144i 144ii 144x_xiii 144xiv_xxi 145 146 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-1 = i-g viii-G
-MODUS-2 = i-a4 vii-a
+MODUS-2 = i-a4 vii-a viii-G
 MODUS-3 = vi-F viii-G5
 MODUS-4 = viii-G
 MODUS-5 = ii-D viii-A
@@ -48,7 +48,9 @@ MODUS-17xlvii_li = vii-c2
 MODUS-18i = ii-D
 MODUS-19 = viii-G
 MODUS-20 = viii-G
+MODUS-21 = viii-G
 MODUS-23 = iv_-e viii-G
+MODUS-26 = viii-G
 MODUS-28 = vii-a
 MODUS-29 = viii-G
 MODUS-30i = viii-G
@@ -64,6 +66,7 @@ MODUS-36ii = iv-A_
 MODUS-36i_xi = vi-F
 MODUS-36xii_xxix = ii-D
 MODUS-36iii = vi-F viii-g viii-G
+MODUS-37 = viii-G
 MODUS-37i = vi-F viii-C
 MODUS-37ii = ii-D
 MODUS-37ii_v = viii-C
@@ -72,6 +75,7 @@ MODUS-37xiv_xxiii = ii-A
 MODUS-38 = iv-E viii-c
 MODUS-38i = iv-E
 MODUS-38ii = vii-c
+MODUS-39 = iv-A_
 MODUS-41 = ii-D
 MODUS-42 = vi-F vii-d
 MODUS-43i = viii-G
@@ -89,10 +93,12 @@ MODUS-49vii_xv = i-g4 viii-G e
 MODUS-49xvi_xxiii = vii-c viii-c e
 MODUS-50 = i-a2 ii-D iii-a iv-A vi-F vii-a vii-c vii-c2 viii-G viii-G2
 MODUS-51 = iv_-e
+MODUS-53 = iv-A_
 MODUS-54i = viii-c
 MODUS-54ii = vii-c2
 MODUS-54iii = viii-G
 MODUS-56 = vii-a viii-g
+MODUS-58 = i-f
 MODUS-62 = i-g ii_-B vii-a viii-G e
 MODUS-63 = viii-a viii-A
 MODUS-64 = ii-D viii-A
@@ -129,6 +135,7 @@ MODUS-83 = viii-G
 MODUS-84 = vi-F viii-G
 MODUS-85 = ii-D
 MODUS-86 = i-g
+MODUS-87 = viii-G
 MODUS-88ii_xix = viii-G
 MODUS-88xx_xxx = viii-G
 MODUS-88xxxi_xxxviii = viii-G
@@ -137,6 +144,7 @@ MODUS-88xlvii_liii = vi-F
 MODUS-89 = i-g ii-D vi-F
 MODUS-90 = viii-G
 MODUS-91 = viii-g e
+MODUS-93 = viii-G
 MODUS-95 = ii-D
 MODUS-96 = iii-a2
 MODUS-97 = e
@@ -252,7 +260,7 @@ LAPSALMOPTSACC = --accents $(word 1,$(TONUS)):$(word 3,$(TONUS)) \
 LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-$(M).tex))
 LAPSALMSEXTRA = $(foreach C,benedictus magnificat $(CANTICIS),$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/$(C)-$(M).tex))
-LAPSALMSSINEDOX = $(foreach P,35 50 68 69 70 71 72 73 74 75 76 89 115 148 149,$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-$(M)-sinedox.tex)) \
+LAPSALMSSINEDOX = $(foreach P,2 21 26 35 37 39 50 53 58 68 69 70 71 72 73 74 75 76 87 89 93 115 148 149,$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-$(M)-sinedox.tex)) \
 		  $(foreach C,dan3 moysis benedictus,$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/$(C)-$(M)-sinedox.tex))
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo \
@@ -386,7 +394,10 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  cogitaveruntimpii-cgp deusmeuseripeme-cgp dixiiniquis-cgp \
 			  exsurgedomineetjudica-cgp indietribulationis-cgp liberavitdominus-cgp \
 			  terratremuit-cgp zelusdomus-cgp contritumest-cgp dominustamquamovis-cgp \
-			  exhortatuses-cgp justificerisdomine-cgp oblatusest-cgp traditorautem-cgp) \
+			  exhortatuses-cgp justificerisdomine-cgp oblatusest-cgp traditorautem-cgp \
+			  abinsurgentibus-cgp alieniinsurrexerunt-cgp astiteruntreges-cgp \
+			  captabuntinanimam-cgp diviseruntsibi-cgp insurrexeruntinme-cgp \
+			  longefecisti-cgp vimfaciebant-cgp) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -428,7 +439,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 				TuAutemDomineSabaoth FratresHoc VeniteMittamus) \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix versus-,custodi gaude dirigatur diffusa-tq angelis eripe eripemede \
-			     avertantur deusmeus exsurge homopacis) \
+			     avertantur deusmeus exsurge homopacis \
+			     diviserunt insurrexerunt locuti) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
 					evangelica divinum adsocietatem ille \
@@ -440,7 +452,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   contumeliasetterrores deusisrael synagogapopulorum \
 			   locutisunt amicusmeus eccevidimus eramquasiagnus \
 			   inmonteoliveti judasmercator seniorespopuli tristisest \
-			   unahora unusexdiscipulis) \
+			   unahora unusexdiscipulis animammeam caligaveruntoculi \
+			   jesumtradidit omnesamicimei tamquamadlatronem \
+			   tenebraefactesunt tradideruntme velumtempli vineamea) \
 	 gr-christusfactus $(addprefix gr-christusfactus-feria,v vi) \
 	 oratio $(addprefix oratio,2 2v 3 3v 4 4v) \
 	 $(addprefix lam,1_1 1_2 1_3 1_4 1_5 1_6 2_1 2_2 2_3 2_4 2_5 3_1 3_2 3_3 \
