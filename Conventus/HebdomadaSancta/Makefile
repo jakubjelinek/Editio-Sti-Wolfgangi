@@ -132,7 +132,7 @@ MODUS-77lxv_lxxii = viii-G
 MODUS-79 = ii_-B
 MODUS-80 = i-g5
 MODUS-83 = viii-G
-MODUS-84 = vi-F viii-G
+MODUS-84 = i-f vi-F viii-G
 MODUS-85 = ii-D
 MODUS-86 = i-g
 MODUS-87 = viii-G
@@ -201,7 +201,7 @@ MODUS-138ii = iii-g
 MODUS-139 = iv-g
 MODUS-140 = viii-A
 MODUS-141 = viii-A
-MODUS-142 = viii-G
+MODUS-142 = iv-E viii-G
 MODUS-143i = vi-F
 MODUS-143i_x = vi-F
 MODUS-143ii = vi-F
@@ -211,7 +211,7 @@ MODUS-144x_xiii = vii-c
 MODUS-144xiv_xxi = viii-a
 MODUS-145 = iv-E iv_-e
 MODUS-146 = ii-D viii-g viii-A
-MODUS-147 = vi-F e
+MODUS-147 = vi-F viii-G e
 MODUS-148 = i-a i-g i-g2 ii-D ii_-B iv-A_ vii-a viii-G
 MODUS-149 = i-a i-g i-g2 ii-D ii_-B iv-A_ vii-a viii-G
 MODUS-150 = i-a i-g i-g2 ii-D ii_-B iv-A_ vii-a viii-G
@@ -220,7 +220,7 @@ MODUS-david = i-f
 MODUS-ecclesiastici = iii-a
 MODUS-ezechiae = iii-a e
 MODUS-ezechiae2 = i-d
-MODUS-habacuc = iv_-e
+MODUS-habacuc = i-f iv_-e
 MODUS-isaiae = viii-G
 MODUS-isaiae2 = v-a
 MODUS-isaiae3 = vii-d
@@ -260,8 +260,8 @@ LAPSALMOPTSACC = --accents $(word 1,$(TONUS)):$(word 3,$(TONUS)) \
 LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-$(M).tex))
 LAPSALMSEXTRA = $(foreach C,benedictus magnificat $(CANTICIS),$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/$(C)-$(M).tex))
-LAPSALMSSINEDOX = $(foreach P,2 21 26 35 37 39 50 53 58 68 69 70 71 72 73 74 75 76 87 89 93 115 148 149,$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-$(M)-sinedox.tex)) \
-		  $(foreach C,dan3 moysis benedictus,$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/$(C)-$(M)-sinedox.tex))
+LAPSALMSSINEDOX = $(foreach P,2 21 26 35 37 39 50 53 58 68 69 70 71 72 73 74 75 76 84 87 89 93 115 142 147 148 149,$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-$(M)-sinedox.tex)) \
+		  $(foreach C,dan3 moysis habacuc benedictus,$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/$(C)-$(M)-sinedox.tex))
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo \
 			  beatadeigenitrix beatamater benedictusdeusisrael benedictusdominus \
@@ -397,7 +397,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  exhortatuses-cgp justificerisdomine-cgp oblatusest-cgp traditorautem-cgp \
 			  abinsurgentibus-cgp alieniinsurrexerunt-cgp astiteruntreges-cgp \
 			  captabuntinanimam-cgp diviseruntsibi-cgp insurrexeruntinme-cgp \
-			  longefecisti-cgp vimfaciebant-cgp) \
+			  longefecisti-cgp vimfaciebant-cgp aitlatroadlatronem-cgp anxiatusest-cgp \
+			  dumconturbata-cgp mementomei-cgp posueruntsupercaput-cgp propriofilio-cgp) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -440,7 +441,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix versus-,custodi gaude dirigatur diffusa-tq angelis eripe eripemede \
 			     avertantur deusmeus exsurge homopacis \
-			     diviserunt insurrexerunt locuti) \
+			     diviserunt insurrexerunt locuti collocavitme) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
 					evangelica divinum adsocietatem ille \
@@ -469,7 +470,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 isaiae3-initium-vii-d ps88xxxi_xxxviii-initium-viii-G_ ps97-initium-e ps98-initium-e \
 	 jeremiae2-initium-viii-G ps99-initium-e ps72iii-initium-iii-b ps102iii-initium-iii-g \
 	 ps103iii-initium-e ps47-initium-iv-a ps101ii_xii-initium-i-a ps62-initium-ii_-B \
-	 ps71-initium-vii-c-trans
+	 ps71-initium-vii-c-trans ps50-initium-vii-c-trans habacuc-initium-i-f
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
