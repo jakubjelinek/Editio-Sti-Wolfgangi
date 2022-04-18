@@ -92,7 +92,7 @@ MODUS-48ii = viii-G e
 MODUS-49i_vi = i-g2 viii-A viii-c viii-C
 MODUS-49vii_xv = i-g4 viii-G e
 MODUS-49xvi_xxiii = vii-c viii-c e
-MODUS-50 = i-a2 ii-D iii-a iv-A vi-F vii-a vii-c vii-c2 viii-G viii-G2
+MODUS-50 = i-a2 ii-D iii-a iv-A iv-D vi-F vii-a vii-c vii-c2 viii-G viii-G2
 MODUS-51 = iv_-e
 MODUS-53 = iv-A_ viii-G
 MODUS-54i = viii-c
@@ -101,7 +101,7 @@ MODUS-54iii = viii-G
 MODUS-56 = vii-a viii-g
 MODUS-58 = i-f
 MODUS-62 = i-g ii_-B vii-a viii-G e
-MODUS-63 = viii-a viii-A
+MODUS-63 = vii-d viii-a viii-A
 MODUS-64 = ii-D viii-A
 MODUS-65i = vi-F
 MODUS-65ii = ii_-a
@@ -144,7 +144,7 @@ MODUS-88xxxix_xlvi = vii-a
 MODUS-88xlvii_liii = vi-F
 MODUS-89 = i-g ii-D vi-F
 MODUS-90 = viii-G
-MODUS-91 = viii-g e
+MODUS-91 = iv-A_ viii-g e
 MODUS-93 = viii-G
 MODUS-95 = ii-D
 MODUS-96 = iii-a2
@@ -215,11 +215,11 @@ MODUS-146 = ii-D viii-g viii-A
 MODUS-147 = vi-F viii-G e
 MODUS-148 = i-a i-g i-g2 ii-D ii_-B iv-A_ vii-a viii-G
 MODUS-149 = i-a i-g i-g2 ii-D ii_-B iv-A_ vii-a viii-G
-MODUS-150 = i-a i-g i-g2 ii-D ii_-B iv-A_ vii-a viii-G
+MODUS-150 = i-a i-g i-g2 ii-D ii_-B iv-A_ vii-a viii-a viii-G
 MODUS-anna = ii-D vii-a
 MODUS-david = i-f
 MODUS-ecclesiastici = iii-a
-MODUS-ezechiae = iii-a e
+MODUS-ezechiae = ii-D iii-a e
 MODUS-ezechiae2 = i-d
 MODUS-habacuc = i-f iv_-e
 MODUS-isaiae = viii-G
@@ -261,8 +261,8 @@ LAPSALMOPTSACC = --accents $(word 1,$(TONUS)):$(word 3,$(TONUS)) \
 LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-$(M).tex))
 LAPSALMSEXTRA = $(foreach C,benedictus magnificat $(CANTICIS),$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/$(C)-$(M).tex))
-LAPSALMSSINEDOX = $(foreach P,2 4 14 15 21 23 26 29 35 37 39 50 53 58 68 69 70 71 72 73 74 75 76 84 87 89 93 115 142 147 148 149,$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-$(M)-sinedox.tex)) \
-		  $(foreach C,dan3 moysis habacuc benedictus,$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/$(C)-$(M)-sinedox.tex))
+LAPSALMSSINEDOX = $(foreach P,2 4 14 15 21 23 26 29 35 37 39 50 53 58 63 68 69 70 71 72 73 74 75 76 84 87 89 91 93 115 142 147 148 149 150,$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-$(M)-sinedox.tex)) \
+		  $(foreach C,dan3 moysis habacuc ezechiae benedictus,$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/$(C)-$(M)-sinedox.tex))
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo \
 			  beatadeigenitrix beatamater benedictusdeusisrael benedictusdominus \
@@ -402,7 +402,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  dumconturbata-cgp mementomei-cgp posueruntsupercaput-cgp propriofilio-cgp \
 			  caromea-cgp credovidere-cgp domineabstraxisti-cgp factussum-cgp \
 			  habitabitintabernaculo-cgp inpacefactusest-cgp inpaceinidipsum-cgp \
-			  elevamini) \
+			  elevamini attenditeuniversi-cgp mulieressedentes-cgp omors-cgp ovosomnes-cgp \
+			  plangenteum-cgp aportainferi) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
