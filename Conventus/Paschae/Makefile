@@ -84,7 +84,7 @@ MODUS-54i = i-a4 viii-c
 MODUS-54ii = i-a4 vii-c2
 MODUS-54iii = i-a4 viii-G
 MODUS-56 = viii-g viii-G
-MODUS-62 = i-g ii_-B iv-e2 vii-a vii-c2 viii-G viii-C viii-g viii-c e
+MODUS-62 = i-g ii_-B iv-e2 iv-d vii-a vii-c2 viii-G viii-C viii-g viii-c e
 MODUS-63 = i-d
 MODUS-64 = i-d viii-A viii-C
 MODUS-65i = vi-F viii-G5
@@ -216,7 +216,7 @@ MODUS-moysis2i_xii = vi-F vii-c2
 MODUS-sapientia = v-a
 MODUS-tobiae = vii-a viii-g
 MODUS-tobiae2 = ii-D viii-G
-MODUS-dan3 = i-a4 i-g ii-D ii_-a iii-a vi-F vii-a viii-G
+MODUS-dan3 = i-a4 i-g ii-D ii_-a iii-a vi-F vii-a viii-G viii-G5
 MODUS-dan32 = i-f
 MODUS-oseae = iii-b iv-E
 MODUS-sophoniae = iii-b iv-E
@@ -403,7 +403,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  eccenuncpalam usquemodononpetistis patersancteservaeos gaudeteetexsultate-tp \
 			  cognoviteumdominus-tp euntesinmundumdoceteomnes petiteetaccipietis \
 			  ultimofestivitatis dapacemdomine crucifixusresurrexit redemptornoster \
-			  surrexitchristusetilluxit) \
+			  surrexitchristusetilluxit collaudabuntmultisapientiam-tp \
+			  euntesinmundumuniversum istisuntvirisanctiet-tp sapientiadominievangelii-tp) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -423,7 +424,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  VexillaRegis PangeLingua HicAccetum AuroraLucis AdCoenam \
 			  AuroraLucis-alt HicEstDies ChorusNovae ChorusNovae-praglia \
 			  LaetareCaelum TeCatharina ClaroPaschali MatthiaSacratissimo PhilippeSummae \
-			  OptatusVotis AEterneRex IesuNostraRedemptio) \
+			  OptatusVotis AEterneRex IesuNostraRedemptio IamNunc-Marcus OVirBeate) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus-tp clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -432,7 +433,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   christefilidei-tq deoreleonis deoreleonis-feriale erueaframea \
 			   erueaframea-feriale surrexitdominusdesepulcro surrexitdominusvere \
 			   surrexitdominusvere-solemnis christefilideivivi-tp audifilia-tp \
-			   constitueseosprincipes-tp ascendenschristus) \
+			   constitueseosprincipes-tp ascendenschristus narraveruntlaudes-tp) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis solemnis-tq alter-tq communis-tq \
 				       solemnis-quad alter-quad communis-quad) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
@@ -440,7 +441,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,feria-laudes feria-vesperae minor officium-bmv festis-bmv \
 				  dominica-advequad feria-advequad octava-paschae tempore-paschali) \
-	 $(addprefix inv-,surrexitdominusvere regemapostolorum-tp christumdominumquisanctum) \
+	 $(addprefix inv-,surrexitdominusvere regemapostolorum-tp christumdominumquisanctum \
+			  dominumloquentem-tp) \
 	 dominelabiamea tonusprecum tonusprecumnovum dominusnosbenedicat dominusnosbenedicat-d \
 	 $(addprefix capitulum-,tuautem BenedictusDeus AbInitio Hortamur InterVestibulum \
 				FratresRogamus FratresEstote FratresScriptum FratresChristus \
@@ -495,7 +497,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   pacemmeamdovobis-CROCHU nonconturbeturetmittam-CROCHU-cumdox \
 			   nonconturbetur-CROCHU-cumdox exaltaredomine-CROCHU \
 			   disciplinametsapientiam-sinedox spiritussanctusprocedens-sinedox \
-			   iamnondicam-cumdox) \
+			   iamnondicam-cumdox egosumvitisvera-CROCHU-cumdox egosumvitisvera-CROCHU) \
 	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3 d4 d5 d6 d7) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
