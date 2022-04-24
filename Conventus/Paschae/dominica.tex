@@ -847,6 +847,7 @@ Orémus:
 \vfill
 %\pagebreak
 
+\ifx\laudes\undefined
 \pars{Psalmus 1.}
 
 \vspace{-0.4cm}
@@ -968,6 +969,9 @@ Orémus:
 
 \vfill
 \pagebreak
+\else
+\laudes
+\fi
 
 \ifx\lectiobrevis\undefined
 \pars{Capitulum.} \scriptura{Ac. 7, 12}
@@ -992,6 +996,7 @@ Orémus:
 \vfill
 \pagebreak
 
+\ifx\preces\undefined
 \ifx\hymnuslaudes\undefined
 \pars{Hymnus}
 
@@ -1014,6 +1019,7 @@ Orémus:
 
 \vfill
 \pagebreak
+\fi
 
 \benedictus
 
@@ -1022,8 +1028,42 @@ Orémus:
 \vfill
 \pagebreak
 
+\ifx\precestotum\undefined
+\ifx\preces\undefined
 \anteOrationem
+\else
+\pars{Preces.}
 
+\sineinitiali{}{temporalia/tonusprecumnovum.gtex}
+
+\preces
+
+\vfill
+
+\pars{Oratio Dominica.}
+
+\cuminitiali{}{temporalia/oratiodominicaalt.gtex}
+
+\vfill
+\pagebreak
+
+\rubrica{vel:}
+
+\pars{Supplicatio Litaniæ.}
+
+\cuminitiali{}{temporalia/supplicatiolitaniae.gtex}
+
+\vfill
+
+\pars{Oratio Dominica.}
+
+\cuminitiali{}{temporalia/oratiodominica.gtex}
+\fi
+\else
+\precestotum
+\fi
+
+\vfill
 \pagebreak
 
 \ifx\oratio\undefined
@@ -1036,6 +1076,7 @@ Orémus:
 
 \vfill
 
+\ifx\preces\undefined
 \rubrica{Hebdomadarius dicit iterum Dominus vobiscum, vel cantor dicit:}
 
 \vspace{2mm}
@@ -1045,6 +1086,21 @@ Orémus:
 \rubrica{Postea cantatur a cantore:}
 
 \vspace{2mm}
+\else
+\rubrica{Hebdomadarius dicit Dominus vobiscum, vel, absente sacerdote vel diacono, sic concluditur:}
+
+\vspace{2mm}
+
+\ifx\dominusnosbenedicat\undefined
+\antiphona{C}{temporalia/dominusnosbenedicat.gtex}
+\else
+\dominusnosbenedicat
+\fi
+
+\rubrica{Postea cantatur a cantore:}
+
+\vspace{2mm}
+\fi
 
 \ifx\benedicamusdominolaudes\undefined
 \cuminitiali{VII}{temporalia/benedicamus-tempore-paschali.gtex}
