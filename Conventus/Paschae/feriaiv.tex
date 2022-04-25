@@ -735,6 +735,7 @@
 \vfill
 \pagebreak
 
+\ifx\precestotum\undefined
 \pars{Preces.}
 
 \sineinitiali{}{temporalia/tonusprecum.gtex}
@@ -852,6 +853,9 @@
 \pars{Oratio Dominica.}
 
 \cuminitiali{}{temporalia/oratiodominica.gtex}
+\else
+\precestotum
+\fi
 
 \vfill
 \pagebreak
@@ -867,7 +871,11 @@
 
 \vspace{2mm}
 
+\ifx\dominusnosbenedicat\undefined
 \antiphona{C}{temporalia/dominusnosbenedicat.gtex}
+\else
+\dominusnosbenedicat
+\fi
 
 \rubrica{Postea cantatur a cantore:}
 
