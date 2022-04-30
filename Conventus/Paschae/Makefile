@@ -122,7 +122,7 @@ MODUS-88xlvii_liii = vi-F viii-G5
 MODUS-89 = i-g vi-F viii-G5 c-c2
 MODUS-90 = viii-G
 MODUS-91 = viii-g viii-G5 e
-MODUS-92 = viii-G viii-g
+MODUS-92 = iii-a viii-G viii-g
 MODUS-95 = ii-D
 MODUS-96 = iii-a iii-a2 viii-G5
 MODUS-97 = e
@@ -190,7 +190,7 @@ MODUS-144xiv_xxi = vii-a viii-a viii-G5
 MODUS-145 = iv-E iv_-e
 MODUS-146 = viii-g viii-A
 MODUS-147 = vi-F e
-MODUS-148 = i-a i-g ii-D ii_-B vi-F vii-a viii-g
+MODUS-148 = i-a i-g i-d ii-D ii_-B vi-F vii-a viii-g
 MODUS-149 = i-a i-a2 i-g ii-D ii_-B iii-a vi-F vii-a viii-g viii-G5
 MODUS-150 = i-a i-g ii-D ii_-B vi-F vii-a viii-g
 MODUS-anna = i-g6 ii-D
@@ -408,7 +408,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  surrexitchristusetilluxit collaudabuntmultisapientiam-tp \
 			  euntesinmundumuniversum istisuntvirisanctiet-tp sapientiadominievangelii-tp \
 			  caritasnonquaerit-tp dilexistiiustitiam-tp dumessetrex-tp egochristumconfiteor-tp \
-			  iamhiemstransiit-tp laevaeius-tp trahemepostte-tp) \
+			  iamhiemstransiit-tp laevaeius-tp trahemepostte-tp benedicatterradomino \
+			  deresurrectionetuachriste mittiteindexteram regnavitdominuspraecinctus) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -526,7 +527,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 	 ps43i-initium-iv-e ps43ii-initium-iv-e ps43iii-initium-iv-e \
 	 benedictus-initium-vii-a-trans dan3-initium-iii-a-trans ps46-initium-viii-G5 \
 	 ps104i-initium-viii-g5 ps104ii-initium-viii-g5 ps104iii-initium-viii-g5 \
-	 ps30i-initium-viii-G5 ps30ii-initium-viii-G5 ps30iii-initium-viii-G5
+	 ps30i-initium-viii-G5 ps30ii-initium-viii-G5 ps30iii-initium-viii-G5 \
+	 dan3-initium-iii-a-trans2
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
