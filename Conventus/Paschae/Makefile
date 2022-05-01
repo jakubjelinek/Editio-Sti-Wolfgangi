@@ -409,7 +409,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  euntesinmundumuniversum istisuntvirisanctiet-tp sapientiadominievangelii-tp \
 			  caritasnonquaerit-tp dilexistiiustitiam-tp dumessetrex-tp egochristumconfiteor-tp \
 			  iamhiemstransiit-tp laevaeius-tp trahemepostte-tp benedicatterradomino \
-			  deresurrectionetuachriste mittiteindexteram regnavitdominuspraecinctus) \
+			  deresurrectionetuachriste mittiteindexteram regnavitdominuspraecinctus \
+			  attenditeafalsisprophetis) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -430,7 +431,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  AuroraLucis-alt HicEstDies ChorusNovae ChorusNovae-praglia \
 			  LaetareCaelum TeCatharina ClaroPaschali MatthiaSacratissimo PhilippeSummae \
 			  OptatusVotis AEterneRex IesuNostraRedemptio IamNunc-Marcus OVirBeate \
-			  VirgoPrudentum) \
+			  VirgoPrudentum ChristePastorum InclitusPastor-doctorum) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus-tp clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
