@@ -46,7 +46,7 @@ MODUS-17xxxi_xxxv = vii-d2 viii-G
 MODUS-17xxxvi_xlvi = vii-c vii-d2
 MODUS-17xlvii_li = vii-c2 vii-d2
 MODUS-18 = i-a
-MODUS-18i = ii-D ii_-a iii-a
+MODUS-18i = i-a ii-D ii_-a iii-a
 MODUS-19 = viii-G
 MODUS-20 = viii-G
 MODUS-23 = iv_-e vii-a viii-G
@@ -410,7 +410,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  caritasnonquaerit-tp dilexistiiustitiam-tp dumessetrex-tp egochristumconfiteor-tp \
 			  iamhiemstransiit-tp laevaeius-tp trahemepostte-tp benedicatterradomino \
 			  deresurrectionetuachriste mittiteindexteram regnavitdominuspraecinctus \
-			  attenditeafalsisprophetis) \
+			  attenditeafalsisprophetis nonturbeturcorvestrumneque) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
