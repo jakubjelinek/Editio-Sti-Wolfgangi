@@ -412,7 +412,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  iamhiemstransiit-tp laevaeius-tp trahemepostte-tp benedicatterradomino \
 			  deresurrectionetuachriste mittiteindexteram regnavitdominuspraecinctus \
 			  attenditeafalsisprophetis nonturbeturcorvestrumneque caromeavereestcibus \
-			  dixitsimonpetrus nonmoriarsedvivam benedictumnomengloriae redemptiadomino) \
+			  dixitsimonpetrus nonmoriarsedvivam benedictumnomengloriae redemptiadomino \
+			  siquisintroierit) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
