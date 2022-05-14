@@ -534,7 +534,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 	 benedictus-initium-vii-a-trans dan3-initium-iii-a-trans ps46-initium-viii-G5 \
 	 ps104i-initium-viii-g5 ps104ii-initium-viii-g5 ps104iii-initium-viii-g5 \
 	 ps30i-initium-viii-G5 ps30ii-initium-viii-G5 ps30iii-initium-viii-G5 \
-	 dan3-initium-iii-a-trans2 ps149-initium-iv_-E
+	 dan3-initium-iii-a-trans2 ps149-initium-iv_-E ps62-initium-ii_-a
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
