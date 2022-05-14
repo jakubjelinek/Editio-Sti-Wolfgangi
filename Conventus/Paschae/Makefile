@@ -86,7 +86,7 @@ MODUS-54i = i-a4 viii-c
 MODUS-54ii = i-a4 vii-c2
 MODUS-54iii = i-a4 viii-G
 MODUS-56 = viii-g viii-G
-MODUS-62 = i-g ii_-B iv-e2 iv-d vii-a vii-c2 viii-G viii-C viii-g viii-c viii-g6 e
+MODUS-62 = i-g ii_-B ii_-a iv-e2 iv-d vii-a vii-c2 viii-G viii-C viii-g viii-c viii-g6 e
 MODUS-63 = i-d
 MODUS-64 = i-d viii-A viii-C
 MODUS-65i = vi-F viii-G5
@@ -191,7 +191,7 @@ MODUS-145 = iv-E iv_-e
 MODUS-146 = viii-g viii-A
 MODUS-147 = vi-F e
 MODUS-148 = i-a i-g i-d ii-D ii_-B vi-F vii-a viii-g
-MODUS-149 = i-a i-a2 i-g ii-D ii_-B iii-a vi-F vii-a viii-g viii-G5
+MODUS-149 = i-a i-a2 i-g ii-D ii_-B iii-a iv-c vi-F vii-a viii-g viii-G5
 MODUS-150 = i-a i-g ii-D ii_-B vi-F vii-a viii-g viii-G
 MODUS-anna = i-g6 ii-D
 MODUS-david = i-f
@@ -218,14 +218,14 @@ MODUS-moysis2i_xii = vi-F vii-c2
 MODUS-sapientia = v-a
 MODUS-tobiae = vii-a viii-g
 MODUS-tobiae2 = ii-D viii-G
-MODUS-dan3 = i-a4 i-g ii-D ii_-a iii-a vi-F vii-a vii-c viii-G viii-G5
+MODUS-dan3 = i-a4 i-g ii-D ii_-a iii-a vi-F vii-a vii-b vii-c viii-G viii-G5
 MODUS-dan32 = i-f
 MODUS-dan33 = viii-c2
 MODUS-oseae = iii-b iv-E
 MODUS-sophoniae = iii-b iv-E
 MODUS-nuncdimittis = iii-a
 MODUS-magnificat = isoll-f isoll-g i-f i-g i-g2 i-g4 i-a i-D2 ii-D ii_-B iisoll-D iii-a iiisoll-a iv-A iv-A_ iv-d v-a vii-b vii-c vii-c2 viisoll-b viisoll-d viii-G viii-G2 viiisoll-G viiisoll-G2 viiisoll-g viiisoll-g5
-MODUS-benedictus = i-a4 i-d i-f i-g i-g4 i-g5 isoll-a5 isoll-d3 isoll-f iisoll-A ii-D ii_-a ii_-d ii_-B iii-a4 iii-b iv-E iv-e2 ivsoll-e2 iv_-e v-a v-g vsoll-g vi-F vii-a viisoll-a vii-b viisoll-c vii-c2 vii-d2 viii-g viii-G viii-G2 viii-G5 viii-C viii-C2 viii-c viiisoll-G viiisoll-G5
+MODUS-benedictus = i-a4 i-d i-f i-g i-g4 i-g5 isoll-a5 isoll-d3 isoll-f iisoll-A ii-D ii_-a ii_-d ii_-B iii-a4 iii-b iiisoll-a iv-E iv-e2 ivsoll-e2 iv_-e v-a v-g vsoll-g vi-F vii-a viisoll-a vii-b viisoll-c vii-c2 vii-d2 viii-g viii-G viii-G2 viii-G5 viii-C viii-C2 viii-c viiisoll-G viiisoll-G5
 CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae8 isaiae9 isaiae10 isaiae11 isaiae12 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david nuncdimittis ezechiae2 lamentatio dan3 dan32 dan33 iudith2 oseae sophoniae
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -413,7 +413,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  deresurrectionetuachriste mittiteindexteram regnavitdominuspraecinctus \
 			  attenditeafalsisprophetis nonturbeturcorvestrumneque caromeavereestcibus \
 			  dixitsimonpetrus nonmoriarsedvivam benedictumnomengloriae redemptiadomino \
-			  siquisintroierit) \
+			  siquisintroierit exsultabuntsancti-tp mandatumnovum quisititveniat-tp \
+			  tresinfornace) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -510,7 +511,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   disciplinametsapientiam-sinedox spiritussanctusprocedens-sinedox \
 			   iamnondicam-cumdox egosumvitisvera-CROCHU-cumdox egosumvitisvera-CROCHU \
 			   expurgate-CROCHU cibavitillam-CROCHU-tp-cumdox gaudeteiusti-CROCHU \
-			   inservissuis-CROCHU) \
+			   inservissuis-CROCHU narrabonomentuum-CROCHU intotocordemeo-CROCHU-cumdox) \
 	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3 d4 d5 d6 d7) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
@@ -533,7 +534,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 	 benedictus-initium-vii-a-trans dan3-initium-iii-a-trans ps46-initium-viii-G5 \
 	 ps104i-initium-viii-g5 ps104ii-initium-viii-g5 ps104iii-initium-viii-g5 \
 	 ps30i-initium-viii-G5 ps30ii-initium-viii-G5 ps30iii-initium-viii-G5 \
-	 dan3-initium-iii-a-trans2
+	 dan3-initium-iii-a-trans2 ps149-initium-iv_-E
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
