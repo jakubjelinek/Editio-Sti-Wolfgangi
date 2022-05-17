@@ -209,7 +209,7 @@ MODUS-isaiae9 = ii-D
 MODUS-isaiae10 = vi-F vii-b
 MODUS-isaiae11 = viii-g viii-g5
 MODUS-isaiae12 = iii-b iv-E
-MODUS-iudith2 = ii_-d
+MODUS-iudith2 = ii_-d vii-c
 MODUS-jeremiae2 = i-d viii-G
 MODUS-jeremiae3 = iv_-e
 MODUS-lamentatio = i-d
@@ -414,7 +414,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  attenditeafalsisprophetis nonturbeturcorvestrumneque caromeavereestcibus \
 			  dixitsimonpetrus nonmoriarsedvivam benedictumnomengloriae redemptiadomino \
 			  siquisintroierit exsultabuntsancti-tp mandatumnovum quisititveniat-tp \
-			  tresinfornace egosumalpha quiautemdiligitme) \
+			  tresinfornace egosumalpha quiautemdiligitme desubpedeagni) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -512,7 +512,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   iamnondicam-cumdox egosumvitisvera-CROCHU-cumdox egosumvitisvera-CROCHU \
 			   expurgate-CROCHU cibavitillam-CROCHU-tp-cumdox gaudeteiusti-CROCHU \
 			   inservissuis-CROCHU narrabonomentuum-CROCHU intotocordemeo-CROCHU-cumdox \
-			   alleluiaiudicaiudicium-CROCHU) \
+			   alleluiaiudicaiudicium-CROCHU haecestierusalem-CROCHU \
+			   deducmeinsemitam-CROCHU-cumdox) \
 	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3 d4 d5 d6 d7) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
