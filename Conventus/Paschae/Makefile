@@ -211,7 +211,7 @@ MODUS-isaiae11 = viii-g viii-g5
 MODUS-isaiae12 = iii-b iv-E
 MODUS-iudith2 = ii_-d vii-c
 MODUS-jeremiae2 = i-d viii-G
-MODUS-jeremiae3 = iv_-e
+MODUS-jeremiae3 = iv_-e vii-c2
 MODUS-lamentatio = i-d
 MODUS-moysis = iv-e2 e
 MODUS-moysis2i_xii = vi-F vii-c2
@@ -414,7 +414,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  attenditeafalsisprophetis nonturbeturcorvestrumneque caromeavereestcibus \
 			  dixitsimonpetrus nonmoriarsedvivam benedictumnomengloriae redemptiadomino \
 			  siquisintroierit exsultabuntsancti-tp mandatumnovum quisititveniat-tp \
-			  tresinfornace egosumalpha quiautemdiligitme desubpedeagni) \
+			  tresinfornace egosumalpha quiautemdiligitme desubpedeagni vincentidaboeiedere) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
