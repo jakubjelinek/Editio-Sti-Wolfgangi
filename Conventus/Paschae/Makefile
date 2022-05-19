@@ -200,7 +200,7 @@ MODUS-ezechiae = i-g v-a e
 MODUS-ezechiae2 = i-d ii-D
 MODUS-habacuc = iv_-e
 MODUS-isaiae = viii-G viii-g
-MODUS-isaiae2 = v-a
+MODUS-isaiae2 = v-a viii-G
 MODUS-isaiae3 = vii-d
 MODUS-isaiae4 = vii-c
 MODUS-isaiae5 = iv-E iv_-e vii-c
@@ -513,7 +513,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   expurgate-CROCHU cibavitillam-CROCHU-tp-cumdox gaudeteiusti-CROCHU \
 			   inservissuis-CROCHU narrabonomentuum-CROCHU intotocordemeo-CROCHU-cumdox \
 			   alleluiaiudicaiudicium-CROCHU haecestierusalem-CROCHU \
-			   deducmeinsemitam-CROCHU-cumdox) \
+			   deducmeinsemitam-CROCHU-cumdox inecclesiisbenedicite-CROCHU-cumdox) \
 	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3 d4 d5 d6 d7) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
