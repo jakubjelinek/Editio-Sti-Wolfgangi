@@ -156,7 +156,7 @@ MODUS-113 = per
 MODUS-114 = i-g2
 MODUS-115 = viii-A
 MODUS-116 = ii_-a ii_-B viii-A e
-MODUS-117 = ii-D vii-c viii-C viii-G viii-c
+MODUS-117 = i-f ii-D vii-c viii-C viii-G viii-c
 MODUS-118xix = vii-a e
 MODUS-128 = ii-D
 MODUS-129 = viii-A
@@ -192,7 +192,7 @@ MODUS-146 = viii-g viii-A
 MODUS-147 = vi-F e
 MODUS-148 = i-a i-g i-d ii-D ii_-B vi-F vii-a viii-g
 MODUS-149 = i-a i-a2 i-g ii-D ii_-B iii-a iv-c vi-F vii-a viii-g viii-G5
-MODUS-150 = i-a i-g ii-D ii_-B vi-F vii-a viii-g viii-G
+MODUS-150 = i-a i-a2 i-g ii-D ii_-B vi-F vii-a viii-g viii-G
 MODUS-anna = i-g6 ii-D
 MODUS-david = i-f vii-a
 MODUS-ecclesiastici = iii-a
@@ -220,7 +220,7 @@ MODUS-tobiae = vii-a viii-g
 MODUS-tobiae2 = ii-D viii-G
 MODUS-dan3 = i-a4 i-g ii-D ii_-a iii-a vi-F vii-a vii-b vii-c viii-G viii-G5
 MODUS-dan32 = i-f
-MODUS-dan33 = viii-c2
+MODUS-dan33 = i-a2 viii-c2
 MODUS-oseae = iii-b iv-E
 MODUS-sophoniae = iii-b iv-E
 MODUS-nuncdimittis = iii-a
@@ -415,7 +415,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  dixitsimonpetrus nonmoriarsedvivam benedictumnomengloriae redemptiadomino \
 			  siquisintroierit exsultabuntsancti-tp mandatumnovum quisititveniat-tp \
 			  tresinfornace egosumalpha quiautemdiligitme desubpedeagni vincentidaboeiedere \
-			  iterumautemvidebovos) \
+			  iterumautemvidebovos benedictusesinfirmamento-tp gloriaethonoretbenedictio \
+			  intabernaculisiustorumvox siquisdiligitmesermonem) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -515,7 +516,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   inservissuis-CROCHU narrabonomentuum-CROCHU intotocordemeo-CROCHU-cumdox \
 			   alleluiaiudicaiudicium-CROCHU haecestierusalem-CROCHU \
 			   deducmeinsemitam-CROCHU-cumdox inecclesiisbenedicite-CROCHU-cumdox \
-			   deuscanticumnovum-CROCHU) \
+			   deuscanticumnovum-CROCHU pacemmeamdovobis-CROCHU-cumdox) \
 	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3 d4 d5 d6 d7) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
