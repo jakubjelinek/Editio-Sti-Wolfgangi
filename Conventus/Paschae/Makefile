@@ -63,9 +63,9 @@ MODUS-35 = ii-D
 MODUS-36i_xi = vi-F
 MODUS-36xii_xxix = ii-D vi-F
 MODUS-36iii = vi-F
-MODUS-37ii_v = viii-C d-g
-MODUS-37vi_xiii = ii_-a d-g
-MODUS-37xiv_xxiii = ii-A d-g
+MODUS-37ii_v = i-a4 viii-C d-g
+MODUS-37vi_xiii = i-a4 ii_-a d-g
+MODUS-37xiv_xxiii = i-a4 ii-A d-g
 MODUS-38i = iv-E iv_-e
 MODUS-38ii = iv_-e vii-c
 MODUS-41 = ii-D
@@ -198,7 +198,7 @@ MODUS-david = i-f vii-a
 MODUS-ecclesiastici = iii-a vii-a
 MODUS-ezechiae = i-g v-a e
 MODUS-ezechiae2 = i-d ii-D
-MODUS-habacuc = iv_-e
+MODUS-habacuc = iv_-e viii-G
 MODUS-isaiae = viii-G viii-g
 MODUS-isaiae2 = v-a viii-G
 MODUS-isaiae3 = vii-d
@@ -416,7 +416,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  siquisintroierit exsultabuntsancti-tp mandatumnovum quisititveniat-tp \
 			  tresinfornace egosumalpha quiautemdiligitme desubpedeagni vincentidaboeiedere \
 			  iterumautemvidebovos benedictusesinfirmamento-tp gloriaethonoretbenedictio \
-			  intabernaculisiustorumvox siquisdiligitmesermonem) \
+			  intabernaculisiustorumvox siquisdiligitmesermonem sicvenietquemadmodum) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -540,7 +540,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 	 ps104i-initium-viii-g5 ps104ii-initium-viii-g5 ps104iii-initium-viii-g5 \
 	 ps30i-initium-viii-G5 ps30ii-initium-viii-G5 ps30iii-initium-viii-G5 \
 	 dan3-initium-iii-a-trans2 ps149-initium-iv_-E ps62-initium-ii_-a \
-	 ps6-initium-viii-G3 ps9ii_xi-initium-viii-G3 ps9xii_xxi-initium-viii-G3
+	 ps6-initium-viii-G3 ps9ii_xi-initium-viii-G3 ps9xii_xxi-initium-viii-G3 \
+	 habacuc-initium-viii-G
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
