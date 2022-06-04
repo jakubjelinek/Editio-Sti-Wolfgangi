@@ -76,7 +76,8 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 	 $(addprefix ant-,caritasdei convocatisjesusduodecimapostolis dixitjesusutsciatis \
 			  egosumostium egosumpanisetpanis egosumpanis magn-vesp1 \
 			  pacemrelinquovobis paraclitusautem sicdeusdilexitmundum \
-			  siquisdiligitme spiritusquiapatreprocedit accipitespiritum) \
+			  siquisdiligitme spiritusquiapatreprocedit accipitespiritum \
+			  dapacemdomine) \
 	 $(addprefix matant,1 2 3) $(addprefix matresp,1 2) \
 	 $(addprefix versus-,spiritus repleti loquebantur custodi gaude \
 			     spiritus-simplex repleti-simplex spiritusparaclitus-communis \
@@ -93,7 +94,7 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 			   dumcomplerentur-joppich-sinedox iamnondicam-cumdox \
 			   apparueruntapostolis-cumdox) \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
-	 $(addprefix capitulum-,CumComplerentur tuautem Facta Judaei GratiaVobis) oratio $(addprefix oratio,2 3 4 5 6) \
+	 $(addprefix capitulum-,CumComplerentur tuautem Facta Judaei GratiaVobis) oratio $(addprefix oratio,2 3 4 5 6 -sinedox) \
 	 benedictio-noctemquietam jubedomnebenedicere lectiobrevis-fratressobrii \
 	 convertenosdeus ant-alleluia-compl deusinadiutorium-solemnis \
 	 resp-inmanus-tp ant-salvanos-antiquo-tp \
@@ -123,7 +124,7 @@ define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
 iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) \
-	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 triplex76) ../Pentecostes ../AscensioneDomini ../CorpusChristi
+	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 triplex76) ../Pentecostes ../AscensioneDomini ../CorpusChristi ../PerAnnum
 include $(iter)
 
 PDF = pentecostes.pdf $(patsubst %,feria%-ope.pdf,ii iii iv v vi) sabbato-ope.pdf
