@@ -367,7 +367,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  confitebortibidomine benedictusesinfirmamento beatipauperesspiritu \
 			  fulgebuntiusti-inregno insanctitateetiustitia eccequambonumet \
 			  estoteergomisericordesalleluia secundummagnammisericordiam \
-			  dapacemdomine deusmeusestu hymnumdicite eiceprimumhypocrita) \
+			  dapacemdomine deusmeusestu hymnumdicite eiceprimumhypocrita \
+			  paradisiportaperevam) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -422,7 +423,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   exsultabuntlabiamea adoramustechriste pertesalutem \
 			   laetabiturjustus stetitangelus inconspectuangelorum \
 			   narraveruntlaudes exaltabotedomine laetaminiindomino \
-			   superteierusalem domumtuam sanctitui lexdeiejus) \
+			   superteierusalem domumtuam sanctitui lexdeiejus diffusaest) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 oratiodominica-d deprecatio4 deprecatio4-propace \
@@ -442,6 +443,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 $(addprefix versus-,memorfui medianocte praevenerunt aporta-alt misericordiaetuae \
 			     dataest-communis afferte adorabunt) \
 	 dominelabiamea dominelabiamea-praglia tonusprecum tonusprecumnovum dominusnosbenedicat \
+	 dominusnosbenedicat-d \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
@@ -651,7 +653,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   egressonoedearcha-cumdox emisitnoecolumbam quadragintadiesetnoctes-CROCHU \
 			   locutusestdominusadabraham-CROCHU dumstaretabrahamadradicem-CROCHU \
 			   tentavitdeusabraham-CROCHU-cumdox angelusdominivocavit-CROCHU \
-			   vocavitangelusdomini-CROCHU deusdominimeiabraham-CROCHU-cumdox) \
+			   vocavitangelusdomini-CROCHU deusdominimeiabraham-CROCHU-cumdox \
+			   sicutcedrus vidispeciosam) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
