@@ -47,11 +47,13 @@ MODUS-150 = v-a
 MODUS-dan3 = iv-E
 MODUS-magnificat-I = isoll-D_
 MODUS-magnificat-II = ivsoll-E2
+MODUS-magnificat-III = isoll-d3
 MODUS-benedictus-I = visoll-C
 MODUS-benedictus-II = viiisoll-G
-MAGNIFICAT = $(foreach M,I II,magnificat-$(M))
-BENEDICTUS = $(foreach B,I II,benedictus-$(B))
-MODUSLIST = $(sort $(foreach P,$(PSALMS) $(MAGNIFICAT) dan3 $(BENEDICTUS),$(MODUS-$(P))))
+MODUS-benedictus-III = iiisoll-a
+MAGNIFICAT = $(foreach M,I II III,magnificat-$(M))
+BENEDICTUS = $(foreach B,I II III,benedictus-$(B))
+MODUSLIST = $(sort $(foreach P,$(PSALMS) $(MAGNIFICAT) dan3 $(BENEDICTUS),$(MODUS-$(P)))) iii-e
 CZPSALMOPTS = --accents 0:0 --title-pattern " " --no-paragraph
 CZPSALMS = $(patsubst %,$(TMP_DIR)/ps%-boh.tex,$(PSALMS))
 ALLCZPSALMS = $(CZPSALMS) $(patsubst %,$(TMP_DIR)/%-boh.tex,magnificat dan3)
@@ -76,12 +78,14 @@ SCORES = $(addprefix ant-,benedictasitcreatrix exquoomnia glorialaudisresonet \
 			  adestounusdeusomnipotenspater caritaspaterestgratia \
 			  liberanossalvanosiustifica spesnostrasalus teinvocamusteadoramus \
 			  tesemperidemessevivere teunuminsubstantiatrinum unaigiturpaterlogos \
-			  veraxestpaterveritas) \
+			  veraxestpaterveritas benedictasitcreatrixetgubernatrix \
+			  exquoomniaperquem glorialaudisresonetinore gloriatibitrinitas \
+			  lausdeopatriparilique dapacemdomine) \
 	 $(addprefix hym-,OLuxBeata TuTrinitatisUnitas SummaeParensClementiae \
 			  AdestoSanctaTrinitas) \
 	 $(addprefix resp-,benedicamuspatrem benedictuses) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
-	 $(foreach M,isoll-D_ ivsoll-E2,magnificat-initium-$(M)) \
+	 $(foreach M,isoll-D_ ivsoll-E2 isoll-d3,magnificat-initium-$(M)) \
 	 $(addprefix capitulum-,OAltitudo) \
 	 $(addprefix versus-,benedicamuspatrem benedictuses \
 			     benedictuses-communis verbodomini) \
@@ -101,11 +105,13 @@ SCORES = $(addprefix ant-,benedictasitcreatrix exquoomnia glorialaudisresonet \
 			   tedeumpatremingenitum-CROCHU benedicatnosdeus-sinedox \
 			   quisdeusmagnus-cumdox magnusdominus-sinedox \
 			   tedeumpatremingenitum-CROCHU-cumdox summaetrinitati-CROCHU) \
-	 tedeum-solemnis tedeum-romanum-gn ps47-initium-v-A ps8-initium-i-d3 \
+	 tedeum-solemnis tedeum-romanum-gn tedeum-solemnis-gn ps47-initium-v-A ps8-initium-i-d3 \
 	 ps23-initium-iii-a ps95-initium-viii-G5 ps97-initium-viii-G5
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = $(foreach B,visoll-C viiisoll-G,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex) \
-	    $(TMP_DIR)/ps95viiiG.tex $(TMP_DIR)/ps97viiiG.tex $(TMP_DIR)/ps62-sinedox.tex
+OTHERDEPS = $(foreach B,visoll-C viiisoll-G iiisoll-a,$(TMP_DIR)/benedictus-initium-$(B)-auto.gtex) \
+	    $(TMP_DIR)/ps95viiiG.tex $(TMP_DIR)/ps97viiiG.tex $(TMP_DIR)/ps62-sinedox.tex \
+	    $(TMP_DIR)/ps111-initium-iii-e-auto.gtex $(TMP_DIR)/ps62-initium-iii-e-auto.gtex \
+	    $(TMP_DIR)/ps66-initium-iii-e-auto.gtex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
@@ -120,7 +126,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../CorpusChristi
+iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../CorpusChristi ../PerAnnum
 include $(iter)
 
 PDF = trinitatis.pdf trinitatis-breviori.pdf
