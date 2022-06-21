@@ -9,6 +9,7 @@ TONUS-i-a2 = 2 0 1 2
 TONUS-i-a3 = 2 0 1 2
 TONUS-i-a4 = 2 0 1 2
 TONUS-i-a5 = 2 0 1 2
+TONUS-i-a6 = 2 0 1 0
 TONUS-i-f = 2 0 1 2
 TONUS-i-g = 2 0 1 2
 TONUS-i-g2 = 2 0 1 2
