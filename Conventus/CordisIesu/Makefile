@@ -91,7 +91,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo miserere salveregina-simplex subtuum 
 			  sanctificavittabernaculum sicutlaetantium annuntiate \
 			  laetamini videruntomnes cognoveruntomnes quaemulier quisexvobishomo \
 			  apudteestfonsvitae dumanxiareturcorinpetra indiemagno \
-			  pervisceramisericordiae tolliteiugum) \
+			  pervisceramisericordiae tolliteiugum dapacemdomine) \
 	 $(addprefix hym-,AuctorBeate CorArca JesuAuctor TeLucis) \
 	 $(addprefix resp-,inmanus tollite christus egodixi) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
@@ -101,6 +101,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo miserere salveregina-simplex subtuum 
 			     domine conversus exsion tollite-communis memoriam) \
 	 oratio oratio2 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
+	 deprecatio4-propace oratiodominica-d dominusnosbenedicat-d \
 	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
 	 dominelabiamea inv-coriesuamorenostri benedicamus-solemnis-laud \
