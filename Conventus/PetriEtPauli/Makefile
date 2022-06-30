@@ -38,7 +38,7 @@ MODUS-109 = viii-g
 MODUS-112 = vii-d
 # + iv-A
 MODUS-115 = i-g
-MODUS-116 = viii-G
+MODUS-116 = viii-g
 MODUS-138 = viii-g
 MODUS-145 = viii-A
 MODUS-146 = viii-g
