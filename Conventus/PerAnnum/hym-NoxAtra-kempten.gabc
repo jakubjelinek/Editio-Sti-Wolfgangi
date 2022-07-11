@@ -1,32 +1,31 @@
-﻿name: hym-NoxAtra-Kempten;
-user-notes: ;
-commentary: LH 201 + MMMA I p. 250;
-annotation: iv;
-centering-scheme: english;
-%fontsize: 12;
-%spacing: vichi;
-%font: OFLSortsMillGoudy;
-%width: 4.5;
-%height: 11;
+name: Nox Atra;
+book: Liber Hymnarius, 1983, p. 201 + MMMA I p. 250;
+mode: 4;
 %%
-(c4) Nox(d) a(e)tra(f) re(g)rum(fg) cón(f)te(e)git(f) (,)
+(c4)
+NOx(d) a(e)tra(f) re(g)rum(fg) cón(f)te(e)git(f) (,)
 ter(d)ræ(e) co(f)ló(g)res(fg) óm(f)ni(e)um:(ded) (;)
 nos(e) con(d)fi(e)tén(gh)tes(h) pó(h)sci(g)mus(f) (,)
 te,(g) iu(h)ste(h) iu(g)dex(ef) cór(g)di(f)um,(e) (::)
+
 Ut(d) áu(e)fe(f)ras(g) pi(fg)á(f)cu(e)la(f) (,)
 sor(d)dés(e)que(f) men(g)tis(fg) á(f)blu(e)as,(ded) (;)
 do(e)nés(d)que,(e) Chri(gh)ste,(h) grá(h)ti(g)am(f) (,)
 ut(g) ar(h)ce(h)án(g)tur(ef) crí(g)mi(f)na.(e) (::)
+
 Mens,(d) ec(e)ce,(f) tor(g)pet(fg) ím(f)pi(e)a,(f) (,)
 quam(d) cul(e)pa(f) mor(g)det(fg) nó(f)xi(e)a;(ded) (;)
 ob(e)scú(d)ra(e) ge(gh)stit(h) tól(h)le(g)re(f) (,)
 et(g) te,(h) Re(h)dém(g)ptor,(ef) quǽ(g)re(f)re.(e) (::)
+
 Re(d)pél(e)le(f) tu(g) ca(fg)lí(f)gi(e)nem(f) (,)
 in(d)trín(e)se(f)cus(g) quam(fg) má(f)xi(e)me,(ded) (;)
 ut(e) in(d) be(e)á(gh)to(h) gáu(h)de(g)at(f) (,)
 se(g) col(h)lo(h)cá(g)ri(ef) lú(g)mi(f)ne.(e) (::)
+
 Sit,(d) Chri(e)ste,(f) rex(g) pi(fg)ís(f)si(e)me,(f) (,)
 ti(d)bi(e) Pa(f)trí(g)que(fg) gló(f)ri(e)a(ded) (;)
 cum(e) Spí(d)ri(e)tu(gh) Pa(h)rá(h)cli(g)to,(f) (,)
 in(g) sem(h)pi(h)tér(g)na(ef) sǽ(g)cu(f)la.(e) (::)
+
 A(efe)men.(de..) (::)
