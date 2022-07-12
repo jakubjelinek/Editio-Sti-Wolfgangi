@@ -43,7 +43,7 @@ MODUS-17xxxvi_xlvi = vii-c
 MODUS-17xlvii_li = vii-c2
 MODUS-18 = i-D_ ii-D iii-a iv-A
 MODUS-18i = ii-D
-MODUS-20 = vii-a viii-G
+MODUS-20 = vii-a viii-G viii-C
 MODUS-23 = iii-a iv-c iv_-e v-a vii-c vii-d2 viii-G
 MODUS-28 = vii-a
 MODUS-30i = viii-G
@@ -116,8 +116,8 @@ MODUS-88xxxix_xlvi = vii-a
 MODUS-88xlvii_liii = vi-F
 MODUS-89 = i-g vi-F
 MODUS-91 = viii-g e
-MODUS-91i = vii-a viii-G2
-MODUS-91ii = iii-a vii-c2
+MODUS-91i = i-g vii-a viii-G2
+MODUS-91ii = iii-a vii-c vii-c2
 MODUS-92 = i-g
 MODUS-95 = i-d ii-D
 MODUS-96 = iii-a2 vi-F viii-g
@@ -370,7 +370,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  estoteergomisericordesalleluia secundummagnammisericordiam \
 			  dapacemdomine deusmeusestu hymnumdicite eiceprimumhypocrita \
 			  paradisiportaperevam erantomnes dilectideo christusnobisdicit \
-			  quimihiministrat mittensdominus homoquidamdescendebat) \
+			  quimihiministrat mittensdominus homoquidamdescendebat \
+			  fuitvir abipso relictadomo gloriosusconfessor eratvirdominibenedictus \
+			  immensiregissignifer sanctissimeconfessorbenedicte) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -414,7 +416,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  IesuCoronaCaelitum SalveteCedri DiesAEtasque InclitusRector-episcopo \
 			  ChristePrecamur DoctorAEternus PrimoDierum DumSacerdotum HiSacerdotes \
 			  AEternaLux AdestoChriste BarnabaeClarum VitaSanctorum-ver \
-			  NocteSurgentes-ver OSatorRerum-ver) \
+			  NocteSurgentes-ver OSatorRerum-ver QuidquidAntiqui InterAEternas \
+			  NoxAtra-kempten) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -434,7 +437,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 $(addprefix benedicamus-,feria-laudes feria-vesperae minor officium-bmv festis-bmv \
 				  dominica-perannum duplex-laudes solemnism-laud \
 				  adlaudes-festis duplexmajus-laudes festis-sanctorum \
-				  feria-advequad memoria-laudes) \
+				  feria-advequad memoria-laudes festis-laudes) \
 	 $(addprefix inv-,alleluiachristumdominum regemmagnum dominumquifecit adoremusdominum \
 			  dominumdeum veniteexsultemus jubilemusdeo avemaria christummariaefilium \
 			  mirabileminsanctis visitationemvirginis regemmartyrumsimplex \
@@ -442,7 +445,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  summumregem regemmartyrum regiquicarneminduit regemapostolorum-iv \
 			  nativitatemvirginis christumregem salvatoremmundi regemangelorum \
 			  regemvirginum dominumloquenteminevangelio regemcuiomnia \
-			  deumquiglorificatur domumdeidecet regemconfessorum iesumchristum) \
+			  deumquiglorificatur domumdeidecet regemconfessorum iesumchristum \
+			  laudemusdeumnostrum laudemusdeumnostruminfestivitate) \
 	 $(addprefix versus-,memorfui medianocte praevenerunt aporta-alt misericordiaetuae \
 			     dataest-communis afferte adorabunt) \
 	 dominelabiamea dominelabiamea-praglia tonusprecum tonusprecumnovum dominusnosbenedicat \
@@ -658,7 +662,9 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   tentavitdeusabraham-CROCHU-cumdox angelusdominivocavit-CROCHU \
 			   vocavitangelusdomini-CROCHU deusdominimeiabraham-CROCHU-cumdox \
 			   sicutcedrus vidispeciosam bonumestconfiteri-CROCHU \
-			   paratumcormeum-CROCHU-cumdox ecceegomittovos-cumdox) \
+			   paratumcormeum-CROCHU-cumdox ecceegomittovos-cumdox \
+			   fuitvirvitae beatusbenedictusdum beatusbenedictuscum \
+			   inmariviatua-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
@@ -701,7 +707,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../PostPentecosten ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../InNativitateBMV/cantus/amon33 ../CorpusChristi ../InNativitateBMV/cantus/nrom02 ../InAssumptioneBMV ../InConceptioneBMV ../OctavaPentecostes ../PresentationeBMV ../InNativitateBMV ../Trinitatis ../Paschae ../Quadragesimae ../Adventus ../Septuagesimae ../Apostolorum ../CordisIesu ../NativitateIoannisBaptistae ../OctavaNativitatis ../MariaeMagdalenae ../Transfiguratio ../Catharinae ../ExaltatioCrucis ../Laurentii ../Clarae ../Iacobi ../OmniumSanctorum ../ChristiUniversorumRegis ../Mauritii ../Wenceslai ../MichaelisArchangelis ../Agnetis ../Scholasticae ../DedicationisEcclesiae ../Defunctorum ../Martini ../Epiphania ../Ioseph ../PostEpiphaniam ../ConversionePauli ../DominicaPerAnnum
+iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../PostPentecosten ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../InNativitateBMV/cantus/amon33 ../CorpusChristi ../InNativitateBMV/cantus/nrom02 ../InAssumptioneBMV ../InConceptioneBMV ../OctavaPentecostes ../PresentationeBMV ../InNativitateBMV ../Trinitatis ../Paschae ../Quadragesimae ../Adventus ../Septuagesimae ../Apostolorum ../CordisIesu ../NativitateIoannisBaptistae ../OctavaNativitatis ../MariaeMagdalenae ../Transfiguratio ../Catharinae ../ExaltatioCrucis ../Laurentii ../Clarae ../Iacobi ../OmniumSanctorum ../ChristiUniversorumRegis ../Mauritii ../Wenceslai ../MichaelisArchangelis ../Agnetis ../Scholasticae ../DedicationisEcclesiae ../Defunctorum ../Martini ../Epiphania ../Ioseph ../PostEpiphaniam ../ConversionePauli ../DominicaPerAnnum ../Benedicti
 include $(iter)
 define iter-doit
 $(patsubst %.pdf,%.tex,$(i)): feria$(word 1,$(subst -, ,$(patsubst feria%.pdf,%,$(i)))).tex hebdomada$(word 2,$(subst -, ,$(patsubst feria%.pdf,%,$(i)))).tex ; touch $$@

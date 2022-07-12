@@ -61,7 +61,7 @@ SCORES = $(addprefix ant-,fuitvir abipso relictadomo) \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
-	 dominelabiamea inv-laudemusdeumnostrum benedicamus-solemnis-laud \
+	 dominelabiamea inv-laudemusdeumnostruminfestivitate benedicamus-solemnis-laud \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix benedictio-solemn-,ille cujus-ipse adsocietatem) \
 	 $(addprefix resp-,quammagnamultitudo-cumdox \
