@@ -392,7 +392,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  alleluia-turco14 egosumluxmundi induitmedominus-tp vincentidaboei \
 			  nonestdiscipulus alleluia-turco19 alleluia-turco17 alleluia-auglx8 \
 			  adiurovosfiliae alleluia-turco20 alleluia-turco24 beatiquilavantstolas \
-			  eccesacerdosmagnus vadopararevobis alleluia-turco26 etdicebantunde \
+			  eccesacerdosmagnus-tp vadopararevobis alleluia-turco26 etdicebantunde \
 			  iesuschristusheriethodie sicognovissetisme egosumvitisvera \
 			  domineostende egosumvia intabernaculisiustorum nonturbeturcor \
 			  sanctituidomine sidiligitisme tantotemporevobiscum \
