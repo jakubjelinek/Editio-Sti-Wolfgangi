@@ -1,32 +1,31 @@
-name: hym-novusathletaDomini;
-user-notes: ;
-commentary: LH 410, MMMA I Mel 190, pp.123, 553;
-annotation: viii;
-centering-scheme: english;
-%fontsize: 12;
-%spacing: vichi;
-%font: OFLSortsMillGoudy;
-%width: 4.5;
-%height: 11;
+name: Novus athleta Domini;
+book: Liber Hymnarius, 1983, p. 410, MMMA I Mel 190, pp. 123, 553;
+mode: 8;
 %%
-(c3)No(e)vus(fvED) a(e)thlé(f)ta(e) Dó(f!ghg)mi(gf)ni(fe) (,)
+(c3)
+NO(e)vus(fvED) a(e)thlé(f)ta(e) Dó(f!ghg)mi(gf)ni(fe) (,)
 col(g)lau(iji)dé(h)tur(gf) Do(e)mí(fe)ni(d)cus,(e) (;)
 qui(e) rem(i) con(i)fór(j)mat(i) nó(h)mi(g)ni,(fge) (,)
 vir(e) fa(fvED)ctus(e) e(f)van(e)gé(f!ghg)li(fe)cus.(e) (::)
+
 Con(e)sér(fvED)vans(e) si(f)ne(e) má(f!ghg)cu(gf)la(fe) (,)
 vir(g)gi(iji)ni(h)tá(gf)tis(e) lí(fe)li(d)um,(e) (;)
 ar(e)dé(i)bat(i) qua(j)si(i) fá(h)cu(g)la(fge) (,)
 pro(e) ze(fvED)lo(e) pe(f)re(e)ún(f!ghg)ti(fe)um.(e) (::)
+
 Mun(e)dum(fvED) cal(e)cans(f) sub(e) pé(f!ghg)di(gf)bus(fe) (,)
 ac(g)cín(iji)xit(h) cor(gf) ad(e) prœ́(fe)li(d)a,(e) (;)
 nu(e)dus(i) oc(i)cúr(j)rens(i) hó(h)sti(g)bus,(fge) (,)
 Chri(e)sti(fvED) suf(e)fúl(f)tus(e) grá(f!ghg)ti(fe)a.(e) (::)
+
 Pu(e)gnat(fvED) ver(e)bo,(f) mi(e)rá(f!ghg)cu(gf)lis,(fe) (,)
 mis(g)sis(iji) per(h) or(gf)bem(e) frá(fe)tri(d)bus,(e) (;)
 cre(e)bros(i) ad(i)iún(j)gens(i) sé(h)du(g)lis(fge) (,)
 fle(e)tus(fvED) o(e)ra(f)ti(e)ó(f!ghg)ni(fe)bus.(e) (::)
-Sit(e) tri(fvED)no(e) De(f)<i>o</i>(e) et(e) sím(f!ghg)pli(gf)ci(fe) (,)
+
+Sit(e) tri(fvED)no(e) De(f)<e>o</e> {e}t(e) sím(f!ghg)pli(gf)ci(fe) (,)
 laus,(g) ho(iji)nor,(h) de(gf)cus,(e) gló(fe)ri(d)a,(e) (;)
 qui(e) nos(i) pre(i)ce(j) Do(i)mí(h)ni(g)ci(fge) (,)
 du(e)cat(fvED) ad(e) cæ(f)li(e) gáu(f!ghg)di(fe)a.(e) (::)
+
 A(efe)men.(de) (::)
