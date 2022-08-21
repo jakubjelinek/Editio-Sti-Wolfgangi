@@ -1,16 +1,11 @@
-﻿name: ant-BeataMateretinnupta-PRAGLIA;
-user-notes: ;
-commentary: Praglia II, p. 390;
-annotation: ii d;
-centering-scheme: english;
-%fontsize: 12;
-%spacing: vichi;
-%font: OFLSortsMillGoudy;
-%width: 4.5;
-%height: 11;
-%nabc-lines: 1;
+name: Beata Mater et innupta;
+book: Antuphonale Monasticum II, Praglia, p. 390; H300;
+annotation: II D;
+mode: 2;
+nabc-lines: 1;
 %%
-(f3)BE(f|ta)á(f|tahh)ta(h|vihh) Ma(f|vihg)ter(e|tahg) *()
+(f3)
+BE(f|ta)á(f|tahh)ta(h|vihh) Ma(f|vihg)ter(e|tahg) *()
 et(f|vihg) in(e|tahg)nú(f|vihg)pta(fh|pehh) Vír(hg>|vi>hh)go,(e|tahh) (,)
 glo(f|vi)ri(fi|pe)ó(h|vi)sa(hg__|cl-) re(fe~|vi>hh)gí(f|vihi)na(hg|clhhlsc3) mun(f.|tahi)di,(f.|tahi) (;)
 in(e|ta)ter(f|vi-)cé(h|vi-hg)de(h_i|peShh) pro(hg|cl) no(fe|cl)bis(g|vi-) ad(hg~|vi>) Dó(f|vi-)mi(ef|pe)num.(f.|ta) (::)

@@ -375,7 +375,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  fuitvir abipso relictadomo gloriosusconfessor eratvirdominibenedictus \
 			  immensiregissignifer sanctissimeconfessorbenedicte satagentecirca \
 			  amicecommoda thesaurizatevobis nonestinventus nolitetimerepusillus \
-			  instabatenim intrateperangustam) \
+			  instabatenim intrateperangustam beatamateretinnupta) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -421,7 +421,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  AEternaLux AdestoChriste BarnabaeClarum VitaSanctorum-ver \
 			  NocteSurgentes-ver OSatorRerum-ver QuidquidAntiqui InterAEternas \
 			  NoxAtra-kempten AdPrecesNostras-ver ChristeLuxVera-ver NovusAthleta \
-			  QuemTerra-simplex) \
+			  QuemTerra-simplex RerumSupremo OQuamGlorifica) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -450,7 +450,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  nativitatemvirginis christumregem salvatoremmundi regemangelorum \
 			  regemvirginum dominumloquenteminevangelio regemcuiomnia \
 			  deumquiglorificatur domumdeidecet regemconfessorum iesumchristum \
-			  laudemusdeumnostrum laudemusdeumnostruminfestivitate) \
+			  laudemusdeumnostrum laudemusdeumnostruminfestivitate \
+			  christumregemquisuam) \
 	 $(addprefix versus-,memorfui medianocte praevenerunt aporta-alt misericordiaetuae \
 			     dataest-communis afferte adorabunt) \
 	 dominelabiamea dominelabiamea-praglia tonusprecum tonusprecumnovum dominusnosbenedicat \
