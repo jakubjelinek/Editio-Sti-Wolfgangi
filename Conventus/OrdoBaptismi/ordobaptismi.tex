@@ -30,7 +30,9 @@
 \usepackage{calc}
 \usepackage{longtable}
 \newif\ifparvulus
+\newif\ifignatius
 \parvulustrue
+\ignatiustrue
 
 \setlength{\headheight}{12pt}
 
@@ -106,8 +108,13 @@
 \vspace{0.5cm}
 
 \ifparvulus
+\ifignatius
+{\Large Ignatius Ludovicus Srovnal\\
+26. Augusti MMXXII}
+\else
 {\Large Angelus Benedictus-Ioseph Srovnal\\
 19. Ianuarii MMXIX}
+\fi
 \else
 {\Large Myrrha Liesse Srovnalová\\
 18. Februarii MMXVII}
@@ -116,7 +123,11 @@
 \vspace{1cm}
 
 \ifparvulus
+\ifignatius
+\includegraphics[width=5cm]{ignatius.jpg}
+\else
 \includegraphics[width=5cm]{benedictlabre.png}
+\fi
 \else
 \includegraphics[width=5cm]{ordobaptismi.jpg}
 \fi
@@ -146,6 +157,27 @@
 
 \psalmusEtTranslatioT{temporalia/ritusrecipiendi-comb.tex}{6cm}
 
+\ifignatius
+\pars{\textsc{Ad processionem}}
+
+\gresetnabcfont{gregall}{8}
+
+\antiphona{VI}{temporalia/alleluia.gtex}
+
+\scriptura{Ps. 117, 1-6}
+
+\initiumpsalmi{temporalia/communio-versus-Confitemini-initium.gtex}
+
+\vspace{-1cm}
+
+\psalmusEtTranslatioTS{temporalia/communio-versus-Confitemini-comb.tex}{6cm}
+
+\pars{\textsc{Sacra verbi Dei celebratio}}
+
+\pars{Graduale}
+
+\psalmusEtTranslatioT{temporalia/graduale-comb.tex}{6cm}
+\else
 \pars{\textsc{Sacra verbi Dei celebratio}}
 
 \gresetnabcfont{gregall}{8}
@@ -157,6 +189,7 @@
 \antiphona{VIII}{temporalia/alleluia-DominusInSina.gtex}
 
 \trAlleluia
+\fi
 
 \gresetnabcfont{grelaon}{8}
 
@@ -177,6 +210,19 @@
 \fi
 
 \vfill
+
+\ifignatius
+\pagebreak
+
+\pars{Hymnus}
+
+\antiphona{VIII}{temporalia/hym-VeniCreator.gtex}
+
+\vspace{0.3cm}
+
+\vfill
+\pagebreak
+\fi
 
 \noindent\pars{Oratio fidelium}
 
@@ -247,7 +293,23 @@
 %\vspace{-0.3cm}
 
 \ifparvulus
+\ifignatius
+\gresetnabcfont{gregall}{8}
+
+\pars{Pro pace in Ucraina.} \scriptura{Sir. 50, 25; 2 Esdr. 4, 20; \textbf{H416}}
+
+\vspace{-4mm}
+
+\antiphona{II D}{temporalia/ant-dapacemdomine.gtex}
+
+\trDaPacem
+
+\pars{Antiphona B.M.V.}
+
+\antiphona{I}{temporalia/an_salve_regina.gtex}
+\else
 \antiphona{}{temporalia/svatyvaclave.gtex}
+\fi
 \else
 \antiphona{VI}{temporalia/alleluia.gtex}
 

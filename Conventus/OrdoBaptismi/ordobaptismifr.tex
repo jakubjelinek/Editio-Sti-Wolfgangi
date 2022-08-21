@@ -31,8 +31,9 @@
 \usepackage{longtable}
 \newif\ifparvulus
 \newif\ifsimeon
+\newif\ifignatius
 \parvulustrue
-\simeontrue
+\ignatiustrue
 
 \setlength{\headheight}{12pt}
 
@@ -108,12 +109,17 @@
 \vspace{0.5cm}
 
 \ifparvulus
+\ifignatius
+{\Large Ignatius Ludovicus Srovnal\\
+26. Augusti MMXXII}
+\else
 \ifsimeon
 {\Large Simeon Rochus Srovnal\\
 25. Iulii MMXXI}
 \else
 {\Large Angelus Benedictus-Ioseph Srovnal\\
 19. Ianuarii MMXIX}
+\fi
 \fi
 \else
 {\Large Myrrha Liesse Srovnalová\\
@@ -123,6 +129,9 @@
 \vspace{1cm}
 
 \ifparvulus
+\ifignatius
+\includegraphics[width=5cm]{ignatius.jpg}
+\else
 \ifsimeon
 \includegraphics[width=5cm]{siena.jpg}
 \else
@@ -130,6 +139,7 @@
 \fi
 \else
 \includegraphics[width=5cm]{ordobaptismi.jpg}
+\fi
 \fi
 
 \vspace{0.2cm}
@@ -172,6 +182,27 @@
 \pagebreak
 \fi
 
+\ifignatius
+\pars{\textsc{Ad processionem}}
+
+\gresetnabcfont{gregall}{8}
+
+\antiphona{VI}{temporalia/alleluia.gtex}
+
+\scriptura{Ps. 117, 1-6}
+
+\initiumpsalmi{temporalia/communio-versus-Confitemini-initium.gtex}
+
+\vspace{-1cm}
+
+\psalmusEtTranslatioTS{temporalia/communio-versus-Confitemini-combfr.tex}{6cm}
+
+\pars{\textsc{Sacra verbi Dei celebratio}}
+
+\pars{Graduale}
+
+\psalmusEtTranslatioT{temporalia/graduale-combfr.tex}{6cm}
+\else
 \pars{\textsc{Sacra verbi Dei celebratio}}
 
 \gresetnabcfont{gregall}{8}
@@ -197,6 +228,7 @@
 \vspace{-0.3cm}
 
 \trAlleluia
+\fi
 \fi
 
 \gresetnabcfont{grelaon}{8}
@@ -234,12 +266,23 @@
 
 \vspace{-0.2cm}
 
+\ifignatius
+\pars{Hymnus}
+
+\antiphona{VIII}{temporalia/hym-VeniCreator.gtex}
+
+\vspace{0.3cm}
+
+\vfill
+\pagebreak
+\else
 \ifsimeon
 \pars{Hymnus}
 
 \antiphona{VIII}{temporalia/hym-VeniCreator.gtex}
 
 \vspace{0.3cm}
+\fi
 \fi
 
 \noindent\pars{Oratio fidelium}
@@ -325,6 +368,21 @@
 \vspace{-0.3cm}
 
 \ifparvulus
+\ifignatius
+\gresetnabcfont{gregall}{8}
+
+\pars{Pro pace in Ucraina.} \scriptura{Sir. 50, 25; 2 Esdr. 4, 20; \textbf{H416}}
+
+\vspace{-4mm}
+
+\antiphona{II D}{temporalia/ant-dapacemdomine.gtex}
+
+\trDaPacem
+
+\pars{Antiphona B.M.V.}
+
+\antiphona{I}{temporalia/an_salve_regina.gtex}
+\else
 \ifsimeon
 \antiphona{V}{temporalia/ant-salveregina-simplex.gtex}
 
@@ -340,6 +398,7 @@
 \else
 \vspace{-0.3cm}
 \antiphona{}{temporalia/svatyvaclave.gtex}
+\fi
 \fi
 \else
 \antiphona{VI}{temporalia/alleluia.gtex}

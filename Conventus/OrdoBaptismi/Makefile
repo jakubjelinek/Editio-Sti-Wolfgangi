@@ -44,13 +44,14 @@ ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = litaniae introitus-Sitientes alleluia-DominusInSina communio-OmnesQui \
 	 alleluia communio-versus-Confitemini-initium terogamus svatyvaclave \
 	 communio-versus-Vox-initium ant-adornathalamum alleluia-SenexPuerum \
-	 ant-lumenadrevelationem hym-VeniCreator ant-salveregina-simplex
+	 ant-lumenadrevelationem hym-VeniCreator ant-salveregina-simplex \
+	 an_salve_regina ant-dapacemdomine
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = $(patsubst %,$(TMP_DIR)/communio-versus-Confitemini-%.tex,comb combfr)
 ALLCOMBTEXTS = $(patsubst %,$(TMP_DIR)/%-comb.tex,ritusrecipiendi \
 		 oratiofidelium oratiofidelium-2 exorcismus celebratio-baptismi \
 		 ritus-explanativi conclusio-ritus evangelium evangelium2 evangelium3 \
-		 evangelium-initium)
+		 evangelium-initium graduale)
 ALLFRCOMBTEXTS = $(patsubst %-comb.tex,%-combfr.tex,$(ALLCOMBTEXTS))
 ALLLAPARVULUSTEXTS = $(patsubst %-comb.tex,%-parvulus.tex,$(ALLCOMBTEXTS))
 ALLLAPARVULATEXTS = $(patsubst %-comb.tex,%-parvula.tex,$(ALLCOMBTEXTS))
@@ -68,7 +69,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' $$< | $$(if $$(findstring svatyvaclave,$$@),cat,$(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td') | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR)
+iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../PerAnnum
 include $(iter)
 
 all: $(patsubst %,ordobaptismi%pdf,. -celebrans. fr. -litaniae.)
@@ -96,7 +97,7 @@ $(TMP_DIR)/communio-versus-Confitemini-combfr.tex: $(patsubst %,communio-versus-
 	$(GENPSCOMB)
 $(patsubst %,ordobaptismi%pdf,. -celebrans. fr. -litaniae.): %.pdf: %.tex conventuscommune.tex \
 	translationes_cs.tex translationes_fr.tex \
-	ordobaptismi.jpg siena.jpg $(ALLCOMBTEXTS) $(ALLFRCOMBTEXTS) $(ALLLATEXTS) \
+	ordobaptismi.jpg siena.jpg ignatius.jpg $(ALLCOMBTEXTS) $(ALLFRCOMBTEXTS) $(ALLLATEXTS) \
 	$(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
