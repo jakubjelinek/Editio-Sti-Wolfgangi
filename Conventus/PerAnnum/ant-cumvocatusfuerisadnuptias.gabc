@@ -1,13 +1,7 @@
-﻿name: ant-cumvocatusfueris-PRAGLIA;
-user-notes: ;
-commentary: Praglia I p. 473;
+name: Cum vocatus fueris;
+book: Antiphonale Monasticum I, Praglia, p. 473;
 annotation: vii a;
-centering-scheme: english;
-%fontsize: 12;
-%spacing: vichi;
-%font: OFLSortsMillGoudy;
-%width: 4.5;
-%height: 11;
+mode: 7;
 %%
 (c3)
 CUM(e) vo(e)cá(g)tus(h) fú(i)e(io)ris(g) *()
