@@ -191,7 +191,7 @@ MODUS-tobiae2 = ii-D
 MODUS-dan3 = i-d i-f i-g i-a2 ii-D ii_-a iii-a iii-e iv-E iv-e2 v-a v-g vii-a vii-c vii-c2 vii-d2 viii-G viii-G5 viii-c per
 MODUS-dan32 = i-f
 MODUS-dan33 = i-g i-a2 iv-E viii-G
-MODUS-benedictus = i-a i-a4 i-a5 i-d i-f i-g i-g5 i-D_ isoll-D isoll-D_ isoll-D2 isoll-f isoll-g isoll-g4 isoll-d3 isoll-a ii-D iisoll-D ii_-d ii_soll-c ii_soll-a iii-a iii-b iiisoll-a iiisoll-a4 iv-d iv-E iv-e iv-e2 ivsoll-E ivsoll-e2 v-a vsoll-g vsoll-a vsoll-a2 vi-F vi-C visoll-F vii-a vii-c vii-c2 vii-d2 vii-d3 viisoll-a viisoll-c viii-g viii-C viii-G viii-G2 viii-G5 viiisoll-G viiisoll-G5 viiisoll-g
+MODUS-benedictus = i-a i-a4 i-a5 i-d i-f i-g i-g5 i-D_ isoll-D isoll-D_ isoll-D2 isoll-f isoll-g isoll-g4 isoll-d3 isoll-a ii-D iisoll-D ii_-d ii_soll-c ii_soll-a iii-a iii-b iiisoll-a iiisoll-a4 iiisoll-e iv-d iv-E iv-e iv-e2 ivsoll-E ivsoll-e2 v-a vsoll-g vsoll-a vsoll-a2 vi-F vi-C visoll-F vii-a vii-c vii-c2 vii-d2 vii-d3 viisoll-a viisoll-c viii-g viii-C viii-G viii-G2 viii-G5 viiisoll-G viiisoll-G5 viiisoll-g
 CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae7 isaiae8 isaiae9 isaiae10 isaiae11 habacuc habacuc2 jeremiae2 jeremiae3 moysis moysis1 moysis2i_xii ecclesiastici ezechiae ezechiae2 sapientia tobiae tobiae2 david dan3 dan32 dan33 iudith2 ecclesiasticus36
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -377,7 +377,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  amicecommoda thesaurizatevobis nonestinventus nolitetimerepusillus \
 			  instabatenim intrateperangustam beatamateretinnupta \
 			  abstergetdeus cumvocatusfuerisadnuptias auditoeo metuebatherodes \
-			  arguebatherodemioannes misitdominusmanum-FKP quioditanimamsuam) \
+			  arguebatherodemioannes misitdominusmanum-FKP quioditanimamsuam \
+			  quisexvobishomo) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -679,7 +680,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   ecceradixjesse-CROCHU egredieturvirga-CROCHU radixjesse-CROCHU-cumdox \
 			   amaviteumdominus-CROCHU-cumdox revelabuntcaeli-CROCHU \
 			   priusquamteformarem-FKP-IER mementomei-CROCHU-cumdox \
-			   accedentesdiscipuli-CROCHU-cumdox metuebatherodes-CROCHU) \
+			   accedentesdiscipuli-CROCHU-cumdox metuebatherodes-CROCHU \
+			   septiesindielaudem-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
