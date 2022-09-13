@@ -1,12 +1,13 @@
 name:Crux alma fulget;
 office-part:Antiphona;
 mode:7;
-book:Antiphonale monasticum III, 2007, p. 215;
+book:Antiphonale monasticum III, 2007, p. 215; H259;
 transcriber:Jakub Jelínek;
+nabc-lines:1;
 %%
 (c3)
-CRux(ef) al(g)ma(h) ful(i!j>)get,(iio) *(,)
-per(h) quam(j) sa(k)lus(j) réd(k)di(j)ta(i) est(h) mun(i!j>)do;(i) (;)
-crux(ji) vin(hg>)cit,(fh) (,)
-crux(ji) re(hg>)gnat,(eOf) (,)
-crux(d) re(f)pél(h)lit(hf) om(g)ne(h) cri(fe)men,(d) al(ef)le(f)lú(e)ia.(e) (::)
+CRux(ef|peS) al(g|vihg)ma(h|vihh) ful(i!j>|pe>1)get,(iio|vs) *(,)
+per(h|ta) quam(j|vi) sa(k|vihh)lus(j|tahh) réd(k|vihk)di(j|vihj)ta(i|vihi) est(h|tahh) mun(i!j>|pe>)do;(i|ta) (;)
+crux(ji|cl-hg) vin(hg>|cl>)cit,(fh|peS) (,)
+crux(ji|cl-) re(hg>|cl>)gnat,(eOf|pq) (,)
+crux(d|ta) re(f|vihg)pél(h|vihi)lit(hf|cl) om(g|vi)ne(h|vihg) cri(fe|vs)men,(d|ta) al(ef)le(f)lú(e)ia.(e) (::)
