@@ -1,0 +1,51 @@
+name: hym-coronacelsior-CART;
+user-notes: Hymni ad usum Ordinis Cartusiensis, p. 167;
+commentary: https://chartreux.org/la/scriptum/hymni_v16.pdf;
+annotation: viii;
+centering-scheme: english;
+%fontsize: 12;
+%spacing: vichi;
+%font: OFLSortsMillGoudy;
+%width: 4.5;
+%height: 11;
+%%
+(c4) IE(g)su,(g) co(h)ró(g)na(f) cél(g)si(h)or(g_h) (,)
+et(j) vé(j)ri(j)tas(j) su(g)blí(h)mi(j)or,(j/kvJI) (;)
+qui(h) con(i)fi(j)tén(k)ti(i) sér(j)vu(i)lo(h_) (,)
+red(h)dis(h) pe(j)rén(ji)ne(hi) prǽ(h)mi(g)um,(g) (::)
+
+da(g) sup(g)pli(h)cán(g)ti(f) cœ́(g)tu(h)i,(g_h) (,)
+ob(j)tén(j)tu(j) hu(j)ius(g) óp(h)ti(j)mi,(j/kvJI) (;)
+re(h)mis(i)si(j)ó(k)nem(i) crí(j)mi(i)num(h_) (,)
+rum(h)pén(h)do(j) ne(ji)xum(hi) vín(h)cu(g)li.(g) (::)
+
+An(g)ni(g) re(h)cúr(g)so(f) tém(g)po(h)re,(g_h) (,)
+di(j)es(j) il(j)lú(j)xit(g) lú(h)mi(j)ne,(j/kvJI) (;)
+quo(h) san(i)ctus(j) hic(k) de(i) cór(j)po(i)re(h_) (,)
+po(h)lum(h) mi(j)grá(ji)vit(hi) prǽ(h)po(g)tens.(g) (::)
+
+Hic(g) va(g)na(h) ter(g)ræ(f) gáu(g)di(h)a(g_h) (,)
+et(j) lu(j)cu(j)lén(j)ta(g) prǽ(h)di(j)a,(j/kvJI) (;)
+pol(h)lú(i)ta(j) sor(k)de(i) dé(j)pu(i)tans,(h_) (,)
+o(h)vans(h) te(j)net(ji) cæ(hi)lé(h)sti(g)a.(g) (::)
+
+Te,(g) Chri(g)ste,(h) rex(g) pi(f)ís(g)si(h)me,(g_h) (,)
+hic(j) con(j)fi(j)tén(j)do(g) iú(h)gi(j)ter,(j/kvJI) (;)
+cal(h)cá(i)vit(j) ho(k)stem(i) fór(j)ti(i)ter(h_) (,)
+su(h)pér(h)bum(j) ac(ji) sa(hi)tél(h)li(g)tem.(g) (::)
+
+Vir(g)tú(g)tum(h) a(g)ctu(f) et(g) fi(h)de,(g_h) (,)
+con(j)fes(j)si(j)ó(j)nis(g) ór(h)di(j)ne(j/kvJI) (;)
+ie(h)iú(i)na(j) mem(k)bra(i) dé(j)fe(i)rens,(h_) (,)
+da(h)pes(h) su(j)pér(ji)nas(hi) ób(h)ti(g)net.(g) (::)
+
+Pro(g)ín(g)de(h) te,(g) pi(f)ís(g)si(h)me,(g_h) (,)
+pre(j)cá(j)mur(j) om(j)nes(g) súp(h)pli(j)ces:(j/kvJI) (;)
+ut(h) hu(i)ius(j) al(k)mi(i) grá(j)ti(i)a(h_) (,)
+no(h)bis(h) re(j)mít(ji)tas(hi) dé(h)bi(g)ta.(g) (::)
+
+Gló(g)ri(g)a(h) Pa(g)tri(f) Dó(g)mi(h)no,(g_h) (,)
+gló(j)ri(j)a(j) U(j)ni(g)gé(h)ni(j)to(j/kvJI) (;)
+u(h)na(i) cum(j) San(k)cto(i) Spí(j)ri(i)tu,(h_) (,)
+in(h) sem(h)pi(j)tér(ji)na(hi) sǽ(h)cu(g)la.(g) (::)
+A(ghg)men.(fg..) (::)
