@@ -49,9 +49,10 @@ LAPSALMS = $(patsubst %,$(TMP_DIR)/ps%.tex,$(PSALMS))
 LAPSALMSEXTRA = $(patsubst %,$(TMP_DIR)/%.tex,benedictus dan3)
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant,1 2 3 4 5 -ben-laud) hym-VitaSanctorum \
-	 deusinadiutorium-communis capitulum-DilectusDeo respl \
+	 deusinadiutorium-communis deusinadiutorium-alter capitulum-DilectusDeo respl \
 	 versus-os oratio benedicamus-duplex-laudes supplicatiolitaniae \
-	 oratiodominica dominusvobiscum-solemnis domineexaudi
+	 oratiodominica dominusvobiscum-solemnis domineexaudi lectiobrevis-Mementote \
+	 resp-superteierusalem tonusprecumnovum oratiodominicaalt dominusnosbenedicat
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = hym-VitaSanctorum-bohtext.tex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
@@ -68,10 +69,10 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) ../../Conventus/Galli $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR)
+iter-left := . $(TMP_DIR) ../../Conventus/Galli $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../../Conventus/PerAnnum ../../Conventus/OctavaNativitatis
 include $(iter)
 
-all: gallilaudes.pdf
+all: gallilaudes.pdf gallilaudes-breviori.pdf
 $(TMP_DIR)/%.tex: PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/%.tex,ps148 dan3): PSALMOPTS = $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/ps%.tex,149): PSALMOPTS = --accents-style bold $(LAPSALMOPTSACC)
@@ -88,7 +89,7 @@ $(LAPSALMSEXTRA): $(TMP_DIR)/%.tex: $(PSALMS_DIR)/%.pslm
 $(ALLCOMBPSALMS): $(TMP_DIR)/%-comb.tex: $(TMP_DIR)/%.tex $(TMP_DIR)/%-boh.tex
 	$(GENPSCOMB)
 $(patsubst %,$(TMP_DIR)/ps%-comb.tex,149 150): PSSKIP = 0
-gallilaudes.pdf: gallilaudes.tex conventuscommune.tex translationes_cs.tex ../../Conventus/Galli/gallus.jpg \
+%.pdf: %.tex conventuscommune.tex translationes_cs.tex ../../Conventus/Galli/gallus.jpg \
 	$(ALLCOMBTEXTS) $(ALLCZPSALMS) $(ALLLAPSALMS) $(ALLCOMBPSALMS) $(LAPSALMSINITTEX) $(OTHERSCORES) $(OTHERDEPS)
 	$(LUALATEX) -interaction=nonstopmode $<
 	$(LUALATEX) -interaction=nonstopmode $<
