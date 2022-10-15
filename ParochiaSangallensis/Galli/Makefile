@@ -54,7 +54,7 @@ SCORES = $(addprefix ant,1 2 3 4 5 -ben-laud) hym-VitaSanctorum \
 	 oratiodominica dominusvobiscum-solemnis domineexaudi lectiobrevis-Mementote \
 	 resp-superteierusalem tonusprecumnovum oratiodominicaalt dominusnosbenedicat
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
-OTHERDEPS = hym-VitaSanctorum-bohtext.tex
+OTHERDEPS = hym-VitaSanctorum-bohtext.tex $(TMP_DIR)/ps149-comb2.tex
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(TMP_DIR)/ps$(P)-initium-$(MODUS-$(P))-auto.gabc) \
 		   $(foreach P,dan3 benedictus,$(TMP_DIR)/$(P)-initium-$(MODUS-$(P))-auto.gabc)
 LAPSALMSINITTEX = $(patsubst %.gabc,%.gtex,$(LAPSALMSINITGABC))
@@ -78,6 +78,8 @@ $(patsubst %,$(TMP_DIR)/%.tex,ps148 dan3): PSALMOPTS = $(LAPSALMOPTS)
 $(patsubst %,$(TMP_DIR)/ps%.tex,149): PSALMOPTS = --accents-style bold $(LAPSALMOPTSACC)
 $(patsubst %,$(TMP_DIR)/ps%.tex,150): PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold $(LAPSALMOPTSACC)
 $(TMP_DIR)/%-boh.tex: PSALMOPTS = $(CZPSALMOPTS)
+$(TMP_DIR)/ps149-comb2.tex: $(TMP_DIR)/ps149-comb.tex
+	$(SED) -e '1{s/^.*\(&.*\)$$/\1/}' $< > $@
 $(ALLCZPSALMS): $(TMP_DIR)/%-boh.tex: $(CZECH_PSALMS_DIR)/DMC199x/%.pslm
 	$(GENPSALM)
 $(LAPSALMS): $(TMP_DIR)/ps%.tex: $(PSALMS_DIR)/ps%.pslm
