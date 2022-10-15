@@ -1,7 +1,9 @@
 name: Prædicans præceptum Domini;
 annotation: I a2;
+book: H65;
 mode: 1;
+nabc-lines: 1;
 %%
 (c4)
-PRǽ(dh/iv)di(h)cans(h) præ(h)cép(i)tum(g) Dó(h)mi(g)ni(e) (,)
-con(g)sti(e)tú(f)tus(g) est(f) in(ed~) mon(ddo~)te(c_e) san(ge~)cto(fe) e(d)ius.(d) (::)
+PRǽ(dh/iv)di(h)cans(h) præ(h|vi-hh)cép(i|vihi)tum(g|tahg) Dó(h|vihh)mi(g|vi)ni(e|ta) (,)
+con(g|vihg)sti(e|tahg)tú(f|vihg)tus(g|vihi) est(f|vihg) in(ed~|vi>) mon(ddo~|vs>)te(c_e|peShg) san(ge~|vi>)cto(fe|cllsc3) e(d|ta)ius.(d|ta) (::)
