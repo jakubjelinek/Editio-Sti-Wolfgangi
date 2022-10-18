@@ -430,7 +430,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  NocteSurgentes-ver OSatorRerum-ver QuidquidAntiqui InterAEternas \
 			  NoxAtra-kempten AdPrecesNostras-ver ChristeLuxVera-ver NovusAthleta \
 			  QuemTerra-simplex RerumSupremo OQuamGlorifica PraecessorAlmus \
-			  ONimisFelix IesuCorona-cart ServeDei PrimoDierum-worcester) \
+			  ONimisFelix IesuCorona-cart ServeDei PrimoDierum-worcester \
+			  RerumCreator-worcester) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
