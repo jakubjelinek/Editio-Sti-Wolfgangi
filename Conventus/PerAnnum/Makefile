@@ -383,7 +383,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  sanctalegioagaunensium sanctorumcorporasacri sanctusmauritiuslegionem \
 			  homoquidameratdives sanctorumprecibus inlegedominifuit \
 			  praedicanspraeceptumdomini vocemeaaddominum augeinnobis \
-			  dumintraretiesus omnisquipetit illumquaero ignatiusrogabat) \
+			  dumintraretiesus omnisquipetit illumquaero ignatiusrogabat \
+			  stansalonge) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
