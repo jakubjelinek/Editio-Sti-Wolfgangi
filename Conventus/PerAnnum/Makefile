@@ -193,7 +193,7 @@ MODUS-tobiae_xvii_xxiii = viii-g
 MODUS-dan3 = i-d i-f i-g i-a2 ii-D ii_-a iii-a iii-b iii-e iiir-b iv-E iv-e2 v-a v-g vii-a vii-c vii-c2 vii-d2 viii-G viii-G5 viii-c per
 MODUS-dan32 = i-f
 MODUS-dan33 = i-g i-a2 iv-E viii-G
-MODUS-benedictus = i-a i-a4 i-a5 i-d i-f i-g i-g5 i-D_ isoll-D isoll-D_ isoll-D2 isoll-f isoll-g isoll-g4 isoll-d3 isoll-a ii-D iisoll-D ii_-d ii_-B ii_soll-c ii_soll-a iii-a iii-b iiisoll-a iiisoll-a4 iiisoll-e iiisoll-g iv-d iv-E iv-e iv-e2 ivsoll-E ivsoll-e2 v-a vsoll-g vsoll-a vsoll-a2 vi-F vi-C visoll-F vii-a vii-c vii-c2 vii-d2 vii-d3 viisoll-a viisoll-c viii-g viii-C viii-G viii-G2 viii-G5 viiisoll-G viiisoll-G5 viiisoll-g
+MODUS-benedictus = i-a i-a4 i-a5 i-d i-f i-g i-g5 i-D_ isoll-D isoll-D_ isoll-D2 isoll-f isoll-g isoll-g4 isoll-d3 isoll-a ii-D iisoll-D ii_-d ii_-B ii_soll-c ii_soll-a iii-a iii-b iiisoll-a iiisoll-a4 iiisoll-e iiisoll-g iv-d iv-E iv-e iv-e2 ivsoll-E ivsoll-e2 v-a vsoll-g vsoll-a vsoll-a2 vi-F vi-C visoll-F vii-a vii-c vii-c2 vii-d2 vii-d3 viisoll-a viisoll-b viisoll-c viii-g viii-C viii-G viii-G2 viii-G5 viiisoll-G viiisoll-G5 viiisoll-g
 CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae7 isaiae8 isaiae9 isaiae10 isaiae11 habacuc habacuc2 jeremiae2 jeremiae3 moysis moysis1 moysis2i_xii ecclesiastici ezechiae ezechiae2 sapientia tobiae tobiae2 david dan3 dan32 dan33 iudith2 ecclesiasticus36 tobiae_xi_xv tobiae_xvii_xxiii
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -386,7 +386,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  homoquidameratdives sanctorumprecibus inlegedominifuit \
 			  praedicanspraeceptumdomini vocemeaaddominum augeinnobis \
 			  dumintraretiesus omnisquipetit illumquaero ignatiusrogabat \
-			  stansalonge zachaeefestinans benedicitedominumomneselecti) \
+			  stansalonge zachaeefestinans benedicitedominumomneselecti \
+			  inresurrectioneautem) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
