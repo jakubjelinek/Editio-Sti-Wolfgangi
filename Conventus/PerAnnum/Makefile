@@ -436,7 +436,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  QuemTerra-simplex RerumSupremo OQuamGlorifica PraecessorAlmus \
 			  ONimisFelix IesuCorona-cart ServeDei PrimoDierum-worcester \
 			  RerumCreator-worcester NoxAtra-worcester TuTrinitatis-worcester \
-			  OSacrosanctaTrinitas SomnoRefectis-worcester) \
+			  OSacrosanctaTrinitas SomnoRefectis-worcester ConsorsPaterni-worcester) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -702,7 +702,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   laudatedominumdeumnostrum-CROCHU-cumdox \
 			   congregataesuntgentes-CROCHU-cumdox apericaelostuosdomine-CROCHU \
 			   benedicatnosdeus-sinedox desideriumanimaeeius-CROCHU-cumdox \
-			   istesanctusprolege-CROCHU) \
+			   istesanctusprolege-CROCHU canitetuba-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
