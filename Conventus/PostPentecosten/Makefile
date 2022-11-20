@@ -133,7 +133,6 @@ MODUS-147 = e
 MODUS-148 = i-a i-f ii-D iv-E v-g vi-F viii-G
 MODUS-149 = i-a i-f ii-D iv-E v-g vi-F viii-G
 MODUS-150 = i-a i-f ii-D iv-E v-g vi-F viii-G
-MODUS-150 = viii-G
 MODUS-anna = i-g2
 MODUS-dan3 = viii-G
 MODUS-ezechiae = e
@@ -218,7 +217,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  unusautemexillis quaeriteprimum prophetamagnus cumvocatusfueris \
 			  quidvobisvidetur dixitdominusparalytico diciteinvitatis \
 			  cognovitautempater atjesusconversus colligiteprimum \
-			  simileestregnumcaelorumgrano supermurostuos amendicovobisquianon) \
+			  simileestregnumcaelorumgrano supermurostuos amendicovobisquianon \
+			  nonenimvosestis) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \

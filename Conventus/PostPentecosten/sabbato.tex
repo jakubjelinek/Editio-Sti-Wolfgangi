@@ -649,7 +649,7 @@ Orémus:
 
 \vspace{-1.5mm}
 
-\input{temporalia/benedictus-II-vi-F.tex} \Abardot{}
+\input{temporalia/benedictus-vi-F.tex} \Abardot{}
 
 \vspace{-10mm}
 \fi
@@ -664,7 +664,11 @@ Orémus:
 \pagebreak
 
 % Oratio. %%%
+\ifx\oratio\undefined
 \cuminitiali{}{temporalia/oratiobmv.gtex}
+\else
+\oratio
+\fi
 
 \vspace{-1mm}
 %\trOrationisI
