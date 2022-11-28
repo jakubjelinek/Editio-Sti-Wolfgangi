@@ -402,7 +402,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			     benedictatu \
 			     egredietur emitte exsion rorate voxclamantis voxclamantis-simplex) \
 	 $(addprefix oratio,1 1vo 2vo 3vo 4vo bmv) \
-	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
+	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat oratiodominica-d \
+	 deprecatio4-propace \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,feria-advequad minor officium-bmv dominica-advequad \
 				  solemnism-laud festis-bmv solemnitatibus-bmv) \
