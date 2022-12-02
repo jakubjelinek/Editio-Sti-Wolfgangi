@@ -387,7 +387,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  MagnisProphetae VeniRedemptor VerbumSalutis VoxClara-aromi \
 			  OSempiternaeCuriae CaptatorOlim BarbaraVirgo FortemPiumque \
 			  TeDicimus InPlausuGrati OChristeFlos OCastitatisSignifer \
-			  AEterneSol DoctorAEternus) \
+			  AEterneSol DoctorAEternus ChristePastorum-presbytero \
+			  InclitusRector-presbytero) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus ostendenobis veni superte \
 			   christe crastinadie christefilideivivi-advdom constitueseos \
@@ -411,7 +412,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  dominumdeum veniteexsultemus jubilemusdeo avemaria regemventurum \
 			  regemventurumsimplex propeestiam propeestiamsimplex hodiescietis \
 			  regemapostolorum-iv fontemsapientiae immaculatamconceptionem \
-			  regemvirginum) \
+			  regemvirginum christumpastorumprincipem) \
 	 dominelabiamea \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
@@ -469,7 +470,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			   conceptiogloriosae-CROCHU conceptiotua-CROCHU-cumdox \
 			   gloriosaevirginisconceptione-CROCHU-cumdox  gratafactaest-CROCHU-cumdox \
 			   luciavirgo-CROCHU amaviteumdominus-CROCHU-cumdox annuntiatumest-CROCHU \
-			   constantesestote-CROCHU) \
+			   constantesestote-CROCHU posuiadiutorium-CROCHU) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_alma_redemptoris_mater an_alma_redemptoris_mater-simplex benedictio-noctemquietam \
