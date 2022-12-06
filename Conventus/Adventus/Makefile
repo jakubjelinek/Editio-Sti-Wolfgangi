@@ -376,7 +376,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  quivultvenire consurgeconsurgeinduere laetaminicumjerusalem \
 			  deusalibanoveniet canitetubainsion dominusvenietoccurite \
 			  exquofactaestvox missusestgabriel quidoctifuerint inhoccognoscentomnes \
-			  dapacemdomine diesdominisicutfur egovoxclamantis sacerdosetpontifex) \
+			  dapacemdomine diesdominisicutfur egovoxclamantis sacerdosetpontifex \
+			  dominusregnavit) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -473,7 +474,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			   gloriosaevirginisconceptione-CROCHU-cumdox  gratafactaest-CROCHU-cumdox \
 			   luciavirgo-CROCHU amaviteumdominus-CROCHU-cumdox annuntiatumest-CROCHU \
 			   constantesestote-CROCHU posuiadiutorium-CROCHU \
-			   eccesacerdosmagnus-CROCHU istehomoabadolescentia-CROCHU-cumdox) \
+			   eccesacerdosmagnus-CROCHU istehomoabadolescentia-CROCHU-cumdox \
+			   famulomeo-CROCHU isteestquiantedeum-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_alma_redemptoris_mater an_alma_redemptoris_mater-simplex benedictio-noctemquietam \
@@ -481,7 +483,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 	 benedictus-initium-viisoll-d tonusprecum tonusprecumnovum dominusnosbenedicat ps147-initium-e \
 	 ps91-initium-e ps66-initium-e isaiae3-initium-vii-d benedictus-initium-iv-e \
 	 ps101ii_xii-initium-i-a ps102iii-initium-iii-g ps17xxxvi_xlvi-initium-vii-c-trans \
-	 ps47-initium-iv-a ps116-initium-e ps144i-initium-vii-b-trans \
+	 ps47-initium-iv-a ps116-initium-e ps144i-initium-vii-b-trans ps96-initium-iii-a2 \
 	 ps88xxxi_xxxviii-initium-viii-G_ benedictus-initium-ii_soll-f ps72iii-initium-iii-b
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
