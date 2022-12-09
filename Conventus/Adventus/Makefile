@@ -378,7 +378,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  deusalibanoveniet canitetubainsion dominusvenietoccurite \
 			  exquofactaestvox missusestgabriel quidoctifuerint inhoccognoscentomnes \
 			  dapacemdomine diesdominisicutfur egovoxclamantis sacerdosetpontifex \
-			  dominusregnavit) \
+			  dominusregnavit sanctadeigenetrixvirgo) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -391,12 +391,13 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  OSempiternaeCuriae CaptatorOlim BarbaraVirgo FortemPiumque \
 			  TeDicimus InPlausuGrati OChristeFlos OCastitatisSignifer \
 			  AEterneSol DoctorAEternus ChristePastorum-presbytero \
-			  InclitusRector-presbytero ChristePastorum InclitusPastor) \
+			  InclitusRector-presbytero ChristePastorum InclitusPastor \
+			  QuemTerra-simplex) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus ostendenobis veni superte \
 			   christe crastinadie christefilideivivi-advdom constitueseos \
 			   fortitudomeaetlausmea sapientiamsanctorum deusomnipotens \
-			   superteierusalem) \
+			   superteierusalem diffusaest) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(addprefix capitulum-,Benedictio BenedictusDeus NoxPraecessit OAltitudo AbInitio \
 				tuautem FratresHora GaudeteInDomino HoraEst IpseDeus \
@@ -416,7 +417,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  dominumdeum veniteexsultemus jubilemusdeo avemaria regemventurum \
 			  regemventurumsimplex propeestiam propeestiamsimplex hodiescietis \
 			  regemapostolorum-iv fontemsapientiae immaculatamconceptionem \
-			  regemvirginum christumpastorumprincipem) \
+			  regemvirginum christumpastorumprincipem christummariaefilium) \
 	 dominelabiamea \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
@@ -508,7 +509,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../InNativitateBMV/cantus/amon33 ../CorpusChristi ../InNativitateBMV/cantus/nrom02 ../PostPentecosten ../PerAnnum ../Andreae ../Paschae ../InConceptioneBMV ../Catharinae ../Scholasticae ../InAnnuntiationeBMV ../Quadragesimae ../OctavaNativitatis
+iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../InNativitateBMV/cantus/amon33 ../CorpusChristi ../InNativitateBMV/cantus/nrom02 ../PostPentecosten ../PerAnnum ../Andreae ../Paschae ../InConceptioneBMV ../Catharinae ../Scholasticae ../InAnnuntiationeBMV ../Quadragesimae ../OctavaNativitatis ../PresentationeBMV
 include $(iter)
 
 FERIAE = ii iii iv v vi
