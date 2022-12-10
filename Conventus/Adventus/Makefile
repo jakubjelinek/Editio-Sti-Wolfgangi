@@ -66,7 +66,7 @@ MODUS-35 = ii-D viii-A viii-G
 MODUS-36i_xi = vi-F
 MODUS-36xii_xxix = ii-D
 MODUS-36iii = vi-F
-MODUS-37ii_v = viii-C
+MODUS-37ii_v = viii-C dir
 MODUS-37vi_xiii = ii_-a
 MODUS-37xiv_xxiii = ii-A
 MODUS-38i = iv-E
@@ -378,7 +378,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  deusalibanoveniet canitetubainsion dominusvenietoccurite \
 			  exquofactaestvox missusestgabriel quidoctifuerint inhoccognoscentomnes \
 			  dapacemdomine diesdominisicutfur egovoxclamantis sacerdosetpontifex \
-			  dominusregnavit sanctadeigenetrixvirgo) \
+			  dominusregnavit sanctadeigenetrixvirgo ioannesautem) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
