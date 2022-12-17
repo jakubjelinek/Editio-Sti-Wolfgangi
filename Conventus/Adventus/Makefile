@@ -379,7 +379,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  exquofactaestvox missusestgabriel quidoctifuerint inhoccognoscentomnes \
 			  dapacemdomine diesdominisicutfur egovoxclamantis sacerdosetpontifex \
 			  dominusregnavit sanctadeigenetrixvirgo ioannesautem oculituisanctadeigenetrix \
-			  iuxtaestsalus hocesttestimonium) \
+			  iuxtaestsalus hocesttestimonium cumessetdesponsatamater) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -480,7 +480,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			   eccesacerdosmagnus-CROCHU istehomoabadolescentia-CROCHU-cumdox \
 			   famulomeo-CROCHU isteestquiantedeum-CROCHU-cumdox \
 			   vidispeciosam-sinedox quaeestista-CROCHU-cumdox \
-			   rogavidominum-CROCHU eugeservebone-CROCHU) \
+			   rogavidominum-CROCHU eugeservebone-CROCHU \
+			   iuravidicitdominus-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_alma_redemptoris_mater an_alma_redemptoris_mater-simplex benedictio-noctemquietam \
