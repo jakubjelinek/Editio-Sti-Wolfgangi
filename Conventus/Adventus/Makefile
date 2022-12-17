@@ -378,7 +378,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  deusalibanoveniet canitetubainsion dominusvenietoccurite \
 			  exquofactaestvox missusestgabriel quidoctifuerint inhoccognoscentomnes \
 			  dapacemdomine diesdominisicutfur egovoxclamantis sacerdosetpontifex \
-			  dominusregnavit sanctadeigenetrixvirgo ioannesautem oculituisanctadeigenetrix) \
+			  dominusregnavit sanctadeigenetrixvirgo ioannesautem oculituisanctadeigenetrix \
+			  iuxtaestsalus hocesttestimonium) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -488,7 +489,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 	 ps91-initium-e ps66-initium-e isaiae3-initium-vii-d benedictus-initium-iv-e \
 	 ps101ii_xii-initium-i-a ps102iii-initium-iii-g ps17xxxvi_xlvi-initium-vii-c-trans \
 	 ps47-initium-iv-a ps116-initium-e ps144i-initium-vii-b-trans ps96-initium-iii-a2 \
-	 ps88xxxi_xxxviii-initium-viii-G_ benedictus-initium-ii_soll-f ps72iii-initium-iii-b
+	 ps88xxxi_xxxviii-initium-viii-G_ benedictus-initium-ii_soll-f ps72iii-initium-iii-b \
+	 jeremiae2-initium-viii-G ps99-initium-e
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
