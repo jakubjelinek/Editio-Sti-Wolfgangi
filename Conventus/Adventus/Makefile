@@ -481,7 +481,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			   famulomeo-CROCHU isteestquiantedeum-CROCHU-cumdox \
 			   vidispeciosam-sinedox quaeestista-CROCHU-cumdox \
 			   rogavidominum-CROCHU eugeservebone-CROCHU \
-			   iuravidicitdominus-CROCHU-cumdox iuravidicitdominus-CROCHU) \
+			   iuravidicitdominus-CROCHU-cumdox iuravidicitdominus-CROCHU \
+			   beatammedicent-sinedox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_alma_redemptoris_mater an_alma_redemptoris_mater-simplex benedictio-noctemquietam \
