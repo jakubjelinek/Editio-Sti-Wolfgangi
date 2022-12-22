@@ -210,7 +210,7 @@ MODUS-144x_xiii = ii-D vii-c
 MODUS-144xiv_xxi = viii-a viii-G5
 MODUS-145 = i-f ii-D iv-E iv_-e vii-a vii-d viii-G2
 MODUS-146 = i-g v-a vii-a viii-c viii-g viii-G
-MODUS-147 = ii-D iii-a iv-A vi-F viii-c e
+MODUS-147 = ii-D ii_-B iii-a iv-A vi-F viii-c e
 MODUS-148 = i-a i-g3 ii-D ii_-a iii-a iv-A iv-E vi-F viii-G
 MODUS-149 = i-a i-a4 i-f i-g i-g3 i-d ii-D ii_-a ii_-f ii_-B iii-a iii-e iv-c iv-A iv-E iv_-e v-a vi-F vii-a vii-c viii-G viii-G5 viii-g
 MODUS-150 = i-a i-g3 ii-D ii_-a iii-a iv-A iv-E vi-F viii-G
@@ -379,7 +379,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			  exquofactaestvox missusestgabriel quidoctifuerint inhoccognoscentomnes \
 			  dapacemdomine diesdominisicutfur egovoxclamantis sacerdosetpontifex \
 			  dominusregnavit sanctadeigenetrixvirgo ioannesautem oculituisanctadeigenetrix \
-			  iuxtaestsalus hocesttestimonium cumessetdesponsatamater) \
+			  iuxtaestsalus hocesttestimonium cumessetdesponsatamater deusadiuvatme) \
 	 $(addprefix hym-TeLucis-,adventus) \
 	 $(patsubst %,hym-%-hiemalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				     LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
