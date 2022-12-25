@@ -20,10 +20,12 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 2 8 18 18i 23 28 30i 30ii 30iii 32i 32ii 36i_xi 36xii_xxix 36iii 37ii_v 37vi_xiii 37xiv_xxiii 38i 38ii 41 42 44 45 47 50 51 62 63 64 65i 65ii 66 71 71i 71ii 76 84 86 88ii_xix 88xx_xxx 91 92 95 96 97 98 99 103i 103ii 103iii 104i 104ii 104iii 105i 105ii 105iii 109 110 111 112 113 114 115 116 117 121 126 128 129 131 144ii 145 146 147 148 149 150
+PSALMS = 2 8 10 16 18 18i 23 28 30i 30ii 30iii 32i 32ii 36i_xi 36xii_xxix 36iii 37ii_v 37vi_xiii 37xiv_xxiii 38i 38ii 41 42 44 45 47 50 51 62 63 64 65i 65ii 66 71 71i 71ii 76 84 86 88ii_xix 88xx_xxx 91 92 95 96 97 98 99 103i 103ii 103iii 104i 104ii 104iii 105i 105ii 105iii 109 110 111 112 113 114 115 116 117 121 126 128 129 131 144ii 145 146 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
-MODUS-2 = i-d viii-c viii-C
+MODUS-2 = i-g i-d viii-c viii-C
 MODUS-8 = i-g
+MODUS-10 = viii-G
+MODUS-16 = viii-c
 MODUS-18 = iii-b
 MODUS-18i = ii-D v-a viii-G
 MODUS-23 = iii-b v-a
@@ -169,14 +171,15 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			  apertisthesauris mariaetflumina triasuntmunera datemagnitudinem \
 			  quamadmirabileest baptizatmiles baptizaturchristus fontesaquarum \
 			  omnisterra ordinesangelorum tequiinspiritu votameadomino voxdominisuperaquas \
-			  omnesdesaba) \
+			  omnesdesaba adhaesitanimameapostte-stephani cumautemessetstephanus \
+			  eccevideocaelos lapidaverunt nemopoteratresistere) \
 	 $(addprefix capitulum-,Multifariam ApparuitGratia ApparuitBenignitas FratresQuanto \
 				QuiTimet VidiSupra Surge) \
 	 $(addprefix hym-,ASolisOrtus ChristeRedemptor CandorAEternae CandorAEternae-simplex \
 			  CordeNatus FitPorta RadixIesse ChristeSplendor DulceFit CohorsBeata \
 			  VirginisVirgo HymnumCanentes SalveteFlores TyrannusAnxius \
 			  MagiVidentes QuicumqueChristum HostisHerodes IesusRefulsit \
-			  ImplenteMunus) \
+			  ImplenteMunus ChristusEst FestumCelebre) \
 	 $(addprefix resp-,notumfecit verbumcaro-simplex verbumcaro hodiescietis notumfecit-solemnis \
 			   christefilidei-familiae constitueseos exsultentiusti iustiautem christefilidei-nat \
 			   omnesdesaba reges adorabunteum christefilidei-baptismate) \
@@ -192,7 +195,7 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
 	 dominelabiamea $(addprefix inv-,christusnatusest christusnatusest-simplex maternitatemvirginis \
 					 christumdeifilium regemapostolorum-iv christumnatumquiinnocentes \
-					 christusapparuit christumfiliumdilectum) \
+					 christusapparuit christumfiliumdilectum christumnatumquibeatumhodie) \
 	 benedicamus-solemnis-laud \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
@@ -213,7 +216,9 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			   triasuntmunera-CROCHU videntesstellam-CROCHU-cumdox stellaquamviderunt-CROCHU \
 			   incolumbaespecie-CROCHU hicestdiespraeclarus-CROCHU-cumdox \
 			   diessanctificatusilluxit-CROCHU-cumdox hodiecaeliapertisunt \
-			   hodieiniordane-CROCHU illuminare-CROCHU-cumdox incolumbaespecie-CROCHU-cumdox) \
+			   hodieiniordane-CROCHU illuminare-CROCHU-cumdox incolumbaespecie-CROCHU-cumdox \
+			   hesternadiedominusnatus-CROCHU-cumdox intuensincaelum-CROCHU lapidabantstephanum-CROCHU \
+			   stephanusservusdei-CROCHU) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_regina_caeli_simplex convertenosdeus dominusnosbenedicat \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
@@ -249,7 +254,7 @@ iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 aro
 include $(iter)
 
 PDF = indienativitatis.pdf sanctaefamiliae.pdf dievpostnativitatem.pdf dievipostnativitatem.pdf dieviipostnativitatem.pdf sdeigenetricismariae.pdf \
-      iiianuarii.pdf iiiianuarii.pdf dominicaiipostnativitatem.pdf ivianuarii.pdf vianuarii.pdf sioannis.pdf sanctoruminnocentium.pdf \
+      iiianuarii.pdf iiiianuarii.pdf dominicaiipostnativitatem.pdf ivianuarii.pdf vianuarii.pdf sioannis.pdf sstephani.pdf sanctoruminnocentium.pdf \
       dieiiinfraoctavamepiphaniae.pdf dieiiiinfraoctavamepiphaniae.pdf inbaptismatedomini.pdf dievinfraoctavamepiphaniae.pdf
 all: $(PDF)
 $(LAPSALMSSINEDOX): $(TMP_DIR)/%-sinedox.tex: $(TMP_DIR)/%.tex
