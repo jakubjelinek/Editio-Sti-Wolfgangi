@@ -363,15 +363,19 @@
 
 \rubrica{vel:}
 
-\pars{Supplicatio Litaniæ.}
+\pars{Deprecatio Gelasii}
 
-\cuminitiali{}{temporalia/supplicatiolitaniae.gtex}
+\vspace{-5mm}
+
+\grechangedim{interwordspacetext}{0.16 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{D\textsuperscript{1}}{temporalia/deprecatio4-propace.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 
 \vfill
 
 \pars{Oratio Dominica.}
 
-\cuminitiali{}{temporalia/oratiodominica.gtex}
+\cuminitiali{D}{temporalia/oratiodominica-d.gtex}
 
 \vfill
 \pagebreak
@@ -398,10 +402,14 @@
 
 \vspace{2mm}
 
+\ifx\benedicamuslaudes\undefined
 \ifx\postoctavam\undefined
 \cuminitiali{II}{temporalia/benedicamus-solemnism-laud.gtex}
 \else
 \cuminitiali{}{temporalia/benedicamus-tempore-nativitatis.gtex}
+\fi
+\else
+\benedicamuslaudes
 \fi
 
 \vspace{1mm}

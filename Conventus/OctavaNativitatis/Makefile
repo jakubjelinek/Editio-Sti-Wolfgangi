@@ -99,9 +99,9 @@ MODUS-145 = iv-E viii-G
 MODUS-146 = ii-D viii-G2
 MODUS-147 = ii-D e
 MODUS-148 = i-f ii-D
-MODUS-149 = i-f i-g ii-D vii-d3 viii-G2
+MODUS-149 = i-f i-g ii-D ii_-B vii-d3 viii-G2
 MODUS-150 = i-f ii-D
-MODUS-dan3 = i-d i-g ii-D vi-F vii-a vii-d viii-a
+MODUS-dan3 = i-d i-g ii-D vi-F vii-a vii-d viii-a viii-G5
 MODUS-isaiae3 = i-d iv-E viii-G
 MODUS-isaiae5 = i-d iv-E viii-G
 MODUS-isaiae6 = i-d iv-E viii-G
@@ -172,26 +172,30 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			  quamadmirabileest baptizatmiles baptizaturchristus fontesaquarum \
 			  omnisterra ordinesangelorum tequiinspiritu votameadomino voxdominisuperaquas \
 			  omnesdesaba adhaesitanimameapostte-stephani cumautemessetstephanus \
-			  eccevideocaelos lapidaverunt nemopoteratresistere) \
+			  eccevideocaelos lapidaverunt nemopoteratresistere stephanusvidit \
+			  sepelieruntstephanum dapacemdomine) \
 	 $(addprefix capitulum-,Multifariam ApparuitGratia ApparuitBenignitas FratresQuanto \
-				QuiTimet VidiSupra Surge) \
+				QuiTimet VidiSupra Surge StephanusAutem) \
 	 $(addprefix hym-,ASolisOrtus ChristeRedemptor CandorAEternae CandorAEternae-simplex \
 			  CordeNatus FitPorta RadixIesse ChristeSplendor DulceFit CohorsBeata \
 			  VirginisVirgo HymnumCanentes SalveteFlores TyrannusAnxius \
 			  MagiVidentes QuicumqueChristum HostisHerodes IesusRefulsit \
-			  ImplenteMunus ChristusEst FestumCelebre) \
+			  ImplenteMunus ChristusEst FestumCelebre DeusTuorum-stephani) \
 	 $(addprefix resp-,notumfecit verbumcaro-simplex verbumcaro hodiescietis notumfecit-solemnis \
 			   christefilidei-familiae constitueseos exsultentiusti iustiautem christefilidei-nat \
-			   omnesdesaba reges adorabunteum christefilidei-baptismate) \
+			   omnesdesaba reges adorabunteum christefilidei-baptismate magnaestgloria \
+			   posuistidomine) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(addprefix versus-,notumfecit-communis notumfecit tamquam verbumcaro crastinadie \
 			     subthrono reges-communis) \
-	 oratio oratiobmv oratiodomii supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
-	 orationativitas oratiodomi oratioioannes oratioinnocentium oratioepiphaniae \
+	 oratio oratiobmv oratiodomii supplicatiolitaniae oratiodominica oratiodominica-d \
+	 oratiodominicaalt oratiodominica-mat \
+	 orationativitas oratiodomi oratioioannes oratioinnocentium oratioepiphaniae oratiostephani \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex annuntiationativitatisdomini \
-	 genealogiadnic genealogiadnic-initium \
+	 genealogiadnic genealogiadnic-initium deprecatio4-propace \
 	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor festis-bmv \
-				  feria-laudes feria-vesperae dominica-perannum tempore-nativitatis) \
+				  feria-laudes feria-vesperae dominica-perannum tempore-nativitatis \
+				  festis-laudes) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
 	 dominelabiamea $(addprefix inv-,christusnatusest christusnatusest-simplex maternitatemvirginis \
 					 christumdeifilium regemapostolorum-iv christumnatumquiinnocentes \
@@ -250,7 +254,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../PostPentecosten ../CorpusChristi ../PetriEtPauli ../Adventus ../PerAnnum ../Ioseph ../Apostolorum ../SanctorumInnocentium ../Epiphania ../Epiphania/cantus/amon33 ../InBaptismateDomini
+iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../PostPentecosten ../CorpusChristi ../PetriEtPauli ../Adventus ../PerAnnum ../Ioseph ../Apostolorum ../SanctorumInnocentium ../Epiphania ../Epiphania/cantus/amon33 ../InBaptismateDomini ../Laurentii ../PerAnnum
 include $(iter)
 
 PDF = indienativitatis.pdf sanctaefamiliae.pdf dievpostnativitatem.pdf dievipostnativitatem.pdf dieviipostnativitatem.pdf sdeigenetricismariae.pdf \

@@ -1,13 +1,13 @@
-﻿name: ant-Patefactaesunt;
-user-notes: ;
-commentary: Praglia II p. 347;
+name: Patefactae sunt;
+book: Antiphonale Monasticum II, Praglia, p. 347; H59;
 annotation: VIII g;
-centering-scheme: english;
-%fontsize: 12;
-%spacing: vichi;
-%font: OFLSortsMillGoudy;
-%width: 4.5;
-%height: 11;
+nabc-lines: 1;
 %%
-(c4) Pa(g_)te(fd)fác(e)tæ(fg) sunt(g_) *() iá(g_h)nu(f)æ(e) cæ(d)li(f_d_@ewf) (,) Chris(c)ti(d) már(f)ty(fg)ri(g_) Sté(h)pha(g_hGFgo)no,(f) (;) qui(f) in(g) nú(g)me(f)ro(g) sanc(h)tó(j_k)rum(ji/jkj) (,) in(h)vén(h_)tus(j) est(i) pri(g.)mus;(g.) (:) et(g) í(f/gOh)de(fv_ED)o(d!ewf) tri(c_d)úm(f_g)phat(ggof) (,) in(h) cæ(j)lis(i) co(j)ro(h)ná(g)tus,(h) al(i>)le(hi)lú(g.)ia.(g.) (::)
-
+(c4)
+PA(g_|vi-)te(fd|cllsc3)fác(e|vi)tæ(fg|pe) sunt(g_|vi-) *()
+iá(g_h|peS)nu(f|vi)æ(e|vi) cæ(d|ta)li(f_d_@ewf|cl-ql) (,)
+Chris(c|```talsi7)ti(d|vi) már(f|vihg)ty(fg|pehh)ri(g_|vi-hh) Sté(h|vihj)pha(g_hGFgo|pe-1su2or)no,(f|ta-) (;)
+qui(f|```talse4) in(g|vi) nú(g|vi)me(f|ta)ro(g|vi) sanc(h|vihg)tó(j_k|peSlsl2)rum(ji/|clhilsc3|jkj|tohk) (,)
+in(h|vi)vén(h_|vi-)tus(j|vihg) est(i|vi) pri(g.|ta)mus;(g.|ta) (:)
+et(g|vi) í(f/gOh|tapq)de(fv_ED|ci-)o(d!ewf|qlppt1lsl3) tri(c_d|```peSlsi7)úm(f_g|peS)phat(ggof|pr) (,)
+in(h|vi) cæ(j|vihg)lis(i|ta) co(j|vi)ro(h|vihg)ná(g|ta)tus,(h|vi) al(i>|vi>)le(hi|pehg)lú(g.|tahg)ia.(g.|tahg) (::)
