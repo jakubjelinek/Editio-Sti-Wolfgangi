@@ -27,7 +27,7 @@ MODUS-8 = i-g
 MODUS-10 = viii-G
 MODUS-16 = viii-c
 MODUS-18 = iii-b
-MODUS-18i = ii-D v-a viii-G
+MODUS-18i = ii-D iii-b v-a viii-G
 MODUS-23 = iii-b v-a
 MODUS-28 = viii-G
 MODUS-30i = viii-G
@@ -111,7 +111,7 @@ MODUS-anna = ii-D
 MODUS-habacuc = iv_-e
 MODUS-moysis2i_xii = vi-F
 MODUS-magnificat = isoll-g isoll-g2 isoll-a5 i-a4 ii-D iisoll-A iiisoll-e iv-E vi-F visoll-F vii-a viiisoll-G viii-g viii-a
-MODUS-benedictus = isoll-g ii-D iv-E vsoll-g visoll-F vii-b vii-c2 vii-d viisoll-a viiisoll-G viiisoll-G5 viii-G viii-G2
+MODUS-benedictus = isoll-g ii-D iv-E vsoll-g vsoll-g2 visoll-F vii-b vii-c2 vii-d viisoll-a viiisoll-G viiisoll-G5 viii-G viii-G2
 CANTICIS = dan3 isaiae3 isaiae5 isaiae6 ecclesiastici ezechiae anna habacuc moysis2i_xii
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -222,7 +222,8 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			   diessanctificatusilluxit-CROCHU-cumdox hodiecaeliapertisunt \
 			   hodieiniordane-CROCHU illuminare-CROCHU-cumdox incolumbaespecie-CROCHU-cumdox \
 			   hesternadiedominusnatus-CROCHU-cumdox intuensincaelum-CROCHU lapidabantstephanum-CROCHU \
-			   stephanusservusdei-CROCHU) \
+			   stephanusservusdei-CROCHU diligebatautemeumiesus-CROCHU-cumdox \
+			   hicestdiscipulus-CROCHU valdehonorandusest-CROCHU) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_regina_caeli_simplex convertenosdeus dominusnosbenedicat \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
