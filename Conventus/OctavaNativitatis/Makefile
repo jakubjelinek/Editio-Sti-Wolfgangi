@@ -110,8 +110,8 @@ MODUS-ezechiae = e
 MODUS-anna = ii-D
 MODUS-habacuc = iv_-e
 MODUS-moysis2i_xii = vi-F
-MODUS-magnificat = isoll-g isoll-g2 isoll-a5 i-a4 ii-D iisoll-A iiisoll-e iv-E vi-F visoll-F vii-a viiisoll-G viii-g viii-a
-MODUS-benedictus = isoll-g ii-D iv-E vsoll-g vsoll-g2 visoll-F vii-b vii-c2 vii-d viisoll-a viiisoll-G viiisoll-G5 viii-G viii-G2
+MODUS-magnificat = isoll-g isoll-g2 isoll-a5 i-a4 i-g ii-D iisoll-A iiisoll-e iv-E vi-F visoll-F vii-a viiisoll-G viii-g viii-a
+MODUS-benedictus = isoll-g ii-D iv-E vsoll-g vsoll-g2 visoll-F vii-a vii-b vii-c2 vii-d viisoll-a viiisoll-G viiisoll-G5 viii-G viii-G2
 CANTICIS = dan3 isaiae3 isaiae5 isaiae6 ecclesiastici ezechiae anna habacuc moysis2i_xii
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
@@ -173,14 +173,15 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			  omnisterra ordinesangelorum tequiinspiritu votameadomino voxdominisuperaquas \
 			  omnesdesaba adhaesitanimameapostte-stephani cumautemessetstephanus \
 			  eccevideocaelos lapidaverunt nemopoteratresistere stephanusvidit \
-			  sepelieruntstephanum dapacemdomine) \
+			  sepelieruntstephanum dapacemdomine quidoctifuerint) \
 	 $(addprefix capitulum-,Multifariam ApparuitGratia ApparuitBenignitas FratresQuanto \
 				QuiTimet VidiSupra Surge StephanusAutem) \
 	 $(addprefix hym-,ASolisOrtus ChristeRedemptor CandorAEternae CandorAEternae-simplex \
 			  CordeNatus FitPorta RadixIesse ChristeSplendor DulceFit CohorsBeata \
 			  VirginisVirgo HymnumCanentes SalveteFlores TyrannusAnxius \
 			  MagiVidentes QuicumqueChristum HostisHerodes IesusRefulsit \
-			  ImplenteMunus ChristusEst FestumCelebre DeusTuorum-stephani) \
+			  ImplenteMunus ChristusEst FestumCelebre DeusTuorum-stephani \
+			  ExsultetCaelum-nativitatem) \
 	 $(addprefix resp-,notumfecit verbumcaro-simplex verbumcaro hodiescietis notumfecit-solemnis \
 			   christefilidei-familiae constitueseos exsultentiusti iustiautem christefilidei-nat \
 			   omnesdesaba reges adorabunteum christefilidei-baptismate magnaestgloria \
@@ -223,16 +224,18 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			   hodieiniordane-CROCHU illuminare-CROCHU-cumdox incolumbaespecie-CROCHU-cumdox \
 			   hesternadiedominusnatus-CROCHU-cumdox intuensincaelum-CROCHU lapidabantstephanum-CROCHU \
 			   stephanusservusdei-CROCHU diligebatautemeumiesus-CROCHU-cumdox \
-			   hicestdiscipulus-CROCHU valdehonorandusest-CROCHU) \
+			   hicestdiscipulus-CROCHU valdehonorandusest-CROCHU subvenite-gn \
+			   congratulaminiquiacum-CROCHU proptertestamentumdomini-CROCHU \
+			   istisuntvirisancti) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_regina_caeli_simplex convertenosdeus dominusnosbenedicat \
-	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
+	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita requiescant \
 	 benedictio-noctemquietam an_salve_regina tonusprecum tonusprecumnovum \
 	 ps88ii_xix-initium-i-a2 ps88xx_xxx-initium-ii-D benedictus-initium-viii-G2 \
 	 ps97-initium-viii-d dan3-initium-i-g-trans ps126-initium-i-g-trans \
 	 ps105i-initium-e ps103iii-initium-e magnificat-initium-isoll-a5 \
 	 ps18-initium-iii-b-trans ps62-initium-i-g-trans ps96-initium-iii-a2 \
-	 habacuc-initium-iv_-e ps147-initium-e ps91-initium-e
+	 habacuc-initium-iv_-e ps147-initium-e ps91-initium-e benedictus-initium-vii-a-trans
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
@@ -255,7 +258,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../PostPentecosten ../CorpusChristi ../PetriEtPauli ../Adventus ../PerAnnum ../Ioseph ../Apostolorum ../SanctorumInnocentium ../Epiphania ../Epiphania/cantus/amon33 ../InBaptismateDomini ../Laurentii ../PerAnnum
+iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../PostPentecosten ../CorpusChristi ../PetriEtPauli ../Adventus ../PerAnnum ../Ioseph ../Apostolorum ../SanctorumInnocentium ../Epiphania ../Epiphania/cantus/amon33 ../InBaptismateDomini ../Laurentii ../PerAnnum ../Defunctorum ../Iacobi ../Quadragesimae
 include $(iter)
 
 PDF = indienativitatis.pdf sanctaefamiliae.pdf dievpostnativitatem.pdf dievipostnativitatem.pdf dieviipostnativitatem.pdf sdeigenetricismariae.pdf \
