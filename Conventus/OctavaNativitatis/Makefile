@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 2 8 10 16 18 18i 23 28 30i 30ii 30iii 32i 32ii 36i_xi 36xii_xxix 36iii 37ii_v 37vi_xiii 37xiv_xxiii 38i 38ii 41 42 44 45 47 50 51 62 63 64 65i 65ii 66 71 71i 71ii 76 84 86 88ii_xix 88xx_xxx 91 92 95 96 97 98 99 103i 103ii 103iii 104i 104ii 104iii 105i 105ii 105iii 109 110 111 112 113 114 115 116 117 121 126 128 129 131 144ii 145 146 147 148 149 150
+PSALMS = 2 8 10 16 18 18i 23 28 30i 30ii 30iii 32i 32ii 36i_xi 36xii_xxix 36iii 37ii_v 37vi_xiii 37xiv_xxiii 38i 38ii 41 42 44 45 47 50 51 62 63 64 65i 65ii 66 71 71i 71ii 76 84 86 88ii_xix 88xx_xxx 91 92 95 96 97 98 99 103i 103ii 103iii 104i 104ii 104iii 105i 105ii 105iii 109 110 111 112 113 114 115 116 117 121 126 128 129 130 131 132 144ii 145 146 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-2 = i-g i-d viii-c viii-C
 MODUS-8 = i-g
@@ -92,8 +92,10 @@ MODUS-117 = i-g
 MODUS-121 = iv-E viii-G2
 MODUS-126 = i-g ii-D
 MODUS-128 = ii-D
-MODUS-129 = ii_-B
-MODUS-131 = viii-G
+MODUS-129 = ii_-B viii-A
+MODUS-130 = e
+MODUS-131 = viii-G e
+MODUS-132 = i-a
 MODUS-144ii = viii-G
 MODUS-145 = iv-E viii-G
 MODUS-146 = ii-D viii-G2
@@ -173,7 +175,8 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			  omnisterra ordinesangelorum tequiinspiritu votameadomino voxdominisuperaquas \
 			  omnesdesaba adhaesitanimameapostte-stephani cumautemessetstephanus \
 			  eccevideocaelos lapidaverunt nemopoteratresistere stephanusvidit \
-			  sepelieruntstephanum dapacemdomine quidoctifuerint) \
+			  sepelieruntstephanum dapacemdomine quidoctifuerint deprofundis \
+			  speretisrael etomnis eccequambonum) \
 	 $(addprefix capitulum-,Multifariam ApparuitGratia ApparuitBenignitas FratresQuanto \
 				QuiTimet VidiSupra Surge StephanusAutem) \
 	 $(addprefix hym-,ASolisOrtus ChristeRedemptor CandorAEternae CandorAEternae-simplex \
