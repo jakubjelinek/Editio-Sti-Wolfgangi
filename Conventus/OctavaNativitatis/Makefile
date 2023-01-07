@@ -229,7 +229,7 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			   stephanusservusdei-CROCHU diligebatautemeumiesus-CROCHU-cumdox \
 			   hicestdiscipulus-CROCHU valdehonorandusest-CROCHU subvenite-gn \
 			   congratulaminiquiacum-CROCHU proptertestamentumdomini-CROCHU \
-			   istisuntvirisancti) \
+			   istisuntvirisancti hodiecaeliapertisunt-cumdox) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_regina_caeli_simplex convertenosdeus dominusnosbenedicat \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita requiescant \
