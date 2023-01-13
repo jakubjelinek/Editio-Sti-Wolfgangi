@@ -469,7 +469,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  regemvirginum dominumloquenteminevangelio regemcuiomnia \
 			  deumquiglorificatur domumdeidecet regemconfessorum iesumchristum \
 			  laudemusdeumnostrum laudemusdeumnostruminfestivitate \
-			  christumregemquisuam agnumdeiquemioannem regiquaefecitopera) \
+			  christumregemquisuam agnumdeiquemioannem regiquaefecitopera \
+			  avemaria-simplex) \
 	 $(addprefix versus-,memorfui medianocte praevenerunt aporta-alt misericordiaetuae \
 			     dataest-communis afferte adorabunt) \
 	 dominelabiamea dominelabiamea-praglia tonusprecum tonusprecumnovum dominusnosbenedicat \
