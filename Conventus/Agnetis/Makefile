@@ -54,7 +54,7 @@ LAPSALMSEXTRA = $(foreach C,benedictus magnificat $(CANTICIS),$(foreach M,$(MODU
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant-,annulosuo beataagnes christivirgo congaudetemecum eccequodcupivi \
 			  ipsisoli ipsisumdesponsata statadextris ingressaagnes \
-			  mecumenimhabeo) \
+			  mecumenimhabeo dapacemdomine) \
 	 $(addprefix hym-,AgnesBeatae IgneDivini JesuCoronaVirginum) \
 	 $(addprefix resp-,adiuvabit) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
