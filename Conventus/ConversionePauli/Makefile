@@ -18,9 +18,10 @@ COMMON_CHANTS_DIR = $(EDITIO_ROOTDIR)/cantuscommunes
 PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
-PSALMS = 18 62 63 96 109 112 115 138 149
+PSALMS = 18 18i 62 63 96 109 112 115 138 149
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-18 = i-d3
+MODUS-18i = i-d3
 MODUS-62 = i-a
 MODUS-63 = vii-a
 MODUS-96 = i-g vii-c2
@@ -53,7 +54,8 @@ SCORES = $(addprefix ant-,saulesaule vadeanania mihivivere sciocuicredidi \
 			  nemagnitudorevelationum gratiadeiinme achristodecaelo \
 			  libentergloriabor egoplantaviapollorigavit \
 			  damascipraepositus tervirgiscaesus sanctepauleapostole \
-			  achristodecaelovocatus ingressuspaulus sciocuicredidiet) \
+			  achristodecaelovocatus ingressuspaulus sciocuicredidiet \
+			  dapacemdomine) \
 	 $(addprefix hym-,PressiMalorum DoctorEgregie ExcelsamPauli) \
 	 $(addprefix resp-,tuesvaselectionis constitueseos) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
@@ -70,7 +72,8 @@ SCORES = $(addprefix ant-,saulesaule vadeanania mihivivere sciocuicredidi \
 					noscum ipsavirgo pervirginem) \
 	 $(addprefix resp-,ecceegomittovos tollite dumsteteritis \
 			   audistisenim-CROCHU cumautemplacuitei-CROCHU \
-			   magnussanctuspaulus-CROCHU-cumdox) oratio \
+			   magnussanctuspaulus-CROCHU-cumdox \
+			   sanctepauleapostole-CROCHU) oratio \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
