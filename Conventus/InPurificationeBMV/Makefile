@@ -57,7 +57,8 @@ SCORES = $(addprefix ant-,oadmirabile quandonatuses rubumquemviderat eccemariage
 			  senexpuerumportabat eccemariagenuit-tq accipienssimeon \
 			  hodiebeatavirgomaria lumenadrevelationem obtuleruntproeo \
 			  responsumaccepit simeoniustus cuminducerentpuerum \
-			  adornathalamumtuum superteierusalem gaudeetlaetarenova) \
+			  adornathalamumtuum superteierusalem gaudeetlaetarenova \
+			  dapacemdomine) \
 	 $(addprefix hym-,AveMarisStella-iv QuodChorus AdornaSion LegisSacratae) \
 	 $(addprefix resp-,avemaria-alt notumfecitdominus adoratedominum) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis solemnis-tq alter-tq communis-tq) \
@@ -74,7 +75,8 @@ SCORES = $(addprefix ant-,oadmirabile quandonatuses rubumquemviderat eccemariage
 					noscum ipsavirgo pervirginem) \
 	 $(addprefix resp-,gaudemariavirgo-CROCHU-cumdox \
 			   adornathalamum-CROCHU cuminducerentpuerum-CROCHU-cumdox \
-			   senexpuerumportabat-CROCHU) oratio \
+			   senexpuerumportabat-CROCHU postquamimpletisunt-CROCHU \
+			   suscipiensiesuminulnas-CROCHU videtemiraculum-CROCHU-cumdox) oratio \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 ps109-initium-iii-b-trans ps121-initium-iii-b-trans \
