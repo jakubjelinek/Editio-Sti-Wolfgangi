@@ -452,7 +452,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   laetabiturjustus stetitangelus inconspectuangelorum \
 			   narraveruntlaudes exaltabotedomine laetaminiindomino \
 			   superteierusalem domumtuam sanctitui lexdeiejus diffusaest \
-			   vosmisistis) \
+			   vosmisistis inclinacormeumdeus) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 oratiodominica-d deprecatio4 deprecatio4-propace \
