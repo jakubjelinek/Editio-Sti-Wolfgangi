@@ -47,7 +47,7 @@ LAPSALMSEXTRA = $(foreach C,benedictus magnificat $(CANTICIS),$(foreach M,$(MODU
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant-,dilectemi egrederesipraevales incolumbaespeciecaeli \
 			  quidestquodloqueris rogavitenecpotui sanctimonialisautem \
-			  tuncinclinatocapite) \
+			  tuncinclinatocapite dapacemdomine) \
 	 $(addprefix hym-,TeBeata HodieSacratissima) \
 	 $(addprefix resp-,audifilia) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
@@ -64,7 +64,8 @@ SCORES = $(addprefix ant-,dilectemi egrederesipraevales incolumbaespeciecaeli \
 					noscum ipsavirgo pervirginem) \
 	 $(addprefix resp-,aedificavitnoealtare-CROCHU istaestspeciosa-sinedox \
 			   vidispeciosam cumsanctusbenedictus-cumdox venielectamea-CROCHU \
-			   diffusaestgratia-CROCHU) oratio \
+			   diffusaestgratia-CROCHU induitmedominus-CROCHU \
+			   virgogloriosa-CROCHU) oratio \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
