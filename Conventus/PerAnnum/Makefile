@@ -722,7 +722,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   inprincipiodeuscreavitcaelum-CROCHU inprincipiodeuscreavit-CROCHU \
 			   inprincipiofecitdeus-CROCHU-cumdox permemetipsumiuravi-CROCHU \
 			   ponamarcummeuminnubibus-CROCHU-cumdox crediditabrahamdeo-cumdox \
-			   movensigiturabram) \
+			   movensigiturabram factusestsermodomini) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
