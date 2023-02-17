@@ -687,7 +687,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   egressonoedearcha-cumdox emisitnoecolumbam quadragintadiesetnoctes-CROCHU \
 			   locutusestdominusadabraham-CROCHU dumstaretabrahamadradicem-CROCHU \
 			   tentavitdeusabraham-CROCHU-cumdox angelusdominivocavit-CROCHU \
-			   vocavitangelusdomini-CROCHU deusdominimeiabraham-CROCHU-cumdox \
+			   vocavitangelusdomini-CROCHU-cumdox deusdominimeiabraham-CROCHU-cumdox \
 			   sicutcedrus vidispeciosam bonumestconfiteri-CROCHU \
 			   paratumcormeum-CROCHU-cumdox ecceegomittovos-cumdox \
 			   fuitvirvitae beatusbenedictusdum beatusbenedictuscum \
