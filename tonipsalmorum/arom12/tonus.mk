@@ -105,6 +105,7 @@ TONUS-viisoll-a = 2 0 2 0
 TONUS-viisoll-b = 2 0 2 0
 TONUS-viisoll-c = 2 0 2 0
 TONUS-viisoll-d = 2 0 2 0
+TONUS-viisoll-d2 = 2 0 2 0
 TONUS-viisoll-d3 = 2 0 2 0
 TONUS-viii-A = 1 0 1 2
 TONUS-viii-C = 1 0 1 2
