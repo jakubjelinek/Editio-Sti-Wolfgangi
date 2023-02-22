@@ -507,7 +507,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   inproximoest-CROCHU-cumdox adiutoretsusceptormeus-CROCHU-cumdox \
 			   quadragintadiesetnoctes-CROCHU emisitnoecolumbam \
 			   egressonoedearcha-sinedox movensigiturabram \
-			   crediditabrahamdeo-cumdox) \
+			   crediditabrahamdeo-cumdox factusestsermodomini) \
 	 $(addprefix oratio,-visita bmv 1 2 3 4 5) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
