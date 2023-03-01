@@ -1193,32 +1193,58 @@
 \vfill
 \pagebreak
 
+\ifx\sineobmv\undefined
 \pars{Capitulum.} \scriptura{Sir. 24, 14}
 
 \grechangedim{interwordspacetext}{0.12 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \cuminitiali{}{temporalia/capitulum-AbInitio.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\else
+\pars{Capitulum.} \scriptura{Ioel 2, 17}
+
+\grechangedim{interwordspacetext}{0.12 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{}{temporalia/capitulum-InterVestibulum.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\fi
 
 \vfill
 
+\ifx\sineobmv\undefined
 \pars{Responsorium breve.} \scriptura{Lc. 1, 28}
 
 \cuminitiali{VI}{temporalia/resp-avemaria.gtex}
+\else
+\pars{Responsorium breve.} \scriptura{Ps. 90, 4}
+
+\cuminitiali{IV}{temporalia/resp-scapulissuis.gtex}
+\fi
 
 \vfill
 \pagebreak
 
+\ifx\sineobmv\undefined
 \pars{Hymnus}
 
 \cuminitiali{I}{temporalia/hym-AveMarisStella.gtex}
 \vspace{-3mm}
+\else
+\pars{Hymnus.} \scriptura{Gregorius Magnus (\olddag{} 604)}
+
+\antiphona{II}{temporalia/hym-AudiBenigne.gtex}
+\fi
 
 \vfill
 %\pagebreak
 
+\ifx\sineobmv\undefined
 \pars{Versus.} \scriptura{Ps. 43, 3}
 
 \sineinitiali{temporalia/versus-diffusa-tq.gtex}
+\else
+\pars{Versus.} \scriptura{Ps. 90, 11}
+
+\sineinitiali{temporalia/versus-angelis.gtex}
+\fi
 
 \vfill
 \pagebreak
@@ -1258,7 +1284,11 @@
 \pagebreak
 
 % Oratio. %%%
+\ifx\sineobmv\undefined
 \cuminitiali{}{temporalia/oratiobmv.gtex}
+\else
+\oratiovesperas
+\fi
 
 \vspace{-1mm}
 
@@ -1274,7 +1304,11 @@
 
 \vspace{2mm}
 
+\ifx\sineobmv\undefined
 \cuminitiali{VIII}{temporalia/benedicamus-officium-bmv.gtex}
+\else
+\cuminitiali{IV}{temporalia/benedicamus-feria-advequad.gtex}
+\fi
 
 \vspace{1mm}
 
