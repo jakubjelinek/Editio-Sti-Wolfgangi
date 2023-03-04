@@ -199,6 +199,7 @@ MODUS-jeremiae2 = i-d viii-G
 MODUS-jeremiae3 = iv_-e
 MODUS-lamentatio = i-d
 MODUS-moysis = e
+MODUS-moysis1 = e
 MODUS-moysis2i_xii = vi-F
 MODUS-sapientia = v-a
 MODUS-tobiae = vii-a
@@ -209,7 +210,7 @@ MODUS-dan33 = viii-G
 MODUS-nuncdimittis = iii-a
 MODUS-magnificat = isoll-f isoll-g i-f i-g i-g2 i-g4 i-a i-D2 ii-D ii_-B iisoll-D iii-a iiisoll-a iv-A iv-A_ iv-d v-a vii-b vii-c vii-c2 viisoll-b viii-G viii-G2 viiisoll-G viiisoll-g viiisoll-g5
 MODUS-benedictus = i-a4 i-d i-f i-g i-g4 i-g5 i-D2 isoll-a5 isoll-d3 iisoll-A ii-D ii_-a ii_-d ii_-B iii-a iii-a4 iii-b iv-E iv_soll-e v-a vsoll-g vi-F vii-a vii-c vii-c2 vii-d2 viii-g viii-G viii-G2 viii-G5 viii-C2 viiisoll-G
-CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae8 isaiae9 isaiae10 isaiae11 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david nuncdimittis ezechiae2 lamentatio dan3 dan32 dan33 iudith2
+CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae8 isaiae9 isaiae10 isaiae11 habacuc jeremiae2 jeremiae3 moysis moysis1 moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david nuncdimittis ezechiae2 lamentatio dan3 dan32 dan33 iudith2
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
 	   && $(SED) -i -e 's/\*/\\grestar{}/g' $@
@@ -348,7 +349,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  regnavitdominusdecorem siindigitodei incymbalisbenesonantibus \
 			  deusmeusestu etmescitis liberanosdeus alligadomine \
 			  deusdeusmeus quisequiturmenonambulat cumexaltaveritis \
-			  desideriodesideravi inlegedominifuit) \
+			  desideriodesideravi inlegedominifuit similaboeum) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
