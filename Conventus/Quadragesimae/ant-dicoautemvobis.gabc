@@ -1,12 +1,10 @@
-﻿name: ant-dicoautemvobis;
-user-notes: H*170;
-commentary: Praglia II p. 424;
+name: ant-dicoautemvobis;
+book: Antiphonale Monasticum II, Praglia, p. 424; H364;
 annotation: III a;
-centering-scheme: english;
-%fontsize: 12;
-%spacing: vichi;
-%font: OFLSortsMillGoudy;
-%width: 4.5;
-%height: 11;
+mode: 3;
+nabc-lines: 1;
 %%
-(c4) DI(g)co(h) au(g)tem(hi~) vo(i/jjoi)bis(i) *() a(i_j)mí(k)cis(j) me(ji)is(h.) :(;) Ne(g) ter(h)re(i)á(g)mi(g)ni(e) ab(fg) his,(g_) qui(g) vos(gf__) per(gh)se(gf)quún(e.)tur.(e.) (::)
+(c4)
+DI(g|ta)co(h|vi) au(g|ta)tem(hi~|ta>) vo(i/jjoi|tahgpihh)bis(i|tahg) *()
+a(i_j|peS)mí(k|vihk)cis(j|vi) me(ji|cl)is:(h.|vihh) (;)
+Ne(g|ta) ter(h|vi)re(i|vihj)á(g|tahg)mi(g|vihh)ni(e|tahh) ab(fg|pe) his,(g_|vi-) qui(g|vi) vos(gf__|cl-) per(gh|pe)se(gf|cl)quún(e.|ta)tur.(e.|ta) (::)
