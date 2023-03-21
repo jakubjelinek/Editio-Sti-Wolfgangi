@@ -74,7 +74,7 @@ SCORES = $(addprefix ant-,oadmirabile quandonatuses rubumquemviderat eccemariage
 	 $(addprefix benedicamus-,festis-bmv) \
 	 $(addprefix inv-,verbumcarofactumest) \
 	 $(addprefix capitulum-,EcceVirgo) $(addprefix versus-,avemaria) \
-	 dominelabiamea tonusprecum dominusnosbenedicat dominusnosbenedicat-d \
+	 dominelabiamea tonusprecum tonusprecumnovum dominusnosbenedicat dominusnosbenedicat-d \
 	 deprecatio4-propace oratiodominica-d \
 	 $(addprefix absolutio-,exaudi ipsius avinculis precibus) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
