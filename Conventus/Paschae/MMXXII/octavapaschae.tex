@@ -181,7 +181,6 @@ per infiníta sǽcula sæculórum.
 \vfill
 \pagebreak
 
-\ifx\matutinum\undefined
 \pars{Psalmus 1.} \scriptura{\Abardot{} Ex. 3, 14; \textbf{H226}}
 
 \vspace{-5mm}
@@ -234,19 +233,12 @@ per infiníta sǽcula sæculórum.
 
 \vfill
 \pagebreak
-\else
-\matutinum
-\fi
 
-\ifx\versusMatutinum\undefined
 \pars{Versus.}
 
 \noindent \Vbardot{} Surréxit Dóminus de sepúlcro, allelúia.
 
 \noindent \Rbardot{} Qui pro nobis pepéndit in ligno, allelúia.
-\else
-\versusMatutinum
-\fi
 
 \vspace{5mm}
 
@@ -374,7 +366,6 @@ Orémus:
 
 \vfill
 
-\ifx\laudes\undefined
 \pars{Psalmus 1.} \scriptura{Mt. 28, 2; \textbf{H230}}
 
 \vspace{-4mm}
@@ -493,17 +484,12 @@ Orémus:
 
 \vfill
 \pagebreak
-\else
-\laudes
-\fi
 
-\ifx\capitulumLaudes\undefined
 \newcommand{\capitulumLaudes}{\pars{Capitulum.} \scriptura{1 Cor. 5, 7}
 
 \grechangedim{interwordspacetext}{0.12 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \cuminitiali{}{temporalia/capitulum-FratresExpurgate.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}}
-\fi
 \capitulumLaudes
 
 \vfill
@@ -521,7 +507,6 @@ Orémus:
 \vfill
 \pagebreak
 
-\ifx\laudes\undefined
 \pars{Hymnus}
 
 \cuminitiali{VIII}{temporalia/hym-AuroraLucis.gtex}
@@ -539,7 +524,6 @@ Orémus:
 
 \vfill
 \pagebreak
-\fi
 
 \benedictus
 
@@ -548,39 +532,7 @@ Orémus:
 \vfill
 \pagebreak
 
-\ifx\preces\undefined
 \anteOrationem
-\else
-\pars{Preces.}
-
-\sineinitiali{}{temporalia/tonusprecumnovum.gtex}
-
-\preces
-
-\vfill
-
-\pars{Oratio Dominica.}
-
-\cuminitiali{}{temporalia/oratiodominicaalt.gtex}
-
-\vfill
-\pagebreak
-
-\pars{Deprecatio Gelasii}
-
-\vspace{-5mm}
-
-\grechangedim{interwordspacetext}{0.16 cm plus 0.15 cm minus 0.05 cm}{scalable}%
-\antiphona{D\textsuperscript{1}}{temporalia/deprecatio4-propace.gtex}
-\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
-
-\vfill
-
-\pars{Oratio Dominica.}
-
-\cuminitiali{D}{temporalia/oratiodominica-d.gtex}
-\vfill
-\fi
 
 \pagebreak
 
@@ -590,19 +542,11 @@ Orémus:
 
 \vfill
 
-\ifx\preces\undefined
 \rubrica{Hebdomadarius dicit iterum Dominus vobiscum, vel cantor dicit:}
 
 \vspace{2mm}
 
 \sineinitiali{temporalia/domineexaudi.gtex}
-\else
-\rubrica{Hebdomadarius dicit Dominus vobiscum, vel, absente sacerdote vel diacono, sic concluditur:}
-
-\vspace{2mm}
-
-\antiphona{C}{temporalia/dominusnosbenedicat.gtex}
-\fi
 
 \rubrica{Postea cantatur a cantore:}
 
