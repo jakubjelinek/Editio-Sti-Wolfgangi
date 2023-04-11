@@ -136,9 +136,9 @@ MODUS-101iii = i-d3 i-g
 MODUS-102i = vi-F vii-a viii-C viii-G5
 MODUS-102ii = i-d vi-F viii-G5
 MODUS-102iii = iii-g vi-F vii-a viii-G5
-MODUS-103i = iii-a vii-a
-MODUS-103ii = ii-D viii-G5
-MODUS-103iii = vii-a e
+MODUS-103i = iii-a vii-a viii-G
+MODUS-103ii = ii-D viii-G5 viii-C
+MODUS-103iii = vii-a viii-G e
 MODUS-104i = viii-g d-g
 MODUS-104ii = viii-a viii-g
 MODUS-104iii = iv-E viii-g
@@ -420,7 +420,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  intabernaculisiustorumvox siquisdiligitmesermonem sicvenietquemadmodum \
 			  iterumvidebovos nonprohisrogo benedictatu-tp exsurgensmaria-tp \
 			  intravitmaria-tp utaudivitsalutationem-tp exquofactaestvox \
-			  beataesmariaquaecredisti vespereautemsabbati) \
+			  beataesmariaquaecredisti vespereautemsabbati eratautemaspectus \
+			  iesumquicrucifixusest etincipiensamoyseet) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \

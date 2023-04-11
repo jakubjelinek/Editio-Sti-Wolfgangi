@@ -1,7 +1,7 @@
 name: Et incipiens a Moyse;
 office-part: Antiphona;
 mode: 1;
-book: Praglia I p. 300; H234;
+book: Antiphonale Monasticum I, Praglia, p. 300; H234;
 transcriber: Jakub Jelínek;
 commentary: Lc. 24, 27;
 nabc-lines: 1;
@@ -9,6 +9,6 @@ nabc-lines: 1;
 (c4)
 ET(c|ta) in(d|vi)cí(ixdh/iv|pe-vihi)pi(h|ta)ens(h|ta) *()
 a(h|ta) Mó(h!iwj|qlppt1)y(h_|ta-)se(h_|ta) (,)
-et(ixi|vilsal2lsc3) óm(h>|vi>)ni(g|ta)bus(h|vi) pro(f|ta)phé(g_hGE|pe-1su2)tis,(e.|ta) (;)
-in(e|ta)ter(e|vi)pre(c|ta)ta(e|vi)bá(g_|vi-hh)tur(g_|vi-hi) il(f|tahi)lis(gh|pehi) Scrip(g|vihh)tú(f|tahg)ras(g|vihg) de(f|vi) om(d|ta)ni(do|or)bus(c|ta) (,)
+et(ixi|///vilsal2lsc3) óm(h>|vi>)ni(g|ta)bus(h|vi) pro(f|ta)phé(g_hGE|pe-1su2)tis,(e.|ta) (;)
+in(e|ta)ter(e|vi)pre(c|ta)ta(e|vi)bá(g_|vi-hh)tur(g_|vi-hi) il(f|tahi)lis(gh|pehi) Scrip(g|vihh)tú(f|tahg)ras(g|vihg) de(f|vi) óm(d|ta)ni(do|or)bus(c|ta) (,)
 quæ(c|ta) de(d|vi) ip(f|vihh)so(f|vihj) e(e|tahi)rant,(gh>|pe>hh) al(ed~|vi>hh)le(fe|cllsc3hh)lú(d.|tahh)ia.(d.|tahh) (::)
