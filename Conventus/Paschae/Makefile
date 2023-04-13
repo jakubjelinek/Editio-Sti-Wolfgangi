@@ -173,9 +173,9 @@ MODUS-133 = viii-G
 MODUS-134 = iii-g
 MODUS-134i = i-a i-a2
 MODUS-135 = iii-g
-MODUS-135i = iiir-g d-g
-MODUS-135ii = iiir-g d-g
-MODUS-135iii = c-c2 d-g
+MODUS-135i = iiir-g viii-G d-g
+MODUS-135ii = iiir-g viii-G d-g
+MODUS-135iii = vii-c c-c2 d-g
 MODUS-136 = viii-G
 MODUS-137 = v-a
 MODUS-138i = iii-g
@@ -425,7 +425,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  intravitmaria-tp utaudivitsalutationem-tp exquofactaestvox \
 			  beataesmariaquaecredisti vespereautemsabbati eratautemaspectus \
 			  iesumquicrucifixusest etincipiensamoyseet dumtransissetsabbatum \
-			  etdicebantadinvicem etrespicientesviderunt) \
+			  etdicebantadinvicem etrespicientesviderunt introeuntesinmonumentum \
+			  noliteexpavescere ingalilaeaiesum hociamtertio) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
