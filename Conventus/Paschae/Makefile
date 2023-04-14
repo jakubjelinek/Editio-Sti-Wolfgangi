@@ -189,8 +189,8 @@ MODUS-143i_x = vi-F
 MODUS-143ii = vi-F
 MODUS-144i = vii-a viii-A viii-G
 MODUS-144ii = vii-c2
-MODUS-144x_xiii = iii-a4 vii-c viii-G5
-MODUS-144xiv_xxi = vii-a viii-a viii-G5
+MODUS-144x_xiii = iii-a4 vii-c viii-G viii-G5
+MODUS-144xiv_xxi = i-f vii-a viii-a viii-G5
 MODUS-145 = iv-E iv_-e
 MODUS-146 = viii-g viii-A
 MODUS-147 = vi-F e
@@ -426,7 +426,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  beataesmariaquaecredisti vespereautemsabbati eratautemaspectus \
 			  iesumquicrucifixusest etincipiensamoyseet dumtransissetsabbatum \
 			  etdicebantadinvicem etrespicientesviderunt introeuntesinmonumentum \
-			  noliteexpavescere ingalilaeaiesum hociamtertio) \
+			  noliteexpavescere ingalilaeaiesum hociamtertio etrecordataesunt \
+			  iesumquemquaeritis surgensjesusmaneprimasabbati) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
