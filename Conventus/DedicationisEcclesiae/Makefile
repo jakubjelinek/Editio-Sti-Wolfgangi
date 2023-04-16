@@ -84,7 +84,9 @@ SCORES = $(addprefix versus-,domumtuam domumtuam-communis haecest) \
 	 tedeum-solemnis-gn tedeum-romanum-gn tuautem \
 	 $(addprefix resp-,benedicdominedomum-CROCHU fundataest-CROCHU \
 			   indedicationetempli-CROCHU dumexiretiacob-CROCHU \
-			   exaudisti-CROCHU-cumdox sidominusdeusmeus-CROCHU) \
+			   exaudisti-CROCHU-cumdox sidominusdeusmeus-CROCHU \
+			   sidominusdeusmeus-CROCHU-tp dumexiretiacob-CROCHU-tp \
+			   exaudisti-CROCHU-cumdox-tp) \
 	 tonusprecum benedictus-initium-ivsoll-E
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
