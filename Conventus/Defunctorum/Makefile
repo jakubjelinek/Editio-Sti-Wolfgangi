@@ -86,7 +86,8 @@ SCORES = $(addprefix vesp-ant,1 2 3 4 5) vesp-ant-magn \
 	 $(addprefix ant-,dirigedomine converteredomine nequandorapiat \
 			  complaceat sitivitanima exsultabunt mesuscepit \
 			  delictaiuventutis egosum dominuscustodit egosum \
-			  heume omnequoddat operamanuum placebo) \
+			  heume omnequoddat operamanuum placebo \
+			  egosumresurrectio-tp) \
 	 $(addprefix versus-,audivi aporta collocet netradas \
 			     aporta-alt collocet-alt netradas-alt) \
 	 benedicamus-duplex-laudes benedicamus-duplex-vesperae \
@@ -100,13 +101,13 @@ SCORES = $(addprefix vesp-ant,1 2 3 4 5) vesp-ant-magn \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus inunitate deus christus ignem acunctis \
 					evangelica ille cujus-ipse adsocietatem) \
 	 $(addprefix matant,1 2 3 4 5 6 7 8 9) $(addprefix matresp,1 2 3 4 5 6 7 8 9 10) \
-	 tedecetlaus tonus-evangelii-b tonus-lectionis-prophetiae inv-regemcui \
+	 tedecetlaus tonus-evangelii-b tonus-lectionis-prophetiae inv-regemcui inv-regemcuiomnia-tp \
 	 $(addprefix venite6,a b c d e f) $(addprefix matinv-RegemCu,i i3) \
 	 benedicamus-solemnis-laud ps26-initium-iv-E ps26-initium-iv_-e seq-DiesIrae \
 	 $(addprefix resp-,credoquod-GN quilazarum-GN dominequando-CROCHU \
 			   mementomei-CROCHU heumihi-CROCHU nerecorderis-CROCHU \
 			   peccantemme-CROCHU dominesecundum-CROCHU liberamedominedemorte-CROCHU \
-			   subvenite-gn)
+			   subvenite-gn exaltabotedomine-tp)
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = seq-DiesIrae-bohtext.tex $(TMP_DIR)/magnificatviic.tex $(TMP_DIR)/benedictus-initium-ii-D-auto.gtex \
 	    $(TMP_DIR)/benedictusiiD.tex
