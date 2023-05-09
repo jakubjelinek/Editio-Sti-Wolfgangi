@@ -432,7 +432,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  iesumquemquaeritis surgensjesusmaneprimasabbati deterraplasmastime \
 			  complaceattibi exsultabuntdomino aportainferi omnisspiritus \
 			  egosumresurrectio-tp tusolusperegrinuses istesanctusprolege \
-			  quamspeciosi) \
+			  quamspeciosi quidoctifuerint-tp) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -543,7 +543,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   benedictaetvenerabilis-CROCHU-tp quaeestista-CROCHU-tp \
 			   nonvosrelinquam-CROCHU credoquod-GN quilazarum-GN \
 			   liberamedominedemorte-CROCHU mementomeideusquiaventus-CROCHU \
-			   istisunttriumphatores-sinedox) \
+			   istisunttriumphatores-sinedox egosumvitisveraet-CROCHU \
+			   egosumvitisveraet-CROCHU-cumdox) \
 	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3 d4 d5 d6 d7) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
