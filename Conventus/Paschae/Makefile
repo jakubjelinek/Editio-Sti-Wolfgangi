@@ -220,6 +220,7 @@ MODUS-jeremiae2 = i-d viii-G
 MODUS-jeremiae3 = iv_-e vii-c2
 MODUS-lamentatio = i-d
 MODUS-moysis = iv-e2 viii-G5 e
+MODUS-moysis1 = iv-e2 viii-G5 e
 MODUS-moysis2i_xii = i-d vi-F vii-c2
 MODUS-sapientia = v-a viii-G5
 MODUS-tobiae = vii-a viii-g
@@ -232,7 +233,7 @@ MODUS-sophoniae = iii-b iv-E
 MODUS-nuncdimittis = iii-a
 MODUS-magnificat = isoll-f isoll-g i-f i-g i-g2 i-g4 i-a i-D2 ii-D ii_-B iisoll-D iii-a iiisoll-a iv-A iv-A_ iv-d v-a vii-b vii-c vii-c2 viisoll-b viisoll-d viii-G viii-G2 viiisoll-G viiisoll-G2 viiisoll-g viiisoll-g5
 MODUS-benedictus = i-a4 i-d i-f i-g i-g4 i-g5 isoll-a5 isoll-D isoll-d3 isoll-f iisoll-A ii-D ii_-a ii_-d ii_-B iii-a4 iii-b iiisoll-a iiisoll-b iv-E iv-e2 ivsoll-e2 iv_-e v-a v-g vsoll-g vi-F visoll-F vii-a viisoll-a vii-b viisoll-b viisoll-c vii-c2 vii-d2 viii-g viii-G viii-G2 viii-G5 viii-C viii-C2 viii-c viiisoll-G viiisoll-G5
-CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae8 isaiae9 isaiae10 isaiae11 isaiae12 habacuc jeremiae2 jeremiae3 moysis moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david nuncdimittis ezechiae2 lamentatio dan3 dan32 dan33 iudith2 oseae sophoniae
+CANTICIS = anna isaiae isaiae2 isaiae3 isaiae4 isaiae5 isaiae8 isaiae9 isaiae10 isaiae11 isaiae12 habacuc jeremiae2 jeremiae3 moysis moysis1 moysis2i_xii ecclesiastici ezechiae sapientia tobiae tobiae2 david nuncdimittis ezechiae2 lamentatio dan3 dan32 dan33 iudith2 oseae sophoniae
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
 	   && $(SED) -i -e 's/\*/\\grestar{}/g' $@
@@ -432,7 +433,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  iesumquemquaeritis surgensjesusmaneprimasabbati deterraplasmastime \
 			  complaceattibi exsultabuntdomino aportainferi omnisspiritus \
 			  egosumresurrectio-tp tusolusperegrinuses istesanctusprolege \
-			  quamspeciosi quidoctifuerint-tp invelamentoclamabantsancti) \
+			  quamspeciosi quidoctifuerint-tp invelamentoclamabantsancti \
+			  favusdistillanslabia) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
