@@ -92,7 +92,7 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 			   repletisuntomnes-sinedox spiritussanctusprocedens-cumdox \
 			   inprincipiodeuscreavit-sinedox spiritusdominireplevit-cumdox \
 			   dumcomplerentur-joppich-sinedox iamnondicam-cumdox \
-			   apparueruntapostolis-cumdox) \
+			   apparueruntapostolis-cumdox dumcomplerentur-CROCHU) \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix capitulum-,CumComplerentur tuautem Facta Judaei GratiaVobis) oratio $(addprefix oratio,2 3 4 5 6 -sinedox) \
 	 benedictio-noctemquietam jubedomnebenedicere lectiobrevis-fratressobrii \
