@@ -441,7 +441,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  RerumCreator-worcester NoxAtra-worcester TuTrinitatis-worcester \
 			  OSacrosanctaTrinitas SomnoRefectis-worcester ConsorsPaterni-worcester \
 			  SalveMater MariaVirgo NuncAdCoronas TerrenaCessent InclitosChristi \
-			  BeataCaeli) \
+			  BeataCaeli OGloriosaDomina-praglia-lh) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
