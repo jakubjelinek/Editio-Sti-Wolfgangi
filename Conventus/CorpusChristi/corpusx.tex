@@ -716,6 +716,7 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 
 \subhora{In I. Nocturno}
 
+\ifx\nocturnoi\undefined
 \pars{Psalmus 1.} \scriptura{Ps. 1, 3; \textbf{LU\textsubscript{922}}}
 
 \vspace{-2mm}
@@ -773,6 +774,9 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 
 \vfill
 \pagebreak
+\else
+\nocturnoi
+\fi
 
 \pars{Versus.} \scriptura{Sap. 16, 20; Ps. 77, 25}
 
@@ -804,11 +808,15 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \vfill
 \pagebreak
 
+\ifx\responsoriumi\undefined
 \pars{Responsorium 1.} \scriptura{\Rbardot{} Ex. 12, 5.6.8 \Vbardot{} 1 Cor. 5, 7.8; \textbf{LU\textsubscript{926}}}
 
 \vspace{-2mm}
 
 \responsorium{I}{temporalia/resp-immolabithaedum.gtex}{}
+\else
+\responsoriumi
+\fi
 
 \vfill
 \pagebreak
@@ -825,11 +833,15 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \vfill
 \pagebreak
 
+\ifx\responsoriumii\undefined
 \pars{Responsorium 2.} \scriptura{\Rbardot{} Ex. 16, 12.15 \Vbardot{} Io. 6, 21; \textbf{LU\textsubscript{927}}}
 
 \vspace{-2mm}
 
 \responsorium{II}{temporalia/resp-comedetiscarnes.gtex}{}
+\else
+\responsoriumii
+\fi
 
 \vfill
 \pagebreak
@@ -846,17 +858,22 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \vfill
 \pagebreak
 
+\ifx\responsoriumiii\undefined
 \pars{Responsorium 3.} \scriptura{\Rbardot{} 3 Reg. 19, 6.8 \Vbardot{} Io. 6, 52; \textbf{LU\textsubscript{927}}}
 
 \vspace{-2mm}
 
 \responsorium{III}{temporalia/resp-respexitelias.gtex}{}
+\else
+\responsoriumiii
+\fi
 
 \vfill
 \pagebreak
 
 \subhora{In II. Nocturno}
 
+\ifx\nocturnoii\undefined
 \pars{Psalmus 4.} \scriptura{Ps. 19, 4; \textbf{LU\textsubscript{928}}}
 
 \vspace{-2mm}
@@ -920,6 +937,9 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 
 \vfill
 \pagebreak
+\else
+\nocturnoii
+\fi
 
 \pars{Versus.} \scriptura{Ps. 80, 17}
 
@@ -951,15 +971,21 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \vfill
 \pagebreak
 
+\ifx\responsoriumiv\undefined
 \pars{Responsorium 4.} \scriptura{\Rbardot{} Mt. 26, 26 \Vbardot{} Io. 31, 31; \textbf{LU\textsubscript{931}}}
 
 \vspace{-2mm}
 
 \responsorium{V}{temporalia/resp-coenantibus.gtex}{}
+\else
+\responsoriumiv
+\fi
 
 \vfill
 \pagebreak
 
+\ifx\lectiov\undefined
+\else
 \cuminitiali{}{temporalia/benedictio-solemn-christus.gtex}
 
 \vspace{7mm}
@@ -1143,6 +1169,7 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 
 \vfill
 \pagebreak
+\fi
 
 % Te Deum
 
@@ -1237,6 +1264,7 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \vfill
 %\pagebreak
 
+\ifx\laudes\undefined
 \pars{Psalmus 1.} \scriptura{Prv. 9, 1-2}
 
 \vspace{-0.4cm}
@@ -1360,6 +1388,9 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 
 \vfill
 \pagebreak
+\else
+\laudes
+\fi
 
 \ifx\lectiobrevis\undefined
 \capitulumLaudes
@@ -1385,6 +1416,7 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 \vfill
 \pagebreak
 
+\ifx\laudes\undefined
 \pars{Hymnus} \scriptura{Thomas de Aquino?}
 
 \cuminitiali{VIII}{temporalia/hym-VerbumSupernum.gtex}
@@ -1407,6 +1439,7 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 
 \vfill
 \pagebreak
+\fi
 
 \ifx\dominica\undefined
 \pars{Canticum Zachariæ.} \scriptura{Io. 6, 51.52}
@@ -1478,9 +1511,40 @@ Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
 
 %\sideThumbs{{\scriptsize{}Fine horarum}}
 
+\ifx\preces\undefined
 \anteOrationem
 
 \pagebreak
+\else
+\pars{Preces.}
+
+\sineinitiali{}{temporalia/tonusprecumnovum.gtex}
+
+\preces
+
+\vfill
+
+\pars{Oratio Dominica.}
+
+\cuminitiali{}{temporalia/oratiodominicaalt.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Deprecatio Gelasii}
+
+\vspace{-5mm}
+
+\grechangedim{interwordspacetext}{0.16 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{D\textsuperscript{1}}{temporalia/deprecatio4-propace.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+
+\vfill
+
+\pars{Oratio Dominica.}
+
+\cuminitiali{D}{temporalia/oratiodominica-d.gtex}
+\fi
 
 % Oratio. %%%
 \ifx\oratio\undefined
