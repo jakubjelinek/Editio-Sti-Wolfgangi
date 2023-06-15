@@ -105,7 +105,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo miserere salveregina-simplex subtuum 
 	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor) \
 	 $(addprefix benedicamus-solemnism-,1vesp 2vesp laud) \
 	 dominelabiamea inv-coriesuamorenostri benedicamus-solemnis-laud \
-	 tonusprecum oratiodominicaalt dominusnosbenedicat \
+	 tonusprecum tonusprecumnovum oratiodominicaalt dominusnosbenedicat \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
@@ -114,7 +114,8 @@ SCORES = $(addprefix ant-,salvanos-antiquo miserere salveregina-simplex subtuum 
 			   eccevidimus-CROCHU egosumpanisvitae-E611 \
 			   magnusdominusnoster-CROCHU-cumdox misitmevivenspater2 \
 			   quimanducat-E611 recesitpastornoster-CROCHU-cumdox \
-			   sicutovis-CROCHU ostenditmihiangelus-CROCHU-cumdox) \
+			   sicutovis-CROCHU ostenditmihiangelus-CROCHU-cumdox \
+			   ostenditmihiangelus-CROCHU) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) \
 	 an_regina_caeli_simplex convertenosdeus \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
@@ -138,7 +139,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../PostPentecosten ../CorpusChristi ../Paschae ../PerAnnum
+iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../PostPentecosten ../CorpusChristi ../Paschae ../PerAnnum ../OctavaNativitatis
 include $(iter)
 
 PDF = cordisiesu.pdf $(patsubst %,feria%-oci.pdf,ii iii iv v vi) sabbato-oci.pdf dominicainfraoctavamcordisiesu.pdf cordisiesu-breviori.pdf
