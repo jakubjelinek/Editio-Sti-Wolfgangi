@@ -397,7 +397,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  missussum rogatedominum erexitdominusnobis priusquamteformarem \
 			  adomniaquaemittamte-FKP netimeasafacieeorum-FKP dominusabutero-FKP \
 			  posuitosmeum-FKP hocesttestimonium regesvidebunt-FKP joannesvocabitur \
-			  ipsepraeibitanteillum tupuerpropheta apertumestoszachariae) \
+			  ipsepraeibitanteillum tupuerpropheta apertumestoszachariae \
+			  vestricapilli) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
