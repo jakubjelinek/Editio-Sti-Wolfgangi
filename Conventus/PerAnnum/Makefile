@@ -404,7 +404,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  vestricapilli simonioannisdiligis significavit inseparabilisfides \
 			  sciocuicredidiet gratiadeiinme bonumcertamen gloriosiprincipes \
 			  quinonaccipit istaestspeciosa suscitabomihi obeataepassionis \
-			  misereremei confiteortibipater cumturbaplurima dominenonnebonum) \
+			  misereremei confiteortibipater cumturbaplurima dominenonnebonum \
+			  dumperambularet relictisigitur assumpsitjesus) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -456,7 +457,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  OSacrosanctaTrinitas SomnoRefectis-worcester ConsorsPaterni-worcester \
 			  SalveMater MariaVirgo NuncAdCoronas TerrenaCessent InclitosChristi \
 			  BeataCaeli OGloriosaDomina-praglia-lh AntraDeserti ONimis \
-			  FelixPerOmnes ApostolorumPassio) \
+			  FelixPerOmnes ApostolorumPassio TeNostraLaetis) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -754,7 +755,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   dominenonadspicias-CROCHU-cumdox fratermaure-CROCHU \
 			   incolumbaespecie-CROCHU-cumdox vineamea-CROCHU \
 			   indiequainvocavi-CROCHU dumtransisset-CROCHU \
-			   fulgebuntiusti-CROCHU-cumdox) \
+			   fulgebuntiusti-CROCHU-cumdox istisuntquiviventes) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
