@@ -405,7 +405,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  sciocuicredidiet gratiadeiinme bonumcertamen gloriosiprincipes \
 			  quinonaccipit istaestspeciosa suscitabomihi obeataepassionis \
 			  misereremei confiteortibipater cumturbaplurima dominenonnebonum \
-			  dumperambularet relictisigitur assumpsitjesus) \
+			  dumperambularet relictisigitur assumpsitjesus simileestenimregnum) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
