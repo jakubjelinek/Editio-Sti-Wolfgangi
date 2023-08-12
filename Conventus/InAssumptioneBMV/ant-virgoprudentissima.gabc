@@ -2,13 +2,14 @@ name:Magn Virgo prudentissima;
 % I g4;
 % H298;
 mode:1;
+% book: * et Turco V p, 147
 transcriber:Isabelle Valloton;
 nabc-lines:1;
 %%
 (c4)
-VIr(d|ta)go(ff|vi) pru(d|ta)den(dc~|vi>)tís(f|vi)si(g|ta>)ma,(h|ta) (,)
-quo(h|vi) pro(gf|cl-lsi8)gré(f!gh|viqlhi!clhi)de(fvEDC|vi-su1suu1)ris(d|ta) qua(c|``talse4)si(d|vi) au(d|vihg)ró(dhjvGF|pevi-hhsu1suu1lss3)ra(gh|pq-)
-val(h|``vi>lse4)de(f|cllsc2lsi8) rú(g|vi)ti(fe|cllsc3)lans?(c|ta) (;)
-Fí(f|vihg)li(gf|vihhlsc2)a(f|vi) Si(efd|vihi)on,(d|talsc3) (`)
-to(dc|clMlsc3)ta(f|vi) for(g|ta>)mó(hj|pe)sa(h|ta) et(h|ta) su(h|ta)á(hj|vi)vis(hg|vi) es,(gh|pq-) (,)
-pul(f|talsi6)chra(gh|pe) ut(h|vi>) lu(g/hfg|poppt1)na,(f!gefd|peSsut2lss3) e(fg|viqlhi)léc(ghfg|vi-po-1lsc2)ta(c|ta) ut(d!efe|ql) sol.(d|ta) (::)
+VIr(d|ta)go(f|vi) pru(d|ta)den(dc~|vi>)tís(f|vi)si(gh~|ta>)ma,(h|ta) <c>*</c>(,)
+quo(h|vi) pro(ge|cl-lsi8)gré(f!gwhg|viqlhi!clhi)de(fvED|vi-su1suu1)ris(d|ta) (,) qua(c|``talse4)si(d|vi) au(d|vihg)ró(dhjvHG|pevi-hhsu1suu1lss3)ra(gOh|pq-)
+val(h>|``vi>lse4)de(ge|cllsc2lsi8) rú(g|vi)ti(fe|cllsc3)lans?(c|ta) (;)
+Fí(e|vihg)li(g|vihhlsc2)a(f|vi) Si(e|vihi)on,(d|talsc3) (`)
+to(dc|clMlsc3)ta(f|vi) for(gh~|ta>)mó(hi|pe)sa(h|ta) et(h|ta) su(h|ta)á(ixi|vi)vis(h|vi) es,(goh|pq-) (,)
+pul(f|talsi6)chra(gh|pe) ut(h>|vi>) lu(g/hfg|poppt1)na,(fgFD|peSsut2lss3) e(e!fwg|viqlhi)léc(ghfg|vi-po-1lsc2)ta(c|ta) ut(ewf|ql) sol.(d|ta) (::)
