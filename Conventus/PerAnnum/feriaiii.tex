@@ -563,12 +563,20 @@
 
 \pars{Absolutio.}
 
+\ifx\absolutio\undefined
 \cuminitiali{}{temporalia/absolutio-ipsius.gtex}
+\else
+\absolutio
+\fi
 
 \vfill
 \pagebreak
 
+\ifx\benedictioi\undefined
 \cuminitiali{}{temporalia/benedictio-solemn-deus.gtex}
+\else
+\benedictioi
+\fi
 \fi
 
 \vspace{7mm}
@@ -589,7 +597,11 @@
 \pagebreak
 
 \ifx\sineabsolutio\undefined
+\ifx\benedictioii\undefined
 \cuminitiali{}{temporalia/benedictio-solemn-christus.gtex}
+\else
+\benedictioii
+\fi
 \fi
 
 \vspace{7mm}
@@ -610,7 +622,11 @@
 \pagebreak
 
 \ifx\sineabsolutio\undefined
+\ifx\benedictioiii\undefined
 \cuminitiali{}{temporalia/benedictio-solemn-ignem.gtex}
+\else
+\benedictioiii
+\fi
 \fi
 
 \vspace{7mm}
