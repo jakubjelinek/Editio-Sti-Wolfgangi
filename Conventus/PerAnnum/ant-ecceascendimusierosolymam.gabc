@@ -1,13 +1,6 @@
-﻿name: ant-ecceascendimus-P;
-user-notes: ;
-commentary: Praglia I p. 438;
+name: Ecce ascendimus;
+book: Antiphonale Monasticum I, Praglia, p. 438;
 annotation: iv e;
-centering-scheme: english;
-%fontsize: 12;
-%spacing: vichi;
-%font: OFLSortsMillGoudy;
-%width: 4.5;
-%height: 11;
 %%
 (c4)
 EC(f_)ce(fe) a(d)scén(ed~)di(cd)mus(d) *()
@@ -18,6 +11,5 @@ tra(ed)dé(fh)tur(h) e(hg)nim(fh) gén(g)ti(fe)bus,(e.) (;)
 et(e_f) il(g)lu(f)dé(ev_DC)tur(c_) (,)
 et(cd) fla(e)gel(f)lá(gh)bi(g)tur(g) et(f) con(gh)spu(gf)é(e.)tur;(e.) (:)
 et(e) post(gh)quam(h) fla(hg)gel(fh)lá(g)ve(f)rint,(ef) (,)
-oc(gf)cí(d_c_)dent(ded) e(c.)um;(c,) (;)
+oc(gf)cí(d_c_)dent(ded) e(c.)um;(c.) (;)
 et(cd) di(e)e(f) tér(g)ti(f)a(gh) re(gf)súr(e.)get.(e.) (::)
-E(h) u(g) o(h) u(i) a(gf) e(e) (::)
