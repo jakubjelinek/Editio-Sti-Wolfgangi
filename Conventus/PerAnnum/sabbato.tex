@@ -114,6 +114,7 @@
 \cantusSineNeumas
 
 \ifx\oratio\undefined
+\ifx\sineobmv\undefined
 %\ifx\lauda\undefined
 %\else
 \newcommand{\oratio}{\pars{Oratio.}
@@ -134,6 +135,25 @@
 
 \noindent \Rbardot{} Amen.}
 %\fi
+\else
+\newcommand{\oratio}{\pars{Oratio.}
+
+\noindent Laudent te, Dómine, ora nostra, laudet ánima, laudet et vita et, quia tui múneris est quod sumus, tuum sit omne quod vívimus.
+
+\pars{Pro pace in Ucraina.} \scriptura{Sir. 50, 25; 2 Esdr. 4, 20; \textbf{H416}}
+
+\vspace{-4mm}
+
+\antiphona{II D}{temporalia/ant-dapacemdomine.gtex}
+
+\vfill
+
+\noindent Deus, a quo sancta desidéria, recta consília et iusta sunt ópera: da servis tuis illam, quam mundus dare non potest, pacem; ut et corda nostra mandátis tuis dédita, et hóstium subláta formídine, témpora sint tua protectióne tranquílla.
+
+\noindent Per Dóminum nostrum Iesum Christum, Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.
+
+\noindent \Rbardot{} Amen.}
+\fi
 \fi
 
 \hora{Ad Matutinum.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -152,6 +172,7 @@
 \vspace{2mm}
 
 \ifx\invitatorium\undefined
+\ifx\sineobmv\undefined
 \ifx\matuac\undefined
 \else
 \pars{Invitatorium.} \scriptura{Lc. 1, 28; Psalmus 94}
@@ -169,6 +190,13 @@
 \antiphona{V}{temporalia/inv-christummariaefilium.gtex}
 \fi
 \else
+\pars{Invitatorium.} \scriptura{Cf. Ps. 94, 6.7}
+
+\vspace{-4mm}
+
+\antiphona{D}{temporalia/inv-populusdomini.gtex}
+\fi
+\else
 \invitatorium
 \fi
 
@@ -176,6 +204,7 @@
 \pagebreak
 
 \ifx\hymnusmatutinum\undefined
+\ifx\sineobmv\undefined
 \ifx\matuac\undefined
 \else
 \pars{Hymnus.}
@@ -197,6 +226,17 @@
 {
 \grechangedim{interwordspacetext}{0.30 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 \antiphona{VIII}{temporalia/hym-OVirgoMater.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+\fi
+\else
+\pars{Hymnus.}
+
+\vspace{-5mm}
+
+{
+\grechangedim{interwordspacetext}{0.30 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{II}{temporalia/hym-DeusDeNullo.gtex}
 \grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
 }
 \fi
@@ -624,6 +664,7 @@
 \pagebreak
 
 \ifx\hymnuslaudes\undefined
+\ifx\sineobmv\undefined
 \ifx\lauda\undefined
 \else
 \pars{Hymnus} \scriptura{Venantius Fortunatus (\olddag{} 609)}
@@ -643,6 +684,12 @@
 \pars{Hymnus}
 
 \cuminitiali{I}{temporalia/hym-AveMarisStella.gtex}
+\vspace{-3mm}
+\fi
+\else
+\pars{Hymnus}
+
+\cuminitiali{IV}{temporalia/hym-DieiLuce.gtex}
 \vspace{-3mm}
 \fi
 \else
@@ -892,6 +939,7 @@
 \fi
 
 \ifx\lectiobrevis\undefined
+\ifx\sineobmv\undefined
 \ifx\lauda\undefined
 \else
 \pars{Lectio Brevis.} \scriptura{Gal. 4, 4-5}
@@ -917,18 +965,29 @@
 %\noindent Novos cælos et terram novam secúndum promíssum Dómini exspectámus, in quibus iustítia hábitat. Propter quod, caríssimi, hæc exspectántes satágite immaculáti et invioláti ei inveníri in pace et Dómini nostri longanimitátem salútem arbitrámini.
 %\fi
 \else
+\pars{Lectio Brevis.} \scriptura{Rom. 12, 14-16}
+
+\noindent Benedícite persequéntibus; benedícite et nolíte maledícere! Gaudére cum gaudéntibus, flere cum fléntibus. Idípsum ínvicem sentiéntes, non alta sapiéntes, sed humílibus consentiéntes.
+\fi
+\else
 \lectiobrevis
 \fi
 
 \vfill
 
 \ifx\responsoriumbreve\undefined
+\ifx\sineobmv\undefined
 %\ifx\laudac\undefined
 %\else
 \pars{Responsorium breve.} \scriptura{Lc. 1, 28}
 
 \cuminitiali{VI}{temporalia/resp-avemaria-alt.gtex}
 %\fi
+\else
+\pars{Responsorium breve.} \scriptura{Ps. 70, 23.24}
+
+\cuminitiali{VI}{temporalia/resp-exsultabuntlabiamea.gtex}
+\fi
 \else
 \responsoriumbreve
 \fi
@@ -937,6 +996,7 @@
 \pagebreak
 
 \ifx\benedictus\undefined
+\ifx\sineobmv\undefined
 \ifx\lauda\undefined
 \else
 \pars{Canticum Zachariæ.} \scriptura{\textbf{H54}}
@@ -1038,6 +1098,30 @@
 \input{temporalia/benedictus-iii-b.tex} \Abardot{}
 \fi
 \else
+\pars{Canticum Zachariæ.} \scriptura{Cf. Lc. 1, 79; \textbf{H424}}
+
+\vspace{-4mm}
+
+{
+\grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{VIII G\textsuperscript{2}}{temporalia/ant-dirigepedesnostros.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+
+%\vspace{-3mm}
+
+\scriptura{Lc. 1, 68-79}
+
+%\vspace{-2mm}
+
+\cantusSineNeumas
+\initiumpsalmi{temporalia/benedictus-initium-viii-G5-auto.gtex}
+
+%\vspace{-1.5mm}
+
+\input{temporalia/benedictus-viii-G5.tex} \Abardot{}
+\fi
+\else
 \benedictus
 \fi
 
@@ -1052,6 +1136,7 @@
 \sineinitiali{}{temporalia/tonusprecumnovum.gtex}
 
 \ifx\preces\undefined
+\ifx\sineobmv\undefined
 %\ifx\lauda\undefined
 %\else
 \noindent Salvatórem nostrum celebrántes,~\gredagger{} qui ex María Vírgine nasci dignátus est,~\grestar{} exorémus dicéntes:
@@ -1074,6 +1159,27 @@
 
 \Rbardot{} Intercédat pro nobis mater tua, Dómine.
 %\fi
+\else
+\noindent Christi benignitátem et sapiéntiam celebrémus, ~\gredagger{} qui in ómnibus frátribus nostris, præsértim mala patiéntibus, conspiciéndum et diligéndum se trádidit. ~\grestar{} Eum instánter orémus:
+
+\Rbardot{} Pérfice nos in caritáte, Dómine.
+
+\noindent Resurrectiónem tuam iam mane recólimus,~\grestar{} et benefícia redemptiónis tuæ cunctis optámus.
+
+\Rbardot{} Pérfice nos in caritáte, Dómine.
+
+\noindent Præsta, Dómine, ut hódie testimónium de te perhibeámus,~\grestar{} et hóstiam sanctam offerámus per te Patri placéntem.
+
+\Rbardot{} Pérfice nos in caritáte, Dómine.
+
+\noindent Fac ut in ómnibus tuam agnoscámus imáginem,~\grestar{} et tibi in eis ministrémus.
+
+\Rbardot{} Pérfice nos in caritáte, Dómine.
+
+\noindent Christe, vitis vera, cuius nos pálmites sumus,~\grestar{} da nos in te manére, ut fructum multum afferámus et Deum Patrem glorificémus.
+
+\Rbardot{} Pérfice nos in caritáte, Dómine.
+\fi
 \else
 \preces
 \fi

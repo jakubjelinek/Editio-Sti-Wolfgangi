@@ -408,7 +408,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  misereremei confiteortibipater cumturbaplurima dominenonnebonum \
 			  dumperambularet relictisigitur assumpsitjesus simileestenimregnum \
 			  accessitiesus cumquevidissetventum egressusiesussecessit \
-			  quemdicunthominesesse tuesmagistermeus ecceascendimusierosolymam) \
+			  quemdicunthominesesse tuesmagistermeus ecceascendimusierosolymam \
+			  dirigepedesnostros) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -461,7 +462,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  SalveMater MariaVirgo NuncAdCoronas TerrenaCessent InclitosChristi \
 			  BeataCaeli OGloriosaDomina-praglia-lh AntraDeserti ONimis \
 			  FelixPerOmnes ApostolorumPassio TeNostraLaetis MagnePater \
-			  FulgetInCaelisAugustino) \
+			  FulgetInCaelisAugustino DeusDeNullo DieiLuce) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -474,7 +475,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   laetabiturjustus stetitangelus inconspectuangelorum \
 			   narraveruntlaudes exaltabotedomine laetaminiindomino \
 			   superteierusalem domumtuam sanctitui lexdeiejus diffusaest \
-			   vosmisistis inclinacormeumdeus internatos inomnemterram) \
+			   vosmisistis inclinacormeumdeus internatos inomnemterram \
+			   exsultabuntlabiamea) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 oratiodominica-d deprecatio4 deprecatio4-propace \
@@ -494,7 +496,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  deumquiglorificatur domumdeidecet regemconfessorum iesumchristum \
 			  laudemusdeumnostrum laudemusdeumnostruminfestivitate \
 			  christumregemquisuam agnumdeiquemioannem regiquaefecitopera \
-			  avemaria-simplex regempraecursoris-FKP) \
+			  avemaria-simplex regempraecursoris-FKP populusdomini) \
 	 $(addprefix versus-,memorfui medianocte praevenerunt aporta-alt misericordiaetuae \
 			     dataest-communis afferte adorabunt) \
 	 dominelabiamea dominelabiamea-praglia tonusprecum tonusprecumnovum dominusnosbenedicat \
