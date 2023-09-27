@@ -410,7 +410,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  accessitiesus cumquevidissetventum egressusiesussecessit \
 			  quemdicunthominesesse tuesmagistermeus ecceascendimusierosolymam \
 			  dirigepedesnostros dixitiesusdiscipulissipeccaverit \
-			  dixitautemdominusservoredde) \
+			  dixitautemdominusservoredde morbidisrefugium-cgp \
+			  laudemotus-cgp laudantdominum-cgp cordeetlingua-cgp) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -477,7 +478,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   narraveruntlaudes exaltabotedomine laetaminiindomino \
 			   superteierusalem domumtuam sanctitui lexdeiejus diffusaest \
 			   vosmisistis inclinacormeumdeus internatos inomnemterram \
-			   exsultabuntlabiamea) \
+			   exsultabuntlabiamea magnaestgloria) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 oratiodominica-d deprecatio4 deprecatio4-propace \
@@ -783,7 +784,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 	 benedictus-initium-vii-a-trans dan3-initium-iv-E benedictus-initium-visoll-F \
 	 ps62-initium-i-g ps102xiv_xxii-initium-viii-G4 ps62-initium-ii-D dan3-initium-v-g \
 	 benedictus-initium-ivsoll-E ps91ii-initium-vii-c2 ps46-initium-i-a ps3-initium-vii-c-trans \
-	 sapientia3-initium-iii-a
+	 sapientia3-initium-iii-a benedictus-initium-v-a
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \
