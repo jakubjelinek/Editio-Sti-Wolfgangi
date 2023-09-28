@@ -1,11 +1,12 @@
 transcriber: Isabelle Valloton;
+nabc-lines: 1;
 %%
 (c3)
-STe(ef!gwhGFg)tit(fe) án(g/hi~)gel(i!jwkJHiwjij)us(ji) ju(ij)xta(i) a(ihhvGF)ram(g!hwiHGFgwhGF~) tem(e!fog>)pli,(fe) (;)
-ha(e)bens(-ehg~) thu(hg)rí(hg/he/fgf)bu(ed!ewfef)lum(fe) áu(e)re(ei)um(i) in(i) ma(i)nu(hi) su(i)a,(ikiih) (;)
-et(i) da(i)ta(-ikj) sunt(kl~) e(llo!mv)i(i) in(ki!jwkj)cén(i)sa (ki!jwkj) mul(i)ta;(ijiio/ghg) *(:)
-Et(hg) as(hi)cén(i//jhi>)dit(hho!iv) fu(fe/f!gwhGFg)mus(gf) a(hg)ró(gi/jv)ma(ivHGhwi)tum(ijIHGhvGFEfe) (,)
-de(df!gwhhi) ma(hi)nu(h) án(h)ge(hg!hwihi)li(ih) (,)
-in(hg~) con(hi~)spéc(ivHGhwi)tu(ijg!hwiHGFgwhGF) Dó(e)mi(ef!gvFEf)ni.(fe) <sp>V/</sp>.(::)
-In(i) con(i)spéc(i!jw!kvJI)tu(hi/hhog) an(h)ge(h)ló(h)rum(ig~) psal(hi)lam(hi) ti(i!jwkj)bi,(ji) et(hi/hhog) a(hih)do(i)rá(ij)bo(i) ad(i) tem(i)plum(-ijij/IH) san(ih~)ctum(h!iwji/jkj) tu(ih!iwjij)um.(ivHGhg) +(::)
-Et(hg) as(hi)cén(i//jhi>)dit.(hho!iv) (::)
+STe(ef!gwhGFg|ql-hippu2su2vihj)tit(fe|cl-) án(g/hi~|vi-ta>hh)gel(i!jwkJHiwjij|vi-hhql-hksut2qlhl!pohl)us(ji|cl-) ju(ij|pe)xta(i|ta) a(ih|clS|hvGF|ci-hg)ram(g!hwiHGFgwhGF~|viqlhi!vshisut2ql-hjsu1sux1) tem(e!fog>|sa>2)pli,(fe|cl-) (;)
+ha(e|ta)bens(-ehg~|pe>) thu(hg|```cl-lse4)rí(hg/he/|pflsc2|fgf|to)bu(ed!ewfef|cl-qlhg!pohg)lum(fe|cl-) áu(e|ta)re(ei|pelss3)um(i|vi) in(i|vi) ma(i|vi)nu(hi|pe) su(i|vi)a,(ikiih|to-1hmlsco2cl-hm) (;)
+et(i|vi) da(i|vi)ta(-ikj|tohk) sunt(kl~|ta>hl) e(llo!mv|sahplsal3)i(i|ta) in(ki!jwkj|cl-hkqlhl!cl-hl)cén(i|ta)sa(ki!jwkj|cl-hkqlhk!cl-hk) mul(i|ta)ta;(ijiio/|to//or|ghg|tohg) *(:)
+Et(hg|cllsc2) as(hi|pe)cén(i//jhi>|vi-vs>hh)dit(hho!iv|sa1) fu(fe/f!gwhGFg|cl-ql-hhppt1su2vihi)mus(gf|cl-) a(hg|cllsc2)ró(gi/jv|pe-vihi)ma(ivHGhwi|ci-qlhg)tum(ijIHG|pe-1su1sut2|hvGFE|vi-suu1su2|fe|cl-) (,)
+de(df!gwhhi|ql-hhppt2pehk) ma(hi|pe)nu(h|tahg) án(h|tahg)ge(hg!hwihi|cl-qihg!pohg)li(ih|cl-lse3) (,)
+in(hg~|vi>) con(hi~|ta>)spéc(ivHGhwi|ci-hhqihh)tu(ijg!hwiHGF|toS1qi-hhsut3|gwhGF|ql-hhsu2) Dó(e|ta)mi(ef!gvFEf|vihhpp2su2vihj)ni.(fe|cl-) <sp>V/</sp>.(::)
+In(i|ta) con(i|ta)spéc(i!jw!kvJI|ql-hkppt1su2)tu(hi/hhog|peSpr) an(h|ta)ge(h|ta)ló(h|ta)rum(ig~|vi>lss2) psal(hi|pe)lam(hi|pe) ti(i!jwkj|vi-qlhj!clhj)bi,(ji|cl-) et(hi/hhog|peShgpihi) a(hih|to)do(i|vihg)rá(ij|pehg)bo(i|ta) ad(i|ta) tem(i|ta)plum(-ijij/IH|toci-) san(ih~|vi>)ctum(h!iwji/jkj|qihi!clhippt1tohk) tu(ih!iwjij|cl-qlhg!pohg)um.(ivHGhg|ci-cl-) +(::)
+Et(hg|cllsc2) as(hi|pe)cén(i//jhi>|vi-vs>hh)dit.(hho!iv|sa1) (::)
