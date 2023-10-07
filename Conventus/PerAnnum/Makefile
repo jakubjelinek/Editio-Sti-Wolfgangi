@@ -411,7 +411,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  quemdicunthominesesse tuesmagistermeus ecceascendimusierosolymam \
 			  dirigepedesnostros dixitiesusdiscipulissipeccaverit \
 			  dixitautemdominusservoredde morbidisrefugium-cgp \
-			  laudemotus-cgp laudantdominum-cgp cordeetlingua-cgp) \
+			  laudemotus-cgp laudantdominum-cgp cordeetlingua-cgp \
+			  malosmaleperdetet) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
