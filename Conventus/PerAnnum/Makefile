@@ -412,7 +412,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  dirigepedesnostros dixitiesusdiscipulissipeccaverit \
 			  dixitautemdominusservoredde morbidisrefugium-cgp \
 			  laudemotus-cgp laudantdominum-cgp cordeetlingua-cgp \
-			  malosmaleperdetet) \
+			  malosmaleperdetet nuptiaequidemparataesuntsed) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -774,7 +774,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   venitmichael-CROCHU fidelissermo-CROCHU \
 			   inconspectuangelorum-CROCHU-cumdox agnusdeichristus-CROCHU-cumdox \
 			   sciocuicredidi-CROCHU repositaestmihicorona-CROCHU-cumdox \
-			   praecipitadomine-CROCHU-cumdox) \
+			   praecipitadomine-CROCHU-cumdox dominesecundum-CROCHU \
+			   peccantemme-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_salve_regina ant-salveregina-simplex ant-salveregina-cisterciensis benedictio-noctemquietam \
