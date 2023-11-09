@@ -468,7 +468,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  SalveMater MariaVirgo NuncAdCoronas TerrenaCessent InclitosChristi \
 			  BeataCaeli OGloriosaDomina-praglia-lh AntraDeserti ONimis \
 			  FelixPerOmnes ApostolorumPassio TeNostraLaetis MagnePater \
-			  FulgetInCaelisAugustino DeusDeNullo DieiLuce IsteConfessor-alt) \
+			  FulgetInCaelisAugustino DeusDeNullo DieiLuce IsteConfessor-alt \
+			  RexChriste) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
