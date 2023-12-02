@@ -490,6 +490,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			   beatammedicent-sinedox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
+	 tedeum-cisterciense \
 	 an_alma_redemptoris_mater an_alma_redemptoris_mater-simplex benedictio-noctemquietam \
 	 habacuc-initium-iv_-e $(addsuffix -initium-e,ps48ii ps65i ps97 ps98 ps105i) ps10-initium-ii_-f \
 	 benedictus-initium-viisoll-d tonusprecum tonusprecumnovum dominusnosbenedicat ps147-initium-e \
