@@ -129,7 +129,7 @@ MODUS-80 = i-g5
 MODUS-83 = i-g3 ii_-B vii-c viii-G
 MODUS-84 = ii_-a vi-F viii-G
 MODUS-85 = i-g3 ii-D
-MODUS-86 = i-g iv-A vi-F vii-a viii-G viii-C2
+MODUS-86 = i-g ii_-c iv-A vi-F vii-a viii-G viii-C2
 MODUS-87 = i-g3 v-a
 MODUS-88ii_xix = viii-G
 MODUS-88xx_xxx = viii-G
@@ -145,7 +145,7 @@ MODUS-92 = i-g i-a viii-G
 MODUS-95 = i-d ii-D viii-C2
 MODUS-96 = iii-a2 vi-F viii-g
 MODUS-97 = ii-D e
-MODUS-98 = iv-e2 e
+MODUS-98 = iv-e2 viii-g e
 MODUS-99 = i-f ii_-B iv_-e vii-a vii-d viii-G2 e
 MODUS-100 = ii_-a viii-G
 MODUS-101ii_xii = i-a
@@ -233,7 +233,7 @@ MODUS-isaiae4 = ii_-B vii-a vii-c viii-G6 viii-g2
 MODUS-isaiae5 = i-g ii_-B iv-E iv_-e
 MODUS-isaiae7 = d-g
 MODUS-isaiae8 = ii_-B viii-g d-g
-MODUS-isaiae9 = i-g ii-D
+MODUS-isaiae9 = i-g ii-D ii_-B
 MODUS-isaiae10 = i-g vi-F vii-b
 MODUS-isaiae11 = vii-b viii-g
 MODUS-isaiae13 = i-g
@@ -403,7 +403,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			   sanaanimammeam avemaria inmanus ostendenobis veni superte \
 			   christe crastinadie christefilideivivi-advdom constitueseos \
 			   fortitudomeaetlausmea sapientiamsanctorum deusomnipotens \
-			   superteierusalem diffusaest) \
+			   superteierusalem diffusaest subvenite-gn) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(addprefix capitulum-,Benedictio BenedictusDeus NoxPraecessit OAltitudo AbInitio \
 				tuautem FratresHora GaudeteInDomino HoraEst IpseDeus \
@@ -415,7 +415,7 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			     egredietur emitte exsion rorate voxclamantis voxclamantis-simplex) \
 	 $(addprefix oratio,1 1vo 2vo 3vo 4vo bmv) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat oratiodominica-d \
-	 deprecatio4-propace \
+	 deprecatio4-propace requiescant \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,feria-advequad minor officium-bmv dominica-advequad \
 				  solemnism-laud festis-bmv solemnitatibus-bmv memoria-laudes) \
@@ -523,7 +523,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../InNativitateBMV/cantus/amon33 ../CorpusChristi ../InNativitateBMV/cantus/nrom02 ../PostPentecosten ../PerAnnum ../Andreae ../Paschae ../InConceptioneBMV ../Catharinae ../Scholasticae ../InAnnuntiationeBMV ../Quadragesimae ../OctavaNativitatis ../PresentationeBMV ../InAssumptioneBMV ../Agnetis
+iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../InNativitateBMV/cantus/amon33 ../CorpusChristi ../InNativitateBMV/cantus/nrom02 ../PostPentecosten ../PerAnnum ../Andreae ../Paschae ../InConceptioneBMV ../Catharinae ../Scholasticae ../InAnnuntiationeBMV ../Quadragesimae ../OctavaNativitatis ../PresentationeBMV ../InAssumptioneBMV ../Agnetis ../Defunctorum
 include $(iter)
 
 FERIAE = ii iii iv v vi
