@@ -101,8 +101,8 @@ MODUS-61 = iii-g
 MODUS-62 = i-d i-d3 i-f i-g ii-D iii-a2 iii-a4 iii-e iv-d iv-E iv-e2 v-a vii-a vii-c2 vii-d viii-c viii-g viii-G viii-G5 viii-g5 viii-G6 viii-g6 viii-C2
 MODUS-63 = ii-D vii-c viii-G
 MODUS-64 = viii-A
-MODUS-65i = i-a4 vi-F e
-MODUS-65ii = i-f i-g ii_-a
+MODUS-65i = i-a4 vi-F viii-a e
+MODUS-65ii = i-f i-g ii_-a ii_-B
 MODUS-66 = i-g ii-D ii_-B ii_-a vi-F vii-b e
 MODUS-67i = vii-a
 MODUS-67ii = i-f ii-D
@@ -489,7 +489,8 @@ SCORES = $(addprefix ant-,almaredemptoris-dominican almaredemptoris-solesmes \
 			   rogavidominum-CROCHU eugeservebone-CROCHU \
 			   iuravidicitdominus-CROCHU-cumdox iuravidicitdominus-CROCHU \
 			   beatammedicent-sinedox ipsisumdesponsata-CROCHU \
-			   venisponsachristi-CROCHU-cumdox) \
+			   venisponsachristi-CROCHU-cumdox sanctificaminifilii-CROCHU-cumdox \
+			   constantesestote-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 tedeum-cisterciense \
