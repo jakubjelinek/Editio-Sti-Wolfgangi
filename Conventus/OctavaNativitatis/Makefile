@@ -196,7 +196,7 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			  inaeternum tudomine innocensmanibus exaltateregem rectosdecet \
 			  factusestadiutormeus retribuetmihi domineincaelo dominemagnuses \
 			  rexomnisterrae dominusfirmamentum mesuscepit vivitdominus exsurgamdiluculo \
-			  populusmeusait magnusdominus) \
+			  populusmeusait magnusdominus hicestdiscipulusille-FK) \
 	 $(addprefix capitulum-,Multifariam ApparuitGratia ApparuitBenignitas FratresQuanto \
 				QuiTimet VidiSupra Surge StephanusAutem) \
 	 $(addprefix hym-,ASolisOrtus ChristeRedemptor CandorAEternae CandorAEternae-simplex \
