@@ -1,0 +1,283 @@
+% LuaLaTeX
+
+\documentclass[a4paper, twoside, 12pt]{article}
+\usepackage[latin]{babel}
+%\usepackage[landscape, left=3cm, right=1.5cm, top=2cm, bottom=1cm]{geometry} % okraje stranky
+%\usepackage[landscape, a4paper, mag=1166, truedimen, left=2cm, right=1.5cm, top=1.6cm, bottom=0.95cm]{geometry} % okraje stranky
+\usepackage[landscape, a4paper, mag=1400, truedimen, left=0.5cm, right=0.5cm, top=0.5cm, bottom=0.5cm]{geometry} % okraje stranky
+
+\usepackage{fontspec}
+\setmainfont[FeatureFile={junicode.fea}, Ligatures={Common, TeX}, RawFeature=+fixi]{Junicode}
+%\setmainfont{Junicode}
+
+% shortcut for Junicode without ligatures (for the Czech texts)
+\newfontfamily\nlfont[FeatureFile={junicode.fea}, Ligatures={Common, TeX}, RawFeature=+fixi]{Junicode}
+
+\usepackage{multicol}
+\usepackage{color}
+\usepackage{lettrine}
+\usepackage{fancyhdr}
+
+% usual packages loading:
+\usepackage{luatextra}
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{gregoriotex} % for gregorio score inclusion
+\usepackage{gregoriosyms}
+\usepackage{wrapfig} % figures wrapped by the text
+\usepackage{parcolumns}
+\usepackage[contents={},opacity=1,scale=1,color=black]{background}
+\usepackage{tikzpagenodes}
+\usepackage{calc}
+\usepackage{longtable}
+\usetikzlibrary{calc}
+
+\setlength{\headheight}{14.5pt}
+
+\input{conventuscommune.tex} % Often used macros
+
+\newcommand{\annusEditionis}{2020}
+
+\setlength{\columnsep}{30pt} % prostor mezi sloupci
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Here we set the space around the initial.
+% Please report to http://home.gna.org/gregorio/gregoriotex/details for more details and options
+\grechangedim{afterinitialshift}{2.2mm}{scalable}
+\grechangedim{beforeinitialshift}{2.2mm}{scalable}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\grechangedim{annotationraise}{-0.2cm}{scalable}
+
+% Here we set the initial font. Change 38 if you want a bigger initial.
+% Emit the initials in red.
+\grechangestyle{initial}{\color{red}\fontsize{38}{38}\selectfont}
+
+\pagestyle{empty}
+
+%%%% Titulni stranka
+\begin{titulusOfficii}
+\nomenFesti{Ad Completorium.}
+\celebratio{In tempore Quadragesimæ.}
+\end{titulusOfficii}
+
+\pars{} \scriptura{}
+
+\vfill
+
+\begin{center}
+%Ad usum et secundum consuetudines chori \guillemotright{}Conventus Choralis\guillemotleft.
+
+%Editio Sancti Wolfgangi \annusEditionis
+\end{center}
+
+\pagebreak
+
+\renewcommand{\headrulewidth}{0pt} % no horiz. rule at the header
+\fancyhf{}
+\pagestyle{fancy}
+
+\cantusSineNeumas
+
+\rubrica{Lector petit benedictionem, dicens:}
+
+\cuminitiali{}{temporalia/jubedomnebenedicere.gtex}
+
+\vfill
+
+\pars{Benedictio.}
+
+\cuminitiali{}{temporalia/benedictio-noctemquietam.gtex}
+
+\vfill
+
+\pars{Lectio brevis.} \scriptura{1Ptr. 5, 8-9}
+
+\cuminitiali{}{temporalia/lectiobrevis-fratressobrii.gtex}
+
+\vfill
+
+\noindent \Vbardot{} Adiutórium nostrum in nómine Dómini.
+
+\noindent \Rbardot{} Qui fecit cælum, et terram.
+
+\vfill
+\pagebreak
+
+\pars{Confessio.}
+
+\noindent Confíteor Deo omnipoténti, beátæ Maríæ semper Vírgini, beáto
+Michaéli Archángelo, beáto Ioánni Baptístæ, sanctis Apóstolis Petro
+et Paulo, ómnibus Sanctis, et vobis fratres: quia peccávi nimis cogitatióne,
+verbo et ópere: mea culpa, mea culpa, mea máxima culpa.
+Ideo precor beátam Maríam semper Vírginem, beátum Michaélem
+Archángelum, beátum Ioánnem Baptístam, sanctos Apóstolos Petrum
+et Paulum, omnes Sanctos, et vos fratres, oráre pro me ad Dóminum
+Deum nostrum.
+
+\vfill
+
+\noindent \Vbardot{} Misereátur nostri omnípotens Deus, et dimíssis peccátis nostris, perdúcat
+nos ad vitam ætérnam. \Rbardot{} Amen.
+
+\vfill
+
+\noindent \Vbardot{} Indulgéntiam, absolutiónem et remissiónem peccatórum nostrórum tríbuat nobis
+omnípotens et miséricors Dóminus. \Rbardot{} Amen.
+
+\vfill
+
+\rubrica{Et facta absolutione dicitur:}
+
+\sineinitiali{temporalia/convertenosdeus.gtex}
+
+\vfill
+
+\cuminitiali{}{temporalia/deusinadiutorium-communis-tq.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 1.}
+
+\antiphona{VIII G}{temporalia/ant-miserere.gtex}
+
+\scriptura{Ps. 4}
+
+\initiumpsalmi{temporalia/ps4-initium-viii-G-auto.gtex}
+
+\input{temporalia/ps4-viii-G.tex}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 2.} \scriptura{Ps. 90}
+
+\initiumpsalmi{temporalia/ps90-initium-viii-G-auto.gtex}
+
+\input{temporalia/ps90-viii-G.tex}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 3.} \scriptura{Ps. 133}
+
+\initiumpsalmi{temporalia/ps133-initium-viii-G-auto.gtex}
+
+\input{temporalia/ps133-viii-G.tex}
+
+\vfill
+
+\antiphona{}{temporalia/ant-miserere.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Hymnus.}
+
+\antiphona{II}{temporalia/hym-TeLucis-quadragesimae.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Capitulum.} \scriptura{Ier. 14, 9}
+
+\cuminitiali{}{temporalia/capitulum-tuautem.gtex}
+
+\vfill
+
+\pars{Responsorium breve.} \scriptura{Ps. 30, 6}
+
+\cuminitiali{VI}{temporalia/resp-inmanus.gtex}
+
+\vfill
+
+\pars{Versus.} \scriptura{Ps. 16, 8}
+
+\sineinitiali{temporalia/versus-custodi.gtex}
+
+\vfill
+\pagebreak
+
+\cantusCumNeumis
+
+\pars{Canticum Simeonis.}
+
+\vspace{-3mm}
+
+\antiphona{III a}{temporalia/ant-salvanos-antiquo.gtex}
+
+\scriptura{Lc. 2, 29-32}
+
+\vspace{-2mm}
+
+\initiumpsalmi{temporalia/nuncdimittis-initium-iii-a-auto.gtex}
+
+\input{temporalia/nuncdimittis-iii-a.tex} \Abardot{}
+
+\vfill
+
+\rubrica{Ante Orationem, cantatur a Superiore:}
+
+\vspace{3mm}
+
+\pars{Supplicatio Litaniæ.}
+
+\cuminitiali{}{temporalia/supplicatiolitaniae.gtex}
+
+\vspace{7mm}
+
+\pars{Oratio Dominica.}
+
+\noindent Pater noster.
+
+\vfill
+\pagebreak
+
+\sineinitiali{temporalia/domineexaudi-simplex.gtex}
+
+\vspace{7mm}
+
+\pars{Oratio.}
+
+\cantusSineNeumas
+
+\cuminitiali{}{temporalia/oratio-visita.gtex}
+
+\vfill
+
+\noindent \Vbardot{} Dómine, exáudi oratiónem meam. \Rbardot{} Et clamor meus ad te véniat.
+
+\vfill
+
+\sineinitiali{temporalia/benedicamus-minor.gtex}
+
+\vfill
+
+\pars{Benedictio.}
+
+\noindent Benedícat et custódiat nos omnípotens et miséricors Dóminus,~\gredagger{}
+Pater, et Fílius, et Spíritus Sanctus. \Rbardot{} Amen.
+
+\vfill
+\pagebreak
+
+\pars{Antiphona finalis B. M. V.}
+
+\vspace{-4mm}
+
+\antiphona{VI}{temporalia/ant-avereginacaelorum-simplex.gtex}
+
+\vfill
+
+\rubrica{vel:}
+
+\vspace{-4mm}
+
+\antiphona{VI}{temporalia/ant-avereginacaelorum-solemnis.gtex}
+
+\vfill
+
+\sineinitiali{temporalia/versus-gaude.gtex}
+
+\end{document}
