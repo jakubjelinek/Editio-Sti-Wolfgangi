@@ -53,7 +53,8 @@ SCORES = $(addprefix ant-,aitpetrusprincipibus misitdominus eccenubeslucida \
 			  dixitautemdominussimoni tueschristus tueschristus \
 			  dixitiesuspetro quodcumqueligaveris dixitautemdominusservo \
 			  petreamasme petrusautemservabatur tuespetrus tuespetrus \
-			  dumessetsummus) \
+			  dumessetsummus aitpetrusprincipibussacerdotum misitdominus-tq \
+			  dapacemdomine) \
 	 $(addprefix hym-,DivinaVox IamBone PetrusBeatus) \
 	 $(addprefix resp-,constitueseos) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis solemnis-tq alter-quad) \
