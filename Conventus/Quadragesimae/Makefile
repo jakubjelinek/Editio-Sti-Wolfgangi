@@ -499,7 +499,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   splendidafactaestfacies-CROCHU attenditepopulemeus-CROCHU \
 			   audiisraelpraecepta-CROCHU-cumdox vosquitransituriestis-CROCHU \
 			   sicutfuicummoyse-CROCHU-cumdox adduxivosperdesertum-CROCHU \
-			   populemeusquidfeci-CROCHU eccemittoangelummeum-CROCHU-cumdox \
+			   populemeusquidfeci-CROCHU eccemittoangelummeum-CROCHU \
 			   istisuntdies-CROCHU multiplicatisunt-CROCHU quicustodiebant-CROCHU \
 			   deusmeusestune-CROCHU inteiactatussum-CROCHU inproximoest-CROCHU \
 			   adiutoretsusceptormeus-CROCHU doceaminiquosviastuas-CROCHU \
