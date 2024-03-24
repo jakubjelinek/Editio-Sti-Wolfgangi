@@ -38,7 +38,7 @@ MODUS-17xxi_xxx = iv_-e
 MODUS-17xxxi_xxxv = viii-G
 MODUS-17xxxvi_xlvi = vii-c
 MODUS-17xlvii_li = vii-c2
-MODUS-18i = ii-D
+MODUS-18i = ii-D viii-G
 MODUS-23 = iv_-e viii-G
 MODUS-28 = vii-a
 MODUS-30i = viii-G
@@ -57,7 +57,7 @@ MODUS-37vi_xiii = ii_-a
 MODUS-37xiv_xxiii = ii-A
 MODUS-38i = iv-E
 MODUS-38ii = vii-c
-MODUS-41 = ii-D
+MODUS-41 = ii-D iv-E
 MODUS-42 = vi-F
 MODUS-43i = viii-G
 MODUS-43ii = ii_-a viii-C
@@ -181,7 +181,7 @@ MODUS-149 = i-a i-g i-g3 i-g5 ii-D ii_-B vii-a
 MODUS-150 = i-a i-g ii-D ii_-B vii-a e-e
 MODUS-anna = ii-D
 MODUS-david = i-f
-MODUS-ecclesiastici = iii-a
+MODUS-ecclesiastici = ii-D iii-a
 MODUS-ecclesiasticus36 = i-f viii-G5 d-g
 MODUS-ezechiae = e
 MODUS-ezechiae2 = i-d iv_-e
@@ -355,7 +355,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  eccedeusnoster dicoautemvobis inhoccognoscentomnes \
 			  praedicanspraeceptumdomini vocemeaaddominum aquaquamego \
 			  rabbiquidpeccavit lazarusamicusnoster malosmaleperdetet \
-			  eccequambonumet spiritusapientiae) \
+			  eccequambonumet spiritusapientiae anxiatusest \
+			  frameasuscitareadversus inundaveruntaquae pateriustemundus) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -515,7 +516,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   quadragintadiesetnoctes-CROCHU emisitnoecolumbam \
 			   egressonoedearcha-sinedox movensigiturabram \
 			   crediditabrahamdeo-cumdox factusestsermodomini \
-			   venihodieadfontemaquae-CROCHU) \
+			   venihodieadfontemaquae-CROCHU viriimpiidixerunt \
+			   opprobriumfactussum insurrexeruntinme) \
 	 $(addprefix oratio,-visita bmv 1 2 3 4 5) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
@@ -540,7 +542,7 @@ HEBDOMADAE = postcinerum i ii iii iv v
 PDFI = $(foreach H,$(HEBDOMADAE),$(patsubst %,feria%-$(H).pdf,$(FERIAE)))
 PDFII = $(foreach H,$(HEBDOMADAE),sabbato-$(H).pdf)
 PDFIII = $(foreach H,$(HEBDOMADAE),dominica-$(H).pdf)
-PDF = $(PDFI) $(PDFII) $(PDFIII) completorium.pdf feriaiv-cinerum.pdf
+PDF = $(PDFI) $(PDFII) $(PDFIII) completorium.pdf feriaiv-cinerum.pdf $(patsubst %,feria%-mh.pdf,ii iii iv)
 all: $(PDF)
 iter = $(patsubst %,iterator.mk,$(iter-left))
 define iter-doit
@@ -556,7 +558,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../PostPentecosten ../PerAnnum ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../InNativitateBMV/cantus/amon33 ../CorpusChristi ../InNativitateBMV/cantus/nrom02 ../InAssumptioneBMV ../InConceptioneBMV ../OctavaNativitatis ../Septuagesimae ../Adventus
+iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../PostPentecosten ../PerAnnum ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../InNativitateBMV/cantus/amon33 ../CorpusChristi ../InNativitateBMV/cantus/nrom02 ../InAssumptioneBMV ../InConceptioneBMV ../OctavaNativitatis ../Septuagesimae ../Adventus ../HebdomadaSancta
 include $(iter)
 iter-left: $(LAPSALMSSINEDOX)
 define iter-doit
