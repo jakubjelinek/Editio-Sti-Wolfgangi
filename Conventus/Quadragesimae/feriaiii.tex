@@ -580,6 +580,7 @@
 \vfill
 \pagebreak
 
+\ifx\laudes\undefined
 \ifx\lauda\undefined
 \else
 \pars{Psalmus 1.} \scriptura{Ps. 23, 4.3}
@@ -826,6 +827,9 @@
 \vfill
 \pagebreak
 \fi
+\else
+\laudes
+\fi
 
 \ifx\lectiobrevis\undefined
 \ifx\lauda\undefined
@@ -1038,6 +1042,7 @@
 \vfill
 \pagebreak
 
+\ifx\sinevesperas\undefined
 \hora{Ad Vesperas.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cantusSineNeumas
@@ -1284,5 +1289,6 @@
 \vspace{1mm}
 
 \vfill
+\fi
 
 \end{document}

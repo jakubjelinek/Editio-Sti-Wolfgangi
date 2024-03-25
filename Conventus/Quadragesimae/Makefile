@@ -58,7 +58,7 @@ MODUS-37xiv_xxiii = ii-A
 MODUS-38i = iv-E
 MODUS-38ii = vii-c
 MODUS-41 = ii-D iv-E
-MODUS-42 = vi-F
+MODUS-42 = vi-F vii-d2
 MODUS-43i = viii-G
 MODUS-43ii = ii_-a viii-C
 MODUS-43iii = i-g3 ii-D
@@ -74,7 +74,7 @@ MODUS-54ii = vii-c2
 MODUS-54iii = viii-G
 MODUS-56 = viii-g
 MODUS-62 = i-f i-g ii_-B vii-a viii-G e
-MODUS-64 = viii-A
+MODUS-64 = ii-D viii-A
 MODUS-65i = vi-F
 MODUS-65ii = ii_-a
 MODUS-66 = e dir
@@ -183,7 +183,7 @@ MODUS-anna = ii-D
 MODUS-david = i-f
 MODUS-ecclesiastici = ii-D iii-a
 MODUS-ecclesiasticus36 = i-f viii-G5 d-g
-MODUS-ezechiae = e
+MODUS-ezechiae = ii_-B e
 MODUS-ezechiae2 = i-d iv_-e
 MODUS-habacuc = iv_-e
 MODUS-isaiae = viii-G
@@ -356,7 +356,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  praedicanspraeceptumdomini vocemeaaddominum aquaquamego \
 			  rabbiquidpeccavit lazarusamicusnoster malosmaleperdetet \
 			  eccequambonumet spiritusapientiae anxiatusest \
-			  frameasuscitareadversus inundaveruntaquae pateriustemundus) \
+			  frameasuscitareadversus inundaveruntaquae pateriustemundus \
+			  discernecausammeam oblatusest clarificamepater) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -517,7 +518,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   egressonoedearcha-sinedox movensigiturabram \
 			   crediditabrahamdeo-cumdox factusestsermodomini \
 			   venihodieadfontemaquae-CROCHU viriimpiidixerunt \
-			   opprobriumfactussum insurrexeruntinme) \
+			   opprobriumfactussum insurrexeruntinme contumeliasetterrores \
+			   deusisrael synagogapopulorum) \
 	 $(addprefix oratio,-visita bmv 1 2 3 4 5) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
