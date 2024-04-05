@@ -261,7 +261,7 @@ LAPSALMOPTSACC = --accents $(word 1,$(TONUS)):$(word 3,$(TONUS)) \
 LAPSALMOPTS = $(LAPSALMOPTS_COMMON) $(LAPSALMOPTSACC)
 LAPSALMS = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-$(M).tex))
 LAPSALMSEXTRA = $(foreach C,benedictus magnificat $(CANTICIS),$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/$(C)-$(M).tex))
-LAPSALMSSINEDOX = $(foreach P,2 4 14 15 21 23 26 29 35 37 39 50 53 58 63 68 69 70 71 72 73 74 75 76 84 87 89 91 93 115 142 147 148 149 150,$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-$(M)-sinedox.tex)) \
+LAPSALMSSINEDOX = $(foreach P,2 4 14 15 21 23 26 29 35 37 39 50 53 58 63 68 69 70 71 72 73 74 75 76 84 87 89 91 93 115 142 146 147 148 149 150,$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-$(M)-sinedox.tex)) \
 		  $(foreach C,dan3 moysis habacuc ezechiae benedictus,$(foreach M,$(MODUS-$(C)),$(TMP_DIR)/$(C)-$(M)-sinedox.tex))
 ALLLAPSALMS = $(LAPSALMS) $(LAPSALMSEXTRA)
 SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo \

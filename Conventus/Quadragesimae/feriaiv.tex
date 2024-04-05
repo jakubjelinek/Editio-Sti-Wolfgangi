@@ -592,6 +592,7 @@
 \vfill
 \pagebreak
 
+\ifx\laudes\undefined
 \ifx\lauda\undefined
 \else
 \pars{Psalmus 1.} \scriptura{Ps. 35, 6}
@@ -822,6 +823,9 @@
 \vfill
 \pagebreak
 \fi
+\else
+\laudes
+\fi
 
 \ifx\lectiobrevis\undefined
 \ifx\laudb\undefined
@@ -1050,6 +1054,7 @@ Spíritus Sancti tui cáritas dírigat corda et lábia nostra,~\gredagger{} ut i
 \vfill
 \pagebreak
 
+\ifx\sinevesperas\undefined
 \hora{Ad Vesperas.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cantusSineNeumas
@@ -1286,5 +1291,6 @@ Spíritus Sancti tui cáritas dírigat corda et lábia nostra,~\gredagger{} ut i
 \vspace{1mm}
 
 \vfill
+\fi
 
 \end{document}
