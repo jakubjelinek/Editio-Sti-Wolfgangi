@@ -84,7 +84,7 @@ SCORES = $(addprefix ant,1 2 3 4 5) ant-magn-vesp1 ant-magn-vesp2 ant-ben-laud \
 			     repleti-communis loquebantur-communis) \
 	 $(addprefix hym-,VeniCreator BeataNobis TeLucis JamChristus RectorPotens RerumDeus \
 			  BeataNobis-LH LuxIucunda) \
-	 deusinadiutorium-solemnis deusinadiutorium-communis \
+	 deusinadiutorium-solemnis deusinadiutorium-communis deusinadiutorium-alter \
 	 supplicatiolitaniae oratiodominica resp1v resp2v respl \
 	 $(addprefix resp-,spiritus-simplex apparueruntapostolis-sinedox \
 			   disciplinametsapientiam-sinedox iamnondicam-sinedox \
