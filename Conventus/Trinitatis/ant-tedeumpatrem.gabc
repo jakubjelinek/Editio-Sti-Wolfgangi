@@ -1,16 +1,17 @@
 name:Te Deum Patrem;
 office-part:Antiphona;
 mode:4;
-book:Antiphonale Monasticum, 1934, p. 541; Praglia: Liber Antiphonarius, p. 524;
+book:Antiphonale Monasticum, 1934, p. 541; Praglia: Liber Antiphonarius, p. 524; Sg83 90v;
 transcriber:Andrew Hinkley;
+nabc-lines: 1;
 %%
 (c4)
-TE(e!fwgFE) De(de)um(e.) *()
-Pa(e)trem(g) in(gh~)gé(hhog)ni(fe)tum,(e.) (;)
-te(e) Fí(g)li(gh)um(hg~) u(hi)ni(hg)gé(hhog)ni(fe)tum,(e.) (;)
-te(g_h!iwj) Spí(j)ri(ji)tum(hg~) San(h>)ctum(g') Pa(h)rá(h!iwj_i)cli(hg)tum,(g.) (;)
-san(g!hwi>)ctam(h') et(g) in(h>)di(gf)ví(gh)du(gf)am(e_f) Tri(gf)ni(de)tá(e.)tem,(e.) (:)
-to(c)to(de) cór(fed~)de(e) et(fgf) o(e)re(ed) con(c)fi(de)té(e)mur,(e) (,)
-lau(ddh~)dá(hvGF)mus,(e_')
-at(ixdh'!iv)que(h') be(g)ne(gf)dí(gh)ci(gv_FE)mus:(e.) (;)
-ti(e)bi(de) gló(e)ri(dc)a(c) in(cg/hg>) sǽ(fe)cu(de)la.(e.) (::)
+TE(e!fwgFE|qlppt1su2) De(de|pe)um(e.|vi) *()
+Pa(e|ta)trem(g|vi) in(gh~|ta>)gé(hhog|pr-)ni(fe|cl)tum,(e.|ta) (;)
+te(e|ta) Fí(g|vi)li(gh|pe)um(hg~|vi>)
+u(hi|pe)ni(hg|cl)gé(hhog|pr)ni(fe|cl)tum,(e.|ta) (;)
+te(g_h!iwj|qlppt2) Spí(j|vi)ri(ji|cl)tum(hg~|vi>) San(h>|vi>)ctum(g'|ta) Pa(h|vi)rá(h!iwj_i|ql!clppt1)cli(hg|cl)tum,(g.|ta) (;)
+san(g!hwi>|ql>ppt1)ctam(h'|vi) et(g|ta) in(h>|vi>)di(gf|cl)ví(gh|pe)du(gf|cl)am(e_f|pe) Tri(gf|cl)ni(de|pe)tá(e.|vi)tem,(e.|vi) (:)
+to(c|ta)to(de|pe) cór(fed~|cl>)de(e|vi) et(fgf|to) o(e|ta)re(ed|cl) con(c|ta)fi(de|pe)té(e|vi)mur,(e|vi) (,)
+lau(ddh~|pe>2)dá(hvGF|ci)mus,(e_'|vi) at(ixdh'!iv|///pevi)que(h'|vi) be(g|ta)ne(gf|cl)dí(gh|pe)ci(gv_FE|ci)mus:(e.|ta) (;)
+ti(e|vi)bi(de|pe) gló(e|vi)ri(dc|cl)a(c|ta) in(cg/hg>|cl>ppt2) sǽ(fe|cl)cu(de|pe)la.(e.|vi) (::)
