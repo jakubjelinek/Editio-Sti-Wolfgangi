@@ -1,9 +1,10 @@
 name: Dicebat enim intra se;
-book: Antiphonale Monasticum I, Praglia, p. 441;
+book: Antiphonale Monasticum I, Praglia, p. 441; Sg. 387 f. 915;
 annotation: I g;
 mode: 1;
+nabc-lines: 1;
 %%
 (c4)
-DI(ddo)cé(c)bat(d) e(e)nim(f) in(g>)tra(fe) se:(ddo) *(;)
-Si(c) te(d)tí(f)ge(e)ro(d) fím(f)bri(fg)am(g) ve(g)sti(g)mén(g>)ti(f) e(gh~)ius(h) tan(f_0g>_0)tum,(ec~) (,)
-sal(d)va(fe) e(d.)ro.(d.) (::)
+DI(ddo|vs-)cé(c|ta-)bat(d|vi) e(e|vi-)nim(f|vi-hg) in(g>|vi>)tra(fe|cl) se:(ddo|vs) *(;)
+Si(c|ta-) te(d|vi)tí(f|vi)ge(e|vihh)ro(d|ta-) fím(f|vi-)bri(fg|pe)am(g|vi-hg) ve(g|vi)sti(g|vihg)mén(g>|vihi)ti(f|ta-) e(gh~|ta>)ius(h|vi-hg) tan(f_0g>_0|peS)tum,(ec~|vi>hg) (,)
+sal(d|ta-)va(fe|cl) e(d.|ta-hg)ro.(d.|ta-) (::)
