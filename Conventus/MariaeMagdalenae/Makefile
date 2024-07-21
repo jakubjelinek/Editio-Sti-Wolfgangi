@@ -81,7 +81,7 @@ SCORES = $(addprefix ant-,salvanos-antiquo miserere salveregina-simplex subtuum 
 			  ardensestcormeum dicitjesusmariaconversa dumtransissetsabbatum \
 			  inclinavitsemaria surgensjesusmaneprima tuleruntdominummeum \
 			  venitmarianuntians incendit ingressusjesus stansmaria) \
-	 $(addprefix hym-,AuroraSurgit MagdalaeSidus) \
+	 $(addprefix hym-,AuroraSurgit MagdalaeSidus PlagisMagistri) \
 	 $(addprefix resp-,tibidixitcormeum) \
 	 $(addprefix deusinadiutorium-,communis) \
 	 $(foreach M,vii-a,magnificat-initium-$(M)) \
@@ -90,7 +90,8 @@ SCORES = $(addprefix ant-,salvanos-antiquo miserere salveregina-simplex subtuum 
 	 oratio supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,duplex-laudes duplex-vesperae) \
-	 dominelabiamea inv-stellam benedicamus-solemnis-laud \
+	 dominelabiamea inv-stellam inv-stellamchristum inv-stellam-GU30 \
+	 benedicamus-solemnis-laud \
 	 $(addprefix absolutio-,exaudi ipsius avinculis) \
 	 $(addprefix benedictio-solemn-,benedictione unigenitus spiritus \
 					deus christus ignem \
