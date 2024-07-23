@@ -472,7 +472,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  BeataCaeli OGloriosaDomina-praglia-lh AntraDeserti ONimis \
 			  FelixPerOmnes ApostolorumPassio TeNostraLaetis MagnePater \
 			  FulgetInCaelisAugustino DeusDeNullo DieiLuce IsteConfessor-alt \
-			  RexChriste CaptatorOlim ApostolorumPassioDiem) \
+			  RexChriste CaptatorOlim ApostolorumPassioDiem PlagisMagistri) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -506,7 +506,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  deumquiglorificatur domumdeidecet regemconfessorum iesumchristum \
 			  laudemusdeumnostrum laudemusdeumnostruminfestivitate \
 			  christumregemquisuam agnumdeiquemioannem regiquaefecitopera \
-			  avemaria-simplex regempraecursoris-FKP populusdomini) \
+			  avemaria-simplex regempraecursoris-FKP populusdomini \
+			  stellamchristum stellam-GU30) \
 	 $(addprefix versus-,memorfui medianocte praevenerunt aporta-alt misericordiaetuae \
 			     dataest-communis afferte adorabunt) \
 	 dominelabiamea dominelabiamea-praglia tonusprecum tonusprecumnovum dominusnosbenedicat \
