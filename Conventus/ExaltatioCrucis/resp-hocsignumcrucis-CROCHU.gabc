@@ -2,15 +2,16 @@ name: Hoc signum crucis;
 %commentary: D. Crochu;
 mode:4;
 transcriber:Isabelle Valloton;
+nabc-lines:1;
 %%
 (c4)
-HOc(e) si(e)gnum(fsss) cru(df!gvFEf)cis(fe) (,)
-e(h)rit(h) in(hg~) cæ(hJJGhv)lo,(ixef!gwh/igfsfsded) (;)
-cum(fd~) Dó(e!fwg/ho1)mi(g)nus(g) ad(g) ju(g)di(g)cán(gf~)dum(ixfg!hv/ig/hg>) vé(e)ne(egffs)rit;(fe) +(:)
-Tunc(h) ma(h)ni(h)fés(h)ta(hg) e(hJJg/hv)runt(ixef!gwh/igfsfsded) (;)
-abs(fd)cón(e!fwg/h>)di(g)ta(gh) cor(hggo1f~)dis( ixfg!hv/ig/hg) no(egffs)stri,(fe) (;)
-al(ed~)le(ewf)lú(ec~)ia(ded) al(fh~)le(hvGFECd/fvEDfh//gh/ffo1e)lú(egffs)ia.(fe) <sp>V/</sp>.(::)
-Cum(h) sé(h)de(gh)rit(gf!gwhg/hvGEfe) Fí(g)li(g)us(g) hó(gh)mi(g)nis(g) (,)
-in(g) se(gh)de(g) ma(g)je(gf)stá(gh)tis(gf) su(e!fwgf)æ,(fe) (;)
-et(f) cœ́(de)pe(e)rit(e) ju(e)di(e)cá(e!fo1)re(e) sǽ(e)cu(e!fwgFE)lum(g) per(-ghghGF) i(EFgffs)gnem.(ed) +(::)
-Tunc(h) ma(h)ni(h)fés(h)ta.(hg) (::)
+HOc(e|ta) si(e|ta)gnum(fsss|ts) cru(df!gvFEf|vi-hhpp2su2vihj)cis(fe|cl-) (,)
+e(h|vihg)rit(h|vihg) in(hg~|vi>) cæ(hJJGhv|vi-hhtgShkvihk)lo,(ixef!gwh/igfsfsded|///qlhgppt2clShids-hitohj) (;)
+cum(fd~|vi>) Dó(e!fwg/ho1|```vi-qlhiorhj)mi(g|ta)nus(g|ta) ad(g|ta) ju(g|ta)di(g|ta)cán(gf~|vi>)dum(ixfg!hv/ig/hg>|///vi-pp2clShkcl>hk) vé(e|ta)ne(egffs|tosthh)rit;(fe|cl-) +(:)
+Tunc(h|vi) ma(h|vi)ni(h|vi)fés(h|vi)ta(hg|cllsc3) e(hJJg/hv|vi-tgS-hivihj)runt(ixef!gwh/igfsfsded|///qlppt2clShids-hitohj) (;)
+abs(fd|cllsc3)cón(e!fwg/h>|vi-qlhivi>hk)di(g|ta)ta(gh|pe) cor(hggo1f~|clor>)dis(ixfg!hv/ig/hg|///vi-pp2clhkcl-hk) no(egffs|tosthh)stri,(fe|cl-) (;)
+al(ed~|vi>)le(ewf|qlhh)lú(ec~|vi>)ia(ded|toS) al(fh~|ta>)le(hvGFEC|vi-hhsut4|d/fvEDfh//gh/ffo1e|vi-vihisu1sut1lsc3toShjcl-hmpihm)lú(egffs|tosthh)ia.(fe|cl-) <sp>V/</sp>.(::)
+Cum(h|vi) sé(h|vihh)de(gh|pe)rit(gf!gwhg/hvGEfe|cl-qihg!cl-hgci-hhcl-hh) Fí(g|vi)li(g|vi)us(g|vi) hó(gh|pe)mi(g|ta)nis(g|ta) (,)
+in(g|ta) se(gh|pe)de(g|ta) ma(g|ta)je(gf|cl)stá(gh|pe)tis(gf|cl) su(e!fwgf|ql!cl-ppt1)æ,(fe|cl-) (;)
+et(f|vi) cœ́(de|pe)pe(e|ta)rit(e|ta) ju(e|ta)di(e|ta)cá(e!fo1|vs)re(e|ta) sǽ(e|ta)cu(e!fwgFE|ql-ppt1su2)lum(g|vi) per(-ghghGF|to-hhci-hi) i(EFgffs|clhipp2sthp)gnem.(ed|cl-) +(::)
+Tunc(h|vi) ma(h|vi)ni(h|vi)fés(h|vi)ta.(hg|cllsc3) (::)
