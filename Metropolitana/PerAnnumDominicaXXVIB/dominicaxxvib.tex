@@ -1,0 +1,222 @@
+% LuaLaTeX
+
+\documentclass[a4paper, twoside, 12pt]{article}
+\usepackage[latin]{babel}
+%\usepackage[landscape, left=3cm, right=1.5cm, top=2cm, bottom=1cm]{geometry} % okraje stranky
+\usepackage[portrait, a4paper, mag=1500, truedimen, left=0.8cm, right=0.8cm, top=0.8cm, bottom=0.8cm]{geometry} % okraje stranky
+
+\usepackage{fontspec}
+\setmainfont[FeatureFile={junicode.fea}, Ligatures={Common, TeX}, RawFeature=+fixi]{Junicode}
+%\setmainfont{Junicode}
+
+% shortcut for Junicode without ligatures (for the Czech texts)
+\newfontfamily\nlfont[FeatureFile={junicode.fea}, Ligatures={Common, TeX}, RawFeature=+fixi]{Junicode}
+
+\usepackage{multicol}
+\usepackage{color}
+\usepackage{lettrine}
+\usepackage{fancyhdr}
+
+% usual packages loading:
+\usepackage{luatextra}
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{gregoriotex} % for gregorio score inclusion
+\usepackage{gregoriosyms}
+\usepackage{wrapfig} % figures wrapped by the text
+\usepackage{parcolumns}
+\usepackage[contents={},opacity=1,scale=1,color=black]{background}
+\usepackage{tikzpagenodes}
+\usepackage{calc}
+\usepackage{longtable}
+
+\setlength{\headheight}{12pt}
+
+\input{conventuscommune.tex} % Often used macros
+
+\setlength{\columnsep}{15pt} % prostor mezi sloupci
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Here we set the space around the initial.
+% Please report to http://home.gna.org/gregorio/gregoriotex/details for more details and options
+\grechangedim{afterinitialshift}{2.2mm}{scalable}
+\grechangedim{beforeinitialshift}{2.2mm}{scalable}
+\grechangedim{interwordspacetext}{0.32 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\grechangedim{annotationraise}{-0.2cm}{scalable}
+
+% Here we set the initial font. Change 38 if you want a bigger initial.
+% Emit the initials in red.
+\grechangestyle{initial}{\color{red}\fontsize{36}{36}\selectfont}
+
+\renewcommand{\headrulewidth}{0pt} % no horiz. rule at the header
+\pagestyle{empty}
+
+\grechangedim{spaceabovelines}{0.2cm}{scalable}%
+
+\cantusSineNeumas
+
+\vfill
+
+\hbox{}
+
+\vspace{5cm}
+
+\begin{center}
+{\huge \textit{AD II VESPERAS}}
+
+\vspace{0.5cm}
+
+{\huge \textsc{Dominica XXVI Per Annum}}
+
+\vspace{0.25cm}
+
+{\textsc{(Anno B)}}
+
+\vspace{0.5cm}
+
+{\textsc{Secundum Antiphonale Romanum II}}
+\end{center}
+
+\vfill
+\scriptura{}
+\pagebreak
+
+\pars{Introductio}
+
+\gregorioscore{temporalia/deusinadiutorium-communis.gtex}
+
+\vspace{0.5cm}
+
+\pars{Hymnus}
+
+\vspace{-0.3cm}
+
+\antiphona{VIII}{temporalia/hym-OLuxBeata.gtex}
+
+\vspace{0.5cm}
+
+\vfill
+\pagebreak
+
+\pars{Antiphona I} \scriptura{Ps. 109, 4; \textbf{H365}}
+
+\antiphona{VIII g}{temporalia/ant-iuravitdominus.gtex}
+
+\vspace{0.5cm}
+
+\pars{Psalmus} \scriptura{Ps. 109}
+
+{
+\grechangedim{interwordspacetext}{0.24 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\gregorioscore{temporalia/ps109-initium-viii-G-auto.gtex}
+\grechangedim{interwordspacetext}{0.32 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+
+{\setlength{\parindent}{0pt}\input{temporalia/ps109.tex}}
+
+\vfill
+%\pagebreak
+
+\pars{Antiphona II} \scriptura{Ps. 113b, 18; \textbf{H94}}
+
+\antiphona{per.}{temporalia/ant-nosquivivimus.gtex}
+
+\vspace{0.5cm}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus} \scriptura{Ps. 113B}
+
+\gregorioscore{temporalia/ps113b-initium-per-auto.gtex}
+
+{\setlength{\parindent}{0pt}\input{temporalia/ps113b.tex}}
+
+\vfill
+\pagebreak
+
+\pars{Canticum} \scriptura{Cf. Ap. 19, 1-2.5-7}
+
+\antiphona{d}{temporalia/canticum-ap19-d.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Lectio brevis} \scriptura{2 Th. 2, 13-14}
+
+Debémus grátias ágere Deo semper pro vobis, fratres, dilécti a Dómino,
+quod elégerit vos Deus primítias in salútem, in sanctificatióne Spíritus
+et fide veritátis, ad quod et vocávit vos per evangélium nostrum
+in acquisitiónem glóriæ Dómini nostri Iesu Christi.
+
+\vspace{0.5cm}
+
+\pars{Responsorium breve} \scriptura{Ps. 146, 5}
+
+\vspace{-0.3cm}
+
+\antiphona{\oldrbar.~ br.}{temporalia/resp-magnusdominusnoster.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Antiphona ad Magnificat} \scriptura{Mc. 9, 42}
+
+\vspace{-0.3cm}
+
+\antiphona{I f}{temporalia/ant-bonumesttibidebilem.gtex}
+
+\vspace{0.5cm}
+
+\pars{Canticum Evangelicum} \scriptura{Lc. 1, 46-55}
+
+\gresetinitiallines{0}
+\gregorioscore{temporalia/magnificat-initium-isoll-f.gtex}
+
+{\setlength{\parindent}{0pt}\input{temporalia/magnificat.tex}}
+
+\vfill
+\pagebreak
+
+\pars{Preces}
+
+{\setlength{\parindent}{0pt}
+Laus et honor Christo, qui salváre in perpétuum potest accedéntes per semetípsum
+ad Deum, semper vivens ad interpellándum pro nobis.~\gredagger{}
+Qua fide suffúlti eum \textit{implo}\textbf{ré}mus:
+
+\vspace{0.2cm}
+
+\Rbardot{} Meménto pópuli tu\textit{i}, \textbf{Dó}mine.
+
+\vspace{0.2cm}
+
+Iam declinánte die, Sol iustítiæ, te super cunctum genus humánum \textit{invo}\textbf{cá}mus,\\
+-- ut luce tua, numquam decidénte, omnes sine fine \textit{fru}\textbf{án}tur. \Rbardot{}
+
+Custódi testaméntum, quod sánguine diví\textit{no} \textit{san}\textbf{xís}ti,\\
+-- et sanctífica Ecclésiam tuam, ut sit imma\textit{cu}\textbf{lá}ta. \Rbardot{}
+
+Meménto, Dómine, congregati\textit{ónis} \textbf{tu}æ,\\
+-- loci habitatió\textit{nis} \textbf{tu}æ. \Rbardot{}
+
+In viam pacis et prosperitátis dírige iter \textit{faci}\textbf{én}tes, \\
+-- ut cum salúte et gáudio ad optáta loca \textit{per}\textbf{vé}niant.
+
+Animas, Dómine, súscipe \textit{defunc}\textbf{tó}rum, \\
+-- véniam tuam eis concéde et glóriam sem\textit{pi}\textbf{tér}nam. \Rbardot{}
+}
+
+\vspace{0.5cm}
+
+\pars{Oratio conclusiva}
+
+Deus, qui omnipoténtiam tuam parcéndo máxime et miserándo maniféstas,~\gredagger{}
+multíplica super nos grátiam tuam,~\grestar{}
+ut, ad tua promíssa curréntes, cæléstium bonórum fácias esse consórtes.
+Per Dóminum nostrum Iesum Christum, Fílium tuum,
+qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus,
+per ómnia sǽcula sæculórum. Amen.
+
+\end{document}
