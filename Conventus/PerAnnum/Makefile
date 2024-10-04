@@ -473,7 +473,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  BeataCaeli OGloriosaDomina-praglia-lh AntraDeserti ONimis \
 			  FelixPerOmnes ApostolorumPassio TeNostraLaetis MagnePater \
 			  FulgetInCaelisAugustino DeusDeNullo DieiLuce IsteConfessor-alt \
-			  RexChriste CaptatorOlim ApostolorumPassioDiem PlagisMagistri) \
+			  RexChriste CaptatorOlim ApostolorumPassioDiem PlagisMagistri \
+			  LuxAEterna) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
