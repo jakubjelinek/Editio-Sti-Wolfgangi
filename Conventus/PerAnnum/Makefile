@@ -419,7 +419,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  dignumsibi egosipatibulum beatusandreas unusexduobus dilexitandream \
 			  dixitandreas salvecruxpretiosa eratandreas omnesquihabebantinfirmos \
 			  cumautemdescendisset accinxitfortitudine nisiabundaverit \
-			  egosumpanisvivusqui nonlotismanibus quaeriteprimum) \
+			  egosumpanisvivusqui nonlotismanibus quaeriteprimum illuminaredomine) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -474,7 +474,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  FelixPerOmnes ApostolorumPassio TeNostraLaetis MagnePater \
 			  FulgetInCaelisAugustino DeusDeNullo DieiLuce IsteConfessor-alt \
 			  RexChriste CaptatorOlim ApostolorumPassioDiem PlagisMagistri \
-			  LuxAEterna) \
+			  LuxAEterna AuctorPerennis AuroraIam) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -488,7 +488,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   narraveruntlaudes exaltabotedomine laetaminiindomino \
 			   superteierusalem domumtuam sanctitui lexdeiejus diffusaest \
 			   vosmisistis inclinacormeumdeus internatos inomnemterram \
-			   exsultabuntlabiamea magnaestgloria justumdeduxit) \
+			   exsultabuntlabiamea magnaestgloria justumdeduxit \
+			   clamaviadtedomine) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
 	 oratiodominica-d deprecatio4 deprecatio4-propace \
