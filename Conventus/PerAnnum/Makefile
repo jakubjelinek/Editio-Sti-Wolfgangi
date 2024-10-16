@@ -492,7 +492,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   clamaviadtedomine) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 supplicatiolitaniae oratiodominica oratiodominicaalt oratiodominica-mat \
-	 oratiodominica-d deprecatio4 deprecatio4-propace \
+	 oratiodominica-d deprecatio4 deprecatio4-propace deprecatio4-defunctorum \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 tedecetlaus tedecetlausii \
 	 $(addprefix benedicamus-,feria-laudes feria-vesperae minor officium-bmv festis-bmv \
