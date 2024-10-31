@@ -92,7 +92,7 @@ SCORES = $(addprefix versus-,exsultabunt laetamini exsultabunt-communis \
 			   internatosmulierum-FKP istisuntquiviventes sanctimei-CROCHU \
 			   summaetrinitati-CROCHU vididominumsedentem-cumdox \
 			   vididominumsedentem-sinedox beatipauperesspiritu-CROCHU \
-			   beatiquipersecutionem-CROCHU) \
+			   beatiquipersecutionem-CROCHU fulgebuntiusti-CROCHU) \
 	 ps1-initium-viii-G3 ps23-initium-iii-a ps33-initium-i-g2 ps60-initium-iii-a \
 	 ps96-initium-i-D3
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
@@ -114,7 +114,7 @@ $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e 
 endef
 iter-left := . $(TMP_DIR) $(addprefix ../InNativitateBMV/cantus/,amon33 triplex76 nrom02) \
 	     $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) \
-	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 triplex76) ../CorpusChristi ../InNativitateBMV ../MichaelisArchangelis
+	     $(addprefix ../Epiphania/cantus/,arom12 grom61 cselecti57 triplex76) ../CorpusChristi ../InNativitateBMV ../MichaelisArchangelis ../PerAnnum
 include $(iter)
 
 all: omniumsanctorum.pdf
