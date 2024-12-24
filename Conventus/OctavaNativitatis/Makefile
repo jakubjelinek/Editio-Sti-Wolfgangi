@@ -222,7 +222,7 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 	 oratiodominicaalt oratiodominica-mat \
 	 orationativitas oratiodomi oratioioannes oratioinnocentium oratioepiphaniae oratiostephani \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex annuntiationativitatisdomini \
-	 genealogiadnic genealogiadnic-initium deprecatio4-propace \
+	 annuntiationativitatisdomini-solemnis genealogiadnic genealogiadnic-initium deprecatio4-propace \
 	 $(addprefix benedicamus-,semiduplex-laud semiduplex-vesp duplexmajus-laudes minor festis-bmv \
 				  feria-laudes feria-vesperae dominica-perannum tempore-nativitatis \
 				  festis-laudes) \
