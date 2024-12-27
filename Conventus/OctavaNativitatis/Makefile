@@ -236,7 +236,7 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 					deus christus ignem \
 					evangelica quorum divinum adsocietatem) \
 	 $(addprefix benedictio-nativitate-,benedictione unigenitus spiritus \
-					    deus christus ignem) \
+					    deus christus ignem evangelica) \
 	 $(addprefix indienativitatis-lectio,i ii iii iv v vi) tuautem-nativitatis tuautem-nativitatisii \
 	 $(addprefix resp-,benedictusquivenit-CROCHU hodienobis-CROCHU hicquiadvenit-CROCHU-cumdox \
 			   confirmatumest-CROCHU nesciensmatervirgo-CROCHU verbumcarofactumest-CROCHU-cumdox \
