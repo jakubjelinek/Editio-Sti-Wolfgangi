@@ -20,7 +20,7 @@ PSALM_PREPROCESSOR = $(TOOLS_DIR)/psalmpreprocessor.rb
 INITIUM_TOOL = $(TOOLS_DIR)/initiumpsalmi.rb
 PSSKIP = 1
 GENPSCOMB = $(AWK) -f pscomb.awk -v PSSKIP=$(PSSKIP) -v TRFILE=$(word 2,$^) $< > $@
-PSALMS = 2 8 9xxii_xxxii 9xxxiii_xxxix 10 11 16 17ii_vii 17viii_xx 17xlvii_li 17xxi_xxx 17xxxi_xxxv 17xxxvi_xlvi 18 18i 23 28 30i 30ii 30iii 32 32i 32ii 34i 34ii 34iii 35 36i_xi 36xii_xxix 36iii 37ii_v 37vi_xiii 37xiv_xxiii 38i 38ii 41 42 44 45 46 47 50 51 56 62 63 64 65i 65ii 66 71 71i 71ii 76 84 86 88ii_xix 88xx_xxx 91 92 95 96 97 98 99 103i 103ii 103iii 104i 104ii 104iii 105i 105ii 105iii 109 110 111 112 113 114 115 116 117 121 126 128 129 130 131 132 144ii 145 146 147 148 149 150
+PSALMS = 2 8 9xxii_xxxii 9xxxiii_xxxix 10 11 16 17ii_vii 17viii_xx 17xlvii_li 17xxi_xxx 17xxxi_xxxv 17xxxvi_xlvi 18 18i 23 28 30i 30ii 30iii 32 32i 32ii 34i 34ii 34iii 35 36i_xi 36xii_xxix 36iii 37ii_v 37vi_xiii 37xiv_xxiii 38i 38ii 41 42 44 45 46 47 50 51 56 62 63 64 65i 65ii 66 71 71i 71ii 76 84 86 88ii_xix 88xx_xxx 91 92 95 96 97 98 99 103i 103ii 103iii 104i 104ii 104iii 105i 105ii 105iii 109 110 111 112 113 114 115 116 117 118xix 121 126 128 129 130 131 132 144ii 145 146 147 148 149 150
 include $(PSALMTONES_DIR)/tonus.mk
 MODUS-2 = i-g i-d viii-c viii-C
 MODUS-8 = i-g
@@ -103,8 +103,9 @@ MODUS-112 = i-g iii-a2 iv-E vi-F viii-G
 MODUS-113 = vii-c2 per
 MODUS-114 = i-g2
 MODUS-115 = viii-A
-MODUS-116 = iii-a2 viii-A
+MODUS-116 = iii-a2 viii-A e
 MODUS-117 = i-g
+MODUS-118xix = vii-a
 MODUS-121 = iv-E viii-G2
 MODUS-126 = i-g ii-D
 MODUS-128 = ii-D
@@ -128,13 +129,14 @@ MODUS-ecclesiastici = iii-a
 MODUS-ezechiae = e
 MODUS-anna = ii-D
 MODUS-habacuc = iv_-e
+MODUS-moysis1 = e
 MODUS-moysis2i_xii = vi-F
 MODUS-tobiae = vii-a
 MODUS-iudith2 = ii_-d
 MODUS-jeremiae3 = iv_-e
 MODUS-magnificat = isoll-g isoll-g2 isoll-a5 i-a4 i-g ii-D iisoll-A iiisoll-e iv-E vi-F visoll-F vii-a viiisoll-G viii-g viii-a
 MODUS-benedictus = isoll-g ii-D iv-E vsoll-g vsoll-g2 visoll-F vii-a vii-b vii-c2 vii-d viisoll-a viiisoll-G viiisoll-G5 viii-G viii-G2
-CANTICIS = dan3 isaiae2 isaiae3 isaiae5 isaiae6 ecclesiastici ezechiae anna habacuc moysis2i_xii tobiae iudith2 jeremiae3
+CANTICIS = dan3 isaiae2 isaiae3 isaiae5 isaiae6 ecclesiastici ezechiae anna habacuc moysis2i_xii tobiae iudith2 jeremiae3 moysis1
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
 	   && $(SED) -i -e 's/\*/\\grestar{}/g' $@
@@ -202,7 +204,7 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			  rexomnisterrae dominusfirmamentum mesuscepit vivitdominus exsurgamdiluculo \
 			  populusmeusait magnusdominus hicestdiscipulusille-FK \
 			  expugnaimpugnantes iudicacausam liberame misereremei indominoiustificabitur \
-			  iubilatedeo) \
+			  iubilatedeo adtedeluce cantemusdomino laudatedominumomnes misereremeideus) \
 	 $(addprefix capitulum-,Multifariam ApparuitGratia ApparuitBenignitas FratresQuanto \
 				QuiTimet VidiSupra Surge StephanusAutem) \
 	 $(addprefix hym-,ASolisOrtus ChristeRedemptor CandorAEternae CandorAEternae-simplex \
@@ -270,7 +272,7 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 	 ps105i-initium-e ps103iii-initium-e magnificat-initium-isoll-a5 \
 	 ps18-initium-iii-b-trans ps62-initium-i-g-trans ps96-initium-iii-a2 \
 	 habacuc-initium-iv_-e ps147-initium-e ps91-initium-e benedictus-initium-vii-a-trans \
-	 ps17xxxvi_xlvi-initium-vii-c-trans ps47-initium-iv-a
+	 ps17xxxvi_xlvi-initium-vii-c-trans ps47-initium-iv-a ps116-initium-e
 OTHERSCORES = $(patsubst %,$(TMP_DIR)/%.gtex,$(SCORES))
 OTHERDEPS = 
 LAPSALMSINITGABC = $(foreach P,$(PSALMS),$(foreach M,$(MODUS-$(P)),$(TMP_DIR)/ps$(P)-initium-$(M)-auto.gabc)) \

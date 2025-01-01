@@ -13,6 +13,10 @@
 % shortcut for Junicode without ligatures (for the Czech texts)
 \newfontfamily\nlfont[FeatureFile={junicode.fea}, Ligatures={Common, TeX}, RawFeature=+fixi]{Junicode}
 
+% Hebrew font:
+% http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=SILHebrUnic2
+\newfontfamily\hebfont[Scale=1]{Ezra SIL}
+
 \usepackage{multicol}
 \usepackage{color}
 \usepackage{lettrine}
@@ -36,6 +40,10 @@
 \input{conventuscommune.tex} % Often used macros
 
 \newcommand{\annusEditionis}{2021}
+
+\def\hebinitial#1{%
+\leavevmode{\newbox\hebbox\setbox\hebbox\hbox{\hebfont{#1}\hskip 1mm}\kern -\wd\hebbox\hbox{\hebfont{#1}\hskip 1mm}}%
+}
 
 %%%% Vicekrat opakovane kousky
 
