@@ -121,6 +121,7 @@ MODUS-148 = i-f ii-D
 MODUS-149 = i-f i-g ii-D ii_-B vii-d3 viii-G2
 MODUS-150 = i-f ii-D
 MODUS-dan3 = i-d i-g ii-D vi-F vii-a vii-d viii-a viii-G5
+MODUS-dan33 = i-d
 MODUS-isaiae2 = v-a
 MODUS-isaiae3 = i-d iv-E viii-G
 MODUS-isaiae5 = i-d iv-E viii-G
@@ -136,7 +137,7 @@ MODUS-iudith2 = ii_-d
 MODUS-jeremiae3 = iv_-e
 MODUS-magnificat = isoll-g isoll-g2 isoll-a5 i-a4 i-g ii-D iisoll-A iiisoll-e iv-E vi-F visoll-F vii-a viiisoll-G viii-g viii-a
 MODUS-benedictus = isoll-g ii-D iv-E vsoll-g vsoll-g2 visoll-F vii-a vii-b vii-c2 vii-d viisoll-a viiisoll-G viiisoll-G5 viii-G viii-G2
-CANTICIS = dan3 isaiae2 isaiae3 isaiae5 isaiae6 ecclesiastici ezechiae anna habacuc moysis2i_xii tobiae iudith2 jeremiae3 moysis1
+CANTICIS = dan3 isaiae2 isaiae3 isaiae5 isaiae6 ecclesiastici ezechiae anna habacuc moysis2i_xii tobiae iudith2 jeremiae3 moysis1 dan33
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
 	   && $(SED) -i -e 's/\*/\\grestar{}/g' $@
