@@ -52,7 +52,7 @@ MODUS-35 = ii-D
 MODUS-36i_xi = vi-F
 MODUS-36xii_xxix = ii-D
 MODUS-36iii = vi-F
-MODUS-37ii_v = viii-C
+MODUS-37ii_v = viii-C dir
 MODUS-37vi_xiii = ii_-a
 MODUS-37xiv_xxiii = ii-A
 MODUS-38i = iv-E
@@ -136,6 +136,7 @@ MODUS-ecclesiastici = iii-a
 MODUS-ezechiae = e
 MODUS-anna = ii-D
 MODUS-habacuc = iv_-e
+MODUS-habacuc2 = iv_-e
 MODUS-moysis1 = e
 MODUS-moysis2i_xii = vi-F
 MODUS-tobiae = vii-a
@@ -143,7 +144,7 @@ MODUS-iudith2 = ii_-d
 MODUS-jeremiae3 = iv_-e
 MODUS-magnificat = isoll-g isoll-g2 isoll-a5 i-a4 i-g ii-D iisoll-A iiisoll-e iv-E vi-F visoll-F vii-a viiisoll-G viii-g viii-a
 MODUS-benedictus = isoll-g ii-D iv-E iv-e2 vsoll-g vsoll-g2 visoll-F vii-a vii-b vii-c2 vii-d viisoll-a viiisoll-G viiisoll-G5 viii-G viii-G2
-CANTICIS = dan3 isaiae isaiae2 isaiae3 isaiae5 isaiae6 ecclesiastici ezechiae anna habacuc moysis2i_xii tobiae iudith2 jeremiae3 moysis1 dan33
+CANTICIS = dan3 isaiae isaiae2 isaiae3 isaiae5 isaiae6 ecclesiastici ezechiae anna habacuc habacuc2 moysis2i_xii tobiae iudith2 jeremiae3 moysis1 dan33
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
 	   && $(SED) -i -e 's/\*/\\grestar{}/g' $@
@@ -213,7 +214,7 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			  expugnaimpugnantes iudicacausam liberame misereremei indominoiustificabitur \
 			  iubilatedeo adtedeluce cantemusdomino laudatedominumomnes misereremeideus \
 			  extendedomine confundanturqui conversusestfuror exsultatedeo mementodomine \
-			  tuamdomineexcita vidimusstellamejus) \
+			  tuamdomineexcita vidimusstellamejus omnesnationes) \
 	 $(addprefix capitulum-,Multifariam ApparuitGratia ApparuitBenignitas FratresQuanto \
 				QuiTimet VidiSupra Surge StephanusAutem) \
 	 $(addprefix hym-,ASolisOrtus ChristeRedemptor CandorAEternae CandorAEternae-simplex \
@@ -272,7 +273,9 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			   istisuntvirisancti hodiecaeliapertisunt-cumdox postquamimpletisunt-CROCHU \
 			   videtemiraculum-CROCHU-cumdox stephanusautem-CROCHU \
 			   beataesmariaquaeomnium-CROCHU-cumdox videntesstellam-CROCHU \
-			   hicestdiespraeclarus-CROCHU hodieiniordane-CROCHU-cumdox) \
+			   hicestdiespraeclarus-CROCHU hodieiniordane-CROCHU-cumdox \
+			   omnesdesaba-CROCHU magiveniunt-CROCHU interrogabatmagosherodes-CROCHU \
+			   jerusalemcito-CROCHU) \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 an_regina_caeli_simplex convertenosdeus dominusnosbenedicat \
 	 jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita requiescant \
