@@ -214,7 +214,7 @@ SCORES = $(addprefix ant-,angelusadpastores apuddominum benedicenturinipso defru
 			  expugnaimpugnantes iudicacausam liberame misereremei indominoiustificabitur \
 			  iubilatedeo adtedeluce cantemusdomino laudatedominumomnes misereremeideus \
 			  extendedomine confundanturqui conversusestfuror exsultatedeo mementodomine \
-			  tuamdomineexcita vidimusstellamejus omnesnationes) \
+			  tuamdomineexcita vidimusstellamejus omnesnationes videbuntgentes) \
 	 $(addprefix capitulum-,Multifariam ApparuitGratia ApparuitBenignitas FratresQuanto \
 				QuiTimet VidiSupra Surge StephanusAutem) \
 	 $(addprefix hym-,ASolisOrtus ChristeRedemptor CandorAEternae CandorAEternae-simplex \
@@ -313,7 +313,8 @@ include $(iter)
 
 PDF = indienativitatis.pdf sanctaefamiliae.pdf dievpostnativitatem.pdf dievipostnativitatem.pdf dieviipostnativitatem.pdf sdeigenetricismariae.pdf \
       iiianuarii.pdf iiiianuarii.pdf dominicaiipostnativitatem.pdf ivianuarii.pdf vianuarii.pdf sioannis.pdf sstephani.pdf sanctoruminnocentium.pdf \
-      dieiiinfraoctavamepiphaniae.pdf dieiiiinfraoctavamepiphaniae.pdf inbaptismatedomini.pdf dieivinfraoctavamepiphaniae.pdf dievinfraoctavamepiphaniae.pdf
+      dieiiinfraoctavamepiphaniae.pdf dieiiiinfraoctavamepiphaniae.pdf inbaptismatedomini.pdf dieivinfraoctavamepiphaniae.pdf \
+      dievinfraoctavamepiphaniae.pdf dieviinfraoctavamepiphaniae.pdf
 all: $(PDF)
 $(LAPSALMSSINEDOX): $(TMP_DIR)/%-sinedox.tex: $(TMP_DIR)/%.tex
 	sed -e '/^Gló.*ri.*a.*Pa.*tri.*et.*Fí.*li.*o/d;/^et.*Spi.*rí.*tu.*i.*Sanc.*to/d;/^Sicut.*erat.*in.*princí.*pi.*o,.*et.*nunc.*et.*sem.*per,/d;/^et.*in.*sǽcu.*la.*sæ.*cu.*ló.*rum.*A.*men/d' < $^ > $@
