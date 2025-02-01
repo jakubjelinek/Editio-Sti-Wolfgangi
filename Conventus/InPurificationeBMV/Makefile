@@ -34,9 +34,12 @@ MODUS-146 = ii-D
 MODUS-147 = viii-G
 MODUS-149 = viii-a
 MODUS-dan3 = iii-b
+MODUS-isaiae5 = i-g
+MODUS-isaiae17 = i-g
+MODUS-isaiae18 = i-g
 MODUS-benedictus = isoll-f
 MODUS-magnificat = isoll-f viiisoll-g2
-CANTICIS = dan3
+CANTICIS = dan3 isaiae5 isaiae17 isaiae18
 MODUSLIST = $(sort $(foreach P,$(PSALMS) $(CANTICIS) benedictus magnificat,$(MODUS-$(P))))
 GENPSALM = $(RUBY_COMMAND) $(PSALM_PREPROCESSOR) --output $@ $(PSALMOPTS) $< \
 	   && $(SED) -i -e 's/\*/\\grestar{}/g' $@
@@ -58,7 +61,7 @@ SCORES = $(addprefix ant-,oadmirabile quandonatuses rubumquemviderat eccemariage
 			  hodiebeatavirgomaria lumenadrevelationem obtuleruntproeo \
 			  responsumaccepit simeoniustus cuminducerentpuerum \
 			  adornathalamumtuum superteierusalem gaudeetlaetarenova \
-			  dapacemdomine) \
+			  dapacemdomine gaudeetlaetarefiliasion) \
 	 $(addprefix hym-,AveMarisStella-iv QuodChorus AdornaSion LegisSacratae) \
 	 $(addprefix resp-,avemaria-alt notumfecitdominus adoratedominum) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis solemnis-tq alter-tq communis-tq) \
@@ -76,7 +79,8 @@ SCORES = $(addprefix ant-,oadmirabile quandonatuses rubumquemviderat eccemariage
 	 $(addprefix resp-,gaudemariavirgo-CROCHU-cumdox \
 			   adornathalamum-CROCHU cuminducerentpuerum-CROCHU-cumdox \
 			   senexpuerumportabat-CROCHU postquamimpletisunt-CROCHU \
-			   suscipiensiesuminulnas-CROCHU videtemiraculum-CROCHU-cumdox) oratio \
+			   suscipiensiesuminulnas-CROCHU videtemiraculum-CROCHU-cumdox \
+			   responsumacceperatsimeon-CROCHU-cumdox simeoniustusettimoratus-CROCHU-cumdox) oratio \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 ps109-initium-iii-b-trans ps121-initium-iii-b-trans \
@@ -104,7 +108,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../OctavaNativitatis ../PostPentecosten ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../InNativitateBMV/cantus/amon33 ../CorpusChristi ../PerAnnum ../InNativitateBMV
+iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../OctavaNativitatis ../PostPentecosten ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../InNativitateBMV/cantus/amon33 ../CorpusChristi ../PerAnnum ../InNativitateBMV ../Adventus
 include $(iter)
 $(filter-out $(TMP_DIR)/dan3% $(TMP_DIR)/magnificat%,$(ALLLAPSALMS)): PSALMOPTS = $(APPENDGLORIAPATRI) $(LAPSALMOPTS)
 $(foreach M,$(MODUS-magnificat),$(TMP_DIR)/magnificat-$(M).tex): PSALMOPTS = $(APPENDGLORIAPATRI) --accents-style bold --flex-underline --skip-verses 2 $(LAPSALMOPTSACC)
