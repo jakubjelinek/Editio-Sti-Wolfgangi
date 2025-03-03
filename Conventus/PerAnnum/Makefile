@@ -419,7 +419,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  dignumsibi egosipatibulum beatusandreas unusexduobus dilexitandream \
 			  dixitandreas salvecruxpretiosa eratandreas omnesquihabebantinfirmos \
 			  cumautemdescendisset accinxitfortitudine nisiabundaverit \
-			  egosumpanisvivusqui nonlotismanibus quaeriteprimum illuminaredomine) \
+			  egosumpanisvivusqui nonlotismanibus quaeriteprimum illuminaredomine \
+			  similaboeum) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -802,7 +803,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   inarticulodiei-CROCHU-cumdox benedixitdeusnoe-CROCHU \
 			   ecceegostatuam-CROCHU-cumdox ubiestabelfratertuus-CROCHU-cumdox \
 			   recordatusdominus-CROCHU movensigiturabraham-CROCHU \
-			   crediditabrahamdeo-CROCHU-cumdox factusestsermodomini-CROCHU) \
+			   crediditabrahamdeo-CROCHU-cumdox factusestsermodomini-CROCHU \
+			   crediditabrahamdeo-CROCHU) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 seq-DilecteDeo \
