@@ -1,0 +1,1294 @@
+% LuaLaTeX
+
+\documentclass[a4paper, twoside, 12pt]{article}
+\usepackage[latin]{babel}
+%\usepackage[landscape, left=3cm, right=1.5cm, top=2cm, bottom=1cm]{geometry} % okraje stranky
+%\usepackage[landscape, a4paper, mag=1166, truedimen, left=2cm, right=1.5cm, top=1.6cm, bottom=0.95cm]{geometry} % okraje stranky
+\usepackage[landscape, a4paper, mag=1400, truedimen, left=0.5cm, right=0.5cm, top=0.5cm, bottom=0.5cm]{geometry} % okraje stranky
+
+\usepackage{fontspec}
+\setmainfont[FeatureFile={junicode.fea}, Ligatures={Common, TeX}, RawFeature=+fixi]{Junicode}
+%\setmainfont{Junicode}
+
+% shortcut for Junicode without ligatures (for the Czech texts)
+\newfontfamily\nlfont[FeatureFile={junicode.fea}, Ligatures={Common, TeX}, RawFeature=+fixi]{Junicode}
+
+\usepackage{multicol}
+\usepackage{color}
+\usepackage{lettrine}
+\usepackage{fancyhdr}
+
+% usual packages loading:
+\usepackage{luatextra}
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{gregoriotex} % for gregorio score inclusion
+\usepackage{gregoriosyms}
+\usepackage{wrapfig} % figures wrapped by the text
+\usepackage{parcolumns}
+\usepackage[contents={},opacity=1,scale=1,color=black]{background}
+\usepackage{tikzpagenodes}
+\usepackage{calc}
+\usepackage{longtable}
+\usetikzlibrary{calc}
+
+\setlength{\headheight}{14.5pt}
+
+\input{conventuscommune.tex} % Often used macros
+
+\newcommand{\annusEditionis}{2023}
+
+%%%% Vicekrat opakovane kousky
+
+\newcommand{\anteOrationem}{
+  \rubrica{Ante Orationem, cantatur a Superiore:}
+
+  \pars{Supplicatio Litaniæ.}
+
+  \cuminitiali{}{temporalia/supplicatiolitaniae.gtex}
+
+  \pars{Oratio Dominica.}
+
+  \cuminitiali{}{temporalia/oratiodominica.gtex}
+
+  \rubrica{Deinde dicitur ab Hebdomadario:}
+
+  \cuminitiali{}{temporalia/dominusvobiscum-solemnis.gtex}
+
+  \rubrica{In choro monialium loco Dominus vobiscum dicitur:}
+
+  \sineinitiali{temporalia/domineexaudi.gtex}
+}
+
+\setlength{\columnsep}{30pt} % prostor mezi sloupci
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Here we set the space around the initial.
+% Please report to http://home.gna.org/gregorio/gregoriotex/details for more details and options
+\grechangedim{afterinitialshift}{2.2mm}{scalable}
+\grechangedim{beforeinitialshift}{2.2mm}{scalable}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\grechangedim{annotationraise}{-0.2cm}{scalable}
+
+% Here we set the initial font. Change 38 if you want a bigger initial.
+% Emit the initials in red.
+\grechangestyle{initial}{\color{red}\fontsize{38}{38}\selectfont}
+
+\pagestyle{empty}
+
+%%%% Titulni stranka
+\begin{titulusOfficii}
+\ifx\titulus\undefined
+\nomenFesti{Feria III \hebdomada{}}
+\else
+\titulus
+\fi
+\end{titulusOfficii}
+
+\vfill
+
+\begin{center}
+%Ad usum et secundum consuetudines chori \guillemotright{}Conventus Choralis\guillemotleft.
+
+%Editio Sancti Wolfgangi \annusEditionis
+\end{center}
+
+\scriptura{}
+
+\pars{}
+
+\pagebreak
+
+\renewcommand{\headrulewidth}{0pt} % no horiz. rule at the header
+\fancyhf{}
+\pagestyle{fancy}
+
+\cantusSineNeumas
+
+\ifx\oratio\undefined
+\ifx\lauda\undefined
+\else
+\newcommand{\oratio}{\pars{Oratio.}
+
+\noindent Matutína súpplicum vota, Dómine, propítius intuére et occúlta cordis nostri remédio tuæ clarífica pietátis, ut desidéria tenebrósa non téneant, quos lux cæléstis grátiæ reparávit. 
+
+\noindent Per Dóminum nostrum Iesum Christum, Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.
+
+\noindent \Rbardot{} Amen.}
+\fi
+\ifx\laudb\undefined
+\else
+\newcommand{\oratio}{\pars{Oratio.}
+
+\noindent Dómine Iesu Christe, lux vera, qui omnes hómines illúminas ad salútem, nobis, quǽsumus, concéde virtútem, ut ante te vias pacis et iustítiæ præparémus.
+
+\noindent Qui vivis et regnas cum Deo Patre in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.
+
+\noindent \Rbardot{} Amen.}
+\fi
+\fi
+
+\hora{Ad Matutinum.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{2mm}
+
+\cuminitiali{}{temporalia/dominelabiamea.gtex}
+
+\vfill
+%\pagebreak
+
+\vspace{2mm}
+
+\ifx\invitatorium\undefined
+%\ifx\matuac\undefined
+%\else
+%\pars{Invitatorium.} \scriptura{Ps. 94, 1; Psalmus 94; \textbf{H451}}
+%
+%\vspace{-6mm}
+%
+%\antiphona{VI}{temporalia/inv-jubilemusdeo.gtex}
+%\fi
+%\ifx\matubd\undefined
+%\else
+\pars{Invitatorium.} \scriptura{Cantor; Psalmus 94; \textbf{H449}}
+
+\vspace{-6mm}
+
+\antiphona{E}{temporalia/inv-regemmagnum.gtex}
+%\fi
+\else
+\invitatorium
+\fi
+
+\vfill
+\pagebreak
+
+\ifx\hymnusmatutinum\undefined
+\ifx\matuac\undefined
+\else
+\pars{Hymnus}
+
+\cuminitiali{IV}{temporalia/hym-ConsorsPaterni.gtex}
+\fi
+\ifx\matubd\undefined
+\else
+\pars{Hymnus.} \scriptura{Gregorius Magnus (\olddag{} 604)}
+
+{
+\grechangedim{interwordspacetext}{0.10 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{I}{temporalia/hym-NocteSurgentes.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+\fi
+\else
+\hymnusmatutinum
+\fi
+
+\vspace{-3mm}
+
+\vfill
+\pagebreak
+
+\ifx\matua\undefined
+\else
+% MAT A
+\pars{Psalmus 1.} \scriptura{Ps. 9, 22}
+
+\vspace{-4mm}
+
+\antiphona{II D}{temporalia/ant-utquiddomine.gtex}
+
+%\vspace{-2mm}
+
+\scriptura{Ps. 9, 22-32}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps9xxii_xxxii-initium-ii-D-auto.gtex}
+
+\input{temporalia/ps9xxii_xxxii-ii-D.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 2.} \scriptura{Ex. 15, 18}
+
+\vspace{-4mm}
+
+\antiphona{IV* e}{temporalia/ant-inaeternum.gtex}
+
+%\vspace{-2mm}
+
+\scriptura{Ps. 9, 33-39}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps9xxxiii_xxxix-initium-iv_-e-auto.gtex}
+
+\input{temporalia/ps9xxxiii_xxxix-iv_-e.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 3.} \scriptura{Ps. 11, 8}
+
+\vspace{-4mm}
+
+\antiphona{VIII G}{temporalia/ant-tudomine.gtex}
+
+%\vspace{-2mm}
+
+\scriptura{Ps. 11}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps11-initium-viii-G-auto.gtex}
+
+\input{temporalia/ps11-viii-G.tex} \Abardot{}
+
+\vfill
+\pagebreak
+\fi
+\ifx\matub\undefined
+\else
+% MAT B
+\pars{Psalmus 1.} \scriptura{Ps. 36, 5; \textbf{H93}}
+
+\vspace{-4mm}
+
+\antiphona{VI F}{temporalia/ant-reveladomino.gtex}
+
+%\vspace{-2mm}
+
+\scriptura{Ps. 36, 1-11}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps36i_xi-initium-vi-F-auto.gtex}
+
+\input{temporalia/ps36i_xi-vi-F.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 2.}
+
+\vspace{-4mm}
+
+\antiphona{II D}{temporalia/ant-iuniorfui.gtex}
+
+\vspace{-2mm}
+
+\scriptura{Ps. 36, 12-29}
+
+\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps36xii_xxix-initium-ii-D-auto.gtex}
+
+\input{temporalia/ps36xii_xxix-ii-D.tex}
+
+\vfill
+
+\antiphona{}{temporalia/ant-iuniorfui.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 3.} \scriptura{Ps. 36, 3}
+
+\vspace{-4mm}
+
+\antiphona{VI F}{temporalia/ant-speraindomino.gtex}
+
+%\vspace{-2mm}
+
+\scriptura{Ps. 36, 30-40}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps36iii-initium-vi-F-auto.gtex}
+
+\input{temporalia/ps36iii-vi-F.tex} \Abardot{}
+
+\vfill
+\pagebreak
+\fi
+\ifx\matuc\undefined
+\else
+% MAT C
+\pars{Psalmus 1.} \scriptura{Ps. 67, 2}
+
+\vspace{-4mm}
+
+\antiphona{VII a}{temporalia/ant-exsurgatdeus.gtex}
+
+%\vspace{-2mm}
+
+\scriptura{Ps. 67, 2-11}
+
+\initiumpsalmi{temporalia/ps67i-initium-vii-a-auto.gtex}
+
+\input{temporalia/ps67i-vii-a.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 2.}
+
+\vspace{-4mm}
+
+\antiphona{I f}{temporalia/ant-deusnosterdeussalvos.gtex}
+
+%\vspace{-2mm}
+
+\scriptura{Ps. 67, 12-24}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps67ii-initium-i-f-auto.gtex}
+
+\input{temporalia/ps67ii-i-f.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 3.} \scriptura{Ps. 67, 27; \textbf{H96}}
+
+\vspace{-4mm}
+
+\antiphona{D}{temporalia/ant-inecclesiis.gtex}
+
+%\vspace{-2mm}
+
+\scriptura{Ps. 67, 25-36}
+
+\initiumpsalmi{temporalia/ps67iii-initium-d-g2-auto.gtex}
+
+\input{temporalia/ps67iii-d-g2.tex} \Abardot{}
+
+\vfill
+\pagebreak
+\fi
+\ifx\matud\undefined
+\else
+% MAT D
+\pars{Psalmus 1.} \scriptura{Ps. 101, 2; \textbf{H99}}
+
+\vspace{-4mm}
+
+\antiphona{I a}{temporalia/ant-clamormeus1.gtex}
+
+%\vspace{-2mm}
+
+\scriptura{Ps. 101, 2-12}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps101ii_xii-initium-i-a.gtex}
+
+\input{temporalia/ps101ii_xii-i-a.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 2.}
+
+\vspace{-4mm}
+
+\antiphona{VIII G}{temporalia/ant-respicehumilitatem.gtex}
+
+\vspace{-2mm}
+
+\scriptura{Ps. 101, 13-23}
+
+\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps101xiii_xxiii-initium-viii-G-auto.gtex}
+
+\input{temporalia/ps101xiii_xxiii-viii-G.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 3.} \scriptura{Ps. 139, 14; \textbf{H371}}
+
+\vspace{-4mm}
+
+\antiphona{I g}{temporalia/ant-iusticonfitebuntur1.gtex}
+
+%\vspace{-2mm}
+
+\scriptura{Ps. 101, 24-29}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps101iii-initium-i-g-auto.gtex}
+
+\input{temporalia/ps101iii-i-g.tex} \Abardot{}
+\vfill
+\pagebreak
+\fi
+
+\pars{Versus.}
+
+\ifx\matversus\undefined
+\ifx\matua\undefined
+\else
+\noindent \Vbardot{} Díriget Dóminus mansuétos in iudício. 
+
+\noindent \Rbardot{} Docébit mites vias suas.
+\fi
+\ifx\matub\undefined
+\else
+\noindent \Vbardot{} Bonitátem et prudéntiam et sciéntiam doce me.
+
+\noindent \Rbardot{} Quia præcéptis tuis crédidi.
+\fi
+\ifx\matuc\undefined
+\else
+\noindent \Vbardot{} Audiam quid loquátur Dóminus Deus.
+
+\noindent \Rbardot{} Loquétur pacem ad plebem suam.
+\fi
+\else
+\matversus
+\fi
+
+\vspace{5mm}
+
+\sineinitiali{temporalia/oratiodominica-mat.gtex}
+
+\vspace{5mm}
+
+\pars{Absolutio.}
+
+\cuminitiali{}{temporalia/absolutio-ipsius.gtex}
+
+\vfill
+\pagebreak
+
+\cuminitiali{}{temporalia/benedictio-solemn-deus.gtex}
+
+\vspace{7mm}
+
+\lectioi
+
+\noindent \Vbardot{} Tu autem, Dómine, miserére nobis.
+\noindent \Rbardot{} Deo grátias.
+
+\vfill
+\pagebreak
+
+\responsoriumi
+
+\vfill
+\pagebreak
+
+\cuminitiali{}{temporalia/benedictio-solemn-christus.gtex}
+
+\vspace{7mm}
+
+\lectioii
+
+\noindent \Vbardot{} Tu autem, Dómine, miserére nobis.
+\noindent \Rbardot{} Deo grátias.
+
+\vfill
+\pagebreak
+
+\responsoriumii
+
+\vfill
+\pagebreak
+
+\cuminitiali{}{temporalia/benedictio-solemn-ignem.gtex}
+
+\vspace{7mm}
+
+\lectioiii
+
+\noindent \Vbardot{} Tu autem, Dómine, miserére nobis.
+\noindent \Rbardot{} Deo grátias.
+
+\vfill
+\pagebreak
+
+\responsoriumiii
+
+\vfill
+\pagebreak
+
+\rubrica{Reliqua omittuntur, nisi Laudes separandæ sint.}
+
+\sineinitiali{temporalia/domineexaudi.gtex}
+
+\vfill
+
+\oratio
+
+\vfill
+
+\noindent \Vbardot{} Dómine, exáudi oratiónem meam.
+\Rbardot{} Et clamor meus ad te véniat.
+
+\vfill
+
+\noindent \Vbardot{} Benedicámus Dómino.
+\noindent \Rbardot{} Deo grátias.
+
+\vfill
+
+\noindent \Vbardot{} Fidélium ánimæ per misericórdiam Dei requiéscant in pace.
+\Rbardot{} Amen.
+
+\vfill
+\pagebreak
+
+\hora{Ad Laudes.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cantusSineNeumas
+
+\vspace{0.5cm}
+\grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{}{temporalia/deusinadiutorium-communis-quad.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+
+\vfill
+\pagebreak
+
+\ifx\hymnuslaudes\undefined
+\ifx\laudac\undefined
+\else
+\pars{Hymnus}
+
+\cuminitiali{I}{temporalia/hym-PergrataMundo.gtex}
+\fi
+\ifx\laudbd\undefined
+\else
+\pars{Hymnus}
+
+\grechangedim{interwordspacetext}{0.16 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{IV}{temporalia/hym-AEterneLucis.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\vspace{-3mm}
+\fi
+\else
+\hymnuslaudes
+\fi
+
+\vfill
+\pagebreak
+
+\ifx\laudes\undefined
+\ifx\lauda\undefined
+\else
+\pars{Psalmus 1.} \scriptura{Ps. 23, 4.3}
+
+\vspace{-4mm}
+
+\antiphona{IV* e}{temporalia/ant-innocensmanibus.gtex}
+
+\scriptura{Psalmus 23.}
+
+\initiumpsalmi{temporalia/ps23-initium-iv_-e-auto.gtex}
+
+\input{temporalia/ps23-iv_-e.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 2.} \scriptura{Tob. 13, 6}
+
+\vspace{-4mm}
+
+\antiphona{VII a}{temporalia/ant-exaltateregem.gtex}
+
+\scriptura{Canticum Tobiæ, Tob. 13, 2-8}
+
+\initiumpsalmi{temporalia/tobiae-initium-vii-a-auto.gtex}
+
+\input{temporalia/tobiae-vii-a.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 3.} \scriptura{Ps. 32, 1; \textbf{H93}}
+
+\vspace{-4mm}
+
+\antiphona{IV E}{temporalia/ant-rectosdecet.gtex}
+
+\vspace{-4mm}
+
+\scriptura{Psalmus 32.}
+
+\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps32-initium-iv-E-auto.gtex}
+
+\input{temporalia/ps32-iv-E.tex}
+
+\vfill
+
+\antiphona{}{temporalia/ant-rectosdecet.gtex}
+
+\vfill
+\pagebreak
+\fi
+\ifx\laudb\undefined
+\else
+\pars{Psalmus 1.} \scriptura{Ps. 42, 5; \textbf{H95}}
+
+\vspace{-4mm}
+
+\antiphona{VI F}{temporalia/ant-salutarevultusmei.gtex}
+
+\scriptura{Psalmus 42.}
+
+\initiumpsalmi{temporalia/ps42-initium-vi-F-auto.gtex}
+
+\input{temporalia/ps42-vi-F.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 2.} \scriptura{Is. 38, 20; \textbf{H95}}
+
+\vspace{-7mm}
+
+\antiphona{E}{temporalia/ant-cunctisdiebus.gtex}
+
+\vspace{-4mm}
+
+\scriptura{Canticum Ezechiæ, Is. 38, 10-20}
+
+\vspace{-3mm}
+
+\initiumpsalmi{temporalia/ezechiae-initium-e-auto.gtex}
+
+\input{temporalia/ezechiae-e.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 3.} \scriptura{Ps. 64, 2; \textbf{H96}}
+
+\vspace{-4mm}
+
+\antiphona{VIII a}{temporalia/ant-tedecet.gtex}
+
+\vspace{-2mm}
+
+\scriptura{Psalmus 64.}
+
+\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps64-initium-viii-A-auto.gtex}
+
+\input{temporalia/ps64-viii-A.tex} \Abardot{}
+
+\vfill
+\pagebreak
+\fi
+\ifx\laudc\undefined
+\else
+\iffalse
+\pars{Psalmus 1.} \scriptura{Ps. 83, 5}
+
+\vspace{-4mm}
+
+\antiphona{VIII G}{temporalia/ant-beatiquihabitant.gtex}
+
+\vspace{-2mm}
+
+\scriptura{Psalmus 84.}
+
+\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps84-initium-viii-G-auto.gtex}
+
+\input{temporalia/ps84-viii-G.tex} \Abardot{}
+\else
+\pars{Psalmus 1.} \scriptura{Ps. 84, 2; \textbf{H97}}
+
+\vspace{-4mm}
+
+\antiphona{VI F}{temporalia/ant-benedixistidomine.gtex}
+
+\vspace{-2mm}
+
+\scriptura{Psalmus 84.}
+
+\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps84-initium-vi-F-auto.gtex}
+
+\input{temporalia/ps84-vi-F.tex} \Abardot{}
+\fi
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 2.}
+
+\vspace{-4mm}
+
+\antiphona{VII d}{temporalia/ant-denoctespiritusmeus.gtex}
+
+\vspace{-2mm}
+
+\scriptura{Canticum Isaiæ, Is. 26, 1-12}
+
+\vspace{-2mm}
+
+\initiumpsalmi{temporalia/isaiae3-initium-vii-d.gtex}
+
+\input{temporalia/isaiae3-vii-d.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 3.} \scriptura{Ps. 66, 2}
+
+\vspace{-4mm}
+
+\antiphona{E}{temporalia/ant-illuminadomine.gtex}
+
+%\vspace{-2mm}
+
+\scriptura{Psalmus 66.}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps66-initium-e.gtex}
+
+\input{temporalia/ps66-e.tex} \Abardot{}
+
+\vfill
+\pagebreak
+\fi
+\ifx\laudd\undefined
+\else
+\pars{Psalmus 1.}
+
+\vspace{-4mm}
+
+\antiphona{VIII G}{temporalia/ant-cantaboetpsalmum.gtex}
+
+\vspace{-2mm}
+
+\scriptura{Psalmus 100.}
+
+\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps100-initium-viii-G-auto.gtex}
+
+\input{temporalia/ps100-viii-G.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 2.} \scriptura{Ps. 50, 19}
+
+\vspace{-4mm}
+
+\antiphona{I f}{temporalia/ant-sacrificiumdeo.gtex}
+
+%\vspace{-2mm}
+
+\scriptura{Canticum Danielis, Dan. 3, 26.27.29.34-41}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/dan32-initium-i-f-auto.gtex}
+
+\input{temporalia/dan32-i-f.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 3.} \scriptura{Ps. 143, 1; \textbf{H99}}
+
+\vspace{-4mm}
+
+\antiphona{VI F}{temporalia/ant-benedictusdominusdeusmeus.gtex}
+
+%\vspace{-2mm}
+
+\scriptura{Psalmus 143, 1-10.}
+
+%\vspace{-2mm}
+
+\initiumpsalmi{temporalia/ps143i_x-initium-vi-F-auto.gtex}
+
+\input{temporalia/ps143i_x-vi-F.tex} \Abardot{}
+
+\vfill
+\pagebreak
+\fi
+\else
+\laudes
+\fi
+
+\ifx\lectiobrevis\undefined
+\ifx\lauda\undefined
+\else
+\pars{Lectio Brevis.} \scriptura{Rom. 13, 11.12-13}
+
+\noindent Hora est iam vos de somno súrgere. Nox procéssit, dies autem appropiávit. Abiciámus ergo ópera tenebrárum et induámur arma lucis. Sicut in die honéste ambulémus.
+\fi
+\ifx\laudb\undefined
+\else
+\pars{Lectio Brevis.} \scriptura{1 Th. 5, 4-5}
+
+\noindent Vos, fratres, non estis in ténebris, ut vos dies ille tamquam fur comprehéndat; omnes enim vos fílii lucis estis et fílii diéi. Non sumus noctis neque tenebrárum.
+\fi
+\ifx\laudc\undefined
+\else
+\pars{Lectio Brevis.} \scriptura{1 Io. 4, 14-15}
+
+\noindent Nos vídimus et testificámur quóniam Pater misit Fílium salvatórem mundi. Quisque conféssus fúerit: Iesus est Fílius Dei, Deus in ipso manet, et ipse in Deo.
+\fi
+\else
+\lectiobrevis
+\fi
+
+\vfill
+
+\ifx\responsoriumbreve\undefined
+\ifx\laudac\undefined
+\else
+\pars{Responsorium breve.} \scriptura{Ps. 17, 3} 
+
+\cuminitiali{VI}{temporalia/resp-deusmeusadiutormeus.gtex}
+\fi
+\ifx\laudbd\undefined
+\else
+\pars{Responsorium breve.} \scriptura{Ps. 118, 149.147}
+
+\cuminitiali{VI}{temporalia/resp-vocemmeamaudi.gtex}
+\fi
+\else
+\responsoriumbreve
+\fi
+
+\vfill
+\pagebreak
+
+\ifx\benedictus\undefined
+\ifx\laudac\undefined
+\else
+\pars{Canticum Zachariæ.} \scriptura{Lc. 1, 69; \textbf{H422}}
+
+\vspace{-5mm}
+
+{
+\grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{VII a}{temporalia/ant-erexitnobisdominus.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+
+%\vspace{-3mm}
+
+\scriptura{Lc. 1, 68-79}
+
+%\vspace{-1mm}
+
+\cantusSineNeumas
+\initiumpsalmi{temporalia/benedictus-initium-vii-a-auto.gtex}
+
+\input{temporalia/benedictus-vii-a.tex} \Abardot{}
+\fi
+\ifx\laudbd\undefined
+\else
+\pars{Canticum Zachariæ.} \scriptura{Lc. 1, 71; \textbf{H423}}
+
+\vspace{-5mm}
+
+{
+\grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{I g\textsuperscript{5}}{temporalia/ant-demanuomnium.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+
+%\vspace{-3mm}
+
+\scriptura{Lc. 1, 68-79}
+
+%\vspace{-1mm}
+
+\initiumpsalmi{temporalia/benedictus-initium-i-g5-auto.gtex}
+
+\input{temporalia/benedictus-i-g5.tex} \Abardot{}
+\fi
+\else
+\benedictus
+\fi
+
+\vspace{-1cm}
+
+\vfill
+\pagebreak
+
+\ifx\precestotum\undefined
+\pars{Preces.}
+
+\sineinitiali{}{temporalia/tonusprecumnovum.gtex}
+
+\ifx\preces\undefined
+\ifx\lauda\undefined
+\else
+\noindent Vocatiónis cæléstis partícipes facti, fratres caríssimi, Iesum, pontíficem confessiónis nostræ,~\gredagger{} benedicámus clamántes:
+
+\Rbardot{} Dómine Deus noster et salvátor noster.
+
+\noindent O Rex omnípotens, qui, per baptísmum, regále nobis sacerdótium contulísti,~\gredagger{} fac ut laudis tibi semper sacrifícium offerámus.
+
+\Rbardot{} Dómine Deus noster et salvátor noster.
+
+\noindent Da nobis mandáta tua serváre,~\gredagger{} ut per Sanctum Spíritum in te maneámus et tu in nobis.
+
+\Rbardot{} Dómine Deus noster et salvátor noster.
+
+\noindent Sapiéntiam tuam da nobis ætérnam,~\gredagger{} ut nobíscum sit hódie et nobíscum operétur.
+
+\Rbardot{} Dómine Deus noster et salvátor noster.
+
+\noindent Concéde nobis hódie néminem umquam contristáre,~\gredagger{} omnes autem, qui nobíscum sunt, lætificáre.
+
+\Rbardot{} Dómine Deus noster et salvátor noster.
+\fi
+\ifx\laudb\undefined
+\else
+\noindent Salvatóri nostro benedicámus, qui sua resurrectióne mundum clarificávit,~\gredagger{} et humíliter invocémus eum dicéntes:
+
+\Rbardot{} Salva nos, Dómine, in sémita tua.
+
+\noindent Resurrectiónem tuam, Dómine Iesu, oratióne cólimus matutína,~\gredagger{} spes glóriæ tuæ diem nostrum illúminet.
+
+\Rbardot{} Salva nos, Dómine, in sémita tua.
+
+\noindent Súscipe, Dómine, vota et propósita nostra,~\gredagger{} tamquam diéi nostri primítias.
+
+\Rbardot{} Salva nos, Dómine, in sémita tua.
+
+\noindent Tríbue in dilectióne tua nos hódie profícere,~\gredagger{} ut ómnia in nostrum omniúmque bonum cooperéntur.
+
+\Rbardot{} Salva nos, Dómine, in sémita tua.
+
+\noindent Da, Dómine, sic lucére lucem nostram coram homínibus,~\gredagger{} ut vídeant ópera nostra bona et Patrem gloríficent.
+
+\Rbardot{} Salva nos, Dómine, in sémita tua.
+\fi
+\else
+\preces
+\fi
+
+\vfill
+
+\pars{Oratio Dominica.}
+
+\cuminitiali{}{temporalia/oratiodominicaalt.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Deprecatio Gelasii}
+
+\vspace{-5mm}
+
+\grechangedim{interwordspacetext}{0.16 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{D\textsuperscript{1}}{temporalia/deprecatio4-propace.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+
+\vfill
+
+\pars{Oratio Dominica.}
+
+\cuminitiali{D}{temporalia/oratiodominica-d.gtex}
+\else
+\precestotum
+\fi
+
+\vfill
+\pagebreak
+
+% Oratio. %%%
+\oratio
+
+\vspace{-1mm}
+
+\vfill
+
+\rubrica{Hebdomadarius dicit Dominus vobiscum, vel, absente sacerdote vel diacono, sic concluditur:}
+
+\vspace{2mm}
+
+\ifx\dominusnosbenedicat\undefined
+\antiphona{C}{temporalia/dominusnosbenedicat.gtex}
+\else
+\dominusnosbenedicat
+\fi
+
+\rubrica{Postea cantatur a cantore:}
+
+\vspace{2mm}
+
+\cuminitiali{IV}{temporalia/benedicamus-feria-advequad.gtex}
+
+\vspace{1mm}
+
+\vfill
+\pagebreak
+
+\ifx\sinevesperas\undefined
+\hora{Ad Vesperas.} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cantusSineNeumas
+
+%\vspace{0.5cm}
+\grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{}{temporalia/deusinadiutorium-communis-tq.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+
+\vfill
+%\pagebreak
+
+\vspace{6mm}
+
+\vfill
+
+\pars{Psalmus 1.} \scriptura{Ps. 129, 1.2; \textbf{H96}}
+
+%\vspace{-4mm}
+
+\antiphona{VIII a}{temporalia/ant-deprofundis.gtex}
+
+%\vspace{-4mm}
+
+\scriptura{Psalmus 129.}
+
+\initiumpsalmi{temporalia/ps129-initium-viii-A-auto.gtex}
+
+\input{temporalia/ps129-viii-A.tex}
+
+\vfill
+
+\antiphona{}{temporalia/ant-deprofundis.gtex}
+
+\vspace{-1cm}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 2.} \scriptura{Ps. 130, 3; \textbf{H96}}
+
+\vspace{-4mm}
+
+\antiphona{E}{temporalia/ant-speretisrael.gtex}
+
+\vspace{-4mm}
+
+\scriptura{Psalmus 130.}
+
+\initiumpsalmi{temporalia/ps130-initium-e-auto.gtex}
+
+\input{temporalia/ps130-e.tex}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 3.} \scriptura{Ps. 131, 1; \textbf{H96}}
+
+\vspace{-4mm}
+
+\antiphona{E}{temporalia/ant-etomnis.gtex}
+
+\vspace{-4mm}
+
+\scriptura{Psalmus 131.}
+
+\initiumpsalmi{temporalia/ps131-initium-e-auto.gtex}
+
+\input{temporalia/ps131-e.tex}
+
+\vfill
+
+\antiphona{}{temporalia/ant-etomnis.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Psalmus 4.} \scriptura{Ps. 132, 1; \textbf{H96}}
+
+\vspace{-4mm}
+
+\antiphona{I a}{temporalia/ant-eccequambonum.gtex}
+
+\vspace{-4mm}
+
+\scriptura{Psalmus 132.}
+
+\initiumpsalmi{temporalia/ps132-initium-i-a-auto.gtex}
+
+\input{temporalia/ps132-i-a.tex} \Abardot{}
+
+\vfill
+\pagebreak
+
+\ifx\postcinerum\undefined
+\ifx\tempuspassionis\undefined
+\pars{Capitulum.} \scriptura{Ioel 2, 17}
+
+\grechangedim{interwordspacetext}{0.12 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{}{temporalia/capitulum-InterVestibulum.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\else
+\pars{Capitulum.} \scriptura{Ier. 11, 20}
+
+\grechangedim{interwordspacetext}{0.12 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{}{temporalia/capitulum-TuAutemDomineSabaoth.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\fi
+
+\vfill
+
+\ifx\tempuspassionis\undefined
+\pars{Responsorium breve.} \scriptura{Ps. 90, 4}
+
+\cuminitiali{IV}{temporalia/resp-scapulissuis.gtex}
+\else
+\pars{Responsorium breve.} \scriptura{Cf. Ps. 21, 22}
+
+\cuminitiali{IV}{temporalia/resp-deoreleonis-feriale.gtex}
+\fi
+
+\vfill
+\pagebreak
+
+\ifx\tempuspassionis\undefined
+\pars{Hymnus.} \scriptura{Gregorius Magnus (\olddag{} 604)}
+
+\antiphona{II}{temporalia/hym-AudiBenigne.gtex}
+\else
+\pars{Hymnus.} \scriptura{Venantius Fortunatus (sæc. VI)}
+
+\vspace{-3mm}
+
+\antiphona{I}{temporalia/hym-VexillaRegis.gtex}
+\fi
+\vspace{-3mm}
+
+\vfill
+%\pagebreak
+
+\ifx\tempuspassionis\undefined
+\pars{Versus.} \scriptura{Ps. 90, 11}
+
+\sineinitiali{temporalia/versus-angelis.gtex}
+\else
+\vspace{3mm}
+\pars{Versus.} \scriptura{Ps. 139, 2}
+
+\sineinitiali{temporalia/versus-eripe.gtex}
+\fi
+
+\vfill
+\pagebreak
+\else
+\pars{Capitulum.} \scriptura{2 Cor. 1, 3-4}
+
+\grechangedim{interwordspacetext}{0.12 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\cuminitiali{}{temporalia/capitulum-BenedictusDeus.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+
+\vfill
+
+\pars{Responsorium breve.} \scriptura{Ps. 33, 2}
+
+\cuminitiali{VI}{temporalia/resp-benedicamdominum.gtex}
+
+\vfill
+\pagebreak
+
+\pars{Hymnus} \scriptura{Gregorius Magnus (\olddag{} 604)}
+
+\ifx\hiemalis\undefined
+\cuminitiali{I}{temporalia/hym-TellurisIngens-aestivalis.gtex}
+\else
+\cuminitiali{VIII}{temporalia/hym-TellurisIngens-hiemalis.gtex}
+\fi
+\vspace{-3mm}
+
+\vfill
+%\pagebreak
+
+\pars{Versus.} \scriptura{Ps. 140, 2}
+
+\sineinitiali{temporalia/versus-dirigatur.gtex}
+
+\vfill
+\pagebreak
+\fi
+
+\ifx\magnificat\undefined
+\pars{Canticum B. Mariæ V.} \scriptura{Cf. Lc. 1, 47; \textbf{H424}}
+
+\vspace{-6mm}
+
+{
+\grechangedim{interwordspacetext}{0.18 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+\antiphona{V a}{temporalia/ant-exsultetspiritusmeus.gtex}
+\grechangedim{interwordspacetext}{0.22 cm plus 0.15 cm minus 0.05 cm}{scalable}%
+}
+
+%\vspace{-3mm}
+
+\scriptura{Lc. 1, 46-55}
+
+%\vspace{-2mm}
+
+\cantusSineNeumas
+\initiumpsalmi{temporalia/magnificat-initium-v-a.gtex}
+
+%\vspace{-2mm}
+
+\input{temporalia/magnificat-v-a.tex} \Abardot{}
+\else
+\magnificat
+\fi
+
+\vspace{-1cm}
+
+\vfill
+\pagebreak
+
+\anteOrationem
+
+\pagebreak
+
+\oratiovesperas
+
+\vspace{-1mm}
+
+\vfill
+
+\rubrica{Hebdomadarius dicit iterum Dominus vobiscum, vel cantor dicit:}
+
+\vspace{2mm}
+
+\sineinitiali{temporalia/domineexaudi.gtex}
+
+\rubrica{Postea cantatur a cantore:}
+
+\vspace{2mm}
+
+\cuminitiali{IV}{temporalia/benedicamus-feria-advequad.gtex}
+
+\vspace{1mm}
+
+\vfill
+\fi
+
+\end{document}
