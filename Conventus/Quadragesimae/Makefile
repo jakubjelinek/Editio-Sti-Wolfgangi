@@ -523,7 +523,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   opprobriumfactussum insurrexeruntinme contumeliasetterrores \
 			   deusisrael synagogapopulorum locutisunt dixeruntimpii \
 			   circumdederuntme movensigiturabraham-CROCHU \
-			   crediditabrahamdeo-CROCHU-cumdox) \
+			   crediditabrahamdeo-CROCHU-cumdox factusestsermodomini-CROCHU) \
 	 $(addprefix oratio,-visita bmv 1 2 3 4 5) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
