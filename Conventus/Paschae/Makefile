@@ -458,7 +458,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  LaetareCaelum TeCatharina ClaroPaschali MatthiaSacratissimo PhilippeSummae \
 			  OptatusVotis AEterneRex IesuNostraRedemptio IamNunc-Marcus OVirBeate \
 			  VirgoPrudentum ChristePastorum InclitusPastor-doctorum VeniPraecelsa  \
-			  VeniensMater QuiVivis ChristeRex) \
+			  VeniensMater QuiVivis ChristeRex LaetiColentes ORedemptorisPietas) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus-tp clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -479,7 +479,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 				  festis-laudes) \
 	 $(addprefix inv-,surrexitdominusvere regemapostolorum-tp christumdominumquisanctum \
 			  dominumloquentem-tp fontemsapientiae-tp visitationemvirginis-tp \
-			  regemcuiomnia-tp) \
+			  regemcuiomnia-tp mirabileminsanctis-tp) \
 	 dominelabiamea tonusprecum tonusprecumnovum dominusnosbenedicat dominusnosbenedicat-d \
 	 tonus-lectionis-prophetiae \
 	 $(addprefix capitulum-,tuautem BenedictusDeus AbInitio Hortamur InterVestibulum \
