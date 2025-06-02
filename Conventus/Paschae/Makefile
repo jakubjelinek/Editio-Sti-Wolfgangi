@@ -437,7 +437,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  favusdistillanslabia rogabopatremmeum sublevatisoculis \
 			  accinxitfortitudine-tp beatusvirquiinventusest \
 			  caritasdeidiffusaest hicestveremartyr semenceciditaliud \
-			  sanguissanctorummartyrum) \
+			  sanguissanctorummartyrum semenceciditaliud-tp) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv tp solemnis-tp) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -460,7 +460,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			  OptatusVotis AEterneRex IesuNostraRedemptio IamNunc-Marcus OVirBeate \
 			  VirgoPrudentum ChristePastorum InclitusPastor-doctorum VeniPraecelsa  \
 			  VeniensMater QuiVivis ChristeRex LaetiColentes ORedemptorisPietas \
-			  RexGloriose AEternaChristi) \
+			  RexGloriose AEternaChristi BeateMartyr MartyrDei) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
 			   sanaanimammeam avemaria inmanus-tp clamaviintotocorde auditamfacmihi \
 			   avemaria-alt exsultateiusti vocemmeamaudi clamaboaddeum \
@@ -552,7 +552,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 alleluia3 ampliuslavame atimore av
 			   istisunttriumphatores-sinedox egosumvitisveraet-CROCHU \
 			   egosumvitisveraet-CROCHU-cumdox christusresurgens \
 			   duoseraphim-sinedox cruxbenedictanitet-CROCHU-sinedox \
-			   stetitangelus-CROCHU-tp) \
+			   stetitangelus-CROCHU-tp luxperpetualucebit-CROCHU-cumdox \
+			   sanctituidomine-CROCHU) \
 	 oratio $(addprefix oratio,2 3 4 5 6 7 -visita d2 d3 d4 d5 d6 d7) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii an_regina_caeli_simplex \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
