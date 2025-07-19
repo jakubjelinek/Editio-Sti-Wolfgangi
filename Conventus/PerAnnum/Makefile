@@ -42,7 +42,7 @@ MODUS-17xxxi_xxxv = viii-G
 MODUS-17xxxvi_xlvi = vii-c
 MODUS-17xlvii_li = vii-c2
 MODUS-18 = i-D_ ii-D iii-a iv-A vii-c
-MODUS-18i = ii-D viii-g
+MODUS-18i = i-D_ ii-D viii-g
 MODUS-20 = i-D_ vii-a viii-G viii-C
 MODUS-23 = iii-a iv-c iv_-e v-a vii-c vii-d2 viii-G
 MODUS-28 = vii-a
@@ -420,7 +420,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  dixitandreas salvecruxpretiosa eratandreas omnesquihabebantinfirmos \
 			  cumautemdescendisset accinxitfortitudine nisiabundaverit \
 			  egosumpanisvivusqui nonlotismanibus quaeriteprimum illuminaredomine \
-			  similaboeum) \
+			  similaboeum surgensjesusmaneprimasabbati) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
