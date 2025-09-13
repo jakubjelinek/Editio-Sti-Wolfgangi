@@ -169,10 +169,10 @@ MODUS-ezechiae = ii-D e
 MODUS-ezechiae2 = i-f iv_-e
 MODUS-habacuc = iv_-e
 MODUS-habacuc2 = iv_-e
-MODUS-isaiae = viii-G viii-G6 viii-g2
+MODUS-isaiae = iii-a viii-G viii-G6 viii-g2
 MODUS-isaiae2 = v-a
 MODUS-isaiae3 = vii-d
-MODUS-isaiae4 = vii-c viii-G viii-G6 viii-g2
+MODUS-isaiae4 = iii-a vii-c viii-G viii-G6 viii-g2
 MODUS-isaiae5 = iv-E iv_-e
 MODUS-isaiae7 = i-f viii-G5 d-g
 MODUS-isaiae8 = i-f viii-g viii-G5 d-g
@@ -196,7 +196,7 @@ MODUS-tobiae = vii-a viii-g
 MODUS-tobiae2 = ii-D
 MODUS-tobiae_xi_xv = viii-g
 MODUS-tobiae_xvii_xxiii = viii-g
-MODUS-chronicorum = viii-G
+MODUS-chronicorum = iii-a viii-G
 MODUS-dan3 = i-d i-f i-g i-a2 ii-D ii_-a iii-a iii-b iii-e iiir-b iv-E iv-e2 v-a v-g vii-a vii-c vii-c2 vii-d2 viii-G viii-G5 viii-c viii-g per
 MODUS-dan32 = i-f
 MODUS-dan33 = i-g i-a2 iv-E viii-G
@@ -420,7 +420,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  dixitandreas salvecruxpretiosa eratandreas omnesquihabebantinfirmos \
 			  cumautemdescendisset accinxitfortitudine nisiabundaverit \
 			  egosumpanisvivusqui nonlotismanibus quaeriteprimum illuminaredomine \
-			  similaboeum surgensjesusmaneprimasabbati) \
+			  similaboeum surgensjesusmaneprimasabbati salvanoschriste) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(addprefix hym-,NoxAtra SolEcce TuTrinitatis AEternaCaeli QuemTerra-alt \
 			  OGloriosaFemina IpsumNunc LucisLargitor NocteSurgentes \
@@ -806,7 +806,7 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			   crediditabrahamdeo-CROCHU-cumdox factusestsermodomini-CROCHU \
 			   crediditabrahamdeo-CROCHU sintlumbivestri-CROCHU-cumdox \
 			   sintlumbivestri-JOPPICH-cumdox dominepateretdeus-CROCHU-cumdox \
-			   auditeverbumdomini-CROCHU-cumdox) \
+			   auditeverbumdomini-CROCHU-cumdox ocruxbenedicta-CROCHU-cumdox) \
 	 convertenosdeus jubedomnebenedicere lectiobrevis-fratressobrii oratio-visita \
 	 $(patsubst %,tedeum-%-gn,solemnis romanum simplex) tedeum-monasticum-am34 \
 	 seq-DilecteDeo \
