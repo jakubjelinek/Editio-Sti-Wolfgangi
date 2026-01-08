@@ -126,7 +126,7 @@ SCORES = alleluia-VidimusStellam ant1 ant2 ant3 ant4 ant5 ant-ben-laud ant-magn-
 	 deusinadiutorium-communis domineexaudi dominusvobiscum-solemnis \
 	 graduale-OmnesDeSaba hym-HostisHerodes hym-OSolaMagnarum hym-CrudelisHerodes credo-i \
 	 introitus-EcceAdvenit ii-agnusdei ii-gloria ii-kyrie ii-sanctus \
-	 $(addprefix magnificat-initium-,isoll-D_ viiisoll-G2 vii-a viii-C i-f) offertorium-RegesTharsis \
+	 $(addprefix magnificat-initium-,isoll-D_ viiisoll-G2 vii-a viii-C i-f viii-G) offertorium-RegesTharsis \
 	 oratiodominica oratio oratio2 resp1v respl supplicatiolitaniae tuautem \
 	 $(addprefix matant,1 2 3 4 5 6 7 8 9) $(addprefix matresp,1 2 3 4 5 6 7 8) \
 	 ps94-initium-viii-G tedeum-solemnis tedeum-solemnis-gn annuntiatio christus_apparuit_nobis \
@@ -173,7 +173,7 @@ SCORES = alleluia-VidimusStellam ant1 ant2 ant3 ant4 ant5 ant-ben-laud ant-magn-
 			  exaltateregem rectosdecet erexitnobisdominus dominemagnuses \
 			  factusestadiutormeus domineincaelo rexomnisterrae \
 			  memoraredominetestamenti nonenimvosestis diligamtedomine \
-			  retribuetmihi) \
+			  retribuetmihi interrogabatmagos) \
 	  $(addprefix inv-,christusapparuit jubilemusdeo regemmagnum dominumquifecit) \
 	  dominelabiamea tonusprecum oratiodominicaalt \
 	  dominusnosbenedicat habacuc-initium-iv_-e ps147-initium-e ps105i-initium-e \
