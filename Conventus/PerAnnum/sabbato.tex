@@ -547,10 +547,14 @@
 \vfill
 \pagebreak
 
+\ifx\benedictioi\undefined
 \ifx\sineobmv\undefined
 \cuminitiali{}{temporalia/benedictio-solemn-noscum.gtex}
 \else
 \cuminitiali{}{temporalia/benedictio-solemn-ille.gtex}
+\fi
+\else
+\benedictioi
 \fi
 \fi
 
@@ -572,10 +576,14 @@
 \pagebreak
 
 \ifx\sineabsolutio\undefined
+\ifx\benedictioii\undefined
 \ifx\sineobmv\undefined
 \cuminitiali{}{temporalia/benedictio-solemn-ipsavirgo.gtex}
 \else
 \cuminitiali{}{temporalia/benedictio-solemn-divinum.gtex}
+\fi
+\else
+\benedictioii
 \fi
 \fi
 
@@ -597,10 +605,14 @@
 \pagebreak
 
 \ifx\sineabsolutio\undefined
+\ifx\benedictioiii\undefined
 \ifx\sineobmv\undefined
 \cuminitiali{}{temporalia/benedictio-solemn-pervirginem.gtex}
 \else
 \cuminitiali{}{temporalia/benedictio-solemn-adsocietatem.gtex}
+\fi
+\else
+\benedictioiii
 \fi
 \fi
 
